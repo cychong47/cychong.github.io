@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Record CBS Music Radio in every day</title>
+      <link>https://cychong47.github.io/2017/10/record-cbs-fm-cinema-music/</link>
+      <pubDate>Mon, 09 Oct 2017 16:22:15 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/10/record-cbs-fm-cinema-music/</guid>
+      <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
+    </item>
     
     <item>
       <title>사진 백업 2017 버전</title>
@@ -199,15 +208,6 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/2017/09/prometheus/</guid>
       <description>Cloud Native Computing Foundation(http://cncf.io)에 포함된 Container monitoring tool. 집 맥미니에서 돌리고 있는 3개 container들을 관리하는데 사용할 수 있</description>
-    </item>
-    
-    <item>
-      <title>NGNIX for service mesh</title>
-      <link>https://cychong47.github.io/2017/09/ngnix-for-service-mesh/</link>
-      <pubDate>Fri, 15 Sep 2017 14:39:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2017/09/ngnix-for-service-mesh/</guid>
-      <description>NGINX Releases Microservices Platform, OpenShift Ingress Controller, and Service Mesh Preview NGNIX also join for service mesh bandwagon? NGNIX Application Platform NGINX Plus, the commercial variant of the popular open source NGINX web server. NGINX Web Application Firewall (WAF) NGINX Unit, a new open source application server that can run PHP, Python and Go NGINX Controller, a centralised control plane for monitoring and management of NGINX Plus Additional release a</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ghost Season 5 - Helm</title>
+      <link>https://cychong47.github.io/2019/09/ghost-season-5-helm/</link>
+      <pubDate>Sun, 22 Sep 2019 13:14:16 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2019/09/ghost-season-5-helm/</guid>
+      <description>ghost를 설치한 지 몇 년이 지났는데 그 동안 여러 가지 방법으로 Ghost 운용 환경을 구축해왔다. Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인데 Helm Chart 를 시용해서 설치해</description>
+    </item>
     
     <item>
       <title>Wifi 2.5GHz bluetooth coexist</title>
@@ -184,15 +193,6 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
       
       <guid>https://cychong47.github.io/2018/09/tags/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>(책) 최고의 팀은 무엇이 다른가</title>
-      <link>https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/</link>
-      <pubDate>Sat, 25 Aug 2018 10:08:40 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/</guid>
-      <description>팀원이 안전하다고 느끼는가? 구글 * 지위에 연연하지 않음. * 누가 책임질 지 고민하지 않음 * 어려운 문제를 풀기 위해 모든 집단을 토론시킴 미사일리어 * 미국의 미사</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/til/</link>
     <description>Recent content in TIL on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DPDK based applications</title>
+      <link>https://cychong47.github.io/2016/01/dpdk_based_apps/</link>
+      <pubDate>Sun, 24 Jan 2016 14:59:18 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2016/01/dpdk_based_apps/</guid>
+      <description>2016.02.10 기준 DPDK-dump TRex - Realistic traffic generator git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK</description>
+    </item>
     
     <item>
       <title>2년전에 느꼈던 답답함이 여전하네</title>
@@ -185,15 +194,6 @@ How many vCPUs are required for processing.</description>
       <guid>https://cychong47.github.io/2015/11/cisco-cloud-service-platform-2100/</guid>
       <description>Data sheet (PDF)
  Some Cisco virtual network services that use the DPDK include Cisco Cloud Services Router (CSR) 1000V, Cisco Virtual Mobile Packet Core software, and Cisco IOS® XR 9000v virtual router. Supporte CISCO appliances  Cisco Cloud Services Router (CSR) 1000V virtual router Cisco Virtual Adaptive Security Appliance (ASAv) Cisco Prime™ Data Center Network Manager (DCNM) Cisco Virtual Network Analysis Module (vNAM) Cisco Virtual Security Gateway (VSG) for Cisco Nexus® 1000V Switch deployments Cisco Virtual Supervisor Module (VSM) for Cisco Nexus 1000V Switch deployments   1U 2 CPU, each has 8 core Ivy Bridge(E5-2630 v3) REST API It uses REST API and NETCONF protocol for north-bound management and orchestration (MANO) tools.</description>
-    </item>
-    
-    <item>
-      <title>제대로 만들려면 제품의 성격부터 정의해야</title>
-      <link>https://cychong47.github.io/2015/11/what_is_the_target_product/</link>
-      <pubDate>Sun, 22 Nov 2015 14:35:23 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2015/11/what_is_the_target_product/</guid>
-      <description>철학의 부재. 중심의 부재. 대화의 부재 제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다.</description>
     </item>
     
   </channel>

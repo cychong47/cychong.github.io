@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>(책) Violent Python</title>
+      <link>https://cychong47.github.io/2014/09/caeg-violent-python/</link>
+      <pubDate>Sat, 27 Sep 2014 16:43:27 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2014/09/caeg-violent-python/</guid>
+      <description>오래만에 재밌는 책을 봤다. 해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이</description>
+    </item>
+    
+    <item>
       <title>(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</title>
       <link>https://cychong47.github.io/2014/09/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</link>
       <pubDate>Sat, 27 Sep 2014 13:33:25 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/2014/08/jonggyoyi-cabyeoldoen-sarang/</guid>
       <description>회사라고 치자. 계열사에 회장이 떴다. 회장이 계열사 직원들로부터 소원수리를 받았다. 심각한 문제다. 그런데 사장들이 뻔히 문제점을 알고 있으면서 무시하고 아무</description>
-    </item>
-    
-    <item>
-      <title>(책) 스핀 잇</title>
-      <link>https://cychong47.github.io/2014/08/seupin-is/</link>
-      <pubDate>Fri, 15 Aug 2014 14:58:34 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2014/08/seupin-is/</guid>
-      <description>p76 이 아이디어를 MIT 경영대학원 교수인 Glen Urban에게 가져갔을 때 그는 &amp;ldquo;이 아이디어는 당신이 생각하는 것보다 훨씬 스케일이 크다. 두 배의 속도로 움</description>
     </item>
     
   </channel>

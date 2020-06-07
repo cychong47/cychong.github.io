@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>열심히 비교한 결론이 고작 그건가?</title>
+      <link>https://cychong47.github.io/2015/06/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</link>
+      <pubDate>Wed, 24 Jun 2015 15:20:57 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2015/06/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</guid>
+      <description>그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건</description>
+    </item>
     
     <item>
       <title>Divide &amp; Conquer</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/2014/09/intel-sdnnfv-forum-korea-2014/</guid>
       <description>근태를 처리하지 못해 하루 최소 근무시간인 4시간을 채우고 포럼 장소인 리츠칼튼 호텔로 달려(버스타고) 감. 다행히 오후 세션 시작 시간인 1시 10분 전에 도착했지</description>
-    </item>
-    
-    <item>
-      <title>(책) Violent Python</title>
-      <link>https://cychong47.github.io/2014/09/caeg-violent-python/</link>
-      <pubDate>Sat, 27 Sep 2014 16:43:27 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2014/09/caeg-violent-python/</guid>
-      <description>오래만에 재밌는 책을 봤다. 해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이</description>
     </item>
     
   </channel>

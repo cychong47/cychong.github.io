@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/til/</link>
     <description>Recent content in TIL on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>상식과 다른 결과를 보면</title>
+      <link>https://cychong47.github.io/2016/05/too-early-confident/</link>
+      <pubDate>Wed, 11 May 2016 10:01:53 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2016/05/too-early-confident/</guid>
+      <description>먼저 주변을 의심해 보자. 상식적인 혹은 알려진 것과 다른 결과가 나왔다면 내가 한 시험 방법을 다시 한번 의심해 보자. 제발</description>
+    </item>
     
     <item>
       <title>빨리 해봐야 소용없다</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/2016/01/dpdk-2-2-crypto-dev-api/</guid>
       <description>pktmbuf_offload pool은 rte_pktmbuf_offload_pool_create()를 사용하여 생성 l2fwd_mbuf_ol_pool = rte_pktmbuf_offload_pool_create( &amp;quot;mbuf_offload_pool&amp;quot;, NB_MBUF, 128, 0, rte_socket_id()); 할당은 rte_pktmbuf_o</description>
-    </item>
-    
-    <item>
-      <title>DPDK based applications</title>
-      <link>https://cychong47.github.io/2016/01/dpdk_based_apps/</link>
-      <pubDate>Sun, 24 Jan 2016 14:59:18 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2016/01/dpdk_based_apps/</guid>
-      <description>2016.02.10 기준 DPDK-dump TRex - Realistic traffic generator git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK</description>
     </item>
     
   </channel>

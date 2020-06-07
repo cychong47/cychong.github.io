@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NGNIX for service mesh</title>
+      <link>https://cychong47.github.io/2017/09/ngnix-for-service-mesh/</link>
+      <pubDate>Fri, 15 Sep 2017 14:39:11 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/09/ngnix-for-service-mesh/</guid>
+      <description>NGINX Releases Microservices Platform, OpenShift Ingress Controller, and Service Mesh Preview NGNIX also join for service mesh bandwagon? NGNIX Application Platform NGINX Plus, the commercial variant of the popular open source NGINX web server. NGINX Web Application Firewall (WAF) NGINX Unit, a new open source application server that can run PHP, Python and Go NGINX Controller, a centralised control plane for monitoring and management of NGINX Plus Additional release a</description>
+    </item>
     
     <item>
       <title>Wordpress with docker-compose</title>
@@ -185,15 +194,6 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
       
       <guid>https://cychong47.github.io/2016/05/fossilization/</guid>
       <description>fossilize also -lise (usually passive) if people, ideas, systems etc fossilize or are fossilized, they never change or develop, even when there are good reasons why they should change Most couples, however fossilized their relationship, have some interests in common. 간혹 팟캐스트에 공룡에 대한 이야기가 나온다. 공룡에 대한 연구가 상대</description>
-    </item>
-    
-    <item>
-      <title>상식과 다른 결과를 보면</title>
-      <link>https://cychong47.github.io/2016/05/too-early-confident/</link>
-      <pubDate>Wed, 11 May 2016 10:01:53 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2016/05/too-early-confident/</guid>
-      <description>먼저 주변을 의심해 보자. 상식적인 혹은 알려진 것과 다른 결과가 나왔다면 내가 한 시험 방법을 다시 한번 의심해 보자. 제발</description>
     </item>
     
   </channel>

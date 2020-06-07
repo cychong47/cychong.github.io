@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2020 22:14:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 최고의 팀은 무엇이 다른가</title>
+      <link>https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/</link>
+      <pubDate>Sat, 25 Aug 2018 10:08:40 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/</guid>
+      <description>팀원이 안전하다고 느끼는가? 구글 * 지위에 연연하지 않음. * 누가 책임질 지 고민하지 않음 * 어려운 문제를 풀기 위해 모든 집단을 토론시킴 미사일리어 * 미국의 미사</description>
+    </item>
     
     <item>
       <title>(책) 리모트</title>
@@ -181,15 +190,6 @@
       <description>Toward 5G RAN virtualization by Intel and Astri
 http://astri.oeg
 Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY Split - HARQ processing in RRU(How???) Lower PHY Split - High FB overhead but smallest packet latency.  Good for JT and JR for COMP Good for Massive MIMO and Ultra low-latency communication(Why?)   FAPI based MAC/PHY communication  L1 adaptation layer for MAC/PHY split (and Lower PHY Split?)    MAC/PHY split in one CPU  MAC/PHY split in one machine but netrwork based MAC/PHY communication over OVS   Virtual Cell  A group of physical cells form a Virtual Cell which does not require HO between the physical cells.</description>
-    </item>
-    
-    <item>
-      <title>(책) 도쿄대 교수가 제자들에게 주는 쓴소리</title>
-      <link>https://cychong47.github.io/2018/07/advice_from_tokyo_professor/</link>
-      <pubDate>Sat, 07 Jul 2018 15:00:28 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2018/07/advice_from_tokyo_professor/</guid>
-      <description>다양한 분야에 대한 조언 p20 목표가 명확하겨 정답이 있는 일을 하는 경주마에서 길 잃은 양으로 p22 지식을 더 많이 아는 것이 아닌 아는 지식으로 뭘 할 지 Learn by doing. 결과가 아닌 과정</description>
     </item>
     
   </channel>
