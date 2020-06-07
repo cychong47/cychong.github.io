@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>http on Another blog</title>
-    <link>https://example.com/tags/http/</link>
+    <link>https://cychong47.github.io/tags/http/</link>
     <description>Recent content in http on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 01 Oct 2017 09:36:35 +0900</lastBuildDate>
     
-        <atom:link href="https://example.com/tags/http/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cychong47.github.io/tags/http/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>빨리 해봐야 소용없다</title>
-      <link>https://example.com/post/no-need-to-rush/</link>
+      <link>https://cychong47.github.io/post/no-need-to-rush/</link>
       <pubDate>Wed, 11 May 2016 09:59:23 +0900</pubDate>
       
-      <guid>https://example.com/post/no-need-to-rush/</guid>
+      <guid>https://cychong47.github.io/post/no-need-to-rush/</guid>
       <description>개발자의 품을 가벼이 여기는 조직에서 일 할때는 일정보다 일을 빨리하면 안된다. 기껏 한 일이 아무 소용없을 때가 많다.</description>
     </item>
     
     <item>
       <title>Ghost 본문 다 보이기</title>
-      <link>https://example.com/post/display-post-by-default-ghost/</link>
+      <link>https://cychong47.github.io/post/display-post-by-default-ghost/</link>
       <pubDate>Mon, 09 May 2016 15:23:57 +0900</pubDate>
       
-      <guid>https://example.com/post/display-post-by-default-ghost/</guid>
+      <guid>https://cychong47.github.io/post/display-post-by-default-ghost/</guid>
       <description>theme을 수정해서 ghost blog 화면에서 글 본문이 다 나오도록 할 수 있다. 대신 theme마다 조금씩 적용 방법이 다른데 기본적으로 변경해야 할 내용은 동일 casper theme cas</description>
     </item>
     
     <item>
       <title>Frag &amp; Reassembly Test</title>
-      <link>https://example.com/post/frag-reassembly-test/</link>
+      <link>https://cychong47.github.io/post/frag-reassembly-test/</link>
       <pubDate>Sun, 01 May 2016 15:35:28 +0900</pubDate>
       
-      <guid>https://example.com/post/frag-reassembly-test/</guid>
+      <guid>https://cychong47.github.io/post/frag-reassembly-test/</guid>
       <description>set environment export RTE_ARCH=x86_64 export RTE_SDK=/home/cychong/Work/dpdk-2.1.0 export RTE_TARGET=x86_64-native-linuxapp-gcc export RTE_OUTPUT=$RTE_SDK/$RTE_TARGET  run sudo ./build/ip_reassembly -c 0x1 -n 4 -m 1000M --no-huge --no-pci --no-hpet -- --display_pps 1 --tx_pps 10  </description>
     </item>
     
     <item>
       <title>(책) 소프트 스킬</title>
-      <link>https://example.com/post/soft-skill/</link>
+      <link>https://cychong47.github.io/post/soft-skill/</link>
       <pubDate>Tue, 19 Apr 2016 10:25:08 +0900</pubDate>
       
-      <guid>https://example.com/post/soft-skill/</guid>
+      <guid>https://cychong47.github.io/post/soft-skill/</guid>
       <description>2 다른 이들과 달리 멋지게 시작하라 자신의 경력을 사업으로 봐야 한다. 자신의 정체성이나 경력은 조직에서 주어진 역할과 별개로 존재한다고 생각 팔수 있는 제품이나 서</description>
     </item>
     
     <item>
       <title>DPDK IPv4 reassembly</title>
-      <link>https://example.com/post/dpdk-ipv4-reassembly/</link>
+      <link>https://cychong47.github.io/post/dpdk-ipv4-reassembly/</link>
       <pubDate>Thu, 24 Mar 2016 15:03:55 +0900</pubDate>
       
-      <guid>https://example.com/post/dpdk-ipv4-reassembly/</guid>
+      <guid>https://cychong47.github.io/post/dpdk-ipv4-reassembly/</guid>
       <description>rte_ipv4_frag_reassemble_packet() ip_frag_find() 기존에 존재하는 flow면 해당 flow를 저장한 entry 정보를(ip_frag_pkt *pkg) 신규 flow인 경우 해당 신규 flow를 저장할 신규 혹은 재사용된</description>
     </item>
     
     <item>
       <title>(책) Becoming a better Programmer</title>
-      <link>https://example.com/post/becoming-a-better-programmer/</link>
+      <link>https://cychong47.github.io/post/becoming-a-better-programmer/</link>
       <pubDate>Mon, 14 Mar 2016 14:50:15 +0900</pubDate>
       
-      <guid>https://example.com/post/becoming-a-better-programmer/</guid>
+      <guid>https://cychong47.github.io/post/becoming-a-better-programmer/</guid>
       <description>코드에 신경쓰기 어떤 코드든 간에 수정한 후에는 이전 보다 나아져야 한다 기능이 추가된 것은 &amp;lsquo;나아진&amp;rsquo; 것이 아니다. 기능이 추가되고, 코</description>
     </item>
     
     <item>
       <title>DPDK new mbuf 사용 주의사항</title>
-      <link>https://example.com/post/header-length-in-mbuf/</link>
+      <link>https://cychong47.github.io/post/header-length-in-mbuf/</link>
       <pubDate>Sun, 06 Mar 2016 08:22:24 +0900</pubDate>
       
-      <guid>https://example.com/post/header-length-in-mbuf/</guid>
+      <guid>https://cychong47.github.io/post/header-length-in-mbuf/</guid>
       <description>l2_len, l3_len, l4_len 등을 사용하는 라이브러리가 존재함 reassembly Tx checksum offload Reassembly rte_ipv6_frag_reassemble_packet(), rte_ipv4_frag_reassemble_packet() Incoming mbuf should have its l2_len and l3_len fields setup correctly. L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to fill l2_len and l3_len in mbuf set the flags PKT_TX_TCP_CKSUM, PKT_TX_SCTP_CKSUM or PKT_TX_UDP_CKSUM set the flag PKT_TX_IPV4 or PKT_TX_IPV6 calculate</description>
     </item>
     
     <item>
       <title>KNI가 buffer를 free 하는 방법</title>
-      <link>https://example.com/post/how_kni_free_mbuf/</link>
+      <link>https://cychong47.github.io/post/how_kni_free_mbuf/</link>
       <pubDate>Sun, 06 Mar 2016 08:17:58 +0900</pubDate>
       
-      <guid>https://example.com/post/how_kni_free_mbuf/</guid>
+      <guid>https://cychong47.github.io/post/how_kni_free_mbuf/</guid>
       <description>DPDK to KNI RX KNI는 rx_q로부터 mbuf를 수신한 후 data_len 크기의 skb를 할당하여 데이터를 복사한 후 netif_rx를 호출한다. 그러므로 mbuf는 KNI kernel m</description>
     </item>
     
     <item>
       <title>(Scapy) Suppress Scapy warning message</title>
-      <link>https://example.com/post/scapy-suppress-scapy-warning-message/</link>
+      <link>https://cychong47.github.io/post/scapy-suppress-scapy-warning-message/</link>
       <pubDate>Thu, 03 Mar 2016 14:50:24 +0900</pubDate>
       
-      <guid>https://example.com/post/scapy-suppress-scapy-warning-message/</guid>
+      <guid>https://cychong47.github.io/post/scapy-suppress-scapy-warning-message/</guid>
       <description>Without Suppressing Scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information. &amp;gt;&amp;gt;&amp;gt; from scapy.all import * WARNING: No route found for IPv6 destination :: (no default route?) &amp;gt;&amp;gt;&amp;gt;  Suppress scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.</description>
     </item>
     
     <item>
       <title>how to build IPsec packet with scapy</title>
-      <link>https://example.com/post/how-to-use-snapy-for-ipsec/</link>
+      <link>https://cychong47.github.io/post/how-to-use-snapy-for-ipsec/</link>
       <pubDate>Sun, 14 Feb 2016 14:59:42 +0900</pubDate>
       
-      <guid>https://example.com/post/how-to-use-snapy-for-ipsec/</guid>
+      <guid>https://cychong47.github.io/post/how-to-use-snapy-for-ipsec/</guid>
       <description>import modules $ python &amp;gt;&amp;gt;&amp;gt; from scapy.all import * &amp;gt;&amp;gt;&amp;gt; from scapy.layers.ipsec import * build plaintext packet &amp;gt;&amp;gt;&amp;gt; p = IP(src=&#39;1.1.1.1&#39;, dst=&#39;2.2.2.2&#39;) / TCP(sport=45012, dport=80) / Raw(&#39;testdata&#39;) &amp;gt;&amp;gt;&amp;gt; p = IP(str(p)) setup SA &amp;gt;&amp;gt;&amp;gt; sa = SecurityAssociation(ESP, spi=0xdeadbeef, crypt_algo=&#39;AES-CBC&#39;,crypt_key=&#39;sixteenbytes key&#39;) Encrypt w/o IV &amp;gt;&amp;gt;&amp;gt; e = sa.encrypt(p, 5) &amp;gt;&amp;gt;&amp;gt; e &amp;lt;IP version=4L ihl=5L tos=0x0 len=76 id=1 flags= frag=0L ttl=64 proto=esp chksum=0x747a src=1.1.1.1 dst=2.2.2.2 |&amp;lt;ESP spi=0xdeadbeef seq=5 data=&#39;uD\x7fdj19\xe7\xc4\xff8\x10\xcdQ\xf0\xa6\x1e!\x84\xc3&amp;gt;!\x18\xa6\xf6\xb8\x93\xc6it\x9a\xfc\x1c\xee\xe5C\xcd\xf0\x7fD\xca\x8d\xadKh\xa8\xe5x&#39; |&amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt; e.show()</description>
     </item>
     
     <item>
       <title>fragment missing test with scapy</title>
-      <link>https://example.com/post/fragment-missing-test-with-scapy/</link>
+      <link>https://cychong47.github.io/post/fragment-missing-test-with-scapy/</link>
       <pubDate>Sun, 14 Feb 2016 13:57:41 +0900</pubDate>
       
-      <guid>https://example.com/post/fragment-missing-test-with-scapy/</guid>
+      <guid>https://cychong47.github.io/post/fragment-missing-test-with-scapy/</guid>
       <description>다음과 같이 scapy를 이용해서 fragment를 쉽게 만들 수 있다. from scapy.all import * dip=&amp;quot;10.0.0.1&amp;quot; payload=&amp;quot; &amp;quot;*1000 packet=IP(dst=dip)/UDP(dport=0x1234)/payload frag_list=fragment(packet,fragsize=500) counter=1 for fragment in frag_list: print &amp;quot;Packet no%d&amp;quot; %counter print fragment.show() counter+=1 send(fragment) frag_list에서 counter 변수를 확</description>
     </item>
     
     <item>
       <title>Vagrant</title>
-      <link>https://example.com/post/vagrant/</link>
+      <link>https://cychong47.github.io/post/vagrant/</link>
       <pubDate>Sun, 14 Feb 2016 07:52:01 +0900</pubDate>
       
-      <guid>https://example.com/post/vagrant/</guid>
+      <guid>https://cychong47.github.io/post/vagrant/</guid>
       <description>Vagrant fd.io의 개발 환경 구성하는 문서를 보니 vagrant를 사용한다. 그런데 또 virtualbox니 vmware 이야기를 한다. 이전에도 vagrant라는 단</description>
     </item>
     
     <item>
       <title>fd.io</title>
-      <link>https://example.com/post/fd-io-tree/</link>
+      <link>https://cychong47.github.io/post/fd-io-tree/</link>
       <pubDate>Sat, 13 Feb 2016 05:51:52 +0900</pubDate>
       
-      <guid>https://example.com/post/fd-io-tree/</guid>
+      <guid>https://cychong47.github.io/post/fd-io-tree/</guid>
       <description>├── build-data │ ├── packages │ └── platforms ├── build-root │ ├── deb │ │ └── debian │ │ └── source │ ├── emacs-lisp │ ├── packages │ ├── rpm │ ├── scripts │ └── vagrant ├── dpdk │ ├── dkms │ ├── dpdk-2.1.0_patches │ └── dpdk-2.2.0_patches ├── g2 ├── gmod │ └── gmod ├── perftool ├── sample-plugin │ └── sample ├── svm ├── test │ ├── resources │ │ ├── libraries │ │ │ ├── bash │ │ │ ├── python │ │ │ └── robot │ │ │ └── vat │ │ └── templates │ │ └── vat │ └── tests │ └── suites │ ├── bridge_domain │ └── vhost_user_dummy ├── vlib │ ├── example │ └── vlib │ └── unix ├── vlib-api │ ├── vlibapi │ ├── vlibmemory │ └── vlibsocket ├── vnet │ ├── etc │ │ └── scripts │ │ ├── dhcp │ │ ├── ludd-cluster-1 │ │ ├── ludd-cluster-3 │ │ ├── mpls-o-ethernet │ │ ├── mpls-o-gre │ │ ├── sr │ │ └── virl │ └── vnet │ ├── cdp │ ├── classify │ ├── devices │ │ ├── dpdk │ │ ├── ssvm │ │ └── virtio │ ├── dhcp │ ├── dhcpv6 │ ├── ethernet │ ├── flow │ ├── gre │ ├── hdlc │ ├── ip │ ├── ipsec │ ├── l2 │ ├── l2tp │ ├── lawful-intercept │ ├── lisp-gpe │ ├── llc │ ├── map │ │ └── examples │ ├── mcast │ ├── mpls-gre │ ├── nsh-gre │ ├── nsh-vxlan-gpe │ ├── osi │ ├── pg │ ├── plugin │ ├── policer │ ├── ppp │ ├── snap │ ├── sr │ ├── srp │ ├── unix │ ├── vcgn │ └── vxlan ├── vpp │ ├── api │ ├── app │ ├── conf │ ├── oam │ ├── stats │ └── vnet ├── vpp-api-test │ ├── scripts │ └── vat ├── vpp-japi │ ├── japi │ │ ├── org │ │ │ └── openvpp │ │ │ └── vppjapi │ │ └── test │ └── m4 ├── vppapigen └── vppinfra ├── config ├── tools └── vppinfra  </description>
     </item>
     
     <item>
       <title>fd.io</title>
-      <link>https://example.com/post/fd-io/</link>
+      <link>https://cychong47.github.io/post/fd-io/</link>
       <pubDate>Sat, 13 Feb 2016 01:29:43 +0900</pubDate>
       
-      <guid>https://example.com/post/fd-io/</guid>
+      <guid>https://cychong47.github.io/post/fd-io/</guid>
       <description>2016년 2월 11일 공개된 CISCO 주도의 프로젝트. 무려 2002년부터 개발한 것으로 현재 버전은 3번째 revision이라고 한다. 간만에 dpdk.org mailing list에 들</description>
     </item>
     
     <item>
       <title>왜 공부해야 하는가에 대한 간단하지만 명확한 답</title>
-      <link>https://example.com/post/why_have_to_keep_studying/</link>
+      <link>https://cychong47.github.io/post/why_have_to_keep_studying/</link>
       <pubDate>Wed, 10 Feb 2016 04:23:12 +0900</pubDate>
       
-      <guid>https://example.com/post/why_have_to_keep_studying/</guid>
+      <guid>https://cychong47.github.io/post/why_have_to_keep_studying/</guid>
       <description>왜 공부해야 하는가 사회의 변화속도는 우리의 변화속도를 압도하기 때문입니다. &amp;lt;누가 내 치즈를 옮겼을까&amp;gt;에 잘 묘사되어 있지요. 따라잡지 않으면 뒤</description>
     </item>
     
     <item>
       <title>DPDK NIC 초기화</title>
-      <link>https://example.com/post/dpdk_nic_init/</link>
+      <link>https://cychong47.github.io/post/dpdk_nic_init/</link>
       <pubDate>Tue, 09 Feb 2016 14:54:21 +0900</pubDate>
       
-      <guid>https://example.com/post/dpdk_nic_init/</guid>
+      <guid>https://cychong47.github.io/post/dpdk_nic_init/</guid>
       <description>constructor attribute http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/ constructor attribute을 가진 함수는 main 함수를 실행하기 전에 호출한다. 예제 (출처) #include &amp;lt;stdio.h&amp;gt; void begin (void) __attribute__((constructor)); void end (void) __attribute__((destructor)); int main (void) { printf (&amp;quot;\nInside main ()&amp;quot;); } void begin (void) { printf (&amp;quot;\nIn begin ()&amp;quot;); } void end</description>
     </item>
     
     <item>
       <title>Introducing Python</title>
-      <link>https://example.com/post/introducing-python/</link>
+      <link>https://cychong47.github.io/post/introducing-python/</link>
       <pubDate>Mon, 08 Feb 2016 13:25:34 +0900</pubDate>
       
-      <guid>https://example.com/post/introducing-python/</guid>
+      <guid>https://cychong47.github.io/post/introducing-python/</guid>
       <description>Introducing Python 을 판교어린이도서관에서 짧게 보고 적은 아이템들 python3 based Decorator는 공부가 필요한 내용 sys.path : module 검색 경로 __init__.py 파일이 있으면 그 디렉토리를 PKG로 간주함</description>
     </item>
     
     <item>
       <title>SR-IOV and DPDK</title>
-      <link>https://example.com/post/sriov-and-dpdk/</link>
+      <link>https://cychong47.github.io/post/sriov-and-dpdk/</link>
       <pubDate>Sun, 07 Feb 2016 23:40:26 +0900</pubDate>
       
-      <guid>https://example.com/post/sriov-and-dpdk/</guid>
+      <guid>https://cychong47.github.io/post/sriov-and-dpdk/</guid>
       <description>SR-IOV and DPDK Accelerating the NFV Data Plane : SR-IOV and DPDK… in my own words 를 읽고 요약 Before HW assisted Virtualisation SR-IOV 전까지는 VMM이 패킷 송수신에 매번 개입해야 했음. 1st interrupt from NIC to VMM 2nd interrupt from VMM to VM Intel VMDq Only one interrupt</description>
     </item>
     
     <item>
       <title>DPDK 2.2 crypto dev API</title>
-      <link>https://example.com/post/dpdk-2-2-crypto-dev-api/</link>
+      <link>https://cychong47.github.io/post/dpdk-2-2-crypto-dev-api/</link>
       <pubDate>Sun, 24 Jan 2016 15:08:11 +0900</pubDate>
       
-      <guid>https://example.com/post/dpdk-2-2-crypto-dev-api/</guid>
+      <guid>https://cychong47.github.io/post/dpdk-2-2-crypto-dev-api/</guid>
       <description>pktmbuf_offload pool은 rte_pktmbuf_offload_pool_create()를 사용하여 생성 l2fwd_mbuf_ol_pool = rte_pktmbuf_offload_pool_create( &amp;quot;mbuf_offload_pool&amp;quot;, NB_MBUF, 128, 0, rte_socket_id()); 할당은 rte_pktmbuf_o</description>
     </item>
     
     <item>
       <title>DPDK based applications</title>
-      <link>https://example.com/post/dpdk_based_apps/</link>
+      <link>https://cychong47.github.io/post/dpdk_based_apps/</link>
       <pubDate>Sun, 24 Jan 2016 14:59:18 +0900</pubDate>
       
-      <guid>https://example.com/post/dpdk_based_apps/</guid>
+      <guid>https://cychong47.github.io/post/dpdk_based_apps/</guid>
       <description>2016.02.10 기준 DPDK-dump TRex - Realistic traffic generator git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK</description>
     </item>
     

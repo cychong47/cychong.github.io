@@ -2,191 +2,191 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Book on Another blog</title>
-    <link>https://example.com/categories/book/</link>
+    <link>https://cychong47.github.io/categories/book/</link>
     <description>Recent content in Book on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 15 Dec 2019 06:46:24 +0900</lastBuildDate>
     
-        <atom:link href="https://example.com/categories/book/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cychong47.github.io/categories/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Divide &amp; Conquer</title>
-      <link>https://example.com/post/divide-conquer/</link>
+      <link>https://cychong47.github.io/post/divide-conquer/</link>
       <pubDate>Sun, 21 Jun 2015 08:24:05 +0900</pubDate>
       
-      <guid>https://example.com/post/divide-conquer/</guid>
+      <guid>https://cychong47.github.io/post/divide-conquer/</guid>
       <description>출처 : http://m.news.naver.com/read.nhn?mode=LSD&amp;amp;sid1=001&amp;amp;oid=008&amp;amp;aid=0003492855 4.어려운 문제에 무턱대고 덤비지 마라 어렵고 힘든 문제에 부딪히면 지레 겁을 먹기 쉽다. 아니면 무대포로 앞뒤 재지 않고 그냥 밀어붙인다. 그러나 구글과 페</description>
     </item>
     
     <item>
       <title>의도된 마감효과?</title>
-      <link>https://example.com/post/magamhyogwareul-norineun-geonga/</link>
+      <link>https://cychong47.github.io/post/magamhyogwareul-norineun-geonga/</link>
       <pubDate>Thu, 18 Jun 2015 00:00:45 +0900</pubDate>
       
-      <guid>https://example.com/post/magamhyogwareul-norineun-geonga/</guid>
+      <guid>https://cychong47.github.io/post/magamhyogwareul-norineun-geonga/</guid>
       <description>(예를 들어) 분명 물리적으로 10개월이 필요한 일이 있다. 일정이 급하다고 6개월내 해 내라고 한다. 열심히 하지만 결국 6개월 기한은 넘어가고 겨우겨우 (담당자</description>
     </item>
     
     <item>
       <title>착각과 자만</title>
-      <link>https://example.com/post/cagga/</link>
+      <link>https://cychong47.github.io/post/cagga/</link>
       <pubDate>Thu, 28 May 2015 14:14:28 +0900</pubDate>
       
-      <guid>https://example.com/post/cagga/</guid>
+      <guid>https://cychong47.github.io/post/cagga/</guid>
       <description>스스로 잘한다고 공공연하게 말하는 친구의 말은 믿을 수가 없다. 자기가 잘하는 단 하나만 생각해서 잘한다고 말하지만, 그게 SW 개발자가 가져야 할 모든 건 아닌데. 그것</description>
     </item>
     
     <item>
       <title>Coding Style의 중요성</title>
-      <link>https://example.com/post/coding-styleyi-jungyoseong/</link>
+      <link>https://cychong47.github.io/post/coding-styleyi-jungyoseong/</link>
       <pubDate>Mon, 25 May 2015 12:44:28 +0900</pubDate>
       
-      <guid>https://example.com/post/coding-styleyi-jungyoseong/</guid>
+      <guid>https://cychong47.github.io/post/coding-styleyi-jungyoseong/</guid>
       <description>대부분의 개발자는 현업에서 선배 개발자들이 작성한 코드를 유지보수하면서 코드 작성 방법을 배우게 됩니다. 회사에 따라 다르긴 하겠지만, 이렇게 접한 대부분의 코드</description>
     </item>
     
     <item>
       <title>DPDK Coding style</title>
-      <link>https://example.com/post/dpdk-coding-style/</link>
+      <link>https://cychong47.github.io/post/dpdk-coding-style/</link>
       <pubDate>Thu, 21 May 2015 14:51:37 +0900</pubDate>
       
-      <guid>https://example.com/post/dpdk-coding-style/</guid>
+      <guid>https://cychong47.github.io/post/dpdk-coding-style/</guid>
       <description>출처 : DPDK mailing list Coding Style Description This document specifies the preferred style for source files in the DPDK source tree. It is based on the Linux Kernel coding guidelines and the FreeBSD 7.2 Kernel Developer&amp;rsquo;s Manual (see man style(9)), but was heavily modified for the needs of the DPDK. General Guidelines The rules and guidelines given in this document cannot cover every situation, so the following general</description>
     </item>
     
     <item>
       <title>Docker for dummies 정리</title>
-      <link>https://example.com/post/docker-for-dummies-jeongri/</link>
+      <link>https://cychong47.github.io/post/docker-for-dummies-jeongri/</link>
       <pubDate>Wed, 20 May 2015 14:18:04 +0900</pubDate>
       
-      <guid>https://example.com/post/docker-for-dummies-jeongri/</guid>
+      <guid>https://cychong47.github.io/post/docker-for-dummies-jeongri/</guid>
       <description>출처 : Docker 무작정 따라하기 참고 : 가장 빨리 배우는 Docker</description>
     </item>
     
     <item>
       <title>(책) 죽어라 일만 하는 사람은 절대 모르는 스마트한 성공들</title>
-      <link>https://example.com/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</link>
+      <link>https://cychong47.github.io/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</link>
       <pubDate>Mon, 18 May 2015 14:30:24 +0900</pubDate>
       
-      <guid>https://example.com/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</guid>
+      <guid>https://cychong47.github.io/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</guid>
       <description>p13 나는 사업을 하면서 수시로 수확체감의 법칙을 실감한다. 어떤 사업이든 일정 수준에 도달하면 노동이나 자본 등 생산 요소를 늘려도 결과물은 비례해서 증가하지 않는다</description>
     </item>
     
     <item>
       <title>(책) 단</title>
-      <link>https://example.com/post/dan/</link>
+      <link>https://cychong47.github.io/post/dan/</link>
       <pubDate>Tue, 12 May 2015 12:40:15 +0900</pubDate>
       
-      <guid>https://example.com/post/dan/</guid>
+      <guid>https://cychong47.github.io/post/dan/</guid>
       <description>&amp;lsquo;&amp;lsquo;단의 공식&amp;rsquo;&amp;rsquo; 버려라 : 중요한 것을 위해 덜 중요한 것을 버리는 것. &amp;lsquo;더 많이&amp;rsquo</description>
     </item>
     
     <item>
       <title>Designing for Service Agility</title>
-      <link>https://example.com/post/wp-designing-for-service-agility/</link>
+      <link>https://cychong47.github.io/post/wp-designing-for-service-agility/</link>
       <pubDate>Thu, 08 Jan 2015 15:33:34 +0900</pubDate>
       
-      <guid>https://example.com/post/wp-designing-for-service-agility/</guid>
+      <guid>https://cychong47.github.io/post/wp-designing-for-service-agility/</guid>
       <description>Heavy Reading 2014 December http://contextream.com/media/docs/HR-ConteXtream-Fit-VNF-WP-12-8.pdf The important Factors Driving NFV deployment is Service Agility &amp;amp; Flexibility In a virtual environment, where applications are extracted from hardware, VNF de- signers face different challenges and opportunities. If operators are to achieve a step change in service agility, it should be possible to provision VNFs on a quasi-on- demand basis. Fit VNFs can be dedicated to a single function and then connected together</description>
     </item>
     
     <item>
       <title>Intel Embedded Tech Forum 2014</title>
-      <link>https://example.com/post/intel-embedded-tech-forum-2014/</link>
+      <link>https://cychong47.github.io/post/intel-embedded-tech-forum-2014/</link>
       <pubDate>Tue, 09 Dec 2014 10:38:08 +0900</pubDate>
       
-      <guid>https://example.com/post/intel-embedded-tech-forum-2014/</guid>
+      <guid>https://cychong47.github.io/post/intel-embedded-tech-forum-2014/</guid>
       <description>Small Cell Big Cell 256 user 이하를 small cell로 정의 mini-CRAN Paris Hill SOC을 이용하는 경우 RRH에서 LTE/3G DSP+DFE 까지 처리하고 Ethernet으로 IA core로 전달. Altiostar 구조와 유사한 듯</description>
     </item>
     
     <item>
       <title>R.I.P OVDK</title>
-      <link>https://example.com/post/r-i-p-ovdk/</link>
+      <link>https://cychong47.github.io/post/r-i-p-ovdk/</link>
       <pubDate>Thu, 27 Nov 2014 14:47:38 +0900</pubDate>
       
-      <guid>https://example.com/post/r-i-p-ovdk/</guid>
+      <guid>https://cychong47.github.io/post/r-i-p-ovdk/</guid>
       <description>며칠 밖에 보지 않았지만, 그래도 내용을 분석해 보려고 했던 OVDK인데, 오늘 기사를 보니 Intel에서 공식적으로 OVDK의 개발 중단을 발표했단다. Intel Dead-Ends Its</description>
     </item>
     
     <item>
       <title>ODP</title>
-      <link>https://example.com/post/odp/</link>
+      <link>https://cychong47.github.io/post/odp/</link>
       <pubDate>Wed, 19 Nov 2014 14:02:19 +0900</pubDate>
       
-      <guid>https://example.com/post/odp/</guid>
+      <guid>https://cychong47.github.io/post/odp/</guid>
       <description>Cavium Demonstrates Multiple OpenDataPlane Applications at Linaro Connect USA 2014 Cavium ThunderX 48 Core 2.5Ghz ARM Server SoC   Cavium ThunderX 48 Core 2.5Ghz ARM Server SoC Cavium ThunderX is the world&amp;rsquo;s fastest ARM Processor, featuring 48 ARMv8 64bit cores at 2.5Ghz each, with two SoC&amp;rsquo;s possible per motherboard, this means 240Ghz of compuete power per Server Board. Providing extremely high performance at much lower power, much lower cost, much more optimized than any x86 server system.</description>
     </item>
     
     <item>
       <title>DPDK Summit 2014 Videos</title>
-      <link>https://example.com/post/dpdk-summit-2014-videos/</link>
+      <link>https://cychong47.github.io/post/dpdk-summit-2014-videos/</link>
       <pubDate>Wed, 19 Nov 2014 13:59:07 +0900</pubDate>
       
-      <guid>https://example.com/post/dpdk-summit-2014-videos/</guid>
+      <guid>https://cychong47.github.io/post/dpdk-summit-2014-videos/</guid>
       <description> Application Performance Tuning and Future Optimizations in DPDK by Venky Venkatesan DPDK in a Virtual World by Bhavesh Davda Rashmin Patel High Performance Networking Leveraging the DPDK and the Growing Community by Thomas Monj alon Multi Socket Ferrari for NFV by Laszlo Vadkerti Andras Kovacs Lightning Fast IO with PacketDirect by Gabriel Silva A High Performance vSwitch of the User by the User for the User by Yoshihiro Nakajima Is It Time to Revisit the IP Stack in the Linux Kernel and KVM by Jun Xu Closing Remarks by Tim ODriscoll  </description>
     </item>
     
     <item>
       <title>(펌) 부실한 공유문화를 지배하는 개발자의 심리</title>
-      <link>https://example.com/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</link>
+      <link>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</link>
       <pubDate>Mon, 17 Nov 2014 13:35:16 +0900</pubDate>
       
-      <guid>https://example.com/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</guid>
+      <guid>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</guid>
       <description>정말 하나같이 핵심적인 내용인데 정작 이걸 알아야 하는 사람은 이런 데 관심이 없겠지. 출처 : 부실한 공유문화를 지배하는 개발자의 심리 전반적으로 공유문화가 부실하</description>
     </item>
     
     <item>
       <title>Cuckoo Switch</title>
-      <link>https://example.com/post/cuckoo-switch/</link>
+      <link>https://cychong47.github.io/post/cuckoo-switch/</link>
       <pubDate>Sun, 09 Nov 2014 08:48:38 +0900</pubDate>
       
-      <guid>https://example.com/post/cuckoo-switch/</guid>
+      <guid>https://cychong47.github.io/post/cuckoo-switch/</guid>
       <description>Cuckoo 알고리즘을 사용하여 Flow lookup과 flow update 성능을 높힌 것과 DPDK를 이용하여 패킷 처리 성능을 높힌 것 출처 : Scalable, High Performance Ethernet Forwarding with CuckooSwitch DPDK DPDK를 이용한 IO 성능 개선</description>
     </item>
     
     <item>
       <title>(책) 바지 벗고 일하면 안되나요?</title>
-      <link>https://example.com/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</link>
+      <link>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</link>
       <pubDate>Sun, 19 Oct 2014 03:55:01 +0900</pubDate>
       
-      <guid>https://example.com/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</guid>
+      <guid>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</guid>
       <description>원제 : The year without pants p42 방송에서 IDEO가 &amp;ldquo;Deep Dive&amp;quot;라는 아이디어 개발 기법을 써서 닷새 만에 쇼핑카트를 개선하는 과정을 보여주었다. 곧이어 수 많은 기</description>
     </item>
     
     <item>
       <title>내게 권한이 있다면</title>
-      <link>https://example.com/post/naege-gweonhani-issdamyeon/</link>
+      <link>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</link>
       <pubDate>Tue, 14 Oct 2014 14:47:49 +0900</pubDate>
       
-      <guid>https://example.com/post/naege-gweonhani-issdamyeon/</guid>
+      <guid>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</guid>
       <description>우선 할 것은 모든 과제의 진행상황을 투명하게 볼 수 있는 시스템만들기 엑셀로 관리하고 있는 정보에 대해 최적의 대안을 찾아 엑셀 사용을 최소화 하기 파일 서버에 단순히 모</description>
     </item>
     
     <item>
       <title>나영석 PD</title>
-      <link>https://example.com/post/nayeongseog-pd/</link>
+      <link>https://cychong47.github.io/post/nayeongseog-pd/</link>
       <pubDate>Tue, 07 Oct 2014 15:30:34 +0900</pubDate>
       
-      <guid>https://example.com/post/nayeongseog-pd/</guid>
+      <guid>https://cychong47.github.io/post/nayeongseog-pd/</guid>
       <description>창의적인 아이디어를 만들기가 쉽지 않을 텐데, 나름의 노하우가 있다면? 후배들에게 ‘아이디어를 좀 내봐, 너 좋은 아이디어 없냐?’ 하는 회의는 의미 없다. 아이디</description>
     </item>
     
     <item>
       <title>Intel SDN/NFV Forum Korea 2014</title>
-      <link>https://example.com/post/intel-sdnnfv-forum-korea-2014/</link>
+      <link>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</link>
       <pubDate>Sun, 28 Sep 2014 14:09:56 +0900</pubDate>
       
-      <guid>https://example.com/post/intel-sdnnfv-forum-korea-2014/</guid>
+      <guid>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</guid>
       <description>근태를 처리하지 못해 하루 최소 근무시간인 4시간을 채우고 포럼 장소인 리츠칼튼 호텔로 달려(버스타고) 감. 다행히 오후 세션 시작 시간인 1시 10분 전에 도착했지</description>
     </item>
     
     <item>
       <title>(책) Violent Python</title>
-      <link>https://example.com/post/caeg-violent-python/</link>
+      <link>https://cychong47.github.io/post/caeg-violent-python/</link>
       <pubDate>Sat, 27 Sep 2014 16:43:27 +0900</pubDate>
       
-      <guid>https://example.com/post/caeg-violent-python/</guid>
+      <guid>https://cychong47.github.io/post/caeg-violent-python/</guid>
       <description>오래만에 재밌는 책을 봤다. 해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이</description>
     </item>
     

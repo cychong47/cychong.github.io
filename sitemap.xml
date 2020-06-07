@@ -3,3318 +3,3324 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://cychong47.github.io/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>https://cychong47.github.io/categories/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/hugo/</loc>
+    <loc>https://cychong47.github.io/tags/hugo/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/hugo-seutp-with-git/</loc>
+    <loc>https://cychong47.github.io/post/hugo-seutp-with-git/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nginx/</loc>
+    <loc>https://cychong47.github.io/tags/nginx/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/</loc>
+    <loc>https://cychong47.github.io/post/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://cychong47.github.io/tags/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/til/</loc>
+    <loc>https://cychong47.github.io/categories/til/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/wordpress/</loc>
+    <loc>https://cychong47.github.io/tags/wordpress/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/connectx-5/</loc>
+    <loc>https://cychong47.github.io/tags/connectx-5/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cubb/</loc>
+    <loc>https://cychong47.github.io/tags/cubb/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cuphy/</loc>
+    <loc>https://cychong47.github.io/tags/cuphy/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cuvnf/</loc>
+    <loc>https://cychong47.github.io/tags/cuvnf/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/dpdk/</loc>
+    <loc>https://cychong47.github.io/tags/dpdk/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/gpu/</loc>
+    <loc>https://cychong47.github.io/tags/gpu/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nvidia/</loc>
+    <loc>https://cychong47.github.io/tags/nvidia/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/nvidia-vran-solution/</loc>
+    <loc>https://cychong47.github.io/post/nvidia-vran-solution/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/rmda/</loc>
+    <loc>https://cychong47.github.io/tags/rmda/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/vran/</loc>
+    <loc>https://cychong47.github.io/tags/vran/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/database/</loc>
+    <loc>https://cychong47.github.io/tags/database/</loc>
     <lastmod>2020-05-09T15:00:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mysql/</loc>
+    <loc>https://cychong47.github.io/tags/mysql/</loc>
     <lastmod>2020-05-09T15:00:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/recovery/</loc>
+    <loc>https://cychong47.github.io/tags/recovery/</loc>
     <lastmod>2020-05-09T15:00:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/troubleshooting/</loc>
+    <loc>https://cychong47.github.io/tags/troubleshooting/</loc>
     <lastmod>2020-05-09T15:00:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/recover-broken-users-table/</loc>
+    <loc>https://cychong47.github.io/post/recover-broken-users-table/</loc>
     <lastmod>2020-05-09T15:00:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/if-i-have-authority-5-years-later/</loc>
+    <loc>https://cychong47.github.io/post/if-i-have-authority-5-years-later/</loc>
     <lastmod>2020-05-08T14:15:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/life/</loc>
+    <loc>https://cychong47.github.io/tags/life/</loc>
     <lastmod>2020-05-07T14:43:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/new-things-in-last-4-years/</loc>
+    <loc>https://cychong47.github.io/post/new-things-in-last-4-years/</loc>
     <lastmod>2020-05-07T14:43:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/book-so-real/</loc>
+    <loc>https://cychong47.github.io/post/book-so-real/</loc>
     <lastmod>2019-12-15T06:48:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/book/</loc>
+    <loc>https://cychong47.github.io/tags/book/</loc>
     <lastmod>2019-12-15T06:48:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/categories/book/</loc>
+    <loc>https://cychong47.github.io/categories/book/</loc>
     <lastmod>2019-12-15T06:48:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/change-ghost-theme-fizzy/</loc>
+    <loc>https://cychong47.github.io/post/change-ghost-theme-fizzy/</loc>
     <lastmod>2019-12-10T14:12:29+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ghost-theme/</loc>
+    <loc>https://cychong47.github.io/tags/ghost-theme/</loc>
     <lastmod>2019-12-10T14:12:29+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/tag-archive/</loc>
+    <loc>https://cychong47.github.io/post/tag-archive/</loc>
     <lastmod>2019-12-10T13:54:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/post-archive/</loc>
+    <loc>https://cychong47.github.io/post/post-archive/</loc>
     <lastmod>2019-12-10T13:52:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mac-mini-2009/</loc>
+    <loc>https://cychong47.github.io/tags/mac-mini-2009/</loc>
     <lastmod>2019-11-18T15:20:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/mac-mini-2009-upgrade/</loc>
+    <loc>https://cychong47.github.io/post/mac-mini-2009-upgrade/</loc>
     <lastmod>2019-11-18T15:20:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/samuryeog/</loc>
+    <loc>https://cychong47.github.io/post/samuryeog/</loc>
     <lastmod>2019-11-17T11:16:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ghost/</loc>
+    <loc>https://cychong47.github.io/tags/ghost/</loc>
     <lastmod>2019-11-06T14:25:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/kubernetes/</loc>
+    <loc>https://cychong47.github.io/tags/kubernetes/</loc>
     <lastmod>2019-11-06T14:25:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sqlite/</loc>
+    <loc>https://cychong47.github.io/tags/sqlite/</loc>
     <lastmod>2019-11-06T14:25:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/upgrade-ghost-to-v3-0/</loc>
+    <loc>https://cychong47.github.io/post/upgrade-ghost-to-v3-0/</loc>
     <lastmod>2019-11-06T14:25:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/helm/</loc>
+    <loc>https://cychong47.github.io/tags/helm/</loc>
     <lastmod>2019-11-05T14:53:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what-if-helm-command-refuses/</loc>
+    <loc>https://cychong47.github.io/post/what-if-helm-command-refuses/</loc>
     <lastmod>2019-11-05T14:53:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/kubelet/</loc>
+    <loc>https://cychong47.github.io/tags/kubelet/</loc>
     <lastmod>2019-11-05T15:03:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what-if-kubelet-is-not-started/</loc>
+    <loc>https://cychong47.github.io/post/what-if-kubelet-is-not-started/</loc>
     <lastmod>2019-11-05T15:03:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/enable-sctp-in-kubernetes/</loc>
+    <loc>https://cychong47.github.io/post/enable-sctp-in-kubernetes/</loc>
     <lastmod>2019-10-07T15:43:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sctp/</loc>
+    <loc>https://cychong47.github.io/tags/sctp/</loc>
     <lastmod>2019-10-07T15:43:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/upgrade-kubernetes/</loc>
+    <loc>https://cychong47.github.io/post/upgrade-kubernetes/</loc>
     <lastmod>2019-10-07T15:39:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/convention-on-impose-core-requirements/</loc>
+    <loc>https://cychong47.github.io/post/convention-on-impose-core-requirements/</loc>
     <lastmod>2019-10-07T15:46:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cpu/</loc>
+    <loc>https://cychong47.github.io/tags/cpu/</loc>
     <lastmod>2019-10-07T15:46:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nested-chart/</loc>
+    <loc>https://cychong47.github.io/tags/nested-chart/</loc>
     <lastmod>2019-10-07T15:46:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/resources/</loc>
+    <loc>https://cychong47.github.io/tags/resources/</loc>
     <lastmod>2019-10-07T15:46:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/subchart/</loc>
+    <loc>https://cychong47.github.io/tags/subchart/</loc>
     <lastmod>2019-10-07T15:46:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/install-vm-with-multipass/</loc>
+    <loc>https://cychong47.github.io/post/install-vm-with-multipass/</loc>
     <lastmod>2019-09-28T15:19:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/multipass/</loc>
+    <loc>https://cychong47.github.io/tags/multipass/</loc>
     <lastmod>2019-09-28T15:19:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ubuntu/</loc>
+    <loc>https://cychong47.github.io/tags/ubuntu/</loc>
     <lastmod>2019-09-28T15:19:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/vmware/</loc>
+    <loc>https://cychong47.github.io/tags/vmware/</loc>
     <lastmod>2019-09-28T15:19:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/calico/</loc>
+    <loc>https://cychong47.github.io/tags/calico/</loc>
     <lastmod>2019-10-07T15:44:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/setup/</loc>
+    <loc>https://cychong47.github.io/tags/setup/</loc>
     <lastmod>2019-10-07T15:44:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/setup-kubernetes-with-a-single-host/</loc>
+    <loc>https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/</loc>
     <lastmod>2019-10-07T15:44:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ghost-season-5-helm/</loc>
+    <loc>https://cychong47.github.io/post/ghost-season-5-helm/</loc>
     <lastmod>2019-10-07T15:47:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/github/</loc>
+    <loc>https://cychong47.github.io/tags/github/</loc>
     <lastmod>2019-10-07T15:47:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/wifi-5ghz-bluetooth-coexistence/</loc>
+    <loc>https://cychong47.github.io/post/wifi-5ghz-bluetooth-coexistence/</loc>
     <lastmod>2019-08-26T15:50:52+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/calico-cni-1/</loc>
+    <loc>https://cychong47.github.io/post/calico-cni-1/</loc>
     <lastmod>2019-08-22T15:04:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cni/</loc>
+    <loc>https://cychong47.github.io/tags/cni/</loc>
     <lastmod>2019-08-22T15:04:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/container/</loc>
+    <loc>https://cychong47.github.io/tags/container/</loc>
     <lastmod>2020-05-08T23:34:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/network/</loc>
+    <loc>https://cychong47.github.io/tags/network/</loc>
     <lastmod>2019-08-22T15:04:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/boundary-clock/</loc>
+    <loc>https://cychong47.github.io/post/boundary-clock/</loc>
     <lastmod>2019-08-19T13:25:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/til/</loc>
+    <loc>https://cychong47.github.io/tags/til/</loc>
     <lastmod>2019-08-19T13:25:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/microk8s/</loc>
+    <loc>https://cychong47.github.io/tags/microk8s/</loc>
     <lastmod>2019-10-07T15:47:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/setup-ghost-in-microk8s-2/</loc>
+    <loc>https://cychong47.github.io/post/setup-ghost-in-microk8s-2/</loc>
     <lastmod>2019-10-07T15:47:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ghost-deployment-season-4/</loc>
+    <loc>https://cychong47.github.io/post/ghost-deployment-season-4/</loc>
     <lastmod>2019-05-19T13:55:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/kubernetes-networks/</loc>
+    <loc>https://cychong47.github.io/post/kubernetes-networks/</loc>
     <lastmod>2019-05-16T14:10:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/amazon-daily-work/</loc>
+    <loc>https://cychong47.github.io/post/amazon-daily-work/</loc>
     <lastmod>2019-05-16T14:39:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/amazon/</loc>
+    <loc>https://cychong47.github.io/tags/amazon/</loc>
     <lastmod>2019-05-16T14:39:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/manager/</loc>
+    <loc>https://cychong47.github.io/tags/manager/</loc>
     <lastmod>2019-05-16T14:39:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/scrum/</loc>
+    <loc>https://cychong47.github.io/tags/scrum/</loc>
     <lastmod>2019-05-16T14:39:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/install-ubuntu-18-04-1-in-mac-mini-2009/</loc>
+    <loc>https://cychong47.github.io/post/install-ubuntu-18-04-1-in-mac-mini-2009/</loc>
     <lastmod>2019-03-01T00:05:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/linux/</loc>
+    <loc>https://cychong47.github.io/tags/linux/</loc>
     <lastmod>2019-03-01T00:05:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-18-11/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-18-11/</loc>
     <lastmod>2019-10-07T15:48:38+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/agile/</loc>
+    <loc>https://cychong47.github.io/tags/agile/</loc>
     <lastmod>2019-03-17T15:17:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/grow-together/</loc>
+    <loc>https://cychong47.github.io/post/grow-together/</loc>
     <lastmod>2019-03-17T15:17:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/get-the-latest-jetpack-plugin/</loc>
+    <loc>https://cychong47.github.io/post/get-the-latest-jetpack-plugin/</loc>
     <lastmod>2018-12-17T13:24:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/python/</loc>
+    <loc>https://cychong47.github.io/tags/python/</loc>
     <lastmod>2018-12-17T13:24:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/web-scrapping/</loc>
+    <loc>https://cychong47.github.io/tags/web-scrapping/</loc>
     <lastmod>2018-12-17T13:24:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/jetpack/</loc>
+    <loc>https://cychong47.github.io/tags/jetpack/</loc>
     <lastmod>2018-12-10T22:20:48+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/markdown/</loc>
+    <loc>https://cychong47.github.io/tags/markdown/</loc>
     <lastmod>2018-12-10T22:20:48+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/use-jetpack-for-wordpress-5-0/</loc>
+    <loc>https://cychong47.github.io/post/use-jetpack-for-wordpress-5-0/</loc>
     <lastmod>2018-12-10T22:20:48+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/how-nasa-uses-a-wiki-to-reduce-email/</loc>
+    <loc>https://cychong47.github.io/post/how-nasa-uses-a-wiki-to-reduce-email/</loc>
     <lastmod>2018-11-23T11:38:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mediawiki/</loc>
+    <loc>https://cychong47.github.io/tags/mediawiki/</loc>
     <lastmod>2018-11-23T11:38:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nasa/</loc>
+    <loc>https://cychong47.github.io/tags/nasa/</loc>
     <lastmod>2018-11-23T11:38:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/wiki/</loc>
+    <loc>https://cychong47.github.io/tags/wiki/</loc>
     <lastmod>2018-11-23T11:38:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-the-nature-of-software-development/</loc>
+    <loc>https://cychong47.github.io/post/caeg-the-nature-of-software-development/</loc>
     <lastmod>2018-10-18T15:09:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/untitled-3/</loc>
+    <loc>https://cychong47.github.io/post/untitled-3/</loc>
     <lastmod>2018-10-18T03:00:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/silicon-valley-illustrated/</loc>
+    <loc>https://cychong47.github.io/post/silicon-valley-illustrated/</loc>
     <lastmod>2018-09-23T06:37:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/dev-culture/</loc>
+    <loc>https://cychong47.github.io/tags/dev-culture/</loc>
     <lastmod>2018-09-23T06:37:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/blog/</loc>
+    <loc>https://cychong47.github.io/tags/blog/</loc>
     <lastmod>2020-05-08T23:34:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/recovery-failed-wordpress-container/</loc>
+    <loc>https://cychong47.github.io/post/recovery-failed-wordpress-container/</loc>
     <lastmod>2020-05-08T23:34:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/smarter-faster-better/</loc>
+    <loc>https://cychong47.github.io/post/smarter-faster-better/</loc>
     <lastmod>2018-09-04T21:36:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/tags/</loc>
+    <loc>https://cychong47.github.io/post/tags/</loc>
     <lastmod>2018-09-01T23:29:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/the-secret-of-highly-successful-groups/</loc>
+    <loc>https://cychong47.github.io/post/the-secret-of-highly-successful-groups/</loc>
     <lastmod>2018-09-07T14:25:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/remote/</loc>
+    <loc>https://cychong47.github.io/post/remote/</loc>
     <lastmod>2018-09-09T22:24:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/why-danish-bought-a-chair-with-the-first-time-salary/</loc>
+    <loc>https://cychong47.github.io/post/why-danish-bought-a-chair-with-the-first-time-salary/</loc>
     <lastmod>2018-08-16T22:01:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/coupang-the-reason-of-innovation/</loc>
+    <loc>https://cychong47.github.io/post/coupang-the-reason-of-innovation/</loc>
     <lastmod>2018-09-07T14:29:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/i-am-going-to-be/</loc>
+    <loc>https://cychong47.github.io/post/i-am-going-to-be/</loc>
     <lastmod>2018-07-29T21:37:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peopleware/</loc>
+    <loc>https://cychong47.github.io/post/peopleware/</loc>
     <lastmod>2018-07-29T21:36:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/the-future-of-my-children/</loc>
+    <loc>https://cychong47.github.io/post/the-future-of-my-children/</loc>
     <lastmod>2018-07-29T21:34:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/the-work-system/</loc>
+    <loc>https://cychong47.github.io/post/the-work-system/</loc>
     <lastmod>2018-07-29T21:33:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/just-now-dream-love-be-happy/</loc>
+    <loc>https://cychong47.github.io/post/just-now-dream-love-be-happy/</loc>
     <lastmod>2018-07-29T21:32:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/power-of-habit/</loc>
+    <loc>https://cychong47.github.io/post/power-of-habit/</loc>
     <lastmod>2018-09-04T21:56:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/i-want-to-live-in-a-different-korea/</loc>
+    <loc>https://cychong47.github.io/post/i-want-to-live-in-a-different-korea/</loc>
     <lastmod>2018-07-29T21:29:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/purple-people/</loc>
+    <loc>https://cychong47.github.io/post/purple-people/</loc>
     <lastmod>2018-07-29T13:54:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/hon-chang-tong/</loc>
+    <loc>https://cychong47.github.io/post/hon-chang-tong/</loc>
     <lastmod>2018-07-29T13:52:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/your-time/</loc>
+    <loc>https://cychong47.github.io/post/your-time/</loc>
     <lastmod>2018-07-29T13:47:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/slack/</loc>
+    <loc>https://cychong47.github.io/post/slack/</loc>
     <lastmod>2018-07-29T13:43:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/slack/</loc>
+    <loc>https://cychong47.github.io/tags/slack/</loc>
     <lastmod>2018-07-29T13:43:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/five-traps-team-can-fall-into/</loc>
+    <loc>https://cychong47.github.io/post/five-traps-team-can-fall-into/</loc>
     <lastmod>2018-09-16T13:07:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/team/</loc>
+    <loc>https://cychong47.github.io/tags/team/</loc>
     <lastmod>2018-09-16T13:07:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/drive/</loc>
+    <loc>https://cychong47.github.io/post/drive/</loc>
     <lastmod>2018-07-29T12:46:41+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/submit-patch-to-dpdk-with-git/</loc>
+    <loc>https://cychong47.github.io/post/submit-patch-to-dpdk-with-git/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/git/</loc>
+    <loc>https://cychong47.github.io/tags/git/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/homebrew/</loc>
+    <loc>https://cychong47.github.io/tags/homebrew/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/opensource/</loc>
+    <loc>https://cychong47.github.io/tags/opensource/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/patch/</loc>
+    <loc>https://cychong47.github.io/tags/patch/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/perl/</loc>
+    <loc>https://cychong47.github.io/tags/perl/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/developer-culture/</loc>
+    <loc>https://cychong47.github.io/post/developer-culture/</loc>
     <lastmod>2018-09-07T14:40:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/culture/</loc>
+    <loc>https://cychong47.github.io/tags/culture/</loc>
     <lastmod>2018-09-07T14:40:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/</loc>
     <lastmod>2018-09-07T14:40:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/5g/</loc>
+    <loc>https://cychong47.github.io/tags/5g/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/astri-vran/</loc>
+    <loc>https://cychong47.github.io/post/astri-vran/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cran/</loc>
+    <loc>https://cychong47.github.io/tags/cran/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/fapi/</loc>
+    <loc>https://cychong47.github.io/tags/fapi/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/lte/</loc>
+    <loc>https://cychong47.github.io/tags/lte/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/virtualization/</loc>
+    <loc>https://cychong47.github.io/tags/virtualization/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/advice_from_tokyo_professor/</loc>
+    <loc>https://cychong47.github.io/post/advice_from_tokyo_professor/</loc>
     <lastmod>2018-09-16T13:39:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/did-you-write-in-every-morning/</loc>
+    <loc>https://cychong47.github.io/post/did-you-write-in-every-morning/</loc>
     <lastmod>2018-07-01T12:07:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/writing/</loc>
+    <loc>https://cychong47.github.io/tags/writing/</loc>
     <lastmod>2018-07-01T12:07:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mindmap/</loc>
+    <loc>https://cychong47.github.io/tags/mindmap/</loc>
     <lastmod>2018-06-20T14:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/mindmap/</loc>
+    <loc>https://cychong47.github.io/post/mindmap/</loc>
     <lastmod>2018-06-20T14:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ansible/</loc>
+    <loc>https://cychong47.github.io/tags/ansible/</loc>
     <lastmod>2018-06-14T15:21:32+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ansible-playbook/</loc>
+    <loc>https://cychong47.github.io/tags/ansible-playbook/</loc>
     <lastmod>2018-06-14T15:21:32+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/docker/</loc>
+    <loc>https://cychong47.github.io/tags/docker/</loc>
     <lastmod>2019-05-19T13:02:57+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/update-ansible-playbook-for-wordpress/</loc>
+    <loc>https://cychong47.github.io/post/update-ansible-playbook-for-wordpress/</loc>
     <lastmod>2018-06-14T15:21:32+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/getting-started/</loc>
+    <loc>https://cychong47.github.io/tags/getting-started/</loc>
     <lastmod>2019-02-28T14:04:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/wordpress-admin-login-fail/</loc>
+    <loc>https://cychong47.github.io/post/wordpress-admin-login-fail/</loc>
     <lastmod>2019-02-28T14:04:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/elk/</loc>
+    <loc>https://cychong47.github.io/tags/elk/</loc>
     <lastmod>2018-09-09T02:04:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/grafana/</loc>
+    <loc>https://cychong47.github.io/tags/grafana/</loc>
     <lastmod>2018-09-09T02:04:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/grafana-influxdb-and-python/</loc>
+    <loc>https://cychong47.github.io/post/grafana-influxdb-and-python/</loc>
     <lastmod>2018-09-09T02:04:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/influxdb/</loc>
+    <loc>https://cychong47.github.io/tags/influxdb/</loc>
     <lastmod>2018-09-09T02:04:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/monitoring/</loc>
+    <loc>https://cychong47.github.io/tags/monitoring/</loc>
     <lastmod>2018-09-09T02:04:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/install_elasticstack_and_metricbeat/</loc>
+    <loc>https://cychong47.github.io/post/install_elasticstack_and_metricbeat/</loc>
     <lastmod>2018-06-07T13:43:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/elasticsearch/</loc>
+    <loc>https://cychong47.github.io/tags/elasticsearch/</loc>
     <lastmod>2018-06-07T13:43:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/metricbeat/</loc>
+    <loc>https://cychong47.github.io/tags/metricbeat/</loc>
     <lastmod>2018-06-07T13:43:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/2018-01-home-network/</loc>
+    <loc>https://cychong47.github.io/post/2018-01-home-network/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ansible-homebrew/</loc>
+    <loc>https://cychong47.github.io/post/ansible-homebrew/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/recreate-ghost-container/</loc>
+    <loc>https://cychong47.github.io/post/recreate-ghost-container/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ansible-playbook/</loc>
+    <loc>https://cychong47.github.io/post/ansible-playbook/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ansible-exercise-1/</loc>
+    <loc>https://cychong47.github.io/post/ansible-exercise-1/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tutorial/</loc>
+    <loc>https://cychong47.github.io/tags/tutorial/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/install-wordpress-with-docker/</loc>
+    <loc>https://cychong47.github.io/post/install-wordpress-with-docker/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/clienbbs/</loc>
+    <loc>https://cychong47.github.io/post/clienbbs/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/mac-mini-e-windows-10-seolci/</loc>
+    <loc>https://cychong47.github.io/post/mac-mini-e-windows-10-seolci/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/windows10/</loc>
+    <loc>https://cychong47.github.io/tags/windows10/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/vagrant-2/</loc>
+    <loc>https://cychong47.github.io/post/vagrant-2/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/vagrant/</loc>
+    <loc>https://cychong47.github.io/tags/vagrant/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/amdocs/</loc>
+    <loc>https://cychong47.github.io/tags/amdocs/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/amdocs-preps-carrier-grade-version-of-onap/</loc>
+    <loc>https://cychong47.github.io/post/amdocs-preps-carrier-grade-version-of-onap/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/edge/</loc>
+    <loc>https://cychong47.github.io/tags/edge/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mec/</loc>
+    <loc>https://cychong47.github.io/tags/mec/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/onap/</loc>
+    <loc>https://cychong47.github.io/tags/onap/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/amsterdam-release/</loc>
+    <loc>https://cychong47.github.io/tags/amsterdam-release/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</loc>
+    <loc>https://cychong47.github.io/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/lead-or-step-aside/</loc>
+    <loc>https://cychong47.github.io/post/lead-or-step-aside/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what-is-good-manager/</loc>
+    <loc>https://cychong47.github.io/post/what-is-good-manager/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/crond/</loc>
+    <loc>https://cychong47.github.io/tags/crond/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ffmpeg/</loc>
+    <loc>https://cychong47.github.io/tags/ffmpeg/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/launchd/</loc>
+    <loc>https://cychong47.github.io/tags/launchd/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/plist/</loc>
+    <loc>https://cychong47.github.io/tags/plist/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/record-cbs-fm-cinema-music/</loc>
+    <loc>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/backup/</loc>
+    <loc>https://cychong47.github.io/tags/backup/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nas/</loc>
+    <loc>https://cychong47.github.io/tags/nas/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/photo/</loc>
+    <loc>https://cychong47.github.io/tags/photo/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/storage/</loc>
+    <loc>https://cychong47.github.io/tags/storage/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/sajin-baegeob-2017-beojeon/</loc>
+    <loc>https://cychong47.github.io/post/sajin-baegeob-2017-beojeon/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/brew/</loc>
+    <loc>https://cychong47.github.io/tags/brew/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/untitled-2/</loc>
+    <loc>https://cychong47.github.io/post/untitled-2/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/xcrun/</loc>
+    <loc>https://cychong47.github.io/tags/xcrun/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ftp/</loc>
+    <loc>https://cychong47.github.io/tags/ftp/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ftp-server-is-gone-from-high-siera-osx-server/</loc>
+    <loc>https://cychong47.github.io/post/ftp-server-is-gone-from-high-siera-osx-server/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/osx/</loc>
+    <loc>https://cychong47.github.io/tags/osx/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/pyftplib/</loc>
+    <loc>https://cychong47.github.io/tags/pyftplib/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/wp-video-plugin/</loc>
+    <loc>https://cychong47.github.io/post/wp-video-plugin/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/automation/</loc>
+    <loc>https://cychong47.github.io/tags/automation/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ansible/</loc>
+    <loc>https://cychong47.github.io/post/ansible/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/series-4-10-lessons-from-telemetry/</loc>
+    <loc>https://cychong47.github.io/post/series-4-10-lessons-from-telemetry/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/telemetry/</loc>
+    <loc>https://cychong47.github.io/tags/telemetry/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cisco-ios-xr-and-signalfx-demo/</loc>
+    <loc>https://cychong47.github.io/post/cisco-ios-xr-and-signalfx-demo/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cisco/</loc>
+    <loc>https://cychong47.github.io/tags/cisco/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/grpc/</loc>
+    <loc>https://cychong47.github.io/tags/grpc/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/json/</loc>
+    <loc>https://cychong47.github.io/tags/json/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/model-driven/</loc>
+    <loc>https://cychong47.github.io/tags/model-driven/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/netconf/</loc>
+    <loc>https://cychong47.github.io/tags/netconf/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/snmp/</loc>
+    <loc>https://cychong47.github.io/tags/snmp/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/streaming-telemetry-with-google-protocol-buffers/</loc>
+    <loc>https://cychong47.github.io/post/streaming-telemetry-with-google-protocol-buffers/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/gpb/</loc>
+    <loc>https://cychong47.github.io/tags/gpb/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/protobufs/</loc>
+    <loc>https://cychong47.github.io/tags/protobufs/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/protocol-buffer/</loc>
+    <loc>https://cychong47.github.io/tags/protocol-buffer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cisco-yang-data-model/</loc>
+    <loc>https://cychong47.github.io/post/cisco-yang-data-model/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/yang/</loc>
+    <loc>https://cychong47.github.io/tags/yang/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/model-driven-telemetry/</loc>
+    <loc>https://cychong47.github.io/post/model-driven-telemetry/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/brew-install-python/</loc>
+    <loc>https://cychong47.github.io/post/brew-install-python/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/http/</loc>
+    <loc>https://cychong47.github.io/tags/http/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/parsing-http-header-with-scary/</loc>
+    <loc>https://cychong47.github.io/post/parsing-http-header-with-scary/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/scapy/</loc>
+    <loc>https://cychong47.github.io/tags/scapy/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/google/</loc>
+    <loc>https://cychong47.github.io/tags/google/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/googles-load-balancer/</loc>
+    <loc>https://cychong47.github.io/post/googles-load-balancer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/lb/</loc>
+    <loc>https://cychong47.github.io/tags/lb/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/load-balancer/</loc>
+    <loc>https://cychong47.github.io/tags/load-balancer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/maglev/</loc>
+    <loc>https://cychong47.github.io/tags/maglev/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tcp/</loc>
+    <loc>https://cychong47.github.io/tags/tcp/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/meetup/</loc>
+    <loc>https://cychong47.github.io/tags/meetup/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/opnfv/</loc>
+    <loc>https://cychong47.github.io/tags/opnfv/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/opnfv-asia-meeting/</loc>
+    <loc>https://cychong47.github.io/post/opnfv-asia-meeting/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ves-to-opnfv/</loc>
+    <loc>https://cychong47.github.io/post/ves-to-opnfv/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/pinpoint/</loc>
+    <loc>https://cychong47.github.io/tags/pinpoint/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/prediction/</loc>
+    <loc>https://cychong47.github.io/tags/prediction/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ves/</loc>
+    <loc>https://cychong47.github.io/tags/ves/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/barometer/</loc>
+    <loc>https://cychong47.github.io/tags/barometer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/collectd/</loc>
+    <loc>https://cychong47.github.io/tags/collectd/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/kafka/</loc>
+    <loc>https://cychong47.github.io/tags/kafka/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/opnfv-barometer/</loc>
+    <loc>https://cychong47.github.io/post/opnfv-barometer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/summary-at-t-container-strategy/</loc>
+    <loc>https://cychong47.github.io/post/summary-at-t-container-strategy/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/aic/</loc>
+    <loc>https://cychong47.github.io/tags/aic/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/att/</loc>
+    <loc>https://cychong47.github.io/tags/att/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/openstack/</loc>
+    <loc>https://cychong47.github.io/tags/openstack/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</loc>
+    <loc>https://cychong47.github.io/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nfv/</loc>
+    <loc>https://cychong47.github.io/tags/nfv/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/vnf/</loc>
+    <loc>https://cychong47.github.io/tags/vnf/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cncf/</loc>
+    <loc>https://cychong47.github.io/tags/cncf/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/prometheus/</loc>
+    <loc>https://cychong47.github.io/post/prometheus/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/prometheus/</loc>
+    <loc>https://cychong47.github.io/tags/prometheus/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/golang/</loc>
+    <loc>https://cychong47.github.io/tags/golang/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/istio/</loc>
+    <loc>https://cychong47.github.io/tags/istio/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nginmesh/</loc>
+    <loc>https://cychong47.github.io/tags/nginmesh/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ngnix-for-service-mesh/</loc>
+    <loc>https://cychong47.github.io/post/ngnix-for-service-mesh/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/service-mesh/</loc>
+    <loc>https://cychong47.github.io/tags/service-mesh/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/docker-compose/</loc>
+    <loc>https://cychong47.github.io/tags/docker-compose/</loc>
     <lastmod>2019-05-19T13:02:57+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/wordpress-with-docker-compose-failing/</loc>
+    <loc>https://cychong47.github.io/post/wordpress-with-docker-compose-failing/</loc>
     <lastmod>2019-05-19T13:02:57+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/ghost-container-with-docker-compose/</loc>
+    <loc>https://cychong47.github.io/post/ghost-container-with-docker-compose/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/swarm/</loc>
+    <loc>https://cychong47.github.io/tags/swarm/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/try-to-restore-wordpress-docker/</loc>
+    <loc>https://cychong47.github.io/post/try-to-restore-wordpress-docker/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/tesla-pyeomhae-daehan-nayi-saenggag/</loc>
+    <loc>https://cychong47.github.io/post/tesla-pyeomhae-daehan-nayi-saenggag/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/finder/</loc>
+    <loc>https://cychong47.github.io/tags/finder/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/quicklook/</loc>
+    <loc>https://cychong47.github.io/tags/quicklook/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/useful-quicklooks/</loc>
+    <loc>https://cychong47.github.io/post/useful-quicklooks/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/collaboration/</loc>
+    <loc>https://cychong47.github.io/tags/collaboration/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/naver-labs-12-commandments/</loc>
+    <loc>https://cychong47.github.io/post/naver-labs-12-commandments/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/how-to-ship-production-grade-go/</loc>
+    <loc>https://cychong47.github.io/post/how-to-ship-production-grade-go/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/go/</loc>
+    <loc>https://cychong47.github.io/tags/go/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/slack-do-not-disturb/</loc>
+    <loc>https://cychong47.github.io/post/slack-do-not-disturb/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/feedback/</loc>
+    <loc>https://cychong47.github.io/tags/feedback/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/jtbc/</loc>
+    <loc>https://cychong47.github.io/tags/jtbc/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/startup/</loc>
+    <loc>https://cychong47.github.io/tags/startup/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/younkitchen-agile/</loc>
+    <loc>https://cychong47.github.io/post/younkitchen-agile/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/slack-ghost/</loc>
+    <loc>https://cychong47.github.io/post/slack-ghost/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/continuous-deployment/</loc>
+    <loc>https://cychong47.github.io/tags/continuous-deployment/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/feature-flag-driven-development/</loc>
+    <loc>https://cychong47.github.io/post/feature-flag-driven-development/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/feature-flag-driven-development/</loc>
+    <loc>https://cychong47.github.io/tags/feature-flag-driven-development/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/andromeda/</loc>
+    <loc>https://cychong47.github.io/tags/andromeda/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/b4/</loc>
+    <loc>https://cychong47.github.io/tags/b4/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/espresso/</loc>
+    <loc>https://cychong47.github.io/tags/espresso/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/espresso-googles-peering-edge-architecture/</loc>
+    <loc>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/jupiter/</loc>
+    <loc>https://cychong47.github.io/tags/jupiter/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sdn/</loc>
+    <loc>https://cychong47.github.io/tags/sdn/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/message-queue/</loc>
+    <loc>https://cychong47.github.io/tags/message-queue/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/microservice/</loc>
+    <loc>https://cychong47.github.io/tags/microservice/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/why-message-queue-used-for-microservice/</loc>
+    <loc>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/p4/</loc>
+    <loc>https://cychong47.github.io/post/p4/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/p4/</loc>
+    <loc>https://cychong47.github.io/tags/p4/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/english/</loc>
+    <loc>https://cychong47.github.io/tags/english/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/table-or-dish/</loc>
+    <loc>https://cychong47.github.io/post/table-or-dish/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/move-to-docker/</loc>
+    <loc>https://cychong47.github.io/post/move-to-docker/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/how-to-read-2/</loc>
+    <loc>https://cychong47.github.io/post/how-to-read-2/</loc>
     <lastmod>2018-07-28T11:25:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/how-to-read/</loc>
+    <loc>https://cychong47.github.io/post/how-to-read/</loc>
     <lastmod>2018-07-28T11:25:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/anti-work-pattern/</loc>
+    <loc>https://cychong47.github.io/tags/anti-work-pattern/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/fossilization/</loc>
+    <loc>https://cychong47.github.io/post/fossilization/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/too-early-confident/</loc>
+    <loc>https://cychong47.github.io/post/too-early-confident/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/no-need-to-rush/</loc>
+    <loc>https://cychong47.github.io/post/no-need-to-rush/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/display-post-by-default-ghost/</loc>
+    <loc>https://cychong47.github.io/post/display-post-by-default-ghost/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/theme/</loc>
+    <loc>https://cychong47.github.io/tags/theme/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/frag-reassembly-test/</loc>
+    <loc>https://cychong47.github.io/post/frag-reassembly-test/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/soft-skill/</loc>
+    <loc>https://cychong47.github.io/post/soft-skill/</loc>
     <lastmod>2018-07-28T11:21:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/soft-skill/</loc>
+    <loc>https://cychong47.github.io/tags/soft-skill/</loc>
     <lastmod>2018-07-28T11:21:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-ipv4-reassembly/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-ipv4-reassembly/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ipv4/</loc>
+    <loc>https://cychong47.github.io/tags/ipv4/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/reassembly/</loc>
+    <loc>https://cychong47.github.io/tags/reassembly/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/becoming-a-better-programmer/</loc>
+    <loc>https://cychong47.github.io/post/becoming-a-better-programmer/</loc>
     <lastmod>2018-07-28T11:22:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/programming/</loc>
+    <loc>https://cychong47.github.io/tags/programming/</loc>
     <lastmod>2018-07-28T11:22:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/header-length-in-mbuf/</loc>
+    <loc>https://cychong47.github.io/post/header-length-in-mbuf/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mbuf/</loc>
+    <loc>https://cychong47.github.io/tags/mbuf/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/kni/</loc>
+    <loc>https://cychong47.github.io/tags/kni/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/how_kni_free_mbuf/</loc>
+    <loc>https://cychong47.github.io/post/how_kni_free_mbuf/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/study/</loc>
+    <loc>https://cychong47.github.io/tags/study/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/scapy-suppress-scapy-warning-message/</loc>
+    <loc>https://cychong47.github.io/post/scapy-suppress-scapy-warning-message/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/how-to-use-snapy-for-ipsec/</loc>
+    <loc>https://cychong47.github.io/post/how-to-use-snapy-for-ipsec/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ipsec/</loc>
+    <loc>https://cychong47.github.io/tags/ipsec/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EA%B3%B5%EB%B6%80/</loc>
+    <loc>https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/fragment/</loc>
+    <loc>https://cychong47.github.io/tags/fragment/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/fragment-missing-test-with-scapy/</loc>
+    <loc>https://cychong47.github.io/post/fragment-missing-test-with-scapy/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/vagrant/</loc>
+    <loc>https://cychong47.github.io/post/vagrant/</loc>
     <lastmod>2018-04-01T02:38:42+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/fd-io-tree/</loc>
+    <loc>https://cychong47.github.io/post/fd-io-tree/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/fd-io/</loc>
+    <loc>https://cychong47.github.io/post/fd-io/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/intel/</loc>
+    <loc>https://cychong47.github.io/tags/intel/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%83%9D%EA%B0%81/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%83%9D%EA%B0%81/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/why_have_to_keep_studying/</loc>
+    <loc>https://cychong47.github.io/post/why_have_to_keep_studying/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk_nic_init/</loc>
+    <loc>https://cychong47.github.io/post/dpdk_nic_init/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/introducing-python/</loc>
+    <loc>https://cychong47.github.io/post/introducing-python/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/sriov-and-dpdk/</loc>
+    <loc>https://cychong47.github.io/post/sriov-and-dpdk/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sriov/</loc>
+    <loc>https://cychong47.github.io/tags/sriov/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-2-2-crypto-dev-api/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-2-2-crypto-dev-api/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk_based_apps/</loc>
+    <loc>https://cychong47.github.io/post/dpdk_based_apps/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/two-years-back/</loc>
+    <loc>https://cychong47.github.io/post/two-years-back/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/google-work-rules/</loc>
+    <loc>https://cychong47.github.io/post/google-work-rules/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/googlegeist_vs_sci/</loc>
+    <loc>https://cychong47.github.io/post/googlegeist_vs_sci/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sci/</loc>
+    <loc>https://cychong47.github.io/tags/sci/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/anti-agile/</loc>
+    <loc>https://cychong47.github.io/post/anti-agile/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/click/</loc>
+    <loc>https://cychong47.github.io/tags/click/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/click-python-module/</loc>
+    <loc>https://cychong47.github.io/post/click-python-module/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/build_dpdk_qat/</loc>
+    <loc>https://cychong47.github.io/post/build_dpdk_qat/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/qat/</loc>
+    <loc>https://cychong47.github.io/tags/qat/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/designing-a-restful-api-with-python-and-flask/</loc>
+    <loc>https://cychong47.github.io/post/designing-a-restful-api-with-python-and-flask/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/flask/</loc>
+    <loc>https://cychong47.github.io/tags/flask/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/restful/</loc>
+    <loc>https://cychong47.github.io/tags/restful/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/virtualenv/</loc>
+    <loc>https://cychong47.github.io/tags/virtualenv/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/virtualenv/</loc>
+    <loc>https://cychong47.github.io/post/virtualenv/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/culture/</loc>
+    <loc>https://cychong47.github.io/post/culture/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/work_rules/</loc>
+    <loc>https://cychong47.github.io/tags/work_rules/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/odp/</loc>
+    <loc>https://cychong47.github.io/tags/odp/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ofp/</loc>
+    <loc>https://cychong47.github.io/tags/ofp/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/openfastpath/</loc>
+    <loc>https://cychong47.github.io/tags/openfastpath/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/openfastpath/</loc>
+    <loc>https://cychong47.github.io/post/openfastpath/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/hugepage/</loc>
+    <loc>https://cychong47.github.io/post/hugepage/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/single-tasking/</loc>
+    <loc>https://cychong47.github.io/post/single-tasking/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/19-hard-things-you-need-to-do-to-be-successful/</loc>
+    <loc>https://cychong47.github.io/post/19-hard-things-you-need-to-do-to-be-successful/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/inspiration/</loc>
+    <loc>https://cychong47.github.io/tags/inspiration/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/errors_from_more_code/</loc>
+    <loc>https://cychong47.github.io/post/errors_from_more_code/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/</loc>
+    <loc>https://cychong47.github.io/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/nhn_sw_quality_control/</loc>
+    <loc>https://cychong47.github.io/post/nhn_sw_quality_control/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nhn/</loc>
+    <loc>https://cychong47.github.io/tags/nhn/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/sw-quality/</loc>
+    <loc>https://cychong47.github.io/tags/sw-quality/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/hbr/</loc>
+    <loc>https://cychong47.github.io/tags/hbr/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what_happens_if_performance_rating_is_omitted/</loc>
+    <loc>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/neuron/</loc>
+    <loc>https://cychong47.github.io/tags/neuron/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/openstacki-pythoneuro-mandeuleojyeossdani/</loc>
+    <loc>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cisco-cloud-services-router-1000v/</loc>
+    <loc>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cisco-cloud-service-platform-2100/</loc>
+    <loc>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/</loc>
+    <loc>https://cychong47.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what_is_the_target_product/</loc>
+    <loc>https://cychong47.github.io/post/what_is_the_target_product/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/why_blame_personals/</loc>
+    <loc>https://cychong47.github.io/post/why_blame_personals/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what_for_the_developer/</loc>
+    <loc>https://cychong47.github.io/post/what_for_the_developer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/gyujereul-pulgi-eoryeoun-iyuneun/</loc>
+    <loc>https://cychong47.github.io/post/gyujereul-pulgi-eoryeoun-iyuneun/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EB%AC%B8%ED%99%94/</loc>
+    <loc>https://cychong47.github.io/tags/%EB%AC%B8%ED%99%94/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-ip-reassembly-example/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-ip-reassembly-example/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/r210/</loc>
+    <loc>https://cychong47.github.io/tags/r210/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/do_you_know_agile/</loc>
+    <loc>https://cychong47.github.io/post/do_you_know_agile/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/software-developeryi-saengsanseongeul-ceugjeonghal-su-isseulgga/</loc>
+    <loc>https://cychong47.github.io/post/software-developeryi-saengsanseongeul-ceugjeonghal-su-isseulgga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/bunyabyeol-nohau-gongyuga-pilyohande/</loc>
+    <loc>https://cychong47.github.io/post/bunyabyeol-nohau-gongyuga-pilyohande/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nic/</loc>
+    <loc>https://cychong47.github.io/tags/nic/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/running-dpdk-on-vmware-fusion/</loc>
+    <loc>https://cychong47.github.io/post/running-dpdk-on-vmware-fusion/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/trex-dpdk-based-traffic-generator/</loc>
+    <loc>https://cychong47.github.io/post/trex-dpdk-based-traffic-generator/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/what-makes-a-good-engineering-culture/</loc>
+    <loc>https://cychong47.github.io/post/what-makes-a-good-engineering-culture/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/buseogan-hyeobryeogi-an-doeni-daecaegeuro/</loc>
+    <loc>https://cychong47.github.io/post/buseogan-hyeobryeogi-an-doeni-daecaegeuro/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/2015/</loc>
+    <loc>https://cychong47.github.io/tags/2015/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/leading-lights-2015-finalists-most-innovative-nfv-product-strategy-vendor/</loc>
+    <loc>https://cychong47.github.io/post/leading-lights-2015-finalists-most-innovative-nfv-product-strategy-vendor/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nokia/</loc>
+    <loc>https://cychong47.github.io/tags/nokia/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/quality/</loc>
+    <loc>https://cychong47.github.io/tags/quality/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/sw_quality/</loc>
+    <loc>https://cychong47.github.io/post/sw_quality/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EA%B2%BD%EC%9F%81/</loc>
+    <loc>https://cychong47.github.io/tags/%EA%B2%BD%EC%9F%81/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/competetion_is_like_drug/</loc>
+    <loc>https://cychong47.github.io/post/competetion_is_like_drug/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EA%B3%B5%EC%9C%A0/</loc>
+    <loc>https://cychong47.github.io/tags/%EA%B3%B5%EC%9C%A0/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</loc>
+    <loc>https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/</loc>
+    <loc>https://cychong47.github.io/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EA%B8%B0%EB%A1%9D/</loc>
+    <loc>https://cychong47.github.io/tags/%EA%B8%B0%EB%A1%9D/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EB%A6%AC%EB%8D%94/</loc>
+    <loc>https://cychong47.github.io/tags/%EB%A6%AC%EB%8D%94/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%83%9D%EC%82%B0%EC%84%B1/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%ED%9A%8C%EC%9D%98/</loc>
+    <loc>https://cychong47.github.io/tags/%ED%9A%8C%EC%9D%98/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</loc>
+    <loc>https://cychong47.github.io/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/the-power-of-ten-rules-for-developing-safety-critical-code/</loc>
+    <loc>https://cychong47.github.io/post/the-power-of-ten-rules-for-developing-safety-critical-code/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-big-seumol/</loc>
+    <loc>https://cychong47.github.io/post/caeg-big-seumol/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/gwanrija-deuldo-gongbu-jom-habsida/</loc>
+    <loc>https://cychong47.github.io/post/gwanrija-deuldo-gongbu-jom-habsida/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</loc>
+    <loc>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/divide-conquer/</loc>
+    <loc>https://cychong47.github.io/post/divide-conquer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/magamhyogwareul-norineun-geonga/</loc>
+    <loc>https://cychong47.github.io/post/magamhyogwareul-norineun-geonga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cagga/</loc>
+    <loc>https://cychong47.github.io/post/cagga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/coding-style/</loc>
+    <loc>https://cychong47.github.io/tags/coding-style/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/coding-styleyi-jungyoseong/</loc>
+    <loc>https://cychong47.github.io/post/coding-styleyi-jungyoseong/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/c/</loc>
+    <loc>https://cychong47.github.io/tags/c/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-coding-style/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-coding-style/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/docker-for-dummies-jeongri/</loc>
+    <loc>https://cychong47.github.io/post/docker-for-dummies-jeongri/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</loc>
+    <loc>https://cychong47.github.io/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</loc>
     <lastmod>2018-07-28T11:22:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dan/</loc>
+    <loc>https://cychong47.github.io/post/dan/</loc>
     <lastmod>2018-07-28T11:23:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/wp-designing-for-service-agility/</loc>
+    <loc>https://cychong47.github.io/post/wp-designing-for-service-agility/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/service-agility/</loc>
+    <loc>https://cychong47.github.io/tags/service-agility/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/intel-embedded-tech-forum-2014/</loc>
+    <loc>https://cychong47.github.io/post/intel-embedded-tech-forum-2014/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/onp/</loc>
+    <loc>https://cychong47.github.io/tags/onp/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/vrouter/</loc>
+    <loc>https://cychong47.github.io/tags/vrouter/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/vswitch/</loc>
+    <loc>https://cychong47.github.io/tags/vswitch/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ovdk/</loc>
+    <loc>https://cychong47.github.io/tags/ovdk/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/ovs/</loc>
+    <loc>https://cychong47.github.io/tags/ovs/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/r-i-p-ovdk/</loc>
+    <loc>https://cychong47.github.io/post/r-i-p-ovdk/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/odp/</loc>
+    <loc>https://cychong47.github.io/post/odp/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-summit-2014-videos/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-summit-2014-videos/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</loc>
+    <loc>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/algorithm/</loc>
+    <loc>https://cychong47.github.io/tags/algorithm/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cuckoo-switch/</loc>
+    <loc>https://cychong47.github.io/post/cuckoo-switch/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EB%85%BC%EB%AC%B8/</loc>
+    <loc>https://cychong47.github.io/tags/%EB%85%BC%EB%AC%B8/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</loc>
+    <loc>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</loc>
     <lastmod>2018-09-07T14:33:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/naege-gweonhani-issdamyeon/</loc>
+    <loc>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/nayeongseog-pd/</loc>
+    <loc>https://cychong47.github.io/post/nayeongseog-pd/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/</loc>
+    <loc>https://cychong47.github.io/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/brocade/</loc>
+    <loc>https://cychong47.github.io/tags/brocade/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/cavium/</loc>
+    <loc>https://cychong47.github.io/tags/cavium/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/intel-sdnnfv-forum-korea-2014/</loc>
+    <loc>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/nec/</loc>
+    <loc>https://cychong47.github.io/tags/nec/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/pluribus/</loc>
+    <loc>https://cychong47.github.io/tags/pluribus/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/quanta/</loc>
+    <loc>https://cychong47.github.io/tags/quanta/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-violent-python/</loc>
+    <loc>https://cychong47.github.io/post/caeg-violent-python/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/dpkt/</loc>
+    <loc>https://cychong47.github.io/tags/dpkt/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</loc>
+    <loc>https://cychong47.github.io/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-hon-cang-tong/</loc>
+    <loc>https://cychong47.github.io/post/caeg-hon-cang-tong/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpdk-on-virtualbox/</loc>
+    <loc>https://cychong47.github.io/post/dpdk-on-virtualbox/</loc>
     <lastmod>2018-12-09T05:21:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/virtualbox/</loc>
+    <loc>https://cychong47.github.io/tags/virtualbox/</loc>
     <lastmod>2018-12-09T05:21:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-deo-inteobyu/</loc>
+    <loc>https://cychong47.github.io/post/caeg-deo-inteobyu/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-wae-gongbuhaneunga/</loc>
+    <loc>https://cychong47.github.io/post/caeg-wae-gongbuhaneunga/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peom-meorisog-jeongribeob-10gaji/</loc>
+    <loc>https://cychong47.github.io/post/peom-meorisog-jeongribeob-10gaji/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/lifehack/</loc>
+    <loc>https://cychong47.github.io/tags/lifehack/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/mac/</loc>
+    <loc>https://cychong47.github.io/tags/mac/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/time-machine/</loc>
+    <loc>https://cychong47.github.io/tags/time-machine/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/time-machine-backup/</loc>
+    <loc>https://cychong47.github.io/post/time-machine-backup/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-bigdeiteo-seungriyi-gwahag/</loc>
+    <loc>https://cychong47.github.io/post/caeg-bigdeiteo-seungriyi-gwahag/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/cobojeogin-silsureul-banboghandago-gubaghajiman/</loc>
+    <loc>https://cychong47.github.io/post/cobojeogin-silsureul-banboghandago-gubaghajiman/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/the-pragmatic-programmer/</loc>
+    <loc>https://cychong47.github.io/tags/the-pragmatic-programmer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/the-pragmatic-programmer/</loc>
+    <loc>https://cychong47.github.io/post/the-pragmatic-programmer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/devnothink/</loc>
+    <loc>https://cychong47.github.io/tags/devnothink/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/synology/</loc>
+    <loc>https://cychong47.github.io/tags/synology/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/synology-webdav-devonthink/</loc>
+    <loc>https://cychong47.github.io/post/synology-webdav-devonthink/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/webdav/</loc>
+    <loc>https://cychong47.github.io/tags/webdav/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peom-salmyi-mogjeog/</loc>
+    <loc>https://cychong47.github.io/post/peom-salmyi-mogjeog/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%9D%B8%EC%9A%A9/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%9D%B8%EC%9A%A9/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/caeg-gugeuleun-skyreul-moreunda/</loc>
+    <loc>https://cychong47.github.io/post/caeg-gugeuleun-skyreul-moreunda/</loc>
     <lastmod>2018-08-19T22:06:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peom-20-life-lessons-everyone-can-master-by-the-age-40/</loc>
+    <loc>https://cychong47.github.io/post/peom-20-life-lessons-everyone-can-master-by-the-age-40/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</loc>
+    <loc>https://cychong47.github.io/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/</loc>
+    <loc>https://cychong47.github.io/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/naim/</loc>
+    <loc>https://cychong47.github.io/tags/naim/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/sdn-expert-group-semina-play-with-dpdk/</loc>
+    <loc>https://cychong47.github.io/post/sdn-expert-group-semina-play-with-dpdk/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/carari-honja-saenggaghal-sigan-gajyeora/</loc>
+    <loc>https://cychong47.github.io/post/carari-honja-saenggaghal-sigan-gajyeora/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/nuga-miraereul-gajil-geosinga/</loc>
+    <loc>https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/</loc>
     <lastmod>2018-07-28T11:24:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tag/</loc>
+    <loc>https://cychong47.github.io/tags/tag/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/jonggyoyi-cabyeoldoen-sarang/</loc>
+    <loc>https://cychong47.github.io/post/jonggyoyi-cabyeoldoen-sarang/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/seupin-is/</loc>
+    <loc>https://cychong47.github.io/post/seupin-is/</loc>
     <lastmod>2018-07-28T11:24:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/sdnyi-jinjeonghan-gaci/</loc>
+    <loc>https://cychong47.github.io/post/sdnyi-jinjeonghan-gaci/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/hwaweiyi-widaehan-neugdaemunhwa/</loc>
+    <loc>https://cychong47.github.io/post/hwaweiyi-widaehan-neugdaemunhwa/</loc>
     <lastmod>2018-07-28T11:24:41+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/tags/dpi/</loc>
+    <loc>https://cychong47.github.io/tags/dpi/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</loc>
+    <loc>https://cychong47.github.io/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/opendataplane/</loc>
+    <loc>https://cychong47.github.io/post/opendataplane/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/post/welcome-to-ghost-2/</loc>
+    <loc>https://cychong47.github.io/post/welcome-to-ghost-2/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://example.com/series/</loc>
+    <loc>https://cychong47.github.io/monthly/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/series/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

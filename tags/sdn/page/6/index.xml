@@ -2,119 +2,119 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SDN on Another blog</title>
-    <link>https://example.com/tags/sdn/</link>
+    <link>https://cychong47.github.io/tags/sdn/</link>
     <description>Recent content in SDN on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 12 Apr 2017 00:32:57 +0900</lastBuildDate>
     
-        <atom:link href="https://example.com/tags/sdn/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cychong47.github.io/tags/sdn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wordpress with docker-compose</title>
-      <link>https://example.com/post/wordpress-with-docker-compose-failing/</link>
+      <link>https://cychong47.github.io/post/wordpress-with-docker-compose-failing/</link>
       <pubDate>Sun, 03 Sep 2017 15:00:57 +0900</pubDate>
       
-      <guid>https://example.com/post/wordpress-with-docker-compose-failing/</guid>
+      <guid>https://cychong47.github.io/post/wordpress-with-docker-compose-failing/</guid>
       <description>Under construction!! Error https://docs.docker.com/compose/wordpress/#define-the-project 에 있는 에제대로 docker-compose.yaml 파일을 만든 후 도전~~ 근데 실패 cychong:~/work/my_wordpress cychong$ docker-compose up -d Pulling db (mysql:5.7)... Traceback (most recent call last): File &amp;quot;docker-compose&amp;quot;, line 3, in &amp;lt;module&amp;gt; File &amp;quot;compose/cli/main.py&amp;quot;, line 68, in main File &amp;quot;compose/cli/main.py&amp;quot;, line 118, in perform_command File &amp;quot;compose/cli/main.py&amp;quot;, line 928, in up File &amp;quot;compose/project.py&amp;quot;, line 427, in up File</description>
     </item>
     
     <item>
       <title>ghost container with docker-compose</title>
-      <link>https://example.com/post/ghost-container-with-docker-compose/</link>
+      <link>https://cychong47.github.io/post/ghost-container-with-docker-compose/</link>
       <pubDate>Sun, 03 Sep 2017 01:26:28 +0900</pubDate>
       
-      <guid>https://example.com/post/ghost-container-with-docker-compose/</guid>
+      <guid>https://cychong47.github.io/post/ghost-container-with-docker-compose/</guid>
       <description>얼마전에 구성한 ghost container는 ghost가 1.x로 업데이트가 되면서 설정 정보의 위치가 변경되었는데 그걸 미처 몰라 블로그 주소가 기본값인 loca</description>
     </item>
     
     <item>
       <title>Try to restore Wordpress container</title>
-      <link>https://example.com/post/try-to-restore-wordpress-docker/</link>
+      <link>https://cychong47.github.io/post/try-to-restore-wordpress-docker/</link>
       <pubDate>Sun, 03 Sep 2017 00:36:25 +0900</pubDate>
       
-      <guid>https://example.com/post/try-to-restore-wordpress-docker/</guid>
+      <guid>https://cychong47.github.io/post/try-to-restore-wordpress-docker/</guid>
       <description>docker 버전이 업데이트되고, 몇 가지 변경사항이 있은 후 ghost, wordpress/mysql 조합의 container들이 접속이 되질 않는다. 한참을 두고 보다 ghost는 새 버전(1.x)이 나</description>
     </item>
     
     <item>
       <title>Tesla 폄하에 대한 나의 생각</title>
-      <link>https://example.com/post/tesla-pyeomhae-daehan-nayi-saenggag/</link>
+      <link>https://cychong47.github.io/post/tesla-pyeomhae-daehan-nayi-saenggag/</link>
       <pubDate>Tue, 22 Aug 2017 22:11:57 +0900</pubDate>
       
-      <guid>https://example.com/post/tesla-pyeomhae-daehan-nayi-saenggag/</guid>
+      <guid>https://cychong47.github.io/post/tesla-pyeomhae-daehan-nayi-saenggag/</guid>
       <description>난 반대로 기존 상용차업체들이 몇 년간 테슬라를 보면서도 고작(?) 전기차 라는 키워드에만 집중해서 분석한 듯한 모습이 더 실망스러운데. 여전히 테슬라를 전기동력</description>
     </item>
     
     <item>
       <title>Useful quicklooks</title>
-      <link>https://example.com/post/useful-quicklooks/</link>
+      <link>https://cychong47.github.io/post/useful-quicklooks/</link>
       <pubDate>Wed, 26 Jul 2017 14:36:10 +0900</pubDate>
       
-      <guid>https://example.com/post/useful-quicklooks/</guid>
+      <guid>https://cychong47.github.io/post/useful-quicklooks/</guid>
       <description>brew cask install qlmarkdown brew cask install quicklook-json brew cask install qlprettypatch brew cask install quicklook-csv  </description>
     </item>
     
     <item>
       <title>Naver Labs 12 commandments</title>
-      <link>https://example.com/post/naver-labs-12-commandments/</link>
+      <link>https://cychong47.github.io/post/naver-labs-12-commandments/</link>
       <pubDate>Thu, 08 Jun 2017 22:06:37 +0900</pubDate>
       
-      <guid>https://example.com/post/naver-labs-12-commandments/</guid>
+      <guid>https://cychong47.github.io/post/naver-labs-12-commandments/</guid>
       <description></description>
     </item>
     
     <item>
       <title>(요약) How to ship production-grade Go</title>
-      <link>https://example.com/post/how-to-ship-production-grade-go/</link>
+      <link>https://cychong47.github.io/post/how-to-ship-production-grade-go/</link>
       <pubDate>Thu, 04 May 2017 12:24:27 +0900</pubDate>
       
-      <guid>https://example.com/post/how-to-ship-production-grade-go/</guid>
+      <guid>https://cychong47.github.io/post/how-to-ship-production-grade-go/</guid>
       <description>출처 : O&amp;rsquo;reilly radar 현장에서 발생하는 문제 몇 번 겪어본 사람이면 대부분 동의할 문제긴 한데 structured log 사용이나 application metric 측정 등은 오래 Wrap errors Error handler wrapper function을 이용해서 error code(annotation 포</description>
     </item>
     
     <item>
       <title>Slack이 기능 중 하나 - 방해금지</title>
-      <link>https://example.com/post/slack-do-not-disturb/</link>
+      <link>https://cychong47.github.io/post/slack-do-not-disturb/</link>
       <pubDate>Sun, 16 Apr 2017 05:51:11 +0900</pubDate>
       
-      <guid>https://example.com/post/slack-do-not-disturb/</guid>
+      <guid>https://cychong47.github.io/post/slack-do-not-disturb/</guid>
       <description>Slack에서 제공하는 여러 가지 기능 중 하나로 &amp;ldquo;Do not disturb&amp;quot;가 있다. 아래는 그 기능을 설명한 블로그 글( Slack으로 막일을 줄여요 ~ 막</description>
     </item>
     
     <item>
       <title>윤식당에서 배우는 agile</title>
-      <link>https://example.com/post/younkitchen-agile/</link>
+      <link>https://cychong47.github.io/post/younkitchen-agile/</link>
       <pubDate>Sun, 16 Apr 2017 05:40:05 +0900</pubDate>
       
-      <guid>https://example.com/post/younkitchen-agile/</guid>
+      <guid>https://cychong47.github.io/post/younkitchen-agile/</guid>
       <description>요즘 재밌게 보고 있는 JTBC 윤식당. 이서진을 포함한 몇 명의 연기자가 해외에 식당을 내고 운영한다. 그나마 얼굴이 덜 알려진 해외에서 요리를 남에게 파는 행위를 해봤을 것</description>
     </item>
     
     <item>
       <title>Slack &#43; Ghost</title>
-      <link>https://example.com/post/slack-ghost/</link>
+      <link>https://cychong47.github.io/post/slack-ghost/</link>
       <pubDate>Wed, 12 Apr 2017 15:37:39 +0900</pubDate>
       
-      <guid>https://example.com/post/slack-ghost/</guid>
+      <guid>https://cychong47.github.io/post/slack-ghost/</guid>
       <description>Slack에 개인 채널(?)을 만들었다. 이런 저런 내가 수집(?)하는 정보들을 한 군데서 모아서 히스토리를 만들면 어떨까 하는 생각에 누구는 slack과 빌드</description>
     </item>
     
     <item>
       <title>Feature Flag Driven Development</title>
-      <link>https://example.com/post/feature-flag-driven-development/</link>
+      <link>https://cychong47.github.io/post/feature-flag-driven-development/</link>
       <pubDate>Wed, 12 Apr 2017 15:29:09 +0900</pubDate>
       
-      <guid>https://example.com/post/feature-flag-driven-development/</guid>
+      <guid>https://cychong47.github.io/post/feature-flag-driven-development/</guid>
       <description>From Ericsson &amp;ldquo;Fueling 5G with DevOps&amp;rdquo; Maintaining one track in software development, using feature flag-driven development, and establishing version-controlled repositories for application code and application and system configuration data enables teams to create a complete environment that is ready for consistent “build and deploy”. What is feature flag-driven development? 특정 feature</description>
     </item>
     
     <item>
       <title>Espresso - Google&#39;s peering edge architecture</title>
-      <link>https://example.com/post/espresso-googles-peering-edge-architecture/</link>
+      <link>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</link>
       <pubDate>Wed, 12 Apr 2017 00:32:57 +0900</pubDate>
       
-      <guid>https://example.com/post/espresso-googles-peering-edge-architecture/</guid>
+      <guid>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</guid>
       <description>Google Fellow Amin Vahdat,
  “Early on, we realized that the network we needed to support our services did not exist and could not be bought,”
  Espresso makes Google cloud faster, more available and cost effective by extending SDN to the public internet
@@ -123,19 +123,19 @@
     
     <item>
       <title>Why message queue used for microservice?</title>
-      <link>https://example.com/post/why-message-queue-used-for-microservice/</link>
+      <link>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</link>
       <pubDate>Sun, 09 Apr 2017 15:41:23 +0900</pubDate>
       
-      <guid>https://example.com/post/why-message-queue-used-for-microservice/</guid>
+      <guid>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>P4</title>
-      <link>https://example.com/post/p4/</link>
+      <link>https://cychong47.github.io/post/p4/</link>
       <pubDate>Sun, 09 Apr 2017 08:58:50 +0900</pubDate>
       
-      <guid>https://example.com/post/p4/</guid>
+      <guid>https://cychong47.github.io/post/p4/</guid>
       <description>Open source language for &amp;ldquo;Programming Protocol-independent Packet Processor&amp;rdquo;
 http://p4.org
  Barefoot network - Tofino - PISA(Protocol Independent Switch Architecture) switch Netronome - smart NIC   5G: flexibility or high performance? Both - Ericsson Research Blog   POF/PIF and P4 initiatives all point in a direction where programmable packet processing will not depend on standardized OpenFlow action sets anymore
@@ -144,55 +144,55 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
     
     <item>
       <title>Table or dish</title>
-      <link>https://example.com/post/table-or-dish/</link>
+      <link>https://cychong47.github.io/post/table-or-dish/</link>
       <pubDate>Thu, 06 Apr 2017 00:40:05 +0900</pubDate>
       
-      <guid>https://example.com/post/table-or-dish/</guid>
+      <guid>https://cychong47.github.io/post/table-or-dish/</guid>
       <description>They are going to have to make a choice here - do you want to be at the table or on the plate? 먹을래 먹힐래?</description>
     </item>
     
     <item>
       <title>Move to docker</title>
-      <link>https://example.com/post/move-to-docker/</link>
+      <link>https://cychong47.github.io/post/move-to-docker/</link>
       <pubDate>Tue, 04 Apr 2017 13:51:03 +0900</pubDate>
       
-      <guid>https://example.com/post/move-to-docker/</guid>
+      <guid>https://cychong47.github.io/post/move-to-docker/</guid>
       <description>지금 집에 있는 두 대의 mac mini를 이용해서 각각 wordpress와 ghost를 돌리고 있다. wordpress의 경우 2013년부터 시작한 블로그를 운</description>
     </item>
     
     <item>
       <title>(책) 어떻게 읽을 것인가 - 2</title>
-      <link>https://example.com/post/how-to-read-2/</link>
+      <link>https://cychong47.github.io/post/how-to-read-2/</link>
       <pubDate>Fri, 10 Jun 2016 14:43:55 +0900</pubDate>
       
-      <guid>https://example.com/post/how-to-read-2/</guid>
+      <guid>https://cychong47.github.io/post/how-to-read-2/</guid>
       <description>만독 책을 느리게(집중해서) 읽기 아이에게 책 읽어주기 부모가 읽어야 아이도 읽는다 1단계. 책 선정 초등학생이면 어휘가 풍부한 국내 소설 오래 살아남은 책. 고전 문</description>
     </item>
     
     <item>
       <title>(책) 어떻게 읽을 것인가</title>
-      <link>https://example.com/post/how-to-read/</link>
+      <link>https://cychong47.github.io/post/how-to-read/</link>
       <pubDate>Fri, 10 Jun 2016 14:00:20 +0900</pubDate>
       
-      <guid>https://example.com/post/how-to-read/</guid>
+      <guid>https://cychong47.github.io/post/how-to-read/</guid>
       <description>고정형 - 지능은 변하지 않는다 성장형 - 지능은 좋아질 수 있다 생각을 바꾼다는 것이 쉬운 일은 아니지만 인식의 변화가 주는 효과는 크다 중학교에서는 고정형 아이들의 성</description>
     </item>
     
     <item>
       <title>fossilization</title>
-      <link>https://example.com/post/fossilization/</link>
+      <link>https://cychong47.github.io/post/fossilization/</link>
       <pubDate>Thu, 12 May 2016 03:41:20 +0900</pubDate>
       
-      <guid>https://example.com/post/fossilization/</guid>
+      <guid>https://cychong47.github.io/post/fossilization/</guid>
       <description>fossilize also -lise (usually passive) if people, ideas, systems etc fossilize or are fossilized, they never change or develop, even when there are good reasons why they should change Most couples, however fossilized their relationship, have some interests in common. 간혹 팟캐스트에 공룡에 대한 이야기가 나온다. 공룡에 대한 연구가 상대</description>
     </item>
     
     <item>
       <title>상식과 다른 결과를 보면</title>
-      <link>https://example.com/post/too-early-confident/</link>
+      <link>https://cychong47.github.io/post/too-early-confident/</link>
       <pubDate>Wed, 11 May 2016 10:01:53 +0900</pubDate>
       
-      <guid>https://example.com/post/too-early-confident/</guid>
+      <guid>https://cychong47.github.io/post/too-early-confident/</guid>
       <description>먼저 주변을 의심해 보자. 상식적인 혹은 알려진 것과 다른 결과가 나왔다면 내가 한 시험 방법을 다시 한번 의심해 보자. 제발</description>
     </item>
     

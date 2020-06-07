@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Flask on Another blog</title>
-    <link>https://example.com/tags/flask/</link>
+    <link>https://cychong47.github.io/tags/flask/</link>
     <description>Recent content in Flask on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 24 Dec 2015 14:11:59 +0900</lastBuildDate>
     
-        <atom:link href="https://example.com/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cychong47.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SDN의 진정한 가치</title>
-      <link>https://example.com/post/sdnyi-jinjeonghan-gaci/</link>
+      <link>https://cychong47.github.io/post/sdnyi-jinjeonghan-gaci/</link>
       <pubDate>Fri, 15 Aug 2014 13:04:09 +0900</pubDate>
       
-      <guid>https://example.com/post/sdnyi-jinjeonghan-gaci/</guid>
+      <guid>https://cychong47.github.io/post/sdnyi-jinjeonghan-gaci/</guid>
       <description>SDN이 주로 operator 입장에서 비용 절감, 관리 용이, 혁신 용이, 자동화(programmable)의 장점을 이야기하는데 NTT DOCOMO는 실제로 이런 방법을 통</description>
     </item>
     
     <item>
       <title>(책) 화웨이의 위대한 늑대문화</title>
-      <link>https://example.com/post/hwaweiyi-widaehan-neugdaemunhwa/</link>
+      <link>https://cychong47.github.io/post/hwaweiyi-widaehan-neugdaemunhwa/</link>
       <pubDate>Thu, 14 Aug 2014 14:41:23 +0900</pubDate>
       
-      <guid>https://example.com/post/hwaweiyi-widaehan-neugdaemunhwa/</guid>
+      <guid>https://cychong47.github.io/post/hwaweiyi-widaehan-neugdaemunhwa/</guid>
       <description>화웨이가 어떻게 지금과 같이 세계 2위의 통신업체가 될 수 있었는지 CEO인 런정페이를 중심으로 그 비결을 설명한 책. 늙지 않는 조직을 만들기 위해 끊임없이 노력하고</description>
     </item>
     
     <item>
       <title>DPI &amp; Traffic analysis in networks based on NFV and SDN</title>
-      <link>https://example.com/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</link>
+      <link>https://cychong47.github.io/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</link>
       <pubDate>Tue, 12 Aug 2014 15:10:23 +0900</pubDate>
       
-      <guid>https://example.com/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</guid>
+      <guid>https://cychong47.github.io/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</guid>
       <description>출처 Heavy-ReadingQosmosDPI-SDN-NFVWhite-PaperJan2014.pdf 2014년 1월 전반적인 내용 The largest use case (by number of vendors citing it) is service assurance for QoS/QoE; the second largest is policy control (PCEF), which we believe is the largest use case by volume Half of respondents said that encryption of protocols is reducing the effectiveness of DPI . Packet metric analysis (heuristics) was identified as</description>
     </item>
     
     <item>
       <title>OpenDataPlane</title>
-      <link>https://example.com/post/opendataplane/</link>
+      <link>https://cychong47.github.io/post/opendataplane/</link>
       <pubDate>Sat, 24 May 2014 14:15:25 +0900</pubDate>
       
-      <guid>https://example.com/post/opendataplane/</guid>
+      <guid>https://cychong47.github.io/post/opendataplane/</guid>
       <description>Network 장비를 만드는 방법 중 가장 흔한 방법이 Networking에 최적화된 processor를 제공하는 업체로부터 processor를 구입하고, 그 pro</description>
     </item>
     
     <item>
       <title>Welcome to Ghost</title>
-      <link>https://example.com/post/welcome-to-ghost-2/</link>
+      <link>https://cychong47.github.io/post/welcome-to-ghost-2/</link>
       <pubDate>Sat, 10 May 2014 03:45:21 +0900</pubDate>
       
-      <guid>https://example.com/post/welcome-to-ghost-2/</guid>
+      <guid>https://cychong47.github.io/post/welcome-to-ghost-2/</guid>
       <description>You&amp;rsquo;re live! Nice. We&amp;rsquo;ve put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &amp;lt;your blog URL&amp;gt;/ghost/. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!</description>
     </item>
     

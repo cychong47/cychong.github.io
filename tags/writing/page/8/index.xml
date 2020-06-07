@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>writing on Another blog</title>
-    <link>https://example.com/tags/writing/</link>
+    <link>https://cychong47.github.io/tags/writing/</link>
     <description>Recent content in writing on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 01 Jul 2018 12:03:47 +0900</lastBuildDate>
     
-        <atom:link href="https://example.com/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://cychong47.github.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2년전에 느꼈던 답답함이 여전하네</title>
-      <link>https://example.com/post/two-years-back/</link>
+      <link>https://cychong47.github.io/post/two-years-back/</link>
       <pubDate>Mon, 04 Jan 2016 15:19:11 +0900</pubDate>
       
-      <guid>https://example.com/post/two-years-back/</guid>
+      <guid>https://cychong47.github.io/post/two-years-back/</guid>
       <description>우연히 tumblr를 보니 2013년에 적었던 답답한 현실이 지금도 똑같다는 사실에 놀랐다. 들으려고 하는 사람은 없고, 쓸데없는 일에 시간을 보내는 건 지금도 전</description>
     </item>
     
     <item>
       <title>(책) 구글의 아침은 자유가 시작된다.</title>
-      <link>https://example.com/post/google-work-rules/</link>
+      <link>https://cychong47.github.io/post/google-work-rules/</link>
       <pubDate>Mon, 04 Jan 2016 14:03:21 +0900</pubDate>
       
-      <guid>https://example.com/post/google-work-rules/</guid>
+      <guid>https://cychong47.github.io/post/google-work-rules/</guid>
       <description>일단 읽다가 중단. 다른 걸 먼저 봐야 할 것 같다. 공감하는 내용이 많지만 이 책을 본다고 내가 어쩔 수 있는 내용이 별로 없어서&amp;hellip;. p78 이렇게 투명하게 공개</description>
     </item>
     
     <item>
       <title>Googlegeist vs. SCI</title>
-      <link>https://example.com/post/googlegeist_vs_sci/</link>
+      <link>https://cychong47.github.io/post/googlegeist_vs_sci/</link>
       <pubDate>Sat, 02 Jan 2016 02:44:51 +0900</pubDate>
       
-      <guid>https://example.com/post/googlegeist_vs_sci/</guid>
+      <guid>https://cychong47.github.io/post/googlegeist_vs_sci/</guid>
       <description>SCI 결과를 개선하기 위해 실질적으로 이뤄지는 노력이 안 보인다는 것. 노력한다해도 그건 관리자와 비관리자가 함께 노력해야 하는 일일텐데(관리자나 회사에 대한 불만</description>
     </item>
     
     <item>
       <title>(글) 왜 “애자일”, 특히 스크럼이 끔찍한가.</title>
-      <link>https://example.com/post/anti-agile/</link>
+      <link>https://cychong47.github.io/post/anti-agile/</link>
       <pubDate>Fri, 01 Jan 2016 15:25:13 +0900</pubDate>
       
-      <guid>https://example.com/post/anti-agile/</guid>
+      <guid>https://cychong47.github.io/post/anti-agile/</guid>
       <description>출처 : 왜 “애자일”, 특히 스크럼이 끔찍한가 스크럼 팀에 실제 시니어 엔지니어의 역할은 없는데, 문제는 스크럼을 도입한 많은 회사에서 보통 전사적으로 시행한다는</description>
     </item>
     
     <item>
       <title>click - python option 처리 모듈</title>
-      <link>https://example.com/post/click-python-module/</link>
+      <link>https://cychong47.github.io/post/click-python-module/</link>
       <pubDate>Fri, 01 Jan 2016 13:45:58 +0900</pubDate>
       
-      <guid>https://example.com/post/click-python-module/</guid>
+      <guid>https://cychong47.github.io/post/click-python-module/</guid>
       <description>http://click.pocoo.org/5/ C로 프로그램을 짤 때 사용할 표준 포맷도 이렇게 해야겠다. $ python hello.py --help Usage: hello.py [OPTIONS] Simple program that greets NAME for a total of COUNT times. Options: --count INTEGER Number of greetings. --name TEXT The person to greet. --help Show this message and exit.</description>
     </item>
     
     <item>
       <title>DPDK QAT example  빌드하기</title>
-      <link>https://example.com/post/build_dpdk_qat/</link>
+      <link>https://cychong47.github.io/post/build_dpdk_qat/</link>
       <pubDate>Fri, 01 Jan 2016 10:57:39 +0900</pubDate>
       
-      <guid>https://example.com/post/build_dpdk_qat/</guid>
+      <guid>https://cychong47.github.io/post/build_dpdk_qat/</guid>
       <description>Download dpdk-2.2.0.tar.gz Refer http://dpdk.org/download wget http://dpdk.org/browse/dpdk/snapshot/dpdk-2.2.0.tar.gz Download qat_mux Refer https://01.org/packet-processing/intel®-quickassist-technolog</description>
     </item>
     
     <item>
       <title>Designing a RESTful API with Python and Flask</title>
-      <link>https://example.com/post/designing-a-restful-api-with-python-and-flask/</link>
+      <link>https://cychong47.github.io/post/designing-a-restful-api-with-python-and-flask/</link>
       <pubDate>Thu, 24 Dec 2015 14:11:59 +0900</pubDate>
       
-      <guid>https://example.com/post/designing-a-restful-api-with-python-and-flask/</guid>
+      <guid>https://cychong47.github.io/post/designing-a-restful-api-with-python-and-flask/</guid>
       <description>Designing a RESTful API with Python and Flask RESTful API는 URI에 필요한 인자를 다 넘기는 형태라 사용자가 직접 주소를 입력하는 것이 아니라 다른 SW에서 해당 URI를 입력하는 형태로 사용하</description>
     </item>
     
     <item>
       <title>virtualenv 사용</title>
-      <link>https://example.com/post/virtualenv/</link>
+      <link>https://cychong47.github.io/post/virtualenv/</link>
       <pubDate>Mon, 21 Dec 2015 14:59:29 +0900</pubDate>
       
-      <guid>https://example.com/post/virtualenv/</guid>
+      <guid>https://cychong47.github.io/post/virtualenv/</guid>
       <description>virtualenv 설치 mini-2:~ cychong$ sudo easy_install pip mini-2:~ cychong$ sudo pip install virtualenv virtualenv로 project directory 생성 mini-2:work cychong$ mkdir click mini-2:work cychong$ cd click/ mini-2:click cychong$ ls mini-2:click cychong$ virtualenv venv New python executable in venv/bin/python Installing setuptools, pip, wheel...done. mini-2:click cychong$ ls venv virtualenv 환경으로 들어가기 mini-2:click cychong$ . venv/bin/activate</description>
     </item>
     
     <item>
       <title>Culture should be setup first</title>
-      <link>https://example.com/post/culture/</link>
+      <link>https://cychong47.github.io/post/culture/</link>
       <pubDate>Sun, 13 Dec 2015 13:44:24 +0900</pubDate>
       
-      <guid>https://example.com/post/culture/</guid>
+      <guid>https://cychong47.github.io/post/culture/</guid>
       <description>from Google Work Rules 2006년에 구글에 입사. 72년 생 구글 임직원 나이 평균에 비하면 많지만, 그래도 비슷한 덩치의 국내 기업의 인사 담당자와 비교하면. 하긴 구글을 국내 (</description>
     </item>
     
     <item>
       <title>OpenFastPath</title>
-      <link>https://example.com/post/openfastpath/</link>
+      <link>https://cychong47.github.io/post/openfastpath/</link>
       <pubDate>Fri, 11 Dec 2015 14:40:23 +0900</pubDate>
       
-      <guid>https://example.com/post/openfastpath/</guid>
+      <guid>https://cychong47.github.io/post/openfastpath/</guid>
       <description>Another Open source project.
 User-land protocol stack. Incorporate with ODP
 To use with DPDK, ODP and ODP-DPDK should be used.
@@ -106,93 +106,93 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
     
     <item>
       <title>Hugepage</title>
-      <link>https://example.com/post/hugepage/</link>
+      <link>https://cychong47.github.io/post/hugepage/</link>
       <pubDate>Fri, 11 Dec 2015 14:30:56 +0900</pubDate>
       
-      <guid>https://example.com/post/hugepage/</guid>
+      <guid>https://cychong47.github.io/post/hugepage/</guid>
       <description>Linux에서 사용하는 기본 page size는 4KB. 이 대신 2MB 혹은 1GB의 큰 크기를 hugepage라고 한다. Hugepage는 연속된 physical memory에 할당되</description>
     </item>
     
     <item>
       <title>Single tasking</title>
-      <link>https://example.com/post/single-tasking/</link>
+      <link>https://cychong47.github.io/post/single-tasking/</link>
       <pubDate>Fri, 11 Dec 2015 14:08:11 +0900</pubDate>
       
-      <guid>https://example.com/post/single-tasking/</guid>
+      <guid>https://cychong47.github.io/post/single-tasking/</guid>
       <description>난 특히 멀티태스킹이 안된다. 하나에도 제대로 집중하기 힘들다. 11월은 아무 쓸데없는 TF 2개에 참여하느라 제대로 일을 못했다. 정말&amp;hellip;</description>
     </item>
     
     <item>
       <title>19 hard things you need to do to be successful</title>
-      <link>https://example.com/post/19-hard-things-you-need-to-do-to-be-successful/</link>
+      <link>https://cychong47.github.io/post/19-hard-things-you-need-to-do-to-be-successful/</link>
       <pubDate>Thu, 10 Dec 2015 14:58:06 +0900</pubDate>
       
-      <guid>https://example.com/post/19-hard-things-you-need-to-do-to-be-successful/</guid>
+      <guid>https://cychong47.github.io/post/19-hard-things-you-need-to-do-to-be-successful/</guid>
       <description>Last login: Thu Dec 10 00:38:48 on ttys000 Chae-yongs-MacBook-Pro:~ cychong$ Chae-yongs-MacBook-Pro:~ cychong$ vi hard.txt Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | sort | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a You have to do the hard things. You have to make the call you’re afraid to make. You have</description>
     </item>
     
     <item>
       <title>Code 량이 늘면 버그도 함께 들어나기 마련</title>
-      <link>https://example.com/post/errors_from_more_code/</link>
+      <link>https://cychong47.github.io/post/errors_from_more_code/</link>
       <pubDate>Mon, 07 Dec 2015 14:00:58 +0900</pubDate>
       
-      <guid>https://example.com/post/errors_from_more_code/</guid>
+      <guid>https://cychong47.github.io/post/errors_from_more_code/</guid>
       <description>부정하기 어렵다. 하지만 코드가 늘어나는 것은 피할 수 없으니 불필요한 기능/코드는 삭제하는 노력을 끊임없이 해야 한다. 그렇지 않으면 technical debt만 늘어날 뿐이다</description>
     </item>
     
     <item>
       <title>(책)  NHN은 이렇게 한다. 소프트웨어 품질 관리</title>
-      <link>https://example.com/post/nhn_sw_quality_control/</link>
+      <link>https://cychong47.github.io/post/nhn_sw_quality_control/</link>
       <pubDate>Mon, 07 Dec 2015 13:40:56 +0900</pubDate>
       
-      <guid>https://example.com/post/nhn_sw_quality_control/</guid>
+      <guid>https://cychong47.github.io/post/nhn_sw_quality_control/</guid>
       <description>누군가의 말을 빌리자면 품질 관리의 바이블(?)이라고 하는. 내용면에서는 특별한 건 없지만, 그래도 국내에서는 SW를 잘한다고 하는 사람들이 많이 가는 회사이고</description>
     </item>
     
     <item>
       <title>역량 평가를 없앤 회사에서 일어난 일</title>
-      <link>https://example.com/post/what_happens_if_performance_rating_is_omitted/</link>
+      <link>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</link>
       <pubDate>Sat, 05 Dec 2015 13:14:53 +0900</pubDate>
       
-      <guid>https://example.com/post/what_happens_if_performance_rating_is_omitted/</guid>
+      <guid>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</guid>
       <description>출처 : Harvard Businee Review 최소 52개 대형 회사가 기존 년 단위의 고과 평과 제도를 없앰. 이 중 33개 업체를 집중 분석하여 해당 업체에서 일어난 변화를 정리 manager-em</description>
     </item>
     
     <item>
       <title>OpenStack이  Python으로 만들어졌다니</title>
-      <link>https://example.com/post/openstacki-pythoneuro-mandeuleojyeossdani/</link>
+      <link>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</link>
       <pubDate>Wed, 25 Nov 2015 11:36:43 +0900</pubDate>
       
-      <guid>https://example.com/post/openstacki-pythoneuro-mandeuleojyeossdani/</guid>
+      <guid>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</guid>
       <description>Neuron Python project 체계를 잡는데 도움이 될 듯 하다. 아래는 pylink를 이용해서 syntax 검사하는 script https://github.com/openstack/neutron/blob/master/tools/coding-checks.sh</description>
     </item>
     
     <item>
       <title>Cisco Cloud Services Router 1000V</title>
-      <link>https://example.com/post/cisco-cloud-services-router-1000v/</link>
+      <link>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</link>
       <pubDate>Mon, 23 Nov 2015 14:50:31 +0900</pubDate>
       
-      <guid>https://example.com/post/cisco-cloud-services-router-1000v/</guid>
+      <guid>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</guid>
       <description>http://www.cisco.com/c/en/us/products/collateral/routers/cloud-services-router-1000v-series/datasheet-c78-733443.html
 How many vCPUs are required for processing.</description>
     </item>
     
     <item>
       <title>CISCO Cloud Service Platform 2100</title>
-      <link>https://example.com/post/cisco-cloud-service-platform-2100/</link>
+      <link>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</link>
       <pubDate>Mon, 23 Nov 2015 14:24:35 +0900</pubDate>
       
-      <guid>https://example.com/post/cisco-cloud-service-platform-2100/</guid>
+      <guid>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</guid>
       <description>Data sheet (PDF)
  Some Cisco virtual network services that use the DPDK include Cisco Cloud Services Router (CSR) 1000V, Cisco Virtual Mobile Packet Core software, and Cisco IOS® XR 9000v virtual router. Supporte CISCO appliances  Cisco Cloud Services Router (CSR) 1000V virtual router Cisco Virtual Adaptive Security Appliance (ASAv) Cisco Prime™ Data Center Network Manager (DCNM) Cisco Virtual Network Analysis Module (vNAM) Cisco Virtual Security Gateway (VSG) for Cisco Nexus® 1000V Switch deployments Cisco Virtual Supervisor Module (VSM) for Cisco Nexus 1000V Switch deployments   1U 2 CPU, each has 8 core Ivy Bridge(E5-2630 v3) REST API It uses REST API and NETCONF protocol for north-bound management and orchestration (MANO) tools.</description>
     </item>
     
     <item>
       <title>제대로 만들려면 제품의 성격부터 정의해야</title>
-      <link>https://example.com/post/what_is_the_target_product/</link>
+      <link>https://cychong47.github.io/post/what_is_the_target_product/</link>
       <pubDate>Sun, 22 Nov 2015 14:35:23 +0900</pubDate>
       
-      <guid>https://example.com/post/what_is_the_target_product/</guid>
+      <guid>https://cychong47.github.io/post/what_is_the_target_product/</guid>
       <description>철학의 부재. 중심의 부재. 대화의 부재 제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다.</description>
     </item>
     
