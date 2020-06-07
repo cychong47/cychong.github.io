@@ -39,7 +39,7 @@
 <meta itemprop="description" content="Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다. Ghost 정말 애증이 담긴&hellip; Ghost가 1.0이 되기 전에 markdown 기반의 블로">
 <meta itemprop="datePublished" content="2020-06-07T22:14:02&#43;09:00" />
 <meta itemprop="dateModified" content="2020-06-07T22:14:02&#43;09:00" />
-<meta itemprop="wordCount" content="2313">
+<meta itemprop="wordCount" content="2246">
 
 
 
@@ -1247,7 +1247,7 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2020/06/migrate-ghost-to-hugo/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2313words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2246words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 5minutes </span>
       </div>
     </div>
@@ -1256,7 +1256,7 @@
 <a href="http://ghost.org">Ghost</a> 정말 애증이 담긴&hellip;</p>
 <p>Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정
 에서 발견해서 0.9 버전인가 부터 사용해 왔다. <code>Ghost</code>가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 <a href="https://cychong47.github.io/2017/04/move-to-docker/">docker</a>로 실행해 오다, <a href="https://cychong47.github.io/2017/09/ghost-container-with-docker-compose/">docker-compose</a> 도 써 보고, <a href="https://cychong47.github.io/2017/12/recreate-ghost-container/">Ansible</a> 로 deploy도 해보고.
-그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도[] k8s](<a href="https://cychong47.github.io/2019/05/setup-ghost-in-microk8s-2/">https://cychong47.github.io/2019/05/setup-ghost-in-microk8s-2/</a>)로 실행해 봈다. 그리고 k8s에서 기본처럼 사용되는 SW 배포/관리 툴인 helm도 hands-on을 해 보고 싶어서 <a href="https://cychong47.github.io/2019/09/ghost-season-5-helm/">helm chart로 ghost도 배포</a>해 보고. 횟수로 치면 대략 2016년 정보 부터 같은데 그간 <code>Ghost</code>는 1.0을 거쳐 2.0 그리고 지금은 3.0까지 업데이트가 된 상태이다.</p>
+그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도<a href="https://cychong47.github.io/2019/05/setup-ghost-in-microk8s-2/">k8s</a>로 실행해 봈다. 그리고 k8s에서 기본처럼 사용되는 SW 배포/관리 툴인 helm도 hands-on을 해 보고 싶어서 <a href="https://cychong47.github.io/2019/09/ghost-season-5-helm/">helm chart로 ghost도 배포</a>해 보고. 횟수로 치면 대략 2016년 정보 부터 같은데 그간 <code>Ghost</code>는 1.0을 거쳐 2.0 그리고 지금은 3.0까지 업데이트가 된 상태이다.</p>
 <p>처음에 Ghost에 끌렸던 이유는 markdown 기반이라는 점이 컸는데, 본격적으로 markdown을 기반으로 글을 쓰는 blog 툴이라는 점. 그리고 그때도 그랬지만, wordpress가 blog 외에 다양한 형태의 CMS(Contents Management System)으로 개발되다 보니 blog만 돌리기에는 too much하다는 느낌을 지울 수 없었다. Ghost가 sqlite를 backend DB로 사용할 수 있는 것과  달리 wordpress는 MySql등의 DB를 반드시 사용해야 한다는 점도 8GB의 리눅스 박스에서 돌리기엔 부담이 벅차서 메모리 부족으로 에러가 나기도 했다는&hellip;</p>
 <p>Ghost에서 hugo로 이전해야겠다는 마음을 먹게 한 가장 큰 이유는 Ghost의 editor때문이 아닌가 싶다. 초기에는 정말 간단한 형태의 text editor 였는데, 시간이 지나면서 점점 복잡한 형태의 editor로 바뀌었는데 내겐 오히려 적응하는 것이 쉽지 않았다. 그냥 markdown 문법 몇 가지만 익혀서 사용하면 될 듯 한데 그걸 WIGWYG 형태로 지원하다 보니 오히려 내겐 번거로운 절차가 되어 버렸다.</p>
 <p>어차피 Ghost blog에 올린 글들은 markdown으로 정리했던 내용이 대부분인 터라 그냥 향후에 platform 에 대한 의존성을 줄이는 셈 치고 Ghost에서 한 발 물러서기로 했다.</p>
