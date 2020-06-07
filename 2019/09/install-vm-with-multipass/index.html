@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Install VM with multipass on OS X - Another blog
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="multipass? Multipass is a lightweight VM manager for Linux, Windows and macOS. It&amp;rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date. Since it supports metadata" />
+    <meta name="generator" content="Hugo 0.71.1 with theme pure" />
+    <title>Install VM with multipass on OS X - Another blog</title>
+    
+    
+    <link rel="stylesheet" href="https://cychong47.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Install VM with multipass on OS X" />
+<meta property="og:description" content="multipass? Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date. Since it supports metadata" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cychong47.github.io/2019/09/install-vm-with-multipass/" />
+<meta property="article:published_time" content="2019-09-28T15:17:26+09:00" />
+<meta property="article:modified_time" content="2019-09-28T15:19:40+00:00" />
+<meta itemprop="name" content="Install VM with multipass on OS X">
+<meta itemprop="description" content="multipass? Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date. Since it supports metadata">
+<meta itemprop="datePublished" content="2019-09-28T15:17:26&#43;09:00" />
+<meta itemprop="dateModified" content="2019-09-28T15:19:40&#43;00:00" />
+<meta itemprop="wordCount" content="2445">
+
+
+
+<meta itemprop="keywords" content="Vmware,ubuntu,multipass," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Install VM with multipass on OS X"/>
+<meta name="twitter:description" content="multipass? Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date. Since it supports metadata"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/cychong47" target="_blank">
+            <img class="img-circle img-rotate" src="https://cychong47.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chaeyong Chong</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-monthly">
+                <a href="/monthly/">
+                  <span class="menu-title">Monthly</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">178</span></li>
+        </ul>
+    </div>
+</div>
+      
+<div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+        <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/hugo-seutp-with-git/" class="title">Hugo-migrated WP - 1</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 14:56:52 &#43;0900 KST" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/nvidia-vran-solution/" class="title">NVIDIA VRAN SOLUTION</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-20 15:01:44 &#43;0900 KST" itemprop="datePublished">2020-05-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 23:36:45 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/if-i-have-authority-5-years-later/" class="title">내게 권한이 있다면 - 그 이후</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 14:03:04 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/new-things-in-last-4-years/" class="title">새로운 경험 들</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-07 14:34:55 &#43;0900 KST" itemprop="datePublished">2020-05-07</time>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/2015/" class="tag-list-link">2015</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/5g/" class="tag-list-link">5g</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/agile/" class="tag-list-link">agile</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/aic/" class="tag-list-link">aic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/algorithm/" class="tag-list-link">algorithm</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/amazon/" class="tag-list-link">amazon</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/amdocs/" class="tag-list-link">amdocs</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/amsterdam-release/" class="tag-list-link">amsterdam-release</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/andromeda/" class="tag-list-link">andromeda</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ansible/" class="tag-list-link">ansible</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ansible-playbook/" class="tag-list-link">ansible-playbook</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/anti-work-pattern/" class="tag-list-link">anti-work-pattern</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/att/" class="tag-list-link">att</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/automation/" class="tag-list-link">automation</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/b4/" class="tag-list-link">b4</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/backup/" class="tag-list-link">backup</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/barometer/" class="tag-list-link">barometer</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/blog/" class="tag-list-link">blog</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/book/" class="tag-list-link">book</a><span
+                    class="tag-list-count">47</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/brew/" class="tag-list-link">brew</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/brocade/" class="tag-list-link">brocade</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/c/" class="tag-list-link">c</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/calico/" class="tag-list-link">calico</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cavium/" class="tag-list-link">cavium</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cisco/" class="tag-list-link">cisco</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/click/" class="tag-list-link">click</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cncf/" class="tag-list-link">cncf</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cni/" class="tag-list-link">cni</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/coding-style/" class="tag-list-link">coding-style</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/collaboration/" class="tag-list-link">collaboration</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/collectd/" class="tag-list-link">collectd</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/connectx-5/" class="tag-list-link">connectx-5</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/container/" class="tag-list-link">container</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/continuous-deployment/" class="tag-list-link">continuous-deployment</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cpu/" class="tag-list-link">cpu</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cran/" class="tag-list-link">cran</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/crond/" class="tag-list-link">crond</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cubb/" class="tag-list-link">cubb</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/culture/" class="tag-list-link">culture</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cuphy/" class="tag-list-link">cuphy</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cuvnf/" class="tag-list-link">cuvnf</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/database/" class="tag-list-link">database</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dev-culture/" class="tag-list-link">dev-culture</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/devnothink/" class="tag-list-link">devnothink</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/docker/" class="tag-list-link">docker</a><span
+                    class="tag-list-count">11</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/docker-compose/" class="tag-list-link">docker-compose</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dpdk/" class="tag-list-link">dpdk</a><span
+                    class="tag-list-count">22</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dpi/" class="tag-list-link">dpi</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dpkt/" class="tag-list-link">dpkt</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/edge/" class="tag-list-link">edge</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/elasticsearch/" class="tag-list-link">elasticsearch</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/elk/" class="tag-list-link">elk</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/english/" class="tag-list-link">english</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/espresso/" class="tag-list-link">espresso</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/fapi/" class="tag-list-link">fapi</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/feature-flag-driven-development/" class="tag-list-link">feature-flag-driven-development</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/feedback/" class="tag-list-link">feedback</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ffmpeg/" class="tag-list-link">ffmpeg</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/finder/" class="tag-list-link">finder</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/flask/" class="tag-list-link">flask</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/fragment/" class="tag-list-link">fragment</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ftp/" class="tag-list-link">ftp</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/getting-started/" class="tag-list-link">getting-started</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost/" class="tag-list-link">ghost</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost-theme/" class="tag-list-link">ghost-theme</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/git/" class="tag-list-link">git</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/github/" class="tag-list-link">github</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/go/" class="tag-list-link">go</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/golang/" class="tag-list-link">golang</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/google/" class="tag-list-link">google</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/gpb/" class="tag-list-link">gpb</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/gpu/" class="tag-list-link">gpu</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/grafana/" class="tag-list-link">grafana</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/grpc/" class="tag-list-link">grpc</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hbr/" class="tag-list-link">hbr</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/helm/" class="tag-list-link">helm</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/homebrew/" class="tag-list-link">homebrew</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/http/" class="tag-list-link">http</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/inspiration/" class="tag-list-link">inspiration</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/intel/" class="tag-list-link">intel</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipsec/" class="tag-list-link">ipsec</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipv4/" class="tag-list-link">ipv4</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/istio/" class="tag-list-link">istio</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/jetpack/" class="tag-list-link">jetpack</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/json/" class="tag-list-link">json</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/jtbc/" class="tag-list-link">jtbc</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/jupiter/" class="tag-list-link">jupiter</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kafka/" class="tag-list-link">kafka</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kni/" class="tag-list-link">kni</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kubelet/" class="tag-list-link">kubelet</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kubernetes/" class="tag-list-link">kubernetes</a><span
+                    class="tag-list-count">11</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/launchd/" class="tag-list-link">launchd</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/lb/" class="tag-list-link">lb</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/life/" class="tag-list-link">life</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/lifehack/" class="tag-list-link">lifehack</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/linux/" class="tag-list-link">linux</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/load-balancer/" class="tag-list-link">load-balancer</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/lte/" class="tag-list-link">lte</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mac/" class="tag-list-link">mac</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mac-mini-2009/" class="tag-list-link">mac-mini-2009</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/maglev/" class="tag-list-link">maglev</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/manager/" class="tag-list-link">manager</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/markdown/" class="tag-list-link">markdown</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mbuf/" class="tag-list-link">mbuf</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mec/" class="tag-list-link">mec</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mediawiki/" class="tag-list-link">mediawiki</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/meetup/" class="tag-list-link">meetup</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/message-queue/" class="tag-list-link">message-queue</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/metricbeat/" class="tag-list-link">metricbeat</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/microk8s/" class="tag-list-link">microk8s</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/microservice/" class="tag-list-link">microservice</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mindmap/" class="tag-list-link">mindmap</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/model-driven/" class="tag-list-link">model-driven</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/monitoring/" class="tag-list-link">monitoring</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/multipass/" class="tag-list-link">multipass</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mysql/" class="tag-list-link">mysql</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/naim/" class="tag-list-link">naim</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nas/" class="tag-list-link">nas</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nasa/" class="tag-list-link">nasa</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nec/" class="tag-list-link">nec</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nested-chart/" class="tag-list-link">nested-chart</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/netconf/" class="tag-list-link">netconf</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/network/" class="tag-list-link">network</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/neuron/" class="tag-list-link">neuron</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nfv/" class="tag-list-link">nfv</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nginmesh/" class="tag-list-link">nginmesh</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nginx/" class="tag-list-link">nginx</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nhn/" class="tag-list-link">nhn</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nic/" class="tag-list-link">nic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nokia/" class="tag-list-link">nokia</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nvidia/" class="tag-list-link">nvidia</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/odp/" class="tag-list-link">odp</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ofp/" class="tag-list-link">ofp</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/onap/" class="tag-list-link">onap</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/onp/" class="tag-list-link">onp</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/openfastpath/" class="tag-list-link">openfastpath</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/opensource/" class="tag-list-link">opensource</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/openstack/" class="tag-list-link">openstack</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/opnfv/" class="tag-list-link">opnfv</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/osx/" class="tag-list-link">osx</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ovdk/" class="tag-list-link">ovdk</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ovs/" class="tag-list-link">ovs</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/p4/" class="tag-list-link">p4</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/patch/" class="tag-list-link">patch</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/perl/" class="tag-list-link">perl</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/photo/" class="tag-list-link">photo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pinpoint/" class="tag-list-link">pinpoint</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/plist/" class="tag-list-link">plist</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pluribus/" class="tag-list-link">pluribus</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/prediction/" class="tag-list-link">prediction</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/programming/" class="tag-list-link">programming</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/prometheus/" class="tag-list-link">prometheus</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/protobufs/" class="tag-list-link">protobufs</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/protocol-buffer/" class="tag-list-link">protocol-buffer</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pyftplib/" class="tag-list-link">pyftplib</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/python/" class="tag-list-link">python</a><span
+                    class="tag-list-count">12</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/qat/" class="tag-list-link">qat</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/quality/" class="tag-list-link">quality</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/quanta/" class="tag-list-link">quanta</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/quicklook/" class="tag-list-link">quicklook</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/r210/" class="tag-list-link">r210</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/reassembly/" class="tag-list-link">reassembly</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/recovery/" class="tag-list-link">recovery</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/resources/" class="tag-list-link">resources</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/restful/" class="tag-list-link">restful</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/rmda/" class="tag-list-link">rmda</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/scapy/" class="tag-list-link">scapy</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sci/" class="tag-list-link">sci</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/scrum/" class="tag-list-link">scrum</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sctp/" class="tag-list-link">sctp</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sdn/" class="tag-list-link">sdn</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/service-agility/" class="tag-list-link">service-agility</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/service-mesh/" class="tag-list-link">service-mesh</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/setup/" class="tag-list-link">setup</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/slack/" class="tag-list-link">slack</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/snmp/" class="tag-list-link">snmp</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/soft-skill/" class="tag-list-link">soft-skill</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sqlite/" class="tag-list-link">sqlite</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sriov/" class="tag-list-link">sriov</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/startup/" class="tag-list-link">startup</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/storage/" class="tag-list-link">storage</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/study/" class="tag-list-link">study</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/subchart/" class="tag-list-link">subchart</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sw-quality/" class="tag-list-link">sw-quality</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/" class="tag-list-link">sw-개발-문화</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/swarm/" class="tag-list-link">swarm</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/synology/" class="tag-list-link">synology</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/tag/" class="tag-list-link">tag</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/tcp/" class="tag-list-link">tcp</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/team/" class="tag-list-link">team</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/telemetry/" class="tag-list-link">telemetry</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/the-pragmatic-programmer/" class="tag-list-link">the-pragmatic-programmer</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/theme/" class="tag-list-link">theme</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/til/" class="tag-list-link">til</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/time-machine/" class="tag-list-link">time-machine</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/troubleshooting/" class="tag-list-link">troubleshooting</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/tutorial/" class="tag-list-link">tutorial</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ubuntu/" class="tag-list-link">ubuntu</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vagrant/" class="tag-list-link">vagrant</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ves/" class="tag-list-link">ves</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/virtualbox/" class="tag-list-link">virtualbox</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/virtualenv/" class="tag-list-link">virtualenv</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/virtualization/" class="tag-list-link">virtualization</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vmware/" class="tag-list-link">vmware</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vnf/" class="tag-list-link">vnf</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vran/" class="tag-list-link">vran</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vrouter/" class="tag-list-link">vrouter</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vswitch/" class="tag-list-link">vswitch</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/web-scrapping/" class="tag-list-link">web-scrapping</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/webdav/" class="tag-list-link">webdav</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/wiki/" class="tag-list-link">wiki</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/windows10/" class="tag-list-link">windows10</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/wordpress/" class="tag-list-link">wordpress</a><span
+                    class="tag-list-count">11</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/work_rules/" class="tag-list-link">work_rules</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/writing/" class="tag-list-link">writing</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/xcrun/" class="tag-list-link">xcrun</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/yang/" class="tag-list-link">yang</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/" class="tag-list-link">개발이야기</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B2%BD%EC%9F%81/" class="tag-list-link">경쟁</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/" class="tag-list-link">공부</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B3%B5%EC%9C%A0/" class="tag-list-link">공유</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/" class="tag-list-link">관리능력</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B8%B0%EB%A1%9D/" class="tag-list-link">기록</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%85%BC%EB%AC%B8/" class="tag-list-link">논문</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%A6%AC%EB%8D%94/" class="tag-list-link">리더</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/" class="tag-list-link">매너리즘</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%AC%B8%ED%99%94/" class="tag-list-link">문화</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/" class="tag-list-link">사람이-핵심</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%83%9D%EA%B0%81/" class="tag-list-link">생각</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%83%9D%EC%82%B0%EC%84%B1/" class="tag-list-link">생산성</a><span
+                    class="tag-list-count">2</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/" class="tag-list-link">윤식당</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9D%B8%EC%9A%A9/" class="tag-list-link">인용</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/" class="tag-list-link">임백준</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/" class="tag-list-link">잡생각</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/" class="tag-list-link">조직관리</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/" class="tag-list-link">조직문화</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/" class="tag-list-link">좋은글</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/" class="tag-list-link">착각하는-ceo</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/" class="tag-list-link">코드리뷰</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%ED%9A%8C%EC%9D%98/" class="tag-list-link">회의</a><span
+                    class="tag-list-count">2</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-install-vm-with-multipass" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2019/09/install-vm-with-multipass/"
+    >Install VM with multipass on OS X</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/2019/09/install-vm-with-multipass/" class="article-date">
+  <time datetime="2019-09-28 15:17:26 &#43;0900 KST" itemprop="datePublished">2019-09-28</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/vmware/"> Vmware </a>
+    <a class="article-tag-link" href="/tags/ubuntu/"> ubuntu </a>
+    <a class="article-tag-link" href="/tags/multipass/"> multipass </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2019/09/install-vm-with-multipass/#comments"
+            class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2445words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 5minutes </span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="multipass">multipass?</h2>
+<blockquote>
+<p>Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.</p>
+<p>Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.</p>
+</blockquote>
+<p><a href="https://github.com/CanonicalLtd/multipass">https://github.com/CanonicalLtd/multipass</a></p>
+<p>Linux 외에 Windows 그리고 Mac OS를 지원하는 multipass를 사용하면 virtualbox를 사용하지 않고도 OS X에서 VM을 쉽게 만들어 linux 기반의 환경을 구성할 수 있다.</p>
+<p>아래 예에서는 OS X에서 multipass를 이용해서 Linux(Ubuntu) VM을 생성하고, kubernetes를 설치해 본다.</p>
+<h2 id="install-multipass-with-brew">install <code>multipass</code> with brew</h2>
+<pre><code>mbpr15:~ cychong$ brew cask install multipass
+Updating Homebrew...
+...
+
+==&gt; Satisfying dependencies
+==&gt; Downloading https://github.com/CanonicalLtd/multipass/releases/download/v0.8.0/multipass-0.8.0+mac-Darwin.pkg
+==&gt; Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/114128199/8489a680-ac9c-11e9-99
+######################################################################## 100.0%
+==&gt; Verifying SHA-256 checksum for Cask 'multipass'.
+==&gt; Installing Cask multipass
+==&gt; Running installer for multipass; your password may be necessary.
+==&gt; Package installers may write to any location; options such as --appdir are ignored.
+Password:
+installer: Package name is multipass
+installer: Installing at base path /
+installer: The install was successful.
+🍺  multipass was successfully installed!
+</code></pre>
+<h2 id="multipass-1">Multipass</h2>
+<h3 id="multipass-find">multipass find</h3>
+<pre><code>mbpr15:~ cychong$ multipass find
+Image                   Aliases           Version          Description
+snapcraft:core          core16            20190819         Snapcraft builder for Core 16
+snapcraft:core18                          20190820         Snapcraft builder for Core 18
+16.04                   xenial            20190814         Ubuntu 16.04 LTS
+18.04                   bionic,lts        20190813.1       Ubuntu 18.04 LTS
+</code></pre>
+<h2 id="create-vm">Create VM</h2>
+<h3 id="multipass-launch">multipass launch</h3>
+<pre><code>mbpr15:~ cychong$ multipass launch --name vm --mem 4G --disk 20G --cpus 2 
+Launched: vm
+
+
+</code></pre>
+<h3 id="list-vms">list VMs</h3>
+<pre><code>mbpr15:~ cychong$ multipass list
+Name                    State             IPv4             Image
+vm                      Running           192.168.64.2     Ubuntu 18.04 LTS
+</code></pre>
+<h4 id="execute-command-in-vm-from-host">execute command in VM from host</h4>
+<pre><code>mbpr15:~ cychong$ multipass exec vm -- uname -a
+Linux vm 4.15.0-58-generic #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre>
+<h3 id="login-to-vm">login to VM</h3>
+<pre><code>mbpr15:~ cychong$ multipass shell vm
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Aug 25 20:26:01 KST 2019
+
+  System load:  0.0               Processes:             101
+  Usage of /:   5.1% of 19.21GB   Users logged in:       0
+  Memory usage: 3%                IP address for enp0s2: 192.168.64.2
+  Swap usage:   0%
+
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.
+See &quot;man sudo_root&quot; for details.
+
+multipass@vm:~$
+</code></pre>
+<h3 id="setup-a-single-node-kubernetes-cluster">Setup a single node kubernetes cluster</h3>
+<pre><code>multipass@vm:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+</code></pre>
+<pre><code>multipass@vm:~$ sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;
+Get:1 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:5 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages [7889 B]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [485 kB]
+Get:7 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:8 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+Get:9 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [165 kB]
+Get:10 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [4976 B]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [2476 B]
+Get:12 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [598 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [199 kB]
+Get:14 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [4004 B]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2060 B]
+Get:16 http://archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [712 kB]
+Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [259 kB]
+Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [11.9 kB]
+Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [4156 B]
+Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [999 kB]
+Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [306 kB]
+Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [6636 B]
+Get:26 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [3556 B]
+Get:27 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [2512 B]
+Get:28 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [1644 B]
+Get:29 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [4000 B]
+Get:30 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [1856 B]
+Preparing to unpack .../1-aufs-tools_1%3a4.9+20170918-1ubuntu1_amd64.deb ...
+Unpacking aufs-tools (1:4.9+20170918-1ubuntu1) ...
+Selecting previously unselected package cgroupfs-mount.
+Preparing to unpack .../2-cgroupfs-mount_1.4_all.deb ...
+Unpacking cgroupfs-mount (1.4) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../3-containerd.io_1.2.6-3_amd64.deb ...
+Unpacking containerd.io (1.2.6-3) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../4-docker-ce-cli_5%3a19.03.1~3-0~ubuntu-bionic_amd64.deb ...
+Unpacking docker-ce-cli (5:19.03.1~3-0~ubuntu-bionic) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../5-docker-ce_5%3a19.03.1~3-0~ubuntu-bionic_amd64.deb ...
+Unpacking docker-ce (5:19.03.1~3-0~ubuntu-bionic) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../6-libltdl7_2.4.6-2_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.6-2) ...
+Setting up aufs-tools (1:4.9+20170918-1ubuntu1) ...
+Setting up containerd.io (1.2.6-3) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Processing triggers for ureadahead (0.100.0-21) ...
+Setting up cgroupfs-mount (1.4) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.25) ...
+Setting up libltdl7:amd64 (2.4.6-2) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up docker-ce-cli (5:19.03.1~3-0~ubuntu-bionic) ...
+Setting up pigz (2.4-1) ...
+Setting up docker-ce (5:19.03.1~3-0~ubuntu-bionic) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for ureadahead (0.100.0-21) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.25) ...
+</code></pre>
+<pre><code>multipass@vm:~$ sudo swapoff -a
+multipass@vm:~$ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+</code></pre>
+<pre><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 1692 B of archives.
+After this operation, 153 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.11 [1692 B]
+Fetched 1692 B in 1s (2906 B/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 60304 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.11_all.deb ...
+Unpacking apt-transport-https (1.6.11) ...
+Setting up apt-transport-https (1.6.11) ...
+OK
+</code></pre>
+<pre><code>multipass@vm:~$ echo &quot;deb http://apt.kubernetes.io/ kubernetes-xenial main&quot; | sudo tee -a /etc/apt/sources.list.d/kubernetes.list &amp;&amp; sudo apt-get update
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Get:6 https://packages.cloud.google.com/apt kubernetes-xenial InRelease [8993 B]
+Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 Packages [28.9 kB]
+Fetched 37.9 kB in 2s (15.3 kB/s)
+Reading package lists... Done
+</code></pre>
+<pre><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 1692 B of archives.
+After this operation, 153 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.11 [1692 B]
+Fetched 1692 B in 1s (2906 B/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 60304 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.11_all.deb ...
+Unpacking apt-transport-https (1.6.11) ...
+Get:3 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubelet amd64 1.15.3-00 [20.2 MB]
+Get:4 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubectl amd64 1.15.3-00 [8763 kB]
+Get:5 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubeadm amd64 1.15.3-00 [8248 kB]
+Fetched 52.9 MB in 27s (1972 kB/s)
+Selecting previously unselected package conntrack.
+(Reading database ... 60308 files and directories currently installed.)
+Preparing to unpack .../0-conntrack_1%3a1.4.4+snapshot20161117-6ubuntu2_amd64.deb ...
+Unpacking conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...
+Selecting previously unselected package cri-tools.
+Preparing to unpack .../1-cri-tools_1.13.0-00_amd64.deb ...
+Unpacking cri-tools (1.13.0-00) ...
+Selecting previously unselected package kubernetes-cni.
+Preparing to unpack .../2-kubernetes-cni_0.7.5-00_amd64.deb ...
+Unpacking kubernetes-cni (0.7.5-00) ...
+Selecting previously unselected package socat.
+Preparing to unpack .../3-socat_1.7.3.2-2ubuntu2_amd64.deb ...
+Unpacking socat (1.7.3.2-2ubuntu2) ...
+Selecting previously unselected package kubelet.
+Preparing to unpack .../4-kubelet_1.15.3-00_amd64.deb ...
+Unpacking kubelet (1.15.3-00) ...
+Selecting previously unselected package kubectl.
+Preparing to unpack .../5-kubectl_1.15.3-00_amd64.deb ...
+Unpacking kubectl (1.15.3-00) ...
+Selecting previously unselected package kubeadm.
+Preparing to unpack .../6-kubeadm_1.15.3-00_amd64.deb ...
+Unpacking kubeadm (1.15.3-00) ...
+Setting up conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...
+Setting up kubernetes-cni (0.7.5-00) ...
+Setting up cri-tools (1.13.0-00) ...
+Setting up socat (1.7.3.2-2ubuntu2) ...
+Setting up kubelet (1.15.3-00) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/kubelet.service → /lib/systemd/system/kubelet.service.
+Setting up kubectl (1.15.3-00) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up kubeadm (1.15.3-00) ...
+</code></pre>
+<pre><code>multipass@vm:~$ sudo kubeadm init --pod-network-cidr=10.201.0.0/24 --token-ttl 0
+...
+
+multipass@vm:~$ mkdir -p $HOME/.kube
+multipass@vm:~$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+multipass@vm:~$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
+</code></pre>
+<pre><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
+NAMESPACE     NAME                         READY   STATUS    RESTARTS   AGE   IP             NODE     NOMINATED NODE   READINESS GATES
+kube-system   coredns-5c98db65d4-ksh4p     0/1     Pending   0          21m   &lt;none&gt;         &lt;none&gt;   &lt;none&gt;           &lt;none&gt;
+kube-system   coredns-5c98db65d4-nvvzg     0/1     Pending   0          21m   &lt;none&gt;         &lt;none&gt;   &lt;none&gt;           &lt;none&gt;
+kube-system   etcd-vm                      1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-apiserver-vm            1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-controller-manager-vm   1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-proxy-b8qf2             1/1     Running   0          21m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-scheduler-vm            1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+</code></pre>
+<h4 id="install-calico">install calico</h4>
+<pre><code>multipass@vm:~$ wget https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+--2019-08-25 21:26:00--  https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+Resolving docs.projectcalico.org (docs.projectcalico.org)... 206.189.73.52, 2604:a880:2:d0::21e9:c001
+Connecting to docs.projectcalico.org (docs.projectcalico.org)|206.189.73.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20628 (20K) [application/x-yaml]
+Saving to: ‘calico.yaml’
+
+calico.yaml                  100%[==============================================&gt;]  20.14K  93.2KB/s    in 0.2s
+
+2019-08-25 21:26:02 (93.2 KB/s) - ‘calico.yaml’ saved [20628/20628]
+</code></pre>
+<p>Change <code>CALICO_IPV4POOL_CIDR</code></p>
+<pre><code>            - name: CALICO_IPV4POOL_CIDR
+              value: &quot;10.201.0.0/24&quot;
+</code></pre>
+<pre><code>multipass@vm:~$ kubectl apply -f calico.yaml
+configmap/calico-config unchanged
+customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org unchanged
+clusterrole.rbac.authorization.k8s.io/calico-kube-controllers unchanged
+clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers unchanged
+clusterrole.rbac.authorization.k8s.io/calico-node unchanged
+clusterrolebinding.rbac.authorization.k8s.io/calico-node unchanged
+daemonset.apps/calico-node configured
+serviceaccount/calico-node unchanged
+deployment.apps/calico-kube-controllers unchanged
+serviceaccount/calico-kube-controllers unchanged
+</code></pre>
+<pre><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
+NAMESPACE     NAME                                       READY   STATUS    RESTARTS   AGE     IP               NODE   NOMINATED NODE   READINESS GATES
+kube-system   calico-kube-controllers-65b8787765-5rftm   1/1     Running   0          3m57s   192.168.141.65   vm     &lt;none&gt;           &lt;none&gt;
+kube-system   calico-node-dtbhl                          1/1     Running   0          44s     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   coredns-5c98db65d4-ksh4p                   1/1     Running   0          25m     192.168.141.66   vm     &lt;none&gt;           &lt;none&gt;
+kube-system   coredns-5c98db65d4-nvvzg                   1/1     Running   0          25m     192.168.141.67   vm     &lt;none&gt;           &lt;none&gt;
+kube-system   etcd-vm                                    1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-apiserver-vm                          1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-controller-manager-vm                 1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-proxy-b8qf2                           1/1     Running   0          25m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-scheduler-vm                          1/1     Running   0          25m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+</code></pre>
+<pre><code>multipass@vm:~$ kubectl taint nodes --all node-role.kubernetes.io/master-
+node/vm untainted
+</code></pre>
+<h3 id="install-calicoctl">Install calicoctl</h3>
+<p><a href="https://docs.projectcalico.org/v3.5/usage/calicoctl/install">https://docs.projectcalico.org/v3.5/usage/calicoctl/install</a></p>
+<pre><code>multipass@vm:~$ curl -O -L  https://github.com/projectcalico/calicoctl/releases/download/v3.5.8/calicoctl
+multipass@vm:~$ chmod +x calicoctl
+multipass@vm:~$ ./calicoctl get profiles
+Failed to create Calico API client: no etcd endpoints specified
+multipass@vm:~$ kubectl apply -f \
+&gt;  https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calicoctl.yaml
+pod/calicoctl created
+multipass@vm:~$ kubectl exec -ti -n kube-system calicoctl -- /calicoctl get profiles -o wide
+error: unable to upgrade connection: container not found (&quot;calicoctl&quot;)
+</code></pre>
+<pre><code>multipass@vm:~$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                                       READY   STATUS                       RESTARTS   AGE
+kube-system   calico-kube-controllers-65b8787765-5rftm   1/1     Running                      0          10m
+kube-system   calico-node-dtbhl                          1/1     Running                      0          7m46s
+kube-system   calicoctl                                  0/1     CreateContainerConfigError   0          38s
+kube-system   coredns-5c98db65d4-ksh4p                   1/1     Running                      0          33m
+kube-system   coredns-5c98db65d4-nvvzg                   1/1     Running                      0          33m
+kube-system   etcd-vm                                    1/1     Running                      0          32m
+kube-system   kube-apiserver-vm                          1/1     Running                      0          31m
+kube-system   kube-controller-manager-vm                 1/1     Running                      0          31m
+kube-system   kube-proxy-b8qf2                           1/1     Running                      0          33m
+kube-system   kube-scheduler-vm                          1/1     Running                      0          32m
+</code></pre>
+<pre><code>multipass@vm:~$ kubectl describe pod calicoctl --namespace=kube-system
+Name:         calicoctl
+Namespace:    kube-system
+Priority:     0
+Node:         vm/192.168.64.2
+Start Time:   Sun, 25 Aug 2019 21:35:02 +0900
+Labels:       &lt;none&gt;
+Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+                {&quot;apiVersion&quot;:&quot;v1&quot;,&quot;kind&quot;:&quot;Pod&quot;,&quot;metadata&quot;:{&quot;annotations&quot;:{},&quot;name&quot;:&quot;calicoctl&quot;,&quot;namespace&quot;:&quot;kube-system&quot;},&quot;spec&quot;:{&quot;containers&quot;:[{&quot;command...
+Status:       Pending
+IP:           192.168.64.2
+Containers:
+  calicoctl:
+    Container ID:
+    Image:         calico/ctl:v3.5.8
+    Image ID:
+    Port:          &lt;none&gt;
+    Host Port:     &lt;none&gt;
+    Command:
+      /bin/sh
+      -c
+      while true; do sleep 3600; done
+    State:          Waiting
+      Reason:       CreateContainerConfigError
+    Ready:          False
+    Restart Count:  0
+    Environment:
+      ETCD_ENDPOINTS:  &lt;set to the key 'etcd_endpoints' of config map 'calico-config'&gt;  Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-w2l7q (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  default-token-w2l7q:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-w2l7q
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  beta.kubernetes.io/os=linux
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason     Age               From               Message
+  ----     ------     ----              ----               -------
+  Normal   Scheduled  72s               default-scheduler  Successfully assigned kube-system/calicoctl to vm
+  Normal   Pulling    71s               kubelet, vm        Pulling image &quot;calico/ctl:v3.5.8&quot;
+  Normal   Pulled     57s               kubelet, vm        Successfully pulled image &quot;calico/ctl:v3.5.8&quot;
+  Warning  Failed     3s (x6 over 57s)  kubelet, vm        Error: Couldn't find key etcd_endpoints in ConfigMap kube-system/calico-config
+  Normal   Pulled     3s (x5 over 57s)  kubelet, vm        Container image &quot;calico/ctl:v3.5.8&quot; already present on machine
+</code></pre>
+<h3 id="delete-kubenetes-cluster">delete kubenetes cluster</h3>
+<pre><code>multipass@vm:~$ kubectl drain vm --delete-local-data --force --ignore-daemonsets
+node/vm cordoned
+WARNING: ignoring DaemonSet-managed Pods: kube-system/calico-node-dtbhl, kube-system/kube-proxy-b8qf2; deleting Pods not managed by ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet: kube-system/calicoctl
+evicting pod &quot;coredns-5c98db65d4-nvvzg&quot;
+evicting pod &quot;calico-kube-controllers-65b8787765-5rftm&quot;
+evicting pod &quot;calicoctl&quot;
+evicting pod &quot;coredns-5c98db65d4-ksh4p&quot;
+pod/calicoctl evicted
+pod/coredns-5c98db65d4-nvvzg evicted
+pod/calico-kube-controllers-65b8787765-5rftm evicted
+pod/coredns-5c98db65d4-ksh4p evicted
+node/vm evicted
+multipass@vm:~$ sudo kubeadm reset
+[reset] Reading configuration from the cluster...
+[reset] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
+[reset] WARNING: Changes made to this host by 'kubeadm init' or 'kubeadm join' will be reverted.
+[reset] Are you sure you want to proceed? [y/N]: y
+[preflight] Running pre-flight checks
+[reset] Removing info for node &quot;vm&quot; from the ConfigMap &quot;kubeadm-config&quot; in the &quot;kube-system&quot; Namespace
+W0825 21:46:06.943208    4603 removeetcdmember.go:61] [reset] failed to remove etcd member: error syncing endpoints with etc: etcdclient: no available endpoints
+.Please manually remove this etcd member using etcdctl
+[reset] Stopping the kubelet service
+[reset] Unmounting mounted directories in &quot;/var/lib/kubelet&quot;
+[reset] Deleting contents of config directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]
+[reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]
+[reset] Deleting contents of stateful directories: [/var/lib/etcd /var/lib/kubelet /etc/cni/net.d /var/lib/dockershim /var/run/kubernetes]
+
+The reset process does not reset or clean up iptables rules or IPVS tables.
+If you wish to reset iptables, you must do so manually.
+For example:
+iptables -F &amp;&amp; iptables -t nat -F &amp;&amp; iptables -t mangle -F &amp;&amp; iptables -X
+
+If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
+to reset your system's IPVS tables.
+
+The reset process does not clean your kubeconfig files and you must remove them manually.
+Please, check the contents of the $HOME/.kube/config file.
+
+multipass@vm:~$ sudo rm -rf /var/etcd
+</code></pre>
+<h2 id="reference">Reference</h2>
+<h3 id="multipass-2">multipass</h3>
+<ul>
+<li><a href="https://multipass.run">https://multipass.run</a></li>
+<li><a href="https://github.com/CanonicalLtd/multipass">https://github.com/CanonicalLtd/multipass</a></li>
+<li><a href="https://ubuntu.com/blog/kubernetes-on-mac-how-to-set-up">OS X에서 multipass를 이용하여 microk8s 환경 구성</a></li>
+<li><a href="https://raaaimund.github.io/tech/2018/10/23/create-single-node-k8s-cluster/">Create a single node Kubernetes cluster on Ubuntu 18.04.1 (Bionic Beaver) with kubeadm</a></li>
+<li><a href="https://docs.projectcalico.org/v3.8/getting-started/kubernetes/">https://docs.projectcalico.org/v3.8/getting-started/kubernetes/</a></li>
+<li><a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/">k8s 설치 상세 절차</a></li>
+<li><a href="https://bcho.tistory.com/1341">private helm repository 구성하기-조대협</a></li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+<blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    <li class="post-copyright-link hidden-xs">
+      <strong>Permalink: </strong>
+      <a href="https://cychong47.github.io/2019/09/install-vm-with-multipass/" title="Install VM with multipass on OS X" target="_blank" rel="external">https://cychong47.github.io/2019/09/install-vm-with-multipass/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
+    </li>
+  </ul>
+</blockquote>
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cychong47" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://cychong47.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cychong47" target="_blank"><span class="text-dark">Chaeyong Chong</span><small class="ml-1x">author title</small></a></h3>
+        <div>May the fun be with you</div>
+      </div>
+    </figure>
+  </div>
+</div>
+    </div>
+  </article>
+<section id="comments">
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://cychong47.github.io/2019/09/setup-kubernetes-with-a-single-host/" title="Setup kubernetes in a single host"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://cychong47.github.io/2019/09/convention-on-impose-core-requirements/"
+                    title="Convention on impose core requirements"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
+            <div class="share-component" data-sites="twitter"
+                data-mobile-sites=""></div>
+        </div>
+    </div>
+</nav>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/cychong47" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://cychong47.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2017  -
+    2020
+    <div class="publishby">
+        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://cychong47.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://cychong47.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/cychong47.github.io\/',
+            CONTENT_URL: 'https:\/\/cychong47.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://cychong47.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/cychong47.github.io\/2019\/09\/install-vm-with-multipass\/';
+        this.page.identifier = 'cychong';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'cychong' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+  </body>
+</html>

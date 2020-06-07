@@ -54,7 +54,15 @@
 
   <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
-      <div class="navbar-header"><div class="search" id="search-form-wrap">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/cychong47" target="_blank">
+            <img class="img-circle img-rotate" src="https://cychong47.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chaeyong Chong</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
+        </div><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
             <input type="text" class="search-form-input form-control" placeholder="Search" />
@@ -95,7 +103,7 @@
                 </a>
             </li>
             <li class="menu-item menu-item-archives">
-                <a href="/post/">
+                <a href="/posts/">
                     <i class="icon icon-archives-fill"></i>
                   <span class="menu-title">Archives</span>
                 </a>
@@ -112,6 +120,12 @@
                   <span class="menu-title">Tags</span>
                 </a>
             </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
             <li class="menu-item menu-item-monthly">
                 <a href="/monthly/">
                   <span class="menu-title">Monthly</span>
@@ -126,6 +140,16 @@
   <div class="slimContent">
     
       <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
@@ -139,6 +163,56 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/hugo-seutp-with-git/" class="title">Hugo-migrated WP - 1</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 14:56:52 &#43;0900 KST" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/nvidia-vran-solution/" class="title">NVIDIA VRAN SOLUTION</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-20 15:01:44 &#43;0900 KST" itemprop="datePublished">2020-05-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 23:36:45 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/if-i-have-authority-5-years-later/" class="title">내게 권한이 있다면 - 그 이후</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 14:03:04 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/2020/05/new-things-in-last-4-years/" class="title">새로운 경험 들</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-07 14:34:55 &#43;0900 KST" itemprop="datePublished">2020-05-07</time>
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -1386,7 +1460,7 @@
                 itemprop="datePublished">2019-12-15</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/book-so-real/">(책) 리얼하다</a>
+            <a class="article-link" href="https://cychong47.github.io/2019/12/book-so-real/">(책) 리얼하다</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1401,7 +1475,7 @@
                 itemprop="datePublished">2019-11-17</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/samuryeog/">사무력</a>
+            <a class="article-link" href="https://cychong47.github.io/2019/11/samuryeog/">사무력</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1416,7 +1490,7 @@
                 itemprop="datePublished">2018-12-25</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/grow-together/">함께 자라기</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/12/grow-together/">함께 자라기</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1433,7 +1507,7 @@
                 itemprop="datePublished">2018-10-18</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-the-nature-of-software-development/">(책) The nature of Software Development</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/10/caeg-the-nature-of-software-development/">(책) The nature of Software Development</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1448,7 +1522,7 @@
                 itemprop="datePublished">2018-09-23</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/silicon-valley-illustrated/">(책) 실리콘밸리를 그리다</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/09/silicon-valley-illustrated/">(책) 실리콘밸리를 그리다</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1465,7 +1539,7 @@
                 itemprop="datePublished">2018-09-04</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/smarter-faster-better/">(책) 1등의 습관 Smarter, Faster, Better</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/09/smarter-faster-better/">(책) 1등의 습관 Smarter, Faster, Better</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1480,7 +1554,7 @@
                 itemprop="datePublished">2018-08-25</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/the-secret-of-highly-successful-groups/">(책) 최고의 팀은 무엇이 다른가</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/">(책) 최고의 팀은 무엇이 다른가</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1495,7 +1569,7 @@
                 itemprop="datePublished">2018-08-25</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/remote/">(책) 리모트</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/08/remote/">(책) 리모트</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1510,7 +1584,7 @@
                 itemprop="datePublished">2018-08-16</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/why-danish-bought-a-chair-with-the-first-time-salary/">(책) 덴마크 사람들은 왜 첫 월급을 받으면</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/08/why-danish-bought-a-chair-with-the-first-time-salary/">(책) 덴마크 사람들은 왜 첫 월급을 받으면</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1525,7 +1599,7 @@
                 itemprop="datePublished">2018-08-05</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/coupang-the-reason-of-innovation/">(책) 쿠팡 우리가 혁신하는 이유</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/08/coupang-the-reason-of-innovation/">(책) 쿠팡 우리가 혁신하는 이유</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1542,7 +1616,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/i-am-going-to-be/">(책) 나는 이렇게 될것이다.</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/i-am-going-to-be/">(책) 나는 이렇게 될것이다.</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1557,7 +1631,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/peopleware/">(책) 피플웨어</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/peopleware/">(책) 피플웨어</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1572,7 +1646,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/the-future-of-my-children/">(책) 내 아이가 만날 미래</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/the-future-of-my-children/">(책) 내 아이가 만날 미래</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1587,7 +1661,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/the-work-system/">(책) 시스템의 힘</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/the-work-system/">(책) 시스템의 힘</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1602,7 +1676,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/just-now-dream-love-be-happy/">(책) 지금 꿈꾸라, 사랑하라, 행복하라</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/just-now-dream-love-be-happy/">(책) 지금 꿈꾸라, 사랑하라, 행복하라</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1617,7 +1691,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/power-of-habit/">(책) 습관의 힘</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/power-of-habit/">(책) 습관의 힘</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1632,7 +1706,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/i-want-to-live-in-a-different-korea/">(책) 나는 다른 대한민국에서 살고 싶다</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/i-want-to-live-in-a-different-korea/">(책) 나는 다른 대한민국에서 살고 싶다</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1647,7 +1721,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/purple-people/">(책) 퍼플피플</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/purple-people/">(책) 퍼플피플</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1662,7 +1736,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/hon-chang-tong/">(책) 혼창통</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/hon-chang-tong/">(책) 혼창통</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1677,7 +1751,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/your-time/">(책) 당신의 시간</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/your-time/">(책) 당신의 시간</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1692,7 +1766,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/slack/">(책) Slack</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/slack/">(책) Slack</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1708,7 +1782,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/five-traps-team-can-fall-into/">(책) 팀이 빠지기 쉬운 5가지 함정</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/five-traps-team-can-fall-into/">(책) 팀이 빠지기 쉬운 5가지 함정</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1724,7 +1798,7 @@
                 itemprop="datePublished">2018-07-29</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/drive/">(책) 드라이브 - 다니엘 핑크</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/drive/">(책) 드라이브 - 다니엘 핑크</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1739,7 +1813,7 @@
                 itemprop="datePublished">2018-07-15</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/developer-culture/">(책) 대살개문</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/developer-culture/">(책) 대살개문</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1756,7 +1830,7 @@
                 itemprop="datePublished">2018-07-07</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/advice_from_tokyo_professor/">(책) 도쿄대 교수가 제자들에게 주는 쓴소리</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/advice_from_tokyo_professor/">(책) 도쿄대 교수가 제자들에게 주는 쓴소리</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1771,7 +1845,7 @@
                 itemprop="datePublished">2018-07-01</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/did-you-write-in-every-morning/">(책) 매일 아침 써봤니?</a>
+            <a class="article-link" href="https://cychong47.github.io/2018/07/did-you-write-in-every-morning/">(책) 매일 아침 써봤니?</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1787,7 +1861,7 @@
                 itemprop="datePublished">2016-06-10</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/how-to-read-2/">(책) 어떻게 읽을 것인가 - 2</a>
+            <a class="article-link" href="https://cychong47.github.io/2016/06/how-to-read-2/">(책) 어떻게 읽을 것인가 - 2</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1802,7 +1876,7 @@
                 itemprop="datePublished">2016-06-10</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/how-to-read/">(책) 어떻게 읽을 것인가</a>
+            <a class="article-link" href="https://cychong47.github.io/2016/06/how-to-read/">(책) 어떻게 읽을 것인가</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1817,7 +1891,7 @@
                 itemprop="datePublished">2016-04-19</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/soft-skill/">(책) 소프트 스킬</a>
+            <a class="article-link" href="https://cychong47.github.io/2016/04/soft-skill/">(책) 소프트 스킬</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1833,7 +1907,7 @@
                 itemprop="datePublished">2016-03-14</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/becoming-a-better-programmer/">(책) Becoming a better Programmer</a>
+            <a class="article-link" href="https://cychong47.github.io/2016/03/becoming-a-better-programmer/">(책) Becoming a better Programmer</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1849,7 +1923,7 @@
                 itemprop="datePublished">2016-01-04</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/google-work-rules/">(책) 구글의 아침은 자유가 시작된다.</a>
+            <a class="article-link" href="https://cychong47.github.io/2016/01/google-work-rules/">(책) 구글의 아침은 자유가 시작된다.</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1864,7 +1938,7 @@
                 itemprop="datePublished">2015-12-07</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/nhn_sw_quality_control/">(책)  NHN은 이렇게 한다. 소프트웨어 품질 관리</a>
+            <a class="article-link" href="https://cychong47.github.io/2015/12/nhn_sw_quality_control/">(책)  NHN은 이렇게 한다. 소프트웨어 품질 관리</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1882,7 +1956,7 @@
                 itemprop="datePublished">2015-09-07</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/">(책) 구글은 빅데이터를 어떻게 활용했는가</a>
+            <a class="article-link" href="https://cychong47.github.io/2015/09/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/">(책) 구글은 빅데이터를 어떻게 활용했는가</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1900,7 +1974,7 @@
                 itemprop="datePublished">2015-07-04</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-big-seumol/">(책) 빅 스몰</a>
+            <a class="article-link" href="https://cychong47.github.io/2015/07/caeg-big-seumol/">(책) 빅 스몰</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1915,7 +1989,7 @@
                 itemprop="datePublished">2015-05-18</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/">(책) 죽어라 일만 하는 사람은 절대 모르는 스마트한 성공들</a>
+            <a class="article-link" href="https://cychong47.github.io/2015/05/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/">(책) 죽어라 일만 하는 사람은 절대 모르는 스마트한 성공들</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1930,7 +2004,7 @@
                 itemprop="datePublished">2015-05-12</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/dan/">(책) 단</a>
+            <a class="article-link" href="https://cychong47.github.io/2015/05/dan/">(책) 단</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1945,7 +2019,7 @@
                 itemprop="datePublished">2014-10-19</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/">(책) 바지 벗고 일하면 안되나요?</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/10/caeg-baji-beosgo-ilhamyeon-andoenayo/">(책) 바지 벗고 일하면 안되나요?</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1960,7 +2034,7 @@
                 itemprop="datePublished">2014-09-27</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-violent-python/">(책) Violent Python</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/09/caeg-violent-python/">(책) Violent Python</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1978,7 +2052,7 @@
                 itemprop="datePublished">2014-09-27</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/">(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/09/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/">(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -1993,7 +2067,7 @@
                 itemprop="datePublished">2014-09-24</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-hon-cang-tong/">(책) 혼. 창. 통.</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/09/caeg-hon-cang-tong/">(책) 혼. 창. 통.</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2008,7 +2082,7 @@
                 itemprop="datePublished">2014-09-21</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-deo-inteobyu/">(책) 더 인터뷰</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/09/caeg-deo-inteobyu/">(책) 더 인터뷰</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2023,7 +2097,7 @@
                 itemprop="datePublished">2014-09-11</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-wae-gongbuhaneunga/">(책) 왜 공부하는가</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/09/caeg-wae-gongbuhaneunga/">(책) 왜 공부하는가</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2038,7 +2112,7 @@
                 itemprop="datePublished">2014-09-09</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-bigdeiteo-seungriyi-gwahag/">(책) 빅데이터 승리의 과학</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/09/caeg-bigdeiteo-seungriyi-gwahag/">(책) 빅데이터 승리의 과학</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2053,7 +2127,7 @@
                 itemprop="datePublished">2014-08-31</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/caeg-gugeuleun-skyreul-moreunda/">(책) 구글은 SKY를 모른다</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/08/caeg-gugeuleun-skyreul-moreunda/">(책) 구글은 SKY를 모른다</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2068,7 +2142,7 @@
                 itemprop="datePublished">2014-08-17</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/">(책) 누가 미래를 가질 것인가?</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/08/nuga-miraereul-gajil-geosinga/">(책) 누가 미래를 가질 것인가?</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2083,7 +2157,7 @@
                 itemprop="datePublished">2014-08-15</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/seupin-is/">(책) 스핀 잇</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/08/seupin-is/">(책) 스핀 잇</a>
         </h3>
     </div>
     <div class="panel-footer">
@@ -2098,7 +2172,7 @@
                 itemprop="datePublished">2014-08-14</time>
         </div>
         <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/hwaweiyi-widaehan-neugdaemunhwa/">(책) 화웨이의 위대한 늑대문화</a>
+            <a class="article-link" href="https://cychong47.github.io/2014/08/hwaweiyi-widaehan-neugdaemunhwa/">(책) 화웨이의 위대한 늑대문화</a>
         </h3>
     </div>
     <div class="panel-footer">
