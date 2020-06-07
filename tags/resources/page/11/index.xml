@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>resources on Another blog</title>
+    <link>https://example.com/tags/resources/</link>
+    <description>Recent content in resources on Another blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 29 Sep 2019 14:35:21 +0900</lastBuildDate>
+    
+        <atom:link href="https://example.com/tags/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</title>
+      <link>https://example.com/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</link>
+      <pubDate>Sat, 27 Sep 2014 13:33:25 +0900</pubDate>
+      
+      <guid>https://example.com/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</guid>
+      <description>p230 OKR(Objectives and Key Results) 는 원래 인텔의 앤디 그로브(Andy Grove)가 고안한 경영기법이다. &amp;hellip; 무었을 하고 싶어하는지만 정하는 것이 아니라, 측정 가능하게 업무(핵심</description>
+    </item>
+    
+    <item>
+      <title>(책) 혼. 창. 통.</title>
+      <link>https://example.com/post/caeg-hon-cang-tong/</link>
+      <pubDate>Wed, 24 Sep 2014 14:26:24 +0900</pubDate>
+      
+      <guid>https://example.com/post/caeg-hon-cang-tong/</guid>
+      <description>혼창통by 이지훈 8p 혼 : 가슴 벅차게 하는 비전이 사람을 움직인다. 창 : 끊임없이 &amp;ldquo;왜&amp;quot;라고 물어라, 그러면 열린다. 통 : 만나라, 또 만</description>
+    </item>
+    
+    <item>
+      <title>DPDK on VirtualBox</title>
+      <link>https://example.com/post/dpdk-on-virtualbox/</link>
+      <pubDate>Tue, 23 Sep 2014 15:37:21 +0900</pubDate>
+      
+      <guid>https://example.com/post/dpdk-on-virtualbox/</guid>
+      <description>VirtualBox에 DPDK 설치하기 참고 VirtualBox 설치하기 통상적인 절차대로 VirtualBox를 설치하고, Ubuntu 14.04 LTS 설치한다. DPDK는 32bit와 64bi</description>
+    </item>
+    
+    <item>
+      <title>(책) 더 인터뷰</title>
+      <link>https://example.com/post/caeg-deo-inteobyu/</link>
+      <pubDate>Sun, 21 Sep 2014 12:21:48 +0900</pubDate>
+      
+      <guid>https://example.com/post/caeg-deo-inteobyu/</guid>
+      <description>p24 만약 직원이 자신이 하려는 도전에 따르는 책임을 받아들이려고 한다면, 많은 조직이 책임을 더 부여하려고 할 것이다. p32 Rolf Dobelli 스마트한 생각들, 스마트한 선택들 &amp;l</description>
+    </item>
+    
+    <item>
+      <title>(책) 왜 공부하는가</title>
+      <link>https://example.com/post/caeg-wae-gongbuhaneunga/</link>
+      <pubDate>Thu, 11 Sep 2014 15:40:52 +0900</pubDate>
+      
+      <guid>https://example.com/post/caeg-wae-gongbuhaneunga/</guid>
+      <description>김진애 p32 뒤를 돌아보면, &amp;ldquo;1년 동안 공부만 할 거야!&amp;ldquo;하고 결단하고 그 결단을 독하게 지켰던 체험을 통해 얻은 가장 큰 자산은 &amp;lsqu</description>
+    </item>
+    
+    <item>
+      <title>(펌) 머리속 정리법 10가지</title>
+      <link>https://example.com/post/peom-meorisog-jeongribeob-10gaji/</link>
+      <pubDate>Wed, 10 Sep 2014 14:55:07 +0900</pubDate>
+      
+      <guid>https://example.com/post/peom-meorisog-jeongribeob-10gaji/</guid>
+      <description>휴식을 취하라 다양한 활동에 대해 각각의 컴퓨터 모니터를 설치하라. 종이로 된 할 일 목록을 사용하라 한 이메일을 복수의 카테고리로 분류하라. 필요할 때는 통째로 없애</description>
+    </item>
+    
+    <item>
+      <title>Time Machine backup</title>
+      <link>https://example.com/post/time-machine-backup/</link>
+      <pubDate>Wed, 10 Sep 2014 13:40:43 +0900</pubDate>
+      
+      <guid>https://example.com/post/time-machine-backup/</guid>
+      <description>추가 해야 할 내용 MovingCastle에 대한 추가 백업? 혹은 Mini 2011을 이중 백업. Wordpress Blog 내용만 추가로 백업 필요. Ghost Blog 추가 백업</description>
+    </item>
+    
+    <item>
+      <title>(책) 빅데이터 승리의 과학</title>
+      <link>https://example.com/post/caeg-bigdeiteo-seungriyi-gwahag/</link>
+      <pubDate>Tue, 09 Sep 2014 03:41:02 +0900</pubDate>
+      
+      <guid>https://example.com/post/caeg-bigdeiteo-seungriyi-gwahag/</guid>
+      <description>(책) 빅데이터 승리의 과학 Technology 팀 오바마 2012년 선거 당시 2008년 당시의 SNS를 활용하는 수준을 넘어서 통합적인 선거 지원을 위해 빅데이터 기술 활용. 선거</description>
+    </item>
+    
+    <item>
+      <title>초보적인 실수를 반복한다고 구박하지만</title>
+      <link>https://example.com/post/cobojeogin-silsureul-banboghandago-gubaghajiman/</link>
+      <pubDate>Mon, 08 Sep 2014 09:12:34 +0900</pubDate>
+      
+      <guid>https://example.com/post/cobojeogin-silsureul-banboghandago-gubaghajiman/</guid>
+      <description>초보적인 실수를 반복한다고 구박하지만, 자기들은 기본적인 패키지 운영도 못하면서 누굴 구박하는지. 조직간 알력 해결도 못하면서. 같은 일을 서로 더 힘들게 하는 문</description>
+    </item>
+    
+    <item>
+      <title>The Pragmatic Programmer</title>
+      <link>https://example.com/post/the-pragmatic-programmer/</link>
+      <pubDate>Mon, 08 Sep 2014 08:48:49 +0900</pubDate>
+      
+      <guid>https://example.com/post/the-pragmatic-programmer/</guid>
+      <description>TPP 3. Provide Options, Don&amp;rsquo;t make Lame excuses 검토 결과 부정적일 때, 그냥 안된다고 하지말고 대안을 같이 제시하자. &amp;ldquo;이거 해 봤어?&amp;rdquo; &amp;ldquo;이거 고려했</description>
+    </item>
+    
+    <item>
+      <title>Synology &#43; Webdav &#43; Devonthink</title>
+      <link>https://example.com/post/synology-webdav-devonthink/</link>
+      <pubDate>Sat, 06 Sep 2014 15:39:33 +0900</pubDate>
+      
+      <guid>https://example.com/post/synology-webdav-devonthink/</guid>
+      <description>우선 Synology NAS에서 webdav를 켜는 건 기본이고 Devonthink의 Sync tab에서 타입을 webdav로 하면 아래와 같은 입력 창이 나오는데 여기에 서버 주</description>
+    </item>
+    
+    <item>
+      <title>(펌) 삶의 목적</title>
+      <link>https://example.com/post/peom-salmyi-mogjeog/</link>
+      <pubDate>Wed, 03 Sep 2014 04:21:54 +0900</pubDate>
+      
+      <guid>https://example.com/post/peom-salmyi-mogjeog/</guid>
+      <description>&amp;lt;인생의 목적&amp;gt; 우리는 살기 위해, 그리고 경험하기 위해 태어났습니다. 바쁜 일정 속에서도 스스로에게 되뇌이곤 합니다. 인간은 일하기 위해 태어난 것</description>
+    </item>
+    
+    <item>
+      <title>(책) 구글은 SKY를 모른다</title>
+      <link>https://example.com/post/caeg-gugeuleun-skyreul-moreunda/</link>
+      <pubDate>Sun, 31 Aug 2014 13:29:59 +0900</pubDate>
+      
+      <guid>https://example.com/post/caeg-gugeuleun-skyreul-moreunda/</guid>
+      <description>나는 매주 금요일 오후가 되면 구글이라는 회사의 위력을 다시금 실감한다. 알려진 대로 구글은 매주 금요일마다 전 직원이 모이는 TGIF라는 행사가 있다. 정말 지금도</description>
+    </item>
+    
+    <item>
+      <title>(펌) 20 Life Lessons Everyone Can Master By The Age 40</title>
+      <link>https://example.com/post/peom-20-life-lessons-everyone-can-master-by-the-age-40/</link>
+      <pubDate>Sun, 24 Aug 2014 12:17:51 +0900</pubDate>
+      
+      <guid>https://example.com/post/peom-20-life-lessons-everyone-can-master-by-the-age-40/</guid>
+      <description>출처 : 20 Life Lessons Everyone Can Master By The Age 40 1. Everything will be okay, and if it’s not, it’s certainly not the end of the world. 내가 포기할 때 실패한 끝난 거다. 2. Find what you love and own it! 3. Don’t fear mistakes. 4. You deserve respect.</description>
+    </item>
+    
+    <item>
+      <title>(펌) 어떻게 하면 더 나은 소프트웨어를 만들 수 있을까?</title>
+      <link>https://example.com/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</link>
+      <pubDate>Sun, 24 Aug 2014 10:55:06 +0900</pubDate>
+      
+      <guid>https://example.com/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</guid>
+      <description>어떻게 하면 더 나은 소프트웨어를 만들 수 있을까? – 인터뷰 시리즈 part 1, Fernando Jimenez Moreno와 함께 출처 : http://hacks.mozilla.or.kr/2014/08/how-can-we-write-better-software-interview-series-part-1/ 영문 원본 : https://hacks.mozilla.org/2014/07/how-can-we-write-better-software-interview-series-part-1/ Telefonica에서 근무하고 있으면</description>
+    </item>
+    
+    <item>
+      <title>SDN expert group 세미나 - Play with DPDK</title>
+      <link>https://example.com/post/sdn-expert-group-semina-play-with-dpdk/</link>
+      <pubDate>Thu, 21 Aug 2014 12:11:18 +0900</pubDate>
+      
+      <guid>https://example.com/post/sdn-expert-group-semina-play-with-dpdk/</guid>
+      <description>세미나 내용 Controller &amp;ndash;(OpenFlow)&amp;ndash; ovs-switchd &amp;ndash;(netlink)&amp;ndash; Datapath Datapath is in the kernel space OVDK move the kernel based OVS to user space. ovs-switched talk to OVDK with UDP 기존 OVDK는 port별 task handler(각각 별도의 core에서 동작) 그 결과 많</description>
+    </item>
+    
+    <item>
+      <title>차라리 혼자 생각할 시간 가져라</title>
+      <link>https://example.com/post/carari-honja-saenggaghal-sigan-gajyeora/</link>
+      <pubDate>Wed, 20 Aug 2014 14:43:09 +0900</pubDate>
+      
+      <guid>https://example.com/post/carari-honja-saenggaghal-sigan-gajyeora/</guid>
+      <description>그러나 생각하기 위한 시간을 내는 것으로는 부족해 보인다. 자신의 믿음에 부합되는 정보만을 찾는 편향이 인간에게는 있다고 했다. 혼자 생각한다고 그런 편향에서 벗어</description>
+    </item>
+    
+    <item>
+      <title>(책) 누가 미래를 가질 것인가?</title>
+      <link>https://example.com/post/nuga-miraereul-gajil-geosinga/</link>
+      <pubDate>Sun, 17 Aug 2014 14:29:31 +0900</pubDate>
+      
+      <guid>https://example.com/post/nuga-miraereul-gajil-geosinga/</guid>
+      <description>p19 &amp;lsquo;인생은 해석&amp;rsquo;이라는 말이 있다. 인생을 살면서 많은 사건을 겪게 되는데, 그 사건들을 어떻게 해석하느냐에 따라 삶의 방향이 달라진다</description>
+    </item>
+    
+    <item>
+      <title>종교의 차별된 사랑</title>
+      <link>https://example.com/post/jonggyoyi-cabyeoldoen-sarang/</link>
+      <pubDate>Sat, 16 Aug 2014 14:30:53 +0900</pubDate>
+      
+      <guid>https://example.com/post/jonggyoyi-cabyeoldoen-sarang/</guid>
+      <description>회사라고 치자. 계열사에 회장이 떴다. 회장이 계열사 직원들로부터 소원수리를 받았다. 심각한 문제다. 그런데 사장들이 뻔히 문제점을 알고 있으면서 무시하고 아무</description>
+    </item>
+    
+    <item>
+      <title>(책) 스핀 잇</title>
+      <link>https://example.com/post/seupin-is/</link>
+      <pubDate>Fri, 15 Aug 2014 14:58:34 +0900</pubDate>
+      
+      <guid>https://example.com/post/seupin-is/</guid>
+      <description>p76 이 아이디어를 MIT 경영대학원 교수인 Glen Urban에게 가져갔을 때 그는 &amp;ldquo;이 아이디어는 당신이 생각하는 것보다 훨씬 스케일이 크다. 두 배의 속도로 움</description>
+    </item>
+    
+  </channel>
+</rss>

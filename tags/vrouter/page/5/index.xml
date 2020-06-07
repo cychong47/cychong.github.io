@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vRouter on Another blog</title>
+    <link>https://example.com/tags/vrouter/</link>
+    <description>Recent content in vRouter on Another blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Dec 2014 10:38:08 +0900</lastBuildDate>
+    
+        <atom:link href="https://example.com/tags/vrouter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>사진 백업 2017 버전</title>
+      <link>https://example.com/post/sajin-baegeob-2017-beojeon/</link>
+      <pubDate>Mon, 09 Oct 2017 15:41:52 +0900</pubDate>
+      
+      <guid>https://example.com/post/sajin-baegeob-2017-beojeon/</guid>
+      <description>최적화(?) 중. Lightroom으로 사진 관리 Apple Photos 앱이 아닌 Adobe Lightroom으로 사진 관리. 사진 파일은 DB에 포함시키지 않고, meta data만 DB</description>
+    </item>
+    
+    <item>
+      <title>Error in using homebrew module in ansible</title>
+      <link>https://example.com/post/untitled-2/</link>
+      <pubDate>Sun, 08 Oct 2017 17:25:43 +0900</pubDate>
+      
+      <guid>https://example.com/post/untitled-2/</guid>
+      <description>When I call the homebrew modules for three hosts including the localhost, one host reports error.
+mbpr15:~ cychong$ ansible-playbook install_brew_ack.yaml --verbose No config file found; using defaults PLAY [all] ************************************************************************************************** TASK [Gathering Facts] ************************************************************************************** ok: [localhost] ok: [mini2] ok: [mini1] TASK [install ack in homebrew] ****************************************************************************** ok: [localhost] =&amp;gt; {&amp;quot;changed&amp;quot;: false, &amp;quot;failed&amp;quot;: false, &amp;quot;msg&amp;quot;: &amp;quot;Package already installed: ack&amp;quot;} ok: [mini1] =&amp;gt; {&amp;quot;changed&amp;quot;: false, &amp;quot;failed&amp;quot;: false, &amp;quot;msg&amp;quot;: &amp;quot;Package already installed: ack&amp;quot;} fatal: [mini2]: FAILED!</description>
+    </item>
+    
+    <item>
+      <title>FTP server is gone from High Siera OSX Server</title>
+      <link>https://example.com/post/ftp-server-is-gone-from-high-siera-osx-server/</link>
+      <pubDate>Sat, 07 Oct 2017 00:19:27 +0900</pubDate>
+      
+      <guid>https://example.com/post/ftp-server-is-gone-from-high-siera-osx-server/</guid>
+      <description>It is gone finally&amp;hellip; [macOS Server 5.4 changes in High Sierra you need to know about!])https://www.imore.com/changes-macos-server-54-high-sierra)
+ File Transfer Protocol (FTP): A longtime a security risk, for example for sending password information in clear text, FTP support will be removed from macOS server if you upgrade.
+ As my xeros printer/scanner suppors only ftp or samba(which is much much slower than the ftp) I have to run my own ftp server in my mac mini.</description>
+    </item>
+    
+    <item>
+      <title>WP video plugin</title>
+      <link>https://example.com/post/wp-video-plugin/</link>
+      <pubDate>Fri, 06 Oct 2017 01:55:04 +0900</pubDate>
+      
+      <guid>https://example.com/post/wp-video-plugin/</guid>
+      <description>Install Easy Video Player
+Others 7 Free WordPress Video Player Plugins of 2017</description>
+    </item>
+    
+    <item>
+      <title>Play with Ansible</title>
+      <link>https://example.com/post/ansible/</link>
+      <pubDate>Wed, 04 Oct 2017 00:22:48 +0900</pubDate>
+      
+      <guid>https://example.com/post/ansible/</guid>
+      <description>Configuration ansible client A ansible target B, C In client Ansible targets(B,C) should be listed in the following file. If required additional parameters can be specified such as login account, ssh port and etc # /etc/ansible/hosts 192.168.1.100 ansible_ssh_user=cychong ansible_ssh_port=22 192.168.1.200 ansible_ssh_user=cychong ansible_ssh_port=22 In ansible targets A should be found on the following file # grep A .ssh/authorized_keys Test run from A # ansible all -m ping 192.168.1.200 | SUCCESS =&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>(Series</title>
+      <link>https://example.com/post/series-4-10-lessons-from-telemetry/</link>
+      <pubDate>Tue, 03 Oct 2017 16:24:37 +0900</pubDate>
+      
+      <guid>https://example.com/post/series-4-10-lessons-from-telemetry/</guid>
+      <description>https://www.youtube.com/watch?v=tIN8BjHwpNs
+Other similar videos Architecture for fine-grain, high-resolution Telemetry for network elements. Jun 4 2015, Juniper Networks, Presented in NANOG
+Visualizing Cisco Telemetry Data using Elasticsearch, Logstash and Kibana</description>
+    </item>
+    
+    <item>
+      <title>(Series</title>
+      <link>https://example.com/post/cisco-ios-xr-and-signalfx-demo/</link>
+      <pubDate>Tue, 03 Oct 2017 13:47:55 +0900</pubDate>
+      
+      <guid>https://example.com/post/cisco-ios-xr-and-signalfx-demo/</guid>
+      <description>출처 : sdxcentral, Feb 5, 2016 tools presented in the video reference video ppt</description>
+    </item>
+    
+    <item>
+      <title>(Series</title>
+      <link>https://example.com/post/streaming-telemetry-with-google-protocol-buffers/</link>
+      <pubDate>Sun, 01 Oct 2017 21:38:04 +0900</pubDate>
+      
+      <guid>https://example.com/post/streaming-telemetry-with-google-protocol-buffers/</guid>
+      <description>출처 : https://blogs.cisco.com/sp/streaming-telemetry-with-google-protocol-buffers Summary JSON, &amp;ldquo;compact&amp;rdquo; GPB and &amp;ldquo;Key-Value&amp;rdquo; GPB &amp;ldquo;Compact&amp;rdquo; GPB data on wire can be decoded without the decoder ring while &amp;ldquo;Key-Value&amp;rdquo; GPB data is Self-Describing. Compact GPB can be used with UDP(default) and TCP(optionally) &amp;ldquo;Key-value&amp;rdquo; GPB is only for TCP 833 bytes of compact GPB while more than 4000 bytes for Key-value GPB Compressed JSON(?)</description>
+    </item>
+    
+    <item>
+      <title>CISCO Yang data model</title>
+      <link>https://example.com/post/cisco-yang-data-model/</link>
+      <pubDate>Sun, 01 Oct 2017 21:33:27 +0900</pubDate>
+      
+      <guid>https://example.com/post/cisco-yang-data-model/</guid>
+      <description>Seems that configuration and operation data are defined in a different yang file though it is not clear they are module or submodule
+ The models are in the .yang format. A model with: -oper in the model name indicates an operational model. For example, Cisco-IOS-XR-cdp-oper.yang is an operational model for Cisco Discovery Protocol (CDP). -cfg indicates a configuration model. For example, Cisco-IOS-XR-cdp-cfg.yang is a configuration model for CDP. -act indicates a NETCONF actions model.</description>
+    </item>
+    
+    <item>
+      <title>(Series</title>
+      <link>https://example.com/post/model-driven-telemetry/</link>
+      <pubDate>Sun, 01 Oct 2017 14:06:46 +0900</pubDate>
+      
+      <guid>https://example.com/post/model-driven-telemetry/</guid>
+      <description>Why You Should Care About Model-Driven Telemetry from CISCO blog
+Summary  Periodic polling -&amp;gt; Pushing(Streaming) Model based data with YANG Use standard encoding such as JSON, Google Protocol Buffers Easy to manipulate, connect to analytic solutions  1-min poll is too slow  For the last 25 years, network operators have heavily relied on SNMP polling and CLI screen-scraping to extract operational data from the network. But the new and automated demands of today’s networks have pushed these mechanisms to the breaking point.</description>
+    </item>
+    
+    <item>
+      <title>brew install python</title>
+      <link>https://example.com/post/brew-install-python/</link>
+      <pubDate>Sun, 01 Oct 2017 13:44:47 +0900</pubDate>
+      
+      <guid>https://example.com/post/brew-install-python/</guid>
+      <description>Just for the record as some environments are mentioned
+mbpr15:working cychong$ brew install python ==&amp;gt; Installing dependencies for python: readline, sqlite, gdbm, openssl ==&amp;gt; Installing python dependency: readline ==&amp;gt; Downloading https://homebrew.bintray.com/bottles/readline-7.0.3_1.high_sierra.bottle.tar.gz ######################################################################## 100.0% ==&amp;gt; Pouring readline-7.0.3_1.high_sierra.bottle.tar.gz ==&amp;gt; Caveats This formula is keg-only, which means it was not symlinked into /usr/local, because macOS provides the BSD libedit library, which shadows libreadline. In order to prevent conflicts when programs look for libreadline we are defaulting this GNU Readline installation to keg-only.</description>
+    </item>
+    
+    <item>
+      <title>Parsing http header with scary</title>
+      <link>https://example.com/post/parsing-http-header-with-scary/</link>
+      <pubDate>Sun, 01 Oct 2017 09:36:35 +0900</pubDate>
+      
+      <guid>https://example.com/post/parsing-http-header-with-scary/</guid>
+      <description>정규식으로 http 분석 def processHTTP(data): str_method = &amp;quot;&amp;quot; str_uri = &amp;quot;&amp;quot; 정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&amp;quot;(?P&amp;lt;method&amp;gt;(^GET|^POST|^PUT|^DELETE)) (?P&amp;lt;uri&amp;gt;.+) (?P&amp;lt;version&amp;gt;.+)&amp;quot;, data) if not h: return &amp;quot;Error&amp;quot; # 정규표현식에 해당하는 데이터</description>
+    </item>
+    
+    <item>
+      <title>Google&#39;s Load Balancer</title>
+      <link>https://example.com/post/googles-load-balancer/</link>
+      <pubDate>Sun, 01 Oct 2017 08:34:30 +0900</pubDate>
+      
+      <guid>https://example.com/post/googles-load-balancer/</guid>
+      <description>Maglev  Google( https://research.google.com/pubs/pub44824.html ) Used in Google Cloud since 2008 Scalable load balancer  Consistent hashing Connection Tracking Scale-out model backed by router&amp;rsquo;s ECMP   Bypass kernel space for performance. Support connection persistence  Network Architecture  DNS - Routers - Maglevs - Service EndPoints. One service is served by one or more VIPs  DNS returns VIP considering geolocation and load of location   One VIP is served by multiple Maglevs  Router use ECMP to select one Maglev   One VIP is mapped to multiple Service EndPoints  Maglev select Service EndPoint by seletion algorithm and connection tracking table   Maglev use GRE to send incoming packet to Service EndPoint or another Maglev  Send to IP fragment to another special Maglev servers Use only 3-tuple for IP fragment   Each Service EndPoint use Direct Server Return(DSR)  Maglev Controller  Responsible for VIP announcement with BGP Check health status of forwarder If forwarder is not headthy, withdraw all VIP announcements  Forwarder  Each VIP has one or multiple backend pools(BP) BP contain physical IP address of the Service EndPoint Each BP has specific health checking methods - depends on the service requirement(just reachability or more) Config Manager parse and update configuration of forwarder&amp;rsquo;s behavior based on the Config Objects Sharding  Sharding of Maglev enables service isolation - new service or QoS    Backend Selection  Consistent Hashing distribute loads Record selection in LOCAL connection tracking table  Connection tracking table is not shared with another Maglev Does not guarantee consistency on Maglev or Service EndPoint Changes(add/delete)   For different traffic type  TCP SYN : select Backend and record it in connection tracking table TCP non-SYN : lookup connection tracking table 5-tuple : (maybe) lookup connection tracking table and select backend if not found    Consistent Hashing  If Maglev is added or removed, router select different Maglev for the exsiting session - ECMP is changed If one Maglev&amp;rsquo;s local connection tracking table is overflowed, it will lose previous selection To resolve this issues,  Synchronize local connection tracking table between Maglevs -&amp;gt; overhead, overhead, overhead Consistent hashing for minimize disruption in member changes Maglev hashing - load balancing and minimal disruption on member changes    reference  Maglev: A Fast and Reliable Software Network Load Balancer Consistent Hashing The Simple Magic of Consistent Hashing  </description>
+    </item>
+    
+    <item>
+      <title>OPNFV Asia Meeting</title>
+      <link>https://example.com/post/opnfv-asia-meeting/</link>
+      <pubDate>Sun, 01 Oct 2017 08:28:34 +0900</pubDate>
+      
+      <guid>https://example.com/post/opnfv-asia-meeting/</guid>
+      <description>ZTE Pharos Lab Pharos : OPNFV를 시험하는 worldwide lab 외부에서 접속하는 것이 필요하므로 ssh를 열어줄 수는 없어서 openVPN을 제공하고, 망을 분리하는 등의 이슈 해결을</description>
+    </item>
+    
+    <item>
+      <title>Integrating VES to OPNFV</title>
+      <link>https://example.com/post/ves-to-opnfv/</link>
+      <pubDate>Mon, 25 Sep 2017 15:44:11 +0900</pubDate>
+      
+      <guid>https://example.com/post/ves-to-opnfv/</guid>
+      <description>VES project VNF Event Stream Project
+Demo  vHello VES Demo in OpenStack Barcelona 2016 VES ONAP demo from OPNFV Summit 2017  From VF Event Streaming (VES) Project Proposal  Alok Gupta 13 Jun, 2016 OPNFV VES.pptx VNF Event Stream Prpoposal  OPNFV projects that potentially benefit from the VES project
+ Fault Management ([Doctor] (https://wiki.opnfv.org/display/doctor)) *** Virtualized Infrastructure Deployment Policies (Copper) High Availability for OPNFV (Availability) Data Collection for Failure Prediction (Prediction) *** Audit (Inspector) Fault localization (RCA, Pinpoint ) *** Service Function Chaining (sfc) Moon Security Management   OpenStack projects that potentially benefit from the VES project</description>
+    </item>
+    
+    <item>
+      <title>OPNFV Barometer and VES</title>
+      <link>https://example.com/post/opnfv-barometer/</link>
+      <pubDate>Mon, 25 Sep 2017 15:05:40 +0900</pubDate>
+      
+      <guid>https://example.com/post/opnfv-barometer/</guid>
+      <description>Summary The VES can be supported with the help of Kafka broker with the collectd in OPNFV Barometer project which is aim to collect telemetrics from the NFVI. Barometer Project The purpose of this project is providing metrics can be used to decide quality of NFVI. For this, the followings are reported NIC statistics Resources such as CPU, Memory, load, cache, themals, fan speeds, voltages and machine check exceptions. This</description>
+    </item>
+    
+    <item>
+      <title>(Summary) AT&amp;T Container Strategy</title>
+      <link>https://example.com/post/summary-at-t-container-strategy/</link>
+      <pubDate>Thu, 21 Sep 2017 15:21:45 +0900</pubDate>
+      
+      <guid>https://example.com/post/summary-at-t-container-strategy/</guid>
+      <description>From https://www.youtube.com/watch?v=rYRiH3HZFN4&amp;amp;t=3s
+Presented in OpenStack Summit 2017 Boston
+Container will be used for workload processing after 2019 VNF is differ from Enterprise IT worklaod(4:19)
+ VNF is not a simple VM Maintain a state Complex network configuration Sophisticated Storage Connectivity HA is important  2018-2019 vendor and open source project especially openstack should do something to meet the requirements.
+Even it takes some time for container to replace VM for workload perspective, running the Openstack service as a container is possible today.</description>
+    </item>
+    
+    <item>
+      <title>(News) Amdocs Brings an NFV Software Package Based on ONAP</title>
+      <link>https://example.com/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</link>
+      <pubDate>Wed, 20 Sep 2017 15:30:44 +0900</pubDate>
+      
+      <guid>https://example.com/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</guid>
+      <description>September 12, 2017
+https://www.sdxcentral.com/articles/news/amdocs-brings-nfv-software-package-based-onap/2017/09/
+Amdocs announced its new NFV Powered by ONAP portfolio – a portfolio featuring modular capabilities that accelerate service design, virtualization and operating capabilities on demand.
+ Service providers using technologies developed in ONAP and its ecosystem of capabilities can provide enterprises the ability to design their own networks as part of a richer set of service features.
+ from : https://www.amdocs.com/media-room/amdocs-nfv-powered-onap-worlds-first-software-and-services-portfolio-carriers-based-open
+Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP platform as an integrator.</description>
+    </item>
+    
+    <item>
+      <title>Prometheus</title>
+      <link>https://example.com/post/prometheus/</link>
+      <pubDate>Mon, 18 Sep 2017 13:59:00 +0900</pubDate>
+      
+      <guid>https://example.com/post/prometheus/</guid>
+      <description>Cloud Native Computing Foundation(http://cncf.io)에 포함된 Container monitoring tool. 집 맥미니에서 돌리고 있는 3개 container들을 관리하는데 사용할 수 있</description>
+    </item>
+    
+    <item>
+      <title>NGNIX for service mesh</title>
+      <link>https://example.com/post/ngnix-for-service-mesh/</link>
+      <pubDate>Fri, 15 Sep 2017 14:39:11 +0900</pubDate>
+      
+      <guid>https://example.com/post/ngnix-for-service-mesh/</guid>
+      <description>NGINX Releases Microservices Platform, OpenShift Ingress Controller, and Service Mesh Preview NGNIX also join for service mesh bandwagon? NGNIX Application Platform NGINX Plus, the commercial variant of the popular open source NGINX web server. NGINX Web Application Firewall (WAF) NGINX Unit, a new open source application server that can run PHP, Python and Go NGINX Controller, a centralised control plane for monitoring and management of NGINX Plus Additional release a</description>
+    </item>
+    
+  </channel>
+</rss>

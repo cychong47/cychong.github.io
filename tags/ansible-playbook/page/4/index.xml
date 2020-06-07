@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ansible-playbook on Another blog</title>
+    <link>https://example.com/tags/ansible-playbook/</link>
+    <description>Recent content in ansible-playbook on Another blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 14 Jun 2018 15:13:52 +0900</lastBuildDate>
+    
+        <atom:link href="https://example.com/tags/ansible-playbook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>(책) 매일 아침 써봤니?</title>
+      <link>https://example.com/post/did-you-write-in-every-morning/</link>
+      <pubDate>Sun, 01 Jul 2018 12:03:47 +0900</pubDate>
+      
+      <guid>https://example.com/post/did-you-write-in-every-morning/</guid>
+      <description>세바시 였던가, 공개 강의 동영상을 통해 처음 알게 된 김민식 PD. 예전에 인기있었던 시트콤, ‘논스톱’을 만든 PD인데 MBC 파업과 관련되어 힘든 시간을 보내다 “영어책</description>
+    </item>
+    
+    <item>
+      <title>생각 정리의 기술</title>
+      <link>https://example.com/post/mindmap/</link>
+      <pubDate>Wed, 20 Jun 2018 14:00:06 +0900</pubDate>
+      
+      <guid>https://example.com/post/mindmap/</guid>
+      <description>오늘 회사에서 점심 시간에 배운 mindmap 활용법 iThoughtX를 OS X, iOS용으로 모두 구입할 만큼 마인드맵에 관심이 있긴 한데 생각을 풀어낼 때 다양한 framew</description>
+    </item>
+    
+    <item>
+      <title>Update ansible-playbook for wordpress</title>
+      <link>https://example.com/post/update-ansible-playbook-for-wordpress/</link>
+      <pubDate>Thu, 14 Jun 2018 15:13:52 +0900</pubDate>
+      
+      <guid>https://example.com/post/update-ansible-playbook-for-wordpress/</guid>
+      <description>이상하게 wordpress 버전이 올라가면 docker용 wordpress 버전도 함께 올라갈 텐데 아무리 최신 docker image를 받아 container를 만들어도 wordpress admin 계정에 들어가면 wor</description>
+    </item>
+    
+    <item>
+      <title>wordpress admin 계정 복구</title>
+      <link>https://example.com/post/wordpress-admin-login-fail/</link>
+      <pubDate>Thu, 14 Jun 2018 14:21:13 +0900</pubDate>
+      
+      <guid>https://example.com/post/wordpress-admin-login-fail/</guid>
+      <description>문제 블로그 보는 거 자체는 문제가 없는데 admin 계정으로 로그인 시도하면 반복해서 로그인 페이지로 redirect됨 http://sosa0sa.com/wp-login.php?redirect_to=http://sosa0sa.com/wp-admin/&amp;amp;reauth=1 구글링을 하니 대부분 쿠키를 초기화하고, theme, p</description>
+    </item>
+    
+    <item>
+      <title>Grafana, influxDB and python</title>
+      <link>https://example.com/post/grafana-influxdb-and-python/</link>
+      <pubDate>Wed, 06 Jun 2018 04:33:06 +0900</pubDate>
+      
+      <guid>https://example.com/post/grafana-influxdb-and-python/</guid>
+      <description>Time-series data를 python을 이용해서 influxDB에 저장하고, Grafana로 그래프를 보여주는 예제 https://github.com/cychong47/influxdb_example.git Install Grafana and influxDB Install Grafana 직접 호스트에 설치할 수도 있지만</description>
+    </item>
+    
+    <item>
+      <title>Elastic stack and Metricbeat</title>
+      <link>https://example.com/post/install_elasticstack_and_metricbeat/</link>
+      <pubDate>Thu, 31 May 2018 21:58:51 +0900</pubDate>
+      
+      <guid>https://example.com/post/install_elasticstack_and_metricbeat/</guid>
+      <description>Install Elastic Stack(ELK stack) with docker mbpr15:elk-wireshark cychong$ git clonehttps://github.com/deviantony/docker-elk.git git: &#39;clonehttps://github.com/deviantony/docker-elk.git&#39; is not a git command. See &#39;git --help&#39;. mbpr15:elk-wireshark cychong$ git clone https://github.com/deviantony/docker-elk.git Cloning into &#39;docker-elk&#39;... remote: Counting objects: 1235, done. remote: Total 1235 (delta 0), reused 0 (delta 0), pack-reused 1235 Receiving objects: 100% (1235/1235), 259.29 KiB | 77.00 KiB/s, done. Resolving deltas: 100% (470/470), done. mbpr15:elk-wireshark cychong$ cd elk mbpr15:elk-wireshark cychong$ cd docker-elk/ mbpr15:docker-elk cychong$ ls</description>
+    </item>
+    
+    <item>
+      <title>2018.01 home network</title>
+      <link>https://example.com/post/2018-01-home-network/</link>
+      <pubDate>Tue, 30 Jan 2018 15:44:01 +0900</pubDate>
+      
+      <guid>https://example.com/post/2018-01-home-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible - Install homebrew</title>
+      <link>https://example.com/post/ansible-homebrew/</link>
+      <pubDate>Sat, 30 Dec 2017 02:34:39 +0900</pubDate>
+      
+      <guid>https://example.com/post/ansible-homebrew/</guid>
+      <description>update homebrew mbpr15:mp3 cychong$ ansible all -m homebrew -a update_homebrew=yes localhost | SUCCESS =&amp;gt; { &amp;quot;changed&amp;quot;: true, &amp;quot;msg&amp;quot;: &amp;quot;Homebrew updated successfully.&amp;quot; } mini2 | SUCCESS =&amp;gt; { &amp;quot;changed&amp;quot;: true, &amp;quot;msg&amp;quot;: &amp;quot;Homebrew updated successfully.&amp;quot; } upgrade all packages mbpr15:mp3 cychong$ ansible all -m homebrew -a update_homebrew=yes -a upgrade_all=yes localhost | SUCCESS =&amp;gt; { &amp;quot;changed&amp;quot;: true, &amp;quot;msg&amp;quot;: &amp;quot;Homebrew upgraded.&amp;quot; } mini2 | SUCCESS =&amp;gt; { &amp;quot;changed&amp;quot;: true, &amp;quot;msg&amp;quot;: &amp;quot;Homebrew upgraded.&amp;quot; } install</description>
+    </item>
+    
+    <item>
+      <title>Ansible - recreate ghost container</title>
+      <link>https://example.com/post/recreate-ghost-container/</link>
+      <pubDate>Sat, 30 Dec 2017 02:31:41 +0900</pubDate>
+      
+      <guid>https://example.com/post/recreate-ghost-container/</guid>
+      <description>YAML file state:absent 는 현재 존재하는 container를 중지시키고, 삭제한다. 단순히 stop만 시키려면 state:stopped로 지정하면 된다. pull: yes 옵션을 사</description>
+    </item>
+    
+    <item>
+      <title>Ansible - basics of ansible-playbook</title>
+      <link>https://example.com/post/ansible-playbook/</link>
+      <pubDate>Fri, 29 Dec 2017 13:43:14 +0900</pubDate>
+      
+      <guid>https://example.com/post/ansible-playbook/</guid>
+      <description>play The goal of a play is to map a group of hosts to some well defined roles, represented by things ansible calls tasks. At a basic level, a task is nothing more than a call to an ansible module play는 명령을 수행할 대상과 수행할 명령을 모두 포함하고 있다. playbook</description>
+    </item>
+    
+    <item>
+      <title>Ansible - ad-hoc or basic</title>
+      <link>https://example.com/post/ansible-exercise-1/</link>
+      <pubDate>Wed, 27 Dec 2017 14:32:51 +0900</pubDate>
+      
+      <guid>https://example.com/post/ansible-exercise-1/</guid>
+      <description>Create inventory(Ansible hosts) file mbpr15:Homebrew cychong$ cat /etc/ansible/hosts mini1 ansible_host=x.y.z.a ansible_ssh_user=cychong ansible_ssh_port=22 mini2 ansible_host=x.y.z.b ansible_ssh_user=cychong ansible_ssh_port=22 localhost ansible_connection=local ping ping 명령도 ansible이 제공하는 ping module을 이용하므로 -m 옵션을 사용한다. mbpr15:Homebrew cychong$ ansible all -m ping -k SSH password: localhost | SUCCESS =&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Wordpress with docker</title>
+      <link>https://example.com/post/install-wordpress-with-docker/</link>
+      <pubDate>Tue, 19 Dec 2017 22:20:06 +0900</pubDate>
+      
+      <guid>https://example.com/post/install-wordpress-with-docker/</guid>
+      <description>Summary docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql docker run --restart=always -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@ -e WORDPRESS_DB_NAME=wordpress_db -p 80:80 -v /Users/cychong/Documents/wordpress/html:/var/www/html -v /Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads -v /Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini --link mysql:mysql --name wpcontainer -d wordpress  If required, import database to mysql (Once wordpress data is imported into mysql, upgrading mysql does not requires re-import ingof wordpress data)
+mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql Unable to find image &#39;mysql:latest&#39; locally latest: Pulling from library/mysql aa18ad1a0d33: Pull complete a5745c3b8bcc: Pull complete 76375fcd129c: Pull complete 4f72cfb004cf: Pull complete 1d6a01e515fb: Pull complete a71e1163fa7e: Pull complete 8c1a568fa442: Pull complete e7a69cecc173: Pull complete 9759a0f979a1: Pull complete 3f71dac6110f: Pull complete 58f37de54392: Pull complete Digest: sha256:790b7b18b832822ef400e44ad9fac885a746db1a7028ec52325730cf9b831753 Status: Downloaded newer image for mysql:latest b1f54c680120898fc7ff16751048fe18ae461399d5d7f10308c156c68d40577b  check container is started cychong:~ cychong$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES b1f54c680120 mysql &amp;quot;docker-entrypoint.</description>
+    </item>
+    
+    <item>
+      <title>clienBBS</title>
+      <link>https://example.com/post/clienbbs/</link>
+      <pubDate>Thu, 14 Dec 2017 09:42:15 +0900</pubDate>
+      
+      <guid>https://example.com/post/clienbbs/</guid>
+      <description>pip3로는 설치가 안되네 mbpr15:~ cychong$ pip3 install clientBBS Collecting clientBBS Could not find a version that satisfies the requirement clientBBS (from versions: ) No matching distribution found for clientBBS 그래서 그냥 github 링크에서 클론해서 실행 mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Cloning into &#39;clienBBS&#39;... remote: Counting objects: 219, done. remote: Compressing objects:</description>
+    </item>
+    
+    <item>
+      <title>mac mini 에 windows 10 설치</title>
+      <link>https://example.com/post/mac-mini-e-windows-10-seolci/</link>
+      <pubDate>Tue, 12 Dec 2017 15:18:05 +0900</pubDate>
+      
+      <guid>https://example.com/post/mac-mini-e-windows-10-seolci/</guid>
+      <description>mac mini 2009에 windows 10을 무사히 설치. 몇 가지 삽질을 적어보면 mac mini는 windows 7까지만 지원하고, optic drive를 이용한 설치만 지원하기 때문에 그냥(?) 해서</description>
+    </item>
+    
+    <item>
+      <title>Vagrant</title>
+      <link>https://example.com/post/vagrant-2/</link>
+      <pubDate>Tue, 21 Nov 2017 15:04:19 +0900</pubDate>
+      
+      <guid>https://example.com/post/vagrant-2/</guid>
+      <description>Vagrant What is a Vagrant? Backend에 virtualbox를 사용(변경 가능) 하고, virtualbox를 이용해 VM을 생성하여 그 VM 내 원하는 환경(특정 OS부</description>
+    </item>
+    
+    <item>
+      <title>Amdocs Preps &#39;Carrier-Grade&#39; Version of ONAP</title>
+      <link>https://example.com/post/amdocs-preps-carrier-grade-version-of-onap/</link>
+      <pubDate>Tue, 21 Nov 2017 14:51:25 +0900</pubDate>
+      
+      <guid>https://example.com/post/amdocs-preps-carrier-grade-version-of-onap/</guid>
+      <description>From Amdocs Preps &amp;lsquo;Carrier-Grade&amp;rsquo; Version of ONAP | Light Reading(http://www.lightreading.com/mobile/mec-(mobile-edge-computing)/amdocs-preps-carrier-grade-version-of-onap/d/d-id/738315) &amp;ldquo;We&amp;rsquo;re just about to make a big carrier [and] enterprise grade release of ONAP,&amp;rdquo; Angela Logothetis, VP and CTO of Amdocs Open Network, told Light Reading Logothetis says that Amdocs is working with Intel Corp. (Nasdaq: INTC) on edge computing proofs-of-concept. This involves understanding what content and data needs to cached and where exactly that should happen on the network.</description>
+    </item>
+    
+    <item>
+      <title>ONAP Takes Flak as Telcos Prep for Release 1 | Light Reading</title>
+      <link>https://example.com/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</link>
+      <pubDate>Tue, 14 Nov 2017 22:31:57 +0900</pubDate>
+      
+      <guid>https://example.com/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</guid>
+      <description>1st release Amsterdam release which is due to November 16 Critics It will not be stable enough to be used for product misunderstanding That release will focus on providing support for three network functions or services &amp;ndash; a virtual firewall (vFW), virtual customer premises equipment (vCPE) and a voice-over-LTE service running on a virtual evolved packet core (vEPC) I think this is a misunderstanding. These are just an use case</description>
+    </item>
+    
+    <item>
+      <title>Lead Follow or Get Out of the Way</title>
+      <link>https://example.com/post/lead-or-step-aside/</link>
+      <pubDate>Sun, 29 Oct 2017 01:38:23 +0900</pubDate>
+      
+      <guid>https://example.com/post/lead-or-step-aside/</guid>
+      <description>book from Amazon</description>
+    </item>
+    
+    <item>
+      <title>관리자는 &#39;관리&#39;업무를 하는 동료이다.</title>
+      <link>https://example.com/post/what-is-good-manager/</link>
+      <pubDate>Sat, 28 Oct 2017 15:34:55 +0900</pubDate>
+      
+      <guid>https://example.com/post/what-is-good-manager/</guid>
+      <description>구글이 연구한 &amp;lsquo;좋은 관리자가 가져야 할 8가지 덕목&amp;rsquo;. 좋은 코치(coaches)다. 팀에게 권한을 양도하며 마이크로매니지를 하</description>
+    </item>
+    
+    <item>
+      <title>Record CBS Music Radio in every day</title>
+      <link>https://example.com/post/record-cbs-fm-cinema-music/</link>
+      <pubDate>Mon, 09 Oct 2017 16:22:15 +0900</pubDate>
+      
+      <guid>https://example.com/post/record-cbs-fm-cinema-music/</guid>
+      <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
+    </item>
+    
+  </channel>
+</rss>
