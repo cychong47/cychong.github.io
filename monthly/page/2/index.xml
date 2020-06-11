@@ -10,24 +10,6 @@
     
     
     <item>
-      <title>Ghost Season 5 - Helm</title>
-      <link>https://cychong47.github.io/2019/09/ghost-season-5-helm/</link>
-      <pubDate>Sun, 22 Sep 2019 13:14:16 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2019/09/ghost-season-5-helm/</guid>
-      <description>ghost를 설치한 지 몇 년이 지났는데 그 동안 여러 가지 방법으로 Ghost 운용 환경을 구축해왔다. Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인데 Helm Chart 를 시용해서 설치해</description>
-    </item>
-    
-    <item>
-      <title>Wifi 2.5GHz bluetooth coexist</title>
-      <link>https://cychong47.github.io/2019/08/wifi-5ghz-bluetooth-coexistence/</link>
-      <pubDate>Mon, 26 Aug 2019 15:46:19 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2019/08/wifi-5ghz-bluetooth-coexistence/</guid>
-      <description>간혹 아니 자주 블루투스로 연결한 마우스가 너무 반응이 느리다. 맥이 이상한 가 싶어 트랙패드를 만져보면 전혀 반응 속도에 이상이 없다. 인터넷을 뒤져보니 Wifi 2.5G</description>
-    </item>
-    
-    <item>
       <title>Calico CNI (draft)</title>
       <link>https://cychong47.github.io/2019/08/calico-cni-1/</link>
       <pubDate>Sun, 18 Aug 2019 15:20:01 +0900</pubDate>
@@ -186,12 +168,30 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>https://cychong47.github.io/2018/09/tags/</link>
-      <pubDate>Sat, 01 Sep 2018 23:29:50 +0900</pubDate>
+      <title>(책) 최고의 팀은 무엇이 다른가</title>
+      <link>https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/</link>
+      <pubDate>Sat, 25 Aug 2018 10:08:40 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/2018/09/tags/</guid>
-      <description></description>
+      <guid>https://cychong47.github.io/2018/08/the-secret-of-highly-successful-groups/</guid>
+      <description>팀원이 안전하다고 느끼는가? 구글 * 지위에 연연하지 않음. * 누가 책임질 지 고민하지 않음 * 어려운 문제를 풀기 위해 모든 집단을 토론시킴 미사일리어 * 미국의 미사</description>
+    </item>
+    
+    <item>
+      <title>(책) 리모트</title>
+      <link>https://cychong47.github.io/2018/08/remote/</link>
+      <pubDate>Sat, 25 Aug 2018 09:30:07 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2018/08/remote/</guid>
+      <description>p15 사람들에게 제대로 집중해서 일을 하고자 할 때 어디로 갈거냐고 물었을 때 “사무실”이라고 답하는 사람은 별로 없다.혹은 “다른 직원들이 출근하기 전 아침 일찍” 또</description>
+    </item>
+    
+    <item>
+      <title>(책) 덴마크 사람들은 왜 첫 월급을 받으면</title>
+      <link>https://cychong47.github.io/2018/08/why-danish-bought-a-chair-with-the-first-time-salary/</link>
+      <pubDate>Thu, 16 Aug 2018 14:46:20 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2018/08/why-danish-bought-a-chair-with-the-first-time-salary/</guid>
+      <description>기대와는 많이 달랐던 책&amp;hellip; 인생은 바꿔 말하면 ‘시간’입니다. 그 시간을 보내는 ‘공간’이야말로 그 사람의 행복으로 이어집니다.</description>
     </item>
     
   </channel>

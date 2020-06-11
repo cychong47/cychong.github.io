@@ -87,24 +87,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
     </item>
     
     <item>
-      <title>Tag Archive</title>
-      <link>https://cychong47.github.io/2019/12/tag-archive/</link>
-      <pubDate>Tue, 10 Dec 2019 13:54:15 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2019/12/tag-archive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Post Archive</title>
-      <link>https://cychong47.github.io/2019/12/post-archive/</link>
-      <pubDate>Tue, 10 Dec 2019 13:52:32 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2019/12/post-archive/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Mac mini 2009 upgrade</title>
       <link>https://cychong47.github.io/2019/11/mac-mini-2009-upgrade/</link>
       <pubDate>Mon, 18 Nov 2019 15:11:08 +0900</pubDate>
@@ -194,6 +176,24 @@ cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadat
       
       <guid>https://cychong47.github.io/2019/09/setup-kubernetes-with-a-single-host/</guid>
       <description>Replace microk8s with kubernetes in mini1 remove micro.k8s with snap command cychong@mini1:~$ sudo snap remove microk8s Save data of snap &amp;quot;microk8s&amp;quot; in automatic snapshot set microk8s removed cychong@mini1:~$ setup kubernetes Reference : https://phoenixnap.com/kb/install-kubernetes-on-ubuntu cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using Kubernetes version: v1.15.3 cychong@mini1:~$ kubectl get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES kube-system coredns-5c98db65d4-r468f 0/1 Pending 0 2m3s &amp;lt;none&amp;gt; &amp;lt;none&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Ghost Season 5 - Helm</title>
+      <link>https://cychong47.github.io/2019/09/ghost-season-5-helm/</link>
+      <pubDate>Sun, 22 Sep 2019 13:14:16 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2019/09/ghost-season-5-helm/</guid>
+      <description>ghost를 설치한 지 몇 년이 지났는데 그 동안 여러 가지 방법으로 Ghost 운용 환경을 구축해왔다. Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인데 Helm Chart 를 시용해서 설치해</description>
+    </item>
+    
+    <item>
+      <title>Wifi 2.5GHz bluetooth coexist</title>
+      <link>https://cychong47.github.io/2019/08/wifi-5ghz-bluetooth-coexistence/</link>
+      <pubDate>Mon, 26 Aug 2019 15:46:19 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2019/08/wifi-5ghz-bluetooth-coexistence/</guid>
+      <description>간혹 아니 자주 블루투스로 연결한 마우스가 너무 반응이 느리다. 맥이 이상한 가 싶어 트랙패드를 만져보면 전혀 반응 속도에 이상이 없다. 인터넷을 뒤져보니 Wifi 2.5G</description>
     </item>
     
   </channel>

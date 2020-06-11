@@ -154,7 +154,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">179</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">176</span></li>
         </ul>
     </div>
 </div>
@@ -1214,129 +1214,6 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2017/12/ansible-playbook/"
-    >Ansible - basics of ansible-playbook</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        play The goal of a play is to map a group of hosts to some well defined roles, represented by things ansible calls tasks. At a basic level, a task is nothing more than a call to an ansible module play는 명령을 수행할 대상과 수행할 명령을 모두 포함하고 있다. playbook
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2017/12/ansible-playbook/" class="">
-  <time datetime="2017-12-29 13:43:14 &#43;0900 KST" itemprop="datePublished">2017-12-29</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/ansible/"> ansible </a>
-    <a class="article-tag-link" href="/tags/ansible-playbook/"> ansible-playbook </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2017/12/ansible-playbook/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 750words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2017/12/ansible-exercise-1/"
-    >Ansible - ad-hoc or basic</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Create inventory(Ansible hosts) file mbpr15:Homebrew cychong$ cat /etc/ansible/hosts mini1 ansible_host=x.y.z.a ansible_ssh_user=cychong ansible_ssh_port=22 mini2 ansible_host=x.y.z.b ansible_ssh_user=cychong ansible_ssh_port=22 localhost ansible_connection=local ping ping 명령도 ansible이 제공하는 ping module을 이용하므로 -m 옵션을 사용한다. mbpr15:Homebrew cychong$ ansible all -m ping -k SSH password: localhost | SUCCESS =&gt;
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2017/12/ansible-exercise-1/" class="">
-  <time datetime="2017-12-27 14:32:51 &#43;0900 KST" itemprop="datePublished">2017-12-27</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/ansible/"> ansible </a>
-    <a class="article-tag-link" href="/tags/tutorial/"> tutorial </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2017/12/ansible-exercise-1/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 940words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2017/12/install-wordpress-with-docker/"
-    >Install Wordpress with docker</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Summary docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql docker run --restart=always -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@ -e WORDPRESS_DB_NAME=wordpress_db -p 80:80 -v /Users/cychong/Documents/wordpress/html:/var/www/html -v /Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads -v /Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini --link mysql:mysql --name wpcontainer -d wordpress  If required, import database to mysql (Once wordpress data is imported into mysql, upgrading mysql does not requires re-import ingof wordpress data)
-mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql Unable to find image 'mysql:latest' locally latest: Pulling from library/mysql aa18ad1a0d33: Pull complete a5745c3b8bcc: Pull complete 76375fcd129c: Pull complete 4f72cfb004cf: Pull complete 1d6a01e515fb: Pull complete a71e1163fa7e: Pull complete 8c1a568fa442: Pull complete e7a69cecc173: Pull complete 9759a0f979a1: Pull complete 3f71dac6110f: Pull complete 58f37de54392: Pull complete Digest: sha256:790b7b18b832822ef400e44ad9fac885a746db1a7028ec52325730cf9b831753 Status: Downloaded newer image for mysql:latest b1f54c680120898fc7ff16751048fe18ae461399d5d7f10308c156c68d40577b  check container is started cychong:~ cychong$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES b1f54c680120 mysql &quot;docker-entrypoint.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2017/12/install-wordpress-with-docker/" class="">
-  <time datetime="2017-12-19 22:20:06 &#43;0900 KST" itemprop="datePublished">2017-12-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/docker/"> docker </a>
-    <a class="article-tag-link" href="/tags/container/"> container </a>
-    <a class="article-tag-link" href="/tags/wordpress/"> wordpress </a>
-    <a class="article-tag-link" href="/tags/mysql/"> mysql </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2017/12/install-wordpress-with-docker/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 530words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
     href="/2017/12/clienbbs/"
     >clienBBS</a
   >
@@ -1485,6 +1362,120 @@ mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 468words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2017/11/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/"
+    >ONAP Takes Flak as Telcos Prep for Release 1 | Light Reading</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        1st release Amsterdam release which is due to November 16 Critics It will not be stable enough to be used for product misunderstanding That release will focus on providing support for three network functions or services &ndash; a virtual firewall (vFW), virtual customer premises equipment (vCPE) and a voice-over-LTE service running on a virtual evolved packet core (vEPC) I think this is a misunderstanding. These are just an use case
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/2017/11/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/" class="">
+  <time datetime="2017-11-14 22:31:57 &#43;0900 KST" itemprop="datePublished">2017-11-14</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/onap/"> onap </a>
+    <a class="article-tag-link" href="/tags/amsterdam-release/"> Amsterdam release </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2017/11/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 212words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2017/10/lead-or-step-aside/"
+    >Lead Follow or Get Out of the Way</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        book from Amazon
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/2017/10/lead-or-step-aside/" class="">
+  <time datetime="2017-10-29 01:38:23 &#43;0900 KST" itemprop="datePublished">2017-10-29</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2017/10/lead-or-step-aside/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/2017/10/what-is-good-manager/"
+    >관리자는 &#39;관리&#39;업무를 하는 동료이다.</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        구글이 연구한 &lsquo;좋은 관리자가 가져야 할 8가지 덕목&rsquo;. 좋은 코치(coaches)다. 팀에게 권한을 양도하며 마이크로매니지를 하
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/2017/10/what-is-good-manager/" class="">
+  <time datetime="2017-10-28 15:34:55 &#43;0900 KST" itemprop="datePublished">2017-10-28</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/manager/"> manager </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2017/10/what-is-good-manager/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 238words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -1502,7 +1493,7 @@ mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:11/33
+      Page:11/32
     </div>
   </div>
 </nav>

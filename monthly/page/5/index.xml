@@ -10,34 +10,6 @@
     
     
     <item>
-      <title>Record CBS Music Radio in every day</title>
-      <link>https://cychong47.github.io/2017/10/record-cbs-fm-cinema-music/</link>
-      <pubDate>Mon, 09 Oct 2017 16:22:15 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2017/10/record-cbs-fm-cinema-music/</guid>
-      <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
-    </item>
-    
-    <item>
-      <title>사진 백업 2017 버전</title>
-      <link>https://cychong47.github.io/2017/10/sajin-baegeob-2017-beojeon/</link>
-      <pubDate>Mon, 09 Oct 2017 15:41:52 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2017/10/sajin-baegeob-2017-beojeon/</guid>
-      <description>최적화(?) 중. Lightroom으로 사진 관리 Apple Photos 앱이 아닌 Adobe Lightroom으로 사진 관리. 사진 파일은 DB에 포함시키지 않고, meta data만 DB</description>
-    </item>
-    
-    <item>
-      <title>Error in using homebrew module in ansible</title>
-      <link>https://cychong47.github.io/2017/10/untitled-2/</link>
-      <pubDate>Sun, 08 Oct 2017 17:25:43 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2017/10/untitled-2/</guid>
-      <description>When I call the homebrew modules for three hosts including the localhost, one host reports error.
-mbpr15:~ cychong$ ansible-playbook install_brew_ack.yaml --verbose No config file found; using defaults PLAY [all] ************************************************************************************************** TASK [Gathering Facts] ************************************************************************************** ok: [localhost] ok: [mini2] ok: [mini1] TASK [install ack in homebrew] ****************************************************************************** ok: [localhost] =&amp;gt; {&amp;quot;changed&amp;quot;: false, &amp;quot;failed&amp;quot;: false, &amp;quot;msg&amp;quot;: &amp;quot;Package already installed: ack&amp;quot;} ok: [mini1] =&amp;gt; {&amp;quot;changed&amp;quot;: false, &amp;quot;failed&amp;quot;: false, &amp;quot;msg&amp;quot;: &amp;quot;Package already installed: ack&amp;quot;} fatal: [mini2]: FAILED!</description>
-    </item>
-    
-    <item>
       <title>FTP server is gone from High Siera OSX Server</title>
       <link>https://cychong47.github.io/2017/10/ftp-server-is-gone-from-high-siera-osx-server/</link>
       <pubDate>Sat, 07 Oct 2017 00:19:27 +0900</pubDate>
@@ -207,6 +179,33 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/2017/09/prometheus/</guid>
       <description>Cloud Native Computing Foundation(http://cncf.io)에 포함된 Container monitoring tool. 집 맥미니에서 돌리고 있는 3개 container들을 관리하는데 사용할 수 있</description>
+    </item>
+    
+    <item>
+      <title>NGNIX for service mesh</title>
+      <link>https://cychong47.github.io/2017/09/ngnix-for-service-mesh/</link>
+      <pubDate>Fri, 15 Sep 2017 14:39:11 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/09/ngnix-for-service-mesh/</guid>
+      <description>NGINX Releases Microservices Platform, OpenShift Ingress Controller, and Service Mesh Preview NGNIX also join for service mesh bandwagon? NGNIX Application Platform NGINX Plus, the commercial variant of the popular open source NGINX web server. NGINX Web Application Firewall (WAF) NGINX Unit, a new open source application server that can run PHP, Python and Go NGINX Controller, a centralised control plane for monitoring and management of NGINX Plus Additional release a</description>
+    </item>
+    
+    <item>
+      <title>Wordpress with docker-compose</title>
+      <link>https://cychong47.github.io/2017/09/wordpress-with-docker-compose-failing/</link>
+      <pubDate>Sun, 03 Sep 2017 15:00:57 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/09/wordpress-with-docker-compose-failing/</guid>
+      <description>Under construction!! Error https://docs.docker.com/compose/wordpress/#define-the-project 에 있는 에제대로 docker-compose.yaml 파일을 만든 후 도전~~ 근데 실패 cychong:~/work/my_wordpress cychong$ docker-compose up -d Pulling db (mysql:5.7)... Traceback (most recent call last): File &amp;quot;docker-compose&amp;quot;, line 3, in &amp;lt;module&amp;gt; File &amp;quot;compose/cli/main.py&amp;quot;, line 68, in main File &amp;quot;compose/cli/main.py&amp;quot;, line 118, in perform_command File &amp;quot;compose/cli/main.py&amp;quot;, line 928, in up File &amp;quot;compose/project.py&amp;quot;, line 427, in up File</description>
+    </item>
+    
+    <item>
+      <title>ghost container with docker-compose</title>
+      <link>https://cychong47.github.io/2017/09/ghost-container-with-docker-compose/</link>
+      <pubDate>Sun, 03 Sep 2017 01:26:28 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/09/ghost-container-with-docker-compose/</guid>
+      <description>얼마전에 구성한 ghost container는 ghost가 1.x로 업데이트가 되면서 설정 정보의 위치가 변경되었는데 그걸 미처 몰라 블로그 주소가 기본값인 loca</description>
     </item>
     
   </channel>

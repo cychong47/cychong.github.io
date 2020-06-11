@@ -10,33 +10,6 @@
     
     
     <item>
-      <title>(책) 도쿄대 교수가 제자들에게 주는 쓴소리</title>
-      <link>https://cychong47.github.io/2018/07/advice_from_tokyo_professor/</link>
-      <pubDate>Sat, 07 Jul 2018 15:00:28 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2018/07/advice_from_tokyo_professor/</guid>
-      <description>다양한 분야에 대한 조언 p20 목표가 명확하겨 정답이 있는 일을 하는 경주마에서 길 잃은 양으로 p22 지식을 더 많이 아는 것이 아닌 아는 지식으로 뭘 할 지 Learn by doing. 결과가 아닌 과정</description>
-    </item>
-    
-    <item>
-      <title>(책) 매일 아침 써봤니?</title>
-      <link>https://cychong47.github.io/2018/07/did-you-write-in-every-morning/</link>
-      <pubDate>Sun, 01 Jul 2018 12:03:47 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2018/07/did-you-write-in-every-morning/</guid>
-      <description>세바시 였던가, 공개 강의 동영상을 통해 처음 알게 된 김민식 PD. 예전에 인기있었던 시트콤, ‘논스톱’을 만든 PD인데 MBC 파업과 관련되어 힘든 시간을 보내다 “영어책</description>
-    </item>
-    
-    <item>
-      <title>생각 정리의 기술</title>
-      <link>https://cychong47.github.io/2018/06/mindmap/</link>
-      <pubDate>Wed, 20 Jun 2018 14:00:06 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2018/06/mindmap/</guid>
-      <description>오늘 회사에서 점심 시간에 배운 mindmap 활용법 iThoughtX를 OS X, iOS용으로 모두 구입할 만큼 마인드맵에 관심이 있긴 한데 생각을 풀어낼 때 다양한 framew</description>
-    </item>
-    
-    <item>
       <title>Update ansible-playbook for wordpress</title>
       <link>https://cychong47.github.io/2018/06/update-ansible-playbook-for-wordpress/</link>
       <pubDate>Thu, 14 Jun 2018 15:13:52 +0900</pubDate>
@@ -188,6 +161,34 @@ mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_
       
       <guid>https://cychong47.github.io/2017/10/what-is-good-manager/</guid>
       <description>구글이 연구한 &amp;lsquo;좋은 관리자가 가져야 할 8가지 덕목&amp;rsquo;. 좋은 코치(coaches)다. 팀에게 권한을 양도하며 마이크로매니지를 하</description>
+    </item>
+    
+    <item>
+      <title>Record CBS Music Radio in every day</title>
+      <link>https://cychong47.github.io/2017/10/record-cbs-fm-cinema-music/</link>
+      <pubDate>Mon, 09 Oct 2017 16:22:15 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/10/record-cbs-fm-cinema-music/</guid>
+      <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
+    </item>
+    
+    <item>
+      <title>사진 백업 2017 버전</title>
+      <link>https://cychong47.github.io/2017/10/sajin-baegeob-2017-beojeon/</link>
+      <pubDate>Mon, 09 Oct 2017 15:41:52 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/10/sajin-baegeob-2017-beojeon/</guid>
+      <description>최적화(?) 중. Lightroom으로 사진 관리 Apple Photos 앱이 아닌 Adobe Lightroom으로 사진 관리. 사진 파일은 DB에 포함시키지 않고, meta data만 DB</description>
+    </item>
+    
+    <item>
+      <title>Error in using homebrew module in ansible</title>
+      <link>https://cychong47.github.io/2017/10/untitled-2/</link>
+      <pubDate>Sun, 08 Oct 2017 17:25:43 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2017/10/untitled-2/</guid>
+      <description>When I call the homebrew modules for three hosts including the localhost, one host reports error.
+mbpr15:~ cychong$ ansible-playbook install_brew_ack.yaml --verbose No config file found; using defaults PLAY [all] ************************************************************************************************** TASK [Gathering Facts] ************************************************************************************** ok: [localhost] ok: [mini2] ok: [mini1] TASK [install ack in homebrew] ****************************************************************************** ok: [localhost] =&amp;gt; {&amp;quot;changed&amp;quot;: false, &amp;quot;failed&amp;quot;: false, &amp;quot;msg&amp;quot;: &amp;quot;Package already installed: ack&amp;quot;} ok: [mini1] =&amp;gt; {&amp;quot;changed&amp;quot;: false, &amp;quot;failed&amp;quot;: false, &amp;quot;msg&amp;quot;: &amp;quot;Package already installed: ack&amp;quot;} fatal: [mini2]: FAILED!</description>
     </item>
     
   </channel>

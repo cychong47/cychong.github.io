@@ -11,33 +11,6 @@
     
     
     <item>
-      <title>제대로 만들려면 제품의 성격부터 정의해야</title>
-      <link>https://cychong47.github.io/2015/11/what_is_the_target_product/</link>
-      <pubDate>Sun, 22 Nov 2015 14:35:23 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2015/11/what_is_the_target_product/</guid>
-      <description>철학의 부재. 중심의 부재. 대화의 부재 제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다.</description>
-    </item>
-    
-    <item>
-      <title>개인의 잘못으로만 돌리는 이유</title>
-      <link>https://cychong47.github.io/2015/11/why_blame_personals/</link>
-      <pubDate>Thu, 19 Nov 2015 22:22:07 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2015/11/why_blame_personals/</guid>
-      <description>잘못된(?) 진단은 잘못된 처방을 낳는다. 모든 걸 개인의 잘못으로 돌리려는 의도는 의외로 단순. 잘못을 저지른 개인은 개선시키면 된다는 단순한 해법을 제시할 수 있</description>
-    </item>
-    
-    <item>
-      <title>개발자를 위해 한 일이 뭐가 있지?</title>
-      <link>https://cychong47.github.io/2015/11/what_for_the_developer/</link>
-      <pubDate>Wed, 18 Nov 2015 14:43:51 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/2015/11/what_for_the_developer/</guid>
-      <description>관리자들이 개발자들을 위해 한 일이 뭐가 있나? 아무리 생각해도 잘 모르겠다. 그럼 개발자를 위한 사람이나 제도는 없다는 건데 그러면서 개발자가 잘 하기 기대하는 건 도</description>
-    </item>
-    
-    <item>
       <title>규제를 풀기 어려운 이유는</title>
       <link>https://cychong47.github.io/2015/11/gyujereul-pulgi-eoryeoun-iyuneun/</link>
       <pubDate>Wed, 18 Nov 2015 14:41:55 +0900</pubDate>
@@ -191,6 +164,33 @@ Edit vmx file to VMX file is in where vmware image located</description>
       
       <guid>https://cychong47.github.io/2015/07/gwanrija-deuldo-gongbu-jom-habsida/</guid>
       <description>출처 : 관리의 기본 (Fundamental of management) #2 - 관리자/리더에게 필요한 역량 가장 중요한 것은 Communication 역량으로, 팀내 또는 팀간의 조율을 위해서는 반드시 필요한 능력이라고 생각한다. 두</description>
+    </item>
+    
+    <item>
+      <title>열심히 비교한 결론이 고작 그건가?</title>
+      <link>https://cychong47.github.io/2015/06/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</link>
+      <pubDate>Wed, 24 Jun 2015 15:20:57 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2015/06/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</guid>
+      <description>그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건</description>
+    </item>
+    
+    <item>
+      <title>Divide &amp; Conquer</title>
+      <link>https://cychong47.github.io/2015/06/divide-conquer/</link>
+      <pubDate>Sun, 21 Jun 2015 08:24:05 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2015/06/divide-conquer/</guid>
+      <description>출처 : http://m.news.naver.com/read.nhn?mode=LSD&amp;amp;sid1=001&amp;amp;oid=008&amp;amp;aid=0003492855 4.어려운 문제에 무턱대고 덤비지 마라 어렵고 힘든 문제에 부딪히면 지레 겁을 먹기 쉽다. 아니면 무대포로 앞뒤 재지 않고 그냥 밀어붙인다. 그러나 구글과 페</description>
+    </item>
+    
+    <item>
+      <title>의도된 마감효과?</title>
+      <link>https://cychong47.github.io/2015/06/magamhyogwareul-norineun-geonga/</link>
+      <pubDate>Thu, 18 Jun 2015 00:00:45 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/2015/06/magamhyogwareul-norineun-geonga/</guid>
+      <description>(예를 들어) 분명 물리적으로 10개월이 필요한 일이 있다. 일정이 급하다고 6개월내 해 내라고 한다. 열심히 하지만 결국 6개월 기한은 넘어가고 겨우겨우 (담당자</description>
     </item>
     
   </channel>
