@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>(책) 매일 아침 써봤니?</title>
+      <link>https://cychong47.github.io/post/did-you-write-in-every-morning/</link>
+      <pubDate>Sun, 01 Jul 2018 12:03:47 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/did-you-write-in-every-morning/</guid>
+      <description>세바시 였던가, 공개 강의 동영상을 통해 처음 알게 된 김민식 PD. 예전에 인기있었던 시트콤, ‘논스톱’을 만든 PD인데 MBC 파업과 관련되어 힘든 시간을 보내다 “영어책</description>
+    </item>
+    
+    <item>
       <title>생각 정리의 기술</title>
       <link>https://cychong47.github.io/post/mindmap/</link>
       <pubDate>Wed, 20 Jun 2018 14:00:06 +0900</pubDate>
@@ -179,15 +188,6 @@ mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_
       
       <guid>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</guid>
       <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
-    </item>
-    
-    <item>
-      <title>사진 백업 2017 버전</title>
-      <link>https://cychong47.github.io/post/sajin-baegeob-2017-beojeon/</link>
-      <pubDate>Mon, 09 Oct 2017 15:41:52 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/sajin-baegeob-2017-beojeon/</guid>
-      <description>최적화(?) 중. Lightroom으로 사진 관리 Apple Photos 앱이 아닌 Adobe Lightroom으로 사진 관리. 사진 파일은 DB에 포함시키지 않고, meta data만 DB</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 16:44:23 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo에 Main menu 추가하기</title>
+      <link>https://cychong47.github.io/post/2020-06-13-add-menu-to-hugo/</link>
+      <pubDate>Sat, 13 Jun 2020 23:46:10 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-06-13-add-menu-to-hugo/</guid>
+      <description>Hugo로 옮긴 후 아직 찾지 못한 기능 중 하나가 글 들을 종류 별로 구분해서 보는 것이었다. 각 글마다 지정한 category나 tag별로 볼 수 있는 것은 지금 사용하</description>
+    </item>
     
     <item>
       <title>Setup Podcast With Hugo</title>
@@ -186,15 +195,6 @@ cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadat
       
       <guid>https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/</guid>
       <description>Replace microk8s with kubernetes in mini1 remove micro.k8s with snap command cychong@mini1:~$ sudo snap remove microk8s Save data of snap &amp;quot;microk8s&amp;quot; in automatic snapshot set microk8s removed cychong@mini1:~$ setup kubernetes Reference : https://phoenixnap.com/kb/install-kubernetes-on-ubuntu cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using Kubernetes version: v1.15.3 cychong@mini1:~$ kubectl get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES kube-system coredns-5c98db65d4-r468f 0/1 Pending 0 2m3s &amp;lt;none&amp;gt; &amp;lt;none&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>Ghost Season 5 - Helm</title>
-      <link>https://cychong47.github.io/post/ghost-season-5-helm/</link>
-      <pubDate>Sun, 22 Sep 2019 13:14:16 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/ghost-season-5-helm/</guid>
-      <description>ghost를 설치한 지 몇 년이 지났는데 그 동안 여러 가지 방법으로 Ghost 운용 환경을 구축해왔다. Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인데 Helm Chart 를 시용해서 설치해</description>
     </item>
     
   </channel>

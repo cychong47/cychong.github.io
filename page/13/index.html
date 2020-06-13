@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cychong47.github.io/" />
-<meta property="og:updated_time" content="2020-06-13T16:44:23+09:00" />
+<meta property="og:updated_time" content="2020-06-13T23:46:10+09:00" />
 <meta itemprop="name" content="Another blog">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Another blog"/>
@@ -155,7 +155,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">176</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">177</span></li>
         </ul>
     </div>
 </div>
@@ -164,6 +164,16 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/2020-06-13-add-menu-to-hugo/" class="title">Hugo에 Main menu 추가하기</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-13 23:46:10 &#43;0900 KST" itemprop="datePublished">2020-06-13</time>
+                    </p>
+                </div>
+            </li>
             <li>
                 <div class="item-inner">
                     <p class="item-title">
@@ -201,16 +211,6 @@
                     </p>
                     <p class="item-date">
                         <time datetime="2020-05-20 15:01:44 &#43;0900 KST" itemprop="datePublished">2020-05-20</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://cychong47.github.io/post/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-05-08 23:36:45 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
                     </p>
                 </div>
             </li>
@@ -536,7 +536,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
@@ -1219,6 +1219,46 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/post/ansible/"
+    >Play with Ansible</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        Configuration ansible client A ansible target B, C In client Ansible targets(B,C) should be listed in the following file. If required additional parameters can be specified such as login account, ssh port and etc # /etc/ansible/hosts 192.168.1.100 ansible_ssh_user=cychong ansible_ssh_port=22 192.168.1.200 ansible_ssh_user=cychong ansible_ssh_port=22 In ansible targets A should be found on the following file # grep A .ssh/authorized_keys Test run from A # ansible all -m ping 192.168.1.200 | SUCCESS =&gt;
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/post/ansible/" class="">
+  <time datetime="2017-10-04 00:22:48 &#43;0900 KST" itemprop="datePublished">2017-10-04</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/ansible/"> ansible </a>
+    <a class="article-tag-link" href="/tags/automation/"> automation </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/ansible/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 724words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/post/series-4-10-lessons-from-telemetry/"
     >(Series</a
   >
@@ -1464,47 +1504,6 @@ mbpr15:working cychong$ brew install python ==&gt; Installing dependencies for p
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 413words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/post/parsing-http-header-with-scary/"
-    >Parsing http header with scary</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        정규식으로 http 분석 def processHTTP(data): str_method = &quot;&quot; str_uri = &quot;&quot; 정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&quot;(?P&lt;method&gt;(^GET|^POST|^PUT|^DELETE)) (?P&lt;uri&gt;.+) (?P&lt;version&gt;.+)&quot;, data) if not h: return &quot;Error&quot; # 정규표현식에 해당하는 데이터
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/post/parsing-http-header-with-scary/" class="">
-  <time datetime="2017-10-01 09:36:35 &#43;0900 KST" itemprop="datePublished">2017-10-01</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/python/"> Python </a>
-    <a class="article-tag-link" href="/tags/scapy/"> scapy </a>
-    <a class="article-tag-link" href="/tags/http/"> http </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/parsing-http-header-with-scary/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 224words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
-      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -1522,7 +1521,7 @@ mbpr15:working cychong$ brew install python ==&gt; Installing dependencies for p
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:13/32
+      Page:13/33
     </div>
   </div>
 </nav>

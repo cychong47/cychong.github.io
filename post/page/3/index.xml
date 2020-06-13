@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 16:44:23 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 리모트</title>
+      <link>https://cychong47.github.io/post/remote/</link>
+      <pubDate>Sat, 25 Aug 2018 09:30:07 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/remote/</guid>
+      <description>p15 사람들에게 제대로 집중해서 일을 하고자 할 때 어디로 갈거냐고 물었을 때 “사무실”이라고 답하는 사람은 별로 없다.혹은 “다른 직원들이 출근하기 전 아침 일찍” 또</description>
+    </item>
     
     <item>
       <title>(책) 덴마크 사람들은 왜 첫 월급을 받으면</title>
@@ -181,15 +190,6 @@ Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY S
       
       <guid>https://cychong47.github.io/post/advice_from_tokyo_professor/</guid>
       <description>다양한 분야에 대한 조언 p20 목표가 명확하겨 정답이 있는 일을 하는 경주마에서 길 잃은 양으로 p22 지식을 더 많이 아는 것이 아닌 아는 지식으로 뭘 할 지 Learn by doing. 결과가 아닌 과정</description>
-    </item>
-    
-    <item>
-      <title>(책) 매일 아침 써봤니?</title>
-      <link>https://cychong47.github.io/post/did-you-write-in-every-morning/</link>
-      <pubDate>Sun, 01 Jul 2018 12:03:47 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/did-you-write-in-every-morning/</guid>
-      <description>세바시 였던가, 공개 강의 동영상을 통해 처음 알게 된 김민식 PD. 예전에 인기있었던 시트콤, ‘논스톱’을 만든 PD인데 MBC 파업과 관련되어 힘든 시간을 보내다 “영어책</description>
     </item>
     
   </channel>

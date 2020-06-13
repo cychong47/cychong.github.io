@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 16:44:23 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>개인의 잘못으로만 돌리는 이유</title>
+      <link>https://cychong47.github.io/post/why_blame_personals/</link>
+      <pubDate>Thu, 19 Nov 2015 22:22:07 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/why_blame_personals/</guid>
+      <description>잘못된(?) 진단은 잘못된 처방을 낳는다. 모든 걸 개인의 잘못으로 돌리려는 의도는 의외로 단순. 잘못을 저지른 개인은 개선시키면 된다는 단순한 해법을 제시할 수 있</description>
+    </item>
     
     <item>
       <title>개발자를 위해 한 일이 뭐가 있지?</title>
@@ -182,15 +191,6 @@ Edit vmx file to VMX file is in where vmware image located</description>
       
       <guid>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</guid>
       <description>그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건</description>
-    </item>
-    
-    <item>
-      <title>Divide &amp; Conquer</title>
-      <link>https://cychong47.github.io/post/divide-conquer/</link>
-      <pubDate>Sun, 21 Jun 2015 08:24:05 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/divide-conquer/</guid>
-      <description>출처 : http://m.news.naver.com/read.nhn?mode=LSD&amp;amp;sid1=001&amp;amp;oid=008&amp;amp;aid=0003492855 4.어려운 문제에 무턱대고 덤비지 마라 어렵고 힘든 문제에 부딪히면 지레 겁을 먹기 쉽다. 아니면 무대포로 앞뒤 재지 않고 그냥 밀어붙인다. 그러나 구글과 페</description>
     </item>
     
   </channel>

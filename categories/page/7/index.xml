@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 16:44:23 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>빨리 해봐야 소용없다</title>
+      <link>https://cychong47.github.io/post/no-need-to-rush/</link>
+      <pubDate>Wed, 11 May 2016 09:59:23 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/no-need-to-rush/</guid>
+      <description>개발자의 품을 가벼이 여기는 조직에서 일 할때는 일정보다 일을 빨리하면 안된다. 기껏 한 일이 아무 소용없을 때가 많다.</description>
+    </item>
     
     <item>
       <title>Ghost 본문 다 보이기</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/dpdk_based_apps/</guid>
       <description>2016.02.10 기준 DPDK-dump TRex - Realistic traffic generator git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK</description>
-    </item>
-    
-    <item>
-      <title>2년전에 느꼈던 답답함이 여전하네</title>
-      <link>https://cychong47.github.io/post/two-years-back/</link>
-      <pubDate>Mon, 04 Jan 2016 15:19:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/two-years-back/</guid>
-      <description>우연히 tumblr를 보니 2013년에 적었던 답답한 현실이 지금도 똑같다는 사실에 놀랐다. 들으려고 하는 사람은 없고, 쓸데없는 일에 시간을 보내는 건 지금도 전</description>
     </item>
     
   </channel>

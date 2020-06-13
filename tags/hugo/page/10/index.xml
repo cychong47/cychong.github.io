@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 16:44:23 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Divide &amp; Conquer</title>
+      <link>https://cychong47.github.io/post/divide-conquer/</link>
+      <pubDate>Sun, 21 Jun 2015 08:24:05 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/divide-conquer/</guid>
+      <description>출처 : http://m.news.naver.com/read.nhn?mode=LSD&amp;amp;sid1=001&amp;amp;oid=008&amp;amp;aid=0003492855 4.어려운 문제에 무턱대고 덤비지 마라 어렵고 힘든 문제에 부딪히면 지레 겁을 먹기 쉽다. 아니면 무대포로 앞뒤 재지 않고 그냥 밀어붙인다. 그러나 구글과 페</description>
+    </item>
     
     <item>
       <title>의도된 마감효과?</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/caeg-violent-python/</guid>
       <description>오래만에 재밌는 책을 봤다. 해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이</description>
-    </item>
-    
-    <item>
-      <title>(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</title>
-      <link>https://cychong47.github.io/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</link>
-      <pubDate>Sat, 27 Sep 2014 13:33:25 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</guid>
-      <description>p230 OKR(Objectives and Key Results) 는 원래 인텔의 앤디 그로브(Andy Grove)가 고안한 경영기법이다. &amp;hellip; 무었을 하고 싶어하는지만 정하는 것이 아니라, 측정 가능하게 업무(핵심</description>
     </item>
     
   </channel>

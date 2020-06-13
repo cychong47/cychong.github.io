@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Ghost Season 5 - Helm</title>
+      <link>https://cychong47.github.io/post/ghost-season-5-helm/</link>
+      <pubDate>Sun, 22 Sep 2019 13:14:16 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/ghost-season-5-helm/</guid>
+      <description>ghost를 설치한 지 몇 년이 지났는데 그 동안 여러 가지 방법으로 Ghost 운용 환경을 구축해왔다. Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인데 Helm Chart 를 시용해서 설치해</description>
+    </item>
+    
+    <item>
       <title>Wifi 2.5GHz bluetooth coexist</title>
       <link>https://cychong47.github.io/post/wifi-5ghz-bluetooth-coexistence/</link>
       <pubDate>Mon, 26 Aug 2019 15:46:19 +0900</pubDate>
@@ -183,15 +192,6 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
       
       <guid>https://cychong47.github.io/post/the-secret-of-highly-successful-groups/</guid>
       <description>팀원이 안전하다고 느끼는가? 구글 * 지위에 연연하지 않음. * 누가 책임질 지 고민하지 않음 * 어려운 문제를 풀기 위해 모든 집단을 토론시킴 미사일리어 * 미국의 미사</description>
-    </item>
-    
-    <item>
-      <title>(책) 리모트</title>
-      <link>https://cychong47.github.io/post/remote/</link>
-      <pubDate>Sat, 25 Aug 2018 09:30:07 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/remote/</guid>
-      <description>p15 사람들에게 제대로 집중해서 일을 하고자 할 때 어디로 갈거냐고 물었을 때 “사무실”이라고 답하는 사람은 별로 없다.혹은 “다른 직원들이 출근하기 전 아침 일찍” 또</description>
     </item>
     
   </channel>
