@@ -1,8 +1,5 @@
-body {
-  padding-right: 0 !important;
-  font-family: "Source Han Sans","Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-  font-size: 18px;
-  line-height: 1.57143;
-  color: #333333;
-  background-color: #fff;
+.text-muted {
+  color: #777777 !important;
+  font-size: 15px;
 }
+
