@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-        NVIDIA VRAN SOLUTION - Another blog
+        NVIDIA vRAN Solution - Another blog
       </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,14 +27,14 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
  https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
   Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient." />
     <meta name="generator" content="Hugo 0.71.1 with theme pure" />
-    <title>NVIDIA VRAN SOLUTION - Another blog</title>
+    <title>NVIDIA vRAN Solution - Another blog</title>
     
     
     <link rel="stylesheet" href="https://cychong47.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="NVIDIA VRAN SOLUTION" />
+    <meta property="og:title" content="NVIDIA vRAN Solution" />
 <meta property="og:description" content="https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
 Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
 5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
@@ -45,7 +45,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 <meta property="og:url" content="https://cychong47.github.io/post/nvidia-vran-solution/" />
 <meta property="article:published_time" content="2020-05-20T15:01:44+09:00" />
 <meta property="article:modified_time" content="2020-05-20T15:04:06+00:00" />
-<meta itemprop="name" content="NVIDIA VRAN SOLUTION">
+<meta itemprop="name" content="NVIDIA vRAN Solution">
 <meta itemprop="description" content="https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
 Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
 5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
@@ -59,7 +59,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 
 
 <meta itemprop="keywords" content="DPDK,vran,nvidia,gpu,cuphy,cubb,cuvnf,connectX-5,RMDA," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="NVIDIA VRAN SOLUTION"/>
+<meta name="twitter:title" content="NVIDIA vRAN Solution"/>
 <meta name="twitter:description" content="https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
 Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
 5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
@@ -82,7 +82,15 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 
   <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
-      <div class="navbar-header"><div class="search" id="search-form-wrap">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/cychong47" target="_blank">
+            <img class="img-circle img-rotate" src="https://cychong47.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chaeyong Chong</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
+        </div><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
             <input type="text" class="search-form-input form-control" placeholder="Search" />
@@ -123,7 +131,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
                 </a>
             </li>
             <li class="menu-item menu-item-archives">
-                <a href="/post/">
+                <a href="/posts/">
                     <i class="icon icon-archives-fill"></i>
                   <span class="menu-title">Archives</span>
                 </a>
@@ -140,6 +148,12 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
                   <span class="menu-title">Tags</span>
                 </a>
             </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
             <li class="menu-item menu-item-monthly">
                 <a href="/monthly/">
                   <span class="menu-title">Monthly</span>
@@ -154,11 +168,22 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
   <div class="slimContent">
     
       <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">178</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">176</span></li>
         </ul>
     </div>
 </div>
@@ -167,6 +192,56 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/2020-06-13-setup-podcast-with-hugo/" class="title">Setup Podcast With Hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-13 16:44:23 &#43;0900 KST" itemprop="datePublished">2020-06-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/migrate-ghost-to-hugo/" class="title">Migrate Ghost to Hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-07 22:14:02 &#43;0900 KST" itemprop="datePublished">2020-06-07</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/hugo-seutp-with-git/" class="title">Migrate wordpress to hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 14:56:52 &#43;0900 KST" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/nvidia-vran-solution/" class="title">NVIDIA vRAN Solution</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-20 15:01:44 &#43;0900 KST" itemprop="datePublished">2020-05-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 23:36:45 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -429,7 +504,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost/" class="tag-list-link">ghost</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">10</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost-theme/" class="tag-list-link">ghost-theme</a><span
@@ -489,7 +564,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
@@ -777,6 +852,10 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pluribus/" class="tag-list-link">pluribus</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/podscat/" class="tag-list-link">podscat</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -1169,7 +1248,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
   <a
     class="article-title"
     href="/post/nvidia-vran-solution/"
-    >NVIDIA VRAN SOLUTION</a
+    >NVIDIA vRAN Solution</a
   >
 </h1>
 
@@ -1263,7 +1342,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
   <ul class="post-copyright list-unstyled">
     <li class="post-copyright-link hidden-xs">
       <strong>Permalink: </strong>
-      <a href="https://cychong47.github.io/post/nvidia-vran-solution/" title="NVIDIA VRAN SOLUTION" target="_blank" rel="external">https://cychong47.github.io/post/nvidia-vran-solution/</a>
+      <a href="https://cychong47.github.io/post/nvidia-vran-solution/" title="NVIDIA vRAN Solution" target="_blank" rel="external">https://cychong47.github.io/post/nvidia-vran-solution/</a>
     </li>
     <li class="post-copyright-license">
       <strong>License：</strong><a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN</a>
@@ -1271,6 +1350,21 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
   </ul>
 </blockquote>
 
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cychong47" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://cychong47.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cychong47" target="_blank"><span class="text-dark">Chaeyong Chong</span><small class="ml-1x">author title</small></a></h3>
+        <div>May the fun be with you</div>
+      </div>
+    </figure>
+  </div>
+</div>
     </div>
   </article>
 <section id="comments">
@@ -1289,7 +1383,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
             </li>
             <li class="next">
                 <a href="https://cychong47.github.io/post/hugo-seutp-with-git/"
-                    title="Hugo-migrated WP - 1"><span>Newer&nbsp;&nbsp;</span><i
+                    title="Migrate wordpress to hugo"><span>Newer&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
@@ -1383,6 +1477,19 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
         
         hasInnerContainers: true,
     });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/cychong47.github.io\/post\/nvidia-vran-solution\/';
+        this.page.identifier = 'cychong';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'cychong' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 
   </body>

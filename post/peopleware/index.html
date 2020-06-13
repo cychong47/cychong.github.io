@@ -62,7 +62,15 @@
 
   <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
-      <div class="navbar-header"><div class="search" id="search-form-wrap">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/cychong47" target="_blank">
+            <img class="img-circle img-rotate" src="https://cychong47.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Chaeyong Chong</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
+        </div><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
             <input type="text" class="search-form-input form-control" placeholder="Search" />
@@ -103,7 +111,7 @@
                 </a>
             </li>
             <li class="menu-item menu-item-archives">
-                <a href="/post/">
+                <a href="/posts/">
                     <i class="icon icon-archives-fill"></i>
                   <span class="menu-title">Archives</span>
                 </a>
@@ -120,6 +128,12 @@
                   <span class="menu-title">Tags</span>
                 </a>
             </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
             <li class="menu-item menu-item-monthly">
                 <a href="/monthly/">
                   <span class="menu-title">Monthly</span>
@@ -134,11 +148,22 @@
   <div class="slimContent">
     
       <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content"><p>enjoy~</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <div class="widget">
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">178</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">176</span></li>
         </ul>
     </div>
 </div>
@@ -147,6 +172,56 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/2020-06-13-setup-podcast-with-hugo/" class="title">Setup Podcast With Hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-13 16:44:23 &#43;0900 KST" itemprop="datePublished">2020-06-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/migrate-ghost-to-hugo/" class="title">Migrate Ghost to Hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-07 22:14:02 &#43;0900 KST" itemprop="datePublished">2020-06-07</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/hugo-seutp-with-git/" class="title">Migrate wordpress to hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-31 14:56:52 &#43;0900 KST" itemprop="datePublished">2020-05-31</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/nvidia-vran-solution/" class="title">NVIDIA vRAN Solution</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-20 15:01:44 &#43;0900 KST" itemprop="datePublished">2020-05-20</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-05-08 23:36:45 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
+                    </p>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -409,7 +484,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost/" class="tag-list-link">ghost</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">10</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost-theme/" class="tag-list-link">ghost-theme</a><span
@@ -469,7 +544,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
@@ -757,6 +832,10 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pluribus/" class="tag-list-link">pluribus</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/podscat/" class="tag-list-link">podscat</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -1243,6 +1322,21 @@
   </ul>
 </blockquote>
 
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cychong47" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="https://cychong47.github.io/avatar.png" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cychong47" target="_blank"><span class="text-dark">Chaeyong Chong</span><small class="ml-1x">author title</small></a></h3>
+        <div>May the fun be with you</div>
+      </div>
+    </figure>
+  </div>
+</div>
     </div>
   </article>
 <section id="comments">
@@ -1355,6 +1449,19 @@
         
         hasInnerContainers: true,
     });
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https:\/\/cychong47.github.io\/post\/peopleware\/';
+        this.page.identifier = 'cychong';
+    };
+    (function () {
+        var d = document, s = d.createElement('script');
+        s.src = '//' + 'cychong' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
 
   </body>

@@ -5,7 +5,7 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 31 May 2020 14:56:52 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jun 2020 16:44:23 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -178,21 +178,21 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
     </item>
     
     <item>
-      <title>Tags</title>
-      <link>https://cychong47.github.io/post/tags/</link>
-      <pubDate>Sat, 01 Sep 2018 23:29:50 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>(책) 최고의 팀은 무엇이 다른가</title>
       <link>https://cychong47.github.io/post/the-secret-of-highly-successful-groups/</link>
       <pubDate>Sat, 25 Aug 2018 10:08:40 +0900</pubDate>
       
       <guid>https://cychong47.github.io/post/the-secret-of-highly-successful-groups/</guid>
       <description>팀원이 안전하다고 느끼는가? 구글 * 지위에 연연하지 않음. * 누가 책임질 지 고민하지 않음 * 어려운 문제를 풀기 위해 모든 집단을 토론시킴 미사일리어 * 미국의 미사</description>
+    </item>
+    
+    <item>
+      <title>(책) 리모트</title>
+      <link>https://cychong47.github.io/post/remote/</link>
+      <pubDate>Sat, 25 Aug 2018 09:30:07 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/remote/</guid>
+      <description>p15 사람들에게 제대로 집중해서 일을 하고자 할 때 어디로 갈거냐고 물었을 때 “사무실”이라고 답하는 사람은 별로 없다.혹은 “다른 직원들이 출근하기 전 아침 일찍” 또</description>
     </item>
     
   </channel>

@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cychong47.github.io/" />
-<meta property="og:updated_time" content="2020-06-07T22:14:02+09:00" />
+<meta property="og:updated_time" content="2020-06-13T16:44:23+09:00" />
 <meta itemprop="name" content="Another blog">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Another blog"/>
@@ -154,6 +154,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">176</span></li>
         </ul>
     </div>
@@ -166,7 +167,17 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://cychong47.github.io/2020/06/migrate-ghost-to-hugo/" class="title">Migrate Ghost to Hugo</a>
+                        <a href="https://cychong47.github.io/post/2020-06-13-setup-podcast-with-hugo/" class="title">Setup Podcast With Hugo</a>
+                    </p>
+                    <p class="item-date">
+                        <time datetime="2020-06-13 16:44:23 &#43;0900 KST" itemprop="datePublished">2020-06-13</time>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="item-inner">
+                    <p class="item-title">
+                        <a href="https://cychong47.github.io/post/migrate-ghost-to-hugo/" class="title">Migrate Ghost to Hugo</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-06-07 22:14:02 &#43;0900 KST" itemprop="datePublished">2020-06-07</time>
@@ -176,7 +187,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://cychong47.github.io/2020/05/hugo-seutp-with-git/" class="title">Migrate wordpress to hugo</a>
+                        <a href="https://cychong47.github.io/post/hugo-seutp-with-git/" class="title">Migrate wordpress to hugo</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-05-31 14:56:52 &#43;0900 KST" itemprop="datePublished">2020-05-31</time>
@@ -186,7 +197,7 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://cychong47.github.io/2020/05/nvidia-vran-solution/" class="title">NVIDIA vRAN Solution</a>
+                        <a href="https://cychong47.github.io/post/nvidia-vran-solution/" class="title">NVIDIA vRAN Solution</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-05-20 15:01:44 &#43;0900 KST" itemprop="datePublished">2020-05-20</time>
@@ -196,20 +207,10 @@
             <li>
                 <div class="item-inner">
                     <p class="item-title">
-                        <a href="https://cychong47.github.io/2020/05/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
+                        <a href="https://cychong47.github.io/post/recover-broken-users-table/" class="title">WordPress 로그인 불가 문제 해결</a>
                     </p>
                     <p class="item-date">
                         <time datetime="2020-05-08 23:36:45 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
-                    </p>
-                </div>
-            </li>
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="https://cychong47.github.io/2020/05/if-i-have-authority-5-years-later/" class="title">내게 권한이 있다면 - 그 이후</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2020-05-08 14:03:04 &#43;0900 KST" itemprop="datePublished">2020-05-08</time>
                     </p>
                 </div>
             </li>
@@ -535,7 +536,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
@@ -823,6 +824,10 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pluribus/" class="tag-list-link">pluribus</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/podscat/" class="tag-list-link">podscat</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -1214,7 +1219,49 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/10/upgrade-kubernetes/"
+    href="/post/enable-sctp-in-kubernetes/"
+    >Enable SCTP in kubernetes</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        Check if SCTP is supported by creating SCTP service https://blog.aweimeow.tw/enable-sctp-in-kubernetes-cluster/
+cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadata: name: sctp spec: selector: app: sctp ports: - protocol: SCTP port: 9999 targetPort: 30001  cychong@mini1:~/work/sctp$ kubectl create -f service.yaml The Service &quot;sctp&quot; is invalid: spec.ports[0].protocol: Unsupported value: &quot;SCTP&quot;: supported values: &quot;TCP&quot;, &quot;UDP&quot;  Enable SCTP in running kubernetes cluster https://stackoverflow.com/questions/55909512/how-to-configure-already-running-cluster-in-kubernetes
+ Basically you must pass this flag to kube-apiserver. How you can do that depends on how you set up the cluster.
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/post/enable-sctp-in-kubernetes/" class="">
+  <time datetime="2019-10-07 15:39:35 &#43;0900 KST" itemprop="datePublished">2019-10-07</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/kubernetes/"> kubernetes </a>
+    <a class="article-tag-link" href="/tags/sctp/"> sctp </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/enable-sctp-in-kubernetes/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 578words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/post/upgrade-kubernetes/"
     >Upgrade kubernetes</a
   >
 </h1>
@@ -1226,7 +1273,7 @@
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/10/upgrade-kubernetes/" class="">
+<a href="https://cychong47.github.io/post/upgrade-kubernetes/" class="">
   <time datetime="2019-10-07 15:37:14 &#43;0900 KST" itemprop="datePublished">2019-10-07</time>
 </a>
 </span>
@@ -1239,7 +1286,7 @@
     <a class="article-tag-link" href="/tags/kubernetes/"> kubernetes </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/10/upgrade-kubernetes/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/upgrade-kubernetes/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1894words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
       </p>
@@ -1253,7 +1300,7 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/09/convention-on-impose-core-requirements/"
+    href="/post/convention-on-impose-core-requirements/"
     >Convention on impose core requirements</a
   >
 </h1>
@@ -1265,7 +1312,7 @@
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/09/convention-on-impose-core-requirements/" class="">
+<a href="https://cychong47.github.io/post/convention-on-impose-core-requirements/" class="">
   <time datetime="2019-09-29 14:35:21 &#43;0900 KST" itemprop="datePublished">2019-09-29</time>
 </a>
 </span>
@@ -1282,7 +1329,7 @@
     <a class="article-tag-link" href="/tags/cpu/"> cpu </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/09/convention-on-impose-core-requirements/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/convention-on-impose-core-requirements/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 342words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </p>
@@ -1296,7 +1343,7 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/09/install-vm-with-multipass/"
+    href="/post/install-vm-with-multipass/"
     >Install VM with multipass on OS X</a
   >
 </h1>
@@ -1308,7 +1355,7 @@
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/09/install-vm-with-multipass/" class="">
+<a href="https://cychong47.github.io/post/install-vm-with-multipass/" class="">
   <time datetime="2019-09-28 15:17:26 &#43;0900 KST" itemprop="datePublished">2019-09-28</time>
 </a>
 </span>
@@ -1323,7 +1370,7 @@
     <a class="article-tag-link" href="/tags/multipass/"> multipass </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/09/install-vm-with-multipass/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/install-vm-with-multipass/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 2445words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 5minutes </span>
       </p>
@@ -1337,7 +1384,7 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/09/setup-kubernetes-with-a-single-host/"
+    href="/post/setup-kubernetes-with-a-single-host/"
     >Setup kubernetes in a single host</a
   >
 </h1>
@@ -1349,7 +1396,7 @@
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/09/setup-kubernetes-with-a-single-host/" class="">
+<a href="https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/" class="">
   <time datetime="2019-09-23 15:03:13 &#43;0900 KST" itemprop="datePublished">2019-09-23</time>
 </a>
 </span>
@@ -1364,7 +1411,7 @@
     <a class="article-tag-link" href="/tags/setup/"> setup </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/09/setup-kubernetes-with-a-single-host/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/setup-kubernetes-with-a-single-host/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 840words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </p>
@@ -1378,7 +1425,7 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/09/ghost-season-5-helm/"
+    href="/post/ghost-season-5-helm/"
     >Ghost Season 5 - Helm</a
   >
 </h1>
@@ -1390,7 +1437,7 @@
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/09/ghost-season-5-helm/" class="">
+<a href="https://cychong47.github.io/post/ghost-season-5-helm/" class="">
   <time datetime="2019-09-22 13:14:16 &#43;0900 KST" itemprop="datePublished">2019-09-22</time>
 </a>
 </span>
@@ -1406,7 +1453,7 @@
     <a class="article-tag-link" href="/tags/github/"> github </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/09/ghost-season-5-helm/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/ghost-season-5-helm/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3405words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 7minutes </span>
       </p>
@@ -1420,7 +1467,7 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/2019/08/wifi-5ghz-bluetooth-coexistence/"
+    href="/post/wifi-5ghz-bluetooth-coexistence/"
     >Wifi 2.5GHz bluetooth coexist</a
   >
 </h1>
@@ -1432,7 +1479,7 @@
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/08/wifi-5ghz-bluetooth-coexistence/" class="">
+<a href="https://cychong47.github.io/post/wifi-5ghz-bluetooth-coexistence/" class="">
   <time datetime="2019-08-26 15:46:19 &#43;0900 KST" itemprop="datePublished">2019-08-26</time>
 </a>
 </span>
@@ -1441,52 +1488,9 @@
   <a class="article-category-link" href="/categories/til/"> TIL </a>
 </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/08/wifi-5ghz-bluetooth-coexistence/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/wifi-5ghz-bluetooth-coexistence/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 238words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/2019/08/calico-cni-1/"
-    >Calico CNI (draft)</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Getting started with Calico on Kubernetes Calico를 사용하는 경우 kubelet의 실행 옵션 중 --network-plugin=cni와 같이 변경된다. kube-contr
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/2019/08/calico-cni-1/" class="">
-  <time datetime="2019-08-18 15:20:01 &#43;0900 KST" itemprop="datePublished">2019-08-18</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/container/"> container </a>
-    <a class="article-tag-link" href="/tags/kubernetes/"> kubernetes </a>
-    <a class="article-tag-link" href="/tags/cni/"> cni </a>
-    <a class="article-tag-link" href="/tags/calico/"> calico </a>
-    <a class="article-tag-link" href="/tags/network/"> network </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/2019/08/calico-cni-1/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1379words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
       </p>
     </article></div>
   
