@@ -10,6 +10,60 @@
     
     
     <item>
+      <title>(펌) 어떻게 하면 더 나은 소프트웨어를 만들 수 있을까?</title>
+      <link>https://cychong47.github.io/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</link>
+      <pubDate>Sun, 24 Aug 2014 10:55:06 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</guid>
+      <description>어떻게 하면 더 나은 소프트웨어를 만들 수 있을까? – 인터뷰 시리즈 part 1, Fernando Jimenez Moreno와 함께 출처 : http://hacks.mozilla.or.kr/2014/08/how-can-we-write-better-software-interview-series-part-1/ 영문 원본 : https://hacks.mozilla.org/2014/07/how-can-we-write-better-software-interview-series-part-1/ Telefonica에서 근무하고 있으면</description>
+    </item>
+    
+    <item>
+      <title>SDN expert group 세미나 - Play with DPDK</title>
+      <link>https://cychong47.github.io/post/sdn-expert-group-semina-play-with-dpdk/</link>
+      <pubDate>Thu, 21 Aug 2014 12:11:18 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/sdn-expert-group-semina-play-with-dpdk/</guid>
+      <description>세미나 내용 Controller &amp;ndash;(OpenFlow)&amp;ndash; ovs-switchd &amp;ndash;(netlink)&amp;ndash; Datapath Datapath is in the kernel space OVDK move the kernel based OVS to user space. ovs-switched talk to OVDK with UDP 기존 OVDK는 port별 task handler(각각 별도의 core에서 동작) 그 결과 많</description>
+    </item>
+    
+    <item>
+      <title>차라리 혼자 생각할 시간 가져라</title>
+      <link>https://cychong47.github.io/post/carari-honja-saenggaghal-sigan-gajyeora/</link>
+      <pubDate>Wed, 20 Aug 2014 14:43:09 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/carari-honja-saenggaghal-sigan-gajyeora/</guid>
+      <description>그러나 생각하기 위한 시간을 내는 것으로는 부족해 보인다. 자신의 믿음에 부합되는 정보만을 찾는 편향이 인간에게는 있다고 했다. 혼자 생각한다고 그런 편향에서 벗어</description>
+    </item>
+    
+    <item>
+      <title>(책) 누가 미래를 가질 것인가?</title>
+      <link>https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/</link>
+      <pubDate>Sun, 17 Aug 2014 14:29:31 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/</guid>
+      <description>p19 &amp;lsquo;인생은 해석&amp;rsquo;이라는 말이 있다. 인생을 살면서 많은 사건을 겪게 되는데, 그 사건들을 어떻게 해석하느냐에 따라 삶의 방향이 달라진다</description>
+    </item>
+    
+    <item>
+      <title>종교의 차별된 사랑</title>
+      <link>https://cychong47.github.io/post/jonggyoyi-cabyeoldoen-sarang/</link>
+      <pubDate>Sat, 16 Aug 2014 14:30:53 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/jonggyoyi-cabyeoldoen-sarang/</guid>
+      <description>회사라고 치자. 계열사에 회장이 떴다. 회장이 계열사 직원들로부터 소원수리를 받았다. 심각한 문제다. 그런데 사장들이 뻔히 문제점을 알고 있으면서 무시하고 아무</description>
+    </item>
+    
+    <item>
+      <title>(책) 스핀 잇</title>
+      <link>https://cychong47.github.io/post/seupin-is/</link>
+      <pubDate>Fri, 15 Aug 2014 14:58:34 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/seupin-is/</guid>
+      <description>p76 이 아이디어를 MIT 경영대학원 교수인 Glen Urban에게 가져갔을 때 그는 &amp;ldquo;이 아이디어는 당신이 생각하는 것보다 훨씬 스케일이 크다. 두 배의 속도로 움</description>
+    </item>
+    
+    <item>
       <title>SDN의 진정한 가치</title>
       <link>https://cychong47.github.io/post/sdnyi-jinjeonghan-gaci/</link>
       <pubDate>Fri, 15 Aug 2014 13:04:09 +0900</pubDate>

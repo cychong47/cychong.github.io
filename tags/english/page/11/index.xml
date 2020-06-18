@@ -5,10 +5,64 @@
     <link>https://cychong47.github.io/tags/english/</link>
     <description>Recent content in english on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Apr 2017 00:40:05 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 08:08:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cuckoo Switch</title>
+      <link>https://cychong47.github.io/post/cuckoo-switch/</link>
+      <pubDate>Sun, 09 Nov 2014 08:48:38 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/cuckoo-switch/</guid>
+      <description>Cuckoo 알고리즘을 사용하여 Flow lookup과 flow update 성능을 높힌 것과 DPDK를 이용하여 패킷 처리 성능을 높힌 것 출처 : Scalable, High Performance Ethernet Forwarding with CuckooSwitch DPDK DPDK를 이용한 IO 성능 개선</description>
+    </item>
+    
+    <item>
+      <title>(책) 바지 벗고 일하면 안되나요?</title>
+      <link>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</link>
+      <pubDate>Sun, 19 Oct 2014 03:55:01 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</guid>
+      <description>원제 : The year without pants p42 방송에서 IDEO가 &amp;ldquo;Deep Dive&amp;quot;라는 아이디어 개발 기법을 써서 닷새 만에 쇼핑카트를 개선하는 과정을 보여주었다. 곧이어 수 많은 기</description>
+    </item>
+    
+    <item>
+      <title>내게 권한이 있다면</title>
+      <link>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</link>
+      <pubDate>Tue, 14 Oct 2014 14:47:49 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</guid>
+      <description>우선 할 것은 모든 과제의 진행상황을 투명하게 볼 수 있는 시스템만들기 엑셀로 관리하고 있는 정보에 대해 최적의 대안을 찾아 엑셀 사용을 최소화 하기 파일 서버에 단순히 모</description>
+    </item>
+    
+    <item>
+      <title>나영석 PD</title>
+      <link>https://cychong47.github.io/post/nayeongseog-pd/</link>
+      <pubDate>Tue, 07 Oct 2014 15:30:34 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/nayeongseog-pd/</guid>
+      <description>창의적인 아이디어를 만들기가 쉽지 않을 텐데, 나름의 노하우가 있다면? 후배들에게 ‘아이디어를 좀 내봐, 너 좋은 아이디어 없냐?’ 하는 회의는 의미 없다. 아이디</description>
+    </item>
+    
+    <item>
+      <title>Intel SDN/NFV Forum Korea 2014</title>
+      <link>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</link>
+      <pubDate>Sun, 28 Sep 2014 14:09:56 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</guid>
+      <description>근태를 처리하지 못해 하루 최소 근무시간인 4시간을 채우고 포럼 장소인 리츠칼튼 호텔로 달려(버스타고) 감. 다행히 오후 세션 시작 시간인 1시 10분 전에 도착했지</description>
+    </item>
+    
+    <item>
+      <title>(책) Violent Python</title>
+      <link>https://cychong47.github.io/post/caeg-violent-python/</link>
+      <pubDate>Sat, 27 Sep 2014 16:43:27 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/caeg-violent-python/</guid>
+      <description>오래만에 재밌는 책을 봤다. 해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이</description>
+    </item>
     
     <item>
       <title>(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</title>
@@ -134,60 +188,6 @@
       
       <guid>https://cychong47.github.io/post/peom-20-life-lessons-everyone-can-master-by-the-age-40/</guid>
       <description>출처 : 20 Life Lessons Everyone Can Master By The Age 40 1. Everything will be okay, and if it’s not, it’s certainly not the end of the world. 내가 포기할 때 실패한 끝난 거다. 2. Find what you love and own it! 3. Don’t fear mistakes. 4. You deserve respect.</description>
-    </item>
-    
-    <item>
-      <title>(펌) 어떻게 하면 더 나은 소프트웨어를 만들 수 있을까?</title>
-      <link>https://cychong47.github.io/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</link>
-      <pubDate>Sun, 24 Aug 2014 10:55:06 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</guid>
-      <description>어떻게 하면 더 나은 소프트웨어를 만들 수 있을까? – 인터뷰 시리즈 part 1, Fernando Jimenez Moreno와 함께 출처 : http://hacks.mozilla.or.kr/2014/08/how-can-we-write-better-software-interview-series-part-1/ 영문 원본 : https://hacks.mozilla.org/2014/07/how-can-we-write-better-software-interview-series-part-1/ Telefonica에서 근무하고 있으면</description>
-    </item>
-    
-    <item>
-      <title>SDN expert group 세미나 - Play with DPDK</title>
-      <link>https://cychong47.github.io/post/sdn-expert-group-semina-play-with-dpdk/</link>
-      <pubDate>Thu, 21 Aug 2014 12:11:18 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/sdn-expert-group-semina-play-with-dpdk/</guid>
-      <description>세미나 내용 Controller &amp;ndash;(OpenFlow)&amp;ndash; ovs-switchd &amp;ndash;(netlink)&amp;ndash; Datapath Datapath is in the kernel space OVDK move the kernel based OVS to user space. ovs-switched talk to OVDK with UDP 기존 OVDK는 port별 task handler(각각 별도의 core에서 동작) 그 결과 많</description>
-    </item>
-    
-    <item>
-      <title>차라리 혼자 생각할 시간 가져라</title>
-      <link>https://cychong47.github.io/post/carari-honja-saenggaghal-sigan-gajyeora/</link>
-      <pubDate>Wed, 20 Aug 2014 14:43:09 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/carari-honja-saenggaghal-sigan-gajyeora/</guid>
-      <description>그러나 생각하기 위한 시간을 내는 것으로는 부족해 보인다. 자신의 믿음에 부합되는 정보만을 찾는 편향이 인간에게는 있다고 했다. 혼자 생각한다고 그런 편향에서 벗어</description>
-    </item>
-    
-    <item>
-      <title>(책) 누가 미래를 가질 것인가?</title>
-      <link>https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/</link>
-      <pubDate>Sun, 17 Aug 2014 14:29:31 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/</guid>
-      <description>p19 &amp;lsquo;인생은 해석&amp;rsquo;이라는 말이 있다. 인생을 살면서 많은 사건을 겪게 되는데, 그 사건들을 어떻게 해석하느냐에 따라 삶의 방향이 달라진다</description>
-    </item>
-    
-    <item>
-      <title>종교의 차별된 사랑</title>
-      <link>https://cychong47.github.io/post/jonggyoyi-cabyeoldoen-sarang/</link>
-      <pubDate>Sat, 16 Aug 2014 14:30:53 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/jonggyoyi-cabyeoldoen-sarang/</guid>
-      <description>회사라고 치자. 계열사에 회장이 떴다. 회장이 계열사 직원들로부터 소원수리를 받았다. 심각한 문제다. 그런데 사장들이 뻔히 문제점을 알고 있으면서 무시하고 아무</description>
-    </item>
-    
-    <item>
-      <title>(책) 스핀 잇</title>
-      <link>https://cychong47.github.io/post/seupin-is/</link>
-      <pubDate>Fri, 15 Aug 2014 14:58:34 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/seupin-is/</guid>
-      <description>p76 이 아이디어를 MIT 경영대학원 교수인 Glen Urban에게 가져갔을 때 그는 &amp;ldquo;이 아이디어는 당신이 생각하는 것보다 훨씬 스케일이 크다. 두 배의 속도로 움</description>
     </item>
     
   </channel>

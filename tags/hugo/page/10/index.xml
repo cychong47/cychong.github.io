@@ -5,10 +5,64 @@
     <link>https://cychong47.github.io/tags/hugo/</link>
     <description>Recent content in hugo on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 23:12:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 구글은 빅데이터를 어떻게 활용했는가</title>
+      <link>https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</link>
+      <pubDate>Mon, 07 Sep 2015 14:51:35 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</guid>
+      <description>일단 책 제목부터 구박. &amp;ldquo;People Analytics: How social technology will transform business and what it tells us about the future of work&amp;quot;인데 이게 왜 저런 한글 제목이 된건지. 책 내용을 보면 짐작은 가지만, 책 제목만</description>
+    </item>
+    
+    <item>
+      <title>(펌) 스포카, &#34;성장 배경? &#39;리모트&#39;와 &#39;블로그 문화&#39; 덕분이죠&#34;</title>
+      <link>https://cychong47.github.io/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</link>
+      <pubDate>Tue, 28 Jul 2015 12:26:14 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</guid>
+      <description>Link : http://www.bloter.net/archives/233978 스포카는 측정 가능한 업무 시스템을 위해 깃허브, 슬랙, 지라 같은 협업 도구를 이용했다. 직원들은 협업 도구들로 기록을 철저히 하면서 업무상황을 공유하고 있</description>
+    </item>
+    
+    <item>
+      <title>The Power of Ten-Rules for Developing Safety Critical Code</title>
+      <link>https://cychong47.github.io/post/the-power-of-ten-rules-for-developing-safety-critical-code/</link>
+      <pubDate>Mon, 27 Jul 2015 22:50:35 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/the-power-of-ten-rules-for-developing-safety-critical-code/</guid>
+      <description>from NASA/JPL(Jet Propulsion Laboratory) The result is that most existing guidelines contain well over a hundred rules, sometimes with questionable justification. Some rules especially those that try to stipulate the use of white-space in programs, may have been introduced by personal preference; others are meants to prevent very specific and unlikely types of error from eariler coding efforts within the same organization. 효율적인 가이드라</description>
+    </item>
+    
+    <item>
+      <title>(책) 빅 스몰</title>
+      <link>https://cychong47.github.io/post/caeg-big-seumol/</link>
+      <pubDate>Sat, 04 Jul 2015 15:21:38 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/caeg-big-seumol/</guid>
+      <description>p81 전문가라서 승진했더니 전문적인 일에서는 점점 더 멀어지고, 해보지 않은 일을 끊임없이 떠안기는 게 현대 기업의 문화다. 이 과정에서 효율이 떨어지기라도 한다면 기</description>
+    </item>
+    
+    <item>
+      <title>관리자 들도 공부 좀 합시다</title>
+      <link>https://cychong47.github.io/post/gwanrija-deuldo-gongbu-jom-habsida/</link>
+      <pubDate>Sat, 04 Jul 2015 13:56:36 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/gwanrija-deuldo-gongbu-jom-habsida/</guid>
+      <description>출처 : 관리의 기본 (Fundamental of management) #2 - 관리자/리더에게 필요한 역량 가장 중요한 것은 Communication 역량으로, 팀내 또는 팀간의 조율을 위해서는 반드시 필요한 능력이라고 생각한다. 두</description>
+    </item>
+    
+    <item>
+      <title>열심히 비교한 결론이 고작 그건가?</title>
+      <link>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</link>
+      <pubDate>Wed, 24 Jun 2015 15:20:57 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</guid>
+      <description>그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건</description>
+    </item>
     
     <item>
       <title>Divide &amp; Conquer</title>
@@ -134,60 +188,6 @@
       
       <guid>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</guid>
       <description>정말 하나같이 핵심적인 내용인데 정작 이걸 알아야 하는 사람은 이런 데 관심이 없겠지. 출처 : 부실한 공유문화를 지배하는 개발자의 심리 전반적으로 공유문화가 부실하</description>
-    </item>
-    
-    <item>
-      <title>Cuckoo Switch</title>
-      <link>https://cychong47.github.io/post/cuckoo-switch/</link>
-      <pubDate>Sun, 09 Nov 2014 08:48:38 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/cuckoo-switch/</guid>
-      <description>Cuckoo 알고리즘을 사용하여 Flow lookup과 flow update 성능을 높힌 것과 DPDK를 이용하여 패킷 처리 성능을 높힌 것 출처 : Scalable, High Performance Ethernet Forwarding with CuckooSwitch DPDK DPDK를 이용한 IO 성능 개선</description>
-    </item>
-    
-    <item>
-      <title>(책) 바지 벗고 일하면 안되나요?</title>
-      <link>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</link>
-      <pubDate>Sun, 19 Oct 2014 03:55:01 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</guid>
-      <description>원제 : The year without pants p42 방송에서 IDEO가 &amp;ldquo;Deep Dive&amp;quot;라는 아이디어 개발 기법을 써서 닷새 만에 쇼핑카트를 개선하는 과정을 보여주었다. 곧이어 수 많은 기</description>
-    </item>
-    
-    <item>
-      <title>내게 권한이 있다면</title>
-      <link>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</link>
-      <pubDate>Tue, 14 Oct 2014 14:47:49 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</guid>
-      <description>우선 할 것은 모든 과제의 진행상황을 투명하게 볼 수 있는 시스템만들기 엑셀로 관리하고 있는 정보에 대해 최적의 대안을 찾아 엑셀 사용을 최소화 하기 파일 서버에 단순히 모</description>
-    </item>
-    
-    <item>
-      <title>나영석 PD</title>
-      <link>https://cychong47.github.io/post/nayeongseog-pd/</link>
-      <pubDate>Tue, 07 Oct 2014 15:30:34 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/nayeongseog-pd/</guid>
-      <description>창의적인 아이디어를 만들기가 쉽지 않을 텐데, 나름의 노하우가 있다면? 후배들에게 ‘아이디어를 좀 내봐, 너 좋은 아이디어 없냐?’ 하는 회의는 의미 없다. 아이디</description>
-    </item>
-    
-    <item>
-      <title>Intel SDN/NFV Forum Korea 2014</title>
-      <link>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</link>
-      <pubDate>Sun, 28 Sep 2014 14:09:56 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</guid>
-      <description>근태를 처리하지 못해 하루 최소 근무시간인 4시간을 채우고 포럼 장소인 리츠칼튼 호텔로 달려(버스타고) 감. 다행히 오후 세션 시작 시간인 1시 10분 전에 도착했지</description>
-    </item>
-    
-    <item>
-      <title>(책) Violent Python</title>
-      <link>https://cychong47.github.io/post/caeg-violent-python/</link>
-      <pubDate>Sat, 27 Sep 2014 16:43:27 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/caeg-violent-python/</guid>
-      <description>오래만에 재밌는 책을 봤다. 해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이</description>
     </item>
     
   </channel>

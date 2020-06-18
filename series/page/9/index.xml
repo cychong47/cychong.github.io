@@ -10,6 +10,62 @@
     
     
     <item>
+      <title>(책)  NHN은 이렇게 한다. 소프트웨어 품질 관리</title>
+      <link>https://cychong47.github.io/post/nhn_sw_quality_control/</link>
+      <pubDate>Mon, 07 Dec 2015 13:40:56 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/nhn_sw_quality_control/</guid>
+      <description>누군가의 말을 빌리자면 품질 관리의 바이블(?)이라고 하는. 내용면에서는 특별한 건 없지만, 그래도 국내에서는 SW를 잘한다고 하는 사람들이 많이 가는 회사이고</description>
+    </item>
+    
+    <item>
+      <title>역량 평가를 없앤 회사에서 일어난 일</title>
+      <link>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</link>
+      <pubDate>Sat, 05 Dec 2015 13:14:53 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</guid>
+      <description>출처 : Harvard Businee Review 최소 52개 대형 회사가 기존 년 단위의 고과 평과 제도를 없앰. 이 중 33개 업체를 집중 분석하여 해당 업체에서 일어난 변화를 정리 manager-em</description>
+    </item>
+    
+    <item>
+      <title>OpenStack이  Python으로 만들어졌다니</title>
+      <link>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</link>
+      <pubDate>Wed, 25 Nov 2015 11:36:43 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</guid>
+      <description>Neuron Python project 체계를 잡는데 도움이 될 듯 하다. 아래는 pylink를 이용해서 syntax 검사하는 script https://github.com/openstack/neutron/blob/master/tools/coding-checks.sh</description>
+    </item>
+    
+    <item>
+      <title>Cisco Cloud Services Router 1000V</title>
+      <link>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</link>
+      <pubDate>Mon, 23 Nov 2015 14:50:31 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</guid>
+      <description>http://www.cisco.com/c/en/us/products/collateral/routers/cloud-services-router-1000v-series/datasheet-c78-733443.html
+How many vCPUs are required for processing.</description>
+    </item>
+    
+    <item>
+      <title>CISCO Cloud Service Platform 2100</title>
+      <link>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</link>
+      <pubDate>Mon, 23 Nov 2015 14:24:35 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</guid>
+      <description>Data sheet (PDF)
+ Some Cisco virtual network services that use the DPDK include Cisco Cloud Services Router (CSR) 1000V, Cisco Virtual Mobile Packet Core software, and Cisco IOS® XR 9000v virtual router. Supporte CISCO appliances  Cisco Cloud Services Router (CSR) 1000V virtual router Cisco Virtual Adaptive Security Appliance (ASAv) Cisco Prime™ Data Center Network Manager (DCNM) Cisco Virtual Network Analysis Module (vNAM) Cisco Virtual Security Gateway (VSG) for Cisco Nexus® 1000V Switch deployments Cisco Virtual Supervisor Module (VSM) for Cisco Nexus 1000V Switch deployments   1U 2 CPU, each has 8 core Ivy Bridge(E5-2630 v3) REST API It uses REST API and NETCONF protocol for north-bound management and orchestration (MANO) tools.</description>
+    </item>
+    
+    <item>
+      <title>제대로 만들려면 제품의 성격부터 정의해야</title>
+      <link>https://cychong47.github.io/post/what_is_the_target_product/</link>
+      <pubDate>Sun, 22 Nov 2015 14:35:23 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/what_is_the_target_product/</guid>
+      <description>철학의 부재. 중심의 부재. 대화의 부재 제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다.</description>
+    </item>
+    
+    <item>
       <title>개인의 잘못으로만 돌리는 이유</title>
       <link>https://cychong47.github.io/post/why_blame_personals/</link>
       <pubDate>Thu, 19 Nov 2015 22:22:07 +0900</pubDate>
@@ -136,60 +192,6 @@ Edit vmx file to VMX file is in where vmware image located</description>
       
       <guid>https://cychong47.github.io/post/competetion_is_like_drug/</guid>
       <description>경쟁을 부추켜서 조직의 성과를 얻으려는 관리자는 아무런 노력도 하지 않고 결과만 날로 먹으려는 것과 같다. 아무 고민없이 할 수 있는 제일 쉬운 방법이니까. 조직원들에</description>
-    </item>
-    
-    <item>
-      <title>(책) 구글은 빅데이터를 어떻게 활용했는가</title>
-      <link>https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</link>
-      <pubDate>Mon, 07 Sep 2015 14:51:35 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</guid>
-      <description>일단 책 제목부터 구박. &amp;ldquo;People Analytics: How social technology will transform business and what it tells us about the future of work&amp;quot;인데 이게 왜 저런 한글 제목이 된건지. 책 내용을 보면 짐작은 가지만, 책 제목만</description>
-    </item>
-    
-    <item>
-      <title>(펌) 스포카, &#34;성장 배경? &#39;리모트&#39;와 &#39;블로그 문화&#39; 덕분이죠&#34;</title>
-      <link>https://cychong47.github.io/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</link>
-      <pubDate>Tue, 28 Jul 2015 12:26:14 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</guid>
-      <description>Link : http://www.bloter.net/archives/233978 스포카는 측정 가능한 업무 시스템을 위해 깃허브, 슬랙, 지라 같은 협업 도구를 이용했다. 직원들은 협업 도구들로 기록을 철저히 하면서 업무상황을 공유하고 있</description>
-    </item>
-    
-    <item>
-      <title>The Power of Ten-Rules for Developing Safety Critical Code</title>
-      <link>https://cychong47.github.io/post/the-power-of-ten-rules-for-developing-safety-critical-code/</link>
-      <pubDate>Mon, 27 Jul 2015 22:50:35 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/the-power-of-ten-rules-for-developing-safety-critical-code/</guid>
-      <description>from NASA/JPL(Jet Propulsion Laboratory) The result is that most existing guidelines contain well over a hundred rules, sometimes with questionable justification. Some rules especially those that try to stipulate the use of white-space in programs, may have been introduced by personal preference; others are meants to prevent very specific and unlikely types of error from eariler coding efforts within the same organization. 효율적인 가이드라</description>
-    </item>
-    
-    <item>
-      <title>(책) 빅 스몰</title>
-      <link>https://cychong47.github.io/post/caeg-big-seumol/</link>
-      <pubDate>Sat, 04 Jul 2015 15:21:38 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/caeg-big-seumol/</guid>
-      <description>p81 전문가라서 승진했더니 전문적인 일에서는 점점 더 멀어지고, 해보지 않은 일을 끊임없이 떠안기는 게 현대 기업의 문화다. 이 과정에서 효율이 떨어지기라도 한다면 기</description>
-    </item>
-    
-    <item>
-      <title>관리자 들도 공부 좀 합시다</title>
-      <link>https://cychong47.github.io/post/gwanrija-deuldo-gongbu-jom-habsida/</link>
-      <pubDate>Sat, 04 Jul 2015 13:56:36 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/gwanrija-deuldo-gongbu-jom-habsida/</guid>
-      <description>출처 : 관리의 기본 (Fundamental of management) #2 - 관리자/리더에게 필요한 역량 가장 중요한 것은 Communication 역량으로, 팀내 또는 팀간의 조율을 위해서는 반드시 필요한 능력이라고 생각한다. 두</description>
-    </item>
-    
-    <item>
-      <title>열심히 비교한 결론이 고작 그건가?</title>
-      <link>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</link>
-      <pubDate>Wed, 24 Jun 2015 15:20:57 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</guid>
-      <description>그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건</description>
     </item>
     
   </channel>

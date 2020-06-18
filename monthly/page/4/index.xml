@@ -10,6 +10,62 @@
     
     
     <item>
+      <title>(책) 팀이 빠지기 쉬운 5가지 함정</title>
+      <link>https://cychong47.github.io/post/five-traps-team-can-fall-into/</link>
+      <pubDate>Sun, 29 Jul 2018 13:11:31 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/five-traps-team-can-fall-into/</guid>
+      <description>p65 효율적인 팀들은 한결같이 매우 구체적으로 논쟁을 벌였습니다. 팀원들간의 신뢰도가 매우 높은 팀에서도 흔히 논쟁이 벌어지더군요. p114 전반전이 끝나고 라커룸으로</description>
+    </item>
+    
+    <item>
+      <title>(책) 드라이브 - 다니엘 핑크</title>
+      <link>https://cychong47.github.io/post/drive/</link>
+      <pubDate>Sun, 29 Jul 2018 12:45:25 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/drive/</guid>
+      <description>p64 해결점까지 분명한 길이 있는 경우의 보상은 앞만 바라보며 더 빨리 나아가게 해주기 때문에 도움이 되지만, 양초 문제처럼 도전적인 상황에서 &amp;lsquo;만약-그</description>
+    </item>
+    
+    <item>
+      <title>2nd patch submit to DPDK</title>
+      <link>https://cychong47.github.io/post/submit-patch-to-dpdk-with-git/</link>
+      <pubDate>Sat, 21 Jul 2018 15:02:14 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/submit-patch-to-dpdk-with-git/</guid>
+      <description>AVX2가 지원되지 않는 머신에서 쓸데없이 ACL library 빌드할 때 AVX2를 이용해서 빌드하려는 문제를 확인했다. 지금까지 아무도 고치지 않은 게 이상하긴 한데 그래도 내</description>
+    </item>
+    
+    <item>
+      <title>(책) 대살개문</title>
+      <link>https://cychong47.github.io/post/developer-culture/</link>
+      <pubDate>Sun, 15 Jul 2018 13:41:48 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/developer-culture/</guid>
+      <description>임백준. 2016.5 96) dead code로 인한 사고 신규 기능을 위해 현재 지금은 disable로 설정된 변수를 재활용. 코드 변경을 깜빡하고 설정만 변경하여 잠자고 있던 예전 코</description>
+    </item>
+    
+    <item>
+      <title>Astri vRAN</title>
+      <link>https://cychong47.github.io/post/astri-vran/</link>
+      <pubDate>Sun, 15 Jul 2018 12:03:00 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/astri-vran/</guid>
+      <description>Toward 5G RAN virtualization by Intel and Astri
+http://astri.oeg
+Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY Split - HARQ processing in RRU(How???) Lower PHY Split - High FB overhead but smallest packet latency.  Good for JT and JR for COMP Good for Massive MIMO and Ultra low-latency communication(Why?)   FAPI based MAC/PHY communication  L1 adaptation layer for MAC/PHY split (and Lower PHY Split?)    MAC/PHY split in one CPU  MAC/PHY split in one machine but netrwork based MAC/PHY communication over OVS   Virtual Cell  A group of physical cells form a Virtual Cell which does not require HO between the physical cells.</description>
+    </item>
+    
+    <item>
+      <title>(책) 도쿄대 교수가 제자들에게 주는 쓴소리</title>
+      <link>https://cychong47.github.io/post/advice_from_tokyo_professor/</link>
+      <pubDate>Sat, 07 Jul 2018 15:00:28 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/advice_from_tokyo_professor/</guid>
+      <description>다양한 분야에 대한 조언 p20 목표가 명확하겨 정답이 있는 일을 하는 경주마에서 길 잃은 양으로 p22 지식을 더 많이 아는 것이 아닌 아는 지식으로 뭘 할 지 Learn by doing. 결과가 아닌 과정</description>
+    </item>
+    
+    <item>
       <title>(책) 매일 아침 써봤니?</title>
       <link>https://cychong47.github.io/post/did-you-write-in-every-morning/</link>
       <pubDate>Sun, 01 Jul 2018 12:03:47 +0900</pubDate>
@@ -134,60 +190,6 @@ mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_
       
       <guid>https://cychong47.github.io/post/mac-mini-e-windows-10-seolci/</guid>
       <description>mac mini 2009에 windows 10을 무사히 설치. 몇 가지 삽질을 적어보면 mac mini는 windows 7까지만 지원하고, optic drive를 이용한 설치만 지원하기 때문에 그냥(?) 해서</description>
-    </item>
-    
-    <item>
-      <title>Vagrant</title>
-      <link>https://cychong47.github.io/post/vagrant-2/</link>
-      <pubDate>Tue, 21 Nov 2017 15:04:19 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/vagrant-2/</guid>
-      <description>Vagrant What is a Vagrant? Backend에 virtualbox를 사용(변경 가능) 하고, virtualbox를 이용해 VM을 생성하여 그 VM 내 원하는 환경(특정 OS부</description>
-    </item>
-    
-    <item>
-      <title>Amdocs Preps &#39;Carrier-Grade&#39; Version of ONAP</title>
-      <link>https://cychong47.github.io/post/amdocs-preps-carrier-grade-version-of-onap/</link>
-      <pubDate>Tue, 21 Nov 2017 14:51:25 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/amdocs-preps-carrier-grade-version-of-onap/</guid>
-      <description>From Amdocs Preps &amp;lsquo;Carrier-Grade&amp;rsquo; Version of ONAP | Light Reading(http://www.lightreading.com/mobile/mec-(mobile-edge-computing)/amdocs-preps-carrier-grade-version-of-onap/d/d-id/738315) &amp;ldquo;We&amp;rsquo;re just about to make a big carrier [and] enterprise grade release of ONAP,&amp;rdquo; Angela Logothetis, VP and CTO of Amdocs Open Network, told Light Reading Logothetis says that Amdocs is working with Intel Corp. (Nasdaq: INTC) on edge computing proofs-of-concept. This involves understanding what content and data needs to cached and where exactly that should happen on the network.</description>
-    </item>
-    
-    <item>
-      <title>ONAP Takes Flak as Telcos Prep for Release 1 | Light Reading</title>
-      <link>https://cychong47.github.io/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</link>
-      <pubDate>Tue, 14 Nov 2017 22:31:57 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</guid>
-      <description>1st release Amsterdam release which is due to November 16 Critics It will not be stable enough to be used for product misunderstanding That release will focus on providing support for three network functions or services &amp;ndash; a virtual firewall (vFW), virtual customer premises equipment (vCPE) and a voice-over-LTE service running on a virtual evolved packet core (vEPC) I think this is a misunderstanding. These are just an use case</description>
-    </item>
-    
-    <item>
-      <title>Lead Follow or Get Out of the Way</title>
-      <link>https://cychong47.github.io/post/lead-or-step-aside/</link>
-      <pubDate>Sun, 29 Oct 2017 01:38:23 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/lead-or-step-aside/</guid>
-      <description>book from Amazon</description>
-    </item>
-    
-    <item>
-      <title>관리자는 &#39;관리&#39;업무를 하는 동료이다.</title>
-      <link>https://cychong47.github.io/post/what-is-good-manager/</link>
-      <pubDate>Sat, 28 Oct 2017 15:34:55 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/what-is-good-manager/</guid>
-      <description>구글이 연구한 &amp;lsquo;좋은 관리자가 가져야 할 8가지 덕목&amp;rsquo;. 좋은 코치(coaches)다. 팀에게 권한을 양도하며 마이크로매니지를 하</description>
-    </item>
-    
-    <item>
-      <title>Record CBS Music Radio in every day</title>
-      <link>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</link>
-      <pubDate>Mon, 09 Oct 2017 16:22:15 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</guid>
-      <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
     </item>
     
   </channel>

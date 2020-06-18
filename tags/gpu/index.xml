@@ -11,6 +11,66 @@
     
     
     <item>
+      <title>Disable Password for Private Github Repo</title>
+      <link>https://cychong47.github.io/post/disable-password-for-private-github-repo/</link>
+      <pubDate>Fri, 19 Jun 2020 06:41:02 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/disable-password-for-private-github-repo/</guid>
+      <description>github가 제공하는 private repository를 사용하니 ID와 암호를 매번 물어보길래 찾아 보니 이렇게 해결할 수 있다고. source : https://stackoverflow.com/questions/8588768/how-do-i-avoid-the-specification-of-the-username-and-password-at-every-git-push $ git config credential.helper store $ git push https://github.com/repo.git Username for &#39;https://github.com&#39;:</description>
+    </item>
+    
+    <item>
+      <title>Setup Podcast Blog - Notification 필요</title>
+      <link>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-3/</link>
+      <pubDate>Thu, 18 Jun 2020 23:12:02 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-3/</guid>
+      <description>이제는 제대로 동작할 것 같지만(오늘 6/18일 실패한 이유는 test를 위해 녹음 시간을 10초로 지정한 crontab의 내용을 제대로 고쳐놓지 않아서 그랬다</description>
+    </item>
+    
+    <item>
+      <title>Setup Podcast Blog - recording 동작 확인</title>
+      <link>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-2/</link>
+      <pubDate>Thu, 18 Jun 2020 23:10:45 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-2/</guid>
+      <description>mini2를 이용해서 1시간 짜리 recording 동작확인 결과 정상 동작 확인 $ mp3info -p &amp;quot;%S&amp;quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processing power 부족 때문에 제대로 1시간 녹음이 안된 듯.</description>
+    </item>
+    
+    <item>
+      <title>Setup Podcast Hugo 1</title>
+      <link>https://cychong47.github.io/post/setup-podcast-hugo-1/</link>
+      <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/setup-podcast-hugo-1/</guid>
+      <description>Install Create hugo site cychong15:writing_factory cychong$ hugo new site cbs-ost Congratulations! Your new Hugo site is created in /Users/cychong/workspace/writing_factory/cbs-ost. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Grain of Salt</title>
+      <link>https://cychong47.github.io/post/2020-06-14-grain-of-salt/</link>
+      <pubDate>Sun, 14 Jun 2020 08:08:31 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-06-14-grain-of-salt/</guid>
+      <description>From OS X dictionary
+Grain of salt
+Pliny the Elder&amp;rsquo;s Naturalis Historia may be the origin of the phrase.
+To take something with a &amp;ldquo;grain of salt&amp;rdquo; or &amp;ldquo;pinch of salt&amp;rdquo; is an English language idiom that means to view something with skepticism or not to interpret something literally.[1] In the old-fashioned English units of weight, a grain weighs approximately 60 mg, which is about how much table salt a person might pick up between the fingers as a pinch.</description>
+    </item>
+    
+    <item>
+      <title>Record CBS radio in every day</title>
+      <link>https://cychong47.github.io/post/2020-06-14-record-cbs-with-cron/</link>
+      <pubDate>Sun, 14 Jun 2020 06:49:23 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-06-14-record-cbs-with-cron/</guid>
+      <description>record Find out duration of mp3 file mp3info, exiftool or ffmpeg can be used to get the duration of mp3 file
+Though mp3info and exiftool can be used to the exiting mp3 file while the ffmpeg give the duration on recording process.
+$ mp3info -p &amp;quot;%S\n&amp;quot; Cinema_20200614.mp3 15  Exiftool does not give the correct duration.
+$ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinema_20200614.mp3 Directory : .</description>
+    </item>
+    
+    <item>
       <title>Hugo에 Main menu 추가하기</title>
       <link>https://cychong47.github.io/post/2020-06-13-add-menu-to-hugo/</link>
       <pubDate>Sat, 13 Jun 2020 23:46:10 +0900</pubDate>
@@ -139,62 +199,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/what-if-helm-command-refuses/</guid>
       <description>helm 명령을 입력했는데 다음과 같은 에러 메시지를 내면서 실행을 거부한다. $ helm ls snap-confine has elevated permissions and is not confined but should be. Refusing to continue to avoid permission escalation attacks 에러 메시지를 찾아보니 보안 관련된 내용</description>
-    </item>
-    
-    <item>
-      <title>kubelet이 실행되지 않을때</title>
-      <link>https://cychong47.github.io/post/what-if-kubelet-is-not-started/</link>
-      <pubDate>Tue, 05 Nov 2019 14:43:35 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/what-if-kubelet-is-not-started/</guid>
-      <description>mini1 리붓 후 ghost 접속이 안됨. docker를 직접 실행시키는 wordpress는 정상적으로 실행 그래서 kubectl get svc 명령을 치니 접속이 안된다고. $ ps -ef |grep kube cychong 7461 2486 0</description>
-    </item>
-    
-    <item>
-      <title>Enable SCTP in kubernetes</title>
-      <link>https://cychong47.github.io/post/enable-sctp-in-kubernetes/</link>
-      <pubDate>Mon, 07 Oct 2019 15:39:35 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/enable-sctp-in-kubernetes/</guid>
-      <description>Check if SCTP is supported by creating SCTP service https://blog.aweimeow.tw/enable-sctp-in-kubernetes-cluster/
-cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadata: name: sctp spec: selector: app: sctp ports: - protocol: SCTP port: 9999 targetPort: 30001  cychong@mini1:~/work/sctp$ kubectl create -f service.yaml The Service &amp;quot;sctp&amp;quot; is invalid: spec.ports[0].protocol: Unsupported value: &amp;quot;SCTP&amp;quot;: supported values: &amp;quot;TCP&amp;quot;, &amp;quot;UDP&amp;quot;  Enable SCTP in running kubernetes cluster https://stackoverflow.com/questions/55909512/how-to-configure-already-running-cluster-in-kubernetes
- Basically you must pass this flag to kube-apiserver. How you can do that depends on how you set up the cluster.</description>
-    </item>
-    
-    <item>
-      <title>Upgrade kubernetes</title>
-      <link>https://cychong47.github.io/post/upgrade-kubernetes/</link>
-      <pubDate>Mon, 07 Oct 2019 15:37:14 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/upgrade-kubernetes/</guid>
-      <description>cychong@mini1:~/work/ghost-with-helm-x$ sudo apt update [sudo] password for cychong: Ign:2 http://dl.google.com/linux/chrome/deb stable InRelease Hit:3 http://archive.ubuntu.com/ubuntu bionic InRelease Hit:4 https://download.docker.com/linux/ubuntu bionic InRelease Hit:5 http://dl.google.com/linux/chrome/deb stable Release Get:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB] Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB] Get:9 http://archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB] Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [295 kB] Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB] Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [147 kB]</description>
-    </item>
-    
-    <item>
-      <title>Convention on impose core requirements</title>
-      <link>https://cychong47.github.io/post/convention-on-impose-core-requirements/</link>
-      <pubDate>Sun, 29 Sep 2019 14:35:21 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/convention-on-impose-core-requirements/</guid>
-      <description>하나의 Helm chart를 이용하여 여러 개의 pod를 설치 하는 nested chart 인 경우 각각의 pod에 대한 CPU requirement는 각 subchart의 values.</description>
-    </item>
-    
-    <item>
-      <title>Install VM with multipass on OS X</title>
-      <link>https://cychong47.github.io/post/install-vm-with-multipass/</link>
-      <pubDate>Sat, 28 Sep 2019 15:17:26 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/install-vm-with-multipass/</guid>
-      <description>multipass? Multipass is a lightweight VM manager for Linux, Windows and macOS. It&amp;rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date. Since it supports metadata</description>
-    </item>
-    
-    <item>
-      <title>Setup kubernetes in a single host</title>
-      <link>https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/</link>
-      <pubDate>Mon, 23 Sep 2019 15:03:13 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/</guid>
-      <description>Replace microk8s with kubernetes in mini1 remove micro.k8s with snap command cychong@mini1:~$ sudo snap remove microk8s Save data of snap &amp;quot;microk8s&amp;quot; in automatic snapshot set microk8s removed cychong@mini1:~$ setup kubernetes Reference : https://phoenixnap.com/kb/install-kubernetes-on-ubuntu cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using Kubernetes version: v1.15.3 cychong@mini1:~$ kubectl get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES kube-system coredns-5c98db65d4-r468f 0/1 Pending 0 2m3s &amp;lt;none&amp;gt; &amp;lt;none&amp;gt;</description>
     </item>
     
   </channel>

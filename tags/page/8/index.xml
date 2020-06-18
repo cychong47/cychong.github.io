@@ -5,10 +5,64 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 23:46:10 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>왜 공부해야 하는가에 대한 간단하지만 명확한 답</title>
+      <link>https://cychong47.github.io/post/why_have_to_keep_studying/</link>
+      <pubDate>Wed, 10 Feb 2016 04:23:12 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/why_have_to_keep_studying/</guid>
+      <description>왜 공부해야 하는가 사회의 변화속도는 우리의 변화속도를 압도하기 때문입니다. &amp;lt;누가 내 치즈를 옮겼을까&amp;gt;에 잘 묘사되어 있지요. 따라잡지 않으면 뒤</description>
+    </item>
+    
+    <item>
+      <title>DPDK NIC 초기화</title>
+      <link>https://cychong47.github.io/post/dpdk_nic_init/</link>
+      <pubDate>Tue, 09 Feb 2016 14:54:21 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/dpdk_nic_init/</guid>
+      <description>constructor attribute http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/ constructor attribute을 가진 함수는 main 함수를 실행하기 전에 호출한다. 예제 (출처) #include &amp;lt;stdio.h&amp;gt; void begin (void) __attribute__((constructor)); void end (void) __attribute__((destructor)); int main (void) { printf (&amp;quot;\nInside main ()&amp;quot;); } void begin (void) { printf (&amp;quot;\nIn begin ()&amp;quot;); } void end</description>
+    </item>
+    
+    <item>
+      <title>Introducing Python</title>
+      <link>https://cychong47.github.io/post/introducing-python/</link>
+      <pubDate>Mon, 08 Feb 2016 13:25:34 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/introducing-python/</guid>
+      <description>Introducing Python 을 판교어린이도서관에서 짧게 보고 적은 아이템들 python3 based Decorator는 공부가 필요한 내용 sys.path : module 검색 경로 __init__.py 파일이 있으면 그 디렉토리를 PKG로 간주함</description>
+    </item>
+    
+    <item>
+      <title>SR-IOV and DPDK</title>
+      <link>https://cychong47.github.io/post/sriov-and-dpdk/</link>
+      <pubDate>Sun, 07 Feb 2016 23:40:26 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/sriov-and-dpdk/</guid>
+      <description>SR-IOV and DPDK Accelerating the NFV Data Plane : SR-IOV and DPDK… in my own words 를 읽고 요약 Before HW assisted Virtualisation SR-IOV 전까지는 VMM이 패킷 송수신에 매번 개입해야 했음. 1st interrupt from NIC to VMM 2nd interrupt from VMM to VM Intel VMDq Only one interrupt</description>
+    </item>
+    
+    <item>
+      <title>DPDK 2.2 crypto dev API</title>
+      <link>https://cychong47.github.io/post/dpdk-2-2-crypto-dev-api/</link>
+      <pubDate>Sun, 24 Jan 2016 15:08:11 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/dpdk-2-2-crypto-dev-api/</guid>
+      <description>pktmbuf_offload pool은 rte_pktmbuf_offload_pool_create()를 사용하여 생성 l2fwd_mbuf_ol_pool = rte_pktmbuf_offload_pool_create( &amp;quot;mbuf_offload_pool&amp;quot;, NB_MBUF, 128, 0, rte_socket_id()); 할당은 rte_pktmbuf_o</description>
+    </item>
+    
+    <item>
+      <title>DPDK based applications</title>
+      <link>https://cychong47.github.io/post/dpdk_based_apps/</link>
+      <pubDate>Sun, 24 Jan 2016 14:59:18 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/dpdk_based_apps/</guid>
+      <description>2016.02.10 기준 DPDK-dump TRex - Realistic traffic generator git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK</description>
+    </item>
     
     <item>
       <title>2년전에 느꼈던 답답함이 여전하네</title>
@@ -138,62 +192,6 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
       
       <guid>https://cychong47.github.io/post/errors_from_more_code/</guid>
       <description>부정하기 어렵다. 하지만 코드가 늘어나는 것은 피할 수 없으니 불필요한 기능/코드는 삭제하는 노력을 끊임없이 해야 한다. 그렇지 않으면 technical debt만 늘어날 뿐이다</description>
-    </item>
-    
-    <item>
-      <title>(책)  NHN은 이렇게 한다. 소프트웨어 품질 관리</title>
-      <link>https://cychong47.github.io/post/nhn_sw_quality_control/</link>
-      <pubDate>Mon, 07 Dec 2015 13:40:56 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/nhn_sw_quality_control/</guid>
-      <description>누군가의 말을 빌리자면 품질 관리의 바이블(?)이라고 하는. 내용면에서는 특별한 건 없지만, 그래도 국내에서는 SW를 잘한다고 하는 사람들이 많이 가는 회사이고</description>
-    </item>
-    
-    <item>
-      <title>역량 평가를 없앤 회사에서 일어난 일</title>
-      <link>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</link>
-      <pubDate>Sat, 05 Dec 2015 13:14:53 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</guid>
-      <description>출처 : Harvard Businee Review 최소 52개 대형 회사가 기존 년 단위의 고과 평과 제도를 없앰. 이 중 33개 업체를 집중 분석하여 해당 업체에서 일어난 변화를 정리 manager-em</description>
-    </item>
-    
-    <item>
-      <title>OpenStack이  Python으로 만들어졌다니</title>
-      <link>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</link>
-      <pubDate>Wed, 25 Nov 2015 11:36:43 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</guid>
-      <description>Neuron Python project 체계를 잡는데 도움이 될 듯 하다. 아래는 pylink를 이용해서 syntax 검사하는 script https://github.com/openstack/neutron/blob/master/tools/coding-checks.sh</description>
-    </item>
-    
-    <item>
-      <title>Cisco Cloud Services Router 1000V</title>
-      <link>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</link>
-      <pubDate>Mon, 23 Nov 2015 14:50:31 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</guid>
-      <description>http://www.cisco.com/c/en/us/products/collateral/routers/cloud-services-router-1000v-series/datasheet-c78-733443.html
-How many vCPUs are required for processing.</description>
-    </item>
-    
-    <item>
-      <title>CISCO Cloud Service Platform 2100</title>
-      <link>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</link>
-      <pubDate>Mon, 23 Nov 2015 14:24:35 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</guid>
-      <description>Data sheet (PDF)
- Some Cisco virtual network services that use the DPDK include Cisco Cloud Services Router (CSR) 1000V, Cisco Virtual Mobile Packet Core software, and Cisco IOS® XR 9000v virtual router. Supporte CISCO appliances  Cisco Cloud Services Router (CSR) 1000V virtual router Cisco Virtual Adaptive Security Appliance (ASAv) Cisco Prime™ Data Center Network Manager (DCNM) Cisco Virtual Network Analysis Module (vNAM) Cisco Virtual Security Gateway (VSG) for Cisco Nexus® 1000V Switch deployments Cisco Virtual Supervisor Module (VSM) for Cisco Nexus 1000V Switch deployments   1U 2 CPU, each has 8 core Ivy Bridge(E5-2630 v3) REST API It uses REST API and NETCONF protocol for north-bound management and orchestration (MANO) tools.</description>
-    </item>
-    
-    <item>
-      <title>제대로 만들려면 제품의 성격부터 정의해야</title>
-      <link>https://cychong47.github.io/post/what_is_the_target_product/</link>
-      <pubDate>Sun, 22 Nov 2015 14:35:23 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/what_is_the_target_product/</guid>
-      <description>철학의 부재. 중심의 부재. 대화의 부재 제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다.</description>
     </item>
     
   </channel>

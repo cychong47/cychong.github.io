@@ -5,10 +5,64 @@
     <link>https://cychong47.github.io/tags/git/</link>
     <description>Recent content in git on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 21 Jul 2018 15:02:14 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vagrant</title>
+      <link>https://cychong47.github.io/post/vagrant-2/</link>
+      <pubDate>Tue, 21 Nov 2017 15:04:19 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/vagrant-2/</guid>
+      <description>Vagrant What is a Vagrant? Backend에 virtualbox를 사용(변경 가능) 하고, virtualbox를 이용해 VM을 생성하여 그 VM 내 원하는 환경(특정 OS부</description>
+    </item>
+    
+    <item>
+      <title>Amdocs Preps &#39;Carrier-Grade&#39; Version of ONAP</title>
+      <link>https://cychong47.github.io/post/amdocs-preps-carrier-grade-version-of-onap/</link>
+      <pubDate>Tue, 21 Nov 2017 14:51:25 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/amdocs-preps-carrier-grade-version-of-onap/</guid>
+      <description>From Amdocs Preps &amp;lsquo;Carrier-Grade&amp;rsquo; Version of ONAP | Light Reading(http://www.lightreading.com/mobile/mec-(mobile-edge-computing)/amdocs-preps-carrier-grade-version-of-onap/d/d-id/738315) &amp;ldquo;We&amp;rsquo;re just about to make a big carrier [and] enterprise grade release of ONAP,&amp;rdquo; Angela Logothetis, VP and CTO of Amdocs Open Network, told Light Reading Logothetis says that Amdocs is working with Intel Corp. (Nasdaq: INTC) on edge computing proofs-of-concept. This involves understanding what content and data needs to cached and where exactly that should happen on the network.</description>
+    </item>
+    
+    <item>
+      <title>ONAP Takes Flak as Telcos Prep for Release 1 | Light Reading</title>
+      <link>https://cychong47.github.io/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</link>
+      <pubDate>Tue, 14 Nov 2017 22:31:57 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</guid>
+      <description>1st release Amsterdam release which is due to November 16 Critics It will not be stable enough to be used for product misunderstanding That release will focus on providing support for three network functions or services &amp;ndash; a virtual firewall (vFW), virtual customer premises equipment (vCPE) and a voice-over-LTE service running on a virtual evolved packet core (vEPC) I think this is a misunderstanding. These are just an use case</description>
+    </item>
+    
+    <item>
+      <title>Lead Follow or Get Out of the Way</title>
+      <link>https://cychong47.github.io/post/lead-or-step-aside/</link>
+      <pubDate>Sun, 29 Oct 2017 01:38:23 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/lead-or-step-aside/</guid>
+      <description>book from Amazon</description>
+    </item>
+    
+    <item>
+      <title>관리자는 &#39;관리&#39;업무를 하는 동료이다.</title>
+      <link>https://cychong47.github.io/post/what-is-good-manager/</link>
+      <pubDate>Sat, 28 Oct 2017 15:34:55 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/what-is-good-manager/</guid>
+      <description>구글이 연구한 &amp;lsquo;좋은 관리자가 가져야 할 8가지 덕목&amp;rsquo;. 좋은 코치(coaches)다. 팀에게 권한을 양도하며 마이크로매니지를 하</description>
+    </item>
+    
+    <item>
+      <title>Record CBS Music Radio in every day</title>
+      <link>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</link>
+      <pubDate>Mon, 09 Oct 2017 16:22:15 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</guid>
+      <description>Purpose 매일 낮 11시 부터 1시간 동안 CBS 뮤직 FM에서 진행되는 신영음을 듣고 싶다. 아주 오래 전 가장 좋아했던 라디어 프로가 정은임씨가 진행하던 영화음악 이었는데 한참</description>
+    </item>
     
     <item>
       <title>사진 백업 2017 버전</title>
@@ -143,71 +197,6 @@ mbpr15:working cychong$ brew install python ==&amp;gt; Installing dependencies f
       
       <guid>https://cychong47.github.io/post/opnfv-asia-meeting/</guid>
       <description>ZTE Pharos Lab Pharos : OPNFV를 시험하는 worldwide lab 외부에서 접속하는 것이 필요하므로 ssh를 열어줄 수는 없어서 openVPN을 제공하고, 망을 분리하는 등의 이슈 해결을</description>
-    </item>
-    
-    <item>
-      <title>Integrating VES to OPNFV</title>
-      <link>https://cychong47.github.io/post/ves-to-opnfv/</link>
-      <pubDate>Mon, 25 Sep 2017 15:44:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/ves-to-opnfv/</guid>
-      <description>VES project VNF Event Stream Project
-Demo  vHello VES Demo in OpenStack Barcelona 2016 VES ONAP demo from OPNFV Summit 2017  From VF Event Streaming (VES) Project Proposal  Alok Gupta 13 Jun, 2016 OPNFV VES.pptx VNF Event Stream Prpoposal  OPNFV projects that potentially benefit from the VES project
- Fault Management ([Doctor] (https://wiki.opnfv.org/display/doctor)) *** Virtualized Infrastructure Deployment Policies (Copper) High Availability for OPNFV (Availability) Data Collection for Failure Prediction (Prediction) *** Audit (Inspector) Fault localization (RCA, Pinpoint ) *** Service Function Chaining (sfc) Moon Security Management   OpenStack projects that potentially benefit from the VES project</description>
-    </item>
-    
-    <item>
-      <title>OPNFV Barometer and VES</title>
-      <link>https://cychong47.github.io/post/opnfv-barometer/</link>
-      <pubDate>Mon, 25 Sep 2017 15:05:40 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/opnfv-barometer/</guid>
-      <description>Summary The VES can be supported with the help of Kafka broker with the collectd in OPNFV Barometer project which is aim to collect telemetrics from the NFVI. Barometer Project The purpose of this project is providing metrics can be used to decide quality of NFVI. For this, the followings are reported NIC statistics Resources such as CPU, Memory, load, cache, themals, fan speeds, voltages and machine check exceptions. This</description>
-    </item>
-    
-    <item>
-      <title>(Summary) AT&amp;T Container Strategy</title>
-      <link>https://cychong47.github.io/post/summary-at-t-container-strategy/</link>
-      <pubDate>Thu, 21 Sep 2017 15:21:45 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/summary-at-t-container-strategy/</guid>
-      <description>From https://www.youtube.com/watch?v=rYRiH3HZFN4&amp;amp;t=3s
-Presented in OpenStack Summit 2017 Boston
-Container will be used for workload processing after 2019 VNF is differ from Enterprise IT worklaod(4:19)
- VNF is not a simple VM Maintain a state Complex network configuration Sophisticated Storage Connectivity HA is important  2018-2019 vendor and open source project especially openstack should do something to meet the requirements.
-Even it takes some time for container to replace VM for workload perspective, running the Openstack service as a container is possible today.</description>
-    </item>
-    
-    <item>
-      <title>(News) Amdocs Brings an NFV Software Package Based on ONAP</title>
-      <link>https://cychong47.github.io/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</link>
-      <pubDate>Wed, 20 Sep 2017 15:30:44 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</guid>
-      <description>September 12, 2017
-https://www.sdxcentral.com/articles/news/amdocs-brings-nfv-software-package-based-onap/2017/09/
-Amdocs announced its new NFV Powered by ONAP portfolio – a portfolio featuring modular capabilities that accelerate service design, virtualization and operating capabilities on demand.
- Service providers using technologies developed in ONAP and its ecosystem of capabilities can provide enterprises the ability to design their own networks as part of a richer set of service features.
- from : https://www.amdocs.com/media-room/amdocs-nfv-powered-onap-worlds-first-software-and-services-portfolio-carriers-based-open
-Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP platform as an integrator.</description>
-    </item>
-    
-    <item>
-      <title>Prometheus</title>
-      <link>https://cychong47.github.io/post/prometheus/</link>
-      <pubDate>Mon, 18 Sep 2017 13:59:00 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/prometheus/</guid>
-      <description>Cloud Native Computing Foundation(http://cncf.io)에 포함된 Container monitoring tool. 집 맥미니에서 돌리고 있는 3개 container들을 관리하는데 사용할 수 있</description>
-    </item>
-    
-    <item>
-      <title>NGNIX for service mesh</title>
-      <link>https://cychong47.github.io/post/ngnix-for-service-mesh/</link>
-      <pubDate>Fri, 15 Sep 2017 14:39:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/ngnix-for-service-mesh/</guid>
-      <description>NGINX Releases Microservices Platform, OpenShift Ingress Controller, and Service Mesh Preview NGNIX also join for service mesh bandwagon? NGNIX Application Platform NGINX Plus, the commercial variant of the popular open source NGINX web server. NGINX Web Application Firewall (WAF) NGINX Unit, a new open source application server that can run PHP, Python and Go NGINX Controller, a centralised control plane for monitoring and management of NGINX Plus Additional release a</description>
     </item>
     
   </channel>
