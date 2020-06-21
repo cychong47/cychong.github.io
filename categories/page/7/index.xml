@@ -5,10 +5,22 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>P4</title>
+      <link>https://cychong47.github.io/post/p4/</link>
+      <pubDate>Sun, 09 Apr 2017 08:58:50 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/p4/</guid>
+      <description>Open source language for &amp;ldquo;Programming Protocol-independent Packet Processor&amp;rdquo;
+http://p4.org
+ Barefoot network - Tofino - PISA(Protocol Independent Switch Architecture) switch Netronome - smart NIC   5G: flexibility or high performance? Both - Ericsson Research Blog   POF/PIF and P4 initiatives all point in a direction where programmable packet processing will not depend on standardized OpenFlow action sets anymore
+POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</description>
+    </item>
     
     <item>
       <title>Table or dish</title>
@@ -179,15 +191,6 @@
       
       <guid>https://cychong47.github.io/post/fd-io-tree/</guid>
       <description>├── build-data │ ├── packages │ └── platforms ├── build-root │ ├── deb │ │ └── debian │ │ └── source │ ├── emacs-lisp │ ├── packages │ ├── rpm │ ├── scripts │ └── vagrant ├── dpdk │ ├── dkms │ ├── dpdk-2.1.0_patches │ └── dpdk-2.2.0_patches ├── g2 ├── gmod │ └── gmod ├── perftool ├── sample-plugin │ └── sample ├── svm ├── test │ ├── resources │ │ ├── libraries │ │ │ ├── bash │ │ │ ├── python │ │ │ └── robot │ │ │ └── vat │ │ └── templates │ │ └── vat │ └── tests │ └── suites │ ├── bridge_domain │ └── vhost_user_dummy ├── vlib │ ├── example │ └── vlib │ └── unix ├── vlib-api │ ├── vlibapi │ ├── vlibmemory │ └── vlibsocket ├── vnet │ ├── etc │ │ └── scripts │ │ ├── dhcp │ │ ├── ludd-cluster-1 │ │ ├── ludd-cluster-3 │ │ ├── mpls-o-ethernet │ │ ├── mpls-o-gre │ │ ├── sr │ │ └── virl │ └── vnet │ ├── cdp │ ├── classify │ ├── devices │ │ ├── dpdk │ │ ├── ssvm │ │ └── virtio │ ├── dhcp │ ├── dhcpv6 │ ├── ethernet │ ├── flow │ ├── gre │ ├── hdlc │ ├── ip │ ├── ipsec │ ├── l2 │ ├── l2tp │ ├── lawful-intercept │ ├── lisp-gpe │ ├── llc │ ├── map │ │ └── examples │ ├── mcast │ ├── mpls-gre │ ├── nsh-gre │ ├── nsh-vxlan-gpe │ ├── osi │ ├── pg │ ├── plugin │ ├── policer │ ├── ppp │ ├── snap │ ├── sr │ ├── srp │ ├── unix │ ├── vcgn │ └── vxlan ├── vpp │ ├── api │ ├── app │ ├── conf │ ├── oam │ ├── stats │ └── vnet ├── vpp-api-test │ ├── scripts │ └── vat ├── vpp-japi │ ├── japi │ │ ├── org │ │ │ └── openvpp │ │ │ └── vppjapi │ │ └── test │ └── m4 ├── vppapigen └── vppinfra ├── config ├── tools └── vppinfra  </description>
-    </item>
-    
-    <item>
-      <title>fd.io</title>
-      <link>https://cychong47.github.io/post/fd-io/</link>
-      <pubDate>Sat, 13 Feb 2016 01:29:43 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/fd-io/</guid>
-      <description>2016년 2월 11일 공개된 CISCO 주도의 프로젝트. 무려 2002년부터 개발한 것으로 현재 버전은 3번째 revision이라고 한다. 간만에 dpdk.org mailing list에 들</description>
     </item>
     
   </channel>

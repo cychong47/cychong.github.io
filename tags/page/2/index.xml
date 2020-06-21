@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What if helm command refuse to execute</title>
+      <link>https://cychong47.github.io/post/what-if-helm-command-refuses/</link>
+      <pubDate>Tue, 05 Nov 2019 14:47:41 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/what-if-helm-command-refuses/</guid>
+      <description>helm 명령을 입력했는데 다음과 같은 에러 메시지를 내면서 실행을 거부한다. $ helm ls snap-confine has elevated permissions and is not confined but should be. Refusing to continue to avoid permission escalation attacks 에러 메시지를 찾아보니 보안 관련된 내용</description>
+    </item>
     
     <item>
       <title>kubelet이 실행되지 않을때</title>
@@ -185,16 +194,6 @@ Added support for device multi-process hotplug.</description>
       
       <guid>https://cychong47.github.io/post/use-jetpack-for-wordpress-5-0/</guid>
       <description>Wordpress 5.0부터 기본 editor가 ghost와 같이 block editor 로 변경됨. Markdown을 사용하려면 이전과 동일하게 Jetpack을 사용해야 하는데 dock</description>
-    </item>
-    
-    <item>
-      <title>How NASA uses a wiki to reduce email</title>
-      <link>https://cychong47.github.io/post/how-nasa-uses-a-wiki-to-reduce-email/</link>
-      <pubDate>Fri, 23 Nov 2018 11:37:27 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/how-nasa-uses-a-wiki-to-reduce-email/</guid>
-      <description>Really good wiki adoption case in NASA
-http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
     </item>
     
   </channel>

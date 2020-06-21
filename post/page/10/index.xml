@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>경쟁을 통한 성과 추구는 마약과 같다</title>
+      <link>https://cychong47.github.io/post/competetion_is_like_drug/</link>
+      <pubDate>Sat, 12 Sep 2015 10:28:31 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/competetion_is_like_drug/</guid>
+      <description>경쟁을 부추켜서 조직의 성과를 얻으려는 관리자는 아무런 노력도 하지 않고 결과만 날로 먹으려는 것과 같다. 아무 고민없이 할 수 있는 제일 쉬운 방법이니까. 조직원들에</description>
+    </item>
     
     <item>
       <title>(책) 구글은 빅데이터를 어떻게 활용했는가</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/dpdk-summit-2014-videos/</guid>
       <description> Application Performance Tuning and Future Optimizations in DPDK by Venky Venkatesan DPDK in a Virtual World by Bhavesh Davda Rashmin Patel High Performance Networking Leveraging the DPDK and the Growing Community by Thomas Monj alon Multi Socket Ferrari for NFV by Laszlo Vadkerti Andras Kovacs Lightning Fast IO with PacketDirect by Gabriel Silva A High Performance vSwitch of the User by the User for the User by Yoshihiro Nakajima Is It Time to Revisit the IP Stack in the Linux Kernel and KVM by Jun Xu Closing Remarks by Tim ODriscoll  </description>
-    </item>
-    
-    <item>
-      <title>(펌) 부실한 공유문화를 지배하는 개발자의 심리</title>
-      <link>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</link>
-      <pubDate>Mon, 17 Nov 2014 13:35:16 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</guid>
-      <description>정말 하나같이 핵심적인 내용인데 정작 이걸 알아야 하는 사람은 이런 데 관심이 없겠지. 출처 : 부실한 공유문화를 지배하는 개발자의 심리 전반적으로 공유문화가 부실하</description>
     </item>
     
   </channel>

@@ -4,14 +4,56 @@
   
   <url>
     <loc>https://cychong47.github.io/</loc>
-    <lastmod>2020-06-19T06:41:02+09:00</lastmod>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cychong47.github.io/categories/</loc>
-    <lastmod>2020-06-19T06:41:02+09:00</lastmod>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/git/</loc>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/git/</loc>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/</loc>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/</loc>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/categories/til/</loc>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/vim/</loc>
+    <lastmod>2020-06-20T21:54:31+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,77 +66,42 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/tags/git/</loc>
-    <lastmod>2020-06-19T06:41:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/</loc>
-    <lastmod>2020-06-19T06:41:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/</loc>
-    <lastmod>2020-06-19T06:41:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/categories/til/</loc>
-    <lastmod>2020-06-19T06:41:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cychong47.github.io/tags/hugo/</loc>
-    <lastmod>2020-06-18T23:12:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/categories/note/</loc>
-    <lastmod>2020-06-18T23:12:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/podcast/</loc>
-    <lastmod>2020-06-18T23:12:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-3/</loc>
-    <lastmod>2020-06-18T23:12:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/telegram/</loc>
-    <lastmod>2020-06-18T23:12:02+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-2/</loc>
     <lastmod>2020-06-18T23:10:45+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-podcast-hugo-1/</loc>
+    <loc>https://cychong47.github.io/categories/note/</loc>
+    <lastmod>2020-06-18T23:10:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/podcast/</loc>
+    <lastmod>2020-06-18T23:10:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/setup-podcast-blog-2/</loc>
+    <lastmod>2020-06-18T23:10:45+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/setup-podcast-blog-1/</loc>
+    <lastmod>2020-06-16T06:53:24+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/setup-podcast-blog-3/</loc>
     <lastmod>2020-06-16T06:53:24+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -129,14 +136,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/tags/podscat/</loc>
-    <lastmod>2020-06-13T16:44:23+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/2020-06-13-setup-podcast-with-hugo/</loc>
+    <loc>https://cychong47.github.io/post/setup-podcast-blog-0/</loc>
     <lastmod>2020-06-13T16:44:23+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

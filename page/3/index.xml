@@ -5,10 +5,20 @@
     <link>https://cychong47.github.io/</link>
     <description>Recent content on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How NASA uses a wiki to reduce email</title>
+      <link>https://cychong47.github.io/post/how-nasa-uses-a-wiki-to-reduce-email/</link>
+      <pubDate>Fri, 23 Nov 2018 11:37:27 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/how-nasa-uses-a-wiki-to-reduce-email/</guid>
+      <description>Really good wiki adoption case in NASA
+http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
+    </item>
     
     <item>
       <title>(책) The nature of Software Development</title>
@@ -179,15 +189,6 @@
       
       <guid>https://cychong47.github.io/post/your-time/</guid>
       <description>p52 &amp;ldquo;당신의 삶입니다. 당신의 사람을 이야기하라는데 가족을 위해 사는 게 전부라. 생활비만 제대로 해결된다면 가족에게 당신은 없어도 되는 존재라는 말</description>
-    </item>
-    
-    <item>
-      <title>(책) Slack</title>
-      <link>https://cychong47.github.io/post/slack/</link>
-      <pubDate>Sun, 29 Jul 2018 13:42:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/slack/</guid>
-      <description>p32 너무 효율적인 사람은 너무나도 바쁘기 때문에, 무언가 새로운 일이 일어나는 경우 그 일에 즉시 대응할 수가 없게 된다. p37 사실 효율성을 높이는 일은 매우 어렵다. 효율</description>
     </item>
     
   </channel>

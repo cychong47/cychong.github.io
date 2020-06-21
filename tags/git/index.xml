@@ -5,10 +5,21 @@
     <link>https://cychong47.github.io/tags/git/</link>
     <description>Recent content in git on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Tips</title>
+      <link>https://cychong47.github.io/post/git/</link>
+      <pubDate>Sat, 20 Jun 2020 21:54:31 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/git/</guid>
+      <description>Open vim tabs with changed files vim -p `git diff --name-only`  vim -p
+  -p[N] Open N tab pages. When N is omitted, open one tab page for each file.   git diff --name-only
+  --name-only Show only names of changed files.   </description>
+    </item>
     
     <item>
       <title>Disable Password for Private Github Repo</title>
@@ -20,30 +31,30 @@
     </item>
     
     <item>
-      <title>Setup Podcast Blog - Notification 필요</title>
-      <link>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-3/</link>
-      <pubDate>Thu, 18 Jun 2020 23:12:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-3/</guid>
-      <description>이제는 제대로 동작할 것 같지만(오늘 6/18일 실패한 이유는 test를 위해 녹음 시간을 10초로 지정한 crontab의 내용을 제대로 고쳐놓지 않아서 그랬다</description>
-    </item>
-    
-    <item>
-      <title>Setup Podcast Blog - recording 동작 확인</title>
-      <link>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-2/</link>
+      <title>Setup podcast blog - recording 동작 확인</title>
+      <link>https://cychong47.github.io/post/setup-podcast-blog-2/</link>
       <pubDate>Thu, 18 Jun 2020 23:10:45 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020-06-18-setup-podcast-blog-2/</guid>
-      <description>mini2를 이용해서 1시간 짜리 recording 동작확인 결과 정상 동작 확인 $ mp3info -p &amp;quot;%S&amp;quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processing power 부족 때문에 제대로 1시간 녹음이 안된 듯.</description>
+      <guid>https://cychong47.github.io/post/setup-podcast-blog-2/</guid>
+      <description>듣고 싶은 mp3 파일을 mini2를 이용해서 1시간 짜리 녹음 동작확인 결과 정상 동작 확인 $ mp3info -p &amp;quot;%S&amp;quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processing power 부족 때문에 제대로 1시간 녹음이 안된 듯</description>
     </item>
     
     <item>
-      <title>Setup Podcast Hugo 1</title>
-      <link>https://cychong47.github.io/post/setup-podcast-hugo-1/</link>
+      <title>Setup podcast blog - Setup Hugo</title>
+      <link>https://cychong47.github.io/post/setup-podcast-blog-1/</link>
       <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/setup-podcast-hugo-1/</guid>
-      <description>Install Create hugo site cychong15:writing_factory cychong$ hugo new site cbs-ost Congratulations! Your new Hugo site is created in /Users/cychong/workspace/writing_factory/cbs-ost. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new &amp;lt;SECTIONNAME&amp;gt;/&amp;lt;FILENAME&amp;gt;.&amp;lt;FORMAT&amp;gt;&amp;quot;.</description>
+      <guid>https://cychong47.github.io/post/setup-podcast-blog-1/</guid>
+      <description>Install Create Hugo for podcast cychong15:writing_factory cychong$ hugo new site cbs-ost Congratulations! Your new Hugo site is created in /Users/cychong/workspace/writing_factory/cbs-ost. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new</description>
+    </item>
+    
+    <item>
+      <title>Setup podcast hugo 3 - blog post 작성</title>
+      <link>https://cychong47.github.io/post/setup-podcast-blog-3/</link>
+      <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/setup-podcast-blog-3/</guid>
+      <description>Podcast post 작성하기 Zen theme 덕분에 mp3 파일을 포함한 blog post를 markdown 파일로 작성하고 site build만 시키면 자동적으로 podcast feed를 만들어 준다. https://git</description>
     </item>
     
     <item>
@@ -80,12 +91,12 @@ $ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinem
     </item>
     
     <item>
-      <title>Setup Podcast With Hugo</title>
-      <link>https://cychong47.github.io/post/2020-06-13-setup-podcast-with-hugo/</link>
+      <title>Setup podcast blog - beginning</title>
+      <link>https://cychong47.github.io/post/setup-podcast-blog-0/</link>
       <pubDate>Sat, 13 Jun 2020 16:44:23 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020-06-13-setup-podcast-with-hugo/</guid>
-      <description>오늘 운전하는 시간 대가 오전 11시라 CBS 신영음의 영화음악을 들을 수 있었다. 어릴 적 부터 좋아하던 영화 음악을 괘 오래동안 듣게 해주고 있는 프로그램. 편안한 목소리</description>
+      <guid>https://cychong47.github.io/post/setup-podcast-blog-0/</guid>
+      <description>오늘 운전하는 시간이 마침 오전 11시라 CBS 신지혜의 영화음악을 들을 수 있었다. 어릴 적 부터 좋아하던 영화 음악을 괘 오래동안 듣게 해주고 있는 프로그램. 편안한 목소</description>
     </item>
     
     <item>
@@ -190,15 +201,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/upgrade-ghost-to-v3-0/</guid>
       <description>부제 1. pod가 동작하지 않을때 원인 찾기 부제 2. helm upgrade 명령을 이용하여 업데이트 하기 부제 3. sqlite를 이용해서 ghost.db 직접 수정하기 values.yaml에 명</description>
-    </item>
-    
-    <item>
-      <title>What if helm command refuse to execute</title>
-      <link>https://cychong47.github.io/post/what-if-helm-command-refuses/</link>
-      <pubDate>Tue, 05 Nov 2019 14:47:41 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/what-if-helm-command-refuses/</guid>
-      <description>helm 명령을 입력했는데 다음과 같은 에러 메시지를 내면서 실행을 거부한다. $ helm ls snap-confine has elevated permissions and is not confined but should be. Refusing to continue to avoid permission escalation attacks 에러 메시지를 찾아보니 보안 관련된 내용</description>
     </item>
     
   </channel>

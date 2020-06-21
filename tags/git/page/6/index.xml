@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/git/</link>
     <description>Recent content in git on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 19 Jun 2020 06:41:02 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OPNFV Asia Meeting</title>
+      <link>https://cychong47.github.io/post/opnfv-asia-meeting/</link>
+      <pubDate>Sun, 01 Oct 2017 08:28:34 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/opnfv-asia-meeting/</guid>
+      <description>ZTE Pharos Lab Pharos : OPNFV를 시험하는 worldwide lab 외부에서 접속하는 것이 필요하므로 ssh를 열어줄 수는 없어서 openVPN을 제공하고, 망을 분리하는 등의 이슈 해결을</description>
+    </item>
     
     <item>
       <title>Integrating VES to OPNFV</title>
@@ -193,18 +202,6 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>P4</title>
-      <link>https://cychong47.github.io/post/p4/</link>
-      <pubDate>Sun, 09 Apr 2017 08:58:50 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/p4/</guid>
-      <description>Open source language for &amp;ldquo;Programming Protocol-independent Packet Processor&amp;rdquo;
-http://p4.org
- Barefoot network - Tofino - PISA(Protocol Independent Switch Architecture) switch Netronome - smart NIC   5G: flexibility or high performance? Both - Ericsson Research Blog   POF/PIF and P4 initiatives all point in a direction where programmable packet processing will not depend on standardized OpenFlow action sets anymore
-POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</description>
     </item>
     
   </channel>
