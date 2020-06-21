@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/podcast/</link>
     <description>Recent content in podcast on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Jun 2020 23:10:45 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 당신의 시간</title>
+      <link>https://cychong47.github.io/post/your-time/</link>
+      <pubDate>Sun, 29 Jul 2018 13:44:37 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/your-time/</guid>
+      <description>p52 &amp;ldquo;당신의 삶입니다. 당신의 사람을 이야기하라는데 가족을 위해 사는 게 전부라. 생활비만 제대로 해결된다면 가족에게 당신은 없어도 되는 존재라는 말</description>
+    </item>
     
     <item>
       <title>(책) Slack</title>
@@ -182,15 +191,6 @@ Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY S
       <guid>https://cychong47.github.io/post/install-wordpress-with-docker/</guid>
       <description>Summary docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql docker run --restart=always -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@ -e WORDPRESS_DB_NAME=wordpress_db -p 80:80 -v /Users/cychong/Documents/wordpress/html:/var/www/html -v /Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads -v /Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini --link mysql:mysql --name wpcontainer -d wordpress  If required, import database to mysql (Once wordpress data is imported into mysql, upgrading mysql does not requires re-import ingof wordpress data)
 mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql Unable to find image &#39;mysql:latest&#39; locally latest: Pulling from library/mysql aa18ad1a0d33: Pull complete a5745c3b8bcc: Pull complete 76375fcd129c: Pull complete 4f72cfb004cf: Pull complete 1d6a01e515fb: Pull complete a71e1163fa7e: Pull complete 8c1a568fa442: Pull complete e7a69cecc173: Pull complete 9759a0f979a1: Pull complete 3f71dac6110f: Pull complete 58f37de54392: Pull complete Digest: sha256:790b7b18b832822ef400e44ad9fac885a746db1a7028ec52325730cf9b831753 Status: Downloaded newer image for mysql:latest b1f54c680120898fc7ff16751048fe18ae461399d5d7f10308c156c68d40577b  check container is started cychong:~ cychong$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES b1f54c680120 mysql &amp;quot;docker-entrypoint.</description>
-    </item>
-    
-    <item>
-      <title>clienBBS</title>
-      <link>https://cychong47.github.io/post/clienbbs/</link>
-      <pubDate>Thu, 14 Dec 2017 09:42:15 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/clienbbs/</guid>
-      <description>pip3로는 설치가 안되네 mbpr15:~ cychong$ pip3 install clientBBS Collecting clientBBS Could not find a version that satisfies the requirement clientBBS (from versions: ) No matching distribution found for clientBBS 그래서 그냥 github 링크에서 클론해서 실행 mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Cloning into &#39;clienBBS&#39;... remote: Counting objects: 219, done. remote: Compressing objects:</description>
     </item>
     
   </channel>

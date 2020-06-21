@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>fd.io</title>
+      <link>https://cychong47.github.io/post/fd-io-tree/</link>
+      <pubDate>Sat, 13 Feb 2016 05:51:52 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/fd-io-tree/</guid>
+      <description>├── build-data │ ├── packages │ └── platforms ├── build-root │ ├── deb │ │ └── debian │ │ └── source │ ├── emacs-lisp │ ├── packages │ ├── rpm │ ├── scripts │ └── vagrant ├── dpdk │ ├── dkms │ ├── dpdk-2.1.0_patches │ └── dpdk-2.2.0_patches ├── g2 ├── gmod │ └── gmod ├── perftool ├── sample-plugin │ └── sample ├── svm ├── test │ ├── resources │ │ ├── libraries │ │ │ ├── bash │ │ │ ├── python │ │ │ └── robot │ │ │ └── vat │ │ └── templates │ │ └── vat │ └── tests │ └── suites │ ├── bridge_domain │ └── vhost_user_dummy ├── vlib │ ├── example │ └── vlib │ └── unix ├── vlib-api │ ├── vlibapi │ ├── vlibmemory │ └── vlibsocket ├── vnet │ ├── etc │ │ └── scripts │ │ ├── dhcp │ │ ├── ludd-cluster-1 │ │ ├── ludd-cluster-3 │ │ ├── mpls-o-ethernet │ │ ├── mpls-o-gre │ │ ├── sr │ │ └── virl │ └── vnet │ ├── cdp │ ├── classify │ ├── devices │ │ ├── dpdk │ │ ├── ssvm │ │ └── virtio │ ├── dhcp │ ├── dhcpv6 │ ├── ethernet │ ├── flow │ ├── gre │ ├── hdlc │ ├── ip │ ├── ipsec │ ├── l2 │ ├── l2tp │ ├── lawful-intercept │ ├── lisp-gpe │ ├── llc │ ├── map │ │ └── examples │ ├── mcast │ ├── mpls-gre │ ├── nsh-gre │ ├── nsh-vxlan-gpe │ ├── osi │ ├── pg │ ├── plugin │ ├── policer │ ├── ppp │ ├── snap │ ├── sr │ ├── srp │ ├── unix │ ├── vcgn │ └── vxlan ├── vpp │ ├── api │ ├── app │ ├── conf │ ├── oam │ ├── stats │ └── vnet ├── vpp-api-test │ ├── scripts │ └── vat ├── vpp-japi │ ├── japi │ │ ├── org │ │ │ └── openvpp │ │ │ └── vppjapi │ │ └── test │ └── m4 ├── vppapigen └── vppinfra ├── config ├── tools └── vppinfra  </description>
+    </item>
     
     <item>
       <title>fd.io</title>
@@ -183,15 +192,6 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
       
       <guid>https://cychong47.github.io/post/single-tasking/</guid>
       <description>난 특히 멀티태스킹이 안된다. 하나에도 제대로 집중하기 힘들다. 11월은 아무 쓸데없는 TF 2개에 참여하느라 제대로 일을 못했다. 정말&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>19 hard things you need to do to be successful</title>
-      <link>https://cychong47.github.io/post/19-hard-things-you-need-to-do-to-be-successful/</link>
-      <pubDate>Thu, 10 Dec 2015 14:58:06 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/19-hard-things-you-need-to-do-to-be-successful/</guid>
-      <description>Last login: Thu Dec 10 00:38:48 on ttys000 Chae-yongs-MacBook-Pro:~ cychong$ Chae-yongs-MacBook-Pro:~ cychong$ vi hard.txt Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | sort | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a You have to do the hard things. You have to make the call you’re afraid to make. You have</description>
     </item>
     
   </channel>

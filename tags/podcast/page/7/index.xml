@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/podcast/</link>
     <description>Recent content in podcast on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Jun 2020 23:10:45 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why message queue used for microservice?</title>
+      <link>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</link>
+      <pubDate>Sun, 09 Apr 2017 15:41:23 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>P4</title>
@@ -182,15 +191,6 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
       
       <guid>https://cychong47.github.io/post/vagrant/</guid>
       <description>Vagrant fd.io의 개발 환경 구성하는 문서를 보니 vagrant를 사용한다. 그런데 또 virtualbox니 vmware 이야기를 한다. 이전에도 vagrant라는 단</description>
-    </item>
-    
-    <item>
-      <title>fd.io</title>
-      <link>https://cychong47.github.io/post/fd-io-tree/</link>
-      <pubDate>Sat, 13 Feb 2016 05:51:52 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/fd-io-tree/</guid>
-      <description>├── build-data │ ├── packages │ └── platforms ├── build-root │ ├── deb │ │ └── debian │ │ └── source │ ├── emacs-lisp │ ├── packages │ ├── rpm │ ├── scripts │ └── vagrant ├── dpdk │ ├── dkms │ ├── dpdk-2.1.0_patches │ └── dpdk-2.2.0_patches ├── g2 ├── gmod │ └── gmod ├── perftool ├── sample-plugin │ └── sample ├── svm ├── test │ ├── resources │ │ ├── libraries │ │ │ ├── bash │ │ │ ├── python │ │ │ └── robot │ │ │ └── vat │ │ └── templates │ │ └── vat │ └── tests │ └── suites │ ├── bridge_domain │ └── vhost_user_dummy ├── vlib │ ├── example │ └── vlib │ └── unix ├── vlib-api │ ├── vlibapi │ ├── vlibmemory │ └── vlibsocket ├── vnet │ ├── etc │ │ └── scripts │ │ ├── dhcp │ │ ├── ludd-cluster-1 │ │ ├── ludd-cluster-3 │ │ ├── mpls-o-ethernet │ │ ├── mpls-o-gre │ │ ├── sr │ │ └── virl │ └── vnet │ ├── cdp │ ├── classify │ ├── devices │ │ ├── dpdk │ │ ├── ssvm │ │ └── virtio │ ├── dhcp │ ├── dhcpv6 │ ├── ethernet │ ├── flow │ ├── gre │ ├── hdlc │ ├── ip │ ├── ipsec │ ├── l2 │ ├── l2tp │ ├── lawful-intercept │ ├── lisp-gpe │ ├── llc │ ├── map │ │ └── examples │ ├── mcast │ ├── mpls-gre │ ├── nsh-gre │ ├── nsh-vxlan-gpe │ ├── osi │ ├── pg │ ├── plugin │ ├── policer │ ├── ppp │ ├── snap │ ├── sr │ ├── srp │ ├── unix │ ├── vcgn │ └── vxlan ├── vpp │ ├── api │ ├── app │ ├── conf │ ├── oam │ ├── stats │ └── vnet ├── vpp-api-test │ ├── scripts │ └── vat ├── vpp-japi │ ├── japi │ │ ├── org │ │ │ └── openvpp │ │ │ └── vppjapi │ │ └── test │ └── m4 ├── vppapigen └── vppinfra ├── config ├── tools └── vppinfra  </description>
     </item>
     
   </channel>

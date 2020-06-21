@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/</link>
     <description>Recent content on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setup Podcast Blog - 자동화</title>
+      <link>https://cychong47.github.io/post/setup-podcast-blog-5/</link>
+      <pubDate>Sat, 20 Jun 2020 22:33:02 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/setup-podcast-blog-5/</guid>
+      <description>Scripts Automation mini2 - record mp3 file $ crontab -l 00 11 * * * cd /Users/cychong/work/cbs-ost/script &amp;amp;&amp;amp; ./record.sh &amp;gt;&amp;gt; /tmp/cron.out 2&amp;gt;&amp;amp;1 mini1 - create MD file and publish podcast $ crontab -l 04 12 * * * cd /home/cychong/work/cbs-ost/script &amp;amp;&amp;amp; ./scp.sh &amp;gt;&amp;gt; /tmp/cron.out 2&amp;gt;&amp;amp;1 05 12 * * * cd /home/cychong/work/cbs-ost/script &amp;amp;&amp;amp; ./publish.sh &amp;gt;&amp;gt; /tmp/cron.out 2&amp;gt;&amp;amp;1 Get mp3 file from mini2 Create md file after getting song list Rebuild</description>
+    </item>
     
     <item>
       <title>Git Tips</title>
@@ -192,15 +201,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/samuryeog/</guid>
       <description>중요한 일은 생각을 기반으로 함. 기계적으로 대응 불가 소통이 따름. 조직의 일은 혼자 할 수 없으므로 결정이 수반되야 함. 길이 하나가 아닌 까닭 실행이 따름. 결정만으</description>
-    </item>
-    
-    <item>
-      <title>Upgrade ghost to v3.0</title>
-      <link>https://cychong47.github.io/post/upgrade-ghost-to-v3-0/</link>
-      <pubDate>Tue, 05 Nov 2019 14:58:16 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/upgrade-ghost-to-v3-0/</guid>
-      <description>부제 1. pod가 동작하지 않을때 원인 찾기 부제 2. helm upgrade 명령을 이용하여 업데이트 하기 부제 3. sqlite를 이용해서 ghost.db 직접 수정하기 values.yaml에 명</description>
     </item>
     
   </channel>

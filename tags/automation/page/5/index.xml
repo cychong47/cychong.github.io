@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/automation/</link>
     <description>Recent content in automation on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Oct 2017 00:22:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>clienBBS</title>
+      <link>https://cychong47.github.io/post/clienbbs/</link>
+      <pubDate>Thu, 14 Dec 2017 09:42:15 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/clienbbs/</guid>
+      <description>pip3로는 설치가 안되네 mbpr15:~ cychong$ pip3 install clientBBS Collecting clientBBS Could not find a version that satisfies the requirement clientBBS (from versions: ) No matching distribution found for clientBBS 그래서 그냥 github 링크에서 클론해서 실행 mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Cloning into &#39;clienBBS&#39;... remote: Counting objects: 219, done. remote: Compressing objects:</description>
+    </item>
     
     <item>
       <title>mac mini 에 windows 10 설치</title>
@@ -188,15 +197,6 @@ mbpr15:working cychong$ brew install python ==&amp;gt; Installing dependencies f
       
       <guid>https://cychong47.github.io/post/parsing-http-header-with-scary/</guid>
       <description>정규식으로 http 분석 def processHTTP(data): str_method = &amp;quot;&amp;quot; str_uri = &amp;quot;&amp;quot; 정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&amp;quot;(?P&amp;lt;method&amp;gt;(^GET|^POST|^PUT|^DELETE)) (?P&amp;lt;uri&amp;gt;.+) (?P&amp;lt;version&amp;gt;.+)&amp;quot;, data) if not h: return &amp;quot;Error&amp;quot; # 정규표현식에 해당하는 데이터</description>
-    </item>
-    
-    <item>
-      <title>Google&#39;s Load Balancer</title>
-      <link>https://cychong47.github.io/post/googles-load-balancer/</link>
-      <pubDate>Sun, 01 Oct 2017 08:34:30 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/googles-load-balancer/</guid>
-      <description>Maglev  Google( https://research.google.com/pubs/pub44824.html ) Used in Google Cloud since 2008 Scalable load balancer  Consistent hashing Connection Tracking Scale-out model backed by router&amp;rsquo;s ECMP   Bypass kernel space for performance. Support connection persistence  Network Architecture  DNS - Routers - Maglevs - Service EndPoints. One service is served by one or more VIPs  DNS returns VIP considering geolocation and load of location   One VIP is served by multiple Maglevs  Router use ECMP to select one Maglev   One VIP is mapped to multiple Service EndPoints  Maglev select Service EndPoint by seletion algorithm and connection tracking table   Maglev use GRE to send incoming packet to Service EndPoint or another Maglev  Send to IP fragment to another special Maglev servers Use only 3-tuple for IP fragment   Each Service EndPoint use Direct Server Return(DSR)  Maglev Controller  Responsible for VIP announcement with BGP Check health status of forwarder If forwarder is not headthy, withdraw all VIP announcements  Forwarder  Each VIP has one or multiple backend pools(BP) BP contain physical IP address of the Service EndPoint Each BP has specific health checking methods - depends on the service requirement(just reachability or more) Config Manager parse and update configuration of forwarder&amp;rsquo;s behavior based on the Config Objects Sharding  Sharding of Maglev enables service isolation - new service or QoS    Backend Selection  Consistent Hashing distribute loads Record selection in LOCAL connection tracking table  Connection tracking table is not shared with another Maglev Does not guarantee consistency on Maglev or Service EndPoint Changes(add/delete)   For different traffic type  TCP SYN : select Backend and record it in connection tracking table TCP non-SYN : lookup connection tracking table 5-tuple : (maybe) lookup connection tracking table and select backend if not found    Consistent Hashing  If Maglev is added or removed, router select different Maglev for the exsiting session - ECMP is changed If one Maglev&amp;rsquo;s local connection tracking table is overflowed, it will lose previous selection To resolve this issues,  Synchronize local connection tracking table between Maglevs -&amp;gt; overhead, overhead, overhead Consistent hashing for minimize disruption in member changes Maglev hashing - load balancing and minimal disruption on member changes    reference  Maglev: A Fast and Reliable Software Network Load Balancer Consistent Hashing The Simple Magic of Consistent Hashing  </description>
     </item>
     
   </channel>

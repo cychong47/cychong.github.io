@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/</link>
     <description>Recent content on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Use jetpack for wordpress 5.0</title>
+      <link>https://cychong47.github.io/post/use-jetpack-for-wordpress-5-0/</link>
+      <pubDate>Mon, 10 Dec 2018 15:04:29 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/use-jetpack-for-wordpress-5-0/</guid>
+      <description>Wordpress 5.0부터 기본 editor가 ghost와 같이 block editor 로 변경됨. Markdown을 사용하려면 이전과 동일하게 Jetpack을 사용해야 하는데 dock</description>
+    </item>
     
     <item>
       <title>How NASA uses a wiki to reduce email</title>
@@ -180,15 +189,6 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
       
       <guid>https://cychong47.github.io/post/hon-chang-tong/</guid>
       <description>8p 혼 : 가슴 벅차게 하는 비전이 사람을 움직인다. 창 : 끊임없이 &amp;ldquo;왜&amp;quot;라고 물어라, 그러면 열린다. 통 : 만나라, 또 만나라. 들어라 잘 들</description>
-    </item>
-    
-    <item>
-      <title>(책) 당신의 시간</title>
-      <link>https://cychong47.github.io/post/your-time/</link>
-      <pubDate>Sun, 29 Jul 2018 13:44:37 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/your-time/</guid>
-      <description>p52 &amp;ldquo;당신의 삶입니다. 당신의 사람을 이야기하라는데 가족을 위해 사는 게 전부라. 생활비만 제대로 해결된다면 가족에게 당신은 없어도 되는 존재라는 말</description>
     </item>
     
   </channel>

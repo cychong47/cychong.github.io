@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DPDK Summit 2014 Videos</title>
+      <link>https://cychong47.github.io/post/dpdk-summit-2014-videos/</link>
+      <pubDate>Wed, 19 Nov 2014 13:59:07 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/dpdk-summit-2014-videos/</guid>
+      <description> Application Performance Tuning and Future Optimizations in DPDK by Venky Venkatesan DPDK in a Virtual World by Bhavesh Davda Rashmin Patel High Performance Networking Leveraging the DPDK and the Growing Community by Thomas Monj alon Multi Socket Ferrari for NFV by Laszlo Vadkerti Andras Kovacs Lightning Fast IO with PacketDirect by Gabriel Silva A High Performance vSwitch of the User by the User for the User by Yoshihiro Nakajima Is It Time to Revisit the IP Stack in the Linux Kernel and KVM by Jun Xu Closing Remarks by Tim ODriscoll  </description>
+    </item>
     
     <item>
       <title>(펌) 부실한 공유문화를 지배하는 개발자의 심리</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/peom-salmyi-mogjeog/</guid>
       <description>&amp;lt;인생의 목적&amp;gt; 우리는 살기 위해, 그리고 경험하기 위해 태어났습니다. 바쁜 일정 속에서도 스스로에게 되뇌이곤 합니다. 인간은 일하기 위해 태어난 것</description>
-    </item>
-    
-    <item>
-      <title>(책) 구글은 SKY를 모른다</title>
-      <link>https://cychong47.github.io/post/caeg-gugeuleun-skyreul-moreunda/</link>
-      <pubDate>Sun, 31 Aug 2014 13:29:59 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/caeg-gugeuleun-skyreul-moreunda/</guid>
-      <description>나는 매주 금요일 오후가 되면 구글이라는 회사의 위력을 다시금 실감한다. 알려진 대로 구글은 매주 금요일마다 전 직원이 모이는 TGIF라는 행사가 있다. 정말 지금도</description>
     </item>
     
   </channel>
