@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/til/</link>
     <description>Recent content in TIL on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Parsing http header with scary</title>
+      <link>https://cychong47.github.io/post/parsing-http-header-with-scary/</link>
+      <pubDate>Sun, 01 Oct 2017 09:36:35 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/parsing-http-header-with-scary/</guid>
+      <description>정규식으로 http 분석 def processHTTP(data): str_method = &amp;quot;&amp;quot; str_uri = &amp;quot;&amp;quot; 정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&amp;quot;(?P&amp;lt;method&amp;gt;(^GET|^POST|^PUT|^DELETE)) (?P&amp;lt;uri&amp;gt;.+) (?P&amp;lt;version&amp;gt;.+)&amp;quot;, data) if not h: return &amp;quot;Error&amp;quot; # 정규표현식에 해당하는 데이터</description>
+    </item>
     
     <item>
       <title>Google&#39;s Load Balancer</title>
@@ -190,18 +199,6 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/post/feature-flag-driven-development/</guid>
       <description>From Ericsson &amp;ldquo;Fueling 5G with DevOps&amp;rdquo; Maintaining one track in software development, using feature flag-driven development, and establishing version-controlled repositories for application code and application and system configuration data enables teams to create a complete environment that is ready for consistent “build and deploy”. What is feature flag-driven development? 특정 feature</description>
-    </item>
-    
-    <item>
-      <title>Espresso - Google&#39;s peering edge architecture</title>
-      <link>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</link>
-      <pubDate>Wed, 12 Apr 2017 00:32:57 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</guid>
-      <description>Google Fellow Amin Vahdat,
- “Early on, we realized that the network we needed to support our services did not exist and could not be bought,”
- Espresso makes Google cloud faster, more available and cost effective by extending SDN to the public internet
- network should be treated as a large-scale distributed system leveraging the same control infrastructure we developed for Google’s compute and storage systems  Four pillars on Google&amp;rsquo;s SDN strategy  Jupiter: Google employed SDN principles to build Jupiter, a data center interconnect capable of supporting more than 100,000 servers.</description>
     </item>
     
   </channel>

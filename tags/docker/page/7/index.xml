@@ -5,10 +5,22 @@
     <link>https://cychong47.github.io/tags/docker/</link>
     <description>Recent content in docker on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Jun 2018 15:13:52 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Espresso - Google&#39;s peering edge architecture</title>
+      <link>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</link>
+      <pubDate>Wed, 12 Apr 2017 00:32:57 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</guid>
+      <description>Google Fellow Amin Vahdat,
+ “Early on, we realized that the network we needed to support our services did not exist and could not be bought,”
+ Espresso makes Google cloud faster, more available and cost effective by extending SDN to the public internet
+ network should be treated as a large-scale distributed system leveraging the same control infrastructure we developed for Google’s compute and storage systems  Four pillars on Google&amp;rsquo;s SDN strategy  Jupiter: Google employed SDN principles to build Jupiter, a data center interconnect capable of supporting more than 100,000 servers.</description>
+    </item>
     
     <item>
       <title>Why message queue used for microservice?</title>
@@ -182,15 +194,6 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
       
       <guid>https://cychong47.github.io/post/fragment-missing-test-with-scapy/</guid>
       <description>다음과 같이 scapy를 이용해서 fragment를 쉽게 만들 수 있다. from scapy.all import * dip=&amp;quot;10.0.0.1&amp;quot; payload=&amp;quot; &amp;quot;*1000 packet=IP(dst=dip)/UDP(dport=0x1234)/payload frag_list=fragment(packet,fragsize=500) counter=1 for fragment in frag_list: print &amp;quot;Packet no%d&amp;quot; %counter print fragment.show() counter+=1 send(fragment) frag_list에서 counter 변수를 확</description>
-    </item>
-    
-    <item>
-      <title>Vagrant</title>
-      <link>https://cychong47.github.io/post/vagrant/</link>
-      <pubDate>Sun, 14 Feb 2016 07:52:01 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/vagrant/</guid>
-      <description>Vagrant fd.io의 개발 환경 구성하는 문서를 보니 vagrant를 사용한다. 그런데 또 virtualbox니 vmware 이야기를 한다. 이전에도 vagrant라는 단</description>
     </item>
     
   </channel>

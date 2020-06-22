@@ -5,10 +5,20 @@
     <link>https://cychong47.github.io/tags/docker/</link>
     <description>Recent content in docker on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Jun 2018 15:13:52 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Find container with its name</title>
+      <link>https://cychong47.github.io/post/2020-06-22-docker-ps-with-name/</link>
+      <pubDate>Mon, 22 Jun 2020 23:54:09 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-06-22-docker-ps-with-name/</guid>
+      <description>Get docker container id from container name
+docker ps -aqf &amp;quot;name=containername&amp;quot; docker ps -aqf &amp;quot;name=^containername$&amp;quot;   -q for quiet. output only the ID -a for all. works even if your container is not running -f for filter. ^ container name must start with this string $ container name must end with this string  </description>
+    </item>
     
     <item>
       <title>Setup Podcast Blog - 자동화</title>
@@ -192,15 +202,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/mac-mini-2009-upgrade/</guid>
       <description>swap을 사용하지 못하는 kubenertes를 사용해서 ghost pod/container를 구동하니 메모리가 부족하다고 종료되어 버린다. 확인해 보니 서버</description>
-    </item>
-    
-    <item>
-      <title>사무력</title>
-      <link>https://cychong47.github.io/post/samuryeog/</link>
-      <pubDate>Sun, 17 Nov 2019 11:12:41 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/samuryeog/</guid>
-      <description>중요한 일은 생각을 기반으로 함. 기계적으로 대응 불가 소통이 따름. 조직의 일은 혼자 할 수 없으므로 결정이 수반되야 함. 길이 하나가 아닌 까닭 실행이 따름. 결정만으</description>
     </item>
     
   </channel>

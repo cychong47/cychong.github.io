@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>ODP</title>
+      <link>https://cychong47.github.io/post/odp/</link>
+      <pubDate>Wed, 19 Nov 2014 14:02:19 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/odp/</guid>
+      <description>Cavium Demonstrates Multiple OpenDataPlane Applications at Linaro Connect USA 2014 Cavium ThunderX 48 Core 2.5Ghz ARM Server SoC   Cavium ThunderX 48 Core 2.5Ghz ARM Server SoC Cavium ThunderX is the world&amp;rsquo;s fastest ARM Processor, featuring 48 ARMv8 64bit cores at 2.5Ghz each, with two SoC&amp;rsquo;s possible per motherboard, this means 240Ghz of compuete power per Server Board. Providing extremely high performance at much lower power, much lower cost, much more optimized than any x86 server system.</description>
+    </item>
+    
+    <item>
       <title>DPDK Summit 2014 Videos</title>
       <link>https://cychong47.github.io/post/dpdk-summit-2014-videos/</link>
       <pubDate>Wed, 19 Nov 2014 13:59:07 +0900</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/synology-webdav-devonthink/</guid>
       <description>우선 Synology NAS에서 webdav를 켜는 건 기본이고 Devonthink의 Sync tab에서 타입을 webdav로 하면 아래와 같은 입력 창이 나오는데 여기에 서버 주</description>
-    </item>
-    
-    <item>
-      <title>(펌) 삶의 목적</title>
-      <link>https://cychong47.github.io/post/peom-salmyi-mogjeog/</link>
-      <pubDate>Wed, 03 Sep 2014 04:21:54 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/peom-salmyi-mogjeog/</guid>
-      <description>&amp;lt;인생의 목적&amp;gt; 우리는 살기 위해, 그리고 경험하기 위해 태어났습니다. 바쁜 일정 속에서도 스스로에게 되뇌이곤 합니다. 인간은 일하기 위해 태어난 것</description>
     </item>
     
   </channel>

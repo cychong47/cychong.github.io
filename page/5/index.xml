@@ -5,10 +5,20 @@
     <link>https://cychong47.github.io/</link>
     <description>Recent content on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Wordpress with docker</title>
+      <link>https://cychong47.github.io/post/install-wordpress-with-docker/</link>
+      <pubDate>Tue, 19 Dec 2017 22:20:06 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/install-wordpress-with-docker/</guid>
+      <description>Summary docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql docker run --restart=always -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@ -e WORDPRESS_DB_NAME=wordpress_db -p 80:80 -v /Users/cychong/Documents/wordpress/html:/var/www/html -v /Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads -v /Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini --link mysql:mysql --name wpcontainer -d wordpress  If required, import database to mysql (Once wordpress data is imported into mysql, upgrading mysql does not requires re-import ingof wordpress data)
+mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql Unable to find image &#39;mysql:latest&#39; locally latest: Pulling from library/mysql aa18ad1a0d33: Pull complete a5745c3b8bcc: Pull complete 76375fcd129c: Pull complete 4f72cfb004cf: Pull complete 1d6a01e515fb: Pull complete a71e1163fa7e: Pull complete 8c1a568fa442: Pull complete e7a69cecc173: Pull complete 9759a0f979a1: Pull complete 3f71dac6110f: Pull complete 58f37de54392: Pull complete Digest: sha256:790b7b18b832822ef400e44ad9fac885a746db1a7028ec52325730cf9b831753 Status: Downloaded newer image for mysql:latest b1f54c680120898fc7ff16751048fe18ae461399d5d7f10308c156c68d40577b  check container is started cychong:~ cychong$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES b1f54c680120 mysql &amp;quot;docker-entrypoint.</description>
+    </item>
     
     <item>
       <title>clienBBS</title>
@@ -188,15 +198,6 @@ Summary  Periodic polling -&amp;gt; Pushing(Streaming) Model based data with YAN
       <guid>https://cychong47.github.io/post/brew-install-python/</guid>
       <description>Just for the record as some environments are mentioned
 mbpr15:working cychong$ brew install python ==&amp;gt; Installing dependencies for python: readline, sqlite, gdbm, openssl ==&amp;gt; Installing python dependency: readline ==&amp;gt; Downloading https://homebrew.bintray.com/bottles/readline-7.0.3_1.high_sierra.bottle.tar.gz ######################################################################## 100.0% ==&amp;gt; Pouring readline-7.0.3_1.high_sierra.bottle.tar.gz ==&amp;gt; Caveats This formula is keg-only, which means it was not symlinked into /usr/local, because macOS provides the BSD libedit library, which shadows libreadline. In order to prevent conflicts when programs look for libreadline we are defaulting this GNU Readline installation to keg-only.</description>
-    </item>
-    
-    <item>
-      <title>Parsing http header with scary</title>
-      <link>https://cychong47.github.io/post/parsing-http-header-with-scary/</link>
-      <pubDate>Sun, 01 Oct 2017 09:36:35 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/parsing-http-header-with-scary/</guid>
-      <description>정규식으로 http 분석 def processHTTP(data): str_method = &amp;quot;&amp;quot; str_uri = &amp;quot;&amp;quot; 정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&amp;quot;(?P&amp;lt;method&amp;gt;(^GET|^POST|^PUT|^DELETE)) (?P&amp;lt;uri&amp;gt;.+) (?P&amp;lt;version&amp;gt;.+)&amp;quot;, data) if not h: return &amp;quot;Error&amp;quot; # 정규표현식에 해당하는 데이터</description>
     </item>
     
   </channel>

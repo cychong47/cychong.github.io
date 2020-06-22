@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/til/</link>
     <description>Recent content in TIL on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Vagrant</title>
+      <link>https://cychong47.github.io/post/vagrant/</link>
+      <pubDate>Sun, 14 Feb 2016 07:52:01 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/vagrant/</guid>
+      <description>Vagrant fd.io의 개발 환경 구성하는 문서를 보니 vagrant를 사용한다. 그런데 또 virtualbox니 vmware 이야기를 한다. 이전에도 vagrant라는 단</description>
+    </item>
     
     <item>
       <title>fd.io</title>
@@ -183,15 +192,6 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
       
       <guid>https://cychong47.github.io/post/hugepage/</guid>
       <description>Linux에서 사용하는 기본 page size는 4KB. 이 대신 2MB 혹은 1GB의 큰 크기를 hugepage라고 한다. Hugepage는 연속된 physical memory에 할당되</description>
-    </item>
-    
-    <item>
-      <title>Single tasking</title>
-      <link>https://cychong47.github.io/post/single-tasking/</link>
-      <pubDate>Fri, 11 Dec 2015 14:08:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/single-tasking/</guid>
-      <description>난 특히 멀티태스킹이 안된다. 하나에도 제대로 집중하기 힘들다. 11월은 아무 쓸데없는 TF 2개에 참여하느라 제대로 일을 못했다. 정말&amp;hellip;</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/docker/</link>
     <description>Recent content in docker on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 Jun 2018 15:13:52 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Single tasking</title>
+      <link>https://cychong47.github.io/post/single-tasking/</link>
+      <pubDate>Fri, 11 Dec 2015 14:08:11 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/single-tasking/</guid>
+      <description>난 특히 멀티태스킹이 안된다. 하나에도 제대로 집중하기 힘들다. 11월은 아무 쓸데없는 TF 2개에 참여하느라 제대로 일을 못했다. 정말&amp;hellip;</description>
+    </item>
     
     <item>
       <title>19 hard things you need to do to be successful</title>
@@ -184,15 +193,6 @@ Edit vmx file to VMX file is in where vmware image located</description>
       
       <guid>https://cychong47.github.io/post/buseogan-hyeobryeogi-an-doeni-daecaegeuro/</guid>
       <description>부서간 협력이 잘 안되는 듯 하니 대책으로 &amp;lsquo;부서간 협력지수&amp;rsquo;를 수치화해서 평가하겠다. 그럼 협력이 잘 될까 궁금하네</description>
-    </item>
-    
-    <item>
-      <title>Leading Lights 2015 Finalists - Most Innovative NFV Product Strategy (Vendor)</title>
-      <link>https://cychong47.github.io/post/leading-lights-2015-finalists-most-innovative-nfv-product-strategy-vendor/</link>
-      <pubDate>Sat, 19 Sep 2015 13:11:50 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/leading-lights-2015-finalists-most-innovative-nfv-product-strategy-vendor/</guid>
-      <description>HP, Intel, Cisco/Juniper, WindRiver 외에 Orchestrator 관련 회사도 다수 존재. 개인적으로는 역시 Nokia가 가장 관심이 가는데 Telco Cloud portfolio - virtualizing radio functions - LTE eNB L2/L3 processing, MME and GW functionality, Wi-Fi controllers and virtual RNCs and vBSCs Multi-layer architecture - pioneers the use of Ethernet</description>
     </item>
     
   </channel>

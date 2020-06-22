@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>사무력</title>
+      <link>https://cychong47.github.io/post/samuryeog/</link>
+      <pubDate>Sun, 17 Nov 2019 11:12:41 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/samuryeog/</guid>
+      <description>중요한 일은 생각을 기반으로 함. 기계적으로 대응 불가 소통이 따름. 조직의 일은 혼자 할 수 없으므로 결정이 수반되야 함. 길이 하나가 아닌 까닭 실행이 따름. 결정만으</description>
+    </item>
     
     <item>
       <title>Upgrade ghost to v3.0</title>
@@ -185,15 +194,6 @@ Added support for device multi-process hotplug.</description>
       
       <guid>https://cychong47.github.io/post/grow-together/</guid>
       <description>p12 학교 학습 vs. 야생 학습 야생 학습은 대부분 자료에 한정이 없다. 야생 학습은 대부분 명확한 평가가 없다. 야생 학습은 대부분 정답이 없다. 야생 학습은 대부분 목표가 불</description>
-    </item>
-    
-    <item>
-      <title>Get the latest jetpack plugin</title>
-      <link>https://cychong47.github.io/post/get-the-latest-jetpack-plugin/</link>
-      <pubDate>Sun, 16 Dec 2018 06:55:44 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/get-the-latest-jetpack-plugin/</guid>
-      <description>http://sosa0sa.com:2368/use-jetpack-for-wordpress-5-0/ 의 연장선. Jetpack plugin의 최신 버전을 알아내서 자동으로 해당 바이너리 파일을 다운로드 받아 보자. 몇 가지 module 을 사용하는데 필요한 module은 https://realpython.com/python-web-scraping-practical-introduction/ 을 참고해</description>
     </item>
     
   </channel>

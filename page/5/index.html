@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cychong47.github.io/" />
-<meta property="og:updated_time" content="2020-06-20T22:33:02+09:00" />
+<meta property="og:updated_time" content="2020-06-22T23:54:09+09:00" />
 <meta itemprop="name" content="Another blog">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Another blog"/>
@@ -156,7 +156,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">181</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">182</span></li>
         </ul>
     </div>
 </div>
@@ -347,7 +347,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">11</span></li>
+                    class="tag-list-count">12</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/docker-compose/" class="tag-list-link">docker-compose</a><span
@@ -1170,6 +1170,47 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/post/setup-kubernetes-with-a-single-host/"
+    >Setup kubernetes in a single host</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        Replace microk8s with kubernetes in mini1 remove micro.k8s with snap command cychong@mini1:~$ sudo snap remove microk8s Save data of snap &quot;microk8s&quot; in automatic snapshot set microk8s removed cychong@mini1:~$ setup kubernetes Reference : https://phoenixnap.com/kb/install-kubernetes-on-ubuntu cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using Kubernetes version: v1.15.3 cychong@mini1:~$ kubectl get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES kube-system coredns-5c98db65d4-r468f 0/1 Pending 0 2m3s &lt;none&gt; &lt;none&gt;
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/" class="">
+  <time datetime="2019-09-23 15:03:13 &#43;0900 KST" itemprop="datePublished">2019-09-23</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/kubernetes/"> kubernetes </a>
+    <a class="article-tag-link" href="/tags/calico/"> calico </a>
+    <a class="article-tag-link" href="/tags/setup/"> setup </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/setup-kubernetes-with-a-single-host/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 840words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/post/ghost-season-5-helm/"
     >Ghost Season 5 - Helm</a
   >
@@ -1400,46 +1441,6 @@ IEEE 1588 2002  Original standard Ordinary Clock : GrandMaster of Slave. Always 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/ghost-deployment-season-4/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1585words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/post/kubernetes-networks/"
-    >Kubernetes Networks</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        Kubernetes Networks in google docs 이거 보면 IPv6를 사용해야 하는 경우 선택할 수 있는 CNI는 Calico, Cillium, Contiv, Tungsten Fabric 정도로 좁혀지네
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/post/kubernetes-networks/" class="">
-  <time datetime="2019-05-16 14:07:53 &#43;0900 KST" itemprop="datePublished">2019-05-16</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/kubernetes/"> kubernetes </a>
-    <a class="article-tag-link" href="/tags/cni/"> cni </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/kubernetes-networks/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 44words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </p>
     </article></div>
   
