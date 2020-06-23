@@ -4,14 +4,63 @@
   
   <url>
     <loc>https://cychong47.github.io/</loc>
-    <lastmod>2020-06-22T23:54:09+09:00</lastmod>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cychong47.github.io/categories/</loc>
-    <lastmod>2020-06-22T23:54:09+09:00</lastmod>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/categories/gadget/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/happy-hacking/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/2020/2020-06-07-new-input-device-trio/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/powermate/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/track-pad/</loc>
+    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,21 +73,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/2020-06-22-docker-ps-with-name/</loc>
-    <lastmod>2020-06-22T23:54:09+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/</loc>
-    <lastmod>2020-06-22T23:54:09+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/</loc>
+    <loc>https://cychong47.github.io/post/2020/2020-06-22-docker-ps-with-name/</loc>
     <lastmod>2020-06-22T23:54:09+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -80,7 +115,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-podcast-blog-5/</loc>
+    <loc>https://cychong47.github.io/post/2020/setup-podcast-blog-5/</loc>
     <lastmod>2020-06-20T22:33:02+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -101,7 +136,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/git/</loc>
+    <loc>https://cychong47.github.io/post/2020/git/</loc>
     <lastmod>2020-06-20T21:54:31+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -115,28 +150,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/disable-password-for-private-github-repo/</loc>
+    <loc>https://cychong47.github.io/post/2020/disable-password-for-private-github-repo/</loc>
     <lastmod>2020-06-19T06:41:02+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-podcast-blog-2/</loc>
+    <loc>https://cychong47.github.io/post/2020/setup-podcast-blog-2/</loc>
     <lastmod>2020-06-18T23:10:45+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-podcast-blog-1/</loc>
+    <loc>https://cychong47.github.io/post/2020/setup-podcast-blog-1/</loc>
     <lastmod>2020-06-16T06:53:24+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-podcast-blog-3/</loc>
+    <loc>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</loc>
     <lastmod>2020-06-16T06:53:24+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -150,28 +185,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/2020-06-14-grain-of-salt/</loc>
+    <loc>https://cychong47.github.io/post/2020/2020-06-14-grain-of-salt/</loc>
     <lastmod>2020-06-14T08:08:31+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/2020-06-14-record-cbs-with-cron/</loc>
+    <loc>https://cychong47.github.io/post/2020/2020-06-14-record-cbs-with-cron/</loc>
     <lastmod>2020-06-14T06:49:23+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/2020-06-13-add-menu-to-hugo/</loc>
+    <loc>https://cychong47.github.io/post/2020/2020-06-13-add-menu-to-hugo/</loc>
     <lastmod>2020-06-13T23:46:10+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-podcast-blog-0/</loc>
+    <loc>https://cychong47.github.io/post/2020/setup-podcast-blog-0/</loc>
     <lastmod>2020-06-13T16:44:23+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -185,14 +220,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/migrate-ghost-to-hugo/</loc>
+    <loc>https://cychong47.github.io/post/2020/migrate-ghost-to-hugo/</loc>
     <lastmod>2020-06-07T22:14:02+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/hugo-seutp-with-git/</loc>
+    <loc>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</loc>
     <lastmod>2020-06-01T15:08:13+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -262,7 +297,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/nvidia-vran-solution/</loc>
+    <loc>https://cychong47.github.io/post/2020/nvidia-vran-solution/</loc>
     <lastmod>2020-05-20T15:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -311,14 +346,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/recover-broken-users-table/</loc>
+    <loc>https://cychong47.github.io/post/2020/recover-broken-users-table/</loc>
     <lastmod>2020-05-09T15:00:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/if-i-have-authority-5-years-later/</loc>
+    <loc>https://cychong47.github.io/post/2020/if-i-have-authority-5-years-later/</loc>
     <lastmod>2020-05-08T14:15:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -332,14 +367,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/new-things-in-last-4-years/</loc>
+    <loc>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</loc>
     <lastmod>2020-05-07T14:43:36+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/book-so-real/</loc>
+    <loc>https://cychong47.github.io/post/2019/book-so-real/</loc>
     <lastmod>2019-12-15T06:48:28+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -360,7 +395,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/change-ghost-theme-fizzy/</loc>
+    <loc>https://cychong47.github.io/post/2019/change-ghost-theme-fizzy/</loc>
     <lastmod>2019-12-10T14:12:29+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -381,14 +416,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/mac-mini-2009-upgrade/</loc>
+    <loc>https://cychong47.github.io/post/2019/mac-mini-2009-upgrade/</loc>
     <lastmod>2019-11-18T15:20:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/samuryeog/</loc>
+    <loc>https://cychong47.github.io/post/2019/samuryeog/</loc>
     <lastmod>2019-11-17T11:16:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -409,7 +444,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/upgrade-ghost-to-v3-0/</loc>
+    <loc>https://cychong47.github.io/post/2019/upgrade-ghost-to-v3-0/</loc>
     <lastmod>2019-11-06T14:25:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -423,7 +458,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what-if-helm-command-refuses/</loc>
+    <loc>https://cychong47.github.io/post/2019/what-if-helm-command-refuses/</loc>
     <lastmod>2019-11-05T14:53:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -437,14 +472,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what-if-kubelet-is-not-started/</loc>
+    <loc>https://cychong47.github.io/post/2019/what-if-kubelet-is-not-started/</loc>
     <lastmod>2019-11-05T15:03:37+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/enable-sctp-in-kubernetes/</loc>
+    <loc>https://cychong47.github.io/post/2019/enable-sctp-in-kubernetes/</loc>
     <lastmod>2019-10-07T15:43:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -458,14 +493,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/upgrade-kubernetes/</loc>
+    <loc>https://cychong47.github.io/post/2019/upgrade-kubernetes/</loc>
     <lastmod>2019-10-07T15:39:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/convention-on-impose-core-requirements/</loc>
+    <loc>https://cychong47.github.io/post/2019/convention-on-impose-core-requirements/</loc>
     <lastmod>2019-10-07T15:46:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -500,7 +535,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/install-vm-with-multipass/</loc>
+    <loc>https://cychong47.github.io/post/2019/install-vm-with-multipass/</loc>
     <lastmod>2019-09-28T15:19:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -542,14 +577,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-kubernetes-with-a-single-host/</loc>
+    <loc>https://cychong47.github.io/post/2019/setup-kubernetes-with-a-single-host/</loc>
     <lastmod>2019-10-07T15:44:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ghost-season-5-helm/</loc>
+    <loc>https://cychong47.github.io/post/2019/ghost-season-5-helm/</loc>
     <lastmod>2019-10-07T15:47:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -563,14 +598,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/wifi-5ghz-bluetooth-coexistence/</loc>
+    <loc>https://cychong47.github.io/post/2019/wifi-5ghz-bluetooth-coexistence/</loc>
     <lastmod>2019-08-26T15:50:52+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/calico-cni-1/</loc>
+    <loc>https://cychong47.github.io/post/2019/calico-cni-1/</loc>
     <lastmod>2019-08-22T15:04:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -598,7 +633,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/boundary-clock/</loc>
+    <loc>https://cychong47.github.io/post/2019/boundary-clock/</loc>
     <lastmod>2019-08-19T13:25:20+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -619,28 +654,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/setup-ghost-in-microk8s-2/</loc>
+    <loc>https://cychong47.github.io/post/2019/setup-ghost-in-microk8s-2/</loc>
     <lastmod>2019-10-07T15:47:44+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ghost-deployment-season-4/</loc>
+    <loc>https://cychong47.github.io/post/2019/ghost-deployment-season-4/</loc>
     <lastmod>2019-05-19T13:55:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/kubernetes-networks/</loc>
+    <loc>https://cychong47.github.io/post/2019/kubernetes-networks/</loc>
     <lastmod>2019-05-16T14:10:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/amazon-daily-work/</loc>
+    <loc>https://cychong47.github.io/post/2019/amazon-daily-work/</loc>
     <lastmod>2019-05-16T14:39:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -668,7 +703,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/install-ubuntu-18-04-1-in-mac-mini-2009/</loc>
+    <loc>https://cychong47.github.io/post/2019/install-ubuntu-18-04-1-in-mac-mini-2009/</loc>
     <lastmod>2019-03-01T00:05:47+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -682,7 +717,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-18-11/</loc>
+    <loc>https://cychong47.github.io/post/2019/dpdk-18-11/</loc>
     <lastmod>2019-10-07T15:48:38+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -696,14 +731,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/grow-together/</loc>
+    <loc>https://cychong47.github.io/post/2018/grow-together/</loc>
     <lastmod>2019-03-17T15:17:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/get-the-latest-jetpack-plugin/</loc>
+    <loc>https://cychong47.github.io/post/2018/get-the-latest-jetpack-plugin/</loc>
     <lastmod>2018-12-17T13:24:07+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -738,14 +773,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/use-jetpack-for-wordpress-5-0/</loc>
+    <loc>https://cychong47.github.io/post/2018/use-jetpack-for-wordpress-5-0/</loc>
     <lastmod>2018-12-10T22:20:48+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/how-nasa-uses-a-wiki-to-reduce-email/</loc>
+    <loc>https://cychong47.github.io/post/2018/how-nasa-uses-a-wiki-to-reduce-email/</loc>
     <lastmod>2018-11-23T11:38:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -773,21 +808,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-the-nature-of-software-development/</loc>
+    <loc>https://cychong47.github.io/post/2018/caeg-the-nature-of-software-development/</loc>
     <lastmod>2018-10-18T15:09:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/untitled-3/</loc>
+    <loc>https://cychong47.github.io/post/2018/untitled-3/</loc>
     <lastmod>2018-10-18T03:00:26+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/silicon-valley-illustrated/</loc>
+    <loc>https://cychong47.github.io/post/2018/silicon-valley-illustrated/</loc>
     <lastmod>2018-09-23T06:37:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -808,119 +843,119 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/recovery-failed-wordpress-container/</loc>
+    <loc>https://cychong47.github.io/post/2020/recovery-failed-wordpress-container/</loc>
     <lastmod>2020-05-08T23:34:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/smarter-faster-better/</loc>
+    <loc>https://cychong47.github.io/post/2018/smarter-faster-better/</loc>
     <lastmod>2018-09-04T21:36:56+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/the-secret-of-highly-successful-groups/</loc>
+    <loc>https://cychong47.github.io/post/2018/the-secret-of-highly-successful-groups/</loc>
     <lastmod>2018-09-07T14:25:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/remote/</loc>
+    <loc>https://cychong47.github.io/post/2018/remote/</loc>
     <lastmod>2018-09-09T22:24:55+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/why-danish-bought-a-chair-with-the-first-time-salary/</loc>
+    <loc>https://cychong47.github.io/post/2018/why-danish-bought-a-chair-with-the-first-time-salary/</loc>
     <lastmod>2018-08-16T22:01:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/coupang-the-reason-of-innovation/</loc>
+    <loc>https://cychong47.github.io/post/2018/coupang-the-reason-of-innovation/</loc>
     <lastmod>2018-09-07T14:29:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/i-am-going-to-be/</loc>
+    <loc>https://cychong47.github.io/post/2018/i-am-going-to-be/</loc>
     <lastmod>2018-07-29T21:37:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peopleware/</loc>
+    <loc>https://cychong47.github.io/post/2018/peopleware/</loc>
     <lastmod>2018-07-29T21:36:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/the-future-of-my-children/</loc>
+    <loc>https://cychong47.github.io/post/2018/the-future-of-my-children/</loc>
     <lastmod>2018-07-29T21:34:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/the-work-system/</loc>
+    <loc>https://cychong47.github.io/post/2018/the-work-system/</loc>
     <lastmod>2018-07-29T21:33:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/just-now-dream-love-be-happy/</loc>
+    <loc>https://cychong47.github.io/post/2018/just-now-dream-love-be-happy/</loc>
     <lastmod>2018-07-29T21:32:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/power-of-habit/</loc>
+    <loc>https://cychong47.github.io/post/2018/power-of-habit/</loc>
     <lastmod>2018-09-04T21:56:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/i-want-to-live-in-a-different-korea/</loc>
+    <loc>https://cychong47.github.io/post/2018/i-want-to-live-in-a-different-korea/</loc>
     <lastmod>2018-07-29T21:29:11+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/purple-people/</loc>
+    <loc>https://cychong47.github.io/post/2018/purple-people/</loc>
     <lastmod>2018-07-29T13:54:09+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/hon-chang-tong/</loc>
+    <loc>https://cychong47.github.io/post/2018/hon-chang-tong/</loc>
     <lastmod>2018-07-29T13:52:24+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/your-time/</loc>
+    <loc>https://cychong47.github.io/post/2018/your-time/</loc>
     <lastmod>2018-07-29T13:47:22+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/slack/</loc>
+    <loc>https://cychong47.github.io/post/2018/slack/</loc>
     <lastmod>2018-07-29T13:43:27+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -934,7 +969,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/five-traps-team-can-fall-into/</loc>
+    <loc>https://cychong47.github.io/post/2018/five-traps-team-can-fall-into/</loc>
     <lastmod>2018-09-16T13:07:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -948,14 +983,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/drive/</loc>
+    <loc>https://cychong47.github.io/post/2018/drive/</loc>
     <lastmod>2018-07-29T12:46:41+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/submit-patch-to-dpdk-with-git/</loc>
+    <loc>https://cychong47.github.io/post/2018/submit-patch-to-dpdk-with-git/</loc>
     <lastmod>2018-07-21T15:10:14+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -990,7 +1025,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/developer-culture/</loc>
+    <loc>https://cychong47.github.io/post/2018/developer-culture/</loc>
     <lastmod>2018-09-07T14:40:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1018,7 +1053,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/astri-vran/</loc>
+    <loc>https://cychong47.github.io/post/2018/astri-vran/</loc>
     <lastmod>2018-07-15T12:09:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1053,14 +1088,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/advice_from_tokyo_professor/</loc>
+    <loc>https://cychong47.github.io/post/2018/advice_from_tokyo_professor/</loc>
     <lastmod>2018-09-16T13:39:25+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/did-you-write-in-every-morning/</loc>
+    <loc>https://cychong47.github.io/post/2018/did-you-write-in-every-morning/</loc>
     <lastmod>2018-07-01T12:07:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1081,7 +1116,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/mindmap/</loc>
+    <loc>https://cychong47.github.io/post/2018/mindmap/</loc>
     <lastmod>2018-06-20T14:04:06+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1102,7 +1137,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/update-ansible-playbook-for-wordpress/</loc>
+    <loc>https://cychong47.github.io/post/2018/update-ansible-playbook-for-wordpress/</loc>
     <lastmod>2018-06-14T15:21:32+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1116,7 +1151,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/wordpress-admin-login-fail/</loc>
+    <loc>https://cychong47.github.io/post/2018/wordpress-admin-login-fail/</loc>
     <lastmod>2019-02-28T14:04:18+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1137,7 +1172,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/grafana-influxdb-and-python/</loc>
+    <loc>https://cychong47.github.io/post/2018/grafana-influxdb-and-python/</loc>
     <lastmod>2018-09-09T02:04:46+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1158,7 +1193,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/install_elasticstack_and_metricbeat/</loc>
+    <loc>https://cychong47.github.io/post/2018/install_elasticstack_and_metricbeat/</loc>
     <lastmod>2018-06-07T13:43:49+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1179,35 +1214,35 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/2018-01-home-network/</loc>
+    <loc>https://cychong47.github.io/post/2018/2018-01-home-network/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ansible-homebrew/</loc>
+    <loc>https://cychong47.github.io/post/2017/ansible-homebrew/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/recreate-ghost-container/</loc>
+    <loc>https://cychong47.github.io/post/2017/recreate-ghost-container/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ansible-playbook/</loc>
+    <loc>https://cychong47.github.io/post/2017/ansible-playbook/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ansible-exercise-1/</loc>
+    <loc>https://cychong47.github.io/post/2017/ansible-exercise-1/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1221,21 +1256,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/install-wordpress-with-docker/</loc>
+    <loc>https://cychong47.github.io/post/2017/install-wordpress-with-docker/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/clienbbs/</loc>
+    <loc>https://cychong47.github.io/post/2017/clienbbs/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/mac-mini-e-windows-10-seolci/</loc>
+    <loc>https://cychong47.github.io/post/2017/mac-mini-e-windows-10-seolci/</loc>
     <lastmod>2018-04-01T02:38:50+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1249,7 +1284,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/vagrant-2/</loc>
+    <loc>https://cychong47.github.io/post/2017/vagrant-2/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1270,7 +1305,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/amdocs-preps-carrier-grade-version-of-onap/</loc>
+    <loc>https://cychong47.github.io/post/2017/amdocs-preps-carrier-grade-version-of-onap/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1305,21 +1340,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</loc>
+    <loc>https://cychong47.github.io/post/2017/onap-takes-flak-as-telcos-prep-for-release-1-light-reading/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/lead-or-step-aside/</loc>
+    <loc>https://cychong47.github.io/post/2017/lead-or-step-aside/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what-is-good-manager/</loc>
+    <loc>https://cychong47.github.io/post/2017/what-is-good-manager/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1354,7 +1389,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/record-cbs-fm-cinema-music/</loc>
+    <loc>https://cychong47.github.io/post/2017/record-cbs-fm-cinema-music/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1389,7 +1424,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/sajin-baegeob-2017-beojeon/</loc>
+    <loc>https://cychong47.github.io/post/2017/sajin-baegeob-2017-beojeon/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1403,7 +1438,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/untitled-2/</loc>
+    <loc>https://cychong47.github.io/post/2017/untitled-2/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1424,7 +1459,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ftp-server-is-gone-from-high-siera-osx-server/</loc>
+    <loc>https://cychong47.github.io/post/2017/ftp-server-is-gone-from-high-siera-osx-server/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1445,21 +1480,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/wp-video-plugin/</loc>
+    <loc>https://cychong47.github.io/post/2017/wp-video-plugin/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ansible/</loc>
+    <loc>https://cychong47.github.io/post/2017/ansible/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/series-4-10-lessons-from-telemetry/</loc>
+    <loc>https://cychong47.github.io/post/2017/series-4-10-lessons-from-telemetry/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1473,7 +1508,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cisco-ios-xr-and-signalfx-demo/</loc>
+    <loc>https://cychong47.github.io/post/2017/cisco-ios-xr-and-signalfx-demo/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1522,7 +1557,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/streaming-telemetry-with-google-protocol-buffers/</loc>
+    <loc>https://cychong47.github.io/post/2017/streaming-telemetry-with-google-protocol-buffers/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1550,7 +1585,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cisco-yang-data-model/</loc>
+    <loc>https://cychong47.github.io/post/2017/cisco-yang-data-model/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1564,14 +1599,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/model-driven-telemetry/</loc>
+    <loc>https://cychong47.github.io/post/2017/model-driven-telemetry/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/brew-install-python/</loc>
+    <loc>https://cychong47.github.io/post/2017/brew-install-python/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1585,7 +1620,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/parsing-http-header-with-scary/</loc>
+    <loc>https://cychong47.github.io/post/2017/parsing-http-header-with-scary/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1606,7 +1641,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/googles-load-balancer/</loc>
+    <loc>https://cychong47.github.io/post/2017/googles-load-balancer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1655,14 +1690,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/opnfv-asia-meeting/</loc>
+    <loc>https://cychong47.github.io/post/2017/opnfv-asia-meeting/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ves-to-opnfv/</loc>
+    <loc>https://cychong47.github.io/post/2017/ves-to-opnfv/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1711,14 +1746,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/opnfv-barometer/</loc>
+    <loc>https://cychong47.github.io/post/2017/opnfv-barometer/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/summary-at-t-container-strategy/</loc>
+    <loc>https://cychong47.github.io/post/2017/summary-at-t-container-strategy/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1746,7 +1781,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/new-amdocs-brings-an-nfv-software-package-based-on-onap/</loc>
+    <loc>https://cychong47.github.io/post/2017/new-amdocs-brings-an-nfv-software-package-based-on-onap/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1774,7 +1809,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/prometheus/</loc>
+    <loc>https://cychong47.github.io/post/2017/prometheus/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1809,7 +1844,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ngnix-for-service-mesh/</loc>
+    <loc>https://cychong47.github.io/post/2017/ngnix-for-service-mesh/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1830,14 +1865,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/wordpress-with-docker-compose-failing/</loc>
+    <loc>https://cychong47.github.io/post/2017/wordpress-with-docker-compose-failing/</loc>
     <lastmod>2019-05-19T13:02:57+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/ghost-container-with-docker-compose/</loc>
+    <loc>https://cychong47.github.io/post/2017/ghost-container-with-docker-compose/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1851,14 +1886,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/try-to-restore-wordpress-docker/</loc>
+    <loc>https://cychong47.github.io/post/2017/try-to-restore-wordpress-docker/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/tesla-pyeomhae-daehan-nayi-saenggag/</loc>
+    <loc>https://cychong47.github.io/post/2017/tesla-pyeomhae-daehan-nayi-saenggag/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1879,7 +1914,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/useful-quicklooks/</loc>
+    <loc>https://cychong47.github.io/post/2017/useful-quicklooks/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1893,14 +1928,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/naver-labs-12-commandments/</loc>
+    <loc>https://cychong47.github.io/post/2017/naver-labs-12-commandments/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/how-to-ship-production-grade-go/</loc>
+    <loc>https://cychong47.github.io/post/2017/how-to-ship-production-grade-go/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1914,7 +1949,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/slack-do-not-disturb/</loc>
+    <loc>https://cychong47.github.io/post/2017/slack-do-not-disturb/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1949,14 +1984,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/younkitchen-agile/</loc>
+    <loc>https://cychong47.github.io/post/2017/younkitchen-agile/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/slack-ghost/</loc>
+    <loc>https://cychong47.github.io/post/2017/slack-ghost/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1970,7 +2005,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/feature-flag-driven-development/</loc>
+    <loc>https://cychong47.github.io/post/2017/feature-flag-driven-development/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2005,7 +2040,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/espresso-googles-peering-edge-architecture/</loc>
+    <loc>https://cychong47.github.io/post/2017/espresso-googles-peering-edge-architecture/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2040,14 +2075,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/why-message-queue-used-for-microservice/</loc>
+    <loc>https://cychong47.github.io/post/2017/why-message-queue-used-for-microservice/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/p4/</loc>
+    <loc>https://cychong47.github.io/post/2017/p4/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2061,28 +2096,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/table-or-dish/</loc>
+    <loc>https://cychong47.github.io/post/2017/table-or-dish/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/move-to-docker/</loc>
+    <loc>https://cychong47.github.io/post/2017/move-to-docker/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/how-to-read-2/</loc>
+    <loc>https://cychong47.github.io/post/2016/how-to-read-2/</loc>
     <lastmod>2018-07-28T11:25:19+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/how-to-read/</loc>
+    <loc>https://cychong47.github.io/post/2016/how-to-read/</loc>
     <lastmod>2018-07-28T11:25:02+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2096,28 +2131,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/fossilization/</loc>
+    <loc>https://cychong47.github.io/post/2016/fossilization/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/too-early-confident/</loc>
+    <loc>https://cychong47.github.io/post/2016/too-early-confident/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/no-need-to-rush/</loc>
+    <loc>https://cychong47.github.io/post/2016/no-need-to-rush/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/display-post-by-default-ghost/</loc>
+    <loc>https://cychong47.github.io/post/2016/display-post-by-default-ghost/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2131,14 +2166,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/frag-reassembly-test/</loc>
+    <loc>https://cychong47.github.io/post/2016/frag-reassembly-test/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/soft-skill/</loc>
+    <loc>https://cychong47.github.io/post/2016/soft-skill/</loc>
     <lastmod>2018-07-28T11:21:35+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2152,7 +2187,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-ipv4-reassembly/</loc>
+    <loc>https://cychong47.github.io/post/2016/dpdk-ipv4-reassembly/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2173,7 +2208,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/becoming-a-better-programmer/</loc>
+    <loc>https://cychong47.github.io/post/2016/becoming-a-better-programmer/</loc>
     <lastmod>2018-07-28T11:22:08+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2187,7 +2222,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/header-length-in-mbuf/</loc>
+    <loc>https://cychong47.github.io/post/2016/header-length-in-mbuf/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2208,7 +2243,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/how_kni_free_mbuf/</loc>
+    <loc>https://cychong47.github.io/post/2016/how_kni_free_mbuf/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2222,14 +2257,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/scapy-suppress-scapy-warning-message/</loc>
+    <loc>https://cychong47.github.io/post/2016/scapy-suppress-scapy-warning-message/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/how-to-use-snapy-for-ipsec/</loc>
+    <loc>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2257,28 +2292,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/fragment-missing-test-with-scapy/</loc>
+    <loc>https://cychong47.github.io/post/2016/fragment-missing-test-with-scapy/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/vagrant/</loc>
+    <loc>https://cychong47.github.io/post/2016/vagrant/</loc>
     <lastmod>2018-04-01T02:38:42+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/fd-io-tree/</loc>
+    <loc>https://cychong47.github.io/post/2016/fd-io-tree/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/fd-io/</loc>
+    <loc>https://cychong47.github.io/post/2016/fd-io/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2299,28 +2334,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/why_have_to_keep_studying/</loc>
+    <loc>https://cychong47.github.io/post/2016/why_have_to_keep_studying/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk_nic_init/</loc>
+    <loc>https://cychong47.github.io/post/2016/dpdk_nic_init/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/introducing-python/</loc>
+    <loc>https://cychong47.github.io/post/2016/introducing-python/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/sriov-and-dpdk/</loc>
+    <loc>https://cychong47.github.io/post/2016/sriov-and-dpdk/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2334,35 +2369,35 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-2-2-crypto-dev-api/</loc>
+    <loc>https://cychong47.github.io/post/2016/dpdk-2-2-crypto-dev-api/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk_based_apps/</loc>
+    <loc>https://cychong47.github.io/post/2016/dpdk_based_apps/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/two-years-back/</loc>
+    <loc>https://cychong47.github.io/post/2016/two-years-back/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/google-work-rules/</loc>
+    <loc>https://cychong47.github.io/post/2016/google-work-rules/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/googlegeist_vs_sci/</loc>
+    <loc>https://cychong47.github.io/post/2016/googlegeist_vs_sci/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2376,7 +2411,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/anti-agile/</loc>
+    <loc>https://cychong47.github.io/post/2016/anti-agile/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2390,14 +2425,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/click-python-module/</loc>
+    <loc>https://cychong47.github.io/post/2016/click-python-module/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/build_dpdk_qat/</loc>
+    <loc>https://cychong47.github.io/post/2016/build_dpdk_qat/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2411,7 +2446,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/designing-a-restful-api-with-python-and-flask/</loc>
+    <loc>https://cychong47.github.io/post/2015/designing-a-restful-api-with-python-and-flask/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2439,14 +2474,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/virtualenv/</loc>
+    <loc>https://cychong47.github.io/post/2015/virtualenv/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/culture/</loc>
+    <loc>https://cychong47.github.io/post/2015/culture/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2481,28 +2516,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/openfastpath/</loc>
+    <loc>https://cychong47.github.io/post/2015/openfastpath/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/hugepage/</loc>
+    <loc>https://cychong47.github.io/post/2015/hugepage/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/single-tasking/</loc>
+    <loc>https://cychong47.github.io/post/2015/single-tasking/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/19-hard-things-you-need-to-do-to-be-successful/</loc>
+    <loc>https://cychong47.github.io/post/2015/19-hard-things-you-need-to-do-to-be-successful/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2516,7 +2551,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/errors_from_more_code/</loc>
+    <loc>https://cychong47.github.io/post/2015/errors_from_more_code/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2530,7 +2565,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/nhn_sw_quality_control/</loc>
+    <loc>https://cychong47.github.io/post/2015/nhn_sw_quality_control/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2558,7 +2593,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what_happens_if_performance_rating_is_omitted/</loc>
+    <loc>https://cychong47.github.io/post/2015/what_happens_if_performance_rating_is_omitted/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2572,21 +2607,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/openstacki-pythoneuro-mandeuleojyeossdani/</loc>
+    <loc>https://cychong47.github.io/post/2015/openstacki-pythoneuro-mandeuleojyeossdani/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cisco-cloud-services-router-1000v/</loc>
+    <loc>https://cychong47.github.io/post/2015/cisco-cloud-services-router-1000v/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cisco-cloud-service-platform-2100/</loc>
+    <loc>https://cychong47.github.io/post/2015/cisco-cloud-service-platform-2100/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2600,14 +2635,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what_is_the_target_product/</loc>
+    <loc>https://cychong47.github.io/post/2015/what_is_the_target_product/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/why_blame_personals/</loc>
+    <loc>https://cychong47.github.io/post/2015/why_blame_personals/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2628,14 +2663,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what_for_the_developer/</loc>
+    <loc>https://cychong47.github.io/post/2015/what_for_the_developer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/gyujereul-pulgi-eoryeoun-iyuneun/</loc>
+    <loc>https://cychong47.github.io/post/2015/gyujereul-pulgi-eoryeoun-iyuneun/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2649,7 +2684,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-ip-reassembly-example/</loc>
+    <loc>https://cychong47.github.io/post/2015/dpdk-ip-reassembly-example/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2663,21 +2698,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/do_you_know_agile/</loc>
+    <loc>https://cychong47.github.io/post/2015/do_you_know_agile/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/software-developeryi-saengsanseongeul-ceugjeonghal-su-isseulgga/</loc>
+    <loc>https://cychong47.github.io/post/2015/software-developeryi-saengsanseongeul-ceugjeonghal-su-isseulgga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/bunyabyeol-nohau-gongyuga-pilyohande/</loc>
+    <loc>https://cychong47.github.io/post/2015/bunyabyeol-nohau-gongyuga-pilyohande/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2691,28 +2726,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/running-dpdk-on-vmware-fusion/</loc>
+    <loc>https://cychong47.github.io/post/2015/running-dpdk-on-vmware-fusion/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/trex-dpdk-based-traffic-generator/</loc>
+    <loc>https://cychong47.github.io/post/2015/trex-dpdk-based-traffic-generator/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/what-makes-a-good-engineering-culture/</loc>
+    <loc>https://cychong47.github.io/post/2015/what-makes-a-good-engineering-culture/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/buseogan-hyeobryeogi-an-doeni-daecaegeuro/</loc>
+    <loc>https://cychong47.github.io/post/2015/buseogan-hyeobryeogi-an-doeni-daecaegeuro/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2726,7 +2761,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/leading-lights-2015-finalists-most-innovative-nfv-product-strategy-vendor/</loc>
+    <loc>https://cychong47.github.io/post/2015/leading-lights-2015-finalists-most-innovative-nfv-product-strategy-vendor/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2747,7 +2782,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/sw_quality/</loc>
+    <loc>https://cychong47.github.io/post/2015/sw_quality/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2761,7 +2796,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/competetion_is_like_drug/</loc>
+    <loc>https://cychong47.github.io/post/2015/competetion_is_like_drug/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2789,7 +2824,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</loc>
+    <loc>https://cychong47.github.io/post/2015/caeg-gugeuleun-bigdeiteoreul-eoddeohge-hwalyonghaessneunga/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2831,28 +2866,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</loc>
+    <loc>https://cychong47.github.io/post/2015/peom-seupoka-seongjang-baegyeong-rimoteuwa-beulrogeu-munhwa-deogbunijyo/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/the-power-of-ten-rules-for-developing-safety-critical-code/</loc>
+    <loc>https://cychong47.github.io/post/2015/the-power-of-ten-rules-for-developing-safety-critical-code/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-big-seumol/</loc>
+    <loc>https://cychong47.github.io/post/2015/caeg-big-seumol/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/gwanrija-deuldo-gongbu-jom-habsida/</loc>
+    <loc>https://cychong47.github.io/post/2015/gwanrija-deuldo-gongbu-jom-habsida/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2866,14 +2901,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</loc>
+    <loc>https://cychong47.github.io/post/2015/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/divide-conquer/</loc>
+    <loc>https://cychong47.github.io/post/2015/divide-conquer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2887,14 +2922,14 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/magamhyogwareul-norineun-geonga/</loc>
+    <loc>https://cychong47.github.io/post/2015/magamhyogwareul-norineun-geonga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cagga/</loc>
+    <loc>https://cychong47.github.io/post/2015/cagga/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2908,7 +2943,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/coding-styleyi-jungyoseong/</loc>
+    <loc>https://cychong47.github.io/post/2015/coding-styleyi-jungyoseong/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2922,35 +2957,35 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-coding-style/</loc>
+    <loc>https://cychong47.github.io/post/2015/dpdk-coding-style/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/docker-for-dummies-jeongri/</loc>
+    <loc>https://cychong47.github.io/post/2015/docker-for-dummies-jeongri/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</loc>
+    <loc>https://cychong47.github.io/post/2015/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</loc>
     <lastmod>2018-07-28T11:22:34+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dan/</loc>
+    <loc>https://cychong47.github.io/post/2015/dan/</loc>
     <lastmod>2018-07-28T11:23:03+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/wp-designing-for-service-agility/</loc>
+    <loc>https://cychong47.github.io/post/2015/wp-designing-for-service-agility/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2964,7 +2999,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/intel-embedded-tech-forum-2014/</loc>
+    <loc>https://cychong47.github.io/post/2014/intel-embedded-tech-forum-2014/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3006,28 +3041,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/r-i-p-ovdk/</loc>
+    <loc>https://cychong47.github.io/post/2014/r-i-p-ovdk/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/odp/</loc>
+    <loc>https://cychong47.github.io/post/2014/odp/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-summit-2014-videos/</loc>
+    <loc>https://cychong47.github.io/post/2014/dpdk-summit-2014-videos/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</loc>
+    <loc>https://cychong47.github.io/post/2014/peom-busilhan-gongyumunhwareul-jibaehaneun-gaebaljayi-simri/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3041,7 +3076,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cuckoo-switch/</loc>
+    <loc>https://cychong47.github.io/post/2014/cuckoo-switch/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3055,21 +3090,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-baji-beosgo-ilhamyeon-andoenayo/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-baji-beosgo-ilhamyeon-andoenayo/</loc>
     <lastmod>2018-09-07T14:33:15+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/naege-gweonhani-issdamyeon/</loc>
+    <loc>https://cychong47.github.io/post/2014/naege-gweonhani-issdamyeon/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/nayeongseog-pd/</loc>
+    <loc>https://cychong47.github.io/post/2014/nayeongseog-pd/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3097,7 +3132,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/intel-sdnnfv-forum-korea-2014/</loc>
+    <loc>https://cychong47.github.io/post/2014/intel-sdnnfv-forum-korea-2014/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3125,7 +3160,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-violent-python/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-violent-python/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3139,21 +3174,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</loc>
+    <loc>https://cychong47.github.io/post/2014/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-hon-cang-tong/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-hon-cang-tong/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpdk-on-virtualbox/</loc>
+    <loc>https://cychong47.github.io/post/2014/dpdk-on-virtualbox/</loc>
     <lastmod>2018-12-09T05:21:12+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3167,21 +3202,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-deo-inteobyu/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-deo-inteobyu/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-wae-gongbuhaneunga/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-wae-gongbuhaneunga/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peom-meorisog-jeongribeob-10gaji/</loc>
+    <loc>https://cychong47.github.io/post/2014/peom-meorisog-jeongribeob-10gaji/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3209,21 +3244,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/time-machine-backup/</loc>
+    <loc>https://cychong47.github.io/post/2014/time-machine-backup/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-bigdeiteo-seungriyi-gwahag/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-bigdeiteo-seungriyi-gwahag/</loc>
     <lastmod>2018-08-19T22:06:31+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/cobojeogin-silsureul-banboghandago-gubaghajiman/</loc>
+    <loc>https://cychong47.github.io/post/2014/cobojeogin-silsureul-banboghandago-gubaghajiman/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3237,7 +3272,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/the-pragmatic-programmer/</loc>
+    <loc>https://cychong47.github.io/post/2014/the-pragmatic-programmer/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3258,7 +3293,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/synology-webdav-devonthink/</loc>
+    <loc>https://cychong47.github.io/post/2014/synology-webdav-devonthink/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3272,7 +3307,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peom-salmyi-mogjeog/</loc>
+    <loc>https://cychong47.github.io/post/2014/peom-salmyi-mogjeog/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3286,21 +3321,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/caeg-gugeuleun-skyreul-moreunda/</loc>
+    <loc>https://cychong47.github.io/post/2014/caeg-gugeuleun-skyreul-moreunda/</loc>
     <lastmod>2018-08-19T22:06:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peom-20-life-lessons-everyone-can-master-by-the-age-40/</loc>
+    <loc>https://cychong47.github.io/post/2014/peom-20-life-lessons-everyone-can-master-by-the-age-40/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</loc>
+    <loc>https://cychong47.github.io/post/2014/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3321,21 +3356,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/sdn-expert-group-semina-play-with-dpdk/</loc>
+    <loc>https://cychong47.github.io/post/2014/sdn-expert-group-semina-play-with-dpdk/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/carari-honja-saenggaghal-sigan-gajyeora/</loc>
+    <loc>https://cychong47.github.io/post/2014/carari-honja-saenggaghal-sigan-gajyeora/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/nuga-miraereul-gajil-geosinga/</loc>
+    <loc>https://cychong47.github.io/post/2014/nuga-miraereul-gajil-geosinga/</loc>
     <lastmod>2018-07-28T11:24:04+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3349,28 +3384,28 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/jonggyoyi-cabyeoldoen-sarang/</loc>
+    <loc>https://cychong47.github.io/post/2014/jonggyoyi-cabyeoldoen-sarang/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/seupin-is/</loc>
+    <loc>https://cychong47.github.io/post/2014/seupin-is/</loc>
     <lastmod>2018-07-28T11:24:21+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/sdnyi-jinjeonghan-gaci/</loc>
+    <loc>https://cychong47.github.io/post/2014/sdnyi-jinjeonghan-gaci/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/hwaweiyi-widaehan-neugdaemunhwa/</loc>
+    <loc>https://cychong47.github.io/post/2014/hwaweiyi-widaehan-neugdaemunhwa/</loc>
     <lastmod>2018-07-28T11:24:41+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -3384,21 +3419,21 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</loc>
+    <loc>https://cychong47.github.io/post/2014/dpi-traffic-analysis-in-networks-based-on-nfv-and-sdn/</loc>
     <lastmod>2018-04-01T02:38:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/opendataplane/</loc>
+    <loc>https://cychong47.github.io/post/2014/opendataplane/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/post/welcome-to-ghost-2/</loc>
+    <loc>https://cychong47.github.io/post/2014/welcome-to-ghost-2/</loc>
     <lastmod>2018-04-01T02:38:40+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
