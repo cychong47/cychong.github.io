@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Designing for Service Agility</title>
+      <link>https://cychong47.github.io/post/2015/wp-designing-for-service-agility/</link>
+      <pubDate>Thu, 08 Jan 2015 15:33:34 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/wp-designing-for-service-agility/</guid>
+      <description>Heavy Reading 2014 December http://contextream.com/media/docs/HR-ConteXtream-Fit-VNF-WP-12-8.pdf The important Factors Driving NFV deployment is Service Agility &amp;amp; Flexibility In a virtual environment, where applications are extracted from hardware, VNF de- signers face different challenges and opportunities. If operators are to achieve a step change in service agility, it should be possible to provision VNFs on a quasi-on- demand basis. Fit VNFs can be dedicated to a single function and then connected together</description>
+    </item>
     
     <item>
       <title>Intel Embedded Tech Forum 2014</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/2014/caeg-bigdeiteo-seungriyi-gwahag/</guid>
       <description>(책) 빅데이터 승리의 과학 Technology 팀 오바마 2012년 선거 당시 2008년 당시의 SNS를 활용하는 수준을 넘어서 통합적인 선거 지원을 위해 빅데이터 기술 활용. 선거</description>
-    </item>
-    
-    <item>
-      <title>초보적인 실수를 반복한다고 구박하지만</title>
-      <link>https://cychong47.github.io/post/2014/cobojeogin-silsureul-banboghandago-gubaghajiman/</link>
-      <pubDate>Mon, 08 Sep 2014 09:12:34 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2014/cobojeogin-silsureul-banboghandago-gubaghajiman/</guid>
-      <description>초보적인 실수를 반복한다고 구박하지만, 자기들은 기본적인 패키지 운영도 못하면서 누굴 구박하는지. 조직간 알력 해결도 못하면서. 같은 일을 서로 더 힘들게 하는 문</description>
     </item>
     
   </channel>

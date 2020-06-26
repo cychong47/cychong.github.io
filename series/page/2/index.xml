@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>(책) 리얼하다</title>
+      <link>https://cychong47.github.io/post/2019/book-so-real/</link>
+      <pubDate>Sun, 15 Dec 2019 06:46:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2019/book-so-real/</guid>
+      <description>리얼하다 조승연 Lunch or Happy Hour 뭔가 약속을 잡아야 할 때 점심 시간 혹은 저녁 업무 종료 후 저녁 식사 시간 전(Happy Hour, 5-7pm) 때 약속을 주로 잡는다고. 그래야 별도 개인 시간 낭</description>
+    </item>
+    
+    <item>
       <title>Ghost theme 변경 - Fizzy</title>
       <link>https://cychong47.github.io/post/2019/change-ghost-theme-fizzy/</link>
       <pubDate>Tue, 10 Dec 2019 14:09:19 +0900</pubDate>
@@ -181,15 +190,6 @@ IEEE 1588 2002  Original standard Ordinary Clock : GrandMaster of Slave. Always 
       
       <guid>https://cychong47.github.io/post/2019/amazon-daily-work/</guid>
       <description>https://zaverome.wordpress.com/2019/01/09/%EC%95%84%EB%A7%88%EC%A1%B4-3%EB%85%84-%EC%B6%9C%EA%B7%BC%EA%B8%B0-1-%ED%95%98%EB%A3%A8-%EC%9D%BC%EA%B3%BC-%EB%B0%8F-%EC%9A%94%EC%95%BD/ 인상적인 내용들 매일 하는 스탠드업 미팅(데일리 스크럼)은 오후 4시입니다. 오후 4시에 하는 데일리 미팅이라. 신기하다. 보통 오늘 할 일과, 이슈 등을 이야기</description>
-    </item>
-    
-    <item>
-      <title>Install Ubuntu 18.04.1 in Mac mini 2009</title>
-      <link>https://cychong47.github.io/post/2019/install-ubuntu-18-04-1-in-mac-mini-2009/</link>
-      <pubDate>Sun, 10 Feb 2019 14:42:07 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2019/install-ubuntu-18-04-1-in-mac-mini-2009/</guid>
-      <description>최고령 Mac은 아니고 세 번째 고령 가장 오래된 Mac은 2005년에 구입한 Powerbook. PowerPc processor를 사용한 마지막 Apple의 laptop. 그 다음 오래된 것은 iMac 2007. 하지</description>
     </item>
     
   </channel>

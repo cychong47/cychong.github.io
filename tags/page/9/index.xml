@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Culture should be setup first</title>
+      <link>https://cychong47.github.io/post/2015/culture/</link>
+      <pubDate>Sun, 13 Dec 2015 13:44:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/culture/</guid>
+      <description>from Google Work Rules 2006년에 구글에 입사. 72년 생 구글 임직원 나이 평균에 비하면 많지만, 그래도 비슷한 덩치의 국내 기업의 인사 담당자와 비교하면. 하긴 구글을 국내 (</description>
+    </item>
     
     <item>
       <title>OpenFastPath</title>
@@ -188,15 +197,6 @@ How many vCPUs are required for processing.</description>
 However, we can change NIC HW type by editing VM configuration file directly.
 Refer : How to emulate 10 Gbps NIC in a VMware Fusion VM
 Edit vmx file to VMX file is in where vmware image located</description>
-    </item>
-    
-    <item>
-      <title>TRex - DPDK based traffic generator</title>
-      <link>https://cychong47.github.io/post/2015/trex-dpdk-based-traffic-generator/</link>
-      <pubDate>Mon, 12 Oct 2015 13:11:14 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/trex-dpdk-based-traffic-generator/</guid>
-      <description>DPDK Userspace in Dublin 2015에서 발표 Stageful traffic generator 특징 Generate traffic based on templates of real, captured flows No TCP/IP stack Up to 200Gbps with standard server hardware Low cost 1RU (C220M UCS-1RU) Cisco internal DPDK, ZMQ, Python libs Virtualization(vmxnet3/e1000) ~20Gbps per core Generate flow templates Support 1K templates Yaml based traffic profile GUI GUI which monitors real-time properties of TRex -</description>
     </item>
     
   </channel>

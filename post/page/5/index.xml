@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ansible - recreate ghost container</title>
+      <link>https://cychong47.github.io/post/2017/recreate-ghost-container/</link>
+      <pubDate>Sat, 30 Dec 2017 02:31:41 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/recreate-ghost-container/</guid>
+      <description>YAML file state:absent 는 현재 존재하는 container를 중지시키고, 삭제한다. 단순히 stop만 시키려면 state:stopped로 지정하면 된다. pull: yes 옵션을 사</description>
+    </item>
     
     <item>
       <title>Ansible - basics of ansible-playbook</title>
@@ -186,16 +195,6 @@ Visualizing Cisco Telemetry Data using Elasticsearch, Logstash and Kibana</descr
       
       <guid>https://cychong47.github.io/post/2017/streaming-telemetry-with-google-protocol-buffers/</guid>
       <description>출처 : https://blogs.cisco.com/sp/streaming-telemetry-with-google-protocol-buffers Summary JSON, &amp;ldquo;compact&amp;rdquo; GPB and &amp;ldquo;Key-Value&amp;rdquo; GPB &amp;ldquo;Compact&amp;rdquo; GPB data on wire can be decoded without the decoder ring while &amp;ldquo;Key-Value&amp;rdquo; GPB data is Self-Describing. Compact GPB can be used with UDP(default) and TCP(optionally) &amp;ldquo;Key-value&amp;rdquo; GPB is only for TCP 833 bytes of compact GPB while more than 4000 bytes for Key-value GPB Compressed JSON(?)</description>
-    </item>
-    
-    <item>
-      <title>CISCO Yang data model</title>
-      <link>https://cychong47.github.io/post/2017/cisco-yang-data-model/</link>
-      <pubDate>Sun, 01 Oct 2017 21:33:27 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/cisco-yang-data-model/</guid>
-      <description>Seems that configuration and operation data are defined in a different yang file though it is not clear they are module or submodule
- The models are in the .yang format. A model with: -oper in the model name indicates an operational model. For example, Cisco-IOS-XR-cdp-oper.yang is an operational model for Cisco Discovery Protocol (CDP). -cfg indicates a configuration model. For example, Cisco-IOS-XR-cdp-cfg.yang is a configuration model for CDP. -act indicates a NETCONF actions model.</description>
     </item>
     
   </channel>

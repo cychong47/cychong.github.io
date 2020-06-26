@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/til/</link>
     <description>Recent content in TIL on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Jun 2020 23:54:09 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Install Ubuntu 18.04.1 in Mac mini 2009</title>
+      <link>https://cychong47.github.io/post/2019/install-ubuntu-18-04-1-in-mac-mini-2009/</link>
+      <pubDate>Sun, 10 Feb 2019 14:42:07 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2019/install-ubuntu-18-04-1-in-mac-mini-2009/</guid>
+      <description>최고령 Mac은 아니고 세 번째 고령 가장 오래된 Mac은 2005년에 구입한 Powerbook. PowerPc processor를 사용한 마지막 Apple의 laptop. 그 다음 오래된 것은 iMac 2007. 하지</description>
+    </item>
     
     <item>
       <title>DPDK 18.11</title>
@@ -183,15 +192,6 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
       
       <guid>https://cychong47.github.io/post/2018/just-now-dream-love-be-happy/</guid>
       <description>꿈을 노트하라 꿈을 날짜와 함께 적어 놓으면 그것은 목표가 되고 목표를 잘게 나누면 그것은 계획인 되며, 그 계획을 실행에 옮기면 꿈을 이루게 되는 것이다. p46 우리는 무거</description>
-    </item>
-    
-    <item>
-      <title>(책) 습관의 힘</title>
-      <link>https://cychong47.github.io/post/2018/power-of-habit/</link>
-      <pubDate>Sun, 29 Jul 2018 21:29:36 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/power-of-habit/</guid>
-      <description>신호 - 보상 - 반복행동 - 열망 습관에 숨겨진 &amp;ldquo;열망&amp;quot;을 찾아야 한다. 담배를 습관적으로 피우는 사람도 담배를 피우는 이유가 니코틴 부족이</description>
     </item>
     
   </channel>

@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>윤식당에서 배우는 agile</title>
+      <link>https://cychong47.github.io/post/2017/younkitchen-agile/</link>
+      <pubDate>Sun, 16 Apr 2017 05:40:05 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/younkitchen-agile/</guid>
+      <description>요즘 재밌게 보고 있는 JTBC 윤식당. 이서진을 포함한 몇 명의 연기자가 해외에 식당을 내고 운영한다. 그나마 얼굴이 덜 알려진 해외에서 요리를 남에게 파는 행위를 해봤을 것</description>
+    </item>
+    
+    <item>
       <title>Slack &#43; Ghost</title>
       <link>https://cychong47.github.io/post/2017/slack-ghost/</link>
       <pubDate>Wed, 12 Apr 2017 15:37:39 +0900</pubDate>
@@ -185,15 +194,6 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
       
       <guid>https://cychong47.github.io/post/2016/how_kni_free_mbuf/</guid>
       <description>DPDK to KNI RX KNI는 rx_q로부터 mbuf를 수신한 후 data_len 크기의 skb를 할당하여 데이터를 복사한 후 netif_rx를 호출한다. 그러므로 mbuf는 KNI kernel m</description>
-    </item>
-    
-    <item>
-      <title>(Scapy) Suppress Scapy warning message</title>
-      <link>https://cychong47.github.io/post/2016/scapy-suppress-scapy-warning-message/</link>
-      <pubDate>Thu, 03 Mar 2016 14:50:24 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2016/scapy-suppress-scapy-warning-message/</guid>
-      <description>Without Suppressing Scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information. &amp;gt;&amp;gt;&amp;gt; from scapy.all import * WARNING: No route found for IPv6 destination :: (no default route?) &amp;gt;&amp;gt;&amp;gt;  Suppress scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.</description>
     </item>
     
   </channel>

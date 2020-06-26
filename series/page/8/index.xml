@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>(Scapy) Suppress Scapy warning message</title>
+      <link>https://cychong47.github.io/post/2016/scapy-suppress-scapy-warning-message/</link>
+      <pubDate>Thu, 03 Mar 2016 14:50:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2016/scapy-suppress-scapy-warning-message/</guid>
+      <description>Without Suppressing Scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information. &amp;gt;&amp;gt;&amp;gt; from scapy.all import * WARNING: No route found for IPv6 destination :: (no default route?) &amp;gt;&amp;gt;&amp;gt;  Suppress scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.</description>
+    </item>
+    
+    <item>
       <title>how to build IPsec packet with scapy</title>
       <link>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</link>
       <pubDate>Sun, 14 Feb 2016 14:59:42 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://cychong47.github.io/post/2015/virtualenv/</guid>
       <description>virtualenv 설치 mini-2:~ cychong$ sudo easy_install pip mini-2:~ cychong$ sudo pip install virtualenv virtualenv로 project directory 생성 mini-2:work cychong$ mkdir click mini-2:work cychong$ cd click/ mini-2:click cychong$ ls mini-2:click cychong$ virtualenv venv New python executable in venv/bin/python Installing setuptools, pip, wheel...done. mini-2:click cychong$ ls venv virtualenv 환경으로 들어가기 mini-2:click cychong$ . venv/bin/activate</description>
-    </item>
-    
-    <item>
-      <title>Culture should be setup first</title>
-      <link>https://cychong47.github.io/post/2015/culture/</link>
-      <pubDate>Sun, 13 Dec 2015 13:44:24 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/culture/</guid>
-      <description>from Google Work Rules 2006년에 구글에 입사. 72년 생 구글 임직원 나이 평균에 비하면 많지만, 그래도 비슷한 덩치의 국내 기업의 인사 담당자와 비교하면. 하긴 구글을 국내 (</description>
     </item>
     
   </channel>

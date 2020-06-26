@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>TRex - DPDK based traffic generator</title>
+      <link>https://cychong47.github.io/post/2015/trex-dpdk-based-traffic-generator/</link>
+      <pubDate>Mon, 12 Oct 2015 13:11:14 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/trex-dpdk-based-traffic-generator/</guid>
+      <description>DPDK Userspace in Dublin 2015에서 발표 Stageful traffic generator 특징 Generate traffic based on templates of real, captured flows No TCP/IP stack Up to 200Gbps with standard server hardware Low cost 1RU (C220M UCS-1RU) Cisco internal DPDK, ZMQ, Python libs Virtualization(vmxnet3/e1000) ~20Gbps per core Generate flow templates Support 1K templates Yaml based traffic profile GUI GUI which monitors real-time properties of TRex -</description>
+    </item>
+    
+    <item>
       <title>What makes a good engineering culture?</title>
       <link>https://cychong47.github.io/post/2015/what-makes-a-good-engineering-culture/</link>
       <pubDate>Wed, 30 Sep 2015 13:41:57 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://cychong47.github.io/post/2015/dan/</guid>
       <description>&amp;lsquo;&amp;lsquo;단의 공식&amp;rsquo;&amp;rsquo; 버려라 : 중요한 것을 위해 덜 중요한 것을 버리는 것. &amp;lsquo;더 많이&amp;rsquo</description>
-    </item>
-    
-    <item>
-      <title>Designing for Service Agility</title>
-      <link>https://cychong47.github.io/post/2015/wp-designing-for-service-agility/</link>
-      <pubDate>Thu, 08 Jan 2015 15:33:34 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/wp-designing-for-service-agility/</guid>
-      <description>Heavy Reading 2014 December http://contextream.com/media/docs/HR-ConteXtream-Fit-VNF-WP-12-8.pdf The important Factors Driving NFV deployment is Service Agility &amp;amp; Flexibility In a virtual environment, where applications are extracted from hardware, VNF de- signers face different challenges and opportunities. If operators are to achieve a step change in service agility, it should be possible to provision VNFs on a quasi-on- demand basis. Fit VNFs can be dedicated to a single function and then connected together</description>
     </item>
     
   </channel>

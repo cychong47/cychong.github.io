@@ -167,7 +167,7 @@
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/podcast/" class="category-list-link">podcast</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">182</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">183</span></li>
         </ul>
     </div>
 </div>
@@ -502,7 +502,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">8</span></li>
+                    class="tag-list-count">9</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
@@ -1009,6 +1009,10 @@
                     class="tag-list-count">1</span></li>
             
             
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/video/" class="tag-list-link">video</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vim/" class="tag-list-link">vim</a><span
                     class="tag-list-count">1</span></li>
             
@@ -1228,11 +1232,11 @@
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
       <p>음</p>
-<p><img src="/images/podcast/2020/06/20200626_1315_IMG_4474.PNG" alt=""></p>
+<p><img src="/images/2020/06/20200626_1315_IMG_4474.PNG" alt=""></p>
 <p>이건 무슨 상황일까?<br>
 mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 site를 rebuild했다는 메시지가 오질 않는다. 안그래도 Telegram 을 이용해서 메시지를 보내는 기능을 추가해야 겠다고 생각했을때 아래처럼 정상적으로 동작하는 경우가 아니라 뭔가 문제가 있는 상황을 어떻게 알 수 있을까 하는 고민을 했었는데 생각보다 일찍 그 상황(아마도 많은 경우 중 하나 겠지만) 이 온 듯했다.
 이렇게 메시지가 안 온 것으로 뭔가 문제가 있다는 걸 판단하는 건 비효율적인 방법이라 보다 적극적으로 어떤 비정상 상황이고, 가능하면 왜 그런 지도 파악해서 메시지를 보내게 할 필요가 있다는 생각을 했었는데&hellip;</p>
-<p><img src="/images/podcast/2020/06/20200622_0758_IMG_4443.PNG" alt=""></p>
+<p><img src="/images/2020/06/20200622_0758_IMG_4443.PNG" alt=""></p>
 <p>집에 와서 우선 상태부터 확인해 보니 mp3 파일은 정상적으로 만들어져 있고, md 파일도 만들어져있는데 사이트 리빌드가 안되었다. <code>Cron</code>에 12시 4분 그리고 5분에 각각 mp3 파일을 mini2에서 가져오고, mp3 파일의 길이를 확인해서 md 파일을 만들고 site를 다시 빌드하는 작업을 하게 했는데 연속으로 있는 이 두 개의 cron 작업 중 하나만 동작하지 않는 것은 아닌 듯 하다. 이틀 연속으로 첫번째 cron job은 동작하고, 두 번째만 동작하지 않을 확률은 거의 없어 보이는데 생각해 보니 md 파일을 만드는 작업 자체가 두 번째 cron job에서 하는 일 중 하나라 두 번째 cron job도 최소한 실행은 정상적으로 된 걸로 판단할 수 있다.</p>
 <p>그럼 왜 site rebuild가 안되었을까? Cron에 적어놓은 두 번째 job을 보니 cron의 동작을 <code>/tmp/cron.out</code> 파일에 기록하게 해 놨다는 게 보였다. 그래서 로그 파일을 확인해 보니 아하&hellip;</p>
 <pre><code>file /XXX/static/podcast/cinema-2020-06-25.mp3 is not found
@@ -1317,6 +1321,11 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
                 <a href="https://cychong47.github.io/post/2020/2020-06-07-new-input-device-trio/" title="New Input Device Trio"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://cychong47.github.io/post/2020/2020-06-27-how-to-support-video/"
+                    title="2020 06 27 How to Support Video"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

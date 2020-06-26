@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 06 27 How to Support Video</title>
+      <link>https://cychong47.github.io/post/2020/2020-06-27-how-to-support-video/</link>
+      <pubDate>Sat, 27 Jun 2020 00:24:41 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-06-27-how-to-support-video/</guid>
+      <description>Hugo에서 video를 지원하려면 shortcode를 사용하면 된다. 아래 shortcode는 mp3, mp4 파일을 지원하는 zen에서 사용하는 shortcode &amp;lt;figure {{ with .Get &amp;quot;class&amp;quot;</description>
+    </item>
     
     <item>
       <title>No Podcast Update?</title>
@@ -193,15 +202,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</guid>
       <description>지난 2016년 난생 처음으로 자발적으로 부서를 옮긴 후에 경험한 것들. 그 전의 십수년간에는 해보지 않은 많은 새로운 경험들을 가질 수 있었다. 주변의 도움 덕에. 특</description>
-    </item>
-    
-    <item>
-      <title>(책) 리얼하다</title>
-      <link>https://cychong47.github.io/post/2019/book-so-real/</link>
-      <pubDate>Sun, 15 Dec 2019 06:46:24 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2019/book-so-real/</guid>
-      <description>리얼하다 조승연 Lunch or Happy Hour 뭔가 약속을 잡아야 할 때 점심 시간 혹은 저녁 업무 종료 후 저녁 식사 시간 전(Happy Hour, 5-7pm) 때 약속을 주로 잡는다고. 그래야 별도 개인 시간 낭</description>
     </item>
     
   </channel>
