@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Ansible - basics of ansible-playbook</title>
+      <link>https://cychong47.github.io/post/2017/ansible-playbook/</link>
+      <pubDate>Fri, 29 Dec 2017 13:43:14 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/ansible-playbook/</guid>
+      <description>play The goal of a play is to map a group of hosts to some well defined roles, represented by things ansible calls tasks. At a basic level, a task is nothing more than a call to an ansible module play는 명령을 수행할 대상과 수행할 명령을 모두 포함하고 있다. playbook</description>
+    </item>
+    
+    <item>
       <title>Ansible - ad-hoc or basic</title>
       <link>https://cychong47.github.io/post/2017/ansible-exercise-1/</link>
       <pubDate>Wed, 27 Dec 2017 14:32:51 +0900</pubDate>
@@ -187,16 +196,6 @@ Visualizing Cisco Telemetry Data using Elasticsearch, Logstash and Kibana</descr
       <guid>https://cychong47.github.io/post/2017/cisco-yang-data-model/</guid>
       <description>Seems that configuration and operation data are defined in a different yang file though it is not clear they are module or submodule
  The models are in the .yang format. A model with: -oper in the model name indicates an operational model. For example, Cisco-IOS-XR-cdp-oper.yang is an operational model for Cisco Discovery Protocol (CDP). -cfg indicates a configuration model. For example, Cisco-IOS-XR-cdp-cfg.yang is a configuration model for CDP. -act indicates a NETCONF actions model.</description>
-    </item>
-    
-    <item>
-      <title>(Series</title>
-      <link>https://cychong47.github.io/post/2017/model-driven-telemetry/</link>
-      <pubDate>Sun, 01 Oct 2017 14:06:46 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/model-driven-telemetry/</guid>
-      <description>Why You Should Care About Model-Driven Telemetry from CISCO blog
-Summary  Periodic polling -&amp;gt; Pushing(Streaming) Model based data with YANG Use standard encoding such as JSON, Google Protocol Buffers Easy to manipulate, connect to analytic solutions  1-min poll is too slow  For the last 25 years, network operators have heavily relied on SNMP polling and CLI screen-scraping to extract operational data from the network. But the new and automated demands of today’s networks have pushed these mechanisms to the breaking point.</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 01:11:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>No Podcast Update?</title>
+      <link>https://cychong47.github.io/post/2020/2020-06-26-no-podcast-update/</link>
+      <pubDate>Fri, 26 Jun 2020 22:11:32 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-06-26-no-podcast-update/</guid>
+      <description>음 이건 무슨 상황일까? mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 site를 rebuild했다는 메시지가 오질 않는다. 안그래도 Telegram 을 이용해서 메</description>
+    </item>
     
     <item>
       <title>New Input Device Trio</title>
@@ -193,15 +202,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/2019/book-so-real/</guid>
       <description>리얼하다 조승연 Lunch or Happy Hour 뭔가 약속을 잡아야 할 때 점심 시간 혹은 저녁 업무 종료 후 저녁 식사 시간 전(Happy Hour, 5-7pm) 때 약속을 주로 잡는다고. 그래야 별도 개인 시간 낭</description>
-    </item>
-    
-    <item>
-      <title>Ghost theme 변경 - Fizzy</title>
-      <link>https://cychong47.github.io/post/2019/change-ghost-theme-fizzy/</link>
-      <pubDate>Tue, 10 Dec 2019 14:09:19 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2019/change-ghost-theme-fizzy/</guid>
-      <description>https://github.com/huangyuzhang/Fizzy-Theme 오늘 우연히 발견한 ghost theme. 중국 친구가 만든 것 같은데 꽤 괜찮다. 검색 기능에 필요한 Content API key 등만 Site Header에 추가하면 검색 기능을 이용할 수 있고, TOC도 지원</description>
     </item>
     
   </channel>

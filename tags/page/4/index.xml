@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 01:11:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 나는 다른 대한민국에서 살고 싶다</title>
+      <link>https://cychong47.github.io/post/2018/i-want-to-live-in-a-different-korea/</link>
+      <pubDate>Sun, 29 Jul 2018 21:28:01 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2018/i-want-to-live-in-a-different-korea/</guid>
+      <description>p215 우리 사회가 뭔가 단단히 헷갈리고 있다. 정치, 경제, 사회 전반에서 국가의 강력한 통졔를 바란다면 헌법부터 뜯어고쳐야 할 것이다. 일단 자유민주주의의 &amp;lsq</description>
+    </item>
     
     <item>
       <title>(책) 퍼플피플</title>
@@ -181,15 +190,6 @@ Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY S
       
       <guid>https://cychong47.github.io/post/2017/recreate-ghost-container/</guid>
       <description>YAML file state:absent 는 현재 존재하는 container를 중지시키고, 삭제한다. 단순히 stop만 시키려면 state:stopped로 지정하면 된다. pull: yes 옵션을 사</description>
-    </item>
-    
-    <item>
-      <title>Ansible - basics of ansible-playbook</title>
-      <link>https://cychong47.github.io/post/2017/ansible-playbook/</link>
-      <pubDate>Fri, 29 Dec 2017 13:43:14 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/ansible-playbook/</guid>
-      <description>play The goal of a play is to map a group of hosts to some well defined roles, represented by things ansible calls tasks. At a basic level, a task is nothing more than a call to an ansible module play는 명령을 수행할 대상과 수행할 명령을 모두 포함하고 있다. playbook</description>
     </item>
     
   </channel>

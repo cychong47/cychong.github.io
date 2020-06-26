@@ -10,6 +10,18 @@
     
     
     <item>
+      <title>DPDK 18.11</title>
+      <link>https://cychong47.github.io/post/2019/dpdk-18-11/</link>
+      <pubDate>Mon, 07 Jan 2019 14:57:59 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2019/dpdk-18-11/</guid>
+      <description>https://doc.dpdk.org/guides-18.11/rel_notes/release_18_11.html
+New Features Updated the C11 memory model version of the ring library. Added changes to decrease latency for architectures using the C11 memory model version of the ring library.
+On Cavium ThunderX2 platform, the changes decreased latency by 27-29% and 3-15% for MPMC and SPSC cases respectively (with 2 lcores). The real improvements may vary with the number of contending lcores and the size of the ring.
+Added support for device multi-process hotplug.</description>
+    </item>
+    
+    <item>
       <title>함께 자라기</title>
       <link>https://cychong47.github.io/post/2018/grow-together/</link>
       <pubDate>Tue, 25 Dec 2018 13:54:06 +0900</pubDate>
@@ -179,15 +191,6 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
       
       <guid>https://cychong47.github.io/post/2018/power-of-habit/</guid>
       <description>신호 - 보상 - 반복행동 - 열망 습관에 숨겨진 &amp;ldquo;열망&amp;quot;을 찾아야 한다. 담배를 습관적으로 피우는 사람도 담배를 피우는 이유가 니코틴 부족이</description>
-    </item>
-    
-    <item>
-      <title>(책) 나는 다른 대한민국에서 살고 싶다</title>
-      <link>https://cychong47.github.io/post/2018/i-want-to-live-in-a-different-korea/</link>
-      <pubDate>Sun, 29 Jul 2018 21:28:01 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/i-want-to-live-in-a-different-korea/</guid>
-      <description>p215 우리 사회가 뭔가 단단히 헷갈리고 있다. 정치, 경제, 사회 전반에서 국가의 강력한 통졔를 바란다면 헌법부터 뜯어고쳐야 할 것이다. 일단 자유민주주의의 &amp;lsq</description>
     </item>
     
   </channel>

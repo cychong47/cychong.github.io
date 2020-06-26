@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 01:11:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Slack &#43; Ghost</title>
+      <link>https://cychong47.github.io/post/2017/slack-ghost/</link>
+      <pubDate>Wed, 12 Apr 2017 15:37:39 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/slack-ghost/</guid>
+      <description>Slack에 개인 채널(?)을 만들었다. 이런 저런 내가 수집(?)하는 정보들을 한 군데서 모아서 히스토리를 만들면 어떨까 하는 생각에 누구는 slack과 빌드</description>
+    </item>
     
     <item>
       <title>Feature Flag Driven Development</title>
@@ -185,15 +194,6 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
       
       <guid>https://cychong47.github.io/post/2016/scapy-suppress-scapy-warning-message/</guid>
       <description>Without Suppressing Scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information. &amp;gt;&amp;gt;&amp;gt; from scapy.all import * WARNING: No route found for IPv6 destination :: (no default route?) &amp;gt;&amp;gt;&amp;gt;  Suppress scapy IPv6 warning cychong@ubuntu:~$ python Python 2.7.6 (default, Jun 22 2015, 17:58:13) [GCC 4.8.2] on linux2 Type &amp;quot;help&amp;quot;, &amp;quot;copyright&amp;quot;, &amp;quot;credits&amp;quot; or &amp;quot;license&amp;quot; for more information.</description>
-    </item>
-    
-    <item>
-      <title>how to build IPsec packet with scapy</title>
-      <link>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</link>
-      <pubDate>Sun, 14 Feb 2016 14:59:42 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</guid>
-      <description>import modules $ python &amp;gt;&amp;gt;&amp;gt; from scapy.all import * &amp;gt;&amp;gt;&amp;gt; from scapy.layers.ipsec import * build plaintext packet &amp;gt;&amp;gt;&amp;gt; p = IP(src=&#39;1.1.1.1&#39;, dst=&#39;2.2.2.2&#39;) / TCP(sport=45012, dport=80) / Raw(&#39;testdata&#39;) &amp;gt;&amp;gt;&amp;gt; p = IP(str(p)) setup SA &amp;gt;&amp;gt;&amp;gt; sa = SecurityAssociation(ESP, spi=0xdeadbeef, crypt_algo=&#39;AES-CBC&#39;,crypt_key=&#39;sixteenbytes key&#39;) Encrypt w/o IV &amp;gt;&amp;gt;&amp;gt; e = sa.encrypt(p, 5) &amp;gt;&amp;gt;&amp;gt; e &amp;lt;IP version=4L ihl=5L tos=0x0 len=76 id=1 flags= frag=0L ttl=64 proto=esp chksum=0x747a src=1.1.1.1 dst=2.2.2.2 |&amp;lt;ESP spi=0xdeadbeef seq=5 data=&#39;uD\x7fdj19\xe7\xc4\xff8\x10\xcdQ\xf0\xa6\x1e!\x84\xc3&amp;gt;!\x18\xa6\xf6\xb8\x93\xc6it\x9a\xfc\x1c\xee\xe5C\xcd\xf0\x7fD\xca\x8d\xadKh\xa8\xe5x&#39; |&amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt; e.show()</description>
     </item>
     
   </channel>

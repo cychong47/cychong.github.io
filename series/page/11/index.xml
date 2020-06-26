@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Intel Embedded Tech Forum 2014</title>
+      <link>https://cychong47.github.io/post/2014/intel-embedded-tech-forum-2014/</link>
+      <pubDate>Tue, 09 Dec 2014 10:38:08 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2014/intel-embedded-tech-forum-2014/</guid>
+      <description>Small Cell Big Cell 256 user 이하를 small cell로 정의 mini-CRAN Paris Hill SOC을 이용하는 경우 RRH에서 LTE/3G DSP+DFE 까지 처리하고 Ethernet으로 IA core로 전달. Altiostar 구조와 유사한 듯</description>
+    </item>
+    
+    <item>
       <title>R.I.P OVDK</title>
       <link>https://cychong47.github.io/post/2014/r-i-p-ovdk/</link>
       <pubDate>Thu, 27 Nov 2014 14:47:38 +0900</pubDate>
@@ -178,15 +187,6 @@
       
       <guid>https://cychong47.github.io/post/2014/cobojeogin-silsureul-banboghandago-gubaghajiman/</guid>
       <description>초보적인 실수를 반복한다고 구박하지만, 자기들은 기본적인 패키지 운영도 못하면서 누굴 구박하는지. 조직간 알력 해결도 못하면서. 같은 일을 서로 더 힘들게 하는 문</description>
-    </item>
-    
-    <item>
-      <title>The Pragmatic Programmer</title>
-      <link>https://cychong47.github.io/post/2014/the-pragmatic-programmer/</link>
-      <pubDate>Mon, 08 Sep 2014 08:48:49 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2014/the-pragmatic-programmer/</guid>
-      <description>TPP 3. Provide Options, Don&amp;rsquo;t make Lame excuses 검토 결과 부정적일 때, 그냥 안된다고 하지말고 대안을 같이 제시하자. &amp;ldquo;이거 해 봤어?&amp;rdquo; &amp;ldquo;이거 고려했</description>
     </item>
     
   </channel>

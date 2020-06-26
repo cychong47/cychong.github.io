@@ -5,10 +5,20 @@
     <link>https://cychong47.github.io/tags/</link>
     <description>Recent content in Tags on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 01:11:13 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 22:11:32 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Series</title>
+      <link>https://cychong47.github.io/post/2017/model-driven-telemetry/</link>
+      <pubDate>Sun, 01 Oct 2017 14:06:46 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/model-driven-telemetry/</guid>
+      <description>Why You Should Care About Model-Driven Telemetry from CISCO blog
+Summary  Periodic polling -&amp;gt; Pushing(Streaming) Model based data with YANG Use standard encoding such as JSON, Google Protocol Buffers Easy to manipulate, connect to analytic solutions  1-min poll is too slow  For the last 25 years, network operators have heavily relied on SNMP polling and CLI screen-scraping to extract operational data from the network. But the new and automated demands of today’s networks have pushed these mechanisms to the breaking point.</description>
+    </item>
     
     <item>
       <title>brew install python</title>
@@ -191,15 +201,6 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/post/2017/younkitchen-agile/</guid>
       <description>요즘 재밌게 보고 있는 JTBC 윤식당. 이서진을 포함한 몇 명의 연기자가 해외에 식당을 내고 운영한다. 그나마 얼굴이 덜 알려진 해외에서 요리를 남에게 파는 행위를 해봤을 것</description>
-    </item>
-    
-    <item>
-      <title>Slack &#43; Ghost</title>
-      <link>https://cychong47.github.io/post/2017/slack-ghost/</link>
-      <pubDate>Wed, 12 Apr 2017 15:37:39 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/slack-ghost/</guid>
-      <description>Slack에 개인 채널(?)을 만들었다. 이런 저런 내가 수집(?)하는 정보들을 한 군데서 모아서 히스토리를 만들면 어떨까 하는 생각에 누구는 slack과 빌드</description>
     </item>
     
   </channel>

@@ -10,6 +10,19 @@
     
     
     <item>
+      <title>OpenFastPath</title>
+      <link>https://cychong47.github.io/post/2015/openfastpath/</link>
+      <pubDate>Fri, 11 Dec 2015 14:40:23 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/openfastpath/</guid>
+      <description>Another Open source project.
+User-land protocol stack. Incorporate with ODP
+To use with DPDK, ODP and ODP-DPDK should be used.
+From the FAQ
+Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning does it intercept Linux ipconfig/ip commands and automatically create similar entities inside the fastpath stack? A: Yes. Uses Netlink to sync with ifconfig commands and also with routes. Q: Does the OFP IP stack have full IPv4/IPv6 fragmentation/re-assembly support?</description>
+    </item>
+    
+    <item>
       <title>Hugepage</title>
       <link>https://cychong47.github.io/post/2015/hugepage/</link>
       <pubDate>Fri, 11 Dec 2015 14:30:56 +0900</pubDate>
@@ -183,15 +196,6 @@ Edit vmx file to VMX file is in where vmware image located</description>
       
       <guid>https://cychong47.github.io/post/2015/trex-dpdk-based-traffic-generator/</guid>
       <description>DPDK Userspace in Dublin 2015에서 발표 Stageful traffic generator 특징 Generate traffic based on templates of real, captured flows No TCP/IP stack Up to 200Gbps with standard server hardware Low cost 1RU (C220M UCS-1RU) Cisco internal DPDK, ZMQ, Python libs Virtualization(vmxnet3/e1000) ~20Gbps per core Generate flow templates Support 1K templates Yaml based traffic profile GUI GUI which monitors real-time properties of TRex -</description>
-    </item>
-    
-    <item>
-      <title>What makes a good engineering culture?</title>
-      <link>https://cychong47.github.io/post/2015/what-makes-a-good-engineering-culture/</link>
-      <pubDate>Wed, 30 Sep 2015 13:41:57 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/what-makes-a-good-engineering-culture/</guid>
-      <description>From http://www.theeffectiveengineer.com/blog/what-makes-a-good-engineering-culture 1. Optimize for iteration speed Continous deployment to support rapid validation High test coverage to reduce build and site breakages Fast unit tests to encourage people to run them Fast and incremental compiles and reloads to reduce development time Bill Walsh, 49ers to 3 Super bowls, Commit, Explode, Recover A team crippled with indecisiveness will just cause individual efforts to flounders 2. Push relentlessly toward automation Consider operational</description>
     </item>
     
   </channel>
