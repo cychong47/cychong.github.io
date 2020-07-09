@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/</link>
     <description>Recent content on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>새로운 경험 들</title>
+      <link>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</link>
+      <pubDate>Thu, 07 May 2020 14:34:55 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</guid>
+      <description>지난 2016년 난생 처음으로 자발적으로 부서를 옮긴 후에 경험한 것들. 그 전의 십수년간에는 해보지 않은 많은 새로운 경험들을 가질 수 있었다. 주변의 도움 덕에. 특</description>
+    </item>
     
     <item>
       <title>(책) 리얼하다</title>
@@ -182,15 +191,6 @@ IEEE 1588 2002  Original standard Ordinary Clock : GrandMaster of Slave. Always 
       
       <guid>https://cychong47.github.io/post/2019/kubernetes-networks/</guid>
       <description>Kubernetes Networks in google docs 이거 보면 IPv6를 사용해야 하는 경우 선택할 수 있는 CNI는 Calico, Cillium, Contiv, Tungsten Fabric 정도로 좁혀지네</description>
-    </item>
-    
-    <item>
-      <title>(펌글) 아마존 3년 출근기</title>
-      <link>https://cychong47.github.io/post/2019/amazon-daily-work/</link>
-      <pubDate>Thu, 16 May 2019 11:54:25 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2019/amazon-daily-work/</guid>
-      <description>https://zaverome.wordpress.com/2019/01/09/%EC%95%84%EB%A7%88%EC%A1%B4-3%EB%85%84-%EC%B6%9C%EA%B7%BC%EA%B8%B0-1-%ED%95%98%EB%A3%A8-%EC%9D%BC%EA%B3%BC-%EB%B0%8F-%EC%9A%94%EC%95%BD/ 인상적인 내용들 매일 하는 스탠드업 미팅(데일리 스크럼)은 오후 4시입니다. 오후 4시에 하는 데일리 미팅이라. 신기하다. 보통 오늘 할 일과, 이슈 등을 이야기</description>
     </item>
     
   </channel>

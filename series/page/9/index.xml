@@ -5,9 +5,19 @@
     <link>https://cychong47.github.io/series/</link>
     <description>Recent content in Series on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>virtualenv 사용</title>
+      <link>https://cychong47.github.io/post/2015/virtualenv/</link>
+      <pubDate>Mon, 21 Dec 2015 14:59:29 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/virtualenv/</guid>
+      <description>virtualenv 설치 mini-2:~ cychong$ sudo easy_install pip mini-2:~ cychong$ sudo pip install virtualenv virtualenv로 project directory 생성 mini-2:work cychong$ mkdir click mini-2:work cychong$ cd click/ mini-2:click cychong$ ls mini-2:click cychong$ virtualenv venv New python executable in venv/bin/python Installing setuptools, pip, wheel...done. mini-2:click cychong$ ls venv virtualenv 환경으로 들어가기 mini-2:click cychong$ . venv/bin/activate</description>
+    </item>
     
     <item>
       <title>Culture should be setup first</title>
@@ -184,18 +194,6 @@ How many vCPUs are required for processing.</description>
       
       <guid>https://cychong47.github.io/post/2015/bunyabyeol-nohau-gongyuga-pilyohande/</guid>
       <description>예 ipsec on asf/se/&amp;hellip; 불럭별 특징이 아니라 프로토콜별 호환성이나 주의사항에 대한 취합 필요 보통 postmortem하면 그 블럭의 특징이라고 보는 경향이 강한데 그것과 무관</description>
-    </item>
-    
-    <item>
-      <title>Running DPDK on VMware Fusion</title>
-      <link>https://cychong47.github.io/post/2015/running-dpdk-on-vmware-fusion/</link>
-      <pubDate>Tue, 20 Oct 2015 14:19:05 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/running-dpdk-on-vmware-fusion/</guid>
-      <description>VirtualBox supports emulated e1000 NIC for VM while VMware fusion does not. VMware Fusion&amp;rsquo;s VM setting does not support configuring of NIC HW type. The NIC HW is PCnet32 which is not supported by DPDK.
-However, we can change NIC HW type by editing VM configuration file directly.
-Refer : How to emulate 10 Gbps NIC in a VMware Fusion VM
-Edit vmx file to VMX file is in where vmware image located</description>
     </item>
     
   </channel>

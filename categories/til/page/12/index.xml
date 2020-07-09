@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/til/</link>
     <description>Recent content in TIL on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 빅데이터 승리의 과학</title>
+      <link>https://cychong47.github.io/post/2014/caeg-bigdeiteo-seungriyi-gwahag/</link>
+      <pubDate>Tue, 09 Sep 2014 03:41:02 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2014/caeg-bigdeiteo-seungriyi-gwahag/</guid>
+      <description>(책) 빅데이터 승리의 과학 Technology 팀 오바마 2012년 선거 당시 2008년 당시의 SNS를 활용하는 수준을 넘어서 통합적인 선거 지원을 위해 빅데이터 기술 활용. 선거</description>
+    </item>
     
     <item>
       <title>초보적인 실수를 반복한다고 구박하지만</title>
@@ -161,6 +170,15 @@
       
       <guid>https://cychong47.github.io/post/2014/welcome-to-ghost-2/</guid>
       <description>You&amp;rsquo;re live! Nice. We&amp;rsquo;ve put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &amp;lt;your blog URL&amp;gt;/ghost/. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cychong47.github.io/post/2020/2020-07-01-setup-nginx-with-bitnami-chart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-07-01-setup-nginx-with-bitnami-chart/</guid>
+      <description>bitnami repo 추가 cychong@mini1:~$ helm repo add bitnami https://charts.bitnami.com/bitnami &amp;quot;bitnami&amp;quot; has been added to your repositories bitnami repo에 있는 chart 확인 cychong@mini1:~$ helm search repo bitnami NAME CHART VERSION APP VERSION DESCRIPTION bitnami/bitnami-common 0.0.8 0.0.8 Chart with custom templates used in Bitnami cha... bitnami/airflow 6.3.4 1.10.10 Apache Airflow is a platform to programmaticall... bitnami/apache 7.3.18 2.4.43 Chart for Apache HTTP Server bitnami/cassandra 5.5.3</description>
     </item>
     
   </channel>

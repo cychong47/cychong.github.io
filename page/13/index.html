@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cychong47.github.io/" />
-<meta property="og:updated_time" content="2020-06-27T00:24:41+09:00" />
+<meta property="og:updated_time" content="2020-07-02T23:58:41+09:00" />
 <meta itemprop="name" content="Another blog">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Another blog"/>
@@ -55,15 +55,7 @@
 
   <body class="main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
-      <div class="navbar-header">
-        <div class="profile-block text-center">
-          <a id="avatar" href="https://github.com/cychong47" target="_blank">
-            <img class="img-circle img-rotate" src="https://cychong47.github.io/avatar.png" width="200" height="200">
-          </a>
-          <h2 id="name" class="hidden-xs hidden-sm">Chaeyong Chong</h2>
-          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
-          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
-        </div><div class="search" id="search-form-wrap">
+      <div class="navbar-header"><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
             <input type="text" class="search-form-input form-control" placeholder="Search" />
@@ -103,12 +95,6 @@
                   <span class="menu-title">Home</span>
                 </a>
             </li>
-            <li class="menu-item menu-item-archives">
-                <a href="/posts/">
-                    <i class="icon icon-archives-fill"></i>
-                  <span class="menu-title">Archives</span>
-                </a>
-            </li>
             <li class="menu-item menu-item-categories">
                 <a href="/categories/">
                     <i class="icon icon-folder"></i>
@@ -121,15 +107,9 @@
                   <span class="menu-title">Tags</span>
                 </a>
             </li>
-            <li class="menu-item menu-item-about">
-                <a href="/about/">
-                    <i class="icon icon-cup-fill"></i>
-                  <span class="menu-title">About</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-monthly">
-                <a href="/monthly/">
-                  <span class="menu-title">Monthly</span>
+            <li class="menu-item menu-item-series">
+                <a href="/series/">
+                  <span class="menu-title">Series</span>
                 </a>
             </li>
         </ul>
@@ -156,10 +136,10 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/gadget/" class="category-list-link">gadget</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/podcast/" class="category-list-link">podcast</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">183</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">182</span></li>
         </ul>
     </div>
 </div>
@@ -482,7 +462,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/helm/" class="tag-list-link">helm</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/homebrew/" class="tag-list-link">homebrew</a><span
@@ -550,7 +530,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kubernetes/" class="tag-list-link">kubernetes</a><span
-                    class="tag-list-count">11</span></li>
+                    class="tag-list-count">12</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/launchd/" class="tag-list-link">launchd</a><span
@@ -1193,6 +1173,49 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/post/2017/install-wordpress-with-docker/"
+    >Install Wordpress with docker</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        Summary docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql docker run --restart=always -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@ -e WORDPRESS_DB_NAME=wordpress_db -p 80:80 -v /Users/cychong/Documents/wordpress/html:/var/www/html -v /Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads -v /Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini --link mysql:mysql --name wpcontainer -d wordpress  If required, import database to mysql (Once wordpress data is imported into mysql, upgrading mysql does not requires re-import ingof wordpress data)
+mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql Unable to find image 'mysql:latest' locally latest: Pulling from library/mysql aa18ad1a0d33: Pull complete a5745c3b8bcc: Pull complete 76375fcd129c: Pull complete 4f72cfb004cf: Pull complete 1d6a01e515fb: Pull complete a71e1163fa7e: Pull complete 8c1a568fa442: Pull complete e7a69cecc173: Pull complete 9759a0f979a1: Pull complete 3f71dac6110f: Pull complete 58f37de54392: Pull complete Digest: sha256:790b7b18b832822ef400e44ad9fac885a746db1a7028ec52325730cf9b831753 Status: Downloaded newer image for mysql:latest b1f54c680120898fc7ff16751048fe18ae461399d5d7f10308c156c68d40577b  check container is started cychong:~ cychong$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES b1f54c680120 mysql &quot;docker-entrypoint.
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/post/2017/install-wordpress-with-docker/" class="">
+  <time datetime="2017-12-19 22:20:06 &#43;0900 KST" itemprop="datePublished">2017-12-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/docker/"> docker </a>
+    <a class="article-tag-link" href="/tags/container/"> container </a>
+    <a class="article-tag-link" href="/tags/wordpress/"> wordpress </a>
+    <a class="article-tag-link" href="/tags/mysql/"> mysql </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2017/install-wordpress-with-docker/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 530words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 3minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/post/2017/clienbbs/"
     >clienBBS</a
   >
@@ -1416,45 +1439,6 @@
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 3words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
       </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/post/2017/what-is-good-manager/"
-    >관리자는 &#39;관리&#39;업무를 하는 동료이다.</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        구글이 연구한 &lsquo;좋은 관리자가 가져야 할 8가지 덕목&rsquo;. 좋은 코치(coaches)다. 팀에게 권한을 양도하며 마이크로매니지를 하
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/post/2017/what-is-good-manager/" class="">
-  <time datetime="2017-10-28 15:34:55 &#43;0900 KST" itemprop="datePublished">2017-10-28</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/manager/"> manager </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2017/what-is-good-manager/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 238words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
-      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -1472,7 +1456,7 @@
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:13/34
+      Page:13/35
     </div>
   </div>
 </nav>

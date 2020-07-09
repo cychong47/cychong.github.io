@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 27 Jun 2020 00:24:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Slack이 기능 중 하나 - 방해금지</title>
+      <link>https://cychong47.github.io/post/2017/slack-do-not-disturb/</link>
+      <pubDate>Sun, 16 Apr 2017 05:51:11 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/slack-do-not-disturb/</guid>
+      <description>Slack에서 제공하는 여러 가지 기능 중 하나로 &amp;ldquo;Do not disturb&amp;quot;가 있다. 아래는 그 기능을 설명한 블로그 글( Slack으로 막일을 줄여요 ~ 막</description>
+    </item>
     
     <item>
       <title>윤식당에서 배우는 agile</title>
@@ -185,15 +194,6 @@ POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</descr
       
       <guid>https://cychong47.github.io/post/2016/header-length-in-mbuf/</guid>
       <description>l2_len, l3_len, l4_len 등을 사용하는 라이브러리가 존재함 reassembly Tx checksum offload Reassembly rte_ipv6_frag_reassemble_packet(), rte_ipv4_frag_reassemble_packet() Incoming mbuf should have its l2_len and l3_len fields setup correctly. L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to fill l2_len and l3_len in mbuf set the flags PKT_TX_TCP_CKSUM, PKT_TX_SCTP_CKSUM or PKT_TX_UDP_CKSUM set the flag PKT_TX_IPV4 or PKT_TX_IPV6 calculate</description>
-    </item>
-    
-    <item>
-      <title>KNI가 buffer를 free 하는 방법</title>
-      <link>https://cychong47.github.io/post/2016/how_kni_free_mbuf/</link>
-      <pubDate>Sun, 06 Mar 2016 08:17:58 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2016/how_kni_free_mbuf/</guid>
-      <description>DPDK to KNI RX KNI는 rx_q로부터 mbuf를 수신한 후 data_len 크기의 skb를 할당하여 데이터를 복사한 후 netif_rx를 호출한다. 그러므로 mbuf는 KNI kernel m</description>
     </item>
     
   </channel>

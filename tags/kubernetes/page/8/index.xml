@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/kubernetes/</link>
     <description>Recent content in kubernetes on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Nov 2019 14:58:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>KNI가 buffer를 free 하는 방법</title>
+      <link>https://cychong47.github.io/post/2016/how_kni_free_mbuf/</link>
+      <pubDate>Sun, 06 Mar 2016 08:17:58 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2016/how_kni_free_mbuf/</guid>
+      <description>DPDK to KNI RX KNI는 rx_q로부터 mbuf를 수신한 후 data_len 크기의 skb를 할당하여 데이터를 복사한 후 netif_rx를 호출한다. 그러므로 mbuf는 KNI kernel m</description>
+    </item>
     
     <item>
       <title>(Scapy) Suppress Scapy warning message</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/2015/designing-a-restful-api-with-python-and-flask/</guid>
       <description>Designing a RESTful API with Python and Flask RESTful API는 URI에 필요한 인자를 다 넘기는 형태라 사용자가 직접 주소를 입력하는 것이 아니라 다른 SW에서 해당 URI를 입력하는 형태로 사용하</description>
-    </item>
-    
-    <item>
-      <title>virtualenv 사용</title>
-      <link>https://cychong47.github.io/post/2015/virtualenv/</link>
-      <pubDate>Mon, 21 Dec 2015 14:59:29 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/virtualenv/</guid>
-      <description>virtualenv 설치 mini-2:~ cychong$ sudo easy_install pip mini-2:~ cychong$ sudo pip install virtualenv virtualenv로 project directory 생성 mini-2:work cychong$ mkdir click mini-2:work cychong$ cd click/ mini-2:click cychong$ ls mini-2:click cychong$ virtualenv venv New python executable in venv/bin/python Installing setuptools, pip, wheel...done. mini-2:click cychong$ ls venv virtualenv 환경으로 들어가기 mini-2:click cychong$ . venv/bin/activate</description>
     </item>
     
   </channel>

@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cychong47.github.io/" />
-<meta property="og:updated_time" content="2020-06-27T00:24:41+09:00" />
+<meta property="og:updated_time" content="2020-07-02T23:58:41+09:00" />
 <meta itemprop="name" content="Another blog">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Another blog"/>
@@ -55,15 +55,7 @@
 
   <body class="main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
     <div class="slimContent">
-      <div class="navbar-header">
-        <div class="profile-block text-center">
-          <a id="avatar" href="https://github.com/cychong47" target="_blank">
-            <img class="img-circle img-rotate" src="https://cychong47.github.io/avatar.png" width="200" height="200">
-          </a>
-          <h2 id="name" class="hidden-xs hidden-sm">Chaeyong Chong</h2>
-          <h3 id="title" class="hidden-xs hidden-sm hidden-md">author title</h3>
-          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i></small>
-        </div><div class="search" id="search-form-wrap">
+      <div class="navbar-header"><div class="search" id="search-form-wrap">
     <form class="search-form sidebar-form">
         <div class="input-group">
             <input type="text" class="search-form-input form-control" placeholder="Search" />
@@ -103,12 +95,6 @@
                   <span class="menu-title">Home</span>
                 </a>
             </li>
-            <li class="menu-item menu-item-archives">
-                <a href="/posts/">
-                    <i class="icon icon-archives-fill"></i>
-                  <span class="menu-title">Archives</span>
-                </a>
-            </li>
             <li class="menu-item menu-item-categories">
                 <a href="/categories/">
                     <i class="icon icon-folder"></i>
@@ -121,15 +107,9 @@
                   <span class="menu-title">Tags</span>
                 </a>
             </li>
-            <li class="menu-item menu-item-about">
-                <a href="/about/">
-                    <i class="icon icon-cup-fill"></i>
-                  <span class="menu-title">About</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-monthly">
-                <a href="/monthly/">
-                  <span class="menu-title">Monthly</span>
+            <li class="menu-item menu-item-series">
+                <a href="/series/">
+                  <span class="menu-title">Series</span>
                 </a>
             </li>
         </ul>
@@ -156,10 +136,10 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/gadget/" class="category-list-link">gadget</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/podcast/" class="category-list-link">podcast</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">183</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">182</span></li>
         </ul>
     </div>
 </div>
@@ -482,7 +462,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/helm/" class="tag-list-link">helm</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/homebrew/" class="tag-list-link">homebrew</a><span
@@ -550,7 +530,7 @@
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kubernetes/" class="tag-list-link">kubernetes</a><span
-                    class="tag-list-count">11</span></li>
+                    class="tag-list-count">12</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/launchd/" class="tag-list-link">launchd</a><span
@@ -1193,6 +1173,50 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/post/2017/googles-load-balancer/"
+    >Google&#39;s Load Balancer</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        Maglev  Google( https://research.google.com/pubs/pub44824.html ) Used in Google Cloud since 2008 Scalable load balancer  Consistent hashing Connection Tracking Scale-out model backed by router&rsquo;s ECMP   Bypass kernel space for performance. Support connection persistence  Network Architecture  DNS - Routers - Maglevs - Service EndPoints. One service is served by one or more VIPs  DNS returns VIP considering geolocation and load of location   One VIP is served by multiple Maglevs  Router use ECMP to select one Maglev   One VIP is mapped to multiple Service EndPoints  Maglev select Service EndPoint by seletion algorithm and connection tracking table   Maglev use GRE to send incoming packet to Service EndPoint or another Maglev  Send to IP fragment to another special Maglev servers Use only 3-tuple for IP fragment   Each Service EndPoint use Direct Server Return(DSR)  Maglev Controller  Responsible for VIP announcement with BGP Check health status of forwarder If forwarder is not headthy, withdraw all VIP announcements  Forwarder  Each VIP has one or multiple backend pools(BP) BP contain physical IP address of the Service EndPoint Each BP has specific health checking methods - depends on the service requirement(just reachability or more) Config Manager parse and update configuration of forwarder&rsquo;s behavior based on the Config Objects Sharding  Sharding of Maglev enables service isolation - new service or QoS    Backend Selection  Consistent Hashing distribute loads Record selection in LOCAL connection tracking table  Connection tracking table is not shared with another Maglev Does not guarantee consistency on Maglev or Service EndPoint Changes(add/delete)   For different traffic type  TCP SYN : select Backend and record it in connection tracking table TCP non-SYN : lookup connection tracking table 5-tuple : (maybe) lookup connection tracking table and select backend if not found    Consistent Hashing  If Maglev is added or removed, router select different Maglev for the exsiting session - ECMP is changed If one Maglev&rsquo;s local connection tracking table is overflowed, it will lose previous selection To resolve this issues,  Synchronize local connection tracking table between Maglevs -&gt; overhead, overhead, overhead Consistent hashing for minimize disruption in member changes Maglev hashing - load balancing and minimal disruption on member changes    reference  Maglev: A Fast and Reliable Software Network Load Balancer Consistent Hashing The Simple Magic of Consistent Hashing  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/post/2017/googles-load-balancer/" class="">
+  <time datetime="2017-10-01 08:34:30 &#43;0900 KST" itemprop="datePublished">2017-10-01</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/google/"> google </a>
+    <a class="article-tag-link" href="/tags/maglev/"> maglev </a>
+    <a class="article-tag-link" href="/tags/load-balancer/"> load balancer </a>
+    <a class="article-tag-link" href="/tags/lb/"> lb </a>
+    <a class="article-tag-link" href="/tags/http/"> http </a>
+    <a class="article-tag-link" href="/tags/tcp/"> tcp </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2017/googles-load-balancer/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 363words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/post/2017/opnfv-asia-meeting/"
     >OPNFV Asia Meeting</a
   >
@@ -1445,49 +1469,6 @@ Amdoc? Amdocs was initially involved with AT&amp;T’s home-grown ECOMP platform
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 1596words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 4minutes </span>
       </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/post/2017/ngnix-for-service-mesh/"
-    >NGNIX for service mesh</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        NGINX Releases Microservices Platform, OpenShift Ingress Controller, and Service Mesh Preview NGNIX also join for service mesh bandwagon? NGNIX Application Platform NGINX Plus, the commercial variant of the popular open source NGINX web server. NGINX Web Application Firewall (WAF) NGINX Unit, a new open source application server that can run PHP, Python and Go NGINX Controller, a centralised control plane for monitoring and management of NGINX Plus Additional release a
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/post/2017/ngnix-for-service-mesh/" class="">
-  <time datetime="2017-09-15 14:39:11 &#43;0900 KST" itemprop="datePublished">2017-09-15</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/golang/"> golang </a>
-    <a class="article-tag-link" href="/tags/nginx/"> nginx </a>
-    <a class="article-tag-link" href="/tags/service-mesh/"> service mesh </a>
-    <a class="article-tag-link" href="/tags/istio/"> istio </a>
-    <a class="article-tag-link" href="/tags/nginmesh/"> nginmesh </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2017/ngnix-for-service-mesh/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 511words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
-      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -1505,7 +1486,7 @@ Amdoc? Amdocs was initially involved with AT&amp;T’s home-grown ECOMP platform
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:16/34
+      Page:16/35
     </div>
   </div>
 </nav>

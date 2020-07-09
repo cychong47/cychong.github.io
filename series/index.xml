@@ -5,9 +5,19 @@
     <link>https://cychong47.github.io/series/</link>
     <description>Recent content in Series on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/series/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deploy nginx with helm</title>
+      <link>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</link>
+      <pubDate>Thu, 02 Jul 2020 23:58:41 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</guid>
+      <description>cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &amp;quot;/docker-entrypoint.…&amp;quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &amp;quot;/pause&amp;quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&amp;gt;80/tcp podcast 2812c510a5b6 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&amp;gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184  cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &amp;quot;nginx-pv&amp;quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.</description>
+    </item>
     
     <item>
       <title>How to embed video in hugo</title>
@@ -15,7 +25,7 @@
       <pubDate>Sat, 27 Jun 2020 00:24:41 +0900</pubDate>
       
       <guid>https://cychong47.github.io/post/2020/2020-06-27-how-to-support-video/</guid>
-      <description>Hugo에서 video를 지원하려면 shortcode를 사용하면 된다. 아래 shortcode는 mp3, mp4 파일을 지원하는 zen에서 사용하는 shortcode(zen/layouts/shortcodes/video.html) &amp;lt;figure {{ with .Get &amp;quot;class&amp;quot;</description>
+      <description>한줄요약 : Hugo로 만든 blog 에서 video 파일을 지원하려면 shortcode를 활용한다. 아래 shortcode는 mp3, mp4 파일을 지원하는 zen에서 사용하는 shortcode(zen/layouts/shortcodes/video.html)</description>
     </item>
     
     <item>
@@ -47,7 +57,7 @@ docker ps -aqf &amp;quot;name=containername&amp;quot; docker ps -aqf &amp;quot;n
     </item>
     
     <item>
-      <title>Setup Podcast Blog - 자동화</title>
+      <title>Setup podcast blog - 자동화</title>
       <link>https://cychong47.github.io/post/2020/setup-podcast-blog-5/</link>
       <pubDate>Sat, 20 Jun 2020 22:33:02 +0900</pubDate>
       
@@ -85,21 +95,21 @@ docker ps -aqf &amp;quot;name=containername&amp;quot; docker ps -aqf &amp;quot;n
     </item>
     
     <item>
+      <title>Setup podcast blog - post 작성</title>
+      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</link>
+      <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</guid>
+      <description>Podcast post 작성하기 Zen theme 덕분에 mp3 파일을 포함한 blog post를 markdown 파일로 작성하고 site build만 시키면 자동적으로 podcast feed를 만들어 준다. https://git</description>
+    </item>
+    
+    <item>
       <title>Setup podcast blog - Setup Hugo</title>
       <link>https://cychong47.github.io/post/2020/setup-podcast-blog-1/</link>
       <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
       
       <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-1/</guid>
       <description>Install Create Hugo for podcast cychong15:writing_factory cychong$ hugo new site cbs-ost Congratulations! Your new Hugo site is created in /Users/cychong/workspace/writing_factory/cbs-ost. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new</description>
-    </item>
-    
-    <item>
-      <title>Setup podcast hugo 3 - blog post 작성</title>
-      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</link>
-      <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</guid>
-      <description>Podcast post 작성하기 Zen theme 덕분에 mp3 파일을 포함한 blog post를 markdown 파일로 작성하고 site build만 시키면 자동적으로 podcast feed를 만들어 준다. https://git</description>
     </item>
     
     <item>
@@ -192,15 +202,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/2020/if-i-have-authority-5-years-later/</guid>
       <description>내게 권한이 있다면 이런 글을 쓴 적이 있었네. 우연히 ghost 블로그에 이전 글들이 2개씩 존재하는 걸 발견해서 중복된 글을 지우는 과정에서 이런 글을 썼다는 걸 알아냈다. 중</description>
-    </item>
-    
-    <item>
-      <title>새로운 경험 들</title>
-      <link>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</link>
-      <pubDate>Thu, 07 May 2020 14:34:55 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</guid>
-      <description>지난 2016년 난생 처음으로 자발적으로 부서를 옮긴 후에 경험한 것들. 그 전의 십수년간에는 해보지 않은 많은 새로운 경험들을 가질 수 있었다. 주변의 도움 덕에. 특</description>
     </item>
     
   </channel>

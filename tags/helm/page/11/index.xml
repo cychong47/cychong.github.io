@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/helm/</link>
     <description>Recent content in helm on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Nov 2019 14:47:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/helm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 단</title>
+      <link>https://cychong47.github.io/post/2015/dan/</link>
+      <pubDate>Tue, 12 May 2015 12:40:15 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/dan/</guid>
+      <description>&amp;lsquo;&amp;lsquo;단의 공식&amp;rsquo;&amp;rsquo; 버려라 : 중요한 것을 위해 덜 중요한 것을 버리는 것. &amp;lsquo;더 많이&amp;rsquo</description>
+    </item>
     
     <item>
       <title>Designing for Service Agility</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/2014/time-machine-backup/</guid>
       <description>추가 해야 할 내용 MovingCastle에 대한 추가 백업? 혹은 Mini 2011을 이중 백업. Wordpress Blog 내용만 추가로 백업 필요. Ghost Blog 추가 백업</description>
-    </item>
-    
-    <item>
-      <title>(책) 빅데이터 승리의 과학</title>
-      <link>https://cychong47.github.io/post/2014/caeg-bigdeiteo-seungriyi-gwahag/</link>
-      <pubDate>Tue, 09 Sep 2014 03:41:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2014/caeg-bigdeiteo-seungriyi-gwahag/</guid>
-      <description>(책) 빅데이터 승리의 과학 Technology 팀 오바마 2012년 선거 당시 2008년 당시의 SNS를 활용하는 수준을 넘어서 통합적인 선거 지원을 위해 빅데이터 기술 활용. 선거</description>
     </item>
     
   </channel>

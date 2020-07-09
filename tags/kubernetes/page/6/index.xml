@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/tags/kubernetes/</link>
     <description>Recent content in kubernetes on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 Nov 2019 14:58:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Series</title>
+      <link>https://cychong47.github.io/post/2017/streaming-telemetry-with-google-protocol-buffers/</link>
+      <pubDate>Sun, 01 Oct 2017 21:38:04 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/streaming-telemetry-with-google-protocol-buffers/</guid>
+      <description>출처 : https://blogs.cisco.com/sp/streaming-telemetry-with-google-protocol-buffers Summary JSON, &amp;ldquo;compact&amp;rdquo; GPB and &amp;ldquo;Key-Value&amp;rdquo; GPB &amp;ldquo;Compact&amp;rdquo; GPB data on wire can be decoded without the decoder ring while &amp;ldquo;Key-Value&amp;rdquo; GPB data is Self-Describing. Compact GPB can be used with UDP(default) and TCP(optionally) &amp;ldquo;Key-value&amp;rdquo; GPB is only for TCP 833 bytes of compact GPB while more than 4000 bytes for Key-value GPB Compressed JSON(?)</description>
+    </item>
     
     <item>
       <title>CISCO Yang data model</title>
@@ -193,15 +202,6 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/post/2017/how-to-ship-production-grade-go/</guid>
       <description>출처 : O&amp;rsquo;reilly radar 현장에서 발생하는 문제 몇 번 겪어본 사람이면 대부분 동의할 문제긴 한데 structured log 사용이나 application metric 측정 등은 오래 Wrap errors Error handler wrapper function을 이용해서 error code(annotation 포</description>
-    </item>
-    
-    <item>
-      <title>Slack이 기능 중 하나 - 방해금지</title>
-      <link>https://cychong47.github.io/post/2017/slack-do-not-disturb/</link>
-      <pubDate>Sun, 16 Apr 2017 05:51:11 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/slack-do-not-disturb/</guid>
-      <description>Slack에서 제공하는 여러 가지 기능 중 하나로 &amp;ldquo;Do not disturb&amp;quot;가 있다. 아래는 그 기능을 설명한 블로그 글( Slack으로 막일을 줄여요 ~ 막</description>
     </item>
     
   </channel>
