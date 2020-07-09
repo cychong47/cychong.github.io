@@ -4,14 +4,56 @@
   
   <url>
     <loc>https://cychong47.github.io/</loc>
-    <lastmod>2020-07-02T23:58:41+09:00</lastmod>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://cychong47.github.io/categories/</loc>
-    <lastmod>2020-07-02T23:58:41+09:00</lastmod>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/categories/gadget/</loc>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/ipad/</loc>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/</loc>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/sleeve/</loc>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/</loc>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/2020/2020-07-09-ipad-is-not-an-ipad/</loc>
+    <lastmod>2020-07-09T22:59:49+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -32,20 +74,6 @@
   
   <url>
     <loc>https://cychong47.github.io/tags/kubernetes/</loc>
-    <lastmod>2020-07-02T23:58:41+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/</loc>
-    <lastmod>2020-07-02T23:58:41+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/</loc>
     <lastmod>2020-07-02T23:58:41+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -103,13 +131,6 @@
   <url>
     <loc>https://cychong47.github.io/categories/podcast/</loc>
     <lastmod>2020-06-26T22:11:32+09:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/categories/gadget/</loc>
-    <lastmod>2020-06-24T01:11:13+09:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

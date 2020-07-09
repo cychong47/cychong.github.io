@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>매직키보드 단 iPad는 iPad가 아니다</title>
+      <link>https://cychong47.github.io/post/2020/2020-07-09-ipad-is-not-an-ipad/</link>
+      <pubDate>Thu, 09 Jul 2020 22:59:49 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-07-09-ipad-is-not-an-ipad/</guid>
+      <description>iPad 12.9 인치와 매직키보드를 구입해서 가지고 다니는데, 예전에 13인치 맥북프로를 가지고 외출할 때 사용하던 슬리브에 담아서 가지고 다녔다. 어렵사리 슬리브에 넣을</description>
+    </item>
+    
+    <item>
       <title>Deploy nginx with helm</title>
       <link>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</link>
       <pubDate>Thu, 02 Jul 2020 23:58:41 +0900</pubDate>
@@ -192,15 +201,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
       
       <guid>https://cychong47.github.io/post/2020/recover-broken-users-table/</guid>
       <description>말썽쟁이(?) wordpress 블로그가 또 문제를 일으켰다. 이번에도 로그인이 안되는 현상인데 지난 번과는 다른 에러 메시지가 나온다. 즉 지난 번 해결책은 소용이 없을 거라는 불</description>
-    </item>
-    
-    <item>
-      <title>내게 권한이 있다면 - 그 이후</title>
-      <link>https://cychong47.github.io/post/2020/if-i-have-authority-5-years-later/</link>
-      <pubDate>Fri, 08 May 2020 14:03:04 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/if-i-have-authority-5-years-later/</guid>
-      <description>내게 권한이 있다면 이런 글을 쓴 적이 있었네. 우연히 ghost 블로그에 이전 글들이 2개씩 존재하는 걸 발견해서 중복된 글을 지우는 과정에서 이런 글을 썼다는 걸 알아냈다. 중</description>
     </item>
     
   </channel>

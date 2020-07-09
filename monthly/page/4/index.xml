@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>(책) 시스템의 힘</title>
+      <link>https://cychong47.github.io/post/2018/the-work-system/</link>
+      <pubDate>Sun, 29 Jul 2018 21:32:37 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2018/the-work-system/</guid>
+      <description>42 우리는 통제할 수 있는 것에 초점을 맞추되, 통제할 수 없는 것에는 마음을 편히 먹어야 한다. 44 이제는 불평도 하지 않고, 남을 탓하지도 않을거야. 내 앞에 놓인 세상을</description>
+    </item>
+    
+    <item>
       <title>(책) 지금 꿈꾸라, 사랑하라, 행복하라</title>
       <link>https://cychong47.github.io/post/2018/just-now-dream-love-be-happy/</link>
       <pubDate>Sun, 29 Jul 2018 21:31:08 +0900</pubDate>
@@ -180,15 +189,6 @@ Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY S
       
       <guid>https://cychong47.github.io/post/2018/install_elasticstack_and_metricbeat/</guid>
       <description>Install Elastic Stack(ELK stack) with docker mbpr15:elk-wireshark cychong$ git clonehttps://github.com/deviantony/docker-elk.git git: &#39;clonehttps://github.com/deviantony/docker-elk.git&#39; is not a git command. See &#39;git --help&#39;. mbpr15:elk-wireshark cychong$ git clone https://github.com/deviantony/docker-elk.git Cloning into &#39;docker-elk&#39;... remote: Counting objects: 1235, done. remote: Total 1235 (delta 0), reused 0 (delta 0), pack-reused 1235 Receiving objects: 100% (1235/1235), 259.29 KiB | 77.00 KiB/s, done. Resolving deltas: 100% (470/470), done. mbpr15:elk-wireshark cychong$ cd elk mbpr15:elk-wireshark cychong$ cd docker-elk/ mbpr15:docker-elk cychong$ ls</description>
-    </item>
-    
-    <item>
-      <title>2018.01 home network</title>
-      <link>https://cychong47.github.io/post/2018/2018-01-home-network/</link>
-      <pubDate>Tue, 30 Jan 2018 15:44:01 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/2018-01-home-network/</guid>
-      <description></description>
     </item>
     
   </channel>

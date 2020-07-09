@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/gadget/</link>
     <description>Recent content in Gadget on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 01:11:13 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 22:59:49 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/gadget/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes Networks</title>
+      <link>https://cychong47.github.io/post/2019/kubernetes-networks/</link>
+      <pubDate>Thu, 16 May 2019 14:07:53 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2019/kubernetes-networks/</guid>
+      <description>Kubernetes Networks in google docs 이거 보면 IPv6를 사용해야 하는 경우 선택할 수 있는 CNI는 Calico, Cillium, Contiv, Tungsten Fabric 정도로 좁혀지네</description>
+    </item>
     
     <item>
       <title>(펌글) 아마존 3년 출근기</title>
@@ -183,15 +192,6 @@ http://enterprisemediawiki.github.io/slides/MeetingMinutes/#/</description>
       
       <guid>https://cychong47.github.io/post/2018/the-future-of-my-children/</guid>
       <description>30 생산성의 증가가 오히려 일자리를 필요없게 만든다. 사람의 노동력을 대체할 것들이 등장하기 때문이다. 31 지나친 생산성은 고용의 안정성을 해지며, 높아진 생산성</description>
-    </item>
-    
-    <item>
-      <title>(책) 시스템의 힘</title>
-      <link>https://cychong47.github.io/post/2018/the-work-system/</link>
-      <pubDate>Sun, 29 Jul 2018 21:32:37 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/the-work-system/</guid>
-      <description>42 우리는 통제할 수 있는 것에 초점을 맞추되, 통제할 수 없는 것에는 마음을 편히 먹어야 한다. 44 이제는 불평도 하지 않고, 남을 탓하지도 않을거야. 내 앞에 놓인 세상을</description>
     </item>
     
   </channel>

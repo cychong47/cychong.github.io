@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/post/</link>
     <description>Recent content in Posts on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 22:59:49 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(Series</title>
+      <link>https://cychong47.github.io/post/2017/cisco-ios-xr-and-signalfx-demo/</link>
+      <pubDate>Tue, 03 Oct 2017 13:47:55 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2017/cisco-ios-xr-and-signalfx-demo/</guid>
+      <description>출처 : sdxcentral, Feb 5, 2016 tools presented in the video reference video ppt</description>
+    </item>
     
     <item>
       <title>(Series</title>
@@ -193,15 +202,6 @@ Amdoc? Amdocs was initially involved with AT&amp;amp;T’s home-grown ECOMP plat
       
       <guid>https://cychong47.github.io/post/2017/naver-labs-12-commandments/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>(요약) How to ship production-grade Go</title>
-      <link>https://cychong47.github.io/post/2017/how-to-ship-production-grade-go/</link>
-      <pubDate>Thu, 04 May 2017 12:24:27 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/how-to-ship-production-grade-go/</guid>
-      <description>출처 : O&amp;rsquo;reilly radar 현장에서 발생하는 문제 몇 번 겪어본 사람이면 대부분 동의할 문제긴 한데 structured log 사용이나 application metric 측정 등은 오래 Wrap errors Error handler wrapper function을 이용해서 error code(annotation 포</description>
     </item>
     
   </channel>

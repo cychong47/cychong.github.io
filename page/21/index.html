@@ -34,7 +34,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://cychong47.github.io/" />
-<meta property="og:updated_time" content="2020-07-02T23:58:41+09:00" />
+<meta property="og:updated_time" content="2020-07-09T22:59:49+09:00" />
 <meta itemprop="name" content="Another blog">
 <meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Another blog"/>
@@ -135,7 +135,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/gadget/" class="category-list-link">gadget</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://cychong47.github.io/categories/gadget/" class="category-list-link">gadget</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
             <li class="category-list-item"><a href="https://cychong47.github.io/categories/podcast/" class="category-list-link">podcast</a><span class="category-list-count">1</span></li>
@@ -487,6 +487,10 @@
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/intel/" class="tag-list-link">intel</a><span
                     class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipad/" class="tag-list-link">ipad</a><span
+                    class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipsec/" class="tag-list-link">ipsec</a><span
@@ -877,6 +881,10 @@
                     class="tag-list-count">3</span></li>
             
             
+            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sleeve/" class="tag-list-link">sleeve</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
             <li class="tag-list-item"><a href="https://cychong47.github.io/tags/snmp/" class="tag-list-link">snmp</a><span
                     class="tag-list-count">1</span></li>
             
@@ -1173,6 +1181,46 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/post/2016/header-length-in-mbuf/"
+    >DPDK new mbuf 사용 주의사항</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        l2_len, l3_len, l4_len 등을 사용하는 라이브러리가 존재함 reassembly Tx checksum offload Reassembly rte_ipv6_frag_reassemble_packet(), rte_ipv4_frag_reassemble_packet() Incoming mbuf should have its l2_len and l3_len fields setup correctly. L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to fill l2_len and l3_len in mbuf set the flags PKT_TX_TCP_CKSUM, PKT_TX_SCTP_CKSUM or PKT_TX_UDP_CKSUM set the flag PKT_TX_IPV4 or PKT_TX_IPV6 calculate
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://cychong47.github.io/post/2016/header-length-in-mbuf/" class="">
+  <time datetime="2016-03-06 08:22:24 &#43;0900 KST" itemprop="datePublished">2016-03-06</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/til/"> TIL </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/dpdk/"> DPDK </a>
+    <a class="article-tag-link" href="/tags/mbuf/"> mbuf </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2016/header-length-in-mbuf/#comments" class="article-comment-link">Comments</a></span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 286words</span>
+		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 1minutes </span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/post/2016/how_kni_free_mbuf/"
     >KNI가 buffer를 free 하는 방법</a
   >
@@ -1398,47 +1446,6 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2016/fd-io-tree/#comments" class="article-comment-link">Comments</a></span>
 		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 350words</span>
-		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/post/2016/fd-io/"
-    >fd.io</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        2016년 2월 11일 공개된 CISCO 주도의 프로젝트. 무려 2002년부터 개발한 것으로 현재 버전은 3번째 revision이라고 한다. 간만에 dpdk.org mailing list에 들
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://cychong47.github.io/post/2016/fd-io/" class="">
-  <time datetime="2016-02-13 01:29:43 &#43;0900 KST" itemprop="datePublished">2016-02-13</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/til/"> TIL </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/dpdk/"> DPDK </a>
-    <a class="article-tag-link" href="/tags/intel/"> Intel </a>
-    <a class="article-tag-link" href="/tags/cisco/"> cisco </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/post/2016/fd-io/#comments" class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 856words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Count: 2minutes </span>
       </p>
     </article></div>

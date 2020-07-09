@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/gadget/</link>
     <description>Recent content in Gadget on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 01:11:13 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 22:59:49 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/gadget/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018.01 home network</title>
+      <link>https://cychong47.github.io/post/2018/2018-01-home-network/</link>
+      <pubDate>Tue, 30 Jan 2018 15:44:01 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2018/2018-01-home-network/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ansible - Install homebrew</title>
@@ -186,15 +195,6 @@ Others 7 Free WordPress Video Player Plugins of 2017</description>
       <description>https://www.youtube.com/watch?v=tIN8BjHwpNs
 Other similar videos Architecture for fine-grain, high-resolution Telemetry for network elements. Jun 4 2015, Juniper Networks, Presented in NANOG
 Visualizing Cisco Telemetry Data using Elasticsearch, Logstash and Kibana</description>
-    </item>
-    
-    <item>
-      <title>(Series</title>
-      <link>https://cychong47.github.io/post/2017/cisco-ios-xr-and-signalfx-demo/</link>
-      <pubDate>Tue, 03 Oct 2017 13:47:55 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/cisco-ios-xr-and-signalfx-demo/</guid>
-      <description>출처 : sdxcentral, Feb 5, 2016 tools presented in the video reference video ppt</description>
     </item>
     
   </channel>

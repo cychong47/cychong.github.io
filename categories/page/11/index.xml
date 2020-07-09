@@ -5,10 +5,19 @@
     <link>https://cychong47.github.io/categories/</link>
     <description>Recent content in Categories on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Jul 2020 23:58:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 22:59:49 +0900</lastBuildDate>
     
         <atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(책) 죽어라 일만 하는 사람은 절대 모르는 스마트한 성공들</title>
+      <link>https://cychong47.github.io/post/2015/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</link>
+      <pubDate>Mon, 18 May 2015 14:30:24 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2015/caeg-jugeora-ilman-haneun-sarameun-jeoldae-moreuneun-seumateuhan-seonggongdeul/</guid>
+      <description>p13 나는 사업을 하면서 수시로 수확체감의 법칙을 실감한다. 어떤 사업이든 일정 수준에 도달하면 노동이나 자본 등 생산 요소를 늘려도 결과물은 비례해서 증가하지 않는다</description>
+    </item>
     
     <item>
       <title>(책) 단</title>
@@ -179,15 +188,6 @@
       
       <guid>https://cychong47.github.io/post/2014/peom-meorisog-jeongribeob-10gaji/</guid>
       <description>휴식을 취하라 다양한 활동에 대해 각각의 컴퓨터 모니터를 설치하라. 종이로 된 할 일 목록을 사용하라 한 이메일을 복수의 카테고리로 분류하라. 필요할 때는 통째로 없애</description>
-    </item>
-    
-    <item>
-      <title>Time Machine backup</title>
-      <link>https://cychong47.github.io/post/2014/time-machine-backup/</link>
-      <pubDate>Wed, 10 Sep 2014 13:40:43 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2014/time-machine-backup/</guid>
-      <description>추가 해야 할 내용 MovingCastle에 대한 추가 백업? 혹은 Mini 2011을 이중 백업. Wordpress Blog 내용만 추가로 백업 필요. Ghost Blog 추가 백업</description>
     </item>
     
   </channel>
