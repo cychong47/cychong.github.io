@@ -1,1547 +1,418 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>
-        Another blog</title>
-        <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="format-detection" content="telephone=no,email=no,adress=no">
-    
-    <meta name="theme-color" content="#000000" />
-    
-    <meta http-equiv="window-target" content="_top" />
-    
-    
-    
-    <meta name="generator" content="Hugo 0.71.1 with theme pure" />
-    <title>Another blog</title>
-    
-    <link rel="alternate" type="application/rss+xml" href="https://cychong47.github.io/tags/protocol-buffer/index.xml" title="Another blog" />
-    
-    <link rel="stylesheet" href="https://cychong47.github.io/css/style.min.7dc20efbc53647d41aa9ddea0c48e59300223d084e66ea0cbe7c30bd88903acc.css">
-    
-    <link rel="stylesheet" href="https://cychong47.github.io/css/custom.css" async>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="protocol buffer" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://cychong47.github.io/tags/protocol-buffer/" />
-<meta property="og:updated_time" content="2018-04-01T02:38:51+00:00" />
-<meta itemprop="name" content="protocol buffer">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="protocol buffer"/>
-<meta name="twitter:description" content=""/>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>protocol buffer - Another blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="alternate" type="application/rss+xml" href="/tags/protocol-buffer/index.xml" title="Another blog">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo">
+		<a class="logo__link" href="/" title="Another blog" rel="home">
+			<div class="logo__item logo__text">
+					<div class="logo__title">Another blog</div>
+					<div class="logo__tagline">Just another site</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/page">
+				
+				<span class="menu__text">Page</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post">
+				
+				<span class="menu__text">Post</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/series">
+				
+				<span class="menu__text">Series</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
 
-    <!--[if lte IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-      <![endif]-->
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main list" role="main">
+	<header class="main__header">
+		<h1 class="main__title">protocol buffer</h1>
+	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2017/streaming-telemetry-with-google-protocol-buffers/" rel="bookmark">
+			(Series
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-01T21:38:04&#43;09:00">October 01, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		출처 : https://blogs.cisco.com/sp/streaming-telemetry-with-google-protocol-buffers
+Summary JSON, &ldquo;compact&rdquo; GPB and &ldquo;Key-Value&rdquo; GPB
+ &ldquo;Compact&rdquo; GPB data on wire can be decoded without the decoder ring while &ldquo;Key-Value&rdquo; GPB data is Self-Describing. Compact GPB can be used with UDP(default) and TCP(optionally) &ldquo;Key-value&rdquo; GPB is only for TCP 833 bytes of compact GPB while more than 4000 bytes for Key-value GPB Compressed JSON(?)  
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2017/model-driven-telemetry/" rel="bookmark">
+			(Series
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-01T14:06:46&#43;09:00">October 01, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Why You Should Care About Model-Driven Telemetry from CISCO blog
+Summary  Periodic polling -&gt; Pushing(Streaming) Model based data with YANG Use standard encoding such as JSON, Google Protocol Buffers Easy to manipulate, connect to analytic solutions  1-min poll is too slow  For the last 25 years, network operators have heavily relied on SNMP polling and CLI screen-scraping to extract operational data from the network. But the new and automated demands of today’s networks have pushed these mechanisms to the breaking point.
+	</div>
+</article>
+</main>
 
-    <!--[if lt IE 9]>
-        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-      <![endif]-->
-  </head>
 
-  
-  
-
-  <body class="main-center theme-black" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
-    <div class="slimContent">
-      <div class="navbar-header"><div class="search" id="search-form-wrap">
-    <form class="search-form sidebar-form">
-        <div class="input-group">
-            <input type="text" class="search-form-input form-control" placeholder="Search" />
-            <span class="input-group-btn">
-                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
-                        class="icon icon-search"></i></button>
-            </span>
-        </div>
-        <div class="ins-search">
-            <div class="ins-search-mask"></div>
-            <div class="ins-search-container">
-                <div class="ins-input-wrapper">
-                    <input type="text" class="ins-search-input" placeholder="Type something..."
-                        x-webkit-speech />
-                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
-                        aria-label="Close"><span aria-hidden="true">×</span></button>
-                </div>
-                <div class="ins-section-wrapper">
-                    <div class="ins-section-container"></div>
-                </div>
-            </div>
-        </div>
-    </form>
+			</div>
+			
+<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://cychong47.github.io/" />
+	</form>
 </div>
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-        <ul class="nav navbar-nav main-nav">
-            <li class="menu-item menu-item-home">
-                <a href="/">
-                    <i class="icon icon-home-fill"></i>
-                  <span class="menu-title">Home</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-categories">
-                <a href="/categories/">
-                    <i class="icon icon-folder"></i>
-                  <span class="menu-title">Categories</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-tags">
-                <a href="/tags/">
-                    <i class="icon icon-tags"></i>
-                  <span class="menu-title">Tags</span>
-                </a>
-            </li>
-            <li class="menu-item menu-item-series">
-                <a href="/series/">
-                  <span class="menu-title">Series</span>
-                </a>
-            </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
-  <div class="slimContent">
-    
-      <div class="widget">
-    <h3 class="widget-title">Board</h3>
-    <div class="widget-body">
-        <div id="board">
-            <div class="content"><p>enjoy~</p>
-            </div>
-        </div>
-    </div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/book/">Book</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/gadget/">Gadget</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/hugo/">Hugo</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/note/">Note</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/podcast/">podcast</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/til/">TIL</a>
+			</li>
+		</ul>
+	</div>
 </div>
-
-      <div class="widget">
-    <h3 class="widget-title"> Categories</h3>
-    <div class="widget-body">
-        <ul class="category-list">
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/book/" class="category-list-link">book</a><span class="category-list-count">47</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/gadget/" class="category-list-link">gadget</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/hugo/" class="category-list-link">hugo</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/podcast/" class="category-list-link">podcast</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://cychong47.github.io/categories/til/" class="category-list-link">til</a><span class="category-list-count">182</span></li>
-        </ul>
-    </div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/2015/" title="2015">2015 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/5g/" title="5g">5g (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/agile/" title="agile">agile (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/aic/" title="aic">aic (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/algorithm/" title="Algorithm">Algorithm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/amazon/" title="amazon">amazon (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/amdocs/" title="amdocs">amdocs (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/amsterdam-release/" title="Amsterdam release">Amsterdam release (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/andromeda/" title="andromeda">andromeda (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ansible/" title="ansible">ansible (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="blog">blog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/book/" title="Book">Book (47)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brew/" title="brew">brew (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/brocade/" title="Brocade">Brocade (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/c/" title="C">C (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/calico/" title="calico">calico (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cavium/" title="Cavium">Cavium (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cisco/" title="cisco">cisco (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/click/" title="click">click (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cncf/" title="cncf">cncf (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cni/" title="cni">cni (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/coding-style/" title="Coding Style">Coding Style (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/collaboration/" title="collaboration">collaboration (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/collectd/" title="collectd">collectd (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/connectx-5/" title="connectX-5">connectX-5 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/container/" title="container">container (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cuphy/" title="cuphy">cuphy (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cuvnf/" title="cuvnf">cuvnf (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/database/" title="database">database (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/debugging/" title="debugging">debugging (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/dev-culture/" title="dev culture">dev culture (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/devnothink/" title="devnothink">devnothink (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker-compose/" title="docker-compose">docker-compose (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/dpdk/" title="DPDK">DPDK (22)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/dpi/" title="dpi">dpi (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/dpkt/" title="dpkt">dpkt (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/edge/" title="edge">edge (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/elasticsearch/" title="elasticsearch">elasticsearch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/elk/" title="elk">elk (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/english/" title="english">english (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/espresso/" title="espresso">espresso (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fapi/" title="fapi">fapi (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feature-flag-driven-development/" title="feature flag driven development">feature flag driven development (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/feedback/" title="feedback">feedback (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ffmpeg/" title="ffmpeg">ffmpeg (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/finder/" title="finder">finder (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/flask/" title="Flask">Flask (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/fragment/" title="fragment">fragment (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ftp/" title="ftp">ftp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/getting-started/" title="Getting Started">Getting Started (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ghost-theme/" title="ghost-theme">ghost-theme (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/go/" title="go">go (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/golang/" title="golang">golang (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/google/" title="google">google (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/gpb/" title="gpb">gpb (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/gpu/" title="gpu">gpu (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/grafana/" title="grafana">grafana (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/grpc/" title="grpc">grpc (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/happy-hacking/" title="happy-hacking">happy-hacking (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hbr/" title="HBR">HBR (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ipv4/" title="ipv4">ipv4 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/istio/" title="istio">istio (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/jetpack/" title="jetpack">jetpack (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/json/" title="json">json (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/jtbc/" title="jtbc">jtbc (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/jupiter/" title="jupiter">jupiter (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lifehack/" title="lifehack">lifehack (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="linux">linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/load-balancer/" title="load balancer">load balancer (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/lte/" title="lte">lte (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mac/" title="mac">mac (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mac-mini-2009/" title="Mac mini 2009">Mac mini 2009 (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/maglev/" title="maglev">maglev (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/manager/" title="manager">manager (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/markdown/" title="markdown">markdown (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mbuf/" title="mbuf">mbuf (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mec/" title="mec">mec (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mediawiki/" title="mediawiki">mediawiki (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/meetup/" title="meetup">meetup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/message-queue/" title="message queue">message queue (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/metricbeat/" title="metricbeat">metricbeat (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/microk8s/" title="microk8s">microk8s (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/microservice/" title="microservice">microservice (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mindmap/" title="mindmap">mindmap (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/model-driven/" title="model-driven">model-driven (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/monitoring/" title="monitoring">monitoring (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/multipass/" title="multipass">multipass (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/mysql/" title="mysql">mysql (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/naim/" title="Naim">Naim (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nas/" title="nas">nas (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nasa/" title="nasa">nasa (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nec/" title="NEC">NEC (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nested-chart/" title="nested-chart">nested-chart (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/netconf/" title="netconf">netconf (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/network/" title="network">network (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/neuron/" title="neuron">neuron (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nfv/" title="nfv">nfv (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nginmesh/" title="nginmesh">nginmesh (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nginx/" title="nginx">nginx (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nhn/" title="NHN">NHN (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nic/" title="NIC">NIC (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nokia/" title="Nokia">Nokia (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/nvidia/" title="nvidia">nvidia (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/odp/" title="odp">odp (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ofp/" title="OFP">OFP (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/onap/" title="onap">onap (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/onp/" title="ONP">ONP (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/openfastpath/" title="OpenFastPath">OpenFastPath (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/opensource/" title="opensource">opensource (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/openstack/" title="openstack">openstack (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/opnfv/" title="opnfv">opnfv (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/osx/" title="osx">osx (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ovdk/" title="OVDK">OVDK (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ovs/" title="OVS">OVS (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/p4/" title="p4">p4 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/patch/" title="patch">patch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/perl/" title="perl">perl (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/prometheus/" title="prometheus">prometheus (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/protobufs/" title="protobufs">protobufs (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/protocol-buffer/" title="protocol buffer">protocol buffer (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/pyftplib/" title="pyftplib">pyftplib (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/python/" title="Python">Python (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/qat/" title="QAT">QAT (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/quality/" title="Quality">Quality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/quanta/" title="Quanta">Quanta (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/quicklook/" title="quicklook">quicklook (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/r210/" title="R210">R210 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/reassembly/" title="reassembly">reassembly (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/recovery/" title="recovery">recovery (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/resources/" title="resources">resources (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/restful/" title="RESTful">RESTful (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rmda/" title="RMDA">RMDA (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scapy/" title="scapy">scapy (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sci/" title="sci">sci (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/scrum/" title="scrum">scrum (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sctp/" title="sctp">sctp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sdn/" title="SDN">SDN (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/service-agility/" title="Service Agility">Service Agility (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/service-mesh/" title="service mesh">service mesh (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/setup/" title="setup">setup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/slack/" title="slack">slack (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sleeve/" title="sleeve">sleeve (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/snmp/" title="snmp">snmp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/soft-skill/" title="soft-skill">soft-skill (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sqlite/" title="sqlite">sqlite (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sriov/" title="SRIOV">SRIOV (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/startup/" title="startup">startup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="storage">storage (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/study/" title="study">study (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/subchart/" title="subchart">subchart (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sw-quality/" title="SW Quality">SW Quality (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/" title="SW 개발 문화">SW 개발 문화 (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/swarm/" title="swarm">swarm (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/synology/" title="synology">synology (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tag/" title="tag">tag (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tcp/" title="tcp">tcp (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/team/" title="team">team (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/telemetry/" title="telemetry">telemetry (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/the-pragmatic-programmer/" title="The Pragmatic Programmer">The Pragmatic Programmer (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/theme/" title="theme">theme (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/til/" title="til">til (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/time-machine/" title="Time Machine">Time Machine (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/track-pad/" title="track-pad">track-pad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/troubleshooting/" title="troubleshooting">troubleshooting (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ves/" title="ves">ves (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/video/" title="video">video (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/virtualbox/" title="Virtualbox">Virtualbox (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/virtualenv/" title="virtualenv">virtualenv (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/virtualization/" title="virtualization">virtualization (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vmware/" title="Vmware">Vmware (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vnf/" title="VNF">VNF (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vran/" title="vran">vran (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vrouter/" title="vRouter">vRouter (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vswitch/" title="vSwitch">vSwitch (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/web-scrapping/" title="web-scrapping">web-scrapping (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/webdav/" title="webdav">webdav (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wiki/" title="wiki">wiki (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/windows10/" title="windows10">windows10 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/wordpress/" title="wordpress">wordpress (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/work_rules/" title="work_rules">work_rules (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/writing/" title="writing">writing (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/xcrun/" title="xcrun">xcrun (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/yang/" title="yang">yang (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/" title="개발이야기">개발이야기 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EA%B2%BD%EC%9F%81/" title="경쟁">경쟁 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EA%B3%B5%EB%B6%80/" title="공부">공부 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EA%B3%B5%EC%9C%A0/" title="공유">공유 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/" title="관리능력">관리능력 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EA%B8%B0%EB%A1%9D/" title="기록">기록 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EB%85%BC%EB%AC%B8/" title="논문">논문 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EB%A6%AC%EB%8D%94/" title="리더">리더 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/" title="매너리즘">매너리즘 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EB%AC%B8%ED%99%94/" title="문화">문화 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/" title="사람이 핵심">사람이 핵심 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%83%9D%EA%B0%81/" title="생각">생각 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%83%9D%EC%82%B0%EC%84%B1/" title="생산성">생산성 (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/" title="윤식당">윤식당 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B8%EC%9A%A9/" title="인용">인용 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/" title="임백준">임백준 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/" title="잡생각">잡생각 (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/" title="조직관리">조직관리 (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/" title="조직문화">조직문화 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/" title="좋은글">좋은글 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/" title="착각하는 CEO">착각하는 CEO (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/" title="코드리뷰">코드리뷰 (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%ED%9A%8C%EC%9D%98/" title="회의">회의 (2)</a>
+	</div>
 </div>
-      <div class="widget">
-    <h3 class="widget-title"> Tags</h3>
-    <div class="widget-body">
-        <ul class="tag-list">
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/2015/" class="tag-list-link">2015</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/5g/" class="tag-list-link">5g</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/agile/" class="tag-list-link">agile</a><span
-                    class="tag-list-count">6</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/aic/" class="tag-list-link">aic</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/algorithm/" class="tag-list-link">algorithm</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/amazon/" class="tag-list-link">amazon</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/amdocs/" class="tag-list-link">amdocs</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/amsterdam-release/" class="tag-list-link">amsterdam-release</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/andromeda/" class="tag-list-link">andromeda</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ansible/" class="tag-list-link">ansible</a><span
-                    class="tag-list-count">7</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ansible-playbook/" class="tag-list-link">ansible-playbook</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/anti-work-pattern/" class="tag-list-link">anti-work-pattern</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/att/" class="tag-list-link">att</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/automation/" class="tag-list-link">automation</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/b4/" class="tag-list-link">b4</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/backup/" class="tag-list-link">backup</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/barometer/" class="tag-list-link">barometer</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/blog/" class="tag-list-link">blog</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/book/" class="tag-list-link">book</a><span
-                    class="tag-list-count">47</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/brew/" class="tag-list-link">brew</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/brocade/" class="tag-list-link">brocade</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/c/" class="tag-list-link">c</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/calico/" class="tag-list-link">calico</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cavium/" class="tag-list-link">cavium</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cisco/" class="tag-list-link">cisco</a><span
-                    class="tag-list-count">7</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/click/" class="tag-list-link">click</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cncf/" class="tag-list-link">cncf</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cni/" class="tag-list-link">cni</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/coding-style/" class="tag-list-link">coding-style</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/collaboration/" class="tag-list-link">collaboration</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/collectd/" class="tag-list-link">collectd</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/connectx-5/" class="tag-list-link">connectx-5</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/container/" class="tag-list-link">container</a><span
-                    class="tag-list-count">10</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/continuous-deployment/" class="tag-list-link">continuous-deployment</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cpu/" class="tag-list-link">cpu</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cran/" class="tag-list-link">cran</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cron/" class="tag-list-link">cron</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/crond/" class="tag-list-link">crond</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cubb/" class="tag-list-link">cubb</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/culture/" class="tag-list-link">culture</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cuphy/" class="tag-list-link">cuphy</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/cuvnf/" class="tag-list-link">cuvnf</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/database/" class="tag-list-link">database</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/debugging/" class="tag-list-link">debugging</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dev-culture/" class="tag-list-link">dev-culture</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/devnothink/" class="tag-list-link">devnothink</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/docker/" class="tag-list-link">docker</a><span
-                    class="tag-list-count">12</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/docker-compose/" class="tag-list-link">docker-compose</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dpdk/" class="tag-list-link">dpdk</a><span
-                    class="tag-list-count">22</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dpi/" class="tag-list-link">dpi</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/dpkt/" class="tag-list-link">dpkt</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/edge/" class="tag-list-link">edge</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/elasticsearch/" class="tag-list-link">elasticsearch</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/elk/" class="tag-list-link">elk</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/english/" class="tag-list-link">english</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/espresso/" class="tag-list-link">espresso</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/fapi/" class="tag-list-link">fapi</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/feature-flag-driven-development/" class="tag-list-link">feature-flag-driven-development</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/feedback/" class="tag-list-link">feedback</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ffmpeg/" class="tag-list-link">ffmpeg</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/finder/" class="tag-list-link">finder</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/flask/" class="tag-list-link">flask</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/fragment/" class="tag-list-link">fragment</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ftp/" class="tag-list-link">ftp</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/getting-started/" class="tag-list-link">getting-started</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost/" class="tag-list-link">ghost</a><span
-                    class="tag-list-count">10</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ghost-theme/" class="tag-list-link">ghost-theme</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/git/" class="tag-list-link">git</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/github/" class="tag-list-link">github</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/go/" class="tag-list-link">go</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/golang/" class="tag-list-link">golang</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/google/" class="tag-list-link">google</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/gpb/" class="tag-list-link">gpb</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/gpu/" class="tag-list-link">gpu</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/grafana/" class="tag-list-link">grafana</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/grpc/" class="tag-list-link">grpc</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/happy-hacking/" class="tag-list-link">happy-hacking</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hbr/" class="tag-list-link">hbr</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/helm/" class="tag-list-link">helm</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/homebrew/" class="tag-list-link">homebrew</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/http/" class="tag-list-link">http</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/hugo/" class="tag-list-link">hugo</a><span
-                    class="tag-list-count">9</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/influxdb/" class="tag-list-link">influxdb</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/inspiration/" class="tag-list-link">inspiration</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/intel/" class="tag-list-link">intel</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipad/" class="tag-list-link">ipad</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipsec/" class="tag-list-link">ipsec</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ipv4/" class="tag-list-link">ipv4</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/istio/" class="tag-list-link">istio</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/jetpack/" class="tag-list-link">jetpack</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/json/" class="tag-list-link">json</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/jtbc/" class="tag-list-link">jtbc</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/jupiter/" class="tag-list-link">jupiter</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kafka/" class="tag-list-link">kafka</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kni/" class="tag-list-link">kni</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kubelet/" class="tag-list-link">kubelet</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/kubernetes/" class="tag-list-link">kubernetes</a><span
-                    class="tag-list-count">12</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/launchd/" class="tag-list-link">launchd</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/lb/" class="tag-list-link">lb</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/life/" class="tag-list-link">life</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/lifehack/" class="tag-list-link">lifehack</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/linux/" class="tag-list-link">linux</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/load-balancer/" class="tag-list-link">load-balancer</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/lte/" class="tag-list-link">lte</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mac/" class="tag-list-link">mac</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mac-mini-2009/" class="tag-list-link">mac-mini-2009</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/maglev/" class="tag-list-link">maglev</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/manager/" class="tag-list-link">manager</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/markdown/" class="tag-list-link">markdown</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mbuf/" class="tag-list-link">mbuf</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mec/" class="tag-list-link">mec</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mediawiki/" class="tag-list-link">mediawiki</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/meetup/" class="tag-list-link">meetup</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/message-queue/" class="tag-list-link">message-queue</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/metricbeat/" class="tag-list-link">metricbeat</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/microk8s/" class="tag-list-link">microk8s</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/microservice/" class="tag-list-link">microservice</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mindmap/" class="tag-list-link">mindmap</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/model-driven/" class="tag-list-link">model-driven</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/monitoring/" class="tag-list-link">monitoring</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/multipass/" class="tag-list-link">multipass</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/mysql/" class="tag-list-link">mysql</a><span
-                    class="tag-list-count">5</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/naim/" class="tag-list-link">naim</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nas/" class="tag-list-link">nas</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nasa/" class="tag-list-link">nasa</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nec/" class="tag-list-link">nec</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nested-chart/" class="tag-list-link">nested-chart</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/netconf/" class="tag-list-link">netconf</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/network/" class="tag-list-link">network</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/neuron/" class="tag-list-link">neuron</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nfv/" class="tag-list-link">nfv</a><span
-                    class="tag-list-count">9</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nginmesh/" class="tag-list-link">nginmesh</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nginx/" class="tag-list-link">nginx</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nhn/" class="tag-list-link">nhn</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nic/" class="tag-list-link">nic</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nokia/" class="tag-list-link">nokia</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/nvidia/" class="tag-list-link">nvidia</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/odp/" class="tag-list-link">odp</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ofp/" class="tag-list-link">ofp</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/onap/" class="tag-list-link">onap</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/onp/" class="tag-list-link">onp</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/openfastpath/" class="tag-list-link">openfastpath</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/opensource/" class="tag-list-link">opensource</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/openstack/" class="tag-list-link">openstack</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/opnfv/" class="tag-list-link">opnfv</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/osx/" class="tag-list-link">osx</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ovdk/" class="tag-list-link">ovdk</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ovs/" class="tag-list-link">ovs</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/p4/" class="tag-list-link">p4</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/patch/" class="tag-list-link">patch</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/perl/" class="tag-list-link">perl</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/photo/" class="tag-list-link">photo</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pinpoint/" class="tag-list-link">pinpoint</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/plist/" class="tag-list-link">plist</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pluribus/" class="tag-list-link">pluribus</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/podcast/" class="tag-list-link">podcast</a><span
-                    class="tag-list-count">5</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/powermate/" class="tag-list-link">powermate</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/prediction/" class="tag-list-link">prediction</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/programming/" class="tag-list-link">programming</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/prometheus/" class="tag-list-link">prometheus</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/protobufs/" class="tag-list-link">protobufs</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/protocol-buffer/" class="tag-list-link">protocol-buffer</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/pyftplib/" class="tag-list-link">pyftplib</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/python/" class="tag-list-link">python</a><span
-                    class="tag-list-count">12</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/qat/" class="tag-list-link">qat</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/quality/" class="tag-list-link">quality</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/quanta/" class="tag-list-link">quanta</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/quicklook/" class="tag-list-link">quicklook</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/r210/" class="tag-list-link">r210</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/reassembly/" class="tag-list-link">reassembly</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/recovery/" class="tag-list-link">recovery</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/resources/" class="tag-list-link">resources</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/restful/" class="tag-list-link">restful</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/rmda/" class="tag-list-link">rmda</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/scapy/" class="tag-list-link">scapy</a><span
-                    class="tag-list-count">5</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sci/" class="tag-list-link">sci</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/scrum/" class="tag-list-link">scrum</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sctp/" class="tag-list-link">sctp</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sdn/" class="tag-list-link">sdn</a><span
-                    class="tag-list-count">5</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/service-agility/" class="tag-list-link">service-agility</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/service-mesh/" class="tag-list-link">service-mesh</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/setup/" class="tag-list-link">setup</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/slack/" class="tag-list-link">slack</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sleeve/" class="tag-list-link">sleeve</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/snmp/" class="tag-list-link">snmp</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/soft-skill/" class="tag-list-link">soft-skill</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sqlite/" class="tag-list-link">sqlite</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sriov/" class="tag-list-link">sriov</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/startup/" class="tag-list-link">startup</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/storage/" class="tag-list-link">storage</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/study/" class="tag-list-link">study</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/subchart/" class="tag-list-link">subchart</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sw-quality/" class="tag-list-link">sw-quality</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/" class="tag-list-link">sw-개발-문화</a><span
-                    class="tag-list-count">9</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/swarm/" class="tag-list-link">swarm</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/synology/" class="tag-list-link">synology</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/tag/" class="tag-list-link">tag</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/tcp/" class="tag-list-link">tcp</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/team/" class="tag-list-link">team</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/telemetry/" class="tag-list-link">telemetry</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/the-pragmatic-programmer/" class="tag-list-link">the-pragmatic-programmer</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/theme/" class="tag-list-link">theme</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/til/" class="tag-list-link">til</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/time-machine/" class="tag-list-link">time-machine</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/track-pad/" class="tag-list-link">track-pad</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/troubleshooting/" class="tag-list-link">troubleshooting</a><span
-                    class="tag-list-count">7</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/tutorial/" class="tag-list-link">tutorial</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ubuntu/" class="tag-list-link">ubuntu</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vagrant/" class="tag-list-link">vagrant</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/ves/" class="tag-list-link">ves</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/video/" class="tag-list-link">video</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vim/" class="tag-list-link">vim</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/virtualbox/" class="tag-list-link">virtualbox</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/virtualenv/" class="tag-list-link">virtualenv</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/virtualization/" class="tag-list-link">virtualization</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vmware/" class="tag-list-link">vmware</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vnf/" class="tag-list-link">vnf</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vran/" class="tag-list-link">vran</a><span
-                    class="tag-list-count">3</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vrouter/" class="tag-list-link">vrouter</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/vswitch/" class="tag-list-link">vswitch</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/web-scrapping/" class="tag-list-link">web-scrapping</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/webdav/" class="tag-list-link">webdav</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/wiki/" class="tag-list-link">wiki</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/windows10/" class="tag-list-link">windows10</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/wordpress/" class="tag-list-link">wordpress</a><span
-                    class="tag-list-count">11</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/work_rules/" class="tag-list-link">work_rules</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/writing/" class="tag-list-link">writing</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/xcrun/" class="tag-list-link">xcrun</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/yang/" class="tag-list-link">yang</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/" class="tag-list-link">개발이야기</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B2%BD%EC%9F%81/" class="tag-list-link">경쟁</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/" class="tag-list-link">공부</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B3%B5%EC%9C%A0/" class="tag-list-link">공유</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/" class="tag-list-link">관리능력</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EA%B8%B0%EB%A1%9D/" class="tag-list-link">기록</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%85%BC%EB%AC%B8/" class="tag-list-link">논문</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%A6%AC%EB%8D%94/" class="tag-list-link">리더</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/" class="tag-list-link">매너리즘</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EB%AC%B8%ED%99%94/" class="tag-list-link">문화</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/" class="tag-list-link">사람이-핵심</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%83%9D%EA%B0%81/" class="tag-list-link">생각</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%83%9D%EC%82%B0%EC%84%B1/" class="tag-list-link">생산성</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/" class="tag-list-link">윤식당</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9D%B8%EC%9A%A9/" class="tag-list-link">인용</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/" class="tag-list-link">임백준</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/" class="tag-list-link">잡생각</a><span
-                    class="tag-list-count">9</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/" class="tag-list-link">조직관리</a><span
-                    class="tag-list-count">4</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/" class="tag-list-link">조직문화</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/" class="tag-list-link">좋은글</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/" class="tag-list-link">착각하는-ceo</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/" class="tag-list-link">코드리뷰</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="https://cychong47.github.io/tags/%ED%9A%8C%EC%9D%98/" class="tag-list-link">회의</a><span
-                    class="tag-list-count">2</span></li>
-            
-        </ul>
-
-    </div>
-</div>
-  </div>
 </aside>
-
-    
-    
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">protocol buffer</h1>
-            <p class="text-muted hidden-xs">Total 252 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://cychong47.github.io/tags">All</a></li>
-                    <li><a href="https://cychong47.github.io/tags/2015/">2015</a></li>
-                    <li><a href="https://cychong47.github.io/tags/5g/">5g</a></li>
-                    <li><a href="https://cychong47.github.io/tags/agile/">agile</a></li>
-                    <li><a href="https://cychong47.github.io/tags/aic/">aic</a></li>
-                    <li><a href="https://cychong47.github.io/tags/algorithm/">Algorithm</a></li>
-                    <li><a href="https://cychong47.github.io/tags/amazon/">amazon</a></li>
-                    <li><a href="https://cychong47.github.io/tags/amdocs/">amdocs</a></li>
-                    <li><a href="https://cychong47.github.io/tags/amsterdam-release/">Amsterdam release</a></li>
-                    <li><a href="https://cychong47.github.io/tags/andromeda/">andromeda</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ansible/">ansible</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ansible-playbook/">ansible-playbook</a></li>
-                    <li><a href="https://cychong47.github.io/tags/anti-work-pattern/">anti-work pattern</a></li>
-                    <li><a href="https://cychong47.github.io/tags/att/">ATT</a></li>
-                    <li><a href="https://cychong47.github.io/tags/automation/">automation</a></li>
-                    <li><a href="https://cychong47.github.io/tags/b4/">b4</a></li>
-                    <li><a href="https://cychong47.github.io/tags/backup/">backup</a></li>
-                    <li><a href="https://cychong47.github.io/tags/barometer/">barometer</a></li>
-                    <li><a href="https://cychong47.github.io/tags/blog/">blog</a></li>
-                    <li><a href="https://cychong47.github.io/tags/book/">Book</a></li>
-                    <li><a href="https://cychong47.github.io/tags/brew/">brew</a></li>
-                    <li><a href="https://cychong47.github.io/tags/brocade/">Brocade</a></li>
-                    <li><a href="https://cychong47.github.io/tags/c/">C</a></li>
-                    <li><a href="https://cychong47.github.io/tags/calico/">calico</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cavium/">Cavium</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cisco/">cisco</a></li>
-                    <li><a href="https://cychong47.github.io/tags/click/">click</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cncf/">cncf</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cni/">cni</a></li>
-                    <li><a href="https://cychong47.github.io/tags/coding-style/">Coding Style</a></li>
-                    <li><a href="https://cychong47.github.io/tags/collaboration/">collaboration</a></li>
-                    <li><a href="https://cychong47.github.io/tags/collectd/">collectd</a></li>
-                    <li><a href="https://cychong47.github.io/tags/connectx-5/">connectX-5</a></li>
-                    <li><a href="https://cychong47.github.io/tags/container/">container</a></li>
-                    <li><a href="https://cychong47.github.io/tags/continuous-deployment/">continuous deployment</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cpu/">cpu</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cran/">cran</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cron/">“cron”</a></li>
-                    <li><a href="https://cychong47.github.io/tags/crond/">crond</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cubb/">cubb</a></li>
-                    <li><a href="https://cychong47.github.io/tags/culture/">culture</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cuphy/">cuphy</a></li>
-                    <li><a href="https://cychong47.github.io/tags/cuvnf/">cuvnf</a></li>
-                    <li><a href="https://cychong47.github.io/tags/database/">database</a></li>
-                    <li><a href="https://cychong47.github.io/tags/debugging/">debugging</a></li>
-                    <li><a href="https://cychong47.github.io/tags/dev-culture/">dev culture</a></li>
-                    <li><a href="https://cychong47.github.io/tags/devnothink/">devnothink</a></li>
-                    <li><a href="https://cychong47.github.io/tags/docker/">docker</a></li>
-                    <li><a href="https://cychong47.github.io/tags/docker-compose/">docker-compose</a></li>
-                    <li><a href="https://cychong47.github.io/tags/dpdk/">DPDK</a></li>
-                    <li><a href="https://cychong47.github.io/tags/dpi/">dpi</a></li>
-                    <li><a href="https://cychong47.github.io/tags/dpkt/">dpkt</a></li>
-                    <li><a href="https://cychong47.github.io/tags/edge/">edge</a></li>
-                    <li><a href="https://cychong47.github.io/tags/elasticsearch/">elasticsearch</a></li>
-                    <li><a href="https://cychong47.github.io/tags/elk/">elk</a></li>
-                    <li><a href="https://cychong47.github.io/tags/english/">english</a></li>
-                    <li><a href="https://cychong47.github.io/tags/espresso/">espresso</a></li>
-                    <li><a href="https://cychong47.github.io/tags/fapi/">fapi</a></li>
-                    <li><a href="https://cychong47.github.io/tags/feature-flag-driven-development/">feature flag driven development</a></li>
-                    <li><a href="https://cychong47.github.io/tags/feedback/">feedback</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ffmpeg/">ffmpeg</a></li>
-                    <li><a href="https://cychong47.github.io/tags/finder/">finder</a></li>
-                    <li><a href="https://cychong47.github.io/tags/flask/">Flask</a></li>
-                    <li><a href="https://cychong47.github.io/tags/fragment/">fragment</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ftp/">ftp</a></li>
-                    <li><a href="https://cychong47.github.io/tags/getting-started/">Getting Started</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ghost/">ghost</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ghost-theme/">ghost-theme</a></li>
-                    <li><a href="https://cychong47.github.io/tags/git/">git</a></li>
-                    <li><a href="https://cychong47.github.io/tags/github/">github</a></li>
-                    <li><a href="https://cychong47.github.io/tags/go/">go</a></li>
-                    <li><a href="https://cychong47.github.io/tags/golang/">golang</a></li>
-                    <li><a href="https://cychong47.github.io/tags/google/">google</a></li>
-                    <li><a href="https://cychong47.github.io/tags/gpb/">gpb</a></li>
-                    <li><a href="https://cychong47.github.io/tags/gpu/">gpu</a></li>
-                    <li><a href="https://cychong47.github.io/tags/grafana/">grafana</a></li>
-                    <li><a href="https://cychong47.github.io/tags/grpc/">grpc</a></li>
-                    <li><a href="https://cychong47.github.io/tags/happy-hacking/">happy-hacking</a></li>
-                    <li><a href="https://cychong47.github.io/tags/hbr/">HBR</a></li>
-                    <li><a href="https://cychong47.github.io/tags/helm/">helm</a></li>
-                    <li><a href="https://cychong47.github.io/tags/homebrew/">homebrew</a></li>
-                    <li><a href="https://cychong47.github.io/tags/http/">http</a></li>
-                    <li><a href="https://cychong47.github.io/tags/hugo/">hugo</a></li>
-                    <li><a href="https://cychong47.github.io/tags/influxdb/">influxdb</a></li>
-                    <li><a href="https://cychong47.github.io/tags/inspiration/">inspiration</a></li>
-                    <li><a href="https://cychong47.github.io/tags/intel/">Intel</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ipad/">iPad</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ipsec/">IPsec</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ipv4/">ipv4</a></li>
-                    <li><a href="https://cychong47.github.io/tags/istio/">istio</a></li>
-                    <li><a href="https://cychong47.github.io/tags/jetpack/">jetpack</a></li>
-                    <li><a href="https://cychong47.github.io/tags/json/">json</a></li>
-                    <li><a href="https://cychong47.github.io/tags/jtbc/">jtbc</a></li>
-                    <li><a href="https://cychong47.github.io/tags/jupiter/">jupiter</a></li>
-                    <li><a href="https://cychong47.github.io/tags/kafka/">kafka</a></li>
-                    <li><a href="https://cychong47.github.io/tags/kni/">kni</a></li>
-                    <li><a href="https://cychong47.github.io/tags/kubelet/">kubelet</a></li>
-                    <li><a href="https://cychong47.github.io/tags/kubernetes/">kubernetes</a></li>
-                    <li><a href="https://cychong47.github.io/tags/launchd/">launchd</a></li>
-                    <li><a href="https://cychong47.github.io/tags/lb/">lb</a></li>
-                    <li><a href="https://cychong47.github.io/tags/life/">life</a></li>
-                    <li><a href="https://cychong47.github.io/tags/lifehack/">lifehack</a></li>
-                    <li><a href="https://cychong47.github.io/tags/linux/">linux</a></li>
-                    <li><a href="https://cychong47.github.io/tags/load-balancer/">load balancer</a></li>
-                    <li><a href="https://cychong47.github.io/tags/lte/">lte</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mac/">mac</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mac-mini-2009/">Mac mini 2009</a></li>
-                    <li><a href="https://cychong47.github.io/tags/maglev/">maglev</a></li>
-                    <li><a href="https://cychong47.github.io/tags/manager/">manager</a></li>
-                    <li><a href="https://cychong47.github.io/tags/markdown/">markdown</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mbuf/">mbuf</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mec/">mec</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mediawiki/">mediawiki</a></li>
-                    <li><a href="https://cychong47.github.io/tags/meetup/">meetup</a></li>
-                    <li><a href="https://cychong47.github.io/tags/message-queue/">message queue</a></li>
-                    <li><a href="https://cychong47.github.io/tags/metricbeat/">metricbeat</a></li>
-                    <li><a href="https://cychong47.github.io/tags/microk8s/">microk8s</a></li>
-                    <li><a href="https://cychong47.github.io/tags/microservice/">microservice</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mindmap/">mindmap</a></li>
-                    <li><a href="https://cychong47.github.io/tags/model-driven/">model-driven</a></li>
-                    <li><a href="https://cychong47.github.io/tags/monitoring/">monitoring</a></li>
-                    <li><a href="https://cychong47.github.io/tags/multipass/">multipass</a></li>
-                    <li><a href="https://cychong47.github.io/tags/mysql/">mysql</a></li>
-                    <li><a href="https://cychong47.github.io/tags/naim/">Naim</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nas/">nas</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nasa/">nasa</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nec/">NEC</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nested-chart/">nested-chart</a></li>
-                    <li><a href="https://cychong47.github.io/tags/netconf/">netconf</a></li>
-                    <li><a href="https://cychong47.github.io/tags/network/">network</a></li>
-                    <li><a href="https://cychong47.github.io/tags/neuron/">neuron</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nfv/">nfv</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nginmesh/">nginmesh</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nginx/">nginx</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nhn/">NHN</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nic/">NIC</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nokia/">Nokia</a></li>
-                    <li><a href="https://cychong47.github.io/tags/nvidia/">nvidia</a></li>
-                    <li><a href="https://cychong47.github.io/tags/odp/">odp</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ofp/">OFP</a></li>
-                    <li><a href="https://cychong47.github.io/tags/onap/">onap</a></li>
-                    <li><a href="https://cychong47.github.io/tags/onp/">ONP</a></li>
-                    <li><a href="https://cychong47.github.io/tags/openfastpath/">OpenFastPath</a></li>
-                    <li><a href="https://cychong47.github.io/tags/opensource/">opensource</a></li>
-                    <li><a href="https://cychong47.github.io/tags/openstack/">openstack</a></li>
-                    <li><a href="https://cychong47.github.io/tags/opnfv/">opnfv</a></li>
-                    <li><a href="https://cychong47.github.io/tags/osx/">osx</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ovdk/">OVDK</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ovs/">OVS</a></li>
-                    <li><a href="https://cychong47.github.io/tags/p4/">p4</a></li>
-                    <li><a href="https://cychong47.github.io/tags/patch/">patch</a></li>
-                    <li><a href="https://cychong47.github.io/tags/perl/">perl</a></li>
-                    <li><a href="https://cychong47.github.io/tags/photo/">photo</a></li>
-                    <li><a href="https://cychong47.github.io/tags/pinpoint/">pinpoint</a></li>
-                    <li><a href="https://cychong47.github.io/tags/plist/">plist</a></li>
-                    <li><a href="https://cychong47.github.io/tags/pluribus/">Pluribus</a></li>
-                    <li><a href="https://cychong47.github.io/tags/podcast/">podcast</a></li>
-                    <li><a href="https://cychong47.github.io/tags/powermate/">powermate</a></li>
-                    <li><a href="https://cychong47.github.io/tags/prediction/">prediction</a></li>
-                    <li><a href="https://cychong47.github.io/tags/programming/">programming</a></li>
-                    <li><a href="https://cychong47.github.io/tags/prometheus/">prometheus</a></li>
-                    <li><a href="https://cychong47.github.io/tags/protobufs/">protobufs</a></li>
-                    <li><a href="https://cychong47.github.io/tags/protocol-buffer/">protocol buffer</a></li>
-                    <li><a href="https://cychong47.github.io/tags/pyftplib/">pyftplib</a></li>
-                    <li><a href="https://cychong47.github.io/tags/python/">Python</a></li>
-                    <li><a href="https://cychong47.github.io/tags/qat/">QAT</a></li>
-                    <li><a href="https://cychong47.github.io/tags/quality/">Quality</a></li>
-                    <li><a href="https://cychong47.github.io/tags/quanta/">Quanta</a></li>
-                    <li><a href="https://cychong47.github.io/tags/quicklook/">quicklook</a></li>
-                    <li><a href="https://cychong47.github.io/tags/r210/">R210</a></li>
-                    <li><a href="https://cychong47.github.io/tags/reassembly/">reassembly</a></li>
-                    <li><a href="https://cychong47.github.io/tags/recovery/">recovery</a></li>
-                    <li><a href="https://cychong47.github.io/tags/resources/">resources</a></li>
-                    <li><a href="https://cychong47.github.io/tags/restful/">RESTful</a></li>
-                    <li><a href="https://cychong47.github.io/tags/rmda/">RMDA</a></li>
-                    <li><a href="https://cychong47.github.io/tags/scapy/">scapy</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sci/">sci</a></li>
-                    <li><a href="https://cychong47.github.io/tags/scrum/">scrum</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sctp/">sctp</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sdn/">SDN</a></li>
-                    <li><a href="https://cychong47.github.io/tags/service-agility/">Service Agility</a></li>
-                    <li><a href="https://cychong47.github.io/tags/service-mesh/">service mesh</a></li>
-                    <li><a href="https://cychong47.github.io/tags/setup/">setup</a></li>
-                    <li><a href="https://cychong47.github.io/tags/slack/">slack</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sleeve/">sleeve</a></li>
-                    <li><a href="https://cychong47.github.io/tags/snmp/">snmp</a></li>
-                    <li><a href="https://cychong47.github.io/tags/soft-skill/">soft-skill</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sqlite/">sqlite</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sriov/">SRIOV</a></li>
-                    <li><a href="https://cychong47.github.io/tags/startup/">startup</a></li>
-                    <li><a href="https://cychong47.github.io/tags/storage/">storage</a></li>
-                    <li><a href="https://cychong47.github.io/tags/study/">study</a></li>
-                    <li><a href="https://cychong47.github.io/tags/subchart/">subchart</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sw-quality/">SW Quality</a></li>
-                    <li><a href="https://cychong47.github.io/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/">SW 개발 문화</a></li>
-                    <li><a href="https://cychong47.github.io/tags/swarm/">swarm</a></li>
-                    <li><a href="https://cychong47.github.io/tags/synology/">synology</a></li>
-                    <li><a href="https://cychong47.github.io/tags/tag/">tag</a></li>
-                    <li><a href="https://cychong47.github.io/tags/tcp/">tcp</a></li>
-                    <li><a href="https://cychong47.github.io/tags/team/">team</a></li>
-                    <li><a href="https://cychong47.github.io/tags/telemetry/">telemetry</a></li>
-                    <li><a href="https://cychong47.github.io/tags/the-pragmatic-programmer/">The Pragmatic Programmer</a></li>
-                    <li><a href="https://cychong47.github.io/tags/theme/">theme</a></li>
-                    <li><a href="https://cychong47.github.io/tags/til/">til</a></li>
-                    <li><a href="https://cychong47.github.io/tags/time-machine/">Time Machine</a></li>
-                    <li><a href="https://cychong47.github.io/tags/track-pad/">track-pad</a></li>
-                    <li><a href="https://cychong47.github.io/tags/troubleshooting/">troubleshooting</a></li>
-                    <li><a href="https://cychong47.github.io/tags/tutorial/">tutorial</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ubuntu/">ubuntu</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vagrant/">vagrant</a></li>
-                    <li><a href="https://cychong47.github.io/tags/ves/">ves</a></li>
-                    <li><a href="https://cychong47.github.io/tags/video/">video</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vim/">vim</a></li>
-                    <li><a href="https://cychong47.github.io/tags/virtualbox/">Virtualbox</a></li>
-                    <li><a href="https://cychong47.github.io/tags/virtualenv/">virtualenv</a></li>
-                    <li><a href="https://cychong47.github.io/tags/virtualization/">virtualization</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vmware/">Vmware</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vnf/">VNF</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vran/">vran</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vrouter/">vRouter</a></li>
-                    <li><a href="https://cychong47.github.io/tags/vswitch/">vSwitch</a></li>
-                    <li><a href="https://cychong47.github.io/tags/web-scrapping/">web-scrapping</a></li>
-                    <li><a href="https://cychong47.github.io/tags/webdav/">webdav</a></li>
-                    <li><a href="https://cychong47.github.io/tags/wiki/">wiki</a></li>
-                    <li><a href="https://cychong47.github.io/tags/windows10/">windows10</a></li>
-                    <li><a href="https://cychong47.github.io/tags/wordpress/">wordpress</a></li>
-                    <li><a href="https://cychong47.github.io/tags/work_rules/">work_rules</a></li>
-                    <li><a href="https://cychong47.github.io/tags/writing/">writing</a></li>
-                    <li><a href="https://cychong47.github.io/tags/xcrun/">xcrun</a></li>
-                    <li><a href="https://cychong47.github.io/tags/yang/">yang</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/">개발이야기</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EA%B2%BD%EC%9F%81/">경쟁</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/">공부</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EA%B3%B5%EC%9C%A0/">공유</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/">관리능력</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EA%B8%B0%EB%A1%9D/">기록</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EB%85%BC%EB%AC%B8/">논문</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EB%A6%AC%EB%8D%94/">리더</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/">매너리즘</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EB%AC%B8%ED%99%94/">문화</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/">사람이 핵심</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%83%9D%EA%B0%81/">생각</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%83%9D%EC%82%B0%EC%84%B1/">생산성</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/">윤식당</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%9D%B8%EC%9A%A9/">인용</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/">임백준</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/">잡생각</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/">조직관리</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/">조직문화</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/">좋은글</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/">착각하는 CEO</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/">코드리뷰</a></li>
-                    <li><a href="https://cychong47.github.io/tags/%ED%9A%8C%EC%9D%98/">회의</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2017-10-01 21:38:04 &#43;0900 KST"
-                itemprop="datePublished">2017-10-01</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/2017/streaming-telemetry-with-google-protocol-buffers/">(Series</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://cychong47.github.io/tags/cisco" class="label label-default mb">cisco</a>
-        <a href="https://cychong47.github.io/tags/protocol-buffer" class="label label-default mb">protocol buffer</a>
-        <a href="https://cychong47.github.io/tags/gpb" class="label label-default mb">gpb</a>
-        <span class="label label-default mb">···</span>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2017-10-01 14:06:46 &#43;0900 KST"
-                itemprop="datePublished">2017-10-01</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://cychong47.github.io/post/2017/model-driven-telemetry/">(Series</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://cychong47.github.io/tags/cisco" class="label label-default mb">cisco</a>
-        <a href="https://cychong47.github.io/tags/telemetry" class="label label-default mb">telemetry</a>
-        <a href="https://cychong47.github.io/tags/elk" class="label label-default mb">elk</a>
-        <span class="label label-default mb">···</span>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
-</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
-<ul class="social-links">
-    <li><a href="https://github.com/cychong47" target="_blank" title="github" data-toggle=tooltip data-placement=top >
-            <i class="icon icon-github"></i></a></li>
-    <li><a href="https://cychong47.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
-            <i class="icon icon-rss"></i></a></li>
-</ul>
-  <div class="copyright">
-    &copy;2017  -
-    2020
-    <div class="publishby">
-        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
-    </div>
-  </div>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 Chaeyong Chong.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-            showMathMenu: false, //disables context menu
-            tex2jax: {
-            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
-           }
-    });
-</script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-<script>
-    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
-</script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
-<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script><script>
-    hljs.configure({
-        tabReplace: '    ', 
-        classPrefix: ''     
-        
-    })
-    hljs.initHighlightingOnLoad();
-</script>
-<script src="https://cychong47.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
-<script src="https://cychong47.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
-
-<script>
-    (function (window) {
-        var INSIGHT_CONFIG = {
-            TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
-            },
-            ROOT_URL: 'https:\/\/cychong47.github.io\/',
-            CONTENT_URL: 'https:\/\/cychong47.github.io\/\/searchindex.json ',
-        };
-        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-    })(window);
-</script>
-<script type="text/javascript" src="https://cychong47.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
-<script>
-    tocbot.init({
-        
-        tocSelector: '.js-toc',
-        
-        contentSelector: '.js-toc-content',
-        
-        headingSelector: 'h1, h2, h3',
-        
-        hasInnerContainers: true,
-    });
-</script>
-
-  </body>
+	</div>
+<script async defer src="/js/menu.js"></script>
+</body>
 </html>

@@ -1,207 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nas on Another blog</title>
     <link>https://cychong47.github.io/tags/nas/</link>
     <description>Recent content in nas on Another blog</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <lastBuildDate>Mon, 09 Oct 2017 15:41:52 +0900</lastBuildDate>
     
-        <atom:link href="https://cychong47.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://cychong47.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>매직키보드 단 iPad는 iPad가 아니다</title>
-      <link>https://cychong47.github.io/post/2020/2020-07-09-ipad-is-not-an-ipad/</link>
-      <pubDate>Thu, 09 Jul 2020 22:59:49 +0900</pubDate>
+      <title>사진 백업 2017 버전</title>
+      <link>https://cychong47.github.io/post/2017/sajin-baegeob-2017-beojeon/</link>
+      <pubDate>Mon, 09 Oct 2017 15:41:52 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/2020-07-09-ipad-is-not-an-ipad/</guid>
-      <description>iPad 12.9 인치와 매직키보드를 구입해서 가지고 다니는데, 예전에 13인치 맥북프로를 가지고 외출할 때 사용하던 슬리브에 담아서 가지고 다녔다. 어렵사리 슬리브에 넣을</description>
-    </item>
-    
-    <item>
-      <title>Deploy nginx with helm</title>
-      <link>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</link>
-      <pubDate>Thu, 02 Jul 2020 23:58:41 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</guid>
-      <description>cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &amp;quot;/docker-entrypoint.…&amp;quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &amp;quot;/pause&amp;quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&amp;gt;80/tcp podcast 2812c510a5b6 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&amp;gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184  cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &amp;quot;nginx-pv&amp;quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.</description>
-    </item>
-    
-    <item>
-      <title>How to embed video in hugo</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-27-how-to-support-video/</link>
-      <pubDate>Sat, 27 Jun 2020 00:24:41 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-27-how-to-support-video/</guid>
-      <description>한줄요약 : Hugo로 만든 blog 에서 video 파일을 지원하려면 shortcode를 활용한다. 아래 shortcode는 mp3, mp4 파일을 지원하는 zen에서 사용하는 shortcode(zen/layouts/shortcodes/video.html)</description>
-    </item>
-    
-    <item>
-      <title>No Podcast Update?</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-26-no-podcast-update/</link>
-      <pubDate>Fri, 26 Jun 2020 22:11:32 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-26-no-podcast-update/</guid>
-      <description>음 이건 무슨 상황일까? mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 site를 rebuild했다는 메시지가 오질 않는다. 안그래도 Telegram 을 이용해서 메</description>
-    </item>
-    
-    <item>
-      <title>New Input Device Trio</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-07-new-input-device-trio/</link>
-      <pubDate>Wed, 24 Jun 2020 01:11:13 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-07-new-input-device-trio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Find container with its name</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-22-docker-ps-with-name/</link>
-      <pubDate>Mon, 22 Jun 2020 23:54:09 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-22-docker-ps-with-name/</guid>
-      <description>Get docker container id from container name
-docker ps -aqf &amp;quot;name=containername&amp;quot; docker ps -aqf &amp;quot;name=^containername$&amp;quot;   -q for quiet. output only the ID -a for all. works even if your container is not running -f for filter. ^ container name must start with this string $ container name must end with this string  </description>
-    </item>
-    
-    <item>
-      <title>Setup podcast blog - 자동화</title>
-      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-5/</link>
-      <pubDate>Sat, 20 Jun 2020 22:33:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-5/</guid>
-      <description>Scripts Automation mini2 - record mp3 file $ crontab -l 00 11 * * * cd /Users/cychong/work/cbs-ost/script &amp;amp;&amp;amp; ./record.sh &amp;gt;&amp;gt; /tmp/cron.out 2&amp;gt;&amp;amp;1 mini1 - create MD file and publish podcast $ crontab -l 04 12 * * * cd /home/cychong/work/cbs-ost/script &amp;amp;&amp;amp; ./scp.sh &amp;gt;&amp;gt; /tmp/cron.out 2&amp;gt;&amp;amp;1 05 12 * * * cd /home/cychong/work/cbs-ost/script &amp;amp;&amp;amp; ./publish.sh &amp;gt;&amp;gt; /tmp/cron.out 2&amp;gt;&amp;amp;1 Get mp3 file from mini2 Create md file after getting song list Rebuild</description>
-    </item>
-    
-    <item>
-      <title>Git Tips</title>
-      <link>https://cychong47.github.io/post/2020/git/</link>
-      <pubDate>Sat, 20 Jun 2020 21:54:31 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/git/</guid>
-      <description>Open vim tabs with changed files vim -p `git diff --name-only`  vim -p
-  -p[N] Open N tab pages. When N is omitted, open one tab page for each file.   git diff --name-only
-  --name-only Show only names of changed files.   </description>
-    </item>
-    
-    <item>
-      <title>Disable Password for Private Github Repo</title>
-      <link>https://cychong47.github.io/post/2020/disable-password-for-private-github-repo/</link>
-      <pubDate>Fri, 19 Jun 2020 06:41:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/disable-password-for-private-github-repo/</guid>
-      <description>github가 제공하는 private repository를 사용하니 ID와 암호를 매번 물어보길래 찾아 보니 이렇게 해결할 수 있다고. source : How do I avoid the specification of the username and password at every</description>
-    </item>
-    
-    <item>
-      <title>Setup podcast blog - recording 동작 확인</title>
-      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-2/</link>
-      <pubDate>Thu, 18 Jun 2020 23:10:45 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-2/</guid>
-      <description>듣고 싶은 mp3 파일을 mini2를 이용해서 1시간 짜리 녹음 동작확인 결과 정상 동작 확인 $ mp3info -p &amp;quot;%S&amp;quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processing power 부족 때문에 제대로 1시간 녹음이 안된 듯</description>
-    </item>
-    
-    <item>
-      <title>Setup podcast blog - post 작성</title>
-      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</link>
-      <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-3/</guid>
-      <description>Podcast post 작성하기 Zen theme 덕분에 mp3 파일을 포함한 blog post를 markdown 파일로 작성하고 site build만 시키면 자동적으로 podcast feed를 만들어 준다. https://git</description>
-    </item>
-    
-    <item>
-      <title>Setup podcast blog - Setup Hugo</title>
-      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-1/</link>
-      <pubDate>Tue, 16 Jun 2020 06:53:24 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-1/</guid>
-      <description>Install Create Hugo for podcast cychong15:writing_factory cychong$ hugo new site cbs-ost Congratulations! Your new Hugo site is created in /Users/cychong/workspace/writing_factory/cbs-ost. Just a few more steps and you&#39;re ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &amp;quot;hugo new theme &amp;lt;THEMENAME&amp;gt;&amp;quot; command. 2. Perhaps you want to add some content. You can add single files with &amp;quot;hugo new</description>
-    </item>
-    
-    <item>
-      <title>Grain of Salt</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-14-grain-of-salt/</link>
-      <pubDate>Sun, 14 Jun 2020 08:08:31 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-14-grain-of-salt/</guid>
-      <description>From OS X dictionary
-Grain of salt
-Pliny the Elder&amp;rsquo;s Naturalis Historia may be the origin of the phrase.
-To take something with a &amp;ldquo;grain of salt&amp;rdquo; or &amp;ldquo;pinch of salt&amp;rdquo; is an English language idiom that means to view something with skepticism or not to interpret something literally.[1] In the old-fashioned English units of weight, a grain weighs approximately 60 mg, which is about how much table salt a person might pick up between the fingers as a pinch.</description>
-    </item>
-    
-    <item>
-      <title>Record CBS radio in every day</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-14-record-cbs-with-cron/</link>
-      <pubDate>Sun, 14 Jun 2020 06:49:23 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-14-record-cbs-with-cron/</guid>
-      <description>record Find out duration of mp3 file mp3info, exiftool or ffmpeg can be used to get the duration of mp3 file
-Though mp3info and exiftool can be used to the exiting mp3 file while the ffmpeg give the duration on recording process.
-$ mp3info -p &amp;quot;%S\n&amp;quot; Cinema_20200614.mp3 15  Exiftool does not give the correct duration.
-$ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinema_20200614.mp3 Directory : .</description>
-    </item>
-    
-    <item>
-      <title>Hugo에 Main menu 추가하기</title>
-      <link>https://cychong47.github.io/post/2020/2020-06-13-add-menu-to-hugo/</link>
-      <pubDate>Sat, 13 Jun 2020 23:46:10 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/2020-06-13-add-menu-to-hugo/</guid>
-      <description>Hugo로 옮긴 후 아직 찾지 못한 기능 중 하나가 글 들을 종류 별로 구분해서 보는 것이었다. 각 글마다 지정한 category나 tag별로 볼 수 있는 것은 지금 사용하</description>
-    </item>
-    
-    <item>
-      <title>Setup podcast blog - beginning</title>
-      <link>https://cychong47.github.io/post/2020/setup-podcast-blog-0/</link>
-      <pubDate>Sat, 13 Jun 2020 16:44:23 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/setup-podcast-blog-0/</guid>
-      <description>오늘 운전하는 시간이 마침 오전 11시라 CBS 신지혜의 영화음악을 들을 수 있었다. 어릴 적 부터 좋아하던 영화 음악을 괘 오래동안 듣게 해주고 있는 프로그램. 편안한 목소</description>
-    </item>
-    
-    <item>
-      <title>Migrate Ghost to Hugo</title>
-      <link>https://cychong47.github.io/post/2020/migrate-ghost-to-hugo/</link>
-      <pubDate>Sun, 07 Jun 2020 22:14:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/migrate-ghost-to-hugo/</guid>
-      <description>Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다. Ghost 정말 애증이 담긴&amp;hellip; Ghost가 1.0이 되기 전에 markdown 기반의 블로</description>
-    </item>
-    
-    <item>
-      <title>Migrate wordpress to hugo</title>
-      <link>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</link>
-      <pubDate>Sun, 31 May 2020 14:56:52 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</guid>
-      <description>Wordpress 에서 hugo로 이사한 후 첫번째 시도. Hugo theme은 harbor를 사용하고, site 호스팅 방법은 nginx docker를 사용. (이상하게 nginx를 helm</description>
-    </item>
-    
-    <item>
-      <title>NVIDIA vRAN Solution</title>
-      <link>https://cychong47.github.io/post/2020/nvidia-vran-solution/</link>
-      <pubDate>Wed, 20 May 2020 15:01:44 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/nvidia-vran-solution/</guid>
-      <description>https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
-Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
-5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
- 5T-for-5G, or time-triggered transmission technology for telco
- https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
-  Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient.</description>
-    </item>
-    
-    <item>
-      <title>WordPress 로그인 불가 문제 해결</title>
-      <link>https://cychong47.github.io/post/2020/recover-broken-users-table/</link>
-      <pubDate>Fri, 08 May 2020 23:36:45 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/recover-broken-users-table/</guid>
-      <description>말썽쟁이(?) wordpress 블로그가 또 문제를 일으켰다. 이번에도 로그인이 안되는 현상인데 지난 번과는 다른 에러 메시지가 나온다. 즉 지난 번 해결책은 소용이 없을 거라는 불</description>
+      <guid>https://cychong47.github.io/post/2017/sajin-baegeob-2017-beojeon/</guid>
+      <description>최적화(?) 중.
+Lightroom으로 사진 관리  Apple Photos 앱이 아닌 Adobe Lightroom으로 사진 관리. 사진 파일은 DB에 포함시키지 않고, meta data만 DB에 저장하도록 import 방식을 사용.  mbpr15:Lightroom cychong$ pwd /Users/cychong/Pictures/Lightroom mbpr15:Lightroom cychong$ ls -al total 55288 drwxr-xr-x 7 cychong staff 224 Oct 9 23:36 . drwx------+ 5 cychong staff 160 Oct 8 10:55 .. -rw-r--r--@ 1 cychong staff 6148 Oct 9 22:47 .DS_Store drwxr-xr-x 20 cychong staff 640 Oct 9 23:43 Lightroom Catalog Previews.</description>
     </item>
     
   </channel>
