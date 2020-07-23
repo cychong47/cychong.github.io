@@ -70,6 +70,24 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/migrate-ghost-to-hugo/" rel="bookmark">
+			Migrate Ghost to Hugo
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-07T22:14:02&#43;09:00">June 07, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
+Ghost 정말 애증이 담긴&hellip;
+Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/hugo-seutp-with-git/" rel="bookmark">
 			Migrate wordpress to hugo
 			</a>
@@ -116,9 +134,6 @@ Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clon
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/podcast/">podcast</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/til/">TIL</a>
@@ -183,7 +198,6 @@ Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clon
 		<a class="widget-taglist__link widget__link btn" href="/tags/cuphy/" title="cuphy">cuphy (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cuvnf/" title="cuvnf">cuvnf (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/database/" title="database">database (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/debugging/" title="debugging">debugging (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dev-culture/" title="dev culture">dev culture (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devnothink/" title="devnothink">devnothink (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (12)</a>
@@ -221,7 +235,7 @@ Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clon
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (12)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -295,7 +309,7 @@ Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clon
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (8)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>
@@ -345,7 +359,7 @@ Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clon
 		<a class="widget-taglist__link widget__link btn" href="/tags/til/" title="til">til (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/time-machine/" title="Time Machine">Time Machine (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/track-pad/" title="track-pad">track-pad (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/troubleshooting/" title="troubleshooting">troubleshooting (8)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/troubleshooting/" title="troubleshooting">troubleshooting (9)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>

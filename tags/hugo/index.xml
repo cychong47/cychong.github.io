@@ -49,6 +49,17 @@ cychong@mini1:~/work/cbs-ost$ hugo -t zen Building sites … WARN 2020/07/23 23:
     </item>
     
     <item>
+      <title>No Podcast Update?</title>
+      <link>https://cychong47.github.io/post/2020/2020-06-26-no-podcast-update/</link>
+      <pubDate>Fri, 26 Jun 2020 22:11:32 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-06-26-no-podcast-update/</guid>
+      <description>음
+이건 무슨 상황일까?
+mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 site를 rebuild했다는 메시지가 오질 않는다. 안그래도 Telegram 을 이용해서 메시지를 보내는 기능을 추가해야 겠다고 생각했을때 아래처럼 정상적으로 동작하는 경우가 아니라 뭔가 문제가 있는 상황을 어떻게 알 수 있을까 하는 고민을 했었는데 생각보다 일찍 그 상황(아마도 많은 경우 중 하나 겠지만) 이 온 듯했다. 이렇게 메시지가 안 온 것으로 뭔가 문제가 있다는 걸 판단하는 건 비효율적인 방법이라 보다 적극적으로 어떤 비정상 상황이고, 가능하면 왜 그런 지도 파악해서 메시지를 보내게 할 필요가 있다는 생각을 했었는데&amp;hellip;</description>
+    </item>
+    
+    <item>
       <title>Setup podcast blog - 자동화</title>
       <link>https://cychong47.github.io/post/2020/2020-06-20-setup-podcast-blog-5/</link>
       <pubDate>Sat, 20 Jun 2020 22:33:02 +0900</pubDate>
