@@ -69,6 +69,26 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2014/cuckoo-switch/" rel="bookmark">
+			Cuckoo Switch
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-11-09T08:48:38&#43;09:00">November 09, 2014</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Cuckoo 알고리즘을 사용하여 Flow lookup과 flow update 성능을 높힌 것과 DPDK를 이용하여 패킷 처리 성능을 높힌 것
+출처 : Scalable, High Performance Ethernet Forwarding with CuckooSwitch
+DPDK  DPDK를 이용한 IO 성능 개선한 것 외에 특이한 것은 없음.  Cuckoo hashing   대개 FIB update를 위해 RCU(Read Copy Update)를 사용함. 이 경우 완전한 정보를 갖는 additional entry가 필요
+ 수정된 cuckoo algorithm을 기반으로 한 flow table 사용    Basic Cuckoo hashing
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2014/caeg-baji-beosgo-ilhamyeon-andoenayo/" rel="bookmark">
 			(책) 바지 벗고 일하면 안되나요?
 			</a>
@@ -238,25 +258,6 @@ VirtualBox의 Guest OS를 종료시킨 상태에서 환경 설정에서 Network 
 &lsquo;사회적 검증&rsquo;도 대단히 안 좋고 위험한 행동 오류.
 권력이나 권위 있는 사람들의 말을 무조건 믿는 &lsquo;권위자 편향&rsquo; 또한 위험. 전 세계적으로 경제학자 수는 100만 명이 넘지만 단 1명도 2008년 금융 위기를 정확히 예측하지 못했다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2014/caeg-wae-gongbuhaneunga/" rel="bookmark">
-			(책) 왜 공부하는가
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-09-11T15:40:52&#43;09:00">September 11, 2014</time>
-	<time class="meta__text" datetime="2018-08-19T22:06:31Z">(Last Modified: August 19, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		김진애
-p32  뒤를 돌아보면, &ldquo;1년 동안 공부만 할 거야!&ldquo;하고 결단하고 그 결단을 독하게 지켰던 체험을 통해 얻은 가장 큰 자산은 &lsquo;독해야 할 때 독해질 수 있다;는 자신감이다. 이 자신감은 내 일생 내내 큰 자산이 되었다. &lsquo;필요하다면 유혹을 끊어낼 수 있다. 잔가지들에 연연해하지 않을 수 있다. 내 온 자신을 던질 수 있다. 몰입할 수 있다&rsquo;는 믿음은 중요하다. 한번 독해지기를 경험해보면 언제나 독해질 수 있는 것이다.
- p77  무시당하는 느낌이 없어졌다.
-	</div>
 </article>
 </main>
 
@@ -288,9 +289,6 @@ p32  뒤를 돌아보면, &ldquo;1년 동안 공부만 할 거야!&ldquo;하고 
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/note/">Note</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/podcast/">podcast</a>
@@ -328,7 +326,7 @@ p32  뒤를 돌아보면, &ldquo;1년 동안 공부만 할 거야!&ldquo;하고 
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
@@ -351,7 +349,7 @@ p32  뒤를 돌아보면, &ldquo;1년 동안 공부만 할 거야!&ldquo;하고 
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -396,7 +394,7 @@ p32  뒤를 돌아보면, &ldquo;1년 동안 공부만 할 거야!&ldquo;하고 
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -470,7 +468,7 @@ p32  뒤를 돌아보면, &ldquo;1년 동안 공부만 할 거야!&ldquo;하고 
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>

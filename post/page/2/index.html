@@ -70,13 +70,32 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/setup-podcast-blog-2/" rel="bookmark">
+			<a href="/post/2020/disable-password-for-private-github-repo/" rel="bookmark">
+			Disable Password for Private Github Repo
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-19T06:41:02&#43;09:00">June 19, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		github가 제공하는 private repository를 사용하니 ID와 암호를 매번 물어보길래 찾아 보니 이렇게 해결할 수 있다고.
+source : How do I avoid the specification of the username and password at every git push?
+$ git config credential.helper store $ git push https://github.com/repo.git Username for 'https://github.com': &lt;USERNAME&gt; Password for 'https://USERNAME@github.com': &lt;PASSWORD&gt; To set the timeout for &ldquo;not-asking password&rdquo;
+git config --global credential.helper 'cache --timeout 7200' 
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-18-setup-podcast-blog-2/" rel="bookmark">
 			Setup podcast blog - recording 동작 확인
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-18T23:10:45&#43;09:00">June 18, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-18T23:10:45&#43;09:00">June 18, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -87,13 +106,13 @@ $ mp3info -p &quot;%S&quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processin
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/setup-podcast-blog-3/" rel="bookmark">
+			<a href="/post/2020/2020-06-16-setup-podcast-blog-3/" rel="bookmark">
 			Setup podcast blog - post 작성
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-16T06:53:24&#43;09:00">June 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-16T06:53:24&#43;09:00">June 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -104,13 +123,13 @@ https://github.com/frjo/hugo-theme-zen에 있는 내용을 보면 md 파일의 f
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/setup-podcast-blog-1/" rel="bookmark">
+			<a href="/post/2020/2020-06-16-setup-podcast-blog-1/" rel="bookmark">
 			Setup podcast blog - Setup Hugo
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-16T06:53:24&#43;09:00">June 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-16T06:53:24&#43;09:00">June 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -175,13 +194,13 @@ $ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinem
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/setup-podcast-blog-0/" rel="bookmark">
+			<a href="/post/2020/2020-06-13-setup-podcast-blog-0/" rel="bookmark">
 			Setup podcast blog - beginning
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-13T16:44:23&#43;09:00">June 13, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-13T16:44:23&#43;09:00">June 13, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -226,28 +245,6 @@ Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 
 		Wordpress 에서 hugo로 이사한 후 첫번째 시도. Hugo theme은 harbor를 사용하고, site 호스팅 방법은 nginx docker를 사용. (이상하게 nginx를 helm으로 띄우는 게 간단하지 않네)
 Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clone https://github.com/cychong47/sosa0sa.git Cloning into 'sosa0sa'... warning: You appear to have cloned an empty repository. Setup hugo inside of the git repository cychong15:migration_to_hugo cychong$ hugo new site sosa0sa Error: /Users/cychong/workspace/migration_to_hugo/sosa0sa already exists and is not empty. See --force. cychong15:migration_to_hugo cychong$ hugo new site sosa0sa --force Congratulations!
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/nvidia-vran-solution/" rel="bookmark">
-			NVIDIA vRAN Solution
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-20T15:01:44&#43;09:00">May 20, 2020</time>
-	<time class="meta__text" datetime="2020-05-20T15:04:06Z">(Last Modified: May 20, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
-Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
-5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
- 5T-for-5G, or time-triggered transmission technology for telco
- https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
-  Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient.
-	</div>
 </article>
 </main>
 
@@ -280,9 +277,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/note/">Note</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/podcast/">podcast</a>
@@ -320,7 +314,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
@@ -343,7 +337,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -388,7 +382,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -462,7 +456,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>

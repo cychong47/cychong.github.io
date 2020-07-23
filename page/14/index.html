@@ -69,6 +69,24 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2017/table-or-dish/" rel="bookmark">
+			Table or dish
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-04-06T00:40:05&#43;09:00">April 06, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		They are going to have to make a choice here - do you want to be at the table or on the plate?
+ 먹을래 먹힐래?
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2017/move-to-docker/" rel="bookmark">
 			Move to docker
 			</a>
@@ -236,24 +254,6 @@ index.hbs
  자신의 경력을 사업으로 봐야 한다. 자신의 정체성이나 경력은 조직에서 주어진 역할과 별개로 존재한다고 생각 팔수 있는 제품이나 서비스가 필요 그 가치가 정확히 뭔지, 그 가치가 다른 개발자가 제공하는 가치와 어떻게 다른지 설명할 수 있어야 한다  3 목표를 설정하고 미래에 대비하라
  목표를 설정. 목표를 정확히 이해  명확한 목표가 없으면 아무리 열심히 살아도 의미가 없다. 목표 없이 인생을 낭비하지 말라   큰 목표를 정하고 밟아갈 작은 목표를 설정  큰 목표는 방향을 제시할 정도만 되도 된다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/dpdk-ipv4-reassembly/" rel="bookmark">
-			DPDK IPv4 reassembly
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-24T15:03:55&#43;09:00">March 24, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		rte_ipv4_frag_reassemble_packet()
- ip_frag_find()  기존에 존재하는 flow면 해당 flow를 저장한 entry 정보를(ip_frag_pkt *pkg) 신규 flow인 경우 해당 신규 flow를 저장할 신규 혹은 재사용된 entry를 return함 추가할 수 있는 통계  신규 flow? 기존 flow에 정상 추가 기존 flow에 비정상 추가(기존 flow가 timeouted) 이도 저도 아닌 상황(할당 실패) LRU entry free tbl-&gt;max_entries tbl-&gt;use_entries   return  기존 존재하는 flow, 신규 할당한 flow entry 혹은 NULL 만일 NULL을 return하면 현재 수신한 mbuf를 death row에 추가한다.
-	</div>
 </article>
 </main>
 
@@ -285,9 +285,6 @@ index.hbs
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/note/">Note</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/podcast/">podcast</a>
@@ -325,7 +322,7 @@ index.hbs
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
@@ -348,7 +345,7 @@ index.hbs
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -393,7 +390,7 @@ index.hbs
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -467,7 +464,7 @@ index.hbs
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>

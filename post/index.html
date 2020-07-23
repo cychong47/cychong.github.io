@@ -71,12 +71,12 @@
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-07-24-rss-is-not-updated/" rel="bookmark">
-			2020 07 24 Rss Is Not Updated
+			rss.xml is not updated
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-07-24T00:22:45&#43;09:00">July 24, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-07-24T00:22:45&#43;09:00">July 24, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -118,6 +118,26 @@ cychong@mini1:~/work/cbs-ost$ hugo -t zen Building sites … WARN 2020/07/23 23:
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &quot;/docker-entrypoint.…&quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &quot;/pause&quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&gt;80/tcp podcast 2812c510a5b6 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &quot;nginx-pv&quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-28-podcast-another-issue/" rel="bookmark">
+			2020 06 28 Podcast Another Issue
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-28T23:27:48&#43;09:00">June 28, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		금요일 밤에 지난 오류를 수정한 후 토요일, 일요일에는 제대로 동작하는 듯&hellip;
+그런데 오늘 우연히 발견한 문제는 토요일과 금요일에 올라온 에피소드에 곡 목록이 없다. 추정되는 이유가 있긴했는데 집에 와서 확인해 보니 예상대로. 주말이라 곡 목록이 늦게 업데이트가 되었다.
+토요일, 일요일 곡 목록이 모두 일요일 저녁 7시 반 경에 올라온 것이다.
+흠.. 그렇다고 mp3를 그때 포스팅하지 않을 수도 없고. 이럴 때는 어떻게 해야 할까&hellip;
+고민 중..
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -191,13 +211,13 @@ docker ps -aqf &quot;name=containername&quot; docker ps -aqf &quot;name=^contain
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/setup-podcast-blog-5/" rel="bookmark">
+			<a href="/post/2020/2020-06-20-setup-podcast-blog-5/" rel="bookmark">
 			Setup podcast blog - 자동화
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-20T22:33:02&#43;09:00">June 20, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-20T22:33:02&#43;09:00">June 20, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -222,25 +242,6 @@ mini2 - record mp3 file $ crontab -l 00 11 * * * cd /Users/cychong/work/cbs-ost/
 		Open vim tabs with changed files vim -p `git diff --name-only` vim -p
   -p[N] Open N tab pages. When N is omitted, open one tab page for each file.   git diff --name-only
   --name-only Show only names of changed files.   
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/disable-password-for-private-github-repo/" rel="bookmark">
-			Disable Password for Private Github Repo
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-19T06:41:02&#43;09:00">June 19, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		github가 제공하는 private repository를 사용하니 ID와 암호를 매번 물어보길래 찾아 보니 이렇게 해결할 수 있다고.
-source : How do I avoid the specification of the username and password at every git push?
-$ git config credential.helper store $ git push https://github.com/repo.git Username for 'https://github.com': &lt;USERNAME&gt; Password for 'https://USERNAME@github.com': &lt;PASSWORD&gt; To set the timeout for &ldquo;not-asking password&rdquo;
-git config --global credential.helper 'cache --timeout 7200' 
 	</div>
 </article>
 </main>
@@ -273,9 +274,6 @@ git config --global credential.helper 'cache --timeout 7200'
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/note/">Note</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/podcast/">podcast</a>
@@ -313,7 +311,7 @@ git config --global credential.helper 'cache --timeout 7200'
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
@@ -336,7 +334,7 @@ git config --global credential.helper 'cache --timeout 7200'
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -381,7 +379,7 @@ git config --global credential.helper 'cache --timeout 7200'
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -455,7 +453,7 @@ git config --global credential.helper 'cache --timeout 7200'
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>

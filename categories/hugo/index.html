@@ -70,6 +70,46 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-07-24-rss-is-not-updated/" rel="bookmark">
+			rss.xml is not updated
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-07-24T00:22:45&#43;09:00">July 24, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		갑자기 어느 날 부터(정확히 말하면 7월 14일부터) podcast가 업데이트가 되지 않는다.
+다음 날도, 그 다음 날도. 흠. 뭐가 문제일까?
+아무튼 hugo를 이용해서 직접 사이트를 빌드해 봤다. 그랬더니 이상한 에러가 난다. os.Stat 파일이 없다는 이야기도 나오고.
+뭔가 문제가 있는데 밤이라 그런지 그냥 단순하게 Hugo zen-theme 이 rss를 제대로 생성하지 못한다는 내용으로 검색을 해 봤는데 결과가 안 나온다.
+cychong@mini1:~/work/cbs-ost$ hugo -t zen Building sites … WARN 2020/07/23 23:21:25 .File.UniqueID on zero object. Wrap it in if or with: {{ with .
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-28-podcast-another-issue/" rel="bookmark">
+			2020 06 28 Podcast Another Issue
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-28T23:27:48&#43;09:00">June 28, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		금요일 밤에 지난 오류를 수정한 후 토요일, 일요일에는 제대로 동작하는 듯&hellip;
+그런데 오늘 우연히 발견한 문제는 토요일과 금요일에 올라온 에피소드에 곡 목록이 없다. 추정되는 이유가 있긴했는데 집에 와서 확인해 보니 예상대로. 주말이라 곡 목록이 늦게 업데이트가 되었다.
+토요일, 일요일 곡 목록이 모두 일요일 저녁 7시 반 경에 올라온 것이다.
+흠.. 그렇다고 mp3를 그때 포스팅하지 않을 수도 없고. 이럴 때는 어떻게 해야 할까&hellip;
+고민 중..
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-06-27-how-to-support-video/" rel="bookmark">
 			How to embed video in hugo
 			</a>
@@ -106,6 +146,73 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-20-setup-podcast-blog-5/" rel="bookmark">
+			Setup podcast blog - 자동화
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-20T22:33:02&#43;09:00">June 20, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Scripts Automation
+mini2 - record mp3 file $ crontab -l 00 11 * * * cd /Users/cychong/work/cbs-ost/script &amp;&amp; ./record.sh &gt;&gt; /tmp/cron.out 2&gt;&amp;1 mini1 - create MD file and publish podcast $ crontab -l 04 12 * * * cd /home/cychong/work/cbs-ost/script &amp;&amp; ./scp.sh &gt;&gt; /tmp/cron.out 2&gt;&amp;1 05 12 * * * cd /home/cychong/work/cbs-ost/script &amp;&amp; ./publish.sh &gt;&gt; /tmp/cron.out 2&gt;&amp;1  Get mp3 file from mini2 Create md file after getting song list Rebuild site to publish the updated podcast  
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-18-setup-podcast-blog-2/" rel="bookmark">
+			Setup podcast blog - recording 동작 확인
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-18T23:10:45&#43;09:00">June 18, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		듣고 싶은 mp3 파일을 mini2를 이용해서 1시간 짜리 녹음 동작확인 결과 정상 동작 확인
+$ mp3info -p &quot;%S&quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processing power 부족 때문에 제대로 1시간 녹음이 안된 듯.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-16-setup-podcast-blog-3/" rel="bookmark">
+			Setup podcast blog - post 작성
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-16T06:53:24&#43;09:00">June 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Podcast post 작성하기 Zen theme 덕분에 mp3 파일을 포함한 blog post를 markdown 파일로 작성하고 site build만 시키면 자동적으로 podcast feed를 만들어 준다.
+https://github.com/frjo/hugo-theme-zen에 있는 내용을 보면 md 파일의 frontformatter에 아래 내용을 채워야 하는 듯 하다. 이 중에서 필수인 항목은 mp3 파일의 위치를 가리키는 mp3와 mp3 파일의 길이를 알려주는 duration 두 개 필요. hugo에서 image 파일 위치를 가리킬 때 static\images\a.jpg에 위치한 파일을 markdown 파일에서는 \images.a.jpg로 표현하는 것과 같은 형식을 사용하면 된다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-16-setup-podcast-blog-1/" rel="bookmark">
+			Setup podcast blog - Setup Hugo
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-16T06:53:24&#43;09:00">June 16, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Install Create Hugo for podcast cychong15:writing_factory cychong$ hugo new site cbs-ost Congratulations! Your new Hugo site is created in /Users/cychong/workspace/writing_factory/cbs-ost. Just a few more steps and you're ready to go: 1. Download a theme into the same-named folder. Choose a theme from https://themes.gohugo.io/ or create your own with the &quot;hugo new theme &lt;THEMENAME&gt;&quot; command. 2. Perhaps you want to add some content. You can add single files with &quot;hugo new &lt;SECTIONNAME&gt;/&lt;FILENAME&gt;.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-06-13-add-menu-to-hugo/" rel="bookmark">
 			Hugo에 Main menu 추가하기
 			</a>
@@ -119,6 +226,24 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 	<div class="content list__excerpt post__content clearfix">
 		Hugo로 옮긴 후 아직 찾지 못한 기능 중 하나가 글 들을 종류 별로 구분해서 보는 것이었다. 각 글마다 지정한 category나 tag별로 볼 수 있는 것은 지금 사용하는 mainroad theme에서도 지원하는데 예전에 wordpress에서 많이 사용하던, post, page 등 성격 별로 다른 글들을 볼 수 있는 방법이 아쉬웠다.
 하지만 hugo의 다른 theme 을 사용하는 다른 사이트에서도 유사한 기능을 사용하는 것이 보였고, 심지어 mainroad theme을 사용하는 다른 사이트에서도 같은 기능을 사용한는 것이 보였다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-13-setup-podcast-blog-0/" rel="bookmark">
+			Setup podcast blog - beginning
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-13T16:44:23&#43;09:00">June 13, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		오늘 운전하는 시간이 마침 오전 11시라 CBS 신지혜의 영화음악을 들을 수 있었다. 어릴 적 부터 좋아하던 영화 음악을 괘 오래동안 듣게 해주고 있는 프로그램.
+편안한 목소리와 다양한 좋은 영화 음악을 들을 수 있어 정은영의 영화음악 이후 가장 좋아하는 라디오 프로그램이 되었다. 그런데 문제는 라디오 방송 시간이 오전 11시라 회사생활을 하면서 쉽게 듣기 어려운 상황이라는 거.
+2년 전에는 OS X에 cron을 이용해서 자동으로 녹음을 한 후 NAS로 파일을 옮겨서 DS Audio 앱으로 듣기도 했는데 파일 기반으로 되어 있다 보니 내가 어떤 파일을 들었는 지 알기가 어려웠다.
 	</div>
 </article>
 </main>
@@ -147,9 +272,6 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/note/">Note</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/podcast/">podcast</a>
@@ -187,7 +309,7 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
@@ -210,7 +332,7 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -255,7 +377,7 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -329,7 +451,7 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>

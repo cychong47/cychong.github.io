@@ -70,6 +70,28 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/nvidia-vran-solution/" rel="bookmark">
+			NVIDIA vRAN Solution
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-20T15:01:44&#43;09:00">May 20, 2020</time>
+	<time class="meta__text" datetime="2020-05-20T15:04:06Z">(Last Modified: May 20, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
+Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
+5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
+ 5T-for-5G, or time-triggered transmission technology for telco
+ https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
+  Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/recover-broken-users-table/" rel="bookmark">
 			WordPress 로그인 불가 문제 해결
 			</a>
@@ -240,26 +262,6 @@ $ helm upgrade --debug my-ghost ghost-with-helm [debug] Created tunnel using loc
 $ helm ls snap-confine has elevated permissions and is not confined but should be. Refusing to continue to avoid permission escalation attacks 에러 메시지를 찾아보니 보안 관련된 내용이 이슈라고 다음과 같이 하면 해결된다.
 $ sudo systemctl enable --now apparmor.service Synchronizing state of apparmor.service with SysV service script with /lib/systemd/systemd-sysv-install. Executing: /lib/systemd/systemd-sysv-install enable apparmor 하지만 이제는 helm의 client와 server 버전이 맞지 않다는 에러
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/what-if-kubelet-is-not-started/" rel="bookmark">
-			kubelet이 실행되지 않을때
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-11-05T14:43:35&#43;09:00">November 05, 2019</time>
-	<time class="meta__text" datetime="2019-11-05T15:03:37Z">(Last Modified: November 05, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		mini1 리붓 후 ghost 접속이 안됨.
-docker를 직접 실행시키는 wordpress는 정상적으로 실행
-그래서 kubectl get svc 명령을 치니 접속이 안된다고.
-$ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto kube $ service kubelet status ● kubelet.service - kubelet: The Kubernetes Node Agent Loaded: loaded (/lib/systemd/system/kubelet.service; enabled; vendor preset: enabled) Drop-In: /etc/systemd/system/kubelet.service.d └─10-kubeadm.conf Active: activating (auto-restart) (Result: exit-code) since Mon 2019-11-04 23:26:47 KST; 5s ago Docs: https://kubernetes.
-	</div>
 </article>
 </main>
 
@@ -292,9 +294,6 @@ $ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto k
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
-			</li>
-			<li class="widget__item">
-				<a class="widget__link" href="/categories/note/">Note</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/podcast/">podcast</a>
@@ -332,7 +331,7 @@ $ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto k
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
@@ -355,7 +354,7 @@ $ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto k
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -400,7 +399,7 @@ $ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto k
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -474,7 +473,7 @@ $ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto k
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>
