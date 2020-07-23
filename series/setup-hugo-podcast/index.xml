@@ -6,10 +6,23 @@
     <description>Recent content in setup-hugo-podcast on Keep calm and write something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 22:33:02 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jul 2020 00:22:45 +0900</lastBuildDate>
     
 	<atom:link href="https://cychong47.github.io/series/setup-hugo-podcast/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2020 07 24 Rss Is Not Updated</title>
+      <link>https://cychong47.github.io/post/2020/2020-07-24-rss-is-not-updated/</link>
+      <pubDate>Fri, 24 Jul 2020 00:22:45 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-07-24-rss-is-not-updated/</guid>
+      <description>갑자기 어느 날 부터(정확히 말하면 7월 14일부터) podcast가 업데이트가 되지 않는다.
+다음 날도, 그 다음 날도. 흠. 뭐가 문제일까?
+아무튼 hugo를 이용해서 직접 사이트를 빌드해 봤다. 그랬더니 이상한 에러가 난다. os.Stat 파일이 없다는 이야기도 나오고.
+뭔가 문제가 있는데 밤이라 그런지 그냥 단순하게 Hugo zen-theme 이 rss를 제대로 생성하지 못한다는 내용으로 검색을 해 봤는데 결과가 안 나온다.
+cychong@mini1:~/work/cbs-ost$ hugo -t zen Building sites … WARN 2020/07/23 23:21:25 .File.UniqueID on zero object. Wrap it in if or with: {{ with .</description>
+    </item>
     
     <item>
       <title>Setup podcast blog - 자동화</title>

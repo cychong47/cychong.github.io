@@ -70,6 +70,23 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/setup-podcast-blog-2/" rel="bookmark">
+			Setup podcast blog - recording 동작 확인
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-18T23:10:45&#43;09:00">June 18, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/note/" rel="category">Note</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		듣고 싶은 mp3 파일을 mini2를 이용해서 1시간 짜리 녹음 동작확인 결과 정상 동작 확인
+$ mp3info -p &quot;%S&quot; cinema-2020-06-18.mp3 3600 역시 mini1의 processing power 부족 때문에 제대로 1시간 녹음이 안된 듯.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/setup-podcast-blog-3/" rel="bookmark">
 			Setup podcast blog - post 작성
 			</a>
@@ -231,32 +248,12 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
  https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
   Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/recover-broken-users-table/" rel="bookmark">
-			WordPress 로그인 불가 문제 해결
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-08T23:36:45&#43;09:00">May 08, 2020</time>
-	<time class="meta__text" datetime="2020-05-09T15:00:09Z">(Last Modified: May 09, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		말썽쟁이(?) wordpress 블로그가 또 문제를 일으켰다.
-이번에도 로그인이 안되는 현상인데 지난 번과는 다른 에러 메시지가 나온다. 즉 지난 번 해결책은 소용이 없을 거라는 불길한 예감이.
-로그인 계정 자체가 없다는 이 어이없는 상황.
-그래서 지난 번에 유용하게 사용했던 phpmyadmin을 이용해서 DB 정보를 확인해봤다. (다행히 MySql, wordpress 와 함께 실행시켜놓은 phpmyadmin container가 동작하고 있어서 지난 번과 같이 8181 포트로 접속하면 된단. 다만 로그인 암호를 기억하지 못하고 있는 나 대신 Safari가 기억하고 있어서 그냥 접속했다는)
-	</div>
 </article>
 </main>
 
 <div class="pagination">
 	<a class="pagination__item pagination__item--prev btn" href="/post/">«</a>
-	<span class="pagination__item pagination__item--current">2/24</span>
+	<span class="pagination__item pagination__item--current">2/25</span>
 	<a class="pagination__item pagination__item--next btn" href="/post/page/3/">»</a>
 </div>
 
@@ -391,7 +388,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/helm/" title="helm">helm (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/homebrew/" title="homebrew">homebrew (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/http/" title="http">http (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="hugo">hugo (10)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
@@ -465,7 +462,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (5)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/podcast/" title="podcast">podcast (6)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/powermate/" title="powermate">powermate (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/prediction/" title="prediction">prediction (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/programming/" title="programming">programming (2)</a>
