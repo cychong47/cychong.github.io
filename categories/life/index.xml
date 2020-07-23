@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on Keep calm and write something</title>
+    <link>https://cychong47.github.io/categories/life/</link>
+    <description>Recent content in Life on Keep calm and write something</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jul 2020 06:56:44 +0900</lastBuildDate>
+    
+	<atom:link href="https://cychong47.github.io/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apple subscriptions update</title>
+      <link>https://cychong47.github.io/post/2020/2020-07-24-apple-subscriptions/</link>
+      <pubDate>Fri, 24 Jul 2020 06:56:44 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-07-24-apple-subscriptions/</guid>
+      <description>오늘 기준으로 이용하고 있는 subscription 들</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/slack/" rel="bookmark">
+			(책) Slack
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-29T13:42:11&#43;09:00">July 29, 2018</time>
+	<time class="meta__text" datetime="2018-07-29T13:43:27Z">(Last Modified: July 29, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		p32 너무 효율적인 사람은 너무나도 바쁘기 때문에, 무언가 새로운 일이 일어나는 경우 그 일에 즉시 대응할 수가 없게 된다.
+p37 사실 효율성을 높이는 일은 매우 어렵다. 효율성 개선에는 엄청난 노력과 진정한 독창성이 필요하기 때문이다. 조직은 항상 스스로를 더욱 효율적으로 만들기 위해 끊임없이 노력해 왔기 때문에 조직을 더 효율적으로 만들기란 결코 쉬운 일이 아니다.
+p38 짧은 시간안에 조직의 개선을 보여주어야 하는 효율성 전문가에게 유욯나 지름길은 무엇일까? 가장 자주 채택되는 지름길은 바로 각각의 직원을 모두 완전한 대체물이라고 가정하는 것이다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/five-traps-team-can-fall-into/" rel="bookmark">
 			(책) 팀이 빠지기 쉬운 5가지 함정
 			</a>
@@ -231,28 +250,6 @@ iThoughtX를 OS X, iOS용으로 모두 구입할 만큼 마인드맵에 관심�
 혹시나 하고 ansible-playbook을 보니 /var/www/html에 마운트되는 위치에 이전 버전의 wordpress 파일들이 존재하고 있었다.
  volumes: - &quot;/Users/cychong/Documents/wordpress/html:/var/www/html&quot; - &quot;/Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads&quot; - &quot;/Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini&quot; 바로 첫번째 줄이 문제를 유발하고 있는 곳&hellip; 내가 왜 굳이 저렇게 했을까 생각해 보니 저 디렉토리에 바로 wp-content가 있고, 그 아래 themes와 plugins가 있다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/wordpress-admin-login-fail/" rel="bookmark">
-			wordpress admin 계정 복구
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-06-14T14:21:13&#43;09:00">June 14, 2018</time>
-	<time class="meta__text" datetime="2019-02-28T14:04:18Z">(Last Modified: February 28, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		문제 블로그 보는 거 자체는 문제가 없는데 admin 계정으로 로그인 시도하면 반복해서 로그인 페이지로 redirect됨
-http://sosa0sa.com/wp-login.php?redirect_to=http://sosa0sa.com/wp-admin/&amp;reauth=1 구글링을 하니 대부분 쿠키를 초기화하고, theme, plugin등을 초기화하라는 의견이 대부분. 모두 따라해 봤으니 제대로 동작하지 않는다&hellip; -_-;;;
-마지막으로 wp_usermeta table에서 session_token 값을 초기화하라는 말이 있어 이것도 해 보기로. phpmyadmin을 설치해서 table의 값을 변경하라고 해서 phpmyadmin을 역시 docker로 설치해 보기로
-https://wordpress.org/support/topic/possible-fix-for-sudden-redirect-loop-at-wp-login-with-reauth1/
-Phpmyadmin docker 설치 Wordpress ansible-playbook 에 다음과 같이 추가
-links를 통해 mysql container와 연결하고 PMA_HOST를 해당 mysql container의 name으로 지정하는 것이 중요한 내용임.
-	</div>
 </article>
 </main>
 
@@ -287,6 +284,9 @@ links를 통해 mysql container와 연결하고 PMA_HOST를 해당 mysql contain
 				<a class="widget__link" href="/categories/hugo/">Hugo</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">Life</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/til/">TIL</a>
 			</li>
 		</ul>
@@ -318,6 +318,7 @@ links를 통해 mysql container와 연결하고 PMA_HOST를 해당 mysql contain
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible/" title="ansible">ansible (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ansible-playbook/" title="ansible-playbook">ansible-playbook (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/anti-work-pattern/" title="anti-work pattern">anti-work pattern (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/apple/" title="Apple">Apple (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
