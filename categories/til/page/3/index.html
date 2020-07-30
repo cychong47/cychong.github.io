@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2019/convention-on-impose-core-requirements/" rel="bookmark">
+			Convention on impose core requirements
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-29T14:35:21&#43;09:00">September 29, 2019</time>
+	<time class="meta__text" datetime="2019-10-07T15:46:03Z">(Last Modified: October 07, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		하나의 Helm chart를 이용하여 여러 개의 pod를 설치 하는 nested chart 인 경우 각각의 pod에 대한 CPU requirement는 각 subchart의 values.yaml에 resources 항목에 기술하면 된다.
+아래는 ONAP중 closed loop control에서 Data collection을 담당하는 DCAE의 SW들을 kubernets에 배포하기 위해 만들어진 차트들이다. 다음과 같이 8개의 chart들로 구성되어 있고,
+$ tree -d oom/kubernetes/dcaegen2/charts/ -L 1 oom/kubernetes/dcaegen2/charts/ ├── dcae-bootstrap ├── dcae-cloudify-manager ├── dcae-config-binding-service ├── dcae-deployment-handler ├── dcae-healthcheck ├── dcae-policy-handler ├── dcae-redis └── dcae-servicechange-handler 8 directories 각각의 subchart는 각자의 values.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2019/install-vm-with-multipass/" rel="bookmark">
 			Install VM with multipass on OS X
 			</a>
@@ -238,27 +257,6 @@ cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for 
 		Kubernetes Networks in google docs
 이거 보면 IPv6를 사용해야 하는 경우 선택할 수 있는 CNI는 Calico, Cillium, Contiv, Tungsten Fabric 정도로 좁혀지네
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/amazon-daily-work/" rel="bookmark">
-			(펌글) 아마존 3년 출근기
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-05-16T11:54:25&#43;09:00">May 16, 2019</time>
-	<time class="meta__text" datetime="2019-05-16T14:39:26Z">(Last Modified: May 16, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		https://zaverome.wordpress.com/2019/01/09/%EC%95%84%EB%A7%88%EC%A1%B4-3%EB%85%84-%EC%B6%9C%EA%B7%BC%EA%B8%B0-1-%ED%95%98%EB%A3%A8-%EC%9D%BC%EA%B3%BC-%EB%B0%8F-%EC%9A%94%EC%95%BD/
-인상적인 내용들
- 매일 하는 스탠드업 미팅(데일리 스크럼)은 오후 4시입니다.
- 오후 4시에 하는 데일리 미팅이라. 신기하다. 보통 오늘 할 일과, 이슈 등을 이야기하는 것이 잘 알려진 daily meeting의 practice인데 오후에 한다니. 아래 내용을 보면 야근도 안 한다는데. 흠.. 신기하네
- 아마존에서 일한 이래 일이 많아서 사무실에 늦게까지 남아 야근을 한 일은 한 번도 없습니다. 일년에 두 세번 정도 일이 좀 남아서 퇴근 후에 집에서 한 두시간 정도 일을 한 적은 있습니다.
-	</div>
 </article>
 </main>
 
@@ -411,7 +409,7 @@ cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for 
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
@@ -524,6 +522,7 @@ cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for 
 		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vertical-pod-autoscaler/" title="vertical-pod-autoscaler">vertical-pod-autoscaler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ves/" title="ves">ves (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/video/" title="video">video (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim (1)</a>

@@ -70,6 +70,26 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/recover-broken-users-table/" rel="bookmark">
+			WordPress 로그인 불가 문제 해결
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-08T23:36:45&#43;09:00">May 08, 2020</time>
+	<time class="meta__text" datetime="2020-05-09T15:00:09Z">(Last Modified: May 09, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		말썽쟁이(?) wordpress 블로그가 또 문제를 일으켰다.
+이번에도 로그인이 안되는 현상인데 지난 번과는 다른 에러 메시지가 나온다. 즉 지난 번 해결책은 소용이 없을 거라는 불길한 예감이.
+로그인 계정 자체가 없다는 이 어이없는 상황.
+그래서 지난 번에 유용하게 사용했던 phpmyadmin을 이용해서 DB 정보를 확인해봤다. (다행히 MySql, wordpress 와 함께 실행시켜놓은 phpmyadmin container가 동작하고 있어서 지난 번과 같이 8181 포트로 접속하면 된단. 다만 로그인 암호를 기억하지 못하고 있는 나 대신 Safari가 기억하고 있어서 그냥 접속했다는)
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/if-i-have-authority-5-years-later/" rel="bookmark">
 			내게 권한이 있다면 - 그 이후
 			</a>
@@ -236,25 +256,6 @@ cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadat
 	<div class="content list__excerpt post__content clearfix">
 		cychong@mini1:~/work/ghost-with-helm-x$ sudo apt update [sudo] password for cychong: Ign:2 http://dl.google.com/linux/chrome/deb stable InRelease Hit:3 http://archive.ubuntu.com/ubuntu bionic InRelease Hit:4 https://download.docker.com/linux/ubuntu bionic InRelease Hit:5 http://dl.google.com/linux/chrome/deb stable Release Get:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB] Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB] Get:9 http://archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB] Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [295 kB] Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB] Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [147 kB] Get:13 http://archive.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/convention-on-impose-core-requirements/" rel="bookmark">
-			Convention on impose core requirements
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-29T14:35:21&#43;09:00">September 29, 2019</time>
-	<time class="meta__text" datetime="2019-10-07T15:46:03Z">(Last Modified: October 07, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		하나의 Helm chart를 이용하여 여러 개의 pod를 설치 하는 nested chart 인 경우 각각의 pod에 대한 CPU requirement는 각 subchart의 values.yaml에 resources 항목에 기술하면 된다.
-아래는 ONAP중 closed loop control에서 Data collection을 담당하는 DCAE의 SW들을 kubernets에 배포하기 위해 만들어진 차트들이다. 다음과 같이 8개의 chart들로 구성되어 있고,
-$ tree -d oom/kubernetes/dcaegen2/charts/ -L 1 oom/kubernetes/dcaegen2/charts/ ├── dcae-bootstrap ├── dcae-cloudify-manager ├── dcae-config-binding-service ├── dcae-deployment-handler ├── dcae-healthcheck ├── dcae-policy-handler ├── dcae-redis └── dcae-servicechange-handler 8 directories 각각의 subchart는 각자의 values.
-	</div>
 </article>
 </main>
 
@@ -407,7 +408,7 @@ $ tree -d oom/kubernetes/dcaegen2/charts/ -L 1 oom/kubernetes/dcaegen2/charts/ �
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
@@ -520,6 +521,7 @@ $ tree -d oom/kubernetes/dcaegen2/charts/ -L 1 oom/kubernetes/dcaegen2/charts/ �
 		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vertical-pod-autoscaler/" title="vertical-pod-autoscaler">vertical-pod-autoscaler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ves/" title="ves">ves (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/video/" title="video">video (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim (1)</a>

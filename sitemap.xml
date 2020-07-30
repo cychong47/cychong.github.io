@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://cychong47.github.io/categories/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/2020/2020-07-31-vertical-pod-autoscaler/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/kubernetes/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/categories/til/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/vertical-pod-autoscaler/</loc>
+    <lastmod>2020-07-31T00:01:03+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://cychong47.github.io/tags/apple/</loc>
     <lastmod>2020-07-24T06:56:44+09:00</lastmod>
   </url>
@@ -13,27 +53,7 @@
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/categories/</loc>
-    <lastmod>2020-07-24T06:56:44+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/</loc>
-    <lastmod>2020-07-24T06:56:44+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://cychong47.github.io/categories/life/</loc>
-    <lastmod>2020-07-24T06:56:44+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/post/</loc>
-    <lastmod>2020-07-24T06:56:44+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/</loc>
     <lastmod>2020-07-24T06:56:44+09:00</lastmod>
   </url>
   
@@ -99,16 +119,6 @@
   
   <url>
     <loc>https://cychong47.github.io/tags/helm/</loc>
-    <lastmod>2020-07-02T23:58:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/tags/kubernetes/</loc>
-    <lastmod>2020-07-02T23:58:41+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/categories/til/</loc>
     <lastmod>2020-07-02T23:58:41+09:00</lastmod>
   </url>
   

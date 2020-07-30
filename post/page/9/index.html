@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/update-ansible-playbook-for-wordpress/" rel="bookmark">
+			Update ansible-playbook for wordpress
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-06-14T15:13:52&#43;09:00">June 14, 2018</time>
+	<time class="meta__text" datetime="2018-06-14T15:21:32Z">(Last Modified: June 14, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		이상하게 wordpress 버전이 올라가면 docker용 wordpress 버전도 함께 올라갈 텐데 아무리 최신 docker image를 받아 container를 만들어도 wordpress admin 계정에 들어가면 wordpress를 업데이트 해야 한다고 한다. docket store(http://store.docker.com)에 가면 분명히 wordpress 최신 버전으로 패키징되어 있는 데&hellip;
+혹시나 하고 ansible-playbook을 보니 /var/www/html에 마운트되는 위치에 이전 버전의 wordpress 파일들이 존재하고 있었다.
+ volumes: - &quot;/Users/cychong/Documents/wordpress/html:/var/www/html&quot; - &quot;/Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads&quot; - &quot;/Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini&quot; 바로 첫번째 줄이 문제를 유발하고 있는 곳&hellip; 내가 왜 굳이 저렇게 했을까 생각해 보니 저 디렉토리에 바로 wp-content가 있고, 그 아래 themes와 plugins가 있다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/wordpress-admin-login-fail/" rel="bookmark">
 			wordpress admin 계정 복구
 			</a>
@@ -237,25 +256,6 @@ mbpr15:Homebrew cychong$ ansible all -m ping -k SSH password: localhost | SUCCES
 		Summary docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql docker run --restart=always -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@ -e WORDPRESS_DB_NAME=wordpress_db -p 80:80 -v /Users/cychong/Documents/wordpress/html:/var/www/html -v /Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads -v /Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini --link mysql:mysql --name wpcontainer -d wordpress If required, import database to mysql (Once wordpress data is imported into mysql, upgrading mysql does not requires re-import ingof wordpress data)
 mysql install container cychong:~ cychong$ docker run --restart=always -e MYSQL_ROOT_PASSWORD=aqwe123 -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@ -e MYSQL_DATABASE=wordpress_db -v /Users/cychong/Dropbox/Apps/wordpress/database:/var/lib/mysql --name mysql -d mysql Unable to find image 'mysql:latest' locally latest: Pulling from library/mysql aa18ad1a0d33: Pull complete a5745c3b8bcc: Pull complete 76375fcd129c: Pull complete 4f72cfb004cf: Pull complete 1d6a01e515fb: Pull complete a71e1163fa7e: Pull complete 8c1a568fa442: Pull complete e7a69cecc173: Pull complete 9759a0f979a1: Pull complete 3f71dac6110f: Pull complete 58f37de54392: Pull complete Digest: sha256:790b7b18b832822ef400e44ad9fac885a746db1a7028ec52325730cf9b831753 Status: Downloaded newer image for mysql:latest b1f54c680120898fc7ff16751048fe18ae461399d5d7f10308c156c68d40577b check container is started cychong:~ cychong$ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES b1f54c680120 mysql &quot;docker-entrypoint.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2017/clienbbs/" rel="bookmark">
-			clienBBS
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-12-14T09:42:15&#43;09:00">December 14, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		pip3로는 설치가 안되네
-mbpr15:~ cychong$ pip3 install clientBBS Collecting clientBBS Could not find a version that satisfies the requirement clientBBS (from versions: ) No matching distribution found for clientBBS 그래서 그냥 github 링크에서 클론해서 실행
-mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Cloning into 'clienBBS'... remote: Counting objects: 219, done. remote: Compressing objects: 100% (25/25), done. remote: Total 219 (delta 20), reused 23 (delta 9), pack-reused 185 Receiving objects: 100% (219/219), 33.96 MiB | 3.
-	</div>
 </article>
 </main>
 
@@ -408,7 +408,7 @@ mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Clonin
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
@@ -521,6 +521,7 @@ mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Clonin
 		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vertical-pod-autoscaler/" title="vertical-pod-autoscaler">vertical-pod-autoscaler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ves/" title="ves">ves (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/video/" title="video">video (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim (1)</a>

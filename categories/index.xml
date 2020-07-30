@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Keep calm and write something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2020 06:56:44 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 00:01:03 +0900</lastBuildDate>
     
 	<atom:link href="https://cychong47.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL</title>
+      <link>https://cychong47.github.io/categories/til/</link>
+      <pubDate>Fri, 31 Jul 2020 00:01:03 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/categories/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Life</title>
@@ -35,15 +44,6 @@
       <pubDate>Thu, 09 Jul 2020 22:59:49 +0900</pubDate>
       
       <guid>https://cychong47.github.io/categories/gadget/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://cychong47.github.io/categories/til/</link>
-      <pubDate>Thu, 02 Jul 2020 23:58:41 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/categories/til/</guid>
       <description></description>
     </item>
     

@@ -70,6 +70,23 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2017/parsing-http-header-with-scary/" rel="bookmark">
+			Parsing http header with scary
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-01T09:36:35&#43;09:00">October 01, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		정규식으로 http 분석 def processHTTP(data): str_method = &quot;&quot; str_uri = &quot;&quot;  정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&quot;(?P&lt;method&gt;(^GET|^POST|^PUT|^DELETE)) (?P&lt;uri&gt;.+) (?P&lt;version&gt;.+)&quot;, data) if not h: return &quot;Error&quot; # 정규표현식에 해당하는 데이터가 없는 경우 Error 를 리턴해줌 # method 로 정의된 부준은 str_method 에 저장 if h.group(&quot;method&quot;): str_method = h.group(&quot;method&quot;) # URI 데이터는 str_uri 에 저장 if h.group(&quot;uri&quot;): str_uri = h.group(&quot;uri&quot;) return str_method,str_uri # method 와 uri 를 리턴해 줌  출처 : http://www.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2017/googles-load-balancer/" rel="bookmark">
 			Google&#39;s Load Balancer
 			</a>
@@ -244,25 +261,6 @@ Error https://docs.docker.com/compose/wordpress/#define-the-project 에 있는 �
 근데 실패
 cychong:~/work/my_wordpress cychong$ docker-compose up -d Pulling db (mysql:5.7)... Traceback (most recent call last): File &quot;docker-compose&quot;, line 3, in &lt;module&gt; File &quot;compose/cli/main.py&quot;, line 68, in main File &quot;compose/cli/main.py&quot;, line 118, in perform_command File &quot;compose/cli/main.py&quot;, line 928, in up File &quot;compose/project.py&quot;, line 427, in up File &quot;compose/service.py&quot;, line 311, in ensure_image_exists File &quot;compose/service.py&quot;, line 1016, in pull File &quot;site-packages/docker/api/image.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2017/ghost-container-with-docker-compose/" rel="bookmark">
-			ghost container with docker-compose
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-09-03T01:26:28&#43;09:00">September 03, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		얼마전에 구성한 ghost container는 ghost가 1.x로 업데이트가 되면서 설정 정보의 위치가 변경되었는데 그걸 미처 몰라 블로그 주소가 기본값인 localhost로 설정되는 문제가 있었다. 기존 ghost container에 접근해서 확인해 보니 `/var/lib/ghost/config.production.json&rsquo; 파일에 주소가 설정되어 있는 걸 보고 이 파일도 따로 지정해 주도록 변경했다. 그러면서 docker-compose를 한번 써 보기로
-일단 기존 ghost를 정리하고
-cychong:~ cychong$ docker stop ghost ghost cychong:~ cychong$ docker rm ghost ghost cychong:~ cychong$ docker rmi ghost Untagged: ghost:latest Untagged: ghost@sha256:a1f70641d35755395eb16827de4e67861e01bffe18bac8e54ab5c68cd170a2ea Deleted: sha256:e6ba3dd3c2491c6086d570fa9769a9f60d7c004129ff9ae7ff9fa0bad16a993b Deleted: sha256:c1ee9d43624bb4a1922c15d7a9175a80d1952cb71464d6d9d900fe21948227af Deleted: sha256:f8f95cdbafce4ecd226cdd690e6f909203a0f83d3507c53a71d4e59826ea881b Deleted: sha256:935d8847555992b702173b83b0d210f2728a24b5287467396dc8d5c68907691f Deleted: sha256:f4766b72a49d4cd2e897da0efcec94c33a0d24a95cb8426a790e1c45e6e39fae Deleted: sha256:0c0dbaebe17c6f585eb596e705ed5acba668097698a7780844c12597bb99b34a Deleted: sha256:c807796bea7a34c0b73eae853b728f2bbcd7a4fecc19d049455b322120f95ce7 Deleted: sha256:15f9f4e44e22d3287b6caf9555110383d3ff2e88ee9cc03823b1ba5a01b75eac Deleted: sha256:77809f11069f2abfb571cba07ee3d696ec32823df0f5d0587042ffdb27a80add Deleted: sha256:5d6bba18f7b25c9b93d3cc0d93a4cff54eb88b0ba22ed867633a21fc3ded5f57 하는 김에 최신 버전의 ghost받아오고
-	</div>
 </article>
 </main>
 
@@ -415,7 +413,7 @@ cychong:~ cychong$ docker stop ghost ghost cychong:~ cychong$ docker rm ghost gh
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
@@ -528,6 +526,7 @@ cychong:~ cychong$ docker stop ghost ghost cychong:~ cychong$ docker rm ghost gh
 		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vertical-pod-autoscaler/" title="vertical-pod-autoscaler">vertical-pod-autoscaler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ves/" title="ves">ves (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/video/" title="video">video (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim (1)</a>

@@ -69,6 +69,25 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2017/clienbbs/" rel="bookmark">
+			clienBBS
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-12-14T09:42:15&#43;09:00">December 14, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		pip3로는 설치가 안되네
+mbpr15:~ cychong$ pip3 install clientBBS Collecting clientBBS Could not find a version that satisfies the requirement clientBBS (from versions: ) No matching distribution found for clientBBS 그래서 그냥 github 링크에서 클론해서 실행
+mbpr15:working cychong$ git clone https://github.com/liza183/clienBBS.git Cloning into 'clienBBS'... remote: Counting objects: 219, done. remote: Compressing objects: 100% (25/25), done. remote: Total 219 (delta 20), reused 23 (delta 9), pack-reused 185 Receiving objects: 100% (219/219), 33.96 MiB | 3.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2017/mac-mini-e-windows-10-seolci/" rel="bookmark">
 			mac mini 에 windows 10 설치
 			</a>
@@ -233,25 +252,6 @@ Lightroom으로 사진 관리  Apple Photos 앱이 아닌 Adobe Lightroom으로 
 		When I call the homebrew modules for three hosts including the localhost, one host reports error.
 mbpr15:~ cychong$ ansible-playbook install_brew_ack.yaml --verbose No config file found; using defaults PLAY [all] ************************************************************************************************** TASK [Gathering Facts] ************************************************************************************** ok: [localhost] ok: [mini2] ok: [mini1] TASK [install ack in homebrew] ****************************************************************************** ok: [localhost] =&gt; {&quot;changed&quot;: false, &quot;failed&quot;: false, &quot;msg&quot;: &quot;Package already installed: ack&quot;} ok: [mini1] =&gt; {&quot;changed&quot;: false, &quot;failed&quot;: false, &quot;msg&quot;: &quot;Package already installed: ack&quot;} fatal: [mini2]: FAILED!
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2017/ftp-server-is-gone-from-high-siera-osx-server/" rel="bookmark">
-			FTP server is gone from High Siera OSX Server
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-07T00:19:27&#43;09:00">October 07, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		It is gone finally&hellip; [macOS Server 5.4 changes in High Sierra you need to know about!])https://www.imore.com/changes-macos-server-54-high-sierra)
- File Transfer Protocol (FTP): A longtime a security risk, for example for sending password information in clear text, FTP support will be removed from macOS server if you upgrade.
- As my xeros printer/scanner suppors only ftp or samba(which is much much slower than the ftp) I have to run my own ftp server in my mac mini.
-	</div>
 </article>
 </main>
 
@@ -403,7 +403,7 @@ mbpr15:~ cychong$ ansible-playbook install_brew_ack.yaml --verbose No config fil
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
@@ -516,6 +516,7 @@ mbpr15:~ cychong$ ansible-playbook install_brew_ack.yaml --verbose No config fil
 		<a class="widget-taglist__link widget__link btn" href="/tags/tutorial/" title="tutorial">tutorial (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ubuntu/" title="ubuntu">ubuntu (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vagrant/" title="vagrant">vagrant (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vertical-pod-autoscaler/" title="vertical-pod-autoscaler">vertical-pod-autoscaler (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ves/" title="ves">ves (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/video/" title="video">video (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/vim/" title="vim">vim (1)</a>
