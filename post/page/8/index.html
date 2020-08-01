@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/your-time/" rel="bookmark">
+			(책) 당신의 시간
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-29T13:44:37&#43;09:00">July 29, 2018</time>
+	<time class="meta__text" datetime="2018-07-29T13:47:22Z">(Last Modified: July 29, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		p52 &ldquo;당신의 삶입니다. 당신의 사람을 이야기하라는데 가족을 위해 사는 게 전부라. 생활비만 제대로 해결된다면 가족에게 당신은 없어도 되는 존재라는 말이군요. 그런 현금 지급기와 같은 삶을 원한다면 더 이야기하는 것도 &lsquo;시간낭비&rsquo;군요&rdquo;
+p89 파울로 코엘료의 &lt;순례자&gt;에서는 꿈들을 죽일 때 나타나는 첫 번째 징후가 &lsquo;시간이 없다&rsquo;라고 말하는 것이라고 했습니다.
+p97 가장 먼저 해야 할 일은 진지하게 고민하며 한발 내딛는 일입니다. 어디로든 상관없습니다. 자신을 둘러싸고 있는 경계를 벗어나기만 하면 새로운 사람들과 새로운 경험이 당신을 기다리고 있을 겁니다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/slack/" rel="bookmark">
 			(책) Slack
 			</a>
@@ -231,25 +250,6 @@ p22  지식을 더 많이 아는 것이 아닌 아는 지식으로 뭘 할 지 L
 iThoughtX를 OS X, iOS용으로 모두 구입할 만큼 마인드맵에 관심이 있긴 한데 생각을 풀어낼 때 다양한 framework을 활용할 수 있다는 건 몰랐다. 관련된 책을 한번 읽어보면 좋겠네.
 오늘 강의해준 신 분은 무려 자기 이름을 걸로 책을 낸 저자 동종성 님
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/update-ansible-playbook-for-wordpress/" rel="bookmark">
-			Update ansible-playbook for wordpress
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-06-14T15:13:52&#43;09:00">June 14, 2018</time>
-	<time class="meta__text" datetime="2018-06-14T15:21:32Z">(Last Modified: June 14, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		이상하게 wordpress 버전이 올라가면 docker용 wordpress 버전도 함께 올라갈 텐데 아무리 최신 docker image를 받아 container를 만들어도 wordpress admin 계정에 들어가면 wordpress를 업데이트 해야 한다고 한다. docket store(http://store.docker.com)에 가면 분명히 wordpress 최신 버전으로 패키징되어 있는 데&hellip;
-혹시나 하고 ansible-playbook을 보니 /var/www/html에 마운트되는 위치에 이전 버전의 wordpress 파일들이 존재하고 있었다.
- volumes: - &quot;/Users/cychong/Documents/wordpress/html:/var/www/html&quot; - &quot;/Users/cychong/Documents/wordpress/uploads:/var/www/html/wp-content/uploads&quot; - &quot;/Users/cychong/Documents/wordpress/conf/php_uploads.ini:/usr/local/etc/php/conf.d/uploads.ini&quot; 바로 첫번째 줄이 문제를 유발하고 있는 곳&hellip; 내가 왜 굳이 저렇게 했을까 생각해 보니 저 디렉토리에 바로 wp-content가 있고, 그 아래 themes와 plugins가 있다.
-	</div>
 </article>
 </main>
 
@@ -402,7 +402,7 @@ iThoughtX를 OS X, iOS용으로 모두 구입할 만큼 마인드맵에 관심�
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

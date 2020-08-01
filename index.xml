@@ -298,6 +298,15 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
     </item>
     
     <item>
+      <title>Upgrade kubenetes to 1.17.2-0</title>
+      <link>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/new-things-in-last-4-years/</guid>
+      <description>preparation cychong@mini1:~$ sudo apt update [sudo] password for cychong: Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease Get:2 http://dl.google.com/linux/chrome/deb stable Release [943 B] Get:3 http://dl.google.com/linux/chrome/deb stable Release.gpg [819 B] ... Get the lastest version cychong@mini1:~$ sudo apt-cache policy kubeadm kubeadm: Installed: 1.16.1-00 Candidate: 1.17.2-00 Version table: 1.17.2-00 500 500 http://apt.kubernetes.io kubernetes-xenial/main amd64 Packages 1.17.1-00 500 500 http://apt.kubernetes.io kubernetes-xenial/main amd64 Packages 1.17.0-00 500 500 http://apt.kubernetes.io kubernetes-xenial/main amd64 Packages ... cychong@mini1:~$ apt-cache madison kubeadm kubeadm | 1.</description>
+    </item>
+    
+    <item>
       <title>(책) 리얼하다</title>
       <link>https://cychong47.github.io/post/2019/book-so-real/</link>
       <pubDate>Sun, 15 Dec 2019 06:46:24 +0900</pubDate>
@@ -624,10 +633,10 @@ P44 제조업에서는 정보 공유의 중요성이 높지 않다. 설계 -&amp
     
     <item>
       <title>Recover WordPress container</title>
-      <link>https://cychong47.github.io/post/2020/recovery-failed-wordpress-container/</link>
+      <link>https://cychong47.github.io/post/2018/recovery-failed-wordpress-container/</link>
       <pubDate>Wed, 05 Sep 2018 14:10:39 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/recovery-failed-wordpress-container/</guid>
+      <guid>https://cychong47.github.io/post/2018/recovery-failed-wordpress-container/</guid>
       <description>One day The Wordpress container does not work at all. docker ps로 확인하면 1분 주기로 restart를 반복하고 있다. 경험상 이건 wordpress 앱이 초기화 과정에서 문제가 있는 거라는 걸로 짐작된다. 로그를 확인해 보니 아래와 같은 에러만 출력.
 뭐가 문제일까 멀쩡히 잘 돌던 녀석들인데.
 mini2:html cychong$ docker logs -f f12c3b3a57ef ... Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 Let’s debug  하지만 뭔가 달라진 게 있으니 갑자기 문제가 발생했겠지.</description>

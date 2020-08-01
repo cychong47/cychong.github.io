@@ -26,10 +26,10 @@
     
     <item>
       <title>Recover WordPress container</title>
-      <link>https://cychong47.github.io/post/2020/recovery-failed-wordpress-container/</link>
+      <link>https://cychong47.github.io/post/2018/recovery-failed-wordpress-container/</link>
       <pubDate>Wed, 05 Sep 2018 14:10:39 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/recovery-failed-wordpress-container/</guid>
+      <guid>https://cychong47.github.io/post/2018/recovery-failed-wordpress-container/</guid>
       <description>One day The Wordpress container does not work at all. docker ps로 확인하면 1분 주기로 restart를 반복하고 있다. 경험상 이건 wordpress 앱이 초기화 과정에서 문제가 있는 거라는 걸로 짐작된다. 로그를 확인해 보니 아래와 같은 에러만 출력.
 뭐가 문제일까 멀쩡히 잘 돌던 녀석들인데.
 mini2:html cychong$ docker logs -f f12c3b3a57ef ... Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 Let’s debug  하지만 뭔가 달라진 게 있으니 갑자기 문제가 발생했겠지.</description>

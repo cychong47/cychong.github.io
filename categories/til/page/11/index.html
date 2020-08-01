@@ -70,6 +70,26 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/header-length-in-mbuf/" rel="bookmark">
+			DPDK new mbuf 사용 주의사항
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-06T08:22:24&#43;09:00">March 06, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		l2_len, l3_len, l4_len 등을 사용하는 라이브러리가 존재함
+ reassembly Tx checksum offload  Reassembly rte_ipv6_frag_reassemble_packet(), rte_ipv4_frag_reassemble_packet() Incoming mbuf should have its l2_len and l3_len fields setup correctly.
+L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to
+ fill l2_len and l3_len in mbuf set the flags PKT_TX_TCP_CKSUM, PKT_TX_SCTP_CKSUM or PKT_TX_UDP_CKSUM set the flag PKT_TX_IPV4 or PKT_TX_IPV6 calculate the pseudo header checksum and set it in the L4 header (only for TCP or UDP).
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/how_kni_free_mbuf/" rel="bookmark">
 			KNI가 buffer를 free 하는 방법
 			</a>
@@ -243,33 +263,6 @@ constructor attribute을 가진 함수는 main 함수를 실행하기 전에 호
 #include &lt;stdio.h&gt; void begin (void) __attribute__((constructor)); void end (void) __attribute__((destructor)); int main (void) { printf (&quot;\nInside main ()&quot;); } void begin (void) { printf (&quot;\nIn begin ()&quot;); } void end (void) { printf (&quot;\nIn end ()\n&quot;); } 실행하면
 In begin () Inside main () In end () DPDK DPDK의 경우 device driver들을 모두 constructor attirbute을 사용해서 main 함수 전에 호출되록 한다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/introducing-python/" rel="bookmark">
-			Introducing Python
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-08T13:25:34&#43;09:00">February 08, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Introducing Python 을 판교어린이도서관에서 짧게 보고 적은 아이템들
-python3 based
-Decorator는 공부가 필요한 내용
-sys.path : module 검색 경로 __init__.py 파일이 있으면 그 디렉토리를 PKG로 간주함
-defaultdic()
-Counters()
-dicionary는 key의 순서를 보장하지 않음. OrderedDict()로 사전을 정의하면 가능 deque = stack + queue pprint()는 print보다 깔끔하게 출력한다고.
-'\uXXX' 유니코드
-%10.4s : 10칸의 공간. 문자열 중 4개만 출력
-struct '&gt;LL' : '&gt;' Big endian, L : uint32_t
-list comprehension : for loop보다 빠름.
-	</div>
 </article>
 </main>
 
@@ -422,7 +415,7 @@ list comprehension : for loop보다 빠름.
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

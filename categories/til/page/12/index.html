@@ -70,6 +70,33 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/introducing-python/" rel="bookmark">
+			Introducing Python
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-08T13:25:34&#43;09:00">February 08, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Introducing Python 을 판교어린이도서관에서 짧게 보고 적은 아이템들
+python3 based
+Decorator는 공부가 필요한 내용
+sys.path : module 검색 경로 __init__.py 파일이 있으면 그 디렉토리를 PKG로 간주함
+defaultdic()
+Counters()
+dicionary는 key의 순서를 보장하지 않음. OrderedDict()로 사전을 정의하면 가능 deque = stack + queue pprint()는 print보다 깔끔하게 출력한다고.
+'\uXXX' 유니코드
+%10.4s : 10칸의 공간. 문자열 중 4개만 출력
+struct '&gt;LL' : '&gt;' Big endian, L : uint32_t
+list comprehension : for loop보다 빠름.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/sriov-and-dpdk/" rel="bookmark">
 			SR-IOV and DPDK
 			</a>
@@ -236,27 +263,6 @@ sudo apt-get install zlib1g-dev sudo apt-get install libssl-dev  적당한 위�
 		Designing a RESTful API with Python and Flask
 RESTful API는 URI에 필요한 인자를 다 넘기는 형태라 사용자가 직접 주소를 입력하는 것이 아니라 다른 SW에서 해당 URI를 입력하는 형태로 사용하는 게 자연스러운 거네.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/virtualenv/" rel="bookmark">
-			virtualenv 사용
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-12-21T14:59:29&#43;09:00">December 21, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		virtualenv 설치
-mini-2:~ cychong$ sudo easy_install pip mini-2:~ cychong$ sudo pip install virtualenv  virtualenv로 project directory 생성
-mini-2:work cychong$ mkdir click mini-2:work cychong$ cd click/ mini-2:click cychong$ ls mini-2:click cychong$ virtualenv venv New python executable in venv/bin/python Installing setuptools, pip, wheel...done. mini-2:click cychong$ ls venv  virtualenv 환경으로 들어가기
-mini-2:click cychong$ . venv/bin/activate  원하는 패키지 설치
-(venv)mini-2:click cychong$ pip install Click Collecting Click Downloading click-6.2-py2.py3-none-any.whl (70kB) 100% |████████████████████████████████| 73kB 270kB/s Installing collected packages: Click Successfully installed Click-6.
-	</div>
 </article>
 </main>
 
@@ -409,7 +415,7 @@ mini-2:click cychong$ . venv/bin/activate  원하는 패키지 설치
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (13)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
