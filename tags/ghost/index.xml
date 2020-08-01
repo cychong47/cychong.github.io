@@ -23,6 +23,16 @@ Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 
     </item>
     
     <item>
+      <title>Backup Ghost Database Periodically</title>
+      <link>https://cychong47.github.io/post/2020/2020-03-03-backup-ghost-database-periodically/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-03-03-backup-ghost-database-periodically/</guid>
+      <description>This ghost-backup container will backup in every 3am
+Start ghost-backup container cychong@mini1:~/Documents/docker-daily-backup$ docker run --name ghost-backup -d -v /home/cychong/Documents/docker-daily-backup:/backups --volumes-from 388c84247267 bennetimo/ghost-backup ea33f148122bbe0d90a502bfd884e4c988e9f8837921f725ca7317afff7fa149 Instant backup cychong@mini1:~/Documents/docker-daily-backup$ ls -al total 8 drwxrwxr-x 2 cychong cychong 4096 Mar 3 23:25 . drwxr-xr-x 5 cychong cychong 4096 Mar 3 23:25 .. cychong@mini1:~/Documents/docker-daily-backup$ docker exec ghost-backup backup Tue Mar 3 14:27:27 UTC 2020: Checking if a mysql container exists on the network at mysql:3306 Tue Mar 3 14:27:33 UTC 2020: .</description>
+    </item>
+    
+    <item>
       <title>Upgrade ghost to v3.0</title>
       <link>https://cychong47.github.io/post/2019/upgrade-ghost-to-v3-0/</link>
       <pubDate>Tue, 05 Nov 2019 14:58:16 +0900</pubDate>

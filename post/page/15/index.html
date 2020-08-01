@@ -70,6 +70,27 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/display-post-by-default-ghost/" rel="bookmark">
+			Ghost 본문 다 보이기
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-05-09T15:23:57&#43;09:00">May 09, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		theme을 수정해서 ghost blog 화면에서 글 본문이 다 나오도록 할 수 있다.
+대신 theme마다 조금씩 적용 방법이 다른데 기본적으로 변경해야 할 내용은 동일
+casper theme casper는 index.hbs 파일에서 loop.hbs라는 별도 파일을 통해 본문을 보이게 하고 있다.
+index.hbs
+ 21 {{! The main content area on the homepage }} 22 &lt;main id=&quot;content&quot; class=&quot;content&quot; role=&quot;main&quot;&gt; 23 24 {{! The tag below includes the post loop - partials/loop.hbs }} 25 {{&gt; &quot;loop&quot;}} 26 27 &lt;/main&gt; 위 코드에서 가리키는 partials/loop.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/frag-reassembly-test/" rel="bookmark">
 			Frag &amp; Reassembly Test
 			</a>
@@ -232,27 +253,6 @@ from scapy.all import * dip=&quot;10.0.0.1&quot; payload=&quot; &quot;*1000 pack
 필요하면 frag_list의 순서를 뒤집는 것도 가능하고, 각 fragment의 offset값을 조정하거나 패킷 크기를 변경하면 다른 비정상 경우도 쉽게 시험할 수 있다.
 scapy interactive tutorial
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/vagrant/" rel="bookmark">
-			Vagrant
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-14T07:52:01&#43;09:00">February 14, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:42Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Vagrant
-fd.io의 개발 환경 구성하는 문서를 보니 vagrant를 사용한다. 그런데 또 virtualbox니 vmware 이야기를 한다. 이전에도 vagrant라는 단어를 들어본적이 있었는데 이번 기회에 좀 알아보기로
-Why Vagrant를 보면 다음과 같이 설명하고 있다.
- Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
-To achieve its magic, Vagrant stands on the shoulders of giants.
-	</div>
 </article>
 </main>
 
@@ -325,7 +325,7 @@ To achieve its magic, Vagrant stands on the shoulders of giants.
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="blog">blog (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/book/" title="Book">Book (47)</a>
@@ -355,7 +355,7 @@ To achieve its magic, Vagrant stands on the shoulders of giants.
 		<a class="widget-taglist__link widget__link btn" href="/tags/database/" title="database">database (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dev-culture/" title="dev culture">dev culture (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devnothink/" title="devnothink">devnothink (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/docker-compose/" title="docker-compose">docker-compose (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dpdk/" title="DPDK">DPDK (22)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dpi/" title="dpi">dpi (1)</a>
@@ -374,7 +374,7 @@ To achieve its magic, Vagrant stands on the shoulders of giants.
 		<a class="widget-taglist__link widget__link btn" href="/tags/fragment/" title="fragment">fragment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ftp/" title="ftp">ftp (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/getting-started/" title="Getting Started">Getting Started (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ghost-theme/" title="ghost-theme">ghost-theme (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (1)</a>

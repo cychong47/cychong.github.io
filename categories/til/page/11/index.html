@@ -70,6 +70,24 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/dpdk-ipv4-reassembly/" rel="bookmark">
+			DPDK IPv4 reassembly
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-24T15:03:55&#43;09:00">March 24, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		rte_ipv4_frag_reassemble_packet()
+ ip_frag_find()  기존에 존재하는 flow면 해당 flow를 저장한 entry 정보를(ip_frag_pkt *pkg) 신규 flow인 경우 해당 신규 flow를 저장할 신규 혹은 재사용된 entry를 return함 추가할 수 있는 통계  신규 flow? 기존 flow에 정상 추가 기존 flow에 비정상 추가(기존 flow가 timeouted) 이도 저도 아닌 상황(할당 실패) LRU entry free tbl-&gt;max_entries tbl-&gt;use_entries   return  기존 존재하는 flow, 신규 할당한 flow entry 혹은 NULL 만일 NULL을 return하면 현재 수신한 mbuf를 death row에 추가한다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/header-length-in-mbuf/" rel="bookmark">
 			DPDK new mbuf 사용 주의사항
 			</a>
@@ -242,27 +260,6 @@ A new project using DPDK is available, http://FD.io said FiDo You can clone it f
 따라잡지 않으면 뒤쳐지기 때문에 우리는 늘 공부해야 합니다.
  https://brunch.co.kr/@choihs0228/4
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/dpdk_nic_init/" rel="bookmark">
-			DPDK NIC 초기화
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-09T14:54:21&#43;09:00">February 09, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		constructor attribute http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/
-constructor attribute을 가진 함수는 main 함수를 실행하기 전에 호출한다.
-예제 (출처)
-#include &lt;stdio.h&gt; void begin (void) __attribute__((constructor)); void end (void) __attribute__((destructor)); int main (void) { printf (&quot;\nInside main ()&quot;); } void begin (void) { printf (&quot;\nIn begin ()&quot;); } void end (void) { printf (&quot;\nIn end ()\n&quot;); } 실행하면
-In begin () Inside main () In end () DPDK DPDK의 경우 device driver들을 모두 constructor attirbute을 사용해서 main 함수 전에 호출되록 한다.
-	</div>
 </article>
 </main>
 
@@ -335,7 +332,7 @@ In begin () Inside main () In end () DPDK DPDK의 경우 device driver들을 모
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="blog">blog (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/book/" title="Book">Book (47)</a>
@@ -365,7 +362,7 @@ In begin () Inside main () In end () DPDK DPDK의 경우 device driver들을 모
 		<a class="widget-taglist__link widget__link btn" href="/tags/database/" title="database">database (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dev-culture/" title="dev culture">dev culture (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devnothink/" title="devnothink">devnothink (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/docker-compose/" title="docker-compose">docker-compose (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dpdk/" title="DPDK">DPDK (22)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dpi/" title="dpi">dpi (1)</a>
@@ -384,7 +381,7 @@ In begin () Inside main () In end () DPDK DPDK의 경우 device driver들을 모
 		<a class="widget-taglist__link widget__link btn" href="/tags/fragment/" title="fragment">fragment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ftp/" title="ftp">ftp (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/getting-started/" title="Getting Started">Getting Started (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ghost-theme/" title="ghost-theme">ghost-theme (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (1)</a>

@@ -70,6 +70,26 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2015/running-dpdk-on-vmware-fusion/" rel="bookmark">
+			Running DPDK on VMware Fusion
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-10-20T14:19:05&#43;09:00">October 20, 2015</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		VirtualBox supports emulated e1000 NIC for VM while VMware fusion does not. VMware Fusion&rsquo;s VM setting does not support configuring of NIC HW type. The NIC HW is PCnet32 which is not supported by DPDK.
+However, we can change NIC HW type by editing VM configuration file directly.
+Refer : How to emulate 10 Gbps NIC in a VMware Fusion VM
+Edit vmx file to VMX file is in where vmware image located
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2015/trex-dpdk-based-traffic-generator/" rel="bookmark">
 			TRex - DPDK based traffic generator
 			</a>
@@ -241,25 +261,6 @@ The result is that most existing guidelines contain well over a hundred rules, s
  가장 중요한 것은 Communication 역량으로, 팀내 또는 팀간의 조율을 위해서는 반드시 필요한 능력이라고 생각한다. 두말할 필요가 없는 부분인데, 효과적인 커뮤니케이션 스킬을 가지기 위해서는 상호 존중이 바탕이 되어야 한다. 존중의 바탕이 없이는 명령이되고, 명령은 팀을 Push하는 모델을 만들지, 팀이 스스로 높은 성과를 낼 수 있도록 Pull (당기는 형태)의 리더쉽을 만들어내기는 어렵다.
 관리자로써 전체적인 계획을 만들고 이를 실행하려면, 팀원들을 코칭할 필요가 있다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/" rel="bookmark">
-			열심히 비교한 결론이 고작 그건가?
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-06-24T15:20:57&#43;09:00">June 24, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건가? 이해가 안된다.
-현재 불편한, 잘못된, 쓸데없는 일을 하게 만드는 절차를 감당해야 하는 사람들에게 솔직한 의견을 구하는 것이 더 나은 방법 아닐까?
-아무리 다른 곳의 일하는 체계나 조직을 분석해도 소용없다. 그 비교자료에는 없는 내용이 핵심이니까. 조직을 운영하는 사람들의 능력과 그 조직을 구성하는 사람들의 능력. 그리고 생각들.
-	</div>
 </article>
 </main>
 
@@ -332,7 +333,7 @@ The result is that most existing guidelines contain well over a hundred rules, s
 		<a class="widget-taglist__link widget__link btn" href="/tags/att/" title="ATT">ATT (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/automation/" title="automation">automation (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/b4/" title="b4">b4 (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/backup/" title="backup">backup (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/barometer/" title="barometer">barometer (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="blog">blog (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/book/" title="Book">Book (47)</a>
@@ -362,7 +363,7 @@ The result is that most existing guidelines contain well over a hundred rules, s
 		<a class="widget-taglist__link widget__link btn" href="/tags/database/" title="database">database (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dev-culture/" title="dev culture">dev culture (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/devnothink/" title="devnothink">devnothink (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (12)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker/" title="docker">docker (13)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/docker-compose/" title="docker-compose">docker-compose (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dpdk/" title="DPDK">DPDK (22)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/dpi/" title="dpi">dpi (1)</a>
@@ -381,7 +382,7 @@ The result is that most existing guidelines contain well over a hundred rules, s
 		<a class="widget-taglist__link widget__link btn" href="/tags/fragment/" title="fragment">fragment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ftp/" title="ftp">ftp (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/getting-started/" title="Getting Started">Getting Started (2)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (10)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ghost/" title="ghost">ghost (11)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ghost-theme/" title="ghost-theme">ghost-theme (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/git/" title="git">git (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/github/" title="github">github (1)</a>
