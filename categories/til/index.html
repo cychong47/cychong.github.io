@@ -70,7 +70,7 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020-2020-05-07-upgrade-kubernetes-1-18-2/" rel="bookmark">
+			<a href="/post/2020/2020-05-07-upgrade-kubernetes-1-18-2/" rel="bookmark">
 			Upgrade Kubernetes 1 18 2
 			</a>
 		</h3>
@@ -122,7 +122,7 @@ In-place Pod updates (#5774) is a planned feature to allow changing resources (r
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		우선 docker로 실행한 nginx container를 종료시키고
-cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &quot;/docker-entrypoint.…&quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &quot;/pause&quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&gt;80/tcp podcast 2812c510a5b6 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &quot;nginx-pv&quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.
+cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &quot;/docker-entrypoint.…&quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &quot;/pause&quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&gt;80/tcp podcast 2812c510a5b6 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 nginx를 구동시킬 helm chart 준비
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
