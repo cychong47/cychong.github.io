@@ -70,6 +70,24 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020-2020-05-07-upgrade-kubernetes-1-18-2/" rel="bookmark">
+			Upgrade Kubernetes 1 18 2
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-08-01T22:52:47&#43;09:00">August 01, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Upgrade kubernetes to 1.18.2
+Note etcd might be need to be upgrade
+cychong@mini1:~$ sudo kubeadm upgrade apply v1.18.2 [upgrade/config] Making sure the configuration is correct: [upgrade/config] Reading configuration from the cluster... [upgrade/config] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml' [preflight] Running pre-flight checks. [upgrade] Running cluster health checks [upgrade/version] You have chosen to change the cluster version to &quot;v1.18.2&quot; [upgrade/versions] Cluster version: v1.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-07-31-vertical-pod-autoscaler/" rel="bookmark">
 			K8s Vertical Pod Autoscaler
 			</a>
@@ -184,7 +202,7 @@ cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadat
 	<header class="list__header">
 		<h3 class="list__title post__title ">
 			<a href="/post/2019/upgrade-kubernetes/" rel="bookmark">
-			Upgrade kubernetes
+			Upgrade kubernetes to 1.16.1
 			</a>
 		</h3>
 		<div class="list__meta meta">
@@ -233,27 +251,6 @@ cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using
 	<div class="content list__excerpt post__content clearfix">
 		ghost를 설치한 지 몇 년이 지났는데 그 동안 여러 가지 방법으로 Ghost 운용 환경을 구축해왔다.
 Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인데 Helm Chart 를 시용해서 설치해 보는 것이다. 처음 시작은 helm repository에 있는 공식(?) 공개된 helm chart를 이용하여 values.yaml 파일만 내 환경에 맞게 변경해서 사용하려던 것이었는데 아쉽게 아직은 그렇게 하기 힘든 것으로 보여 직접 helm chart를 만들어서 사용하고 있다. 이 문서는 그 과정을 기술한 것으로 향후 공식 helm chart를 활용할 수 있는 때가 오면 시즌 6에 해당하는 글을 또 쓸 듯 하다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/calico-cni-1/" rel="bookmark">
-			Calico CNI (draft)
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-08-18T15:20:01&#43;09:00">August 18, 2019</time>
-	<time class="meta__text" datetime="2019-08-22T15:04:20Z">(Last Modified: August 22, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Getting started with Calico on Kubernetes   Calico를 사용하는 경우 kubelet의 실행 옵션 중 --network-plugin=cni와 같이 변경된다.
-  kube-controller-manager의 실행 옵션 중 --allocate-node-cidrs=false 로 역시 변경된다. 이는 CNI(여기서는 Calico의 IPAM)에서 IP 주소를 할당하기 때문
-  Pod 내 route table에서는 host의 link local address를 default route로 사용한다.
-  Pod가 갖는 eth0 interface는 root(혹은 default) namespace에 존재하는 &lsquo;cali&rsquo;로 시작하는 interface와 veh pair 관계를 갖는다.
- veth pairs는 아래 설명과 같이 서로 연결된 두 개의 interface를 의미하는데 한쪽으로 들어가면 연결된 다른 인터페이스로 나온다.
 	</div>
 </article>
 </main>
@@ -347,7 +344,7 @@ Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인�
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -406,7 +403,7 @@ Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인�
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

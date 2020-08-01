@@ -6,10 +6,21 @@
     <description>Recent content in TIL on Keep calm and write something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2020 00:01:03 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 22:52:47 +0900</lastBuildDate>
     
 	<atom:link href="https://cychong47.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upgrade Kubernetes 1 18 2</title>
+      <link>https://cychong47.github.io/post/2020-2020-05-07-upgrade-kubernetes-1-18-2/</link>
+      <pubDate>Sat, 01 Aug 2020 22:52:47 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020-2020-05-07-upgrade-kubernetes-1-18-2/</guid>
+      <description>Upgrade kubernetes to 1.18.2
+Note etcd might be need to be upgrade
+cychong@mini1:~$ sudo kubeadm upgrade apply v1.18.2 [upgrade/config] Making sure the configuration is correct: [upgrade/config] Reading configuration from the cluster... [upgrade/config] FYI: You can look at this config file with &#39;kubectl -n kube-system get cm kubeadm-config -oyaml&#39; [preflight] Running pre-flight checks. [upgrade] Running cluster health checks [upgrade/version] You have chosen to change the cluster version to &amp;quot;v1.18.2&amp;quot; [upgrade/versions] Cluster version: v1.</description>
+    </item>
     
     <item>
       <title>K8s Vertical Pod Autoscaler</title>
@@ -227,7 +238,7 @@ cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadat
     </item>
     
     <item>
-      <title>Upgrade kubernetes</title>
+      <title>Upgrade kubernetes to 1.16.1</title>
       <link>https://cychong47.github.io/post/2019/upgrade-kubernetes/</link>
       <pubDate>Mon, 07 Oct 2019 15:37:14 +0900</pubDate>
       

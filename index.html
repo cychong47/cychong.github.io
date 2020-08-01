@@ -69,6 +69,24 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020-2020-05-07-upgrade-kubernetes-1-18-2/" rel="bookmark">
+			Upgrade Kubernetes 1 18 2
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-08-01T22:52:47&#43;09:00">August 01, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Upgrade kubernetes to 1.18.2
+Note etcd might be need to be upgrade
+cychong@mini1:~$ sudo kubeadm upgrade apply v1.18.2 [upgrade/config] Making sure the configuration is correct: [upgrade/config] Reading configuration from the cluster... [upgrade/config] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml' [preflight] Running pre-flight checks. [upgrade] Running cluster health checks [upgrade/version] You have chosen to change the cluster version to &quot;v1.18.2&quot; [upgrade/versions] Cluster version: v1.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-07-31-vertical-pod-autoscaler/" rel="bookmark">
 			K8s Vertical Pod Autoscaler
 			</a>
@@ -229,23 +247,6 @@ mp3 파일은 레코딩이 제대로 되었고, md 파일도 만들었는데 sit
 	<div class="content list__excerpt post__content clearfix">
 		
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/2020-06-22-docker-ps-with-name/" rel="bookmark">
-			Find container with its name
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-22T23:54:09&#43;09:00">June 22, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Get docker container id from container name
-docker ps -aqf &quot;name=containername&quot; docker ps -aqf &quot;name=^containername$&quot;  -q for quiet. output only the ID -a for all. works even if your container is not running -f for filter. ^ container name must start with this string $ container name must end with this string  
-	</div>
 </article>
 </main>
 
@@ -337,7 +338,7 @@ docker ps -aqf &quot;name=containername&quot; docker ps -aqf &quot;name=^contain
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -396,7 +397,7 @@ docker ps -aqf &quot;name=containername&quot; docker ps -aqf &quot;name=^contain
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

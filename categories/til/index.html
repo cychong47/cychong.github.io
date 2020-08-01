@@ -70,6 +70,24 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020-2020-05-07-upgrade-kubernetes-1-18-2/" rel="bookmark">
+			Upgrade Kubernetes 1 18 2
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-08-01T22:52:47&#43;09:00">August 01, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Upgrade kubernetes to 1.18.2
+Note etcd might be need to be upgrade
+cychong@mini1:~$ sudo kubeadm upgrade apply v1.18.2 [upgrade/config] Making sure the configuration is correct: [upgrade/config] Reading configuration from the cluster... [upgrade/config] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml' [preflight] Running pre-flight checks. [upgrade] Running cluster health checks [upgrade/version] You have chosen to change the cluster version to &quot;v1.18.2&quot; [upgrade/versions] Cluster version: v1.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-07-31-vertical-pod-autoscaler/" rel="bookmark">
 			K8s Vertical Pod Autoscaler
 			</a>
@@ -240,25 +258,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 로그인 계정 자체가 없다는 이 어이없는 상황.
 그래서 지난 번에 유용하게 사용했던 phpmyadmin을 이용해서 DB 정보를 확인해봤다. (다행히 MySql, wordpress 와 함께 실행시켜놓은 phpmyadmin container가 동작하고 있어서 지난 번과 같이 8181 포트로 접속하면 된단. 다만 로그인 암호를 기억하지 못하고 있는 나 대신 Safari가 기억하고 있어서 그냥 접속했다는)
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/if-i-have-authority-5-years-later/" rel="bookmark">
-			내게 권한이 있다면 - 그 이후
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-08T14:03:04&#43;09:00">May 08, 2020</time>
-	<time class="meta__text" datetime="2020-05-08T14:15:14Z">(Last Modified: May 08, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		내게 권한이 있다면
-이런 글을 쓴 적이 있었네. 우연히 ghost 블로그에 이전 글들이 2개씩 존재하는 걸 발견해서 중복된 글을 지우는 과정에서 이런 글을 썼다는 걸 알아냈다. 중복 글은 아마도 ghost 버전을 2에서 3으로 올리는 과정이나 복구하는 과정에서 발생한 듯 한데. 그 덕에 각 글들이 실제로 작성된 날짜정보는 사라지고 가장 오래된 글도 2년 전(2018) 정도로 나오는데 실제 내용은 2014년 글도 있다는.
-덕분에 이 글을 언제 썼는 지, 그 당시 어떤 일을 하고 있었는 지는 정확하지 않지만 글을 읽다 보니 어렴풋이 왜 이런 생각을 그때 했는 지 알겠다 싶다.
-	</div>
 </article>
 </main>
 
@@ -351,7 +350,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -410,7 +409,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

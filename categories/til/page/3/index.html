@@ -70,6 +70,23 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2019/upgrade-kubernetes/" rel="bookmark">
+			Upgrade kubernetes to 1.16.1
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-10-07T15:37:14&#43;09:00">October 07, 2019</time>
+	<time class="meta__text" datetime="2019-10-07T15:39:18Z">(Last Modified: October 07, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		cychong@mini1:~/work/ghost-with-helm-x$ sudo apt update [sudo] password for cychong: Ign:2 http://dl.google.com/linux/chrome/deb stable InRelease Hit:3 http://archive.ubuntu.com/ubuntu bionic InRelease Hit:4 https://download.docker.com/linux/ubuntu bionic InRelease Hit:5 http://dl.google.com/linux/chrome/deb stable Release Get:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB] Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB] Get:9 http://archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB] Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [295 kB] Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB] Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [147 kB] Get:13 http://archive.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2019/convention-on-impose-core-requirements/" rel="bookmark">
 			Convention on impose core requirements
 			</a>
@@ -239,24 +256,6 @@ cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for 
 시즌 1 - brew &amp; tar-ball 처음에는 매뉴얼 대로 직접 Node.js와 ghost 소스를 이용해서 직접 OS X에 설치해서 운용했다.
 시즌 2 - Docker 그러다 Node.js 버전이 꼬이는 것도 그렇고, docker를 쓰면 ghost 버전이 새로 나왔을 때 편할 듯 해서 docker를 쓰는 방식으로 변경했다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/kubernetes-networks/" rel="bookmark">
-			Kubernetes Networks
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-05-16T14:07:53&#43;09:00">May 16, 2019</time>
-	<time class="meta__text" datetime="2019-05-16T14:10:11Z">(Last Modified: May 16, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Kubernetes Networks in google docs
-이거 보면 IPv6를 사용해야 하는 경우 선택할 수 있는 CNI는 Calico, Cillium, Contiv, Tungsten Fabric 정도로 좁혀지네
-	</div>
 </article>
 </main>
 
@@ -350,7 +349,7 @@ cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for 
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -409,7 +408,7 @@ cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for 
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

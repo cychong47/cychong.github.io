@@ -70,6 +70,23 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/frag-reassembly-test/" rel="bookmark">
+			Frag &amp; Reassembly Test
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-05-01T15:35:28&#43;09:00">May 01, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		set environment export RTE_ARCH=x86_64 export RTE_SDK=/home/cychong/Work/dpdk-2.1.0 export RTE_TARGET=x86_64-native-linuxapp-gcc export RTE_OUTPUT=$RTE_SDK/$RTE_TARGET run sudo ./build/ip_reassembly -c 0x1 -n 4 -m 1000M --no-huge --no-pci --no-hpet -- --display_pps 1 --tx_pps 10 
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/dpdk-ipv4-reassembly/" rel="bookmark">
 			DPDK IPv4 reassembly
 			</a>
@@ -239,27 +256,6 @@ To achieve its magic, Vagrant stands on the shoulders of giants.
 그래서 내용을 봤더니 이게 다 였다는
 A new project using DPDK is available, http://FD.io said FiDo You can clone it from: http://gerrit.fd.io/ Best regards, Vincent 그래도 첫 번째 링크를 따라가 보니 화려하다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/why_have_to_keep_studying/" rel="bookmark">
-			왜 공부해야 하는가에 대한 간단하지만 명확한 답
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-10T04:23:12&#43;09:00">February 10, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		왜 공부해야 하는가
-사회의 변화속도는 우리의 변화속도를 압도하기 때문입니다.
-&lt;누가 내 치즈를 옮겼을까&gt;에 잘 묘사되어 있지요.
-따라잡지 않으면 뒤쳐지기 때문에 우리는 늘 공부해야 합니다.
- https://brunch.co.kr/@choihs0228/4
-	</div>
 </article>
 </main>
 
@@ -353,7 +349,7 @@ A new project using DPDK is available, http://FD.io said FiDo You can clone it f
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -412,7 +408,7 @@ A new project using DPDK is available, http://FD.io said FiDo You can clone it f
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

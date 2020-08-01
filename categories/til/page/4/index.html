@@ -70,6 +70,24 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2019/kubernetes-networks/" rel="bookmark">
+			Kubernetes Networks
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-05-16T14:07:53&#43;09:00">May 16, 2019</time>
+	<time class="meta__text" datetime="2019-05-16T14:10:11Z">(Last Modified: May 16, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Kubernetes Networks in google docs
+이거 보면 IPv6를 사용해야 하는 경우 선택할 수 있는 CNI는 Calico, Cillium, Contiv, Tungsten Fabric 정도로 좁혀지네
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2019/amazon-daily-work/" rel="bookmark">
 			(펌글) 아마존 3년 출근기
 			</a>
@@ -241,25 +259,6 @@ mini2:html cychong$ docker logs -f f12c3b3a57ef ... Warning: mysqli::__construct
 		AVX2가 지원되지 않는 머신에서 쓸데없이 ACL library 빌드할 때 AVX2를 이용해서 빌드하려는 문제를 확인했다. 지금까지 아무도 고치지 않은 게 이상하긴 한데 그래도 내가 생각한 수정 방법이 제대로 동작하는 듯 해서 패치를 한번 보내보기로 했다.
 수정사항은 비교적 간단하다. ACL 라이브러리 빌드할 때 AVX2를 이용해서 빌드해야 하는 경우인지를 검사하는 코드가 lib/librte_acl/Makefile에 정의되어 있는데 여기서 항상 -march=core-avx2 옵션을 사용해서 AVX2가 지원되지 않는 머신에서도 AVX2를 사용해서 gcc가 빌드하도록 하는 걸로 보였다. 다른 코드 빌드할 때는 문제가 없는데 유독 ACL library에서만 이런 문제가 나서 보다 보니 아무래도 Makefile이 잘못된 듯 하다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/astri-vran/" rel="bookmark">
-			Astri vRAN
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-15T12:03:00&#43;09:00">July 15, 2018</time>
-	<time class="meta__text" datetime="2018-07-15T12:09:18Z">(Last Modified: July 15, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Toward 5G RAN virtualization by Intel and Astri
-http://astri.oeg
-Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY Split - HARQ processing in RRU(How???) Lower PHY Split - High FB overhead but smallest packet latency.  Good for JT and JR for COMP Good for Massive MIMO and Ultra low-latency communication(Why?)   FAPI based MAC/PHY communication  L1 adaptation layer for MAC/PHY split (and Lower PHY Split?)    MAC/PHY split in one CPU  MAC/PHY split in one machine but netrwork based MAC/PHY communication over OVS   Virtual Cell  A group of physical cells form a Virtual Cell which does not require HO between the physical cells.
-	</div>
 </article>
 </main>
 
@@ -353,7 +352,7 @@ Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY S
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -412,7 +411,7 @@ Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY S
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>

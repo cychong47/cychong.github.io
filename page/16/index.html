@@ -69,6 +69,26 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/fragment-missing-test-with-scapy/" rel="bookmark">
+			fragment missing test with scapy
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-14T13:57:41&#43;09:00">February 14, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		다음과 같이 scapy를 이용해서 fragment를 쉽게 만들 수 있다.
+from scapy.all import * dip=&quot;10.0.0.1&quot; payload=&quot; &quot;*1000 packet=IP(dst=dip)/UDP(dport=0x1234)/payload frag_list=fragment(packet,fragsize=500) counter=1 for fragment in frag_list: print &quot;Packet no%d&quot; %counter print fragment.show() counter+=1 send(fragment) frag_list에서 counter 변수를 확인해서 전송하지 않으면 간단하게 fragment가 수신되지 않은 경우에 시험할 수 있음.
+필요하면 frag_list의 순서를 뒤집는 것도 가능하고, 각 fragment의 offset값을 조정하거나 패킷 크기를 변경하면 다른 비정상 경우도 쉽게 시험할 수 있다.
+scapy interactive tutorial
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/vagrant/" rel="bookmark">
 			Vagrant
 			</a>
@@ -252,24 +272,6 @@ SR-IOV  SR-IOV : Standard IO memory Memory Management Unit from Intel(VT-d) and 
  DPDK-dump TRex - Realistic traffic generator
 git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK  
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/two-years-back/" rel="bookmark">
-			2년전에 느꼈던 답답함이 여전하네
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-01-04T15:19:11&#43;09:00">January 04, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		우연히 tumblr를 보니 2013년에 적었던 답답한 현실이 지금도 똑같다는 사실에 놀랐다. 들으려고 하는 사람은 없고, 쓸데없는 일에 시간을 보내는 건 지금도 전혀 바뀐게 없어 보인다.
-여전히 사용하라는 툴에서 제공하는 정보와 취합해 달라고 하는 정보가 다르다. 그럼 어떻게 하라는 건지? 툴을 고치던가, 툴의 정보를 원하는 정보로 바꾸는 기준을 제시해줘야 하는 거 아닌가? 내용은 관심없고, 그냥 결과만 달라고 하는. 자기가 그런 변환 작업을 한 적이 없으니 얼마나 귀찮은지 모르는 거다. 그리고 사람마다 다른 기준으로 정보를 취합해도 별 문제가 없다는 건 결국 별로 중요하지 않는 내용이라는 거다.
-	</div>
 </article>
 </main>
 
@@ -362,7 +364,7 @@ git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub
 		<a class="widget-taglist__link widget__link btn" href="/tags/continuous-deployment/" title="continuous deployment">continuous deployment (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cpu/" title="cpu">cpu (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cran/" title="cran">cran (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="“cron”">“cron” (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cron/" title="cron">cron (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/crond/" title="crond">crond (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cubb/" title="cubb">cubb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/culture/" title="culture">culture (2)</a>
@@ -421,7 +423,7 @@ git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub
 		<a class="widget-taglist__link widget__link btn" href="/tags/kafka/" title="kafka">kafka (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kni/" title="kni">kni (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubelet/" title="kubelet">kubelet (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (14)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes/" title="kubernetes">kubernetes (15)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/launchd/" title="launchd">launchd (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/lb/" title="lb">lb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/life/" title="life">life (3)</a>
