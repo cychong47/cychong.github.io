@@ -13,10 +13,10 @@
     
     <item>
       <title>Git Tips</title>
-      <link>https://cychong47.github.io/post/2020/git/</link>
+      <link>https://cychong47.github.io/page/git/</link>
       <pubDate>Sat, 20 Jun 2020 21:54:31 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/git/</guid>
+      <guid>https://cychong47.github.io/page/git/</guid>
       <description>Open vim tabs with changed files vim -p `git diff --name-only` vim -p
   -p[N] Open N tab pages. When N is omitted, open one tab page for each file.   git diff --name-only
   --name-only Show only names of changed files.   </description>

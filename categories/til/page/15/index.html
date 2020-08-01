@@ -70,46 +70,6 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2015/running-dpdk-on-vmware-fusion/" rel="bookmark">
-			Running DPDK on VMware Fusion
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-10-20T14:19:05&#43;09:00">October 20, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		VirtualBox supports emulated e1000 NIC for VM while VMware fusion does not. VMware Fusion&rsquo;s VM setting does not support configuring of NIC HW type. The NIC HW is PCnet32 which is not supported by DPDK.
-However, we can change NIC HW type by editing VM configuration file directly.
-Refer : How to emulate 10 Gbps NIC in a VMware Fusion VM
-Edit vmx file to VMX file is in where vmware image located
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/trex-dpdk-based-traffic-generator/" rel="bookmark">
-			TRex - DPDK based traffic generator
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-10-12T13:11:14&#43;09:00">October 12, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		DPDK Userspace in Dublin 2015에서 발표
-Stageful traffic generator
-특징  Generate traffic based on templates of real, captured flows No TCP/IP stack Up to 200Gbps with standard server hardware Low cost 1RU (C220M UCS-1RU) Cisco internal DPDK, ZMQ, Python libs Virtualization(vmxnet3/e1000) ~20Gbps per core Generate flow templates Support 1K templates Yaml based traffic profile  GUI GUI which monitors real-time properties of TRex - min/max/average latency, jitter
-Python 연동 Code https://github.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2015/what-makes-a-good-engineering-culture/" rel="bookmark">
 			What makes a good engineering culture?
 			</a>
@@ -260,6 +220,45 @@ The result is that most existing guidelines contain well over a hundred rules, s
 		출처 : 관리의 기본 (Fundamental of management) #2 - 관리자/리더에게 필요한 역량
  가장 중요한 것은 Communication 역량으로, 팀내 또는 팀간의 조율을 위해서는 반드시 필요한 능력이라고 생각한다. 두말할 필요가 없는 부분인데, 효과적인 커뮤니케이션 스킬을 가지기 위해서는 상호 존중이 바탕이 되어야 한다. 존중의 바탕이 없이는 명령이되고, 명령은 팀을 Push하는 모델을 만들지, 팀이 스스로 높은 성과를 낼 수 있도록 Pull (당기는 형태)의 리더쉽을 만들어내기는 어렵다.
 관리자로써 전체적인 계획을 만들고 이를 실행하려면, 팀원들을 코칭할 필요가 있다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2015/yeolsimhi-bigyohan-gyeolroni-gojag-geugeonga/" rel="bookmark">
+			열심히 비교한 결론이 고작 그건가?
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-06-24T15:20:57&#43;09:00">June 24, 2015</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		그냥 누구나 생각하는 바람직한 방법과 목표 그리고 절차를 따라야 한다는 게 고작 결론인가? 그런 누구나 할 수 있는 이야기잖아. 저런 이야기를 돈을 내고 들어야 한다는 건가? 이해가 안된다.
+현재 불편한, 잘못된, 쓸데없는 일을 하게 만드는 절차를 감당해야 하는 사람들에게 솔직한 의견을 구하는 것이 더 나은 방법 아닐까?
+아무리 다른 곳의 일하는 체계나 조직을 분석해도 소용없다. 그 비교자료에는 없는 내용이 핵심이니까. 조직을 운영하는 사람들의 능력과 그 조직을 구성하는 사람들의 능력. 그리고 생각들.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2015/divide-conquer/" rel="bookmark">
+			Divide &amp; Conquer
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-06-21T08:24:05&#43;09:00">June 21, 2015</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		출처 : http://m.news.naver.com/read.nhn?mode=LSD&amp;sid1=001&amp;oid=008&amp;aid=0003492855
+ 4.어려운 문제에 무턱대고 덤비지 마라
+어렵고 힘든 문제에 부딪히면 지레 겁을 먹기 쉽다. 아니면 무대포로 앞뒤 재지 않고 그냥 밀어붙인다. 그러나 구글과 페북에서 근무하며 얻은 지혜는 어렵고 덩치 큰 문제를 만나면 작게 쪼개서 각 부분별로 해결책을 찾는다는 것이다. 이렇게 부분별로 찾아진 해결책이 모아지면 원래의 덩치 큰 어려운 문제는 자연스럽게 풀리게 된다.
+ 문제가 어려우면 어려울 수록 잘게 쪼개자. 잘게 쪼갠 문제를 해결하다 보면 전체 문제가 풀릴 수도 있다.
 	</div>
 </article>
 </main>

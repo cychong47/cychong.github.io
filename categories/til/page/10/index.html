@@ -70,43 +70,6 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2017/espresso-googles-peering-edge-architecture/" rel="bookmark">
-			Espresso - Google&#39;s peering edge architecture
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-04-12T00:32:57&#43;09:00">April 12, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Google Fellow Amin Vahdat,
- “Early on, we realized that the network we needed to support our services did not exist and could not be bought,”
- Espresso makes Google cloud faster, more available and cost effective by extending SDN to the public internet
- network should be treated as a large-scale distributed system leveraging the same control infrastructure we developed for Google’s compute and storage systems  Four pillars on Google&rsquo;s SDN strategy  Jupiter: Google employed SDN principles to build Jupiter, a data center interconnect capable of supporting more than 100,000 servers.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2017/why-message-queue-used-for-microservice/" rel="bookmark">
-			Why message queue used for microservice?
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-04-09T15:41:23&#43;09:00">April 09, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2017/p4/" rel="bookmark">
 			P4
 			</a>
@@ -253,6 +216,44 @@ index.hbs
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		set environment export RTE_ARCH=x86_64 export RTE_SDK=/home/cychong/Work/dpdk-2.1.0 export RTE_TARGET=x86_64-native-linuxapp-gcc export RTE_OUTPUT=$RTE_SDK/$RTE_TARGET run sudo ./build/ip_reassembly -c 0x1 -n 4 -m 1000M --no-huge --no-pci --no-hpet -- --display_pps 1 --tx_pps 10 
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2016/dpdk-ipv4-reassembly/" rel="bookmark">
+			DPDK IPv4 reassembly
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-24T15:03:55&#43;09:00">March 24, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		rte_ipv4_frag_reassemble_packet()
+ ip_frag_find()  기존에 존재하는 flow면 해당 flow를 저장한 entry 정보를(ip_frag_pkt *pkg) 신규 flow인 경우 해당 신규 flow를 저장할 신규 혹은 재사용된 entry를 return함 추가할 수 있는 통계  신규 flow? 기존 flow에 정상 추가 기존 flow에 비정상 추가(기존 flow가 timeouted) 이도 저도 아닌 상황(할당 실패) LRU entry free tbl-&gt;max_entries tbl-&gt;use_entries   return  기존 존재하는 flow, 신규 할당한 flow entry 혹은 NULL 만일 NULL을 return하면 현재 수신한 mbuf를 death row에 추가한다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2016/header-length-in-mbuf/" rel="bookmark">
+			DPDK new mbuf 사용 주의사항
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-06T08:22:24&#43;09:00">March 06, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		l2_len, l3_len, l4_len 등을 사용하는 라이브러리가 존재함
+ reassembly Tx checksum offload  Reassembly rte_ipv6_frag_reassemble_packet(), rte_ipv4_frag_reassemble_packet() Incoming mbuf should have its l2_len and l3_len fields setup correctly.
+L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to
+ fill l2_len and l3_len in mbuf set the flags PKT_TX_TCP_CKSUM, PKT_TX_SCTP_CKSUM or PKT_TX_UDP_CKSUM set the flag PKT_TX_IPV4 or PKT_TX_IPV6 calculate the pseudo header checksum and set it in the L4 header (only for TCP or UDP).
 	</div>
 </article>
 </main>

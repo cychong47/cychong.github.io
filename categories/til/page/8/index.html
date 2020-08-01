@@ -70,40 +70,6 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2017/parsing-http-header-with-scary/" rel="bookmark">
-			Parsing http header with scary
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-01T09:36:35&#43;09:00">October 01, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		정규식으로 http 분석 def processHTTP(data): str_method = &quot;&quot; str_uri = &quot;&quot;  정규표현식을 통해 넘어온 데이터에서 METHOD, URI, HTTP 버전 정보등으로 구분함 h = re.search(&quot;(?P&lt;method&gt;(^GET|^POST|^PUT|^DELETE)) (?P&lt;uri&gt;.+) (?P&lt;version&gt;.+)&quot;, data) if not h: return &quot;Error&quot; # 정규표현식에 해당하는 데이터가 없는 경우 Error 를 리턴해줌 # method 로 정의된 부준은 str_method 에 저장 if h.group(&quot;method&quot;): str_method = h.group(&quot;method&quot;) # URI 데이터는 str_uri 에 저장 if h.group(&quot;uri&quot;): str_uri = h.group(&quot;uri&quot;) return str_method,str_uri # method 와 uri 를 리턴해 줌  출처 : http://www.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2017/googles-load-balancer/" rel="bookmark">
-			Google&#39;s Load Balancer
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-01T08:34:30&#43;09:00">October 01, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Maglev  Google( https://research.google.com/pubs/pub44824.html ) Used in Google Cloud since 2008 Scalable load balancer  Consistent hashing Connection Tracking Scale-out model backed by router&rsquo;s ECMP   Bypass kernel space for performance. Support connection persistence  Network Architecture  DNS - Routers - Maglevs - Service EndPoints. One service is served by one or more VIPs  DNS returns VIP considering geolocation and load of location   One VIP is served by multiple Maglevs  Router use ECMP to select one Maglev   One VIP is mapped to multiple Service EndPoints  Maglev select Service EndPoint by seletion algorithm and connection tracking table   Maglev use GRE to send incoming packet to Service EndPoint or another Maglev  Send to IP fragment to another special Maglev servers Use only 3-tuple for IP fragment   Each Service EndPoint use Direct Server Return(DSR)  Maglev Controller  Responsible for VIP announcement with BGP Check health status of forwarder If forwarder is not headthy, withdraw all VIP announcements  Forwarder  Each VIP has one or multiple backend pools(BP) BP contain physical IP address of the Service EndPoint Each BP has specific health checking methods - depends on the service requirement(just reachability or more) Config Manager parse and update configuration of forwarder&rsquo;s behavior based on the Config Objects Sharding  Sharding of Maglev enables service isolation - new service or QoS    Backend Selection  Consistent Hashing distribute loads Record selection in LOCAL connection tracking table  Connection tracking table is not shared with another Maglev Does not guarantee consistency on Maglev or Service EndPoint Changes(add/delete)   For different traffic type  TCP SYN : select Backend and record it in connection tracking table TCP non-SYN : lookup connection tracking table 5-tuple : (maybe) lookup connection tracking table and select backend if not found    Consistent Hashing  If Maglev is added or removed, router select different Maglev for the exsiting session - ECMP is changed If one Maglev&rsquo;s local connection tracking table is overflowed, it will lose previous selection To resolve this issues,  Synchronize local connection tracking table between Maglevs -&gt; overhead, overhead, overhead Consistent hashing for minimize disruption in member changes Maglev hashing - load balancing and minimal disruption on member changes    reference  Maglev: A Fast and Reliable Software Network Load Balancer Consistent Hashing The Simple Magic of Consistent Hashing  
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2017/opnfv-asia-meeting/" rel="bookmark">
 			OPNFV Asia Meeting
 			</a>
@@ -260,6 +226,45 @@ NGNIX Application Platform  NGINX Plus, the commercial variant of the popular op
 Error https://docs.docker.com/compose/wordpress/#define-the-project 에 있는 에제대로 docker-compose.yaml 파일을 만든 후 도전~~
 근데 실패
 cychong:~/work/my_wordpress cychong$ docker-compose up -d Pulling db (mysql:5.7)... Traceback (most recent call last): File &quot;docker-compose&quot;, line 3, in &lt;module&gt; File &quot;compose/cli/main.py&quot;, line 68, in main File &quot;compose/cli/main.py&quot;, line 118, in perform_command File &quot;compose/cli/main.py&quot;, line 928, in up File &quot;compose/project.py&quot;, line 427, in up File &quot;compose/service.py&quot;, line 311, in ensure_image_exists File &quot;compose/service.py&quot;, line 1016, in pull File &quot;site-packages/docker/api/image.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2017/ghost-container-with-docker-compose/" rel="bookmark">
+			ghost container with docker-compose
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-09-03T01:26:28&#43;09:00">September 03, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		얼마전에 구성한 ghost container는 ghost가 1.x로 업데이트가 되면서 설정 정보의 위치가 변경되었는데 그걸 미처 몰라 블로그 주소가 기본값인 localhost로 설정되는 문제가 있었다. 기존 ghost container에 접근해서 확인해 보니 `/var/lib/ghost/config.production.json&rsquo; 파일에 주소가 설정되어 있는 걸 보고 이 파일도 따로 지정해 주도록 변경했다. 그러면서 docker-compose를 한번 써 보기로
+일단 기존 ghost를 정리하고
+cychong:~ cychong$ docker stop ghost ghost cychong:~ cychong$ docker rm ghost ghost cychong:~ cychong$ docker rmi ghost Untagged: ghost:latest Untagged: ghost@sha256:a1f70641d35755395eb16827de4e67861e01bffe18bac8e54ab5c68cd170a2ea Deleted: sha256:e6ba3dd3c2491c6086d570fa9769a9f60d7c004129ff9ae7ff9fa0bad16a993b Deleted: sha256:c1ee9d43624bb4a1922c15d7a9175a80d1952cb71464d6d9d900fe21948227af Deleted: sha256:f8f95cdbafce4ecd226cdd690e6f909203a0f83d3507c53a71d4e59826ea881b Deleted: sha256:935d8847555992b702173b83b0d210f2728a24b5287467396dc8d5c68907691f Deleted: sha256:f4766b72a49d4cd2e897da0efcec94c33a0d24a95cb8426a790e1c45e6e39fae Deleted: sha256:0c0dbaebe17c6f585eb596e705ed5acba668097698a7780844c12597bb99b34a Deleted: sha256:c807796bea7a34c0b73eae853b728f2bbcd7a4fecc19d049455b322120f95ce7 Deleted: sha256:15f9f4e44e22d3287b6caf9555110383d3ff2e88ee9cc03823b1ba5a01b75eac Deleted: sha256:77809f11069f2abfb571cba07ee3d696ec32823df0f5d0587042ffdb27a80add Deleted: sha256:5d6bba18f7b25c9b93d3cc0d93a4cff54eb88b0ba22ed867633a21fc3ded5f57 하는 김에 최신 버전의 ghost받아오고
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2017/try-to-restore-wordpress-docker/" rel="bookmark">
+			Try to restore Wordpress container
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-09-03T00:36:25&#43;09:00">September 03, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		docker 버전이 업데이트되고, 몇 가지 변경사항이 있은 후 ghost, wordpress/mysql 조합의 container들이 접속이 되질 않는다. 한참을 두고 보다 ghost는 새 버전(1.x)이 나온 걸 계기로 새로 설치를 했는데(당연히 이전 설치에서 데이터를 container 내부가 아니라 local machine에 두도록 해서 데이터는 그대로 보존) wordpress는 그러질 못했다.
+이것 역시 참다참다 못해 https://docs.docker.com/compose/wordpress/#define-the-project 에 나와있는 docker swarm을 이용해서 복구해 보려고 삽을 들었다.
+위 페이지에 있는 대로 설정 파일을 만들고
+version: '3' services: db: image: mysql:5.7 volumes: - /Users/cychong/Dropbox/Apps/wordpress/:/var/lib/mysql restart: always environment: MYSQL_ROOT_PASSWORD: xxx MYSQL_DATABASE: xxx MYSQL_USER: xxx MYSQL_PASSWORD: xxx wordpress: depends_on: - db image: wordpress:latest volumes: - /Users/cychong/Documents/wordpress/:/var/www/html - /Users/cychong/Documents/wordpress/php_uploads.
 	</div>
 </article>
 </main>

@@ -13,11 +13,12 @@
     
     <item>
       <title>Deploy nginx with helm</title>
-      <link>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</link>
+      <link>https://cychong47.github.io/post/2020/2020-07-02-deploy-nginx-with-helm/</link>
       <pubDate>Thu, 02 Jul 2020 23:58:41 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</guid>
-      <description>cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &amp;quot;/docker-entrypoint.…&amp;quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &amp;quot;/pause&amp;quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&amp;gt;80/tcp podcast 2812c510a5b6 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&amp;gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &amp;quot;nginx-pv&amp;quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.</description>
+      <guid>https://cychong47.github.io/post/2020/2020-07-02-deploy-nginx-with-helm/</guid>
+      <description>우선 docker로 실행한 nginx container를 종료시키고
+cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &amp;quot;/docker-entrypoint.…&amp;quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &amp;quot;/pause&amp;quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&amp;gt;80/tcp podcast 2812c510a5b6 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&amp;gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &amp;quot;nginx-pv&amp;quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.</description>
     </item>
     
     <item>

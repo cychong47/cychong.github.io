@@ -69,24 +69,6 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2019/upgrade-ghost-to-v3-0/" rel="bookmark">
-			Upgrade ghost to v3.0
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-11-05T14:58:16&#43;09:00">November 05, 2019</time>
-	<time class="meta__text" datetime="2019-11-06T14:25:40Z">(Last Modified: November 06, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		부제 1. pod가 동작하지 않을때 원인 찾기 부제 2. helm upgrade 명령을 이용하여 업데이트 하기 부제 3. sqlite를 이용해서 ghost.db 직접 수정하기  values.yaml에 명시되어 있는 ghost docker image의 버전 정보를 2.31.0에서 3.0.2 최신 버전으로 업데이트 후 아래 명령어로 업데이트
-$ helm upgrade --debug my-ghost ghost-with-helm [debug] Created tunnel using local port: '45263' [debug] SERVER: &quot;127.0.0.1:45263&quot; REVISION: 6 RELEASED: Tue Nov 5 22:25:19 2019 CHART: ghost-0.1.0 USER-SUPPLIED VALUES: {} COMPUTED VALUES: affinity: {} env: node_env: production url: http://sosa0sa.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2019/what-if-helm-command-refuses/" rel="bookmark">
 			What if helm command refuse to execute
 			</a>
@@ -251,6 +233,27 @@ Host 환경, Docker, Ansible, kubernetes 에 이어 이번은 5번째 시즌인�
 		간혹 아니 자주 블루투스로 연결한 마우스가 너무 반응이 느리다. 맥이 이상한 가 싶어 트랙패드를 만져보면 전혀 반응 속도에 이상이 없다.
 인터넷을 뒤져보니 Wifi 2.5GHz와 블루투스가 간섭을 일으켜서 그런다고. 가장 간단한 해결책은 2.5GHz인데, 설명서에 있는 대로 2.5GHz에 대해 Radio Enable 를 꺼도 여전히 AP list에 나온다. 그러다 우연히 본 옵션이 &ldquo;Bluetooth coexistence&rdquo;. 5GHz에 대해서는 이 옵션이 없는 걸 보니 뭔가 영향을 줄 것 같다. 일단 옵션을 Enable로 변경.
 Let&rsquo;s see what happens.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2019/calico-cni-1/" rel="bookmark">
+			Calico CNI (draft)
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-08-18T15:20:01&#43;09:00">August 18, 2019</time>
+	<time class="meta__text" datetime="2019-08-22T15:04:20Z">(Last Modified: August 22, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Getting started with Calico on Kubernetes   Calico를 사용하는 경우 kubelet의 실행 옵션 중 --network-plugin=cni와 같이 변경된다.
+  kube-controller-manager의 실행 옵션 중 --allocate-node-cidrs=false 로 역시 변경된다. 이는 CNI(여기서는 Calico의 IPAM)에서 IP 주소를 할당하기 때문
+  Pod 내 route table에서는 host의 link local address를 default route로 사용한다.
+  Pod가 갖는 eth0 interface는 root(혹은 default) namespace에 존재하는 &lsquo;cali&rsquo;로 시작하는 interface와 veh pair 관계를 갖는다.
+ veth pairs는 아래 설명과 같이 서로 연결된 두 개의 interface를 의미하는데 한쪽으로 들어가면 연결된 다른 인터페이스로 나온다.
 	</div>
 </article>
 </main>

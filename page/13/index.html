@@ -69,26 +69,6 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2017/try-to-restore-wordpress-docker/" rel="bookmark">
-			Try to restore Wordpress container
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-09-03T00:36:25&#43;09:00">September 03, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		docker 버전이 업데이트되고, 몇 가지 변경사항이 있은 후 ghost, wordpress/mysql 조합의 container들이 접속이 되질 않는다. 한참을 두고 보다 ghost는 새 버전(1.x)이 나온 걸 계기로 새로 설치를 했는데(당연히 이전 설치에서 데이터를 container 내부가 아니라 local machine에 두도록 해서 데이터는 그대로 보존) wordpress는 그러질 못했다.
-이것 역시 참다참다 못해 https://docs.docker.com/compose/wordpress/#define-the-project 에 나와있는 docker swarm을 이용해서 복구해 보려고 삽을 들었다.
-위 페이지에 있는 대로 설정 파일을 만들고
-version: '3' services: db: image: mysql:5.7 volumes: - /Users/cychong/Dropbox/Apps/wordpress/:/var/lib/mysql restart: always environment: MYSQL_ROOT_PASSWORD: xxx MYSQL_DATABASE: xxx MYSQL_USER: xxx MYSQL_PASSWORD: xxx wordpress: depends_on: - db image: wordpress:latest volumes: - /Users/cychong/Documents/wordpress/:/var/www/html - /Users/cychong/Documents/wordpress/php_uploads.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2017/tesla-pyeomhae-daehan-nayi-saenggag/" rel="bookmark">
 			Tesla 폄하에 대한 나의 생각
 			</a>
@@ -257,6 +237,23 @@ Ghost의 admin 화면에서 Apps를 선택하면 이런 화면이 나온다.
  “Early on, we realized that the network we needed to support our services did not exist and could not be bought,”
  Espresso makes Google cloud faster, more available and cost effective by extending SDN to the public internet
  network should be treated as a large-scale distributed system leveraging the same control infrastructure we developed for Google’s compute and storage systems  Four pillars on Google&rsquo;s SDN strategy  Jupiter: Google employed SDN principles to build Jupiter, a data center interconnect capable of supporting more than 100,000 servers.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2017/why-message-queue-used-for-microservice/" rel="bookmark">
+			Why message queue used for microservice?
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-04-09T15:41:23&#43;09:00">April 09, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		
 	</div>
 </article>
 </main>

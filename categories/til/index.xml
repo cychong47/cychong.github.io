@@ -28,11 +28,12 @@ In-place Pod updates (#5774) is a planned feature to allow changing resources (r
     
     <item>
       <title>Deploy nginx with helm</title>
-      <link>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</link>
+      <link>https://cychong47.github.io/post/2020/2020-07-02-deploy-nginx-with-helm/</link>
       <pubDate>Thu, 02 Jul 2020 23:58:41 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/2020-07-02-deply-nginx-with-helm/</guid>
-      <description>cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &amp;quot;/docker-entrypoint.…&amp;quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &amp;quot;/pause&amp;quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&amp;gt;80/tcp podcast 2812c510a5b6 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&amp;gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &amp;quot;nginx-pv&amp;quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.</description>
+      <guid>https://cychong47.github.io/post/2020/2020-07-02-deploy-nginx-with-helm/</guid>
+      <description>우선 docker로 실행한 nginx container를 종료시키고
+cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &amp;quot;/docker-entrypoint.…&amp;quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &amp;quot;/pause&amp;quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&amp;gt;80/tcp podcast 2812c510a5b6 nginx &amp;quot;nginx -g &#39;daemon of…&amp;quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&amp;gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &amp;quot;nginx-pv&amp;quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.</description>
     </item>
     
     <item>
@@ -47,10 +48,10 @@ docker ps -aqf &amp;quot;name=containername&amp;quot; docker ps -aqf &amp;quot;n
     
     <item>
       <title>Git Tips</title>
-      <link>https://cychong47.github.io/post/2020/git/</link>
+      <link>https://cychong47.github.io/page/git/</link>
       <pubDate>Sat, 20 Jun 2020 21:54:31 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/git/</guid>
+      <guid>https://cychong47.github.io/page/git/</guid>
       <description>Open vim tabs with changed files vim -p `git diff --name-only` vim -p
   -p[N] Open N tab pages. When N is omitted, open one tab page for each file.   git diff --name-only
   --name-only Show only names of changed files.   </description>
@@ -58,10 +59,10 @@ docker ps -aqf &amp;quot;name=containername&amp;quot; docker ps -aqf &amp;quot;n
     
     <item>
       <title>Disable Password for Private Github Repo</title>
-      <link>https://cychong47.github.io/post/2020/disable-password-for-private-github-repo/</link>
+      <link>https://cychong47.github.io/post/2020/2020-06-19-disable-password-for-private-github-repo/</link>
       <pubDate>Fri, 19 Jun 2020 06:41:02 +0900</pubDate>
       
-      <guid>https://cychong47.github.io/post/2020/disable-password-for-private-github-repo/</guid>
+      <guid>https://cychong47.github.io/post/2020/2020-06-19-disable-password-for-private-github-repo/</guid>
       <description>github가 제공하는 private repository를 사용하니 ID와 암호를 매번 물어보길래 찾아 보니 이렇게 해결할 수 있다고.
 source : How do I avoid the specification of the username and password at every git push?
 $ git config credential.helper store $ git push https://github.com/repo.git Username for &#39;https://github.com&#39;: &amp;lt;USERNAME&amp;gt; Password for &#39;https://USERNAME@github.com&#39;: &amp;lt;PASSWORD&amp;gt; To set the timeout for &amp;ldquo;not-asking password&amp;rdquo;
@@ -90,27 +91,6 @@ To take something with a &amp;ldquo;grain of salt&amp;rdquo; or &amp;ldquo;pinch
 Though mp3info and exiftool can be used to the exiting mp3 file while the ffmpeg give the duration on recording process.
 $ mp3info -p &amp;quot;%S\n&amp;quot; Cinema_20200614.mp3 15 Exiftool does not give the correct duration.
 $ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinema_20200614.mp3 Directory : . File Size : 235 kB File Modification Date/Time : 2020:06:14 07:16:03+09:00 File Access Date/Time : 2020:06:14 07:47:47+09:00 File Inode Change Date/Time : 2020:06:14 07:16:03+09:00 File Permissions : rw-rw-r-- File Type : MP3 File Type Extension : mp3 MIME Type : audio/mpeg MPEG Audio Version : 1 Audio Layer : 3 Audio Bitrate : 64 kbps Sample Rate : 44100 Channel Mode : Stereo MS Stereo : Off Intensity Stereo : Off Copyright Flag : False Original Media : False Emphasis : None ID3 Size : 45 Encoder Settings : Lavf58.</description>
-    </item>
-    
-    <item>
-      <title>Migrate Ghost to Hugo</title>
-      <link>https://cychong47.github.io/post/2020/migrate-ghost-to-hugo/</link>
-      <pubDate>Sun, 07 Jun 2020 22:14:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/migrate-ghost-to-hugo/</guid>
-      <description>Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
-Ghost 정말 애증이 담긴&amp;hellip;
-Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.</description>
-    </item>
-    
-    <item>
-      <title>Migrate wordpress to hugo</title>
-      <link>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</link>
-      <pubDate>Sun, 31 May 2020 14:56:52 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</guid>
-      <description>Wordpress 에서 hugo로 이사한 후 첫번째 시도. Hugo theme은 harbor를 사용하고, site 호스팅 방법은 nginx docker를 사용. (이상하게 nginx를 helm으로 띄우는 게 간단하지 않네)
-Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clone https://github.com/cychong47/sosa0sa.git Cloning into &#39;sosa0sa&#39;... warning: You appear to have cloned an empty repository. Setup hugo inside of the git repository cychong15:migration_to_hugo cychong$ hugo new site sosa0sa Error: /Users/cychong/workspace/migration_to_hugo/sosa0sa already exists and is not empty. See --force. cychong15:migration_to_hugo cychong$ hugo new site sosa0sa --force Congratulations!</description>
     </item>
     
     <item>

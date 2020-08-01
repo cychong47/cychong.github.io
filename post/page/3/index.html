@@ -70,24 +70,6 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/migrate-ghost-to-hugo/" rel="bookmark">
-			Migrate Ghost to Hugo
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-07T22:14:02&#43;09:00">June 07, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
-Ghost 정말 애증이 담긴&hellip;
-Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2020/hugo-seutp-with-git/" rel="bookmark">
 			Migrate wordpress to hugo
 			</a>
@@ -95,7 +77,7 @@ Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-31T14:56:52&#43;09:00">May 31, 2020</time>
-	<time class="meta__text" datetime="2020-06-01T15:08:13Z">(Last Modified: June 01, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	<time class="meta__text" datetime="2020-06-01T15:08:13Z">(Last Modified: June 01, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
 	</span>
 </div></div>
 	</header>
@@ -260,6 +242,24 @@ Lunch or Happy Hour 뭔가 약속을 잡아야 할 때 점심 시간 혹은 저�
 직장 생활에서 반드시 익혀야 할 기술은 &lsquo;생각을 정리하여 말이나 글로 표현하는 기술&rsquo;
 일 때문에 일을 하는 것이 아니라 성과를 위해 일을 하는 것이다.
 WBS(Work Breakdown Structure)
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2019/upgrade-ghost-to-v3-0/" rel="bookmark">
+			Upgrade ghost to v3.0
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-11-05T14:58:16&#43;09:00">November 05, 2019</time>
+	<time class="meta__text" datetime="2019-11-06T14:25:40Z">(Last Modified: November 06, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		부제 1. pod가 동작하지 않을때 원인 찾기 부제 2. helm upgrade 명령을 이용하여 업데이트 하기 부제 3. sqlite를 이용해서 ghost.db 직접 수정하기  values.yaml에 명시되어 있는 ghost docker image의 버전 정보를 2.31.0에서 3.0.2 최신 버전으로 업데이트 후 아래 명령어로 업데이트
+$ helm upgrade --debug my-ghost ghost-with-helm [debug] Created tunnel using local port: '45263' [debug] SERVER: &quot;127.0.0.1:45263&quot; REVISION: 6 RELEASED: Tue Nov 5 22:25:19 2019 CHART: ghost-0.1.0 USER-SUPPLIED VALUES: {} COMPUTED VALUES: affinity: {} env: node_env: production url: http://sosa0sa.
 	</div>
 </article>
 </main>

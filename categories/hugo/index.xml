@@ -119,5 +119,26 @@ https://github.com/frjo/hugo-theme-zen에 있는 내용을 보면 md 파일의 f
 2년 전에는 OS X에 cron을 이용해서 자동으로 녹음을 한 후 NAS로 파일을 옮겨서 DS Audio 앱으로 듣기도 했는데 파일 기반으로 되어 있다 보니 내가 어떤 파일을 들었는 지 알기가 어려웠다.</description>
     </item>
     
+    <item>
+      <title>Migrate Ghost to Hugo</title>
+      <link>https://cychong47.github.io/post/2020/2020-06-07-migrate-ghost-to-hugo/</link>
+      <pubDate>Sun, 07 Jun 2020 22:14:02 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-06-07-migrate-ghost-to-hugo/</guid>
+      <description>Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
+Ghost 정말 애증이 담긴&amp;hellip;
+Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.</description>
+    </item>
+    
+    <item>
+      <title>Migrate wordpress to hugo</title>
+      <link>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</link>
+      <pubDate>Sun, 31 May 2020 14:56:52 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/hugo-seutp-with-git/</guid>
+      <description>Wordpress 에서 hugo로 이사한 후 첫번째 시도. Hugo theme은 harbor를 사용하고, site 호스팅 방법은 nginx docker를 사용. (이상하게 nginx를 helm으로 띄우는 게 간단하지 않네)
+Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clone https://github.com/cychong47/sosa0sa.git Cloning into &#39;sosa0sa&#39;... warning: You appear to have cloned an empty repository. Setup hugo inside of the git repository cychong15:migration_to_hugo cychong$ hugo new site sosa0sa Error: /Users/cychong/workspace/migration_to_hugo/sosa0sa already exists and is not empty. See --force. cychong15:migration_to_hugo cychong$ hugo new site sosa0sa --force Congratulations!</description>
+    </item>
+    
   </channel>
 </rss>

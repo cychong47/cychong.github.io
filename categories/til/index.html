@@ -92,7 +92,7 @@ In-place Pod updates (#5774) is a planned feature to allow changing resources (r
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/2020-07-02-deply-nginx-with-helm/" rel="bookmark">
+			<a href="/post/2020/2020-07-02-deploy-nginx-with-helm/" rel="bookmark">
 			Deploy nginx with helm
 			</a>
 		</h3>
@@ -103,7 +103,8 @@ In-place Pod updates (#5774) is a planned feature to allow changing resources (r
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &quot;/docker-entrypoint.…&quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &quot;/pause&quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&gt;80/tcp podcast 2812c510a5b6 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &quot;nginx-pv&quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.
+		우선 docker로 실행한 nginx container를 종료시키고
+cychong@mini1:~/work/helm-chart-github$ docker ps -a |grep nginx a66786635c60 nginx &quot;/docker-entrypoint.…&quot; 7 minutes ago Up 7 minutes k8s_nginx_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 85c85322ea59 k8s.gcr.io/pause:3.1 &quot;/pause&quot; 7 minutes ago Up 7 minutes k8s_POD_my-nginx-77596b9fc6-7txns_default_44840d63-b496-4a58-9e18-83e503c6d2cf_0 5be06dc3b184 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:8099-&gt;80/tcp podcast 2812c510a5b6 nginx &quot;nginx -g 'daemon of…&quot; 2 weeks ago Up 2 weeks 0.0.0.0:80-&gt;80/tcp sosa0sa cychong@mini1:~/work/helm-chart-github$ docker stop 5be06dc3b184 5be06dc3b184 cychong@mini1:~/work/helm-chart$ kubectl delete -f nginx/nginx-pv.yaml persistentvolume &quot;nginx-pv&quot; deleted cychong@mini1:~/work/helm-chart$ kubectl create -f nginx/nginx-pv.
 	</div>
 </article><article class="list__item post">
 	<header class="list__header">
@@ -125,7 +126,7 @@ docker ps -aqf &quot;name=containername&quot; docker ps -aqf &quot;name=^contain
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/git/" rel="bookmark">
+			<a href="/page/git/" rel="bookmark">
 			Git Tips
 			</a>
 		</h3>
@@ -143,7 +144,7 @@ docker ps -aqf &quot;name=containername&quot; docker ps -aqf &quot;name=^contain
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/disable-password-for-private-github-repo/" rel="bookmark">
+			<a href="/post/2020/2020-06-19-disable-password-for-private-github-repo/" rel="bookmark">
 			Disable Password for Private Github Repo
 			</a>
 		</h3>
@@ -200,42 +201,6 @@ $ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinem
 </article><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/2020/migrate-ghost-to-hugo/" rel="bookmark">
-			Migrate Ghost to Hugo
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-07T22:14:02&#43;09:00">June 07, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
-Ghost 정말 애증이 담긴&hellip;
-Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/hugo-seutp-with-git/" rel="bookmark">
-			Migrate wordpress to hugo
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-31T14:56:52&#43;09:00">May 31, 2020</time>
-	<time class="meta__text" datetime="2020-06-01T15:08:13Z">(Last Modified: June 01, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Wordpress 에서 hugo로 이사한 후 첫번째 시도. Hugo theme은 harbor를 사용하고, site 호스팅 방법은 nginx docker를 사용. (이상하게 nginx를 helm으로 띄우는 게 간단하지 않네)
-Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clone https://github.com/cychong47/sosa0sa.git Cloning into 'sosa0sa'... warning: You appear to have cloned an empty repository. Setup hugo inside of the git repository cychong15:migration_to_hugo cychong$ hugo new site sosa0sa Error: /Users/cychong/workspace/migration_to_hugo/sosa0sa already exists and is not empty. See --force. cychong15:migration_to_hugo cychong$ hugo new site sosa0sa --force Congratulations!
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
 			<a href="/post/2020/nvidia-vran-solution/" rel="bookmark">
 			NVIDIA vRAN Solution
 			</a>
@@ -254,6 +219,45 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
  5T-for-5G, or time-triggered transmission technology for telco
  https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
   Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/recover-broken-users-table/" rel="bookmark">
+			WordPress 로그인 불가 문제 해결
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-08T23:36:45&#43;09:00">May 08, 2020</time>
+	<time class="meta__text" datetime="2020-05-09T15:00:09Z">(Last Modified: May 09, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		말썽쟁이(?) wordpress 블로그가 또 문제를 일으켰다.
+이번에도 로그인이 안되는 현상인데 지난 번과는 다른 에러 메시지가 나온다. 즉 지난 번 해결책은 소용이 없을 거라는 불길한 예감이.
+로그인 계정 자체가 없다는 이 어이없는 상황.
+그래서 지난 번에 유용하게 사용했던 phpmyadmin을 이용해서 DB 정보를 확인해봤다. (다행히 MySql, wordpress 와 함께 실행시켜놓은 phpmyadmin container가 동작하고 있어서 지난 번과 같이 8181 포트로 접속하면 된단. 다만 로그인 암호를 기억하지 못하고 있는 나 대신 Safari가 기억하고 있어서 그냥 접속했다는)
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/if-i-have-authority-5-years-later/" rel="bookmark">
+			내게 권한이 있다면 - 그 이후
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-08T14:03:04&#43;09:00">May 08, 2020</time>
+	<time class="meta__text" datetime="2020-05-08T14:15:14Z">(Last Modified: May 08, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		내게 권한이 있다면
+이런 글을 쓴 적이 있었네. 우연히 ghost 블로그에 이전 글들이 2개씩 존재하는 걸 발견해서 중복된 글을 지우는 과정에서 이런 글을 썼다는 걸 알아냈다. 중복 글은 아마도 ghost 버전을 2에서 3으로 올리는 과정이나 복구하는 과정에서 발생한 듯 한데. 그 덕에 각 글들이 실제로 작성된 날짜정보는 사라지고 가장 오래된 글도 2년 전(2018) 정도로 나오는데 실제 내용은 2014년 글도 있다는.
+덕분에 이 글을 언제 썼는 지, 그 당시 어떤 일을 하고 있었는 지는 정확하지 않지만 글을 읽다 보니 어렴풋이 왜 이런 생각을 그때 했는 지 알겠다 싶다.
 	</div>
 </article>
 </main>
