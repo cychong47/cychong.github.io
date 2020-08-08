@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/recovery-failed-wordpress-container/" rel="bookmark">
+			Recover WordPress container
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-09-05T14:10:39&#43;09:00">September 05, 2018</time>
+	<time class="meta__text" datetime="2020-05-08T23:34:12Z">(Last Modified: May 08, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		One day The Wordpress container does not work at all. docker ps로 확인하면 1분 주기로 restart를 반복하고 있다. 경험상 이건 wordpress 앱이 초기화 과정에서 문제가 있는 거라는 걸로 짐작된다. 로그를 확인해 보니 아래와 같은 에러만 출력.
+뭐가 문제일까 멀쩡히 잘 돌던 녀석들인데.
+mini2:html cychong$ docker logs -f f12c3b3a57ef ... Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): Unexpected server respose while doing caching_sha2 auth: 109 in Standard input code on line 22 MySQL Connection Error: (2006) MySQL server has gone away Warning: mysqli::__construct(): MySQL server has gone away in Standard input code on line 22 Warning: mysqli::__construct(): (HY000/2006): MySQL server has gone away in Standard input code on line 22 Let’s debug  하지만 뭔가 달라진 게 있으니 갑자기 문제가 발생했겠지.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/smarter-faster-better/" rel="bookmark">
 			(책) 1등의 습관 Smarter, Faster, Better
 			</a>
@@ -249,25 +268,6 @@ p24 실수를 허용하지 않는 분위기는 직원들에게 방어적인 태�
 44 이제는 불평도 하지 않고, 남을 탓하지도 않을거야. 내 앞에 놓인 세상을 거부할 게 아니라, 있는 그대로의 세상에 뛰어들어서 내가 통제할 수 있는 것부터 시작할 거야. 무슨 일을 할 수 있을 지 찾아봐야겠어.
 50 자신의 지금 위치가 어디이든, 영향력의 원이 얼마나 크든 그 원의 밖이 아닌 안에서 변화를 일으키려 노력하라. 어차피 손을 쓸 수도 없는 큰 그림을 분석하고 해부하는데 소중한 에너지를 쓰지 말라.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/just-now-dream-love-be-happy/" rel="bookmark">
-			(책) 지금 꿈꾸라, 사랑하라, 행복하라
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-29T21:31:08&#43;09:00">July 29, 2018</time>
-	<time class="meta__text" datetime="2018-07-29T21:32:24Z">(Last Modified: July 29, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		꿈을 노트하라 꿈을 날짜와 함께 적어 놓으면 그것은 목표가 되고 목표를 잘게 나누면 그것은 계획인 되며, 그 계획을 실행에 옮기면 꿈을 이루게 되는 것이다.
-p46 우리는 무거운 짐을 지고 살아간다. ‘등이 휠 것 같은 삶의 무게여’라는 가사도 있다. 내가 책임져야 할 가족과 도움을 필요로 한 친구들, 나에게 주어진 과중한 업무와 기대. 이 거추장스러운 짐들이 사실은 ‘내 인생의 날개’일 수도 있다.
-p68 다른 사람과 한 약속을 지키는 것도 중요하지만 자기 자신과 한 약속을 지키는 것이 더 중요하다 세상과 타협하는 것도 위험하지만 자기 자신과 타협하는 것이 가장 위험하다
-	</div>
 </article>
 </main>
 
@@ -411,6 +411,7 @@ p68 다른 사람과 한 약속을 지키는 것도 중요하지만 자기 자�
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipv4/" title="ipv4">ipv4 (1)</a>

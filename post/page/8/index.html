@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/just-now-dream-love-be-happy/" rel="bookmark">
+			(책) 지금 꿈꾸라, 사랑하라, 행복하라
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-29T21:31:08&#43;09:00">July 29, 2018</time>
+	<time class="meta__text" datetime="2018-07-29T21:32:24Z">(Last Modified: July 29, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		꿈을 노트하라 꿈을 날짜와 함께 적어 놓으면 그것은 목표가 되고 목표를 잘게 나누면 그것은 계획인 되며, 그 계획을 실행에 옮기면 꿈을 이루게 되는 것이다.
+p46 우리는 무거운 짐을 지고 살아간다. ‘등이 휠 것 같은 삶의 무게여’라는 가사도 있다. 내가 책임져야 할 가족과 도움을 필요로 한 친구들, 나에게 주어진 과중한 업무와 기대. 이 거추장스러운 짐들이 사실은 ‘내 인생의 날개’일 수도 있다.
+p68 다른 사람과 한 약속을 지키는 것도 중요하지만 자기 자신과 한 약속을 지키는 것이 더 중요하다 세상과 타협하는 것도 위험하지만 자기 자신과 타협하는 것이 가장 위험하다
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/power-of-habit/" rel="bookmark">
 			(책) 습관의 힘
 			</a>
@@ -234,24 +253,6 @@ p65 다른 사람을 위해 작업할 때면 항상 그런 것은 아니지만 �
 		AVX2가 지원되지 않는 머신에서 쓸데없이 ACL library 빌드할 때 AVX2를 이용해서 빌드하려는 문제를 확인했다. 지금까지 아무도 고치지 않은 게 이상하긴 한데 그래도 내가 생각한 수정 방법이 제대로 동작하는 듯 해서 패치를 한번 보내보기로 했다.
 수정사항은 비교적 간단하다. ACL 라이브러리 빌드할 때 AVX2를 이용해서 빌드해야 하는 경우인지를 검사하는 코드가 lib/librte_acl/Makefile에 정의되어 있는데 여기서 항상 -march=core-avx2 옵션을 사용해서 AVX2가 지원되지 않는 머신에서도 AVX2를 사용해서 gcc가 빌드하도록 하는 걸로 보였다. 다른 코드 빌드할 때는 문제가 없는데 유독 ACL library에서만 이런 문제가 나서 보다 보니 아무래도 Makefile이 잘못된 듯 하다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/developer-culture/" rel="bookmark">
-			(책) 대살개문
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-15T13:41:48&#43;09:00">July 15, 2018</time>
-	<time class="meta__text" datetime="2018-09-07T14:40:33Z">(Last Modified: September 07, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		임백준. 2016.5
-96) dead code로 인한 사고  신규 기능을 위해 현재 지금은 disable로 설정된 변수를 재활용. 코드 변경을 깜빡하고 설정만 변경하여 잠자고 있던 예전 코드가 동작(예측 불가능한 동작) 사용하지 않는 코드는 소스 코드에서 삭제할 것. If 문으로 회피하는 것은 상당히 나쁘고 위험한 습관 소프트웨어의 전개 과정이 정확한 설명을 담고 있는 문서에 기반해야 함 효율성을 명목으로 코드의 간명함과 안정성을 해치는 행동은 피할 것  100) 오바마 케어 112) Detail  디테일이 살아 있고 빠르고 안정감 있게 동작하는 코드를 작성하는 것은 &lsquo;능력&rsquo;이 문제인 경우가 많지만 &lsquo;태도&rsquo;의 문제이기도 디테일과 사소함을 혼동하지 말 것 점 하나에 따라서 코드 전체의 의미가 달라질 수 있는 프로그래밍의 세계에서 디테일은 덤이 아니라 생명  121) 지식이 아니라 메타지식  전문성 보다는 부족한 정보를 토대로 최선의 판단을 내리는 적응력이 중요.
-	</div>
 </article>
 </main>
 
@@ -395,6 +396,7 @@ p65 다른 사람을 위해 작업할 때면 항상 그런 것은 아니지만 �
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipv4/" title="ipv4">ipv4 (1)</a>

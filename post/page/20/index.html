@@ -70,6 +70,26 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2015/running-dpdk-on-vmware-fusion/" rel="bookmark">
+			Running DPDK on VMware Fusion
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-10-20T14:19:05&#43;09:00">October 20, 2015</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		VirtualBox supports emulated e1000 NIC for VM while VMware fusion does not. VMware Fusion&rsquo;s VM setting does not support configuring of NIC HW type. The NIC HW is PCnet32 which is not supported by DPDK.
+However, we can change NIC HW type by editing VM configuration file directly.
+Refer : How to emulate 10 Gbps NIC in a VMware Fusion VM
+Edit vmx file to VMX file is in where vmware image located
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2015/trex-dpdk-based-traffic-generator/" rel="bookmark">
 			TRex - DPDK based traffic generator
 			</a>
@@ -241,25 +261,6 @@ SW 품질 개선 노력의 대상   SW 품질을 높이는데 Tool, System, Peop
 The result is that most existing guidelines contain well over a hundred rules, sometimes with questionable justification. Some rules especially those that try to stipulate the use of white-space in programs, may have been introduced by personal preference; others are meants to prevent very specific and unlikely types of error from eariler coding efforts within the same organization.
 효율적인 가이드라인이 되려면, rule의 개수는 적어야 하고, 쉽게 이해되고, 기억될 수 있을 만큼 명확해야 한다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/caeg-big-seumol/" rel="bookmark">
-			(책) 빅 스몰
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-07-04T15:21:38&#43;09:00">July 04, 2015</time>
-	<time class="meta__text" datetime="2018-08-19T22:06:31Z">(Last Modified: August 19, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		p81  전문가라서 승진했더니 전문적인 일에서는 점점 더 멀어지고, 해보지 않은 일을 끊임없이 떠안기는 게 현대 기업의 문화다. 이 과정에서 효율이 떨어지기라도 한다면 기업은 &lsquo;너는 쓸모없다&rsquo;며 직원을 내친다.
-  중요한 것은 일을 제대로 해내는 능력을 갖춘 사람이다. 누구나 똑같은 말을 한다. 하지만 대기업은 최고의 능력을 갖춘 사람을 구하지 않는다. 조직 논리에 순적응할 수 있는 사람을 찾을 뿐이다. 따라서 결과적으로 대기업은 최고가 될 수 없다.
- 그래서 Steve Jobs가 Apple은 여전히 작은 venture들의 모임이라고 한 건가?
-	</div>
 </article>
 </main>
 
@@ -403,6 +404,7 @@ The result is that most existing guidelines contain well over a hundred rules, s
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipv4/" title="ipv4">ipv4 (1)</a>

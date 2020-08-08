@@ -70,6 +70,26 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/how_kni_free_mbuf/" rel="bookmark">
+			KNI가 buffer를 free 하는 방법
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-06T08:17:58&#43;09:00">March 06, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		DPDK to KNI RX KNI는 rx_q로부터 mbuf를 수신한 후 data_len 크기의 skb를 할당하여 데이터를 복사한 후 netif_rx를 호출한다. 그러므로 mbuf는 KNI kernel module까지만 사용되고, 커널 networking stack에서는 사용되지는 않는다.
+kni_net.c의 kni_net_rx_normal() 함수가 DPDK application으로부터 mbuf를 받아 커널에 전달하는 함수인데 실제 함수는 batch processing을 위해 한번에 여러 개의 패킷을 rx_q로부터 읽어 처리하도록 구현되어 있다.
+아래는 하나의 패킷에 대해 수행되는 코드를 간략화 한 것이다(예외 처리 부분도 제외)
+num_rx = kni_fifo_get(kni-&gt;rx_q, (void **)va, num_rx); kva = (void *)va[i] - kni-&gt;mbuf_va + kni-&gt;mbuf_kva; len = kva-&gt;data_len; data_kva = kva-&gt;buf_addr + kva-&gt;data_off - kni-&gt;mbuf_va + kni-&gt;mbuf_kva; skb = dev_alloc_skb(len + 2); /* Align IP on 16B boundary */ skb_reserve(skb, 2); memcpy(skb_put(skb, len), data_kva, len); skb-&gt;dev = dev; skb-&gt;protocol = eth_type_trans(skb, dev); skb-&gt;ip_summed = CHECKSUM_UNNECESSARY; /* Call netif interface */ netif_rx(skb); /* Update statistics */ kni-&gt;stats.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/scapy-suppress-scapy-warning-message/" rel="bookmark">
 			(Scapy) Suppress Scapy warning message
 			</a>
@@ -250,27 +270,6 @@ dicionary는 key의 순서를 보장하지 않음. OrderedDict()로 사전을 �
 struct '&gt;LL' : '&gt;' Big endian, L : uint32_t
 list comprehension : for loop보다 빠름.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/sriov-and-dpdk/" rel="bookmark">
-			SR-IOV and DPDK
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-07T23:40:26&#43;09:00">February 07, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		SR-IOV and DPDK
-Accelerating the NFV Data Plane : SR-IOV and DPDK… in my own words 를 읽고 요약
-Before HW assisted Virtualisation SR-IOV 전까지는 VMM이 패킷 송수신에 매번 개입해야 했음.
- 1st interrupt from NIC to VMM 2nd interrupt from VMM to VM  Intel VMDq Only one interrupt from NIC to VM as each VM has its own Rx queue.
-SR-IOV  SR-IOV : Standard IO memory Memory Management Unit from Intel(VT-d) and AMD(IOV) Virtual Function - Limited, lightweight, PCIe resource and a dedicated Tx/Rx packet queue Interrupt 부담이 없다고 하는데 왜?
-	</div>
 </article>
 </main>
 
@@ -414,6 +413,7 @@ SR-IOV  SR-IOV : Standard IO memory Memory Management Unit from Intel(VT-d) and 
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipv4/" title="ipv4">ipv4 (1)</a>
