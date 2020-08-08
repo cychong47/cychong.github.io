@@ -69,6 +69,24 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/submit-patch-to-dpdk-with-git/" rel="bookmark">
+			2nd patch submit to DPDK
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-07-21T15:02:14&#43;09:00">July 21, 2018</time>
+	<time class="meta__text" datetime="2018-07-21T15:10:14Z">(Last Modified: July 21, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		AVX2가 지원되지 않는 머신에서 쓸데없이 ACL library 빌드할 때 AVX2를 이용해서 빌드하려는 문제를 확인했다. 지금까지 아무도 고치지 않은 게 이상하긴 한데 그래도 내가 생각한 수정 방법이 제대로 동작하는 듯 해서 패치를 한번 보내보기로 했다.
+수정사항은 비교적 간단하다. ACL 라이브러리 빌드할 때 AVX2를 이용해서 빌드해야 하는 경우인지를 검사하는 코드가 lib/librte_acl/Makefile에 정의되어 있는데 여기서 항상 -march=core-avx2 옵션을 사용해서 AVX2가 지원되지 않는 머신에서도 AVX2를 사용해서 gcc가 빌드하도록 하는 걸로 보였다. 다른 코드 빌드할 때는 문제가 없는데 유독 ACL library에서만 이런 문제가 나서 보다 보니 아무래도 Makefile이 잘못된 듯 하다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/developer-culture/" rel="bookmark">
 			(책) 대살개문
 			</a>
@@ -235,23 +253,6 @@ mbpr15:~ cychong$ docker run -d -p 3000:3000 —name grafana grafana/grafana 148
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		Install Elastic Stack(ELK stack) with docker mbpr15:elk-wireshark cychong$ git clonehttps://github.com/deviantony/docker-elk.git git: 'clonehttps://github.com/deviantony/docker-elk.git' is not a git command. See 'git --help'. mbpr15:elk-wireshark cychong$ git clone https://github.com/deviantony/docker-elk.git Cloning into 'docker-elk'... remote: Counting objects: 1235, done. remote: Total 1235 (delta 0), reused 0 (delta 0), pack-reused 1235 Receiving objects: 100% (1235/1235), 259.29 KiB | 77.00 KiB/s, done. Resolving deltas: 100% (470/470), done. mbpr15:elk-wireshark cychong$ cd elk mbpr15:elk-wireshark cychong$ cd docker-elk/ mbpr15:docker-elk cychong$ ls LICENSE	elasticsearch	logstash README.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/2018-01-home-network/" rel="bookmark">
-			2018.01 home network
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-01-30T15:44:01&#43;09:00">January 30, 2018</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:50Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
 	</div>
 </article>
 </main>
@@ -499,6 +500,7 @@ mbpr15:~ cychong$ docker run -d -p 3000:3000 —name grafana grafana/grafana 148
 		<a class="widget-taglist__link widget__link btn" href="/tags/soft-skill/" title="soft-skill">soft-skill (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sqlite/" title="sqlite">sqlite (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sriov/" title="SRIOV">SRIOV (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/standingdesk/" title="StandingDesk">StandingDesk (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/startup/" title="startup">startup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="storage">storage (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/study/" title="study">study (1)</a>

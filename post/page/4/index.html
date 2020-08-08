@@ -70,6 +70,23 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-03-03-backup-ghost-database-periodically/" rel="bookmark">
+			Backup Ghost Database Periodically
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-03-03T00:00:00&#43;09:00">March 03, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		This ghost-backup container will backup in every 3am
+Start ghost-backup container cychong@mini1:~/Documents/docker-daily-backup$ docker run --name ghost-backup -d -v /home/cychong/Documents/docker-daily-backup:/backups --volumes-from 388c84247267 bennetimo/ghost-backup ea33f148122bbe0d90a502bfd884e4c988e9f8837921f725ca7317afff7fa149 Instant backup cychong@mini1:~/Documents/docker-daily-backup$ ls -al total 8 drwxrwxr-x 2 cychong cychong 4096 Mar 3 23:25 . drwxr-xr-x 5 cychong cychong 4096 Mar 3 23:25 .. cychong@mini1:~/Documents/docker-daily-backup$ docker exec ghost-backup backup Tue Mar 3 14:27:27 UTC 2020: Checking if a mysql container exists on the network at mysql:3306 Tue Mar 3 14:27:33 UTC 2020: .
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/new-things-in-last-4-years/" rel="bookmark">
 			Upgrade kubenetes to 1.17.2-0
 			</a>
@@ -237,23 +254,6 @@ $ ps -ef |grep kube cychong 7461 2486 0 23:26 pts/0 00:00:00 grep --color=auto k
 		Check if SCTP is supported by creating SCTP service https://blog.aweimeow.tw/enable-sctp-in-kubernetes-cluster/
 cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadata: name: sctp spec: selector: app: sctp ports: - protocol: SCTP port: 9999 targetPort: 30001 cychong@mini1:~/work/sctp$ kubectl create -f service.yaml The Service &quot;sctp&quot; is invalid: spec.ports[0].protocol: Unsupported value: &quot;SCTP&quot;: supported values: &quot;TCP&quot;, &quot;UDP&quot; Enable SCTP in running kubernetes cluster https://stackoverflow.com/questions/55909512/how-to-configure-already-running-cluster-in-kubernetes
  Basically you must pass this flag to kube-apiserver. How you can do that depends on how you set up the cluster.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/upgrade-kubernetes/" rel="bookmark">
-			Upgrade kubernetes to 1.16.1
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-10-07T15:37:14&#43;09:00">October 07, 2019</time>
-	<time class="meta__text" datetime="2019-10-07T15:39:18Z">(Last Modified: October 07, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		cychong@mini1:~/work/ghost-with-helm-x$ sudo apt update [sudo] password for cychong: Ign:2 http://dl.google.com/linux/chrome/deb stable InRelease Hit:3 http://archive.ubuntu.com/ubuntu bionic InRelease Hit:4 https://download.docker.com/linux/ubuntu bionic InRelease Hit:5 http://dl.google.com/linux/chrome/deb stable Release Get:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB] Hit:1 https://packages.cloud.google.com/apt kubernetes-xenial InRelease Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB] Get:9 http://archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB] Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 DEP-11 Metadata [295 kB] Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 48x48 Icons [73.8 kB] Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/main DEP-11 64x64 Icons [147 kB] Get:13 http://archive.
 	</div>
 </article>
 </main>
@@ -502,6 +502,7 @@ cychong@mini1:~/work/sctp$ cat service.yaml apiVersion: v1 kind: Service metadat
 		<a class="widget-taglist__link widget__link btn" href="/tags/soft-skill/" title="soft-skill">soft-skill (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sqlite/" title="sqlite">sqlite (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sriov/" title="SRIOV">SRIOV (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/standingdesk/" title="StandingDesk">StandingDesk (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/startup/" title="startup">startup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="storage">storage (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/study/" title="study">study (1)</a>

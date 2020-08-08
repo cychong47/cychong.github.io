@@ -69,6 +69,23 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/how-to-read-2/" rel="bookmark">
+			(책) 어떻게 읽을 것인가 - 2
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-06-10T14:43:55&#43;09:00">June 10, 2016</time>
+	<time class="meta__text" datetime="2018-07-28T11:25:19Z">(Last Modified: July 28, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		만독  책을 느리게(집중해서) 읽기 아이에게 책 읽어주기  부모가 읽어야 아이도 읽는다   1단계. 책 선정  초등학생이면 어휘가 풍부한 국내 소설 오래 살아남은 책. 고전 문학   2단계. 반복해서 읽기 3단계. 파생독서 하기  저자의 다른 책 저자가 참고한 책 비슷한 주제의 책   4단계. 챕터별 요약하기 5단계. 챕터별로 생각 적어보기  책을 읽으면 추가 자료와, 자신의 생각을 곁들여 정리   6단계. 장문 쓰기  다독  고정형/성장형 생각  특히 힘든 시기에 영향을 줌 갑자기 어려워지는 중학교 시절 두뇌도 근육과 같다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/how-to-read/" rel="bookmark">
 			(책) 어떻게 읽을 것인가
 			</a>
@@ -234,26 +251,6 @@ index.hbs
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		코드에 신경쓰기  어떤 코드든 간에 수정한 후에는 이전 보다 나아져야 한다 기능이 추가된 것은 &lsquo;나아진&rsquo; 것이 아니다. 기능이 추가되고, 코드 수가 늘어나도 여전히 좋은 구조를 유지하는 것이 &lsquo;나아진&rsquo; 것이다.   정돈된 코드 유지하기  좋은 코드는 명백하며 일관성이 있다. 보기 좋은 코드는 의도를 드러낸다(예술) 코드를 읽을 사람은 지금 당장의 나 외에 몇 달 후의 나, 다른 동료 그리고 미래의 유지 보수 프로그래머다. 그들이 혼란을 덜 겪도록 코드를 작성해야 한다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/header-length-in-mbuf/" rel="bookmark">
-			DPDK new mbuf 사용 주의사항
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-03-06T08:22:24&#43;09:00">March 06, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		l2_len, l3_len, l4_len 등을 사용하는 라이브러리가 존재함
- reassembly Tx checksum offload  Reassembly rte_ipv6_frag_reassemble_packet(), rte_ipv4_frag_reassemble_packet() Incoming mbuf should have its l2_len and l3_len fields setup correctly.
-L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to
- fill l2_len and l3_len in mbuf set the flags PKT_TX_TCP_CKSUM, PKT_TX_SCTP_CKSUM or PKT_TX_UDP_CKSUM set the flag PKT_TX_IPV4 or PKT_TX_IPV6 calculate the pseudo header checksum and set it in the L4 header (only for TCP or UDP).
 	</div>
 </article>
 </main>
@@ -501,6 +498,7 @@ L4 checksum HW offloading To use hardware L4 checksum offload, the user needs to
 		<a class="widget-taglist__link widget__link btn" href="/tags/soft-skill/" title="soft-skill">soft-skill (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sqlite/" title="sqlite">sqlite (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sriov/" title="SRIOV">SRIOV (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/standingdesk/" title="StandingDesk">StandingDesk (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/startup/" title="startup">startup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="storage">storage (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/study/" title="study">study (1)</a>

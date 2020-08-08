@@ -69,6 +69,25 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-14-grain-of-salt/" rel="bookmark">
+			Grain of Salt
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-14T08:08:31&#43;09:00">June 14, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		From OS X dictionary
+Grain of salt
+Pliny the Elder&rsquo;s Naturalis Historia may be the origin of the phrase.
+To take something with a &ldquo;grain of salt&rdquo; or &ldquo;pinch of salt&rdquo; is an English language idiom that means to view something with skepticism or not to interpret something literally.[1] In the old-fashioned English units of weight, a grain weighs approximately 60 mg, which is about how much table salt a person might pick up between the fingers as a pinch.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-06-14-record-cbs-with-cron/" rel="bookmark">
 			Record CBS radio in every day
 			</a>
@@ -235,23 +254,6 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		지난 2016년 난생 처음으로 자발적으로 부서를 옮긴 후에 경험한 것들.
 그 전의 십수년간에는 해보지 않은 많은 새로운 경험들을 가질 수 있었다. 주변의 도움 덕에. 특히 날 믿어주는 지인 덕에 이런 새로운 경험을 해 봐서 재밌었다.
  팀으로 일하기 Agile practice 해보기. Scrum meeting, Daily meeting, 회고 등 재밌게 일하기 의미를 가지며 일하기 의미있는 TF하기 Leading(TF, 파트) 외국 연구소, 사업자 직접 만나서 대화하기 정보를 입수해 가공해서 잘 전달하기 정보를 집중해서 관리하는 사이트 구축하기 사람들 독려하기 주간 리포트를 통해 업무 진행 공유하기 정치 맛 보기(이건 좀 힘들었네) 새로운 분야의 일 - Bearer Processing, OAM, MAC, PHY, 가상화 인프라 구축 - OpenStack, container 상용 솔류션 도입 - DB, Container platform 신기술을 컴파일해서 우리 것에 적용방안 찾기 (가상화 TF) 전화 영어로 일하기 밤 늦은 시간에 사업자마 해외 연구소와 콜하기 전략적으로 판단하기 (무조건 아는 걸 다 이야기하면 안되는) 팀 빌드의 중요성 옆에서 보기 다른 사람 평가하기 회사 평가 시스템 이해(TO는 생각보다 많이 적다, 연봉 캡, 동기부여의 수단은 별로 없다) 아는 것과 남들 특히 다른 생각을 가진 사람들을 설득하는 것이 어떤 지 배우기 영어로 업무하기.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/2020-03-03-backup-ghost-database-periodically/" rel="bookmark">
-			Backup Ghost Database Periodically
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-03-03T00:00:00&#43;09:00">March 03, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		This ghost-backup container will backup in every 3am
-Start ghost-backup container cychong@mini1:~/Documents/docker-daily-backup$ docker run --name ghost-backup -d -v /home/cychong/Documents/docker-daily-backup:/backups --volumes-from 388c84247267 bennetimo/ghost-backup ea33f148122bbe0d90a502bfd884e4c988e9f8837921f725ca7317afff7fa149 Instant backup cychong@mini1:~/Documents/docker-daily-backup$ ls -al total 8 drwxrwxr-x 2 cychong cychong 4096 Mar 3 23:25 . drwxr-xr-x 5 cychong cychong 4096 Mar 3 23:25 .. cychong@mini1:~/Documents/docker-daily-backup$ docker exec ghost-backup backup Tue Mar 3 14:27:27 UTC 2020: Checking if a mysql container exists on the network at mysql:3306 Tue Mar 3 14:27:33 UTC 2020: .
 	</div>
 </article>
 </main>
@@ -499,6 +501,7 @@ Start ghost-backup container cychong@mini1:~/Documents/docker-daily-backup$ dock
 		<a class="widget-taglist__link widget__link btn" href="/tags/soft-skill/" title="soft-skill">soft-skill (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sqlite/" title="sqlite">sqlite (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/sriov/" title="SRIOV">SRIOV (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/standingdesk/" title="StandingDesk">StandingDesk (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/startup/" title="startup">startup (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/storage/" title="storage">storage (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/study/" title="study">study (1)</a>
