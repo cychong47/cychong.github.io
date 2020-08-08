@@ -4,26 +4,41 @@
   
   <url>
     <loc>https://cychong47.github.io/categories/</loc>
-    <lastmod>2020-08-01T22:52:47+09:00</lastmod>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/iphonex/</loc>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://cychong47.github.io/</loc>
-    <lastmod>2020-08-01T22:52:47+09:00</lastmod>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://cychong47.github.io/tags/kubernetes/</loc>
-    <lastmod>2020-08-01T22:52:47+09:00</lastmod>
+    <loc>https://cychong47.github.io/categories/life/</loc>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://cychong47.github.io/post/</loc>
-    <lastmod>2020-08-01T22:52:47+09:00</lastmod>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://cychong47.github.io/tags/</loc>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/2020/2020-08-04-iphonex-panic-log/</loc>
+    <lastmod>2020-08-04T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/kubernetes/</loc>
     <lastmod>2020-08-01T22:52:47+09:00</lastmod>
   </url>
   
@@ -35,6 +50,16 @@
   <url>
     <loc>https://cychong47.github.io/post/2020/2020-05-07-upgrade-kubernetes-1-18-2/</loc>
     <lastmod>2020-08-01T22:52:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/tags/chair/</loc>
+    <lastmod>2020-08-01T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://cychong47.github.io/post/2020/2020-08-01-old-chair-wheel/</loc>
+    <lastmod>2020-08-01T00:00:00+09:00</lastmod>
   </url>
   
   <url>
@@ -54,11 +79,6 @@
   
   <url>
     <loc>https://cychong47.github.io/post/2020/2020-07-24-apple-subscriptions/</loc>
-    <lastmod>2020-07-24T06:56:44+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://cychong47.github.io/categories/life/</loc>
     <lastmod>2020-07-24T06:56:44+09:00</lastmod>
   </url>
   

@@ -6,10 +6,19 @@
     <description>Recent content on Keep calm and write something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2020 22:52:47 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Too many panic logs from iPhoneX</title>
+      <link>https://cychong47.github.io/post/2020/2020-08-04-iphonex-panic-log/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-08-04-iphonex-panic-log/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Upgrade Kubernetes 1 18 2</title>
@@ -20,6 +29,17 @@
       <description>Upgrade kubernetes to 1.18.2
 Note etcd might be need to be upgrade
 cychong@mini1:~$ sudo kubeadm upgrade apply v1.18.2 [upgrade/config] Making sure the configuration is correct: [upgrade/config] Reading configuration from the cluster... [upgrade/config] FYI: You can look at this config file with &#39;kubectl -n kube-system get cm kubeadm-config -oyaml&#39; [preflight] Running pre-flight checks. [upgrade] Running cluster health checks [upgrade/version] You have chosen to change the cluster version to &amp;quot;v1.18.2&amp;quot; [upgrade/versions] Cluster version: v1.</description>
+    </item>
+    
+    <item>
+      <title>의자 아래 정체 모를 플라스틱</title>
+      <link>https://cychong47.github.io/post/2020/2020-08-01-old-chair-wheel/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-08-01-old-chair-wheel/</guid>
+      <description>어느 날 부터인가 이상하게 책상 의자 아래에 부스러기들이 보이기 시작했다는.
+의자에서 플라스틱에 떨어지는 것 같은데 의자에서는 흔적이 안 보이고.
+며칠을 봐도 그 이유를 찾지 못했는데 알고 보니 의자 바퀴 플라스틱이 부스러지고 있었다는 거.</description>
     </item>
     
     <item>

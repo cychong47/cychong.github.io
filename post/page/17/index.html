@@ -70,6 +70,42 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/dpdk-2-2-crypto-dev-api/" rel="bookmark">
+			DPDK 2.2 crypto dev API
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-01-24T15:08:11&#43;09:00">January 24, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		pktmbuf_offload  pool은 rte_pktmbuf_offload_pool_create()를 사용하여 생성  l2fwd_mbuf_ol_pool = rte_pktmbuf_offload_pool_create( &quot;mbuf_offload_pool&quot;, NB_MBUF, 128, 0, rte_socket_id());  할당은 rte_pktmbuf_offload_alloc()를 이용.  rte_pktmbuf_offload_alloc(l2fwd_mbuf_ol_pool, RTE_PKTMBUF_OL_CRYPTO);  mbuf 마다 하나씩 할당해서 crypto 연산에 사용 crypto 연산에 필요한 추가 옵션 등을 설정함.  /* Append space for digest to end of packet */ ol-&gt;op.crypto.digest.data = (uint8_t *)rte_pktmbuf_append(m, cparams-&gt;digest_length); ol-&gt;op.crypto.digest.phys_addr = rte_pktmbuf_mtophys_offset(m, rte_pktmbuf_pkt_len(m) - cparams-&gt;digest_length); ol-&gt;op.crypto.digest.length = cparams-&gt;digest_length; ol-&gt;op.crypto.iv.data = cparams-&gt;iv_key.data; ol-&gt;op.crypto.iv.phys_addr = cparams-&gt;iv_key.phys_addr; ol-&gt;op.crypto.iv.length = cparams-&gt;iv_key.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2016/dpdk_based_apps/" rel="bookmark">
+			DPDK based applications
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-01-24T14:59:18&#43;09:00">January 24, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		2016.02.10 기준
+ DPDK-dump TRex - Realistic traffic generator
+git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK  
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/two-years-back/" rel="bookmark">
 			2년전에 느꼈던 답답함이 여전하네
 			</a>
@@ -219,48 +255,6 @@ mini-2:work cychong$ mkdir click mini-2:work cychong$ cd click/ mini-2:click cyc
 mini-2:click cychong$ . venv/bin/activate  원하는 패키지 설치
 (venv)mini-2:click cychong$ pip install Click Collecting Click Downloading click-6.2-py2.py3-none-any.whl (70kB) 100% |████████████████████████████████| 73kB 270kB/s Installing collected packages: Click Successfully installed Click-6.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/culture/" rel="bookmark">
-			Culture should be setup first
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-12-13T13:44:24&#43;09:00">December 13, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		from Google Work Rules
-2006년에 구글에 입사. 72년 생
-구글 임직원 나이 평균에 비하면 많지만, 그래도 비슷한 덩치의 국내 기업의 인사 담당자와 비교하면. 하긴 구글을 국내 (대)기업과 비교하는 것 자체가 의미없는 일이지만
-과연 현실은 그렇다해도 저런 생각을 가진 사람을 주변에서 볼 수 있을까?
-그러기에 현실은 너무 지난하다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/openfastpath/" rel="bookmark">
-			OpenFastPath
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-12-11T14:40:23&#43;09:00">December 11, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Another Open source project.
-User-land protocol stack. Incorporate with ODP
-To use with DPDK, ODP and ODP-DPDK should be used.
-From the FAQ
-Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning does it intercept Linux ipconfig/ip commands and automatically create similar entities inside the fastpath stack? A: Yes. Uses Netlink to sync with ifconfig commands and also with routes. Q: Does the OFP IP stack have full IPv4/IPv6 fragmentation/re-assembly support?
-	</div>
 </article>
 </main>
 
@@ -342,6 +336,7 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
 		<a class="widget-taglist__link widget__link btn" href="/tags/c/" title="C">C (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/calico/" title="calico">calico (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cavium/" title="Cavium">Cavium (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/chair/" title="Chair">Chair (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cisco/" title="cisco">cisco (7)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/click/" title="click">click (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/cncf/" title="cncf">cncf (1)</a>
@@ -403,6 +398,7 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iphoneX">iphoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipv4/" title="ipv4">ipv4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/istio/" title="istio">istio (1)</a>
