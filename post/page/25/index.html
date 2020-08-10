@@ -70,6 +70,45 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2014/peom-eoddeohge-hamyeon-deo-naeun-sopeuteuweeoreul-mandeul-su-isseulgga/" rel="bookmark">
+			(펌) 어떻게 하면 더 나은 소프트웨어를 만들 수 있을까?
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-08-24T10:55:06&#43;09:00">August 24, 2014</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		어떻게 하면 더 나은 소프트웨어를 만들 수 있을까? – 인터뷰 시리즈 part 1, Fernando Jimenez Moreno와 함께
+출처 : http://hacks.mozilla.or.kr/2014/08/how-can-we-write-better-software-interview-series-part-1/
+영문 원본 : https://hacks.mozilla.org/2014/07/how-can-we-write-better-software-interview-series-part-1/
+Telefonica에서 근무하고 있으면서 MozillaOS 개발에 참여하고 있는 사람의 인터뷰 기사
+Code Reviewer 업무를 함에 있어 참고할 만한 좋은 내용이 많아 옮겨 본다.
+ 우리가 모질라와 함께 일한 것은 2011년으로 거슬러 올라갑니다. 두 회사 모두에게 잘 맞는 공통된 작업 절차를 찾기까지 꽤 많은 시간이 걸렸습니다. 제말은, 우리는 텔코(telco) 문화에서 일하던 사람입니다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2014/sdn-expert-group-semina-play-with-dpdk/" rel="bookmark">
+			SDN expert group 세미나 - Play with DPDK
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-08-21T12:11:18&#43;09:00">August 21, 2014</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		세미나 내용  Controller &ndash;(OpenFlow)&ndash; ovs-switchd &ndash;(netlink)&ndash; Datapath Datapath is in the kernel space OVDK move the kernel based OVS to user space.  ovs-switched talk to OVDK with UDP   기존 OVDK는 port별 task handler(각각 별도의 core에서 동작)  그 결과 많은 core 필요 WR 이야기처럼 VM간 혹은 VM과 외부와의 통신을 담당하는 OVS용으로 많은 core를 사용하면 실제로 VM이 사용할 수 있는 core 개수가 줄어들어 문제   virtIO 사용시 VM에서 동작하는 application이 kernel stack의 필요한 경우 결국 OVDK와 VM내 커널 space간 copy가 필요함  최신 버전에서는 VM에서도 KNI based virtIO를 이용하도록 개선함.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2014/carari-honja-saenggaghal-sigan-gajyeora/" rel="bookmark">
 			차라리 혼자 생각할 시간 가져라
 			</a>
@@ -218,41 +257,13 @@ SDN: Helping Real People in a Real Crisis | 6WIND Blog
 		Network 장비를 만드는 방법 중 가장 흔한 방법이 Networking에 최적화된 processor를 제공하는 업체로부터 processor를 구입하고, 그 processor와 함께 제공되는 SDK를 사용하는 것이다. 그러다보니 특정 업체의 processor를 위해 만든 S/W를 다른 processor로 포팅하는 경우 많은 부분을 수정해야 하는 경우가 많다.
 당연한 이야기지만, 특정 processor에 종속적인 부분은 해당 processor가 제공하는 H/W accelerator 를 이용하는 코드나 해당 processor의 특성에 맞게 설계된 구조 등이다. 다른 processor로 포팅하는 경우 전자의 경우는 새로운 processor에서 대응되는 API등이 제공되면 비교적 쉽게 변경할 수 있다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2014/welcome-to-ghost-2/" rel="bookmark">
-			Welcome to Ghost
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2014-05-10T03:45:21&#43;09:00">May 10, 2014</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		You&rsquo;re live! Nice. We&rsquo;ve put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;your blog URL&gt;/ghost/. When you arrive, you can select this post from a list on the left and see a preview of it on the right. Click the little pencil icon at the top of the preview to edit this post and read the next section!
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/2020-07-01-setup-nginx-with-bitnami-chart/" rel="bookmark">
-			
-			</a>
-		</h3>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		bitnami repo 추가 cychong@mini1:~$ helm repo add bitnami https://charts.bitnami.com/bitnami &quot;bitnami&quot; has been added to your repositories bitnami repo에 있는 chart 확인 cychong@mini1:~$ helm search repo bitnami NAME CHART VERSION	APP VERSION DESCRIPTION bitnami/bitnami-common 0.0.8 0.0.8 Chart with custom templates used in Bitnami cha... bitnami/airflow 6.3.4 1.10.10 Apache Airflow is a platform to programmaticall... bitnami/apache 7.3.18 2.4.43 Chart for Apache HTTP Server bitnami/cassandra 5.5.3 3.11.6 Apache Cassandra is a free and open-source dist.
-	</div>
 </article>
 </main>
 
 <div class="pagination">
 	<a class="pagination__item pagination__item--prev btn" href="/post/page/24/">«</a>
-	<span class="pagination__item pagination__item--current">25/25</span>
+	<span class="pagination__item pagination__item--current">25/26</span>
+	<a class="pagination__item pagination__item--next btn" href="/post/page/26/">»</a>
 </div>
 
 			</div>
@@ -456,7 +467,7 @@ SDN: Helping Real People in a Real Crisis | 6WIND Blog
 		<a class="widget-taglist__link widget__link btn" href="/tags/p4/" title="p4">p4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/patch/" title="patch">patch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/perl/" title="perl">perl (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
