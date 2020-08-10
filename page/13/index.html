@@ -69,6 +69,25 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2017/opnfv-asia-meeting/" rel="bookmark">
+			OPNFV Asia Meeting
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-10-01T08:28:34&#43;09:00">October 01, 2017</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		ZTE Pharos Lab Pharos : OPNFV를 시험하는 worldwide lab 외부에서 접속하는 것이 필요하므로 ssh를 열어줄 수는 없어서 openVPN을 제공하고, 망을 분리하는 등의 이슈 해결을 위해 노력한 듯
+https://www.opnfv.org/developers/pharos Pharos는 시험 환경을 구축해서 community에 공개해서 사용할 수 있는 환경을 제공하는 듯 Provide developers with substantial resources for early testing within realistic NFV environments via an open, consistent, repeatable test domain
+Why donate Pharos environment NFV 환경에 사용할 HW를 직접 제조하는 업체들에게는 제품 호환성에 대한 시험을 유도할 수 있는 장점을 가짐.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2017/ves-to-opnfv/" rel="bookmark">
 			Integrating VES to OPNFV
 			</a>
@@ -246,25 +265,6 @@ cychong:~ cychong$ docker stop ghost ghost cychong:~ cychong$ docker rm ghost gh
 위 페이지에 있는 대로 설정 파일을 만들고
 version: '3' services: db: image: mysql:5.7 volumes: - /Users/cychong/Dropbox/Apps/wordpress/:/var/lib/mysql restart: always environment: MYSQL_ROOT_PASSWORD: xxx MYSQL_DATABASE: xxx MYSQL_USER: xxx MYSQL_PASSWORD: xxx wordpress: depends_on: - db image: wordpress:latest volumes: - /Users/cychong/Documents/wordpress/:/var/www/html - /Users/cychong/Documents/wordpress/php_uploads.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2017/tesla-pyeomhae-daehan-nayi-saenggag/" rel="bookmark">
-			Tesla 폄하에 대한 나의 생각
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2017-08-22T22:11:57&#43;09:00">August 22, 2017</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		난 반대로 기존 상용차업체들이 몇 년간 테슬라를 보면서도 고작(?) 전기차 라는 키워드에만 집중해서 분석한 듯한 모습이 더 실망스러운데. 여전히 테슬라를 전기동력을 이용한 차를 만드는 회사로 인지하는 건 아닌지.
-다른 분야와 마찬가지로 자동차부문에 SW라는 개념을 넣은 것도 전기차 못지 않은 혁신이라고 생각. 도대체 서비스센터 갈때마다 뭔 소프트웨어 업데이트를 했다고 하지만 사용자인 내가 느낄 수 있는 건 단 한번도 없었는데(이건 내 제한된 경험때문에 V사만 그런 것일지도 모르지만)
-한번 차를 팔면 땡(그나마 하드웨어에 대한 유지보수망)이라는 생각을 가지고 있는 회사와 끊임없이 SW를 통해 부가가치를 만들어 제공하려는 회사는 하늘과 땅 차이가 아닐까 싶다.
-	</div>
 </article>
 </main>
 
@@ -409,8 +409,8 @@ version: '3' services: db: image: mysql:5.7 volumes: - /Users/cychong/Dropbox/Ap
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ios/" title="iOS">iOS (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>

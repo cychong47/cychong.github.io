@@ -69,6 +69,27 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2015/dpdk-ip-reassembly-example/" rel="bookmark">
+			DPDK IP reassembly example
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-11-17T13:49:57&#43;09:00">November 17, 2015</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		TAILQ_HEAD(ip_pkt_list, ip_frag_pkt); /**&lt; @internal fragments tailq */  자료 구조체 Fragment 관리용 table struct rte_ip_frag_tbl *frag_tbl;  locking 없이 IP reassembly를 수행할 단위(통상 core)로 한 개씩 만든다. 즉 하나의 core가 여러 rx queue를 처리하더라도 하나의 frag_tbl만 가지면 된다.
+아래 rte_ip_frag_table_create()함수를 이용해서 생성한다.
+struct rte_ip_frag_death_row death_row core별로 갖는 death_row. IP reassembly를 호출한 후 해당 함수내에서 free할 mbuf를 이 리스트에 담아줌.
+main loop에서 reassembly작업 후 rte_ip_frag_free_death_row()함수를 호출해 reassembly에 실패한 mbuf를 free함
+IP_MAX_FRAG_NUM defines the maximum fragments of one reassembly.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2015/do_you_know_agile/" rel="bookmark">
 			또 하나의 코미디
 			</a>
@@ -243,26 +264,6 @@ SW 품질 개선 노력의 대상   SW 품질을 높이는데 Tool, System, Peop
  Tool : 2 배 System : 10배 People : 30배 Management : 60배 이상    그렇지만 대개의 관리자는 개선효과를 반대로 알고 있다.
   사람은 변화해야 할 때 변화한다(더 이상 저항하지 못할 때) 그러나 위기는 갑자기 오지 않는다. 다만 위기에 대한 인지를 갑자기 할 뿐이다.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/competetion_is_like_drug/" rel="bookmark">
-			경쟁을 통한 성과 추구는 마약과 같다
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-09-12T10:28:31&#43;09:00">September 12, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		경쟁을 부추켜서 조직의 성과를 얻으려는 관리자는 아무런 노력도 하지 않고 결과만 날로 먹으려는 것과 같다. 아무 고민없이 할 수 있는 제일 쉬운 방법이니까.
-조직원들에게 동기부여를 줄지, 조직의 협동심을 아떻게하면 높일 수 있을 지 고민할 필요가 없이 결과만 취하면 되니까. 그런 관리자는 조직에 해를 끼치는 존재다.
-할 수 있는 게 없는 건지,해도 안되는 건지. 여러가지 방법을 써도 안된다면 조직원과 함께 고민하면 안될까. 함께 속해 있는 &lsquo;조직&rsquo;의 성과를 위한 거니까
-@유정식의 &lsquo;착각하는 CEO&rsquo;를 읽는 중 프랑스/베트남/쥐 박멸/쥐 사육 부분을 읽고
-	</div>
 </article>
 </main>
 
@@ -407,8 +408,8 @@ SW 품질 개선 노력의 대상   SW 품질을 높이는데 Tool, System, Peop
 		<a class="widget-taglist__link widget__link btn" href="/tags/influxdb/" title="influxdb">influxdb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ios/" title="iOS">iOS (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
