@@ -81,7 +81,7 @@
 </div>
 <div class="content post__content clearfix">
 			<p>iPhone 이나 iPad에서 사진을 골라 사진과 markdown 파일을 만들어 Working Copy를 통해 git repo에 업로드하는 Shortcut을 마련했다.<br>
-Shortcut의 원본은 이 블로그(<a href="https://marcus.nordaaker.com/post/posting-to-hugo-from-ios/">Posting to Hugo from iOS</a>에서 얻었다.
+Shortcut의 원본은 이 블로그(<a href="https://marcus.nordaaker.com/post/posting-to-hugo-from-ios/">Posting to Hugo from iOS</a>에서 얻었다.<br>
 Front formatter만 일부 수정하면 그대로 사용할 수 있을 정도로 내가 기대하는 workflow가 구현이 되어 있었다. 실은 문법도 잘 모르면서 괜히 손을 댔다 제대로 동작 안하게 했다 다시 고치느라 시간만 보냈다는.</p>
 <p>이 Shortcut이 하는 일은 위 블로그에도 자세하게 설명되어 있지만(친절한 분&hellip;)</p>
 <ul>
@@ -97,7 +97,7 @@ Front formatter만 일부 수정하면 그대로 사용할 수 있을 정도로 
          alt="Publish hugo post from iPad" width="1280"/> 
 </figure>
 </p>
-<p>손을 봤으면 하는 내용은</p>
+<p>손을 봤으면 하는 내용이 몇 가지 있는데</p>
 <ul>
 <li><strong>예외 처리</strong>. 사진이 넘어오지 않는 경우에 대한 고려. 이때는 그냥 markdown 파일만 생성.(그럼 굳이 markdown 파일을 만들 필요가 있나 싶긴 하지만, 일단 만들어진 markdown 파일은 iA Writer를 이용해서 내용을 추가하는 형태로 활용할 수 있고, 일단 사진이 넘어오지 않은 경우에 대해서는 예외 처리가 필요해 보인다. 동작을 멈출 건지, markdown 파일만 만들 건지)</li>
 <li><strong>날짜는 사진의 생성일 기준으로</strong>. 사진과 markdown 이름에 들어가는 날짜를 지금은 shortcut을 실행한 날짜를 사용하는데 예전에 찍은 사진을 활용하는 경우도 있을 테니 일단 사진에 사용하는 날짜는 사진의 <code>EXIF</code>정보를 이용해서 사진이 생성된 날짜로 하는 게 맞을 것 같다. 위에서 고려한 것처럼 만일 사진 파일이 없는 경우에는 오늘 날짜를 기준으로 하면 되고.</li>
