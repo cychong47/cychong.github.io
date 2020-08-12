@@ -6,10 +6,28 @@
     <description>Recent content on Keep calm and write something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 18:18:26 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 14:16:01 +0900</lastBuildDate>
     
 	<atom:link href="https://cychong47.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Publish hugo post from iPad</title>
+      <link>https://cychong47.github.io/post/2020/2020-08-11-publish-hugo-post-from-ipad/</link>
+      <pubDate>Tue, 11 Aug 2020 14:16:01 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-08-11-publish-hugo-post-from-ipad/</guid>
+      <description>  </description>
+    </item>
+    
+    <item>
+      <title>Limit of free tier</title>
+      <link>https://cychong47.github.io/post/2020/2020-08-11-limit-of-free-tier/</link>
+      <pubDate>Tue, 11 Aug 2020 14:12:28 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/post/2020/2020-08-11-limit-of-free-tier/</guid>
+      <description>  </description>
+    </item>
     
     <item>
       <title>쉽게 rollback할 수 있는 SW</title>

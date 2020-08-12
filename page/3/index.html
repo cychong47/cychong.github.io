@@ -69,6 +69,42 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-20-setup-podcast-blog-5/" rel="bookmark">
+			Setup podcast blog - 자동화
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-20T22:33:02&#43;09:00">June 20, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Scripts Automation
+mini2 - record mp3 file $ crontab -l 00 11 * * * cd /Users/cychong/work/cbs-ost/script &amp;&amp; ./record.sh &gt;&gt; /tmp/cron.out 2&gt;&amp;1 mini1 - create MD file and publish podcast $ crontab -l 04 12 * * * cd /home/cychong/work/cbs-ost/script &amp;&amp; ./scp.sh &gt;&gt; /tmp/cron.out 2&gt;&amp;1 05 12 * * * cd /home/cychong/work/cbs-ost/script &amp;&amp; ./publish.sh &gt;&gt; /tmp/cron.out 2&gt;&amp;1  Get mp3 file from mini2 Create md file after getting song list Rebuild site to publish the updated podcast  
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-19-disable-password-for-private-github-repo/" rel="bookmark">
+			Disable Password for Private Github Repo
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-19T06:41:02&#43;09:00">June 19, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		github가 제공하는 private repository를 사용하니 ID와 암호를 매번 물어보길래 찾아 보니 이렇게 해결할 수 있다고.
+source : How do I avoid the specification of the username and password at every git push?
+$ git config credential.helper store $ git push https://github.com/repo.git Username for 'https://github.com': &lt;USERNAME&gt; Password for 'https://USERNAME@github.com': &lt;PASSWORD&gt; To set the timeout for &ldquo;not-asking password&rdquo;
+git config --global credential.helper 'cache --timeout 7200' 
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/2020-06-18-setup-podcast-blog-2/" rel="bookmark">
 			Setup podcast blog - recording 동작 확인
 			</a>
@@ -206,46 +242,6 @@ $ exiftool Cinema_20200614.mp3 ExifTool Version Number : 11.88 File Name : Cinem
 		Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
 Ghost 정말 애증이 담긴&hellip;
 Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/hugo-seutp-with-git/" rel="bookmark">
-			Migrate wordpress to hugo
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-31T14:56:52&#43;09:00">May 31, 2020</time>
-	<time class="meta__text" datetime="2020-06-01T15:08:13Z">(Last Modified: June 01, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Wordpress 에서 hugo로 이사한 후 첫번째 시도. Hugo theme은 harbor를 사용하고, site 호스팅 방법은 nginx docker를 사용. (이상하게 nginx를 helm으로 띄우는 게 간단하지 않네)
-Clone repogistry for raw blog data cychong15:migration_to_hugo cychong$ git clone https://github.com/cychong47/sosa0sa.git Cloning into 'sosa0sa'... warning: You appear to have cloned an empty repository. Setup hugo inside of the git repository cychong15:migration_to_hugo cychong$ hugo new site sosa0sa Error: /Users/cychong/workspace/migration_to_hugo/sosa0sa already exists and is not empty. See --force. cychong15:migration_to_hugo cychong$ hugo new site sosa0sa --force Congratulations!
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2020/nvidia-vran-solution/" rel="bookmark">
-			NVIDIA vRAN Solution
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-05-20T15:01:44&#43;09:00">May 20, 2020</time>
-	<time class="meta__text" datetime="2020-05-20T15:04:06Z">(Last Modified: May 20, 2020)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		https://devblogs.nvidia.com/building-accelerated-5g-cloudran-at-the-edge/
-Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing specifications for eCPRI-based RANs by ensuring clock accuracy of 16ns or less
-5T for 5G enables packet-based, ethernet RANs to provide precise time-stamping of packets for delivering highly accurate time references to 5G fronthaul and backhaul networks.
- 5T-for-5G, or time-triggered transmission technology for telco
- https://news.developer.nvidia.com/new-real-time-smartnic-technology-5t-for-5g/
-  Real-time transmission hardware acceleration: 5T-for-5G simplifies time synchronization and data transmission across servers, GPUs, radios, and baseband units in wireless network rollouts, making 5G rollouts easier and more efficient.
 	</div>
 </article>
 </main>
@@ -460,7 +456,7 @@ Mellanox ConnectX-6 Dx SmartNIC exceeds stringent industry-standard timing speci
 		<a class="widget-taglist__link widget__link btn" href="/tags/p4/" title="p4">p4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/patch/" title="patch">patch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/perl/" title="perl">perl (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>

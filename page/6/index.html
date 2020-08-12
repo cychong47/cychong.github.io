@@ -69,6 +69,46 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2019/wifi-5ghz-bluetooth-coexistence/" rel="bookmark">
+			Wifi 2.5GHz bluetooth coexist
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-08-26T15:46:19&#43;09:00">August 26, 2019</time>
+	<time class="meta__text" datetime="2019-08-26T15:50:52Z">(Last Modified: August 26, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		간혹 아니 자주 블루투스로 연결한 마우스가 너무 반응이 느리다. 맥이 이상한 가 싶어 트랙패드를 만져보면 전혀 반응 속도에 이상이 없다.
+인터넷을 뒤져보니 Wifi 2.5GHz와 블루투스가 간섭을 일으켜서 그런다고. 가장 간단한 해결책은 2.5GHz인데, 설명서에 있는 대로 2.5GHz에 대해 Radio Enable 를 꺼도 여전히 AP list에 나온다. 그러다 우연히 본 옵션이 &ldquo;Bluetooth coexistence&rdquo;. 5GHz에 대해서는 이 옵션이 없는 걸 보니 뭔가 영향을 줄 것 같다. 일단 옵션을 Enable로 변경.
+Let&rsquo;s see what happens.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2019/calico-cni-1/" rel="bookmark">
+			Calico CNI (draft)
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-08-18T15:20:01&#43;09:00">August 18, 2019</time>
+	<time class="meta__text" datetime="2019-08-22T15:04:20Z">(Last Modified: August 22, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Getting started with Calico on Kubernetes   Calico를 사용하는 경우 kubelet의 실행 옵션 중 --network-plugin=cni와 같이 변경된다.
+  kube-controller-manager의 실행 옵션 중 --allocate-node-cidrs=false 로 역시 변경된다. 이는 CNI(여기서는 Calico의 IPAM)에서 IP 주소를 할당하기 때문
+  Pod 내 route table에서는 host의 link local address를 default route로 사용한다.
+  Pod가 갖는 eth0 interface는 root(혹은 default) namespace에 존재하는 &lsquo;cali&rsquo;로 시작하는 interface와 veh pair 관계를 갖는다.
+ veth pairs는 아래 설명과 같이 서로 연결된 두 개의 interface를 의미하는데 한쪽으로 들어가면 연결된 다른 인터페이스로 나온다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2019/boundary-clock/" rel="bookmark">
 			Boundary Clock
 			</a>
@@ -222,45 +262,6 @@ Added support for device multi-process hotplug.
 야생 학습은 대부분 목표가 불분명하고 바뀌기도 한다.
  학습의 본질은 야생 학습에 더 가깝다고 생각. 현실 세계에서는 야생 학습이 더 많이 필요하다고 봅니다.
 p23  구조화된 인터뷰(특별히 구조화된 행동중심적 인터뷰를 권함)와 실제 작업을 해보도록 하는 작업 샘플 테스트, 그리고 가능하다면 실제 업무를 주고 시험적으로 짧은 기간 동안 일을 해보게 하는 것 등을 권합니다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/get-the-latest-jetpack-plugin/" rel="bookmark">
-			Get the latest jetpack plugin
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-12-16T06:55:44&#43;09:00">December 16, 2018</time>
-	<time class="meta__text" datetime="2018-12-17T13:24:07Z">(Last Modified: December 17, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		http://sosa0sa.com:2368/use-jetpack-for-wordpress-5-0/ 의 연장선. Jetpack plugin의 최신 버전을 알아내서 자동으로 해당 바이너리 파일을 다운로드 받아 보자.
-몇 가지 module 을 사용하는데 필요한 module은 https://realpython.com/python-web-scraping-practical-introduction/ 을 참고해서 설치
-$ python3 -m venv venv $ . ./venv/bin/activate $ pip3 install requests BeautifulSoup4 webscrap.py from requests import get from requests.exceptions import RequestException from contextlib import closing from bs4 import BeautifulSoup from urllib.request import * ''' https://realpython.com/python-web-scraping-practical-introduction/ ''' def simple_get(url): &quot;&quot;&quot; Attempts to get the content at `url` by making an HTTP GET request.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/use-jetpack-for-wordpress-5-0/" rel="bookmark">
-			Use jetpack for wordpress 5.0
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-12-10T15:04:29&#43;09:00">December 10, 2018</time>
-	<time class="meta__text" datetime="2018-12-10T22:20:48Z">(Last Modified: December 10, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Wordpress 5.0부터 기본 editor가 ghost와 같이 block editor 로 변경됨. Markdown을 사용하려면 이전과 동일하게 Jetpack을 사용해야 하는데 docker에서 wordpress를 돌리고 있는 내 경우 ftp를 통한 plugin 설치가 안되다는&hellip;
-직접 설치는 안되므로 해결 방안은 Jetpack을 따로 받아 설치한 후 docker volume으로 jetpack 디렉토리를 plugins 디렉토리 밑에 마운트 시키는 방법.
-이번 기회에 최신 버전을 받는 방법을 포함해서 정리 해 보자.
-Jetpack의 최신 버전 확인 방법 https://wordpress.org/plugins/jetpack/ 을 방문하면 오른쪽 plugin 정보란에서 다음과 같이 최신 버전 정보를 확인할 수 있다.
 	</div>
 </article>
 </main>
@@ -475,7 +476,7 @@ Jetpack의 최신 버전 확인 방법 https://wordpress.org/plugins/jetpack/ �
 		<a class="widget-taglist__link widget__link btn" href="/tags/p4/" title="p4">p4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/patch/" title="patch">patch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/perl/" title="perl">perl (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>

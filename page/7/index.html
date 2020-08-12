@@ -69,6 +69,45 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2018/get-the-latest-jetpack-plugin/" rel="bookmark">
+			Get the latest jetpack plugin
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-12-16T06:55:44&#43;09:00">December 16, 2018</time>
+	<time class="meta__text" datetime="2018-12-17T13:24:07Z">(Last Modified: December 17, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		http://sosa0sa.com:2368/use-jetpack-for-wordpress-5-0/ 의 연장선. Jetpack plugin의 최신 버전을 알아내서 자동으로 해당 바이너리 파일을 다운로드 받아 보자.
+몇 가지 module 을 사용하는데 필요한 module은 https://realpython.com/python-web-scraping-practical-introduction/ 을 참고해서 설치
+$ python3 -m venv venv $ . ./venv/bin/activate $ pip3 install requests BeautifulSoup4 webscrap.py from requests import get from requests.exceptions import RequestException from contextlib import closing from bs4 import BeautifulSoup from urllib.request import * ''' https://realpython.com/python-web-scraping-practical-introduction/ ''' def simple_get(url): &quot;&quot;&quot; Attempts to get the content at `url` by making an HTTP GET request.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2018/use-jetpack-for-wordpress-5-0/" rel="bookmark">
+			Use jetpack for wordpress 5.0
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-12-10T15:04:29&#43;09:00">December 10, 2018</time>
+	<time class="meta__text" datetime="2018-12-10T22:20:48Z">(Last Modified: December 10, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Wordpress 5.0부터 기본 editor가 ghost와 같이 block editor 로 변경됨. Markdown을 사용하려면 이전과 동일하게 Jetpack을 사용해야 하는데 docker에서 wordpress를 돌리고 있는 내 경우 ftp를 통한 plugin 설치가 안되다는&hellip;
+직접 설치는 안되므로 해결 방안은 Jetpack을 따로 받아 설치한 후 docker volume으로 jetpack 디렉토리를 plugins 디렉토리 밑에 마운트 시키는 방법.
+이번 기회에 최신 버전을 받는 방법을 포함해서 정리 해 보자.
+Jetpack의 최신 버전 확인 방법 https://wordpress.org/plugins/jetpack/ 을 방문하면 오른쪽 plugin 정보란에서 다음과 같이 최신 버전 정보를 확인할 수 있다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2018/how-nasa-uses-a-wiki-to-reduce-email/" rel="bookmark">
 			How NASA uses a wiki to reduce email
 			</a>
@@ -224,48 +263,6 @@ mini2:html cychong$ docker logs -f f12c3b3a57ef ... Warning: mysqli::__construct
  출퇴근 시간 1.5시간/하루 * 5일 * 4 * 11 month = 330 시간.400시간은 베이스캠프를 개발자들이 프로그래밍하는데 걸린 시간
  p22
  엄청난 기술이 필요한 것은 아니다. 하지만 과거의 유산을 내려놓고 미래로 가는 배에 올라 탈 굳은 의지를 갖추어야만 한다.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/why-danish-bought-a-chair-with-the-first-time-salary/" rel="bookmark">
-			(책) 덴마크 사람들은 왜 첫 월급을 받으면
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-08-16T14:46:20&#43;09:00">August 16, 2018</time>
-	<time class="meta__text" datetime="2018-08-16T22:01:31Z">(Last Modified: August 16, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		기대와는 많이 달랐던 책&hellip;
- 인생은 바꿔 말하면 ‘시간’입니다. 그 시간을 보내는 ‘공간’이야말로 그 사람의 행복으로 이어집니다.
- 
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2018/coupang-the-reason-of-innovation/" rel="bookmark">
-			(책) 쿠팡 우리가 혁신하는 이유
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-08-05T11:09:34&#43;09:00">August 05, 2018</time>
-	<time class="meta__text" datetime="2018-09-07T14:29:12Z">(Last Modified: September 07, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/book/" rel="category">Book</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		31
- PO의 역할 A,B, C의 우선 순위를 결정하는 수동적인 역할 더 창의적으로 생각해보면 전혀 다른 D라는 일을 텅해 A,B, C의 문제를 한꺼번에 해결 할 수도. 사고의 폭이 넓으면 PO가 할 일은 무한정 많아지기도 한다.
- 관리자와 같은 입장인 듯. 2018년 8월 내가 갖는 고민, 상황에 딱 드러맞는 말.
-240
- 쿠팡 대표 이사, 김범석
-&ldquo;제발 위에서 시키니까 한다는 소리 좀 하지 마세요. 그거 제가 제일 싫어하는 말이예요&rdquo;
-&ldquo;무엇이 옳고 합리적인지&quot;를 묻는 것은 다양성을 존중하는 수평적인 조직문화의 토대가 될 수 있다.
 	</div>
 </article>
 </main>
@@ -480,7 +477,7 @@ mini2:html cychong$ docker logs -f f12c3b3a57ef ... Warning: mysqli::__construct
 		<a class="widget-taglist__link widget__link btn" href="/tags/p4/" title="p4">p4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/patch/" title="patch">patch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/perl/" title="perl">perl (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>

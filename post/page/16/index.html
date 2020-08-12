@@ -70,6 +70,44 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/display-post-by-default-ghost/" rel="bookmark">
+			Ghost 본문 다 보이기
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-05-09T15:23:57&#43;09:00">May 09, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		theme을 수정해서 ghost blog 화면에서 글 본문이 다 나오도록 할 수 있다.
+대신 theme마다 조금씩 적용 방법이 다른데 기본적으로 변경해야 할 내용은 동일
+casper theme casper는 index.hbs 파일에서 loop.hbs라는 별도 파일을 통해 본문을 보이게 하고 있다.
+index.hbs
+ 21 {{! The main content area on the homepage }} 22 &lt;main id=&quot;content&quot; class=&quot;content&quot; role=&quot;main&quot;&gt; 23 24 {{! The tag below includes the post loop - partials/loop.hbs }} 25 {{&gt; &quot;loop&quot;}} 26 27 &lt;/main&gt; 위 코드에서 가리키는 partials/loop.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/2016/frag-reassembly-test/" rel="bookmark">
+			Frag &amp; Reassembly Test
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-05-01T15:35:28&#43;09:00">May 01, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		set environment export RTE_ARCH=x86_64 export RTE_SDK=/home/cychong/Work/dpdk-2.1.0 export RTE_TARGET=x86_64-native-linuxapp-gcc export RTE_OUTPUT=$RTE_SDK/$RTE_TARGET run sudo ./build/ip_reassembly -c 0x1 -n 4 -m 1000M --no-huge --no-pci --no-hpet -- --display_pps 1 --tx_pps 10 
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/soft-skill/" rel="bookmark">
 			(책) 소프트 스킬
 			</a>
@@ -214,44 +252,6 @@ num_rx = kni_fifo_get(kni-&gt;rx_q, (void **)va, num_rx); kva = (void *)va[i] - 
 from scapy.all import * dip=&quot;10.0.0.1&quot; payload=&quot; &quot;*1000 packet=IP(dst=dip)/UDP(dport=0x1234)/payload frag_list=fragment(packet,fragsize=500) counter=1 for fragment in frag_list: print &quot;Packet no%d&quot; %counter print fragment.show() counter+=1 send(fragment) frag_list에서 counter 변수를 확인해서 전송하지 않으면 간단하게 fragment가 수신되지 않은 경우에 시험할 수 있음.
 필요하면 frag_list의 순서를 뒤집는 것도 가능하고, 각 fragment의 offset값을 조정하거나 패킷 크기를 변경하면 다른 비정상 경우도 쉽게 시험할 수 있다.
 scapy interactive tutorial
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/vagrant/" rel="bookmark">
-			Vagrant
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-14T07:52:01&#43;09:00">February 14, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:42Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Vagrant
-fd.io의 개발 환경 구성하는 문서를 보니 vagrant를 사용한다. 그런데 또 virtualbox니 vmware 이야기를 한다. 이전에도 vagrant라는 단어를 들어본적이 있었는데 이번 기회에 좀 알아보기로
-Why Vagrant를 보면 다음과 같이 설명하고 있다.
- Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
-To achieve its magic, Vagrant stands on the shoulders of giants.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/fd-io-tree/" rel="bookmark">
-			fd.io
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-13T05:51:52&#43;09:00">February 13, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		├── build-data │ ├── packages │ └── platforms ├── build-root │ ├── deb │ │ └── debian │ │ └── source │ ├── emacs-lisp │ ├── packages │ ├── rpm │ ├── scripts │ └── vagrant ├── dpdk │ ├── dkms │ ├── dpdk-2.1.0_patches │ └── dpdk-2.2.0_patches ├── g2 ├── gmod │ └── gmod ├── perftool ├── sample-plugin │ └── sample ├── svm ├── test │ ├── resources │ │ ├── libraries │ │ │ ├── bash │ │ │ ├── python │ │ │ └── robot │ │ │ └── vat │ │ └── templates │ │ └── vat │ └── tests │ └── suites │ ├── bridge_domain │ └── vhost_user_dummy ├── vlib │ ├── example │ └── vlib │ └── unix ├── vlib-api │ ├── vlibapi │ ├── vlibmemory │ └── vlibsocket ├── vnet │ ├── etc │ │ └── scripts │ │ ├── dhcp │ │ ├── ludd-cluster-1 │ │ ├── ludd-cluster-3 │ │ ├── mpls-o-ethernet │ │ ├── mpls-o-gre │ │ ├── sr │ │ └── virl │ └── vnet │ ├── cdp │ ├── classify │ ├── devices │ │ ├── dpdk │ │ ├── ssvm │ │ └── virtio │ ├── dhcp │ ├── dhcpv6 │ ├── ethernet │ ├── flow │ ├── gre │ ├── hdlc │ ├── ip │ ├── ipsec │ ├── l2 │ ├── l2tp │ ├── lawful-intercept │ ├── lisp-gpe │ ├── llc │ ├── map │ │ └── examples │ ├── mcast │ ├── mpls-gre │ ├── nsh-gre │ ├── nsh-vxlan-gpe │ ├── osi │ ├── pg │ ├── plugin │ ├── policer │ ├── ppp │ ├── snap │ ├── sr │ ├── srp │ ├── unix │ ├── vcgn │ └── vxlan ├── vpp │ ├── api │ ├── app │ ├── conf │ ├── oam │ ├── stats │ └── vnet ├── vpp-api-test │ ├── scripts │ └── vat ├── vpp-japi │ ├── japi │ │ ├── org │ │ │ └── openvpp │ │ │ └── vppjapi │ │ └── test │ └── m4 ├── vppapigen └── vppinfra ├── config ├── tools └── vppinfra 
 	</div>
 </article>
 </main>
@@ -467,7 +467,7 @@ To achieve its magic, Vagrant stands on the shoulders of giants.
 		<a class="widget-taglist__link widget__link btn" href="/tags/p4/" title="p4">p4 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/patch/" title="patch">patch (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/perl/" title="perl">perl (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/photo/" title="photo">photo (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pinpoint/" title="pinpoint">pinpoint (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/plist/" title="plist">plist (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/pluribus/" title="Pluribus">Pluribus (1)</a>
