@@ -69,6 +69,24 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/two-years-back/" rel="bookmark">
+			2년전에 느꼈던 답답함이 여전하네
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-01-04T15:19:11&#43;09:00">January 04, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		우연히 tumblr를 보니 2013년에 적었던 답답한 현실이 지금도 똑같다는 사실에 놀랐다. 들으려고 하는 사람은 없고, 쓸데없는 일에 시간을 보내는 건 지금도 전혀 바뀐게 없어 보인다.
+여전히 사용하라는 툴에서 제공하는 정보와 취합해 달라고 하는 정보가 다르다. 그럼 어떻게 하라는 건지? 툴을 고치던가, 툴의 정보를 원하는 정보로 바꾸는 기준을 제시해줘야 하는 거 아닌가? 내용은 관심없고, 그냥 결과만 달라고 하는. 자기가 그런 변환 작업을 한 적이 없으니 얼마나 귀찮은지 모르는 거다. 그리고 사람마다 다른 기준으로 정보를 취합해도 별 문제가 없다는 건 결국 별로 중요하지 않는 내용이라는 거다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/google-work-rules/" rel="bookmark">
 			(책) 구글의 아침은 자유가 시작된다.
 			</a>
@@ -241,25 +259,6 @@ User-land protocol stack. Incorporate with ODP
 To use with DPDK, ODP and ODP-DPDK should be used.
 From the FAQ
 Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning does it intercept Linux ipconfig/ip commands and automatically create similar entities inside the fastpath stack? A: Yes. Uses Netlink to sync with ifconfig commands and also with routes. Q: Does the OFP IP stack have full IPv4/IPv6 fragmentation/re-assembly support?
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2015/hugepage/" rel="bookmark">
-			Hugepage
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2015-12-11T14:30:56&#43;09:00">December 11, 2015</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Linux에서 사용하는 기본 page size는 4KB. 이 대신 2MB 혹은 1GB의 큰 크기를 hugepage라고 한다. Hugepage는 연속된 physical memory에 할당되어야 한다는 제약 조건이 있지만, 대신 swap out되지 않아 성능 개선 효과가 있다.
-아래 링크에서는 Oracle DB를 사용하는데 page swapping때문에 CPU 부하가 간헐적으로 크게 증가하는 현상을 hugepage를 사용해서 해결한 경우.
- Performance tuning : hugepages in Linux Enabling huge pages for shared memory  기왕 hugepage를 사용한다면 shared memory도 hugepage에 할당하는 것이 유리할 듯.
 	</div>
 </article>
 </main>
@@ -572,10 +571,12 @@ Q: Does the OFP IP stack mimic Linux stack config inside the fastpath, meaning d
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B8%EC%9A%A9/" title="인용">인용 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/" title="임백준">임백준 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/" title="잡생각">잡생각 (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A0%84%EB%9E%8C%ED%9A%8C/" title="전람회">전람회 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/" title="조직관리">조직관리 (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/" title="조직문화">조직문화 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/" title="좋은글">좋은글 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/" title="착각하는 CEO">착각하는 CEO (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B6%94%EC%96%B5/" title="추억">추억 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/" title="코드리뷰">코드리뷰 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%ED%9A%8C%EC%9D%98/" title="회의">회의 (2)</a>
 	</div>

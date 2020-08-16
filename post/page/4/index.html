@@ -70,6 +70,24 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2020/2020-06-07-migrate-ghost-to-hugo/" rel="bookmark">
+			Migrate Ghost to Hugo
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-06-07T22:14:02&#43;09:00">June 07, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/hugo/" rel="category">Hugo</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Wordpress 블로그를 hugo로 바꾼 김에 ghost 블로그도 hugo로 이사하기로 결심했다.
+Ghost 정말 애증이 담긴&hellip;
+Ghost가 1.0이 되기 전에 markdown 기반의 블로그 툴을 찾는 과정 에서 발견해서 0.9 버전인가 부터 사용해 왔다. Ghost가 node 기반이라 생전 처음 듣는 node를 OS X에 설치해보고, docker for OS X이 나와서 docker로 실행해 오다, docker-compose 도 써 보고, Ansible 로 deploy도 해보고. 그러다 2019년에는 kubernetes hands-on을 해 볼 겸해서 리눅스에서 microk8s를 설치해서 ghost도 k8s로 실행해 봈다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2020/hugo-seutp-with-git/" rel="bookmark">
 			Migrate wordpress to hugo
 			</a>
@@ -236,25 +254,6 @@ Lunch or Happy Hour 뭔가 약속을 잡아야 할 때 점심 시간 혹은 저�
 		https://github.com/huangyuzhang/Fizzy-Theme
 오늘 우연히 발견한 ghost theme. 중국 친구가 만든 것 같은데 꽤 괜찮다. 검색 기능에 필요한 Content API key 등만 Site Header에 추가하면 검색 기능을 이용할 수 있고, TOC도 지원이 된다는. 특히 중국 친구가 만든 거라 그런지 한글 검색도 잘 지원된다.
 한 동안 이 테마로 지내면 될 듯.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/mac-mini-2009-upgrade/" rel="bookmark">
-			Mac mini 2009 upgrade
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-11-18T15:11:08&#43;09:00">November 18, 2019</time>
-	<time class="meta__text" datetime="2019-11-18T15:20:49Z">(Last Modified: November 18, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		swap을 사용하지 못하는 kubenertes를 사용해서 ghost pod/container를 구동하니 메모리가 부족하다고 종료되어 버린다.
-확인해 보니 서버로 사용하고 있는 mac mini 2009에 장착된 RAM이 4G였다. 흠&hellip;
-인터넷에서 mac mini 2009의 HW 사양을 찾아 보니 DDR3 1066 MHz라고. 그리고 다른 블로그를 찾아 보니 그 보다 나중에 나온 더 높은 클럭의 RAM을 실장해도 동작하는 데는 문제가 없단다. 다만 지금은 사용하지 않는 DDR3 제품이라 구하는 게 문제일 듯. 하지만 혹시나 하고 예전에 모아둔 메모리 더미를 뒤져보니 딱 맞는 메모리가 있었다.
 	</div>
 </article>
 </main>
@@ -568,10 +567,12 @@ Lunch or Happy Hour 뭔가 약속을 잡아야 할 때 점심 시간 혹은 저�
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B8%EC%9A%A9/" title="인용">인용 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/" title="임백준">임백준 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/" title="잡생각">잡생각 (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A0%84%EB%9E%8C%ED%9A%8C/" title="전람회">전람회 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/" title="조직관리">조직관리 (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/" title="조직문화">조직문화 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/" title="좋은글">좋은글 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/" title="착각하는 CEO">착각하는 CEO (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B6%94%EC%96%B5/" title="추억">추억 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/" title="코드리뷰">코드리뷰 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%ED%9A%8C%EC%9D%98/" title="회의">회의 (2)</a>
 	</div>

@@ -69,6 +69,23 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/no-need-to-rush/" rel="bookmark">
+			빨리 해봐야 소용없다
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-05-11T09:59:23&#43;09:00">May 11, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:51Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		개발자의 품을 가벼이 여기는 조직에서 일 할때는 일정보다 일을 빨리하면 안된다. 기껏 한 일이 아무 소용없을 때가 많다.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/display-post-by-default-ghost/" rel="bookmark">
 			Ghost 본문 다 보이기
 			</a>
@@ -231,26 +248,6 @@ num_rx = kni_fifo_get(kni-&gt;rx_q, (void **)va, num_rx); kva = (void *)va[i] - 
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		import modules $ python &gt;&gt;&gt; from scapy.all import * &gt;&gt;&gt; from scapy.layers.ipsec import * build plaintext packet &gt;&gt;&gt; p = IP(src='1.1.1.1', dst='2.2.2.2') / TCP(sport=45012, dport=80) / Raw('testdata') &gt;&gt;&gt; p = IP(str(p)) setup SA &gt;&gt;&gt; sa = SecurityAssociation(ESP, spi=0xdeadbeef, crypt_algo='AES-CBC',crypt_key='sixteenbytes key') Encrypt w/o IV &gt;&gt;&gt; e = sa.encrypt(p, 5) &gt;&gt;&gt; e &lt;IP version=4L ihl=5L tos=0x0 len=76 id=1 flags= frag=0L ttl=64 proto=esp chksum=0x747a src=1.1.1.1 dst=2.2.2.2 |&lt;ESP spi=0xdeadbeef seq=5 data='uD\x7fdj19\xe7\xc4\xff8\x10\xcdQ\xf0\xa6\x1e!\x84\xc3&gt;!\x18\xa6\xf6\xb8\x93\xc6it\x9a\xfc\x1c\xee\xe5C\xcd\xf0\x7fD\xca\x8d\xadKh\xa8\xe5x' |&gt;&gt; &gt;&gt;&gt; e.show() ###[ IP ]### version = 4L ihl = 5L tos = 0x0 len = 76 id = 1 flags = frag = 0L ttl = 64 proto = esp chksum = 0x747a src = 1.
-	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/fragment-missing-test-with-scapy/" rel="bookmark">
-			fragment missing test with scapy
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-14T13:57:41&#43;09:00">February 14, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		다음과 같이 scapy를 이용해서 fragment를 쉽게 만들 수 있다.
-from scapy.all import * dip=&quot;10.0.0.1&quot; payload=&quot; &quot;*1000 packet=IP(dst=dip)/UDP(dport=0x1234)/payload frag_list=fragment(packet,fragsize=500) counter=1 for fragment in frag_list: print &quot;Packet no%d&quot; %counter print fragment.show() counter+=1 send(fragment) frag_list에서 counter 변수를 확인해서 전송하지 않으면 간단하게 fragment가 수신되지 않은 경우에 시험할 수 있음.
-필요하면 frag_list의 순서를 뒤집는 것도 가능하고, 각 fragment의 offset값을 조정하거나 패킷 크기를 변경하면 다른 비정상 경우도 쉽게 시험할 수 있다.
-scapy interactive tutorial
 	</div>
 </article>
 </main>
@@ -563,10 +560,12 @@ scapy interactive tutorial
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9D%B8%EC%9A%A9/" title="인용">인용 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/" title="임백준">임백준 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/" title="잡생각">잡생각 (9)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A0%84%EB%9E%8C%ED%9A%8C/" title="전람회">전람회 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/" title="조직관리">조직관리 (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/" title="조직문화">조직문화 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/" title="좋은글">좋은글 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/" title="착각하는 CEO">착각하는 CEO (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%B6%94%EC%96%B5/" title="추억">추억 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/" title="코드리뷰">코드리뷰 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%ED%9A%8C%EC%9D%98/" title="회의">회의 (2)</a>
 	</div>
