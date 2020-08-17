@@ -70,6 +70,25 @@
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2019/change-ghost-theme-fizzy/" rel="bookmark">
+			Ghost theme 변경 - Fizzy
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-12-10T14:09:19&#43;09:00">December 10, 2019</time>
+	<time class="meta__text" datetime="2019-12-10T14:12:29Z">(Last Modified: December 10, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		https://github.com/huangyuzhang/Fizzy-Theme
+오늘 우연히 발견한 ghost theme. 중국 친구가 만든 것 같은데 꽤 괜찮다. 검색 기능에 필요한 Content API key 등만 Site Header에 추가하면 검색 기능을 이용할 수 있고, TOC도 지원이 된다는. 특히 중국 친구가 만든 거라 그런지 한글 검색도 잘 지원된다.
+한 동안 이 테마로 지내면 될 듯.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2019/mac-mini-2009-upgrade/" rel="bookmark">
 			Mac mini 2009 upgrade
 			</a>
@@ -237,25 +256,6 @@ $ tree -d oom/kubernetes/dcaegen2/charts/ -L 1 oom/kubernetes/dcaegen2/charts/ �
 		multipass?  Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.
 Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2019/setup-kubernetes-with-a-single-host/" rel="bookmark">
-			Setup kubernetes in a single host
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-09-23T15:03:13&#43;09:00">September 23, 2019</time>
-	<time class="meta__text" datetime="2019-10-07T15:44:06Z">(Last Modified: October 07, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Replace microk8s with kubernetes in mini1
-remove micro.k8s with snap command cychong@mini1:~$ sudo snap remove microk8s Save data of snap &quot;microk8s&quot; in automatic snapshot set microk8s removed cychong@mini1:~$ setup kubernetes Reference : https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
-cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using Kubernetes version: v1.15.3 cychong@mini1:~$ kubectl get pods --all-namespaces -o wide NAMESPACE NAME READY STATUS RESTARTS AGE IP NODE NOMINATED NODE READINESS GATES kube-system coredns-5c98db65d4-r468f 0/1 Pending 0 2m3s &lt;none&gt; &lt;none&gt; &lt;none&gt; &lt;none&gt; kube-system coredns-5c98db65d4-wcm2n 0/1 Pending 0 2m3s &lt;none&gt; &lt;none&gt; &lt;none&gt; &lt;none&gt; kube-system etcd-mini1 1/1 Running 0 79s 192.
-	</div>
 </article>
 </main>
 
@@ -402,7 +402,7 @@ cychong@mini1:~$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16 [init] Using
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>

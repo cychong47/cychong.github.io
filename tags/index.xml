@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Keep calm and write something</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Aug 2020 21:47:22 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2020 00:09:30 +0900</lastBuildDate>
     
 	<atom:link href="https://cychong47.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>iPhone</title>
+      <link>https://cychong47.github.io/tags/iphone/</link>
+      <pubDate>Mon, 17 Aug 2020 00:09:30 +0900</pubDate>
+      
+      <guid>https://cychong47.github.io/tags/iphone/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>전람회</title>
@@ -71,15 +80,6 @@
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0900</pubDate>
       
       <guid>https://cychong47.github.io/tags/iphonex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iPhone</title>
-      <link>https://cychong47.github.io/tags/iphone/</link>
-      <pubDate>Mon, 03 Aug 2020 00:00:00 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/tags/iphone/</guid>
       <description></description>
     </item>
     

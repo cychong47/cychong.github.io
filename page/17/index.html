@@ -69,6 +69,23 @@
 	<article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
+			<a href="/post/2016/how-to-use-snapy-for-ipsec/" rel="bookmark">
+			how to build IPsec packet with scapy
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-02-14T14:59:42&#43;09:00">February 14, 2016</time>
+	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		import modules $ python &gt;&gt;&gt; from scapy.all import * &gt;&gt;&gt; from scapy.layers.ipsec import * build plaintext packet &gt;&gt;&gt; p = IP(src='1.1.1.1', dst='2.2.2.2') / TCP(sport=45012, dport=80) / Raw('testdata') &gt;&gt;&gt; p = IP(str(p)) setup SA &gt;&gt;&gt; sa = SecurityAssociation(ESP, spi=0xdeadbeef, crypt_algo='AES-CBC',crypt_key='sixteenbytes key') Encrypt w/o IV &gt;&gt;&gt; e = sa.encrypt(p, 5) &gt;&gt;&gt; e &lt;IP version=4L ihl=5L tos=0x0 len=76 id=1 flags= frag=0L ttl=64 proto=esp chksum=0x747a src=1.1.1.1 dst=2.2.2.2 |&lt;ESP spi=0xdeadbeef seq=5 data='uD\x7fdj19\xe7\xc4\xff8\x10\xcdQ\xf0\xa6\x1e!\x84\xc3&gt;!\x18\xa6\xf6\xb8\x93\xc6it\x9a\xfc\x1c\xee\xe5C\xcd\xf0\x7fD\xca\x8d\xadKh\xa8\xe5x' |&gt;&gt; &gt;&gt;&gt; e.show() ###[ IP ]### version = 4L ihl = 5L tos = 0x0 len = 76 id = 1 flags = frag = 0L ttl = 64 proto = esp chksum = 0x747a src = 1.
+	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
 			<a href="/post/2016/fragment-missing-test-with-scapy/" rel="bookmark">
 			fragment missing test with scapy
 			</a>
@@ -253,25 +270,6 @@ SR-IOV  SR-IOV : Standard IO memory Memory Management Unit from Intel(VT-d) and 
 	<div class="content list__excerpt post__content clearfix">
 		pktmbuf_offload  pool은 rte_pktmbuf_offload_pool_create()를 사용하여 생성  l2fwd_mbuf_ol_pool = rte_pktmbuf_offload_pool_create( &quot;mbuf_offload_pool&quot;, NB_MBUF, 128, 0, rte_socket_id());  할당은 rte_pktmbuf_offload_alloc()를 이용.  rte_pktmbuf_offload_alloc(l2fwd_mbuf_ol_pool, RTE_PKTMBUF_OL_CRYPTO);  mbuf 마다 하나씩 할당해서 crypto 연산에 사용 crypto 연산에 필요한 추가 옵션 등을 설정함.  /* Append space for digest to end of packet */ ol-&gt;op.crypto.digest.data = (uint8_t *)rte_pktmbuf_append(m, cparams-&gt;digest_length); ol-&gt;op.crypto.digest.phys_addr = rte_pktmbuf_mtophys_offset(m, rte_pktmbuf_pkt_len(m) - cparams-&gt;digest_length); ol-&gt;op.crypto.digest.length = cparams-&gt;digest_length; ol-&gt;op.crypto.iv.data = cparams-&gt;iv_key.data; ol-&gt;op.crypto.iv.phys_addr = cparams-&gt;iv_key.phys_addr; ol-&gt;op.crypto.iv.length = cparams-&gt;iv_key.
 	</div>
-</article><article class="list__item post">
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/2016/dpdk_based_apps/" rel="bookmark">
-			DPDK based applications
-			</a>
-		</h3>
-		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2016-01-24T14:59:18&#43;09:00">January 24, 2016</time>
-	<time class="meta__text" datetime="2018-04-01T02:38:40Z">(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/til/" rel="category">TIL</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		2016.02.10 기준
- DPDK-dump TRex - Realistic traffic generator
-git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub FD.io Fast Data Path DPDK-nginx DPDK-pktgen DPDK-ODP TCP/IP stack for DPDK  
-	</div>
 </article>
 </main>
 
@@ -417,7 +415,7 @@ git-hub - trex-core, trex-doc, trex-profiles, trex-qt-gui Packet-journey git-hub
 		<a class="widget-taglist__link widget__link btn" href="/tags/inspiration/" title="inspiration">inspiration (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/intel/" title="Intel">Intel (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipad/" title="iPad">iPad (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/iphone/" title="iPhone">iPhone (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphone6/" title="iPhone6">iPhone6 (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/iphonex/" title="iPhoneX">iPhoneX (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ipsec/" title="IPsec">IPsec (2)</a>
