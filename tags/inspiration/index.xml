@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>inspiration on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/inspiration/</link>
-    <description>Recent content in inspiration on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 10 Dec 2015 14:58:06 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/inspiration/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>19 hard things you need to do to be successful</title>
-      <link>https://cychong47.github.io/post/2015/19-hard-things-you-need-to-do-to-be-successful/</link>
-      <pubDate>Thu, 10 Dec 2015 14:58:06 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/19-hard-things-you-need-to-do-to-be-successful/</guid>
-      <description>Last login: Thu Dec 10 00:38:48 on ttys000 Chae-yongs-MacBook-Pro:~ cychong$ Chae-yongs-MacBook-Pro:~ cychong$ vi hard.txt Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | sort | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a
- You have to do the hard things. You have to make the call you’re afraid to make. You have to get up earlier than you want to get up.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>inspiration on Keep calm and write something</title><link>https://cychong47.github.io/tags/inspiration/</link><description>Recent content in inspiration on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Dec 2015 14:58:06 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/inspiration/index.xml" rel="self" type="application/rss+xml"/><item><title>19 hard things you need to do to be successful</title><link>https://cychong47.github.io/post/2015/19-hard-things-you-need-to-do-to-be-successful/</link><pubDate>Thu, 10 Dec 2015 14:58:06 +0900</pubDate><guid>https://cychong47.github.io/post/2015/19-hard-things-you-need-to-do-to-be-successful/</guid><description>Last login: Thu Dec 10 00:38:48 on ttys000 Chae-yongs-MacBook-Pro:~ cychong$ Chae-yongs-MacBook-Pro:~ cychong$ vi hard.txt Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | sort | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a Chae-yongs-MacBook-Pro:~ cychong$ ack &amp;ldquo;You have to&amp;rdquo; hard.txt | uniq &amp;gt; a Chae-yongs-MacBook-Pro:~ cychong$ vi a
+You have to do the hard things. You have to make the call you’re afraid to make. You have to get up earlier than you want to get up.</description></item></channel></rss>

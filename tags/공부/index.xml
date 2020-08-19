@@ -1,37 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>공부 on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/</link>
-    <description>Recent content in 공부 on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 14 Feb 2016 14:59:42 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>how to build IPsec packet with scapy</title>
-      <link>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</link>
-      <pubDate>Sun, 14 Feb 2016 14:59:42 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</guid>
-      <description>import modules $ python &amp;gt;&amp;gt;&amp;gt; from scapy.all import * &amp;gt;&amp;gt;&amp;gt; from scapy.layers.ipsec import * build plaintext packet &amp;gt;&amp;gt;&amp;gt; p = IP(src=&#39;1.1.1.1&#39;, dst=&#39;2.2.2.2&#39;) / TCP(sport=45012, dport=80) / Raw(&#39;testdata&#39;) &amp;gt;&amp;gt;&amp;gt; p = IP(str(p)) setup SA &amp;gt;&amp;gt;&amp;gt; sa = SecurityAssociation(ESP, spi=0xdeadbeef, crypt_algo=&#39;AES-CBC&#39;,crypt_key=&#39;sixteenbytes key&#39;) Encrypt w/o IV &amp;gt;&amp;gt;&amp;gt; e = sa.encrypt(p, 5) &amp;gt;&amp;gt;&amp;gt; e &amp;lt;IP version=4L ihl=5L tos=0x0 len=76 id=1 flags= frag=0L ttl=64 proto=esp chksum=0x747a src=1.1.1.1 dst=2.2.2.2 |&amp;lt;ESP spi=0xdeadbeef seq=5 data=&#39;uD\x7fdj19\xe7\xc4\xff8\x10\xcdQ\xf0\xa6\x1e!\x84\xc3&amp;gt;!\x18\xa6\xf6\xb8\x93\xc6it\x9a\xfc\x1c\xee\xe5C\xcd\xf0\x7fD\xca\x8d\xadKh\xa8\xe5x&#39; |&amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt; e.show() ###[ IP ]### version = 4L ihl = 5L tos = 0x0 len = 76 id = 1 flags = frag = 0L ttl = 64 proto = esp chksum = 0x747a src = 1.</description>
-    </item>
-    
-    <item>
-      <title>왜 공부해야 하는가에 대한 간단하지만 명확한 답</title>
-      <link>https://cychong47.github.io/post/2016/why_have_to_keep_studying/</link>
-      <pubDate>Wed, 10 Feb 2016 04:23:12 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2016/why_have_to_keep_studying/</guid>
-      <description>왜 공부해야 하는가
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>공부 on Keep calm and write something</title><link>https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/</link><description>Recent content in 공부 on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 14 Feb 2016 14:59:42 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/%EA%B3%B5%EB%B6%80/index.xml" rel="self" type="application/rss+xml"/><item><title>how to build IPsec packet with scapy</title><link>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</link><pubDate>Sun, 14 Feb 2016 14:59:42 +0900</pubDate><guid>https://cychong47.github.io/post/2016/how-to-use-snapy-for-ipsec/</guid><description>import modules $ python &amp;gt;&amp;gt;&amp;gt; from scapy.all import * &amp;gt;&amp;gt;&amp;gt; from scapy.layers.ipsec import * build plaintext packet &amp;gt;&amp;gt;&amp;gt; p = IP(src='1.1.1.1', dst='2.2.2.2') / TCP(sport=45012, dport=80) / Raw('testdata') &amp;gt;&amp;gt;&amp;gt; p = IP(str(p)) setup SA &amp;gt;&amp;gt;&amp;gt; sa = SecurityAssociation(ESP, spi=0xdeadbeef, crypt_algo='AES-CBC',crypt_key='sixteenbytes key') Encrypt w/o IV &amp;gt;&amp;gt;&amp;gt; e = sa.encrypt(p, 5) &amp;gt;&amp;gt;&amp;gt; e &amp;lt;IP version=4L ihl=5L tos=0x0 len=76 id=1 flags= frag=0L ttl=64 proto=esp chksum=0x747a src=1.1.1.1 dst=2.2.2.2 |&amp;lt;ESP spi=0xdeadbeef seq=5 data='uD\x7fdj19\xe7\xc4\xff8\x10\xcdQ\xf0\xa6\x1e!\x84\xc3&amp;gt;!\x18\xa6\xf6\xb8\x93\xc6it\x9a\xfc\x1c\xee\xe5C\xcd\xf0\x7fD\xca\x8d\xadKh\xa8\xe5x' |&amp;gt;&amp;gt; &amp;gt;&amp;gt;&amp;gt; e.show() ###[ IP ]### version = 4L ihl = 5L tos = 0x0 len = 76 id = 1 flags = frag = 0L ttl = 64 proto = esp chksum = 0x747a src = 1.</description></item><item><title>왜 공부해야 하는가에 대한 간단하지만 명확한 답</title><link>https://cychong47.github.io/post/2016/why_have_to_keep_studying/</link><pubDate>Wed, 10 Feb 2016 04:23:12 +0900</pubDate><guid>https://cychong47.github.io/post/2016/why_have_to_keep_studying/</guid><description>왜 공부해야 하는가
 사회의 변화속도는 우리의 변화속도를 압도하기 때문입니다.
 &amp;lt;누가 내 치즈를 옮겼을까&amp;gt;에 잘 묘사되어 있지요.
 따라잡지 않으면 뒤쳐지기 때문에 우리는 늘 공부해야 합니다.
- https://brunch.co.kr/@choihs0228/4</description>
-    </item>
-    
-  </channel>
-</rss>
+https://brunch.co.kr/@choihs0228/4</description></item></channel></rss>

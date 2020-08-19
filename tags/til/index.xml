@@ -1,60 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>til on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/til/</link>
-    <description>Recent content in til on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 18 Jul 2019 14:19:02 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Boundary Clock</title>
-      <link>https://cychong47.github.io/post/2019/boundary-clock/</link>
-      <pubDate>Thu, 18 Jul 2019 14:19:02 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2019/boundary-clock/</guid>
-      <description>IEEE 1588: What’s the difference between a Boundary Clock and Transparent Clock?
-IEEE 1588 2002  Original standard Ordinary Clock : GrandMaster of Slave. Always a single port Boundary Clock  clock node that has two or more ports (router or switch) One port as a slave clock, The remaining ports are master clock for other nodes. BC recovers the time of day within the slave clock and relays it as a reference to the mater clock function    1PPS  Pulse-Per-Second https://www.</description>
-    </item>
-    
-    <item>
-      <title>생각 정리의 기술</title>
-      <link>https://cychong47.github.io/post/2018/mindmap/</link>
-      <pubDate>Wed, 20 Jun 2018 14:00:06 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/mindmap/</guid>
-      <description>오늘 회사에서 점심 시간에 배운 mindmap 활용법
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>til on Keep calm and write something</title><link>https://cychong47.github.io/tags/til/</link><description>Recent content in til on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Jul 2019 14:19:02 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/til/index.xml" rel="self" type="application/rss+xml"/><item><title>Boundary Clock</title><link>https://cychong47.github.io/post/2019/boundary-clock/</link><pubDate>Thu, 18 Jul 2019 14:19:02 +0900</pubDate><guid>https://cychong47.github.io/post/2019/boundary-clock/</guid><description>IEEE 1588: What’s the difference between a Boundary Clock and Transparent Clock?
+IEEE 1588 2002 Original standard Ordinary Clock : GrandMaster of Slave. Always a single port Boundary Clock clock node that has two or more ports (router or switch) One port as a slave clock, The remaining ports are master clock for other nodes. BC recovers the time of day within the slave clock and relays it as a reference to the mater clock function 1PPS Pulse-Per-Second https://www.</description></item><item><title>생각 정리의 기술</title><link>https://cychong47.github.io/post/2018/mindmap/</link><pubDate>Wed, 20 Jun 2018 14:00:06 +0900</pubDate><guid>https://cychong47.github.io/post/2018/mindmap/</guid><description>오늘 회사에서 점심 시간에 배운 mindmap 활용법
 iThoughtX를 OS X, iOS용으로 모두 구입할 만큼 마인드맵에 관심이 있긴 한데 생각을 풀어낼 때 다양한 framework을 활용할 수 있다는 건 몰랐다. 관련된 책을 한번 읽어보면 좋겠네.
-오늘 강의해준 신 분은 무려 자기 이름을 걸로 책을 낸 저자 동종성 님</description>
-    </item>
-    
-    <item>
-      <title>Grafana, influxDB and python</title>
-      <link>https://cychong47.github.io/post/2018/grafana-influxdb-and-python/</link>
-      <pubDate>Wed, 06 Jun 2018 04:33:06 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/grafana-influxdb-and-python/</guid>
-      <description>Time-series data를 python을 이용해서 influxDB에 저장하고, Grafana로 그래프를 보여주는 예제
+오늘 강의해준 신 분은 무려 자기 이름을 걸로 책을 낸 저자 동종성 님</description></item><item><title>Grafana, influxDB and python</title><link>https://cychong47.github.io/post/2018/grafana-influxdb-and-python/</link><pubDate>Wed, 06 Jun 2018 04:33:06 +0900</pubDate><guid>https://cychong47.github.io/post/2018/grafana-influxdb-and-python/</guid><description>Time-series data를 python을 이용해서 influxDB에 저장하고, Grafana로 그래프를 보여주는 예제
 https://github.com/cychong47/influxdb_example.git
 Install Grafana and influxDB Install Grafana 직접 호스트에 설치할 수도 있지만, 세상 편하게 만들어준 docker를 이용해서 grafana, influxdb등을 설치하자.
 mbpr15:~ cychong$ docker pull grafana/grafana Using default tag: latest latest: Pulling from grafana/grafana f2aa67a397c4: Pull complete 89573effc7c8: Pull complete b55c103da375: Pull complete Digest: sha256:364bec4a39ecbec744ea4270aae35f6554eb6f2047b3ee08f7b5f1134857c32c Status: Downloaded newer image for grafana/grafana:latest Start grafana
-mbpr15:~ cychong$ docker run -d -p 3000:3000 —name grafana grafana/grafana 148894d7009259b02b04e1a98467f549400be91f9b055f8686557d69b9339e4b Install influxDB influxdb도 docker 명령어 하나로 설치</description>
-    </item>
-    
-    <item>
-      <title>Vagrant</title>
-      <link>https://cychong47.github.io/post/2017/vagrant-2/</link>
-      <pubDate>Tue, 21 Nov 2017 15:04:19 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/vagrant-2/</guid>
-      <description>Vagrant What is a Vagrant? Backend에 virtualbox를 사용(변경 가능) 하고, virtualbox를 이용해 VM을 생성하여 그 VM 내 원하는 환경(특정 OS부터 특정 library까지) 을 구성함.
+mbpr15:~ cychong$ docker run -d -p 3000:3000 —name grafana grafana/grafana 148894d7009259b02b04e1a98467f549400be91f9b055f8686557d69b9339e4b Install influxDB influxdb도 docker 명령어 하나로 설치</description></item><item><title>Vagrant</title><link>https://cychong47.github.io/post/2017/vagrant-2/</link><pubDate>Tue, 21 Nov 2017 15:04:19 +0900</pubDate><guid>https://cychong47.github.io/post/2017/vagrant-2/</guid><description>Vagrant What is a Vagrant? Backend에 virtualbox를 사용(변경 가능) 하고, virtualbox를 이용해 VM을 생성하여 그 VM 내 원하는 환경(특정 OS부터 특정 library까지) 을 구성함.
 예전에 fd.io에서 빌드하는 vpp 개발 환경이 vagrant로 되어 있었는데 왜 그런가 싶었는데 이제 생각해 보니 vpp 동작에 필요한 OS, kernel module, DPDK SDK 와 패치 들 그리고 vpp code 까지 모든 걸 제어할 수 있도록 VagrantFile을 만들어서 개발 환경을 표준화하려는 것 이었다는.
-Container와 달리 독립된 OS환경을 가질 수 있으므로 OS버전이 다르거나 , 커널 모듈 수정 등을 필요로 한 경우에 유용할 듯</description>
-    </item>
-    
-  </channel>
-</rss>
+Container와 달리 독립된 OS환경을 가질 수 있으므로 OS버전이 다르거나 , 커널 모듈 수정 등을 필요로 한 경우에 유용할 듯</description></item></channel></rss>

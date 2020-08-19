@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>microk8s on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/microk8s/</link>
-    <description>Recent content in microk8s on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2019 16:00:56 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/microk8s/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Setup Ghost in microk8s</title>
-      <link>https://cychong47.github.io/post/2019/setup-ghost-in-microk8s-2/</link>
-      <pubDate>Mon, 20 May 2019 16:00:56 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2019/setup-ghost-in-microk8s-2/</guid>
-      <description>Install microk8s MicroK8s - Fast, Light, Upstream Developer Kubernetes
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>microk8s on Keep calm and write something</title><link>https://cychong47.github.io/tags/microk8s/</link><description>Recent content in microk8s on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 May 2019 16:00:56 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/microk8s/index.xml" rel="self" type="application/rss+xml"/><item><title>Setup Ghost in microk8s</title><link>https://cychong47.github.io/post/2019/setup-ghost-in-microk8s-2/</link><pubDate>Mon, 20 May 2019 16:00:56 +0900</pubDate><guid>https://cychong47.github.io/post/2019/setup-ghost-in-microk8s-2/</guid><description>Install microk8s MicroK8s - Fast, Light, Upstream Developer Kubernetes
 설치는 위 링크에 있는 공식 홈페이지에 있는 대로 snap 명령어 하나로 간단하게 설치할 수 있다.
-cychong@mini1:~$ sudo snap install microk8s --classic 2019-05-18T09:43:53+09:00 INFO Waiting for restart... microk8s v1.14.1 from Canonical✓ installed  설치된 microk8s의 정보를 확인하려면 snap info microk8s
-cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for workstations and appliances publisher: Canonical✓ contact: &amp;lt;https://github.com/ubuntu/microk8s&amp;gt; license: unset description: | MicroK8s is a small, fast, secure, single node Kubernetes that installs on just about any Linux box.</description>
-    </item>
-    
-  </channel>
-</rss>
+cychong@mini1:~$ sudo snap install microk8s --classic 2019-05-18T09:43:53+09:00 INFO Waiting for restart... microk8s v1.14.1 from Canonical✓ installed 설치된 microk8s의 정보를 확인하려면 snap info microk8s
+cychong@mini1:~$ sudo snap info microk8s name: microk8s summary: Kubernetes for workstations and appliances publisher: Canonical✓ contact: &amp;lt;https://github.com/ubuntu/microk8s&amp;gt; license: unset description: | MicroK8s is a small, fast, secure, single node Kubernetes that installs on just about any Linux box.</description></item></channel></rss>

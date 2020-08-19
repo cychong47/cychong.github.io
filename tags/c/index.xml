@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>C on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/c/</link>
-    <description>Recent content in C on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 21 May 2015 14:51:37 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/c/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>DPDK Coding style</title>
-      <link>https://cychong47.github.io/post/2015/dpdk-coding-style/</link>
-      <pubDate>Thu, 21 May 2015 14:51:37 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2015/dpdk-coding-style/</guid>
-      <description>출처 : DPDK mailing list
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C on Keep calm and write something</title><link>https://cychong47.github.io/tags/c/</link><description>Recent content in C on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 21 May 2015 14:51:37 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/c/index.xml" rel="self" type="application/rss+xml"/><item><title>DPDK Coding style</title><link>https://cychong47.github.io/post/2015/dpdk-coding-style/</link><pubDate>Thu, 21 May 2015 14:51:37 +0900</pubDate><guid>https://cychong47.github.io/post/2015/dpdk-coding-style/</guid><description>출처 : DPDK mailing list
 Coding Style Description This document specifies the preferred style for source files in the DPDK source tree. It is based on the Linux Kernel coding guidelines and the FreeBSD 7.2 Kernel Developer&amp;rsquo;s Manual (see man style(9)), but was heavily modified for the needs of the DPDK.
-General Guidelines The rules and guidelines given in this document cannot cover every situation, so the following general guidelines should be used as a fallback:</description>
-    </item>
-    
-  </channel>
-</rss>
+General Guidelines The rules and guidelines given in this document cannot cover every situation, so the following general guidelines should be used as a fallback:</description></item></channel></rss>

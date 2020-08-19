@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>p4 on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/p4/</link>
-    <description>Recent content in p4 on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 09 Apr 2017 08:58:50 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/p4/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>P4</title>
-      <link>https://cychong47.github.io/post/2017/p4/</link>
-      <pubDate>Sun, 09 Apr 2017 08:58:50 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2017/p4/</guid>
-      <description>Open source language for &amp;ldquo;Programming Protocol-independent Packet Processor&amp;rdquo;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>p4 on Keep calm and write something</title><link>https://cychong47.github.io/tags/p4/</link><description>Recent content in p4 on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 09 Apr 2017 08:58:50 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/p4/index.xml" rel="self" type="application/rss+xml"/><item><title>P4</title><link>https://cychong47.github.io/post/2017/p4/</link><pubDate>Sun, 09 Apr 2017 08:58:50 +0900</pubDate><guid>https://cychong47.github.io/post/2017/p4/</guid><description>Open source language for &amp;ldquo;Programming Protocol-independent Packet Processor&amp;rdquo;
 http://p4.org
- Barefoot network - Tofino - PISA(Protocol Independent Switch Architecture) switch Netronome - smart NIC   5G: flexibility or high performance? Both - Ericsson Research Blog   POF/PIF and P4 initiatives all point in a direction where programmable packet processing will not depend on standardized OpenFlow action sets anymore
-POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</description>
-    </item>
-    
-  </channel>
-</rss>
+Barefoot network - Tofino - PISA(Protocol Independent Switch Architecture) switch Netronome - smart NIC 5G: flexibility or high performance? Both - Ericsson Research Blog POF/PIF and P4 initiatives all point in a direction where programmable packet processing will not depend on standardized OpenFlow action sets anymore
+POF : Protocol Oblivious Forwarding PIF : Protocol Independent Forwarding</description></item></channel></rss>

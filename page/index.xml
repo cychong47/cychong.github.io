@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Pages on Keep calm and write something</title>
-    <link>https://cychong47.github.io/page/</link>
-    <description>Recent content in Pages on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/page/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Git Tips</title>
-      <link>https://cychong47.github.io/page/git/</link>
-      <pubDate>Sat, 20 Jun 2020 21:54:31 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/page/git/</guid>
-      <description>Open vim tabs with changed files vim -p `git diff --name-only` vim -p
-  -p[N] Open N tab pages. When N is omitted, open one tab page for each file.   git diff --name-only
-  --name-only Show only names of changed files.   </description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Keep calm and write something</title><link>https://cychong47.github.io/page/</link><description>Recent content in Pages on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 20 Jun 2020 21:54:31 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Tips</title><link>https://cychong47.github.io/page/git/</link><pubDate>Sat, 20 Jun 2020 21:54:31 +0900</pubDate><guid>https://cychong47.github.io/page/git/</guid><description>Open vim tabs with changed files vim -p `git diff --name-only` vim -p
+-p[N] Open N tab pages. When N is omitted, open one tab page for each file. git diff --name-only
+--name-only Show only names of changed files.</description></item></channel></rss>

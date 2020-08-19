@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>fapi on Keep calm and write something</title>
-    <link>https://cychong47.github.io/tags/fapi/</link>
-    <description>Recent content in fapi on Keep calm and write something</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jul 2018 12:03:00 +0900</lastBuildDate>
-    
-	<atom:link href="https://cychong47.github.io/tags/fapi/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Astri vRAN</title>
-      <link>https://cychong47.github.io/post/2018/astri-vran/</link>
-      <pubDate>Sun, 15 Jul 2018 12:03:00 +0900</pubDate>
-      
-      <guid>https://cychong47.github.io/post/2018/astri-vran/</guid>
-      <description>Toward 5G RAN virtualization by Intel and Astri
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>fapi on Keep calm and write something</title><link>https://cychong47.github.io/tags/fapi/</link><description>Recent content in fapi on Keep calm and write something</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 15 Jul 2018 12:03:00 +0900</lastBuildDate><atom:link href="https://cychong47.github.io/tags/fapi/index.xml" rel="self" type="application/rss+xml"/><item><title>Astri vRAN</title><link>https://cychong47.github.io/post/2018/astri-vran/</link><pubDate>Sun, 15 Jul 2018 12:03:00 +0900</pubDate><guid>https://cychong47.github.io/post/2018/astri-vran/</guid><description>Toward 5G RAN virtualization by Intel and Astri
 http://astri.oeg
-Flexible architecture Modular PHY processing architectures  PDCP Split MAC/PHY Split - HARQ processing in RRU(How???) Lower PHY Split - High FB overhead but smallest packet latency.  Good for JT and JR for COMP Good for Massive MIMO and Ultra low-latency communication(Why?)   FAPI based MAC/PHY communication  L1 adaptation layer for MAC/PHY split (and Lower PHY Split?)    MAC/PHY split in one CPU  MAC/PHY split in one machine but netrwork based MAC/PHY communication over OVS   Virtual Cell  A group of physical cells form a Virtual Cell which does not require HO between the physical cells.</description>
-    </item>
-    
-  </channel>
-</rss>
+Flexible architecture Modular PHY processing architectures PDCP Split MAC/PHY Split - HARQ processing in RRU(How???) Lower PHY Split - High FB overhead but smallest packet latency. Good for JT and JR for COMP Good for Massive MIMO and Ultra low-latency communication(Why?) FAPI based MAC/PHY communication L1 adaptation layer for MAC/PHY split (and Lower PHY Split?) MAC/PHY split in one CPU MAC/PHY split in one machine but netrwork based MAC/PHY communication over OVS Virtual Cell A group of physical cells form a Virtual Cell which does not require HO between the physical cells.</description></item></channel></rss>
