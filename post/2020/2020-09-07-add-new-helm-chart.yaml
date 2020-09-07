@@ -1,0 +1,106 @@
+---
+title: "Add new Helm Chart"
+date: 2020-09-07T21:40:44+09:00
+categories: ["TIL"]
+tags: [“GitHub”, “Helm”]
+series: [“setup-hugo-blog”]
+---
+
+# helm chart 추가하기
+
+## `charts` 디렉토리 아래에 추가할 helm chart 만들기
+
+이번에는 기존에 만들어 사용하던 `ghost` chart를 등록해 본다.
+일단 `ghost` chart를 아래와 같이 `charts/ghost` 디렉토리에 복사하고 lint 검사.
+
+```
+cychong@mini1:~/work/helm/my-helm-chart$ helm lint charts/ghost/
+==> Linting charts/ghost/
+[INFO] Chart.yaml: icon is recommended
+
+1 chart(s) linted, 0 chart(s) failed
+```
+
+## Helm chart 패키징
+
+```
+cychong@mini1:~/work/helm/my-helm-chart$ helm package charts/*
+Successfully packaged chart and saved it to: /home/cychong/work/helm/my-helm-chart/my-ghost-0.1.0.tgz
+Successfully packaged chart and saved it to: /home/cychong/work/helm/my-helm-chart/nginx-0.2.0.tgz
+```
+
+```
+cychong@mini1:~/work/helm/my-helm-chart$ ls *.tgz
+my-ghost-0.1.0.tgz  nginx-0.2.0.tgz
+```
+
+## Chart indexing
+
+Helm chart 들을 indexing. Indexing 후 `index.yaml` 파일을 보면 이전에는 `nginx`만 있었는데 `my-ghost`라는 새로운 chart가 추가된 걸 확인할 수 있다.
+
+```
+cychong@mini1:~/work/helm/my-helm-chart$ helm repo index --url https://cychong47.github.io/helm-chart/ .
+cychong@mini1:~/work/helm/my-helm-chart$ cat index.yaml
+apiVersion: v1
+entries:
+  my-ghost:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-09-07T21:29:59.12354973+09:00"
+    description: A Helm chart for ghost
+    digest: 9e8905399114cd3f8c45392fb7e716916379ad80eb366f466396722afdd6329b
+    name: my-ghost
+    urls:
+    - https://cychong47.github.io/helm-chart/my-ghost-0.1.0.tgz
+    version: 0.1.0
+  nginx:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-09-07T21:29:59.124928723+09:00"
+    description: A Helm chart for nginx
+    digest: 35b0caf13ee8f29a942de4994b4c43cc32adeef8ea7cd2273d779fde965e25ee
+    maintainers:
+    - email: cychong@gmail.com
+      name: Chaeyong Chong
+    name: nginx
+    urls:
+    - https://cychong47.github.io/helm-chart/nginx-0.2.0.tgz
+    version: 0.2.0
+generated: "2020-09-07T21:29:59.122168178+09:00"
+```
+
+## Chart upload
+
+이제 chart 파일을 업로드
+```
+cychong@mini1:~/work/helm/my-helm-chart$ git ci -m "add ghost chart" && git push origin master
+[master 5152ee2] add ghost chart
+ 4 files changed, 77 insertions(+), 3 deletions(-)
+ create mode 100644 ghost-value.yaml
+ create mode 100644 my-ghost-0.1.0.tgz
+ rewrite nginx-0.2.0.tgz (98%)
+Username for 'https://github.com': cychong47
+Password for 'https://cychong47@github.com':
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 8.59 KiB | 8.59 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/cychong47/helm-chart.git
+   1b9e101..5152ee2  master -> master
+```
+
+## helm 명령으로 chart 검색
+
+helm 명령으로 추가한 ghost chart가 검색되는 지 확인
+```
+cychong@mini1:~/work/helm/my-helm-chart$ helm search repo ghost
+NAME               	CHART VERSION	APP VERSION	DESCRIPTION
+myhelmrepo/my-ghost	0.1.0        	1.0        	A Helm chart for ghost
+```
+
+## Reference
+
+[[Setup GitHub based Helm repo]]
