@@ -73,7 +73,7 @@ NOTES:
   export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&quot;{.spec.ports[0].nodePort}&quot; services pocket-stat)
   export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath=&quot;{.items[0].status.addresses[0].address}&quot;)
   echo http://$NODE_IP:$NODE_PORT
-</code></pre><h2 id=pocket-stat-container를-이용해서-임시-데이터-입력><code>pocket-stat</code> container를 이용해서 임시 데이터 입력</h2><pre><code>(venv) cychong@mini1:~/work/helm$ helm install -f pocket-stat-value.yaml pocket-stat ./helm-chart/charts/pocket-stat
+</code></pre><h2 id=pocket-stat-container를-이용해서-임시-데이터-입력><code>pocket-stat</code> container를 이용해서 임시 데이터 입력</h2><pre><code>$ helm install -f pocket-stat-value.yaml pocket-stat ./helm-chart/charts/pocket-stat
 NAME: pocket-stat
 LAST DEPLOYED: Sun Oct  4 22:46:26 2020
 NAMESPACE: default
@@ -124,12 +124,13 @@ time                dl_tp host     region  ul_tp
 <span style=color:#ae81ff>1601819224000000000</span> <span style=color:#ae81ff>166</span>   server01 us-west <span style=color:#ae81ff>58</span>
 <span style=color:#ae81ff>1601819229000000000</span> <span style=color:#ae81ff>198</span>   server01 us-west <span style=color:#ae81ff>69</span>
 <span style=color:#ae81ff>1601819234000000000</span> <span style=color:#ae81ff>190</span>   server01 us-west <span style=color:#ae81ff>55</span>
-</code></pre></div><h2 id=install-grafana-with-helm>Install Grafana with helm</h2><p><a href=https://github.com/grafana/helm-charts>GitHub - grafana/helm-charts</a> 의 내용을 참고한다.</p><pre><code>$ helm repo add grafana https://grafana.github.io/helm-charts
-&quot;grafana&quot; has been added to your repositories
-(venv) cychong@mini1:~/work/helm$ helm search repo grafana
+</code></pre></div><h2 id=install-grafana-with-helm>Install Grafana with helm</h2><p><a href=https://github.com/grafana/helm-charts>GitHub - grafana/helm-charts</a> 의 내용을 참고한다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ helm repo add grafana https://grafana.github.io/helm-charts
+<span style=color:#e6db74>&#34;grafana&#34;</span> has been added to your repositories
+
+$ helm search repo grafana
 NAME           	CHART VERSION	APP VERSION	DESCRIPTION
-grafana/grafana	5.7.0        	7.2.0      	The leading tool for querying and visualizing t...
-</code></pre><p>ClusterIP를</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>service</span>:
+grafana/grafana	5.7.0        	7.2.0      	The leading tool <span style=color:#66d9ef>for</span> querying and visualizing t...
+</code></pre></div><p>ClusterIP를</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>service</span>:
         <span style=color:#75715e># type: ClusterIP</span>
         <span style=color:#75715e># port: 80</span>
         <span style=color:#75715e># targetPort: 3000</span>
