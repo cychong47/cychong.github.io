@@ -1,13 +1,13 @@
 <!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Install Influxdb and Grafana With Helm - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another site</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Install Influxdb and Grafana With Helm</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-10-04T23:36:26+09:00>October 04, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#install-influxdb-with-helm>Install InfluxDB with helm</a><ul><li><a href=#influxdb-container에-접속해서-cli확인>InfluxDB container에 접속해서 CLI확인</a></li></ul></li><li><a href=#pocket-stat-container를-이용해서-임시-데이터-입력><code>pocket-stat</code> container를 이용해서 임시 데이터 입력</a></li><li><a href=#install-grafana-with-helm>Install Grafana with helm</a></li><li><a href=#reference>Reference</a></li></ul></nav></div></div><div class="content post__content clearfix"><h2 id=install-influxdb-with-helm>Install InfluxDB with helm</h2><p><a href=https://github.com/influxdata/helm-charts>GitHub - influxdata/helm-charts: Official Helm Chart Repository for InfluxData Applications</a> 가 helm chart를 이용한 설치법을 제공하는 공식 페이지.</p><pre><code>helm repo add influxdata https://helm.influxdata.com/
-</code></pre><pre><code>cychong@mini1:~$ helm repo list
+</code></pre><pre><code>$ helm repo list
 WARNING: Kubernetes configuration file is group-readable. This is insecure. Location: /home/cychong/.kube/config
 WARNING: Kubernetes configuration file is world-readable. This is insecure. Location: /home/cychong/.kube/config
 NAME        	URL
 myhelmrepo  	https://cychong47.github.io/helm-chart/
 infracloudio	https://infracloudio.github.io/charts
 influxdata  	https://helm.influxdata.com/
-</code></pre><pre><code>cychong@mini1:~$ helm search repo influxdata
+</code></pre><pre><code>$ helm search repo influxdata
 NAME                          	CHART VERSION	APP VERSION	DESCRIPTION
 influxdata/chronograf         	1.1.17       	1.8.0      	Open-source web application written in Go and R...
 influxdata/influxdb           	4.8.5        	1.8.0      	Scalable datastore for metrics, events, and rea...
@@ -17,7 +17,7 @@ influxdata/kapacitor          	1.3.1        	1.5.4      	InfluxDB's native data 
 influxdata/telegraf           	1.7.25       	1.14       	Telegraf is an agent written in Go for collecti...
 influxdata/telegraf-ds        	1.0.16       	1.14       	Telegraf is an agent written in Go for collecti...
 influxdata/telegraf-operator  	1.1.3        	v1.1.0     	A Helm chart for Kubernetes to deploy telegraf-...
-</code></pre><pre><code>cychong@mini1:~/work/helm$ helm upgrade --install -f influxdb-value.yaml influxdb influxdata/influxdb
+</code></pre><pre><code>$ helm upgrade --install -f influxdb-value.yaml influxdb influxdata/influxdb
 Release &quot;influxdb&quot; does not exist. Installing it now.
 NAME: influxdb
 LAST DEPLOYED: Sat Oct  3 10:22:32 2020
@@ -41,12 +41,13 @@ You can also connect to the influx CLI from inside the container. To open a shel
 To view the logs for the InfluxDB pod, run the following:
 
   kubectl logs -f --namespace default $(kubectl get pods --namespace default -l app=influxdb -o jsonpath='{ .items[0].metadata.name }')
-</code></pre><pre><code>cychong@mini1:~/work/helm$ kubectl get pods
+</code></pre><pre><code>$ kubectl get pods
 NAME                             READY   STATUS    RESTARTS   AGE
 influxdb-0                       1/1     Running   0          87s
 podcast-nginx-659bcb6485-ps7qq   1/1     Running   0          86m
 sosa0sa-nginx-87fc9949c-wb4jp    1/1     Running   0          95m
-cychong@mini1:~/work/helm$ kubectl get svc
+
+$ kubectl get svc
 NAME            TYPE        CLUSTER-IP      EXTERNAL-IP     PORT(S)             AGE
 influxdb        ClusterIP   10.110.66.138   &lt;none&gt;          8086/TCP,8088/TCP   92s
 kubernetes      ClusterIP   10.96.0.1       &lt;none&gt;          443/TCP             390d
@@ -61,7 +62,7 @@ name: databases
 name
 ----
 _internal
-</code></pre><pre><code>(venv) cychong@mini1:~/work/helm$ helm install -f pocket-stat-value.yaml pocket-stat helm-chart/charts/pocket-stat/
+</code></pre><pre><code>$ helm install -f pocket-stat-value.yaml pocket-stat helm-chart/charts/pocket-stat/
 NAME: pocket-stat
 LAST DEPLOYED: Sun Oct  4 20:40:11 2020
 NAMESPACE: default
@@ -83,13 +84,14 @@ NOTES:
   export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&quot;{.spec.ports[0].nodePort}&quot; services pocket-stat)
   export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath=&quot;{.items[0].status.addresses[0].address}&quot;)
   echo http://$NODE_IP:$NODE_PORT
-(venv) cychong@mini1:~/work/helm$ kubectl get pods
+
+$ kubectl get pods
 NAME                             READY   STATUS    RESTARTS   AGE
 influxdb-0                       1/1     Running   0          36h
 pocket-stat-5b86fbc8f7-xpf9j     1/1     Running   0          20s
 podcast-nginx-659bcb6485-ps7qq   1/1     Running   0          37h
 sosa0sa-nginx-87fc9949c-wb4jp    1/1     Running   0          37h
-</code></pre><p><code>pocket-stat</code> example app은 5초 주기로 임의의 데이터를 influxdb에 저장하는 동작 수행</p><p>이제 <code>influxdb</code>에 접속해서 database에 데이터가 입력되고 있는 지 확인</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=color:#f92672>(</span>venv<span style=color:#f92672>)</span> cychong@mini1:~/work/helm$ kubectl exec -it influxdb-0 /bin/bash
+</code></pre><p><code>pocket-stat</code> example app은 5초 주기로 임의의 데이터를 influxdb에 저장하는 동작 수행</p><p>이제 <code>influxdb</code>에 접속해서 database에 데이터가 입력되고 있는 지 확인</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ kubectl exec -it influxdb-0 /bin/bash
 kubectl exec <span style=color:#f92672>[</span>POD<span style=color:#f92672>]</span> <span style=color:#f92672>[</span>COMMAND<span style=color:#f92672>]</span> is DEPRECATED and will be removed in a future version. Use kubectl kubectl exec <span style=color:#f92672>[</span>POD<span style=color:#f92672>]</span> -- <span style=color:#f92672>[</span>COMMAND<span style=color:#f92672>]</span> instead.
 bash-4.4# influx
 Connected to http://localhost:8086 version 1.8.0
@@ -122,7 +124,7 @@ time                dl_tp host     region  ul_tp
 <span style=color:#ae81ff>1601819224000000000</span> <span style=color:#ae81ff>166</span>   server01 us-west <span style=color:#ae81ff>58</span>
 <span style=color:#ae81ff>1601819229000000000</span> <span style=color:#ae81ff>198</span>   server01 us-west <span style=color:#ae81ff>69</span>
 <span style=color:#ae81ff>1601819234000000000</span> <span style=color:#ae81ff>190</span>   server01 us-west <span style=color:#ae81ff>55</span>
-</code></pre></div><h2 id=install-grafana-with-helm>Install Grafana with helm</h2><p><a href=https://github.com/grafana/helm-charts>GitHub - grafana/helm-charts</a> 의 내용을 참고한다.</p><pre><code>(venv) cychong@mini1:~/work/helm$ helm repo add grafana https://grafana.github.io/helm-charts
+</code></pre></div><h2 id=install-grafana-with-helm>Install Grafana with helm</h2><p><a href=https://github.com/grafana/helm-charts>GitHub - grafana/helm-charts</a> 의 내용을 참고한다.</p><pre><code>$ helm repo add grafana https://grafana.github.io/helm-charts
 &quot;grafana&quot; has been added to your repositories
 (venv) cychong@mini1:~/work/helm$ helm search repo grafana
 NAME           	CHART VERSION	APP VERSION	DESCRIPTION
@@ -141,7 +143,7 @@ grafana/grafana	5.7.0        	7.2.0      	The leading tool for querying and visu
   <span style=color:#66d9ef>annotations</span>: {}
   <span style=color:#66d9ef>labels</span>: {}
   <span style=color:#66d9ef>portName</span>: service
-</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=color:#f92672>(</span>venv<span style=color:#f92672>)</span> cychong@mini1:~/work/helm$ helm install -f grafana-value.yaml grafana grafana/grafana
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ helm install -f grafana-value.yaml grafana grafana/grafana
 Error: Service <span style=color:#e6db74>&#34;grafana&#34;</span> is invalid: spec.ports<span style=color:#f92672>[</span>0<span style=color:#f92672>]</span>.nodePort: Invalid value: 3000: provided port is not in the valid range. The range of valid ports is 30000-32767
 </code></pre></div><p>흠.. 다른 경우에 이렇게 사용했는데 뭔가 제대로 확인하는 것 같은 느낌.. 일단 다음과 같이 수정했다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#66d9ef>service</span>:
         <span style=color:#75715e># type: ClusterIP</span>
@@ -157,7 +159,7 @@ Error: Service <span style=color:#e6db74>&#34;grafana&#34;</span> is invalid: sp
   <span style=color:#66d9ef>annotations</span>: {}
   <span style=color:#66d9ef>labels</span>: {}
   <span style=color:#66d9ef>portName</span>: service
-</code></pre></div><pre><code>(venv) cychong@mini1:~/work/helm$ helm install -f grafana-value.yaml grafana grafana/grafana
+</code></pre></div><pre><code>$ helm install -f grafana-value.yaml grafana grafana/grafana
 NAME: grafana
 LAST DEPLOYED: Sun Oct  4 23:01:12 2020
 NAMESPACE: default
@@ -183,15 +185,16 @@ export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&quot;{.spec.port
 ######   WARNING: Persistence is disabled!!! You will lose your data when   #####
 ######            the Grafana pod is terminated.                            #####
 #################################################################################
-</code></pre><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=color:#f92672>(</span>venv<span style=color:#f92672>)</span> cychong@mini1:~/work/helm$ kubectl get secret --namespace default grafana -o jsonpath<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{.data.admin-password}&#34;</span> | base64 --decode ; echo
+</code></pre><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ kubectl get secret --namespace default grafana -o jsonpath<span style=color:#f92672>=</span><span style=color:#e6db74>&#34;{.data.admin-password}&#34;</span> | base64 --decode ; echo
 !@#!$!@!%!$
-</code></pre></div><pre><code>(venv) cychong@mini1:~/work/helm$ export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&quot;{.spec.ports[0].nodePort}&quot; services grafana)
-(venv) cychong@mini1:~/work/helm$ echo $NODE_PORT
+</code></pre></div><pre><code>$ export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&quot;{.spec.ports[0].nodePort}&quot; services grafana)
+
+$ echo $NODE_PORT
 30000
 </code></pre><p>이제 web을 통해 접속하면.
 로그인 ID는 Grafana를 deploy했을 때 나온 안내에 있는 대로 <code>admin</code> 이고, 암호는 위의 명령을 통해 찾은 값을 사용해서 로그인한다.<br><img src=/images/2020/10/2020-10-04-install-grafana-with-helm-login.png alt></p><p>로그인하면 이상한(?) 기본 데이터가 보이는데 뭔가 의미있는 정보겠지. 아마도 Grafana자체가 가지고 있는 어떤 metric이 아닌가 싶은데.</p><p><img src=/images/2020/10/2020-10-04-install-grafana-with-helm-default-grafana-dashboard.png alt></p><p>원하는 것은 influxdb에 저장된 데이터를 사용하는 것이므로, 아래 화면과 같이 “Data Sources”를 선택해서 Influxdb를 연결한다.</p><p>어렴풋이 <a href=https://cychong47.github.io/post/2018/grafana-influxdb-and-python/>예전에 했던</a> 기억이 살짝 나려고 한다.</p><p><img src=/images/2020/10/2020-10-04-install-grafana-with-helm-add-influxdb-1.png alt></p><p><img src=/images/2020/10/2020-10-04-install-grafana-with-helm-add-influxdb-2.png alt></p><p>influxdb container에 대한 정보를 넣어주고 <code>Save & Test</code>를 누르니 한번에 OK가 뜬다. 이런 경우는 잘 없었는데 ….
 <img src=/images/2020/10/2020-10-04-install-grafana-with-helm-add-influxdb-3.png alt></p><p>역시 이전에 했던 기억을 되살려 데이터를 지정해 보는데
-<img src=/images/2020/10/2020-10-04-install-grafana-with-helm-set-query-1.png alt></p><p><img src=/images/2020/10/2020-10-04-install-grafana-with-helm-set-query-2.png alt></p><p>이제 3개 pod가 연동하는 걸 봤으니 test app은 삭제하고, 실제 의미있는 데이터를 넣어봐야겠다.</p><pre><code>(venv) cychong@mini1:~/work/pocket-stat$ helm uninstall pocket-stat
+<img src=/images/2020/10/2020-10-04-install-grafana-with-helm-set-query-1.png alt></p><p><img src=/images/2020/10/2020-10-04-install-grafana-with-helm-set-query-2.png alt></p><p>이제 3개 pod가 연동하는 걸 봤으니 test app은 삭제하고, 실제 의미있는 데이터를 넣어봐야겠다.</p><pre><code>$ helm uninstall pocket-stat
 release &quot;pocket-stat&quot; uninstalled
 </code></pre><h2 id=reference>Reference</h2><ul><li><a href=https://github.com/influxdata/helm-charts>GitHub - influxdata/helm-charts: Official Helm Chart Repository for InfluxData Applications</a> influxdb를 helm으로 설치하기</li><li><a href=https://github.com/influxdata/helm-charts/tree/master/charts/influxdb>helm-charts/charts/influxdb at master · influxdata/helm-charts · GitHub</a></li></ul><ul><li><a href=https://cychong47.github.io/post/2018/grafana-influxdb-and-python/>Grafana, influxDB and python - Keep calm and write something</a></li><li><a href=https://github.com/grafana/helm-charts>GitHub - grafana/helm-charts</a> Grafana를 helm으로 설치하기</li></ul><p>#fun-for-life #helm #publish</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/helm/ rel=tag>helm</a></li><li class=tags__item><a class="tags__link btn" href=/tags/influxdb/ rel=tag>influxdb</a></li><li class=tags__item><a class="tags__link btn" href=/tags/grafana/ rel=tag>grafana"</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2020/2020-09-23-homepod-with-stereo/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>HomePod with stereo</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2020/2020-10-09-job-instead-of-deployment/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>일회성 앱은 Deployment가 아닌 Job으로</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
 <input class=widget-search__submit type=submit value=Search>
