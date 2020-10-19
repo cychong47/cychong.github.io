@@ -1,13 +1,11 @@
 ---
 title: No Timezone support in CronJob
 date: "2020-10-19T14:16:45+09:00"
-draft: true
 categories: ["TIL"]
-tags: ["photo"]
-series: [""]
+tags: ["Kubernetes", “CronJob”, “Timezone”]
+series: ["kubernetes-handson"]
 ---
 
-# CronJob in kubernetes does not consider timezone
 ## Problem
 `CronJob`이 지정된 시간에 잘 동작했는 지 확인해 본 결과 이상한 점을 발견했다. 
 
@@ -148,7 +146,3 @@ Kubernetes 커뮤니티에서 주로 추천하는 방법은  `CronJob`의 `sched
 - [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSBS6K_3.2.0/troubleshoot/kube_cronjob.html) kube-controller-manager가 CronJob을 실행시키는 주체인데, kube-controller-manager container가 UTC 시간 기준으로 동작해서 Timezone을 고려하지 않으므로, 해당 container에 master node의 timezone 정보를 추가하면 될 거라고
 - [Cron Jobs migration to Kubernetes tips |It’s my SRE life](https://mysrelife.com/posts/cronjobs/)
 - [GitHub - hiddeco/cronjobber: Cronjobber is a cronjob controller for Kubernetes with support for time zones](https://github.com/hiddeco/cronjobber) CronJob 대신 Timezone을 지원하는 resource 를 정의 
-
-
-#TIL #kubernetes #publish #handson
-
