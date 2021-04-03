@@ -1,0 +1,294 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Keep calm and write something"><meta property="og:type" content="article"><meta property="og:image" content="https://cychong47.github.io/images/another_blog_bg.jpg"><meta property="twitter:image" content="https://cychong47.github.io/images/another_blog_bg.jpg"><meta name=title content="Setup Ingress with Traefik"><meta property="og:title" content="Setup Ingress with Traefik"><meta property="twitter:title" content="Setup Ingress with Traefik"><meta name=description content><meta property="og:description" content><meta property="twitter:description" content><meta property="twitter:card" content="summary"><meta name=keyword content="Blog, cychong, Kubernetes, dpdk"><link rel="shortcut icon" href=/img/favicon.ico><title>Setup Ingress with Traefik-another blog</title><link rel=canonical href=/post/2021/2021-03-31-setup-ingress-with-traefik/><link rel=stylesheet href=/css/iDisqus.min.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hux-blog.min.css><link rel=stylesheet href=/css/zanshang.css><link href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css rel=stylesheet type=text/css><link rel=stylesheet href=https://cychong47.github.io/css/custom-cleanwhite.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script></head><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a class=navbar-brand href=/>Keep calm and write something</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Home</a></li><li><a href=/categories/book>book</a></li><li><a href=/categories/gadget>gadget</a></li><li><a href=/categories/homelab>homelab</a></li><li><a href=/categories/hugo>hugo</a></li><li><a href=/categories/kubernetes>kubernetes</a></li><li><a href=/categories/life>life</a></li><li><a href=/categories/note>note</a></li><li><a href=/categories/til>til</a></li><li><a href=/search>SEARCH <img src=/img/search.png height=15 style=cursor:pointer alt=Search></a></li></ul></div></div></div></nav><script>var $body=document.body;var $toggle=document.querySelector('.navbar-toggle');var $navbar=document.querySelector('#huxblog_navbar');var $collapse=document.querySelector('.navbar-collapse');$toggle.addEventListener('click',handleMagic)
+function handleMagic(e){if($navbar.className.indexOf('in')>0){$navbar.className=" ";setTimeout(function(){if($navbar.className.indexOf('in')<0){$collapse.style.height="0px"}},400)}else{$collapse.style.height="auto"
+$navbar.className+=" in";}}</script><style type=text/css>header.intro-header{background-image:url(/images/another_blog_bg.jpg)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/traefik title=Traefik>Traefik</a></div><h1>Setup Ingress with Traefik</h1><h2 class=subheading></h2><span class=meta>Posted by
+Keep calm and write something
+on
+Wednesday, March 31, 2021</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-11 col-lg-offset-1
+col-md-10 col-md-offset-1
+post-container"><header><h2>TOC</h2></header><nav id=TableOfContents><ul><li><ul><li><a href=#ingress>Ingress</a></li><li><a href=#404-not-found>404 Not Found</a></li><li><a href=#pod-logs>Pod logs</a></li><li><a href=#middleware>Middleware</a></li><li><a href=#적용해-보기>적용해 보기</a></li><li><a href=#ingressroute-vs-ingress>IngressRoute vs. Ingress</a></li></ul></li></ul></nav><p>Ingress Controller 를 [설치](<a href=https://cychong47.github.io/post/2021/2021-03-30-install-traefik-with-helm/>Helm으로 Traefik 설치하기-another blog</a>)했으니 이제 Ingress를 설정해서 실제 cluster 외부로부터의 http/https 메시지를 nginx pod에 전달되게 해 본다.</p><h2 id=ingress>Ingress</h2><p>Ingress는 Cluster 외부에서 접근하는 http/https request에 대한 라우팅을 제어하는 기능을 제공한다.
+<a href=https://kubernetes.io/docs/concepts/services-networking/ingress/>Ingress | Kubernetes</a></p><p>ingress.yaml 파일을 다음과 같이 작성한다. . 아래는 두 가지 rule을 설정하고 있는데 host가 ‘mini1’이고, URL path가 <code>/ost</code>면 podcast-nginx라는 서비스로 전달하게 하는 것과 host는 상관없이 path가 <code>/ost</code>면 역시 같은 podcast-nginx로 보내는 것이다.</p><pre><code>kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: &quot;test&quot;
+  namespace: default
+
+spec:
+  rules:
+    - host: mini1
+      http:
+        paths:
+          - path: /ost
+            backend:
+              serviceName: podcast-nginx
+              servicePort: 8099
+    - http:
+        paths:
+          - path: /ost
+            backend:
+              serviceName: podcast-nginx
+              servicePort: 8099
+</code></pre><p>Kubectl 명령을 이용해 적용해 본다.</p><pre><code>$ kubectl apply -f ingress.yaml
+ingress.extensions/test created
+</code></pre><p>확인은 여느 resource와 마찬가지로 <code>get</code> 명령어 사용</p><pre><code>$ kubectl get ingress
+NAME   CLASS    HOSTS   ADDRESS   PORTS   AGE
+test   &lt;none&gt;   mini1             80      8s
+</code></pre><p>상세 내용을 보려면 역시 <code>describe</code> 명령을 사용한다.</p><pre><code>$ kubectl describe ingress test
+Name:             test
+Namespace:        default
+Address:
+Default backend:  default-http-backend:80 (&lt;error: endpoints &quot;default-http-backend&quot; not found&gt;)
+Rules:
+  Host        Path  Backends
+  ----        ----  --------
+  mini1
+              /ost   podcast-nginx:8099 ()
+  *
+              /ost     podcast-nginx:8099 ()
+Annotations:  Events:  &lt;none&gt;
+</code></pre><p>YAML 파일에 기술한 대로 2가지 rule이 설정되었다.
+<code>{mini1, /ost} -> podcast-nginx:8099</code>
+<code>{*,/ost} -> podcast-nginx:8099</code></p><h2 id=404-not-found>404 Not Found</h2><p>이전에는 NodePort에 설정한 IP 주소와 NodePort 조합으로 <code>http://192.168.0.100:8099</code>로 접근했는데 이번에는 <code>http://192.168.0.100/ost</code>로 접근을 시도했다.
+그렇지만 별로 만나고 싶은 않은 404 에러만 덩그러니…</p><pre><code>404 Not Found
+
+nginx/1.19.0
+</code></pre><h2 id=pod-logs>Pod logs</h2><p>그래도 nginx 에러가 나왔다는 건 적어도 Traefik을 거쳐 nginx가 동작하고 있는 pod까지는 request가 왔다는 걸로 보인다. 즉 이건 Ingress 설정이나 Traefik 동작에는 문제가 없다는 거.</p><p>그래서 nginx가 동작하고 있는 Pod의 로그를 보기로 했다. <a href=https://github.com/derailed/k9s>GitHub - derailed/k9s: 🐶 Kubernetes CLI To Manage Your Clusters In Style!</a>를 이용해서 attach 명령을 이용하면 편리하게 로그를 볼 수 있다(심지어? kubeconfig 파일을 이용해서 다른 머신에서 cluster에 원격으로 접속할 수 있다는. <code>k9s --kubeconfig ~/.kube/config_mini1</code></p><pre><code>Unable to use a TTY - container nginx did not allocate one
+If you don't see a command prompt, try pressing enter.
+10.244.51.100 - - [30/Mar/2021:14:11:54 +0000] &quot;GET /ost HTTP/1.1&quot; 404 153 &quot;-&quot; &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15&quot; &quot;192.168.0.100&quot;
+2021/03/30 14:11:54 [error] 28#28: *793087 open() &quot;/usr/share/nginx/html/ost&quot; failed (2: No such file or directory), client: 10.244.51.100, server: localhost, request: &quot;GET /ost HTTP/1.1&quot;, host: &quot;192.168.0.100&quot;
+</code></pre><p>혹시나 했는데 예상대로 요청하는 html 파일의 경로가 <code>/usr/share/nginx/html/ost</code> 다. 하지만 nginx는 모두 subpath 없이 <code>/</code> 에 파일을 두고 있으므로 <code>/</code>를 찾도록 redirect 시켜야 하는데.</p><p><a href=https://kubernetes.io/docs/concepts/services-networking/ingress/>Ingress | Kubernetes</a> 를 보면 <code>rewrite-target</code>이라는 annotation을 사용하는 듯 한데, 해당 annotation의 prefix를 보니 아무래도 <code>nginx</code>만 지원이되는 게 아닌가 싶다.</p><pre><code>$ kubectl describe ingress test
+
+Name:             test
+Namespace:        default
+Address:          178.91.123.132
+Default backend:  default-http-backend:80 (10.8.2.3:8080)
+Rules:
+  Host         Path  Backends
+  ----         ----  --------
+  foo.bar.com
+               /foo   service1:80 (10.8.0.90:80)
+Annotations:
+  nginx.ingress.kubernetes.io/rewrite-target:  /
+Events:
+  Type     Reason  Age                From                     Message
+  ----     ------  ----               ----                     -------
+  Normal   ADD     35s                loadbalancer-controller  default/test 
+</code></pre><p>그래서 Traefik이 path rewriting을 지원하는 지 검색해 보니 당연하게도 동일한 기능을 제공한다고. <a href=https://stackoverflow.com/questions/50504881/rewriting-paths-with-traefik>docker - Rewriting paths with Traefik - Stack Overflow</a></p><p>위 글에 있는 예제는 <code>http://monitor.app.com/service-one</code> 를 <code>http://service-one/monitor</code>로 rewriting하는 경우이다.</p><pre><code>apiVersion: v1
+kind: Service
+metadata:
+  name: service-one
+spec:
+  selector:
+    k8s-app: service-one-app
+  ports:
+  - port: 80
+    targetPort: 8080
+---
+kind: Ingress
+metadata:
+  name: monitor.app
+  annotations:
+    kubernetes.io/ingress.class: traefik
+    traefik.ingress.kubernetes.io/rewrite-target: /monitor # set path to result request
+spec:
+  rules:
+  - host: monitor.app.com
+    http:
+      paths:
+      - path /service-one  # path for routing, it will be removed because of PathPrefixStrip settings
+        backend:
+          serviceName: service-one
+          servicePort: 80
+</code></pre><p>그런데 또 찾아 보니 위의 내용은 Traefik v1에만 해당하는 거라고. v2에서는 <code>PathPrefixStrip</code> 기능이 <code>Middleware</code>의 기능으로 옮겨졌다고 한다.</p><blockquote><p>In the v2, the <a href=https://docs.traefik.io/v1.7/basics/#modifiers>“modifiers”</a> became middleware: <a href=https://docs.traefik.io/v2.0/middlewares/stripprefix/>https://docs.traefik.io/v2.0/middlewares/stripprefix/</a> ><br>Source : <a href=https://github.com/traefik/traefik/issues/5004>https://github.com/traefik/traefik/issues/5004</a></p></blockquote><h2 id=middleware>Middleware</h2><p>`Middleware라니 이건 또 뭔가.
+<img src=/images/2021/03/2021-03-31-traefik-middleware-overview.png alt></p><p><a href=https://doc.traefik.io/traefik/v2.0/middlewares/overview/>Overview - Traefik | Site | v2.0</a></p><blockquote><p>Attached to the routers, pieces of middleware are a mean of tweaking the requests before they are sent to your <a href=https://doc.traefik.io/traefik/v2.0/routing/services/>service</a> (or before the answer from the services are sent to the clients)</p></blockquote><p>Route 동작 중에 수행할 수 있는 여러가지 작업을 정의한 것이 Middleware라고 이해된다. 확장성을 위해 단순히 경로를 차는 Routing과 경로를 조작(?)하는 등의 작업을 분리해서 Middleware라고 부르는 것 같다.</p><p>Middleware를 위한 CRD가 정의되어 있는데, Helm으로 설치하면 이미 middleware가 설치되어 있다</p><pre><code> k get CustomResourceDefinition |grep traefik
+ingressroutes.traefik.containo.us             2021-01-25T13:25:26Z
+ingressroutetcps.traefik.containo.us          2021-01-25T13:25:26Z
+ingressrouteudps.traefik.containo.us          2021-01-25T13:25:26Z
+middlewares.traefik.containo.us               2021-01-25T13:25:26Z
+serverstransports.traefik.containo.us         2021-01-25T13:25:26Z
+tlsoptions.traefik.containo.us                2021-01-25T13:25:26Z
+tlsstores.traefik.containo.us                 2021-01-25T13:25:27Z
+traefikservices.traefik.containo.us           2021-01-25T13:25:27Z
+</code></pre><p>이제 원하는 작업인 <code>/ost</code>를 request path에서 제거하려면 <code>stripPrefix</code> 기능을 이용하면 된다.
+<a href=https://doc.traefik.io/traefik/v2.0/middlewares/stripprefix/>StripPrefix - Traefik | Site | v2.0</a>
+위 페이지에 있는 예제인데 쉽게 예상되는 것처럼 <code>/foobar</code>, <code>/filibar</code>라는 경로가 있으면 제거하라는 의미이다.</p><pre><code># Strip prefix /foobar and /fiibar
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: test-stripprefix
+spec:
+  stripPrefix:
+    prefixes:
+      - /foobar
+      - /fiibar
+</code></pre><h2 id=적용해-보기>적용해 보기</h2><p>위 예제를 참조해서 다음과 같이 Middleware 를 설정한다.</p><pre><code>$ cat traefik-pathstrip.yaml
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: stripprefix
+spec:
+  stripPrefix:
+    prefixes:
+      - /ost
+</code></pre><pre><code>$ kubectl apply -f traefik-pathstrip.yaml
+middleware.traefik.containo.us/stripprefix created
+</code></pre><p>다만, middleware를 route rule에 적용하려면 kubernetes의 기본 object인 <code>ingress</code>가 아니라 <code>ingressRoute</code>를 사용해야 하는 듯 하다. IngressRoute는 또 뭔지.</p><h2 id=ingressroute-vs-ingress>IngressRoute vs. Ingress</h2><p><code>Ingress</code> is a standard kubernetes object while <code>IngressRoute</code> is CRD of Traefik</p><blockquote><p>An ingressRoute is specific to Traefik. It’s not native to Kubernetes. It is a Custom Resource Definition which allows you to take advantage of Traefik features not exposed in the Kubernetes ingress resource</p></blockquote><p>Source : <a href=https://stackoverflow.com/questions/60177488/what-is-the-difference-between-a-kubernetes-ingress-and-a-ingressroute>What is the difference between a Kubernetes Ingress and a IngressRoute? - Stack Overflow</a></p><p>IngressRoute 예제의 내용에서 Routing rule과 Middleware를 내가 필요한 대로 수정한다.</p><pre><code>$ cat ingress-route.yaml
+kind: IngressRoute
+apiVersion: traefik.containo.us/v1alpha1
+metadata:
+  name: ingressroutebar
+  namespace: default
+
+spec:
+  entryPoints:
+    - web
+  routes:
+          #- match: Host(`bar.com`) &amp;&amp; PathPrefix(`/stripit`)
+  - match: PathPrefix(`/ost`)
+    kind: Rule
+    services:
+    - name: podcast-nginx
+      port: 8099
+    middlewares:
+    - name: stripprefix
+      namespace: default
+</code></pre><p>그 결과는</p><p><img src=/images/2021/03/2021-03-30-traefik-works-but.png alt></p><p>흠…</p><p>일단 웹 페이지 자체는 잘 보이니 routing은 잘 된 듯 한데, 스타일이 이상한 걸 보니 CSS 파일들이 제대로 적용되지 않은 듯 하다. 그리고 제일 위 쪽에 이미지가 보여지지 않는 걸 보니 CSS 파일 외에 다른 파일들의 경로가 안 맞는 듯 하다. 위 페이지에서 링크를 클릭하면 링크도 제대로 동작하지 않는다는. 결국 `URL/ost/index.html’만 제대로 라우팅이 되서 화면에 보이고 나머지는 모두 제대로 동작하지 않는 모양이ㅏㄷ.</p><p>이미지 파일의 경로들을 이전에 잘 동작할 때와 지금 상황을 비교하니 이렇다.</p><pre><code># 이전
+http://192.168.0.100:8099/
+http://192.168.0.100:8099/images/logo.png
+http://192.168.0.100:8099/podcast/cinema-2021-03-30/
+
+# 지금
+http://192.168.0.100/
+http://192.168.0.100/images/logo.png
+http://192.168.0.100/podcast/cinema-2021-03-30/
+</code></pre><p>즉 8099 포트 지정하는 부분만 달라진 형태다.</p><p>그런데 생각해 보니 위 두 번째 경로들은 다음과 같아야 할 것 같다.
+경로에 <code>/ost</code>가 있어야 nginx pod로 전달이 될 텐데 그게 없어서 nginx pod로 전달이 되지 않아서 web browser에 표시가 안된 것이다.</p><pre><code>http://192.168.0.100/ost
+http://192.168.0.100/ost/images/logo.png
+http://192.168.0.100/ost/podcast/cinema-2021-03-30/
+</code></pre><p>아무래도 이건 nginx에서 설정을 변경해야 하는 것 같은데…
+```
+$ wget http://192.168.0.100/ost/index.html
+&ndash;2021-03-30 23:50:44&ndash; http://192.168.0.100/ost/index.html
+Connecting to 192.168.0.100:80&mldr; connected.
+HTTP request sent, awaiting response&mldr; 200 OK
+Length: 34351 (34K) [text/html]
+Saving to: ‘index.html’</p><p>index.html 100%[================================================================================================>] 33.55K &ndash;.-KB/s in 0s</p><p>2021-03-30 23:50:44 (155 MB/s) - ‘index.html’ saved [34351/34351]</p><p>$ wget http://192.168.0.100:8099/index.html
+&ndash;2021-03-30 23:50:53&ndash; http://192.168.0.100:8099/index.html
+Connecting to 192.168.0.100:8099&mldr; connected.
+HTTP request sent, awaiting response&mldr; 200 OK
+Length: 34351 (34K) [text/html]
+Saving to: ‘index.html.1’</p><p>index.html.1 100%[================================================================================================>] 33.55K &ndash;.-KB/s in 0s</p><p>2021-03-30 23:50:53 (179 MB/s) - ‘index.html.1’ saved [34351/34351]</p><p>$ diff index.html index.html.1
+$</p><pre><code>
+## 해결
+예상대로 해결책은 nginx 의 설정을 변경하는 간단한 수정으로 충분했다. 
+nginx가 hosting하는 사이트는 SSG(Static Site Generator)인 hugo를 이용해서 생성한 파일들로 구성되는데, 그   site의 root에 `/ost`를 추가하는 것이다. 즉 hugo 설정 파일에서 baseURL에 `/ost`를 추가하는 거
+```yaml
+$ cat config.yaml
+---
+...
+baseURL: &quot;http://sosa0sa.com/ost/&quot;     &lt;&lt; 이전 값 &quot;http://sosa0sa.com:8099&quot; 
+</code></pre><p>새로 site 파일을 빌드해서 nginx에 밀어넣었더니 다음과 같이 제대로 경로가 바뀌었다.</p><pre><code>http://192.168.0.100/ost
+http://192.168.0.100/ost/images/logo.png
+http://192.168.0.100/ost/podcast/cinema-2021-03-30/
+</code></pre><p>짜잔. 이젠 잘 동작한다.
+<img src=/images/2021/03/2021-03-31-traefik-works-1.png alt></p><p>당연히 집 내가 아니라 외부에서도 접속이 잘 되고.
+<img src=/images/2021/03/2021-03-31-traefik-works-2.png alt></p><hr><ul class=pager><li class=previous><a href=/post/2021/2021-03-30-install-traefik-with-helm/ data-toggle=tooltip data-placement=top title="Helm으로 Traefik 설치하기">&larr;
+Previous Post</a></li></ul><div id=disqus-comment></div></div><div class="col-lg-11 col-lg-offset-1
+col-md-10 col-md-offset-1
+sidebar-container"><section><hr class="hidden-sm hidden-xs"><h5><a href=/tags/>FEATURED TAGS</a></h5><div class=tags><a href=/tags/agile title=agile>agile</a>
+<a href=/tags/amazon title=amazon>amazon</a>
+<a href=/tags/amdocs title=amdocs>amdocs</a>
+<a href=/tags/ansible title=ansible>ansible</a>
+<a href=/tags/ansible-playbook title=ansible-playbook>ansible-playbook</a>
+<a href=/tags/anti-work-pattern title=anti-work-pattern>anti-work-pattern</a>
+<a href=/tags/apple title=apple>apple</a>
+<a href=/tags/automation title=automation>automation</a>
+<a href=/tags/backup title=backup>backup</a>
+<a href=/tags/book title=book>book</a>
+<a href=/tags/brew title=brew>brew</a>
+<a href=/tags/calico title=calico>calico</a>
+<a href=/tags/cisco title=cisco>cisco</a>
+<a href=/tags/cni title=cni>cni</a>
+<a href=/tags/coding-style title=coding-style>coding-style</a>
+<a href=/tags/container title=container>container</a>
+<a href=/tags/cron title=cron>cron</a>
+<a href=/tags/cronjob title=cronjob>cronjob</a>
+<a href=/tags/cuda title=cuda>cuda</a>
+<a href=/tags/culture title=culture>culture</a>
+<a href=/tags/dev-culture title=dev-culture>dev-culture</a>
+<a href=/tags/devonthink title=devonthink>devonthink</a>
+<a href=/tags/docker title=docker>docker</a>
+<a href=/tags/docker-compose title=docker-compose>docker-compose</a>
+<a href=/tags/dpdk title=dpdk>dpdk</a>
+<a href=/tags/elk title=elk>elk</a>
+<a href=/tags/english title=english>english</a>
+<a href=/tags/getting-started title=getting-started>getting-started</a>
+<a href=/tags/ghost title=ghost>ghost</a>
+<a href=/tags/git title=git>git</a>
+<a href=/tags/github title=github>github</a>
+<a href=/tags/golang title=golang>golang</a>
+<a href=/tags/google title=google>google</a>
+<a href=/tags/gpu title=gpu>gpu</a>
+<a href=/tags/grafana title=grafana>grafana</a>
+<a href=/tags/helm title=helm>helm</a>
+<a href=/tags/homebrew title=homebrew>homebrew</a>
+<a href=/tags/http title=http>http</a>
+<a href=/tags/hugo title=hugo>hugo</a>
+<a href=/tags/influxdb title=influxdb>influxdb</a>
+<a href=/tags/intel title=intel>intel</a>
+<a href=/tags/ipad title=ipad>ipad</a>
+<a href=/tags/iphone title=iphone>iphone</a>
+<a href=/tags/ipsec title=ipsec>ipsec</a>
+<a href=/tags/json title=json>json</a>
+<a href=/tags/kubernetes title=kubernetes>kubernetes</a>
+<a href=/tags/life title=life>life</a>
+<a href=/tags/lifehack title=lifehack>lifehack</a>
+<a href=/tags/mac-mini-2009 title=mac-mini-2009>mac-mini-2009</a>
+<a href=/tags/manager title=manager>manager</a>
+<a href=/tags/monitoring title=monitoring>monitoring</a>
+<a href=/tags/mysql title=mysql>mysql</a>
+<a href=/tags/nfv title=nfv>nfv</a>
+<a href=/tags/nginx title=nginx>nginx</a>
+<a href=/tags/note title=note>note</a>
+<a href=/tags/odp title=odp>odp</a>
+<a href=/tags/onap title=onap>onap</a>
+<a href=/tags/onp title=onp>onp</a>
+<a href=/tags/openstack title=openstack>openstack</a>
+<a href=/tags/opnfv title=opnfv>opnfv</a>
+<a href=/tags/osx title=osx>osx</a>
+<a href=/tags/ovdk title=ovdk>ovdk</a>
+<a href=/tags/ovs title=ovs>ovs</a>
+<a href=/tags/photo title=photo>photo</a>
+<a href=/tags/podcast title=podcast>podcast</a>
+<a href=/tags/programming title=programming>programming</a>
+<a href=/tags/protocol-buffer title=protocol-buffer>protocol-buffer</a>
+<a href=/tags/python title=python>python</a>
+<a href=/tags/scapy title=scapy>scapy</a>
+<a href=/tags/sdn title=sdn>sdn</a>
+<a href=/tags/slack title=slack>slack</a>
+<a href=/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94 title=sw-개발-문화>sw-개발-문화</a>
+<a href=/tags/team title=team>team</a>
+<a href=/tags/telemetry title=telemetry>telemetry</a>
+<a href=/tags/til title=til>til</a>
+<a href=/tags/traefik title=traefik>traefik</a>
+<a href=/tags/troubleshooting title=troubleshooting>troubleshooting</a>
+<a href=/tags/ubuntu title=ubuntu>ubuntu</a>
+<a href=/tags/vagrant title=vagrant>vagrant</a>
+<a href=/tags/virtualization title=virtualization>virtualization</a>
+<a href=/tags/vmware title=vmware>vmware</a>
+<a href=/tags/vnf title=vnf>vnf</a>
+<a href=/tags/vran title=vran>vran</a>
+<a href=/tags/wordpress title=wordpress>wordpress</a>
+<a href=/tags/%EA%B3%B5%EB%B6%80 title=공부>공부</a>
+<a href=/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5 title=관리능력>관리능력</a>
+<a href=/tags/%EA%B8%B0%EB%A1%9D title=기록>기록</a>
+<a href=/tags/%EB%A6%AC%EB%8D%94 title=리더>리더</a>
+<a href=/tags/%EB%AC%B8%ED%99%94 title=문화>문화</a>
+<a href=/tags/%EC%83%9D%EC%82%B0%EC%84%B1 title=생산성>생산성</a>
+<a href=/tags/%EC%9E%A1%EC%83%9D%EA%B0%81 title=잡생각>잡생각</a>
+<a href=/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC title=조직관리>조직관리</a>
+<a href=/tags/%ED%9A%8C%EC%9D%98 title=회의>회의</a></div></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href rel=alternate type=application/rss+xml title="Keep calm and write something"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li><li><a href=mailto:cychong@gmail.com><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Keep calm and write something 2021<br><a href=https://themes.gohugo.io/hugo-theme-cleanwhite>CleanWhite Hugo Theme</a> by <a href=https://zhaohuabing.com>Huabing</a> |
+<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=100px height=20px src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true"></iframe></p></div></div></div></footer><script>function async(u,c){var d=document,t='script',o=d.createElement(t),s=d.getElementsByTagName(t)[0];o.src=u;if(c){o.addEventListener('load',function(e){c(null,e);},false);}
+s.parentNode.insertBefore(o,s);}</script><script>if($('#tag_cloud').length!==0){async("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:'#bbbbee',end:'#0085a1'},};$('#tag_cloud a').tagcloud();})}</script><script>async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js",function(){var $nav=document.querySelector("nav");if($nav)FastClick.attach($nav);})</script></body></html>
