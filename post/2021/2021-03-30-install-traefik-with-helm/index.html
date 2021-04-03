@@ -1,0 +1,247 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Keep calm and write something"><meta property="og:type" content="article"><meta property="og:image" content="https://cychong47.github.io/images/another_blog_bg.jpg"><meta property="twitter:image" content="https://cychong47.github.io/images/another_blog_bg.jpg"><meta name=title content="Helm으로 Traefik 설치하기"><meta property="og:title" content="Helm으로 Traefik 설치하기"><meta property="twitter:title" content="Helm으로 Traefik 설치하기"><meta name=description content><meta property="og:description" content><meta property="twitter:description" content><meta property="twitter:card" content="summary"><meta name=keyword content="Blog, cychong, Kubernetes, dpdk"><link rel="shortcut icon" href=/img/favicon.ico><title>Helm으로 Traefik 설치하기-another blog</title><link rel=canonical href=/post/2021/2021-03-30-install-traefik-with-helm/><link rel=stylesheet href=/css/iDisqus.min.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hux-blog.min.css><link rel=stylesheet href=/css/zanshang.css><link href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css rel=stylesheet type=text/css><link rel=stylesheet href=https://cychong47.github.io/css/custom-cleanwhite.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script></head><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a class=navbar-brand href=/>Keep calm and write something</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Home</a></li><li><a href=/categories/book>book</a></li><li><a href=/categories/gadget>gadget</a></li><li><a href=/categories/homelab>homelab</a></li><li><a href=/categories/hugo>hugo</a></li><li><a href=/categories/kubernetes>kubernetes</a></li><li><a href=/categories/life>life</a></li><li><a href=/categories/note>note</a></li><li><a href=/categories/til>til</a></li><li><a href=/search>SEARCH <img src=/img/search.png height=15 style=cursor:pointer alt=Search></a></li></ul></div></div></div></nav><script>var $body=document.body;var $toggle=document.querySelector('.navbar-toggle');var $navbar=document.querySelector('#huxblog_navbar');var $collapse=document.querySelector('.navbar-collapse');$toggle.addEventListener('click',handleMagic)
+function handleMagic(e){if($navbar.className.indexOf('in')>0){$navbar.className=" ";setTimeout(function(){if($navbar.className.indexOf('in')<0){$collapse.style.height="0px"}},400)}else{$collapse.style.height="auto"
+$navbar.className+=" in";}}</script><style type=text/css>header.intro-header{background-image:url(/images/another_blog_bg.jpg)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/traefik title=Traefik>Traefik</a></div><h1>Helm으로 Traefik 설치하기</h1><h2 class=subheading></h2><span class=meta>Posted by
+Keep calm and write something
+on
+Tuesday, March 30, 2021</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-11 col-lg-offset-1
+col-md-10 col-md-offset-1
+post-container"><header><h2>TOC</h2></header><nav id=TableOfContents><ul><li><ul><li><a href=#helm-repo-추가하기>helm repo 추가하기</a></li><li><a href=#default-값을-사용하여-test-deploy>default 값을 사용하여 test deploy</a></li><li><a href=#exposing-traefik-dashboard>Exposing Traefik dashboard</a></li><li><a href=#try-again-with-valueyaml-from-traefik>Try again with value.yaml from Traefik</a></li><li><a href=#servicetype을-nodeport로-변경><code>service.type</code>을 <code>NodePort</code>로 변경</a></li><li><a href=#serviceexternalips-설정><code>service.externalIPs</code> 설정</a></li><li><a href=#dashboard-expose-설정-변경>dashboard expose 설정 변경</a></li><li><a href=#실행-옵션-변경>실행 옵션 변경</a></li><li><a href=#dashboard-is-now-working---mar-30-2021-423-pm>Dashboard is now working - Mar 30, 2021 4:23 PM</a></li><li><a href=#install-traefik-in-its-own-namespace>install Traefik in its own namespace</a></li><li><a href=#reference>reference</a></li></ul></li></ul></nav><p>지금 집에 있는 서버(mac mini 2009)에서 nginx를 이용해서 블로그를 호스팅하는데 port를 구분해서 외부에 노출하고 있다. 외부에서의 접근을 위해 NodePort를 사용하고, 각 nginx instance는 서로 다른 port를 이용하고 있는데 port번호가 아니라 URL 경로를 이용해서 서로 다른 서비스를 이용할 수 있는 reverse proxy 기능을 사용하면 좀 더 깔끔할 듯 하다.
+Kubernetes에서는 ingress와 ingress controller를 이용해서 이 reverse proxy를 구현할 수 있다고 한다. Kubernetes에서는 ingress는 기본적으로 제공하는 object 지만, ingress controller는 제공하고 있지 않아, 별도로 설치해야 한다.</p><p>Ingress와 Ingress controller의 차이에 대해 헷갈렸는데 Ingress는 결국 route rule만 설정하고, 실제로 외부에서의 request를 받아 적절한 service, pod로 전달하는 역할은 ingress controller가 담당한다. Ingress Controller로 유명한 것은 Kubernets가 알려지기 전 부터 reverse proxy로 잘 알려진 nginx외에 HA Proxy Ingess Controller 등이 있다.
+<a href=https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/>Kubernetes.io - Ingress Controller</a></p><p>처음 kubernetes를 설치한 후 블로그를 띄우기 위해 nginx docker image와Helm chart를 찾아 다닐 때 nginx web server가 아니라 <a href=https://hub.docker.com/r/nginx/nginx-ingress>nginx-ingress</a>만 보여서 이게 뭔가 한 적이 있었는데 이제야 조금 이해를 하겠다는.</p><p>Ingress controller로 nginx-ingress가 아닌 Traefik을 설치해 보기로 했다. 그냥 에전부터 들었는데 뭐 하는 건지 이해를 하지 못해한참 바라만 보고 있던 터라 한번 사용해 보기로 마음 먹었다.</p><h2 id=helm-repo-추가하기>helm repo 추가하기</h2><p>가급적 모든 app은 helm을 이용해서 설치하려고 하고 있어 Traefik역시 Helm chart를 찾는 것이 첫번째 단계다.</p><pre><code>$ helm repo add traefik https://helm.traefik.io/traefik
+&quot;traefik&quot; has been added to your repositories
+</code></pre><pre><code>$ helm repo update
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the &quot;myhelmrepo&quot; chart repository
+...Successfully got an update from the &quot;nextcloud&quot; chart repository
+...Successfully got an update from the &quot;infracloudio&quot; chart repository
+...Successfully got an update from the &quot;influxdata&quot; chart repository
+...Successfully got an update from the &quot;grafana&quot; chart repository
+...Successfully got an update from the &quot;traefik&quot; chart repository
+Update Complete. ⎈Happy Helming!⎈
+</code></pre><h2 id=default-값을-사용하여-test-deploy>default 값을 사용하여 test deploy</h2><pre><code>$ helm install traefik traefik/traefik
+NAME: traefik
+LAST DEPLOYED: Mon Jan 25 22:25:30 2021
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+</code></pre><h2 id=exposing-traefik-dashboard>Exposing Traefik dashboard</h2><p>Traefik의 상태를 확인할 수 있는 dashboard가 있다고 하는데 기본적으로 disable된 상태라 port-forward 명령으로 동작시킬 수 있다고.</p><pre><code>$ kubectl port-forward $(kubectl get pods --selector &quot;app.kubernetes.io/name=traefik&quot; --output=name) 9000:9000
+Forwarding from 127.0.0.1:9000 -&gt; 9000
+Forwarding from [::1]:9000 -&gt; 9000
+</code></pre><p>다만 helm chart 페이지에 있는 대로만 하면 위의 로그처럼 listen하는 IP 주소가 localhost(127.0.0.1)을 사용하므로 같은 머신에서만 접근이 가능하다. 다른 머신에서도 접근할 수 있게 하려면 <code>--address</code> 옵션을 사용해서 listen 하는 IP 주소를 외부와의 통신이 가능한 IP를 지정하거나, 0.0.0.0과 같이 어느 IP로 접근해도 허용하겠다고 지정한다.(머신에 interface가 여러 개가 있는 경우 특정 interface에 할당된 IP를 지정하면, 해당 IP로 접근하는 것만 허용)</p><pre><code>$ kubectl port-forward --address 0.0.0.0 $(kubectl get pods --selector &quot;app.kubernetes.io/name=traefik&quot; --output=name) 9000:9000
+Forwarding from 0.0.0.0:9000 -&gt; 9000
+Handling connection for 9000
+</code></pre><h2 id=try-again-with-valueyaml-from-traefik>Try again with value.yaml from Traefik</h2><p>동작시키는 환경에 맞게 옵션을 변경하기 위해 helm chart value.yaml 파일을 사용한다.
+values.yaml 파일은 helm chart가 위치한 git repo에서 받을 수 있다. <a href=https://github.com/traefik/traefik-helm-chart/tree/master/traefik>traefik-helm-chart/traefik at master · traefik/traefik-helm-chart · GitHub</a></p><div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell>$ helm install -f value.yaml traefik traefik/traefik
+NAME: traefik
+LAST DEPLOYED: Tue Jan <span style=color:#bd93f9>26</span> 19:04:47 <span style=color:#bd93f9>2021</span>
+NAMESPACE: default
+STATUS: deployed
+REVISION: <span style=color:#bd93f9>1</span>
+TEST SUITE: None
+</code></pre></div><pre><code>$ helm list | grep traefik
+traefik    	default  	1       	2021-01-26 19:04:47.633224266 +0900 KST	deployed	traefik-9.13.0   	2.4.0
+</code></pre><p>pod는 정상적으로 동작하는 것처럼 보이는데</p><pre><code>$ kubectl get pods
+NAME                             READY   STATUS      RESTARTS   AGE
+...
+traefik-6fd6fbd4ff-v96bk         1/1     Running     0          21s
+</code></pre><p>Service가 제대로 동작하고 있지 않네.
+<code>EXTERNAL-IP</code>이 <code>pending</code> 상태라는 건 거의 대부분(100%?) Service type을 <code>LoadBalancer</code> 로 되어 있어서 그렇다는.</p><pre><code> kubectl get svc
+NAME            TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)                      AGE
+...
+traefik         LoadBalancer   10.98.42.130     &lt;pending&gt;       80:32480/TCP,443:32398/TCP   24s
+</code></pre><h2 id=servicetype을-nodeport로-변경><code>service.type</code>을 <code>NodePort</code>로 변경</h2><p>Value파일을 수정해서 <code>LoadBalancer</code> 대신 <code>NodePort</code>를 사용하도록 한다. On-premise환경에서는 MetalLB같은 Load Balancer를 설치하지 않는 이상 NodePort를 사용해야 외부로부터의 접근이 가능하다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#ff79c6>service</span>:
+...
+   <span style=color:#ff79c6>type</span>: NodePort 	<span style=color:#6272a4>#LoadBalancer</span>
+..
+</code></pre></div><p>수정된 value 파일을 helm upgrade 명령으로 적용해 본다.</p><pre><code>$ vi value.yaml
+$ helm upgrade -f value.yaml traefik traefik/traefik
+Release &quot;traefik&quot; has been upgraded. Happy Helming!
+NAME: traefik
+LAST DEPLOYED: Tue Jan 26 19:19:06 2021
+NAMESPACE: default
+STATUS: deployed
+REVISION: 2
+TEST SUITE: None
+</code></pre><p>다시 Pod 확인해 보고. Pod 설정에는 변경된 것이 없어 이전에 만들어진 pod가 그대로 동작하고 있다.</p><pre><code>cychong@mini1:~/work/Apps/traefik$ kubectl get pods
+NAME                             READY   STATUS      RESTARTS   AGE
+...
+traefik-6fd6fbd4ff-v96bk         1/1     Running     0          14m
+</code></pre><p>Service는 설정을 변경한 대로 더 이상 <code>Pending</code> 상태가 아니라 <code>None</code>으로.
+가만.
+<code>None</code>이 아니라 host의 IP 주소가 나와야 하는데.
+<code>NodePort</code>를 사용할 때는 그냥 service type만 변경하는 것이 아니라 명시적으로 IP 주소도 지정해야 한다.</p><pre><code>cychong@mini1:~/work/Apps/traefik$ kubectl get svc
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP     PORT(S)                      AGE
+...
+traefik         NodePort    10.98.42.130     &lt;none&gt;          80:32480/TCP,443:32398/TCP   14m
+</code></pre><h2 id=serviceexternalips-설정><code>service.externalIPs</code> 설정</h2><p>아래와 같이 IP 주소를 지정하고, 이전과 같은 방법으로 helm upgrade로 변경사항을 적용한다.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=color:#ff79c6>service</span>:
+   ...
+  <span style=color:#ff79c6>externalIPs</span>: [<span style=color:#bd93f9>192.168.0.100</span>]
+</code></pre></div><pre><code>$ helm upgrade -f value.yaml traefik traefik/traefik
+Release &quot;traefik&quot; has been upgraded. Happy Helming!
+NAME: traefik
+LAST DEPLOYED: Tue Jan 26 19:20:20 2021
+NAMESPACE: default
+STATUS: deployed
+REVISION: 3
+TEST SUITE: None
+</code></pre><p>이젠 Service의 <code>EXTERNAL-IP</code>의 값이 제대로 보여진다.</p><pre><code>$ kubectl get svc 
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP     PORT(S)                      AGE
+...
+traefik         NodePort    10.98.42.130     192.168.0.100   80:32480/TCP,443:32398/TCP   15m
+</code></pre><pre><code>$ kubectl get pods --selector &quot;app.kubernetes.io/name=traefik&quot; --output=name
+pod/traefik-6fd6fbd4ff-v96bk
+</code></pre><h2 id=dashboard-expose-설정-변경>dashboard expose 설정 변경</h2><p>Dashboard를 접근하기 위해 매번 port-forward 명령을 실행하는 것이 번거롭고, value 파일을 이용해서 customize 할 수 있는 상황이 되었으므로, values 파일에 있는 설정을 변경한다.</p><pre><code>ports:
+    # You SHOULD NOT expose the traefik port on production deployments.
+    # If you want to access it from outside of your cluster,
+    # use `kubectl port-forward` or create a secure ingress
+    expose: true  #false
+</code></pre><p>위 코멘트대로 외부 네트워크에서의 접근은 보안상 이유로 권장하지 않긴 한데, 어차피 집 내에서만 접근하도록 설정할 거라 문제는 없을 듯.</p><pre><code>$ helm upgrade -f value.yaml traefik traefik/traefik
+Release &quot;traefik&quot; has been upgraded. Happy Helming!
+NAME: traefik
+LAST DEPLOYED: Tue Jan 26 22:13:04 2021
+NAMESPACE: default
+STATUS: deployed
+REVISION: 4
+TEST SUITE: None
+</code></pre><p>다시 service 를 확인해 보면 이전과 다른 점이 보인다.</p><pre><code>$ kubectl get svc
+NAME            TYPE        CLUSTER-IP       EXTERNAL-IP     PORT(S)                                     AGE
+...
+traefik         NodePort    10.98.42.130     192.168.0.100   9000:31769/TCP,80:32480/TCP,443:32398/TCP   3h8m
+</code></pre><p>이전의 PORT 필드와 비교해 보면 없던 <code>9000</code> 번 포트를 포워딩 하는 내용이 추가되었다.</p><ul><li>변경 전 : <code>80:32480/TCP,443:32398/TCP</code></li><li>변경 후 : <code>9000:31769/TCP,80:32480/TCP,443:32398/TCP</code></li></ul><p>Value 파일에서 <code>9000</code> 포트의 <code>expose</code> 항목을 <code>true</code>로 설정하면 아래와 같이 <code>port-forward</code>를 별도로 실행할 필요는 없다. 이미 <code>9000</code>번 포트를 kube-proxy가 listen하고 있는 상황이라…</p><pre><code>$ kubectl port-forward --address 0.0.0.0 $(kubectl get pods --selector &quot;app.kubernetes.io/name=traefik&quot; --output=name) 9000:9000
+Unable to listen on port 9000: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 0.0.0.0:9000: bind: address already in use]
+error: unable to listen on any of the requested ports: [{9000 9000}]
+</code></pre><h2 id=실행-옵션-변경>실행 옵션 변경</h2><p>Traefik의 실행 옵션을 변경하려면 value 파일에서 다음 항목에 원하는 내용을 추가한다.</p><pre><code>additionalArguments:
+  - &quot;--providers.kubernetesingress.ingressclass=traefik-internal&quot;
+  - &quot;--log.level=DEBUG&quot;
+</code></pre><h2 id=dashboard-is-now-working---mar-30-2021-423-pm>Dashboard is now working - Mar 30, 2021 4:23 PM</h2><p>이전에 동작하지 않은 이유는 어이없게도 URL 마지막에 <code>/</code> 을 넣지 않아서 라는… 헐..</p><p><a href=https://github.com/traefik/traefik-helm-chart/issues/320>Fail to access dashboard · Issue #320 · traefik/traefik-helm-chart · GitHub</a></p><blockquote><p>Hello <a href=https://github.com/Yalafeg>@Yalafeg</a> ,<br>Did you try with a trailing slash / at the end of your URL ? /dashboard/<br>Without this slash, Traefik also gives me 404 page not found<br>If it is still not working, can you provide logs of your Traefik pod ?</p></blockquote><p>역시 해결책은 본진부터 확인을 해 보는 게 가장 빠른 방법인 듯.
+(Traefik helm chart의 GitHub repo에 있는 Issue 목록을 뒤져서 찾아냈다는. 역시 이런 실수는 나만 하는게 아니었어 라고 위안도 얻고)</p><p><img src=/images/2021/03/2021-03-30-traefik-dashboard-1.png alt></p><p><img src=/images/2021/03/2021-03-30-traefik-ping.png alt></p><h3 id=valuesyaml-수정-사항>values.yaml 수정 사항</h3><pre><code>151c151
+&lt;     level: ERROR
+---
+&gt;     level: DEBUG
+225c225
+&lt;     # hostPort: 9000
+---
+&gt;     hostPort: 9000
+243c243
+&lt;     expose: false
+---
+&gt;     expose: true            &lt;&lt; dashboard을 외부에 expose 할 지 말지 판단
+300c300
+&lt;   type: LoadBalancer
+---
+&gt;   type: NodePort            &lt;&lt; NodePort 사용
+307,308c307,308
+&lt;   spec: {}
+&lt;     # externalTrafficPolicy: Cluster
+---
+&gt;   spec:
+&gt;     externalTrafficPolicy: Local
+314c314
+&lt;   externalIPs: []
+---
+&gt;   externalIPs: [192.168.0.100]  &lt;&lt; NodePort 사용을 위해 Host IP 지정 
+</code></pre><h2 id=install-traefik-in-its-own-namespace>install Traefik in its own namespace</h2><pre><code>kubectl create ns traefik-v2
+# Install in the namespace “traefik-v2”
+helm install —namespace=traefik-v2 \
+    traefik traefik/traefik
+</code></pre><h2 id=reference>reference</h2><ul><li><a href=https://github.com/traefik/traefik-helm-chart>GitHub - traefik/traefik-helm-chart: Traefik v2 helm chart</a></li><li><a href=https://traefik.io/blog/install-and-configure-traefik-with-helm/>Install And Configure Traefik with Helm</a></li></ul><hr><ul class=pager><li class=previous><a href=/post/2021/2021-03-13-i-should-have-this-one/ data-toggle=tooltip data-placement=top title="I should have this one">&larr;
+Previous Post</a></li></ul><div id=disqus-comment></div></div><div class="col-lg-11 col-lg-offset-1
+col-md-10 col-md-offset-1
+sidebar-container"><section><hr class="hidden-sm hidden-xs"><h5><a href=/tags/>FEATURED TAGS</a></h5><div class=tags><a href=/tags/agile title=agile>agile</a>
+<a href=/tags/amazon title=amazon>amazon</a>
+<a href=/tags/amdocs title=amdocs>amdocs</a>
+<a href=/tags/ansible title=ansible>ansible</a>
+<a href=/tags/ansible-playbook title=ansible-playbook>ansible-playbook</a>
+<a href=/tags/anti-work-pattern title=anti-work-pattern>anti-work-pattern</a>
+<a href=/tags/apple title=apple>apple</a>
+<a href=/tags/automation title=automation>automation</a>
+<a href=/tags/backup title=backup>backup</a>
+<a href=/tags/book title=book>book</a>
+<a href=/tags/brew title=brew>brew</a>
+<a href=/tags/calico title=calico>calico</a>
+<a href=/tags/cisco title=cisco>cisco</a>
+<a href=/tags/cni title=cni>cni</a>
+<a href=/tags/coding-style title=coding-style>coding-style</a>
+<a href=/tags/container title=container>container</a>
+<a href=/tags/cron title=cron>cron</a>
+<a href=/tags/cronjob title=cronjob>cronjob</a>
+<a href=/tags/cuda title=cuda>cuda</a>
+<a href=/tags/culture title=culture>culture</a>
+<a href=/tags/dev-culture title=dev-culture>dev-culture</a>
+<a href=/tags/devonthink title=devonthink>devonthink</a>
+<a href=/tags/docker title=docker>docker</a>
+<a href=/tags/docker-compose title=docker-compose>docker-compose</a>
+<a href=/tags/dpdk title=dpdk>dpdk</a>
+<a href=/tags/elk title=elk>elk</a>
+<a href=/tags/english title=english>english</a>
+<a href=/tags/getting-started title=getting-started>getting-started</a>
+<a href=/tags/ghost title=ghost>ghost</a>
+<a href=/tags/git title=git>git</a>
+<a href=/tags/github title=github>github</a>
+<a href=/tags/golang title=golang>golang</a>
+<a href=/tags/google title=google>google</a>
+<a href=/tags/gpu title=gpu>gpu</a>
+<a href=/tags/grafana title=grafana>grafana</a>
+<a href=/tags/helm title=helm>helm</a>
+<a href=/tags/homebrew title=homebrew>homebrew</a>
+<a href=/tags/http title=http>http</a>
+<a href=/tags/hugo title=hugo>hugo</a>
+<a href=/tags/influxdb title=influxdb>influxdb</a>
+<a href=/tags/intel title=intel>intel</a>
+<a href=/tags/ipad title=ipad>ipad</a>
+<a href=/tags/iphone title=iphone>iphone</a>
+<a href=/tags/ipsec title=ipsec>ipsec</a>
+<a href=/tags/json title=json>json</a>
+<a href=/tags/kubernetes title=kubernetes>kubernetes</a>
+<a href=/tags/life title=life>life</a>
+<a href=/tags/lifehack title=lifehack>lifehack</a>
+<a href=/tags/mac-mini-2009 title=mac-mini-2009>mac-mini-2009</a>
+<a href=/tags/manager title=manager>manager</a>
+<a href=/tags/monitoring title=monitoring>monitoring</a>
+<a href=/tags/mysql title=mysql>mysql</a>
+<a href=/tags/nfv title=nfv>nfv</a>
+<a href=/tags/nginx title=nginx>nginx</a>
+<a href=/tags/note title=note>note</a>
+<a href=/tags/odp title=odp>odp</a>
+<a href=/tags/onap title=onap>onap</a>
+<a href=/tags/onp title=onp>onp</a>
+<a href=/tags/openstack title=openstack>openstack</a>
+<a href=/tags/opnfv title=opnfv>opnfv</a>
+<a href=/tags/osx title=osx>osx</a>
+<a href=/tags/ovdk title=ovdk>ovdk</a>
+<a href=/tags/ovs title=ovs>ovs</a>
+<a href=/tags/photo title=photo>photo</a>
+<a href=/tags/podcast title=podcast>podcast</a>
+<a href=/tags/programming title=programming>programming</a>
+<a href=/tags/protocol-buffer title=protocol-buffer>protocol-buffer</a>
+<a href=/tags/python title=python>python</a>
+<a href=/tags/scapy title=scapy>scapy</a>
+<a href=/tags/sdn title=sdn>sdn</a>
+<a href=/tags/slack title=slack>slack</a>
+<a href=/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94 title=sw-개발-문화>sw-개발-문화</a>
+<a href=/tags/team title=team>team</a>
+<a href=/tags/telemetry title=telemetry>telemetry</a>
+<a href=/tags/til title=til>til</a>
+<a href=/tags/troubleshooting title=troubleshooting>troubleshooting</a>
+<a href=/tags/ubuntu title=ubuntu>ubuntu</a>
+<a href=/tags/vagrant title=vagrant>vagrant</a>
+<a href=/tags/virtualization title=virtualization>virtualization</a>
+<a href=/tags/vmware title=vmware>vmware</a>
+<a href=/tags/vnf title=vnf>vnf</a>
+<a href=/tags/vran title=vran>vran</a>
+<a href=/tags/wordpress title=wordpress>wordpress</a>
+<a href=/tags/%EA%B3%B5%EB%B6%80 title=공부>공부</a>
+<a href=/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5 title=관리능력>관리능력</a>
+<a href=/tags/%EA%B8%B0%EB%A1%9D title=기록>기록</a>
+<a href=/tags/%EB%A6%AC%EB%8D%94 title=리더>리더</a>
+<a href=/tags/%EB%AC%B8%ED%99%94 title=문화>문화</a>
+<a href=/tags/%EC%83%9D%EC%82%B0%EC%84%B1 title=생산성>생산성</a>
+<a href=/tags/%EC%9E%A1%EC%83%9D%EA%B0%81 title=잡생각>잡생각</a>
+<a href=/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC title=조직관리>조직관리</a>
+<a href=/tags/%ED%9A%8C%EC%9D%98 title=회의>회의</a></div></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href rel=alternate type=application/rss+xml title="Keep calm and write something"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li><li><a href=mailto:cychong@gmail.com><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Keep calm and write something 2021<br><a href=https://themes.gohugo.io/hugo-theme-cleanwhite>CleanWhite Hugo Theme</a> by <a href=https://zhaohuabing.com>Huabing</a> |
+<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=100px height=20px src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true"></iframe></p></div></div></div></footer><script>function async(u,c){var d=document,t='script',o=d.createElement(t),s=d.getElementsByTagName(t)[0];o.src=u;if(c){o.addEventListener('load',function(e){c(null,e);},false);}
+s.parentNode.insertBefore(o,s);}</script><script>if($('#tag_cloud').length!==0){async("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:'#bbbbee',end:'#0085a1'},};$('#tag_cloud a').tagcloud();})}</script><script>async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js",function(){var $nav=document.querySelector("nav");if($nav)FastClick.attach($nav);})</script></body></html>
