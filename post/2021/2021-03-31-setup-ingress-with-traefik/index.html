@@ -8,7 +8,7 @@ Keep calm and write something
 on
 Wednesday, March 31, 2021</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-11 col-lg-offset-1
 col-md-10 col-md-offset-1
-post-container"><header><h2>TOC</h2></header><nav id=TableOfContents><ul><li><ul><li><a href=#ingress>Ingress</a></li><li><a href=#404-not-found>404 Not Found</a></li><li><a href=#pod-logs>Pod logs</a></li><li><a href=#middleware>Middleware</a></li><li><a href=#적용해-보기>적용해 보기</a></li><li><a href=#ingressroute-vs-ingress>IngressRoute vs. Ingress</a></li></ul></li></ul></nav><p>Ingress Controller 를 [설치](<a href=https://cychong47.github.io/post/2021/2021-03-30-install-traefik-with-helm/>Helm으로 Traefik 설치하기-another blog</a>)했으니 이제 Ingress를 설정해서 실제 cluster 외부로부터의 http/https 메시지를 nginx pod에 전달되게 해 본다.</p><h2 id=ingress>Ingress</h2><p>Ingress는 Cluster 외부에서 접근하는 http/https request에 대한 라우팅을 제어하는 기능을 제공한다.
+post-container"><header><h2>TOC</h2></header><nav id=TableOfContents><ul><li><ul><li><a href=#ingress>Ingress</a></li><li><a href=#404-not-found>404 Not Found</a></li><li><a href=#pod-logs>Pod logs</a></li><li><a href=#middleware>Middleware</a></li><li><a href=#적용해-보기>적용해 보기</a></li><li><a href=#ingressroute-vs-ingress>IngressRoute vs. Ingress</a></li><li><a href=#해결>해결</a></li></ul></li></ul></nav><p>Ingress Controller 를 [설치](<a href=https://cychong47.github.io/post/2021/2021-03-30-install-traefik-with-helm/>Helm으로 Traefik 설치하기-another blog</a>)했으니 이제 Ingress를 설정해서 실제 cluster 외부로부터의 http/https 메시지를 nginx pod에 전달되게 해 본다.</p><h2 id=ingress>Ingress</h2><p>Ingress는 Cluster 외부에서 접근하는 http/https request에 대한 라우팅을 제어하는 기능을 제공한다.
 <a href=https://kubernetes.io/docs/concepts/services-networking/ingress/>Ingress | Kubernetes</a></p><p>ingress.yaml 파일을 다음과 같이 작성한다. . 아래는 두 가지 rule을 설정하고 있는데 host가 ‘mini1’이고, URL path가 <code>/ost</code>면 podcast-nginx라는 서비스로 전달하게 하는 것과 host는 상관없이 path가 <code>/ost</code>면 역시 같은 podcast-nginx로 보내는 것이다.</p><pre><code>kind: Ingress
 apiVersion: extensions/v1beta1
 metadata:
@@ -167,29 +167,36 @@ http://192.168.0.100/podcast/cinema-2021-03-30/
 경로에 <code>/ost</code>가 있어야 nginx pod로 전달이 될 텐데 그게 없어서 nginx pod로 전달이 되지 않아서 web browser에 표시가 안된 것이다.</p><pre><code>http://192.168.0.100/ost
 http://192.168.0.100/ost/images/logo.png
 http://192.168.0.100/ost/podcast/cinema-2021-03-30/
-</code></pre><p>아무래도 이건 nginx에서 설정을 변경해야 하는 것 같은데…
-```
-$ wget http://192.168.0.100/ost/index.html
-&ndash;2021-03-30 23:50:44&ndash; http://192.168.0.100/ost/index.html
-Connecting to 192.168.0.100:80&mldr; connected.
-HTTP request sent, awaiting response&mldr; 200 OK
+</code></pre><p>아무래도 이건 nginx에서 설정을 변경해야 하는 것 같은데…</p><pre><code>$ wget http://192.168.0.100/ost/index.html
+--2021-03-30 23:50:44--  http://192.168.0.100/ost/index.html
+Connecting to 192.168.0.100:80... connected.
+HTTP request sent, awaiting response... 200 OK
 Length: 34351 (34K) [text/html]
-Saving to: ‘index.html’</p><p>index.html 100%[================================================================================================>] 33.55K &ndash;.-KB/s in 0s</p><p>2021-03-30 23:50:44 (155 MB/s) - ‘index.html’ saved [34351/34351]</p><p>$ wget http://192.168.0.100:8099/index.html
-&ndash;2021-03-30 23:50:53&ndash; http://192.168.0.100:8099/index.html
-Connecting to 192.168.0.100:8099&mldr; connected.
-HTTP request sent, awaiting response&mldr; 200 OK
+Saving to: ‘index.html’
+
+index.html                                    100%[================================================================================================&gt;]  33.55K  --.-KB/s    in 0s
+
+2021-03-30 23:50:44 (155 MB/s) - ‘index.html’ saved [34351/34351]
+
+$ wget http://192.168.0.100:8099/index.html
+--2021-03-30 23:50:53--  http://192.168.0.100:8099/index.html
+Connecting to 192.168.0.100:8099... connected.
+HTTP request sent, awaiting response... 200 OK
 Length: 34351 (34K) [text/html]
-Saving to: ‘index.html.1’</p><p>index.html.1 100%[================================================================================================>] 33.55K &ndash;.-KB/s in 0s</p><p>2021-03-30 23:50:53 (179 MB/s) - ‘index.html.1’ saved [34351/34351]</p><p>$ diff index.html index.html.1
-$</p><pre><code>
-## 해결
-예상대로 해결책은 nginx 의 설정을 변경하는 간단한 수정으로 충분했다. 
-nginx가 hosting하는 사이트는 SSG(Static Site Generator)인 hugo를 이용해서 생성한 파일들로 구성되는데, 그   site의 root에 `/ost`를 추가하는 것이다. 즉 hugo 설정 파일에서 baseURL에 `/ost`를 추가하는 거
-```yaml
-$ cat config.yaml
+Saving to: ‘index.html.1’
+
+index.html.1                                  100%[================================================================================================&gt;]  33.55K  --.-KB/s    in 0s
+
+2021-03-30 23:50:53 (179 MB/s) - ‘index.html.1’ saved [34351/34351]
+
+$ diff index.html index.html.1
+$ 
+</code></pre><h2 id=해결>해결</h2><p>예상대로 해결책은 nginx 의 설정을 변경하는 간단한 수정으로 충분했다.
+nginx가 hosting하는 사이트는 SSG(Static Site Generator)인 hugo를 이용해서 생성한 파일들로 구성되는데, 그 site의 root에 <code>/ost</code>를 추가하는 것이다. 즉 hugo 설정 파일에서 baseURL에 <code>/ost</code>를 추가하는 거</p><div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>$ cat config.yaml
 ---
 ...
-baseURL: &quot;http://sosa0sa.com/ost/&quot;     &lt;&lt; 이전 값 &quot;http://sosa0sa.com:8099&quot; 
-</code></pre><p>새로 site 파일을 빌드해서 nginx에 밀어넣었더니 다음과 같이 제대로 경로가 바뀌었다.</p><pre><code>http://192.168.0.100/ost
+<span style=color:#ff79c6>baseURL</span>: <span style=color:#f1fa8c>&#34;http://sosa0sa.com/ost/&#34;</span>     &lt;&lt; 이전 값 <span style=color:#f1fa8c>&#34;http://sosa0sa.com:8099&#34;</span> 
+</code></pre></div><p>새로 site 파일을 빌드해서 nginx에 밀어넣었더니 다음과 같이 제대로 경로가 바뀌었다.</p><pre><code>http://192.168.0.100/ost
 http://192.168.0.100/ost/images/logo.png
 http://192.168.0.100/ost/podcast/cinema-2021-03-30/
 </code></pre><p>짜잔. 이젠 잘 동작한다.
