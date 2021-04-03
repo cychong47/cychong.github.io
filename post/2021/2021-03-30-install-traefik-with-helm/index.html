@@ -49,7 +49,7 @@ NAME                             READY   STATUS      RESTARTS   AGE
 ...
 traefik-6fd6fbd4ff-v96bk         1/1     Running     0          21s
 </code></pre><p>Service가 제대로 동작하고 있지 않네.
-<code>EXTERNAL-IP</code>이 <code>pending</code> 상태라는 건 거의 대부분(100%?) Service type을 <code>LoadBalancer</code> 로 되어 있어서 그렇다는.</p><pre><code> kubectl get svc
+<code>EXTERNAL-IP</code>이 <code>pending</code> 상태라는 건 거의 대부분(100%?) Service type을 <code>LoadBalancer</code> 로 되어 있어서 그렇다는.</p><pre><code>$ kubectl get svc
 NAME            TYPE           CLUSTER-IP       EXTERNAL-IP     PORT(S)                      AGE
 ...
 traefik         LoadBalancer   10.98.42.130     &lt;pending&gt;       80:32480/TCP,443:32398/TCP   24s
@@ -66,14 +66,14 @@ NAMESPACE: default
 STATUS: deployed
 REVISION: 2
 TEST SUITE: None
-</code></pre><p>다시 Pod 확인해 보고. Pod 설정에는 변경된 것이 없어 이전에 만들어진 pod가 그대로 동작하고 있다.</p><pre><code>cychong@mini1:~/work/Apps/traefik$ kubectl get pods
+</code></pre><p>다시 Pod 확인해 보고. Pod 설정에는 변경된 것이 없어 이전에 만들어진 pod가 그대로 동작하고 있다.</p><pre><code>$ kubectl get pods
 NAME                             READY   STATUS      RESTARTS   AGE
 ...
 traefik-6fd6fbd4ff-v96bk         1/1     Running     0          14m
 </code></pre><p>Service는 설정을 변경한 대로 더 이상 <code>Pending</code> 상태가 아니라 <code>None</code>으로.
 가만.
 <code>None</code>이 아니라 host의 IP 주소가 나와야 하는데.
-<code>NodePort</code>를 사용할 때는 그냥 service type만 변경하는 것이 아니라 명시적으로 IP 주소도 지정해야 한다.</p><pre><code>cychong@mini1:~/work/Apps/traefik$ kubectl get svc
+<code>NodePort</code>를 사용할 때는 그냥 service type만 변경하는 것이 아니라 명시적으로 IP 주소도 지정해야 한다.</p><pre><code>$ kubectl get svc
 NAME            TYPE        CLUSTER-IP       EXTERNAL-IP     PORT(S)                      AGE
 ...
 traefik         NodePort    10.98.42.130     &lt;none&gt;          80:32480/TCP,443:32398/TCP   14m
