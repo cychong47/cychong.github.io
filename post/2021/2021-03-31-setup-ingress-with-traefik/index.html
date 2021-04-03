@@ -8,7 +8,7 @@ Keep calm and write something
 on
 Wednesday, March 31, 2021</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-11 col-lg-offset-1
 col-md-10 col-md-offset-1
-post-container"><header><h2>TOC</h2></header><nav id=TableOfContents><ul><li><ul><li><a href=#ingress>Ingress</a></li><li><a href=#404-not-found>404 Not Found</a></li><li><a href=#pod-logs>Pod logs</a></li><li><a href=#middleware>Middleware</a></li><li><a href=#적용해-보기>적용해 보기</a></li><li><a href=#ingressroute-vs-ingress>IngressRoute vs. Ingress</a></li><li><a href=#해결>해결</a></li></ul></li></ul></nav><p>Ingress Controller 를 [설치](<a href=https://cychong47.github.io/post/2021/2021-03-30-install-traefik-with-helm/>Helm으로 Traefik 설치하기-another blog</a>)했으니 이제 Ingress를 설정해서 실제 cluster 외부로부터의 http/https 메시지를 nginx pod에 전달되게 해 본다.</p><h2 id=ingress>Ingress</h2><p>Ingress는 Cluster 외부에서 접근하는 http/https request에 대한 라우팅을 제어하는 기능을 제공한다.
+post-container"><header><h2>TOC</h2></header><nav id=TableOfContents><ul><li><a href=#ingress>Ingress</a></li><li><a href=#404-not-found>404 Not Found</a></li><li><a href=#pod-logs>Pod logs</a></li><li><a href=#middleware>Middleware</a></li><li><a href=#적용해-보기>적용해 보기</a></li><li><a href=#ingressroute-vs-ingress>IngressRoute vs. Ingress</a></li><li><a href=#해결>해결</a></li></ul></nav><p>Ingress Controller 를 [설치](<a href=https://cychong47.github.io/post/2021/2021-03-30-install-traefik-with-helm/>Helm으로 Traefik 설치하기-another blog</a>)했으니 이제 Ingress를 설정해서 실제 cluster 외부로부터의 http/https 메시지를 nginx pod에 전달되게 해 본다.</p><h1 id=ingress>Ingress</h1><p>Ingress는 Cluster 외부에서 접근하는 http/https request에 대한 라우팅을 제어하는 기능을 제공한다.
 <a href=https://kubernetes.io/docs/concepts/services-networking/ingress/>Ingress | Kubernetes</a></p><p>ingress.yaml 파일을 다음과 같이 작성한다. . 아래는 두 가지 rule을 설정하고 있는데 host가 ‘mini1’이고, URL path가 <code>/ost</code>면 podcast-nginx라는 서비스로 전달하게 하는 것과 host는 상관없이 path가 <code>/ost</code>면 역시 같은 podcast-nginx로 보내는 것이다.</p><pre><code>kind: Ingress
 apiVersion: extensions/v1beta1
 metadata:
@@ -50,11 +50,11 @@ Rules:
 Annotations:  Events:  &lt;none&gt;
 </code></pre><p>YAML 파일에 기술한 대로 2가지 rule이 설정되었다.
 <code>{mini1, /ost} -> podcast-nginx:8099</code>
-<code>{*,/ost} -> podcast-nginx:8099</code></p><h2 id=404-not-found>404 Not Found</h2><p>이전에는 NodePort에 설정한 IP 주소와 NodePort 조합으로 <code>http://192.168.0.100:8099</code>로 접근했는데 이번에는 <code>http://192.168.0.100/ost</code>로 접근을 시도했다.
+<code>{*,/ost} -> podcast-nginx:8099</code></p><h1 id=404-not-found>404 Not Found</h1><p>이전에는 NodePort에 설정한 IP 주소와 NodePort 조합으로 <code>http://192.168.0.100:8099</code>로 접근했는데 이번에는 <code>http://192.168.0.100/ost</code>로 접근을 시도했다.
 그렇지만 별로 만나고 싶은 않은 404 에러만 덩그러니…</p><pre><code>404 Not Found
 
 nginx/1.19.0
-</code></pre><h2 id=pod-logs>Pod logs</h2><p>그래도 nginx 에러가 나왔다는 건 적어도 Traefik을 거쳐 nginx가 동작하고 있는 pod까지는 request가 왔다는 걸로 보인다. 즉 이건 Ingress 설정이나 Traefik 동작에는 문제가 없다는 거.</p><p>그래서 nginx가 동작하고 있는 Pod의 로그를 보기로 했다. <a href=https://github.com/derailed/k9s>GitHub - derailed/k9s: 🐶 Kubernetes CLI To Manage Your Clusters In Style!</a>를 이용해서 attach 명령을 이용하면 편리하게 로그를 볼 수 있다(심지어? kubeconfig 파일을 이용해서 다른 머신에서 cluster에 원격으로 접속할 수 있다는. <code>k9s --kubeconfig ~/.kube/config_mini1</code></p><pre><code>Unable to use a TTY - container nginx did not allocate one
+</code></pre><h1 id=pod-logs>Pod logs</h1><p>그래도 nginx 에러가 나왔다는 건 적어도 Traefik을 거쳐 nginx가 동작하고 있는 pod까지는 request가 왔다는 걸로 보인다. 즉 이건 Ingress 설정이나 Traefik 동작에는 문제가 없다는 거.</p><p>그래서 nginx가 동작하고 있는 Pod의 로그를 보기로 했다. <a href=https://github.com/derailed/k9s>GitHub - derailed/k9s: 🐶 Kubernetes CLI To Manage Your Clusters In Style!</a>를 이용해서 attach 명령을 이용하면 편리하게 로그를 볼 수 있다(심지어? kubeconfig 파일을 이용해서 다른 머신에서 cluster에 원격으로 접속할 수 있다는. <code>k9s --kubeconfig ~/.kube/config_mini1</code></p><pre><code>Unable to use a TTY - container nginx did not allocate one
 If you don't see a command prompt, try pressing enter.
 10.244.51.100 - - [30/Mar/2021:14:11:54 +0000] &quot;GET /ost HTTP/1.1&quot; 404 153 &quot;-&quot; &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15&quot; &quot;192.168.0.100&quot;
 2021/03/30 14:11:54 [error] 28#28: *793087 open() &quot;/usr/share/nginx/html/ost&quot; failed (2: No such file or directory), client: 10.244.51.100, server: localhost, request: &quot;GET /ost HTTP/1.1&quot;, host: &quot;192.168.0.100&quot;
@@ -101,7 +101,7 @@ spec:
         backend:
           serviceName: service-one
           servicePort: 80
-</code></pre><p>그런데 또 찾아 보니 위의 내용은 Traefik v1에만 해당하는 거라고. v2에서는 <code>PathPrefixStrip</code> 기능이 <code>Middleware</code>의 기능으로 옮겨졌다고 한다.</p><blockquote><p>In the v2, the <a href=https://docs.traefik.io/v1.7/basics/#modifiers>“modifiers”</a> became middleware: <a href=https://docs.traefik.io/v2.0/middlewares/stripprefix/>https://docs.traefik.io/v2.0/middlewares/stripprefix/</a> ><br>Source : <a href=https://github.com/traefik/traefik/issues/5004>https://github.com/traefik/traefik/issues/5004</a></p></blockquote><h2 id=middleware>Middleware</h2><p>`Middleware라니 이건 또 뭔가.
+</code></pre><p>그런데 또 찾아 보니 위의 내용은 Traefik v1에만 해당하는 거라고. v2에서는 <code>PathPrefixStrip</code> 기능이 <code>Middleware</code>의 기능으로 옮겨졌다고 한다.</p><blockquote><p>In the v2, the <a href=https://docs.traefik.io/v1.7/basics/#modifiers>“modifiers”</a> became middleware: <a href=https://docs.traefik.io/v2.0/middlewares/stripprefix/>https://docs.traefik.io/v2.0/middlewares/stripprefix/</a> ><br>Source : <a href=https://github.com/traefik/traefik/issues/5004>https://github.com/traefik/traefik/issues/5004</a></p></blockquote><h1 id=middleware>Middleware</h1><p>`Middleware라니 이건 또 뭔가.
 <img src=/images/2021/03/2021-03-31-traefik-middleware-overview.png alt></p><p><a href=https://doc.traefik.io/traefik/v2.0/middlewares/overview/>Overview - Traefik | Site | v2.0</a></p><blockquote><p>Attached to the routers, pieces of middleware are a mean of tweaking the requests before they are sent to your <a href=https://doc.traefik.io/traefik/v2.0/routing/services/>service</a> (or before the answer from the services are sent to the clients)</p></blockquote><p>Route 동작 중에 수행할 수 있는 여러가지 작업을 정의한 것이 Middleware라고 이해된다. 확장성을 위해 단순히 경로를 차는 Routing과 경로를 조작(?)하는 등의 작업을 분리해서 Middleware라고 부르는 것 같다.</p><p>Middleware를 위한 CRD가 정의되어 있는데, Helm으로 설치하면 이미 middleware가 설치되어 있다</p><pre><code> k get CustomResourceDefinition |grep traefik
 ingressroutes.traefik.containo.us             2021-01-25T13:25:26Z
 ingressroutetcps.traefik.containo.us          2021-01-25T13:25:26Z
@@ -123,7 +123,7 @@ spec:
     prefixes:
       - /foobar
       - /fiibar
-</code></pre><h2 id=적용해-보기>적용해 보기</h2><p>위 예제를 참조해서 다음과 같이 Middleware 를 설정한다.</p><pre><code>$ cat traefik-pathstrip.yaml
+</code></pre><h1 id=적용해-보기>적용해 보기</h1><p>위 예제를 참조해서 다음과 같이 Middleware 를 설정한다.</p><pre><code>$ cat traefik-pathstrip.yaml
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
@@ -134,7 +134,7 @@ spec:
       - /ost
 </code></pre><pre><code>$ kubectl apply -f traefik-pathstrip.yaml
 middleware.traefik.containo.us/stripprefix created
-</code></pre><p>다만, middleware를 route rule에 적용하려면 kubernetes의 기본 object인 <code>ingress</code>가 아니라 <code>ingressRoute</code>를 사용해야 하는 듯 하다. IngressRoute는 또 뭔지.</p><h2 id=ingressroute-vs-ingress>IngressRoute vs. Ingress</h2><p><code>Ingress</code> is a standard kubernetes object while <code>IngressRoute</code> is CRD of Traefik</p><blockquote><p>An ingressRoute is specific to Traefik. It’s not native to Kubernetes. It is a Custom Resource Definition which allows you to take advantage of Traefik features not exposed in the Kubernetes ingress resource</p></blockquote><p>Source : <a href=https://stackoverflow.com/questions/60177488/what-is-the-difference-between-a-kubernetes-ingress-and-a-ingressroute>What is the difference between a Kubernetes Ingress and a IngressRoute? - Stack Overflow</a></p><p>IngressRoute 예제의 내용에서 Routing rule과 Middleware를 내가 필요한 대로 수정한다.</p><pre><code>$ cat ingress-route.yaml
+</code></pre><p>다만, middleware를 route rule에 적용하려면 kubernetes의 기본 object인 <code>ingress</code>가 아니라 <code>ingressRoute</code>를 사용해야 하는 듯 하다. IngressRoute는 또 뭔지.</p><h1 id=ingressroute-vs-ingress>IngressRoute vs. Ingress</h1><p><code>Ingress</code> is a standard kubernetes object while <code>IngressRoute</code> is CRD of Traefik</p><blockquote><p>An ingressRoute is specific to Traefik. It’s not native to Kubernetes. It is a Custom Resource Definition which allows you to take advantage of Traefik features not exposed in the Kubernetes ingress resource</p></blockquote><p>Source : <a href=https://stackoverflow.com/questions/60177488/what-is-the-difference-between-a-kubernetes-ingress-and-a-ingressroute>What is the difference between a Kubernetes Ingress and a IngressRoute? - Stack Overflow</a></p><p>IngressRoute 예제의 내용에서 Routing rule과 Middleware를 내가 필요한 대로 수정한다.</p><pre><code>$ cat ingress-route.yaml
 kind: IngressRoute
 apiVersion: traefik.containo.us/v1alpha1
 metadata:
@@ -191,7 +191,7 @@ index.html.1                                  100%[=============================
 
 $ diff index.html index.html.1
 $ 
-</code></pre><h2 id=해결>해결</h2><p>예상대로 해결책은 nginx 의 설정을 변경하는 간단한 수정으로 충분했다.
+</code></pre><h1 id=해결>해결</h1><p>예상대로 해결책은 nginx 의 설정을 변경하는 간단한 수정으로 충분했다.
 nginx가 hosting하는 사이트는 SSG(Static Site Generator)인 hugo를 이용해서 생성한 파일들로 구성되는데, 그 site의 root에 <code>/ost</code>를 추가하는 것이다. 즉 hugo 설정 파일에서 baseURL에 <code>/ost</code>를 추가하는 거</p><div class=highlight><pre style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>$ cat config.yaml
 ---
 ...
