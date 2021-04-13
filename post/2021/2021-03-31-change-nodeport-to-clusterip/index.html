@@ -26,7 +26,8 @@ podcast-nginx   ClusterIP   10.96.100.155    &lt;none&gt;          80/TCP       
 ...
 </code></pre><p>다만 IngressRoute 규칙은 다시 설정했어야 하는데, ingress rule의 port정보를 기존에 8099에서 80으로 변경한 후에 helm을 이용해서 backend service/deployment를 설치했는데도 제대로 동작하지 않아서 다시 IngressRoute를 적용했더니 그제서야 정상 동작 했다는.</p><p><img src=/images/2021/04/2021-04-03-traefik-with-clusterip.png alt></p><p><img src=/images/2021/04/2021-04-03-traefik-service-endpoint.png alt></p><p>아무튼 이제 Traefik으로 처리하는 서비스는 더 이상 외부에서 port를 이용해서 서비스되지 않도록 했다. 이제 공유기에 설정했던 port forwarding 내용도 하나 줄일 수 있겠네.
 <img src=/images/2021/04/2021-04-03-legacy-port-based-not-working-anymore.png alt></p><hr><ul class=pager><li class=previous><a href=/post/2021/2021-03-31-setup-ingress-with-traefik/ data-toggle=tooltip data-placement=top title="Setup Ingress with Traefik">&larr;
-Previous Post</a></li></ul><div id=disqus-comment></div></div><div class="col-lg-11 col-lg-offset-1
+Previous Post</a></li><li class=next><a href=/post/2021/2021-04-13-install-kubernetes-on-mini3/ data-toggle=tooltip data-placement=top title="Install kubernetes on mini3">Next
+Post &rarr;</a></li></ul><div id=disqus-comment></div></div><div class="col-lg-11 col-lg-offset-1
 col-md-10 col-md-offset-1
 sidebar-container"><section><hr class="hidden-sm hidden-xs"><h5><a href=/tags/>FEATURED TAGS</a></h5><div class=tags><a href=/tags/agile title=agile>agile</a>
 <a href=/tags/amazon title=amazon>amazon</a>
