@@ -1,110 +1,328 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.74.2"><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Keep calm and write something"><meta property="og:type" content="article"><meta property="og:image" content="https://cychong47.github.io/images/another_blog_bg.jpg"><meta property="twitter:image" content="https://cychong47.github.io/images/another_blog_bg.jpg"><meta name=title content><meta property="og:title" content><meta property="twitter:title" content><meta name=description content><meta property="og:description" content><meta property="twitter:description" content><meta property="twitter:card" content="summary"><meta name=keyword content="Blog, cychong, Kubernetes, dpdk"><link rel="shortcut icon" href=/img/favicon.ico><title>Keep calm and write something-another blog</title><link rel=canonical href=/><link rel=stylesheet href=/css/iDisqus.min.css><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/hux-blog.min.css><link rel=stylesheet href=/css/zanshang.css><link href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css rel=stylesheet type=text/css><link rel=stylesheet href=https://cychong47.github.io/css/custom-cleanwhite.css><script src=/js/jquery.min.js></script><script src=/js/bootstrap.min.js></script><script src=/js/hux-blog.min.js></script></head><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
-<span class=sr-only>Toggle navigation</span>
-<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
-<a class=navbar-brand href=/>Keep calm and write something</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>Home</a></li><li><a href=/categories/book>book</a></li><li><a href=/categories/gadget>gadget</a></li><li><a href=/categories/homelab>homelab</a></li><li><a href=/categories/hugo>hugo</a></li><li><a href=/categories/life>life</a></li><li><a href=/categories/note>note</a></li><li><a href=/categories/til>til</a></li><li><a href=/search>SEARCH <img src=/img/search.png height=15 style=cursor:pointer alt=Search></a></li></ul></div></div></div></nav><script>var $body=document.body;var $toggle=document.querySelector('.navbar-toggle');var $navbar=document.querySelector('#huxblog_navbar');var $collapse=document.querySelector('.navbar-collapse');$toggle.addEventListener('click',handleMagic)
-function handleMagic(e){if($navbar.className.indexOf('in')>0){$navbar.className=" ";setTimeout(function(){if($navbar.className.indexOf('in')<0){$collapse.style.height="0px"}},400)}else{$collapse.style.height="auto"
-$navbar.className+=" in";}}</script><header class=intro-header style=background-image:url(/images/another_blog_bg.jpg)><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=site-heading><h1>Keep calm and write something</h1><span class=subheading></span></div></div></div></div></header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-1
-col-md-8 col-md-offset-1
-col-sm-12
-col-xs-12
-post-container"><div class=post-preview><a href=https://cychong47.github.io/post/2015/nhn_sw_quality_control/><h2 class=post-title>(책) NHN은 이렇게 한다. 소프트웨어 품질 관리</h2><div class=post-content-preview>누군가의 말을 빌리자면 품질 관리의 바이블(?)이라고 하는. 내용면에서는 특별한 건 없지만, 그래도 국내에서는 SW를 잘한다고 하는 사람들이 많이 가는 회사이고</div></a><p class=post-meta>Posted by Chaeyong Chong Monday, December 7, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/what_happens_if_performance_rating_is_omitted/><h2 class=post-title>역량 평가를 없앤 회사에서 일어난 일</h2><div class=post-content-preview>출처 : Harvard Businee Review 최소 52개 대형 회사가 기존 년 단위의 고과 평과 제도를 없앰. 이 중 33개 업체를 집중 분석하여 해당 업체에서 일어난 변화를 정리 manager-em</div></a><p class=post-meta>Posted by Chaeyong Chong Saturday, December 5, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/openstacki-pythoneuro-mandeuleojyeossdani/><h2 class=post-title>OpenStack이 Python으로 만들어졌다니</h2><div class=post-content-preview>Neuron Python project 체계를 잡는데 도움이 될 듯 하다. 아래는 pylink를 이용해서 syntax 검사하는 script https://github.com/openstack/neutron/blob/master/tools/coding-checks.sh</div></a><p class=post-meta>Posted by Chaeyong Chong Wednesday, November 25, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/cisco-cloud-services-router-1000v/><h2 class=post-title>Cisco Cloud Services Router 1000V</h2><div class=post-content-preview>http://www.cisco.com/c/en/us/products/collateral/routers/cloud-services-router-1000v-series/datasheet-c78-733443.html
-How many vCPUs are required for processing.</div></a><p class=post-meta>Posted by Chaeyong Chong Monday, November 23, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/cisco-cloud-service-platform-2100/><h2 class=post-title>CISCO Cloud Service Platform 2100</h2><div class=post-content-preview>Data sheet (PDF)
-Some Cisco virtual network services that use the DPDK include Cisco Cloud Services Router (CSR) 1000V, Cisco Virtual Mobile Packet Core software, and Cisco IOS® XR 9000v virtual router. Supporte CISCO appliances Cisco Cloud Services Router (CSR) 1000V virtual router Cisco Virtual Adaptive Security Appliance (ASAv) Cisco Prime™ Data Center Network Manager (DCNM) Cisco Virtual Network Analysis Module (vNAM) Cisco Virtual Security Gateway (VSG) for Cisco Nexus® 1000V Switch deployments Cisco Virtual Supervisor Module (VSM) for Cisco Nexus 1000V Switch deployments 1U 2 CPU, each has 8 core Ivy Bridge(E5-2630 v3) REST API It uses REST API and NETCONF protocol for north-bound management and orchestration (MANO) tools.</div></a><p class=post-meta>Posted by Chaeyong Chong Monday, November 23, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/what_is_the_target_product/><h2 class=post-title>제대로 만들려면 제품의 성격부터 정의해야</h2><div class=post-content-preview>철학의 부재. 중심의 부재. 대화의 부재 제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다.</div></a><p class=post-meta>Posted by Chaeyong Chong Sunday, November 22, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/why_blame_personals/><h2 class=post-title>개인의 잘못으로만 돌리는 이유</h2><div class=post-content-preview>잘못된(?) 진단은 잘못된 처방을 낳는다. 모든 걸 개인의 잘못으로 돌리려는 의도는 의외로 단순. 잘못을 저지른 개인은 개선시키면 된다는 단순한 해법을 제시할 수 있</div></a><p class=post-meta>Posted by Chaeyong Chong Thursday, November 19, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/what_for_the_developer/><h2 class=post-title>개발자를 위해 한 일이 뭐가 있지?</h2><div class=post-content-preview>관리자들이 개발자들을 위해 한 일이 뭐가 있나? 아무리 생각해도 잘 모르겠다. 그럼 개발자를 위한 사람이나 제도는 없다는 건데 그러면서 개발자가 잘 하기 기대하는 건 도</div></a><p class=post-meta>Posted by Chaeyong Chong Wednesday, November 18, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/gyujereul-pulgi-eoryeoun-iyuneun/><h2 class=post-title>규제를 풀기 어려운 이유는</h2><div class=post-content-preview>규제를 풀기 어려운 이유는 그 규제를 풀어도 문제가 없는 지 자신이 없기 때문이다. 증명하기 어려운 경우가 대부분. 하지만 머리를 맞대고 함께 이야기해봐야 한다. 정말</div></a><p class=post-meta>Posted by Chaeyong Chong Wednesday, November 18, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><div class=post-preview><a href=https://cychong47.github.io/post/2015/dpdk-ip-reassembly-example/><h2 class=post-title>DPDK IP reassembly example</h2><div class=post-content-preview>TAILQ_HEAD(ip_pkt_list, ip_frag_pkt); /**&lt; @internal fragments tailq */ 자료 구조체 Fragment 관리용 table struct rte_ip_frag_tbl *frag_tbl; locking 없이 IP reassembly를 수행할 단위(통상 core)로 한 개씩 만든다. 즉 하나의 core가 여러 rx qu</div></a><p class=post-meta>Posted by Chaeyong Chong Tuesday, November 17, 2015<br>Last Modified on Sunday, April 1, 2018</p></div><hr><ul class=pager><li class=previous><a href=/page/24/>&larr; Newer Posts</a></li><li class=next><a href=/page/26/>Older Posts &rarr;</a></li></ul></div><div class="col-lg-3 col-lg-offset-0
-col-md-3 col-md-offset-0
-col-sm-12
-col-xs-12
-sidebar-container"><section><hr class="hidden-sm hidden-xs"><h5>FEATURED TAGS</h5><div class=tags><a href=/tags/agile title=agile>agile</a>
-<a href=/tags/amazon title=amazon>amazon</a>
-<a href=/tags/amdocs title=amdocs>amdocs</a>
-<a href=/tags/ansible title=ansible>ansible</a>
-<a href=/tags/ansible-playbook title=ansible-playbook>ansible-playbook</a>
-<a href=/tags/anti-work-pattern title=anti-work-pattern>anti-work-pattern</a>
-<a href=/tags/apple title=apple>apple</a>
-<a href=/tags/automation title=automation>automation</a>
-<a href=/tags/backup title=backup>backup</a>
-<a href=/tags/book title=book>book</a>
-<a href=/tags/brew title=brew>brew</a>
-<a href=/tags/calico title=calico>calico</a>
-<a href=/tags/cisco title=cisco>cisco</a>
-<a href=/tags/cni title=cni>cni</a>
-<a href=/tags/coding-style title=coding-style>coding-style</a>
-<a href=/tags/container title=container>container</a>
-<a href=/tags/cron title=cron>cron</a>
-<a href=/tags/cronjob title=cronjob>cronjob</a>
-<a href=/tags/cuda title=cuda>cuda</a>
-<a href=/tags/culture title=culture>culture</a>
-<a href=/tags/dev-culture title=dev-culture>dev-culture</a>
-<a href=/tags/devonthink title=devonthink>devonthink</a>
-<a href=/tags/docker title=docker>docker</a>
-<a href=/tags/docker-compose title=docker-compose>docker-compose</a>
-<a href=/tags/dpdk title=dpdk>dpdk</a>
-<a href=/tags/elk title=elk>elk</a>
-<a href=/tags/english title=english>english</a>
-<a href=/tags/getting-started title=getting-started>getting-started</a>
-<a href=/tags/ghost title=ghost>ghost</a>
-<a href=/tags/git title=git>git</a>
-<a href=/tags/github title=github>github</a>
-<a href=/tags/golang title=golang>golang</a>
-<a href=/tags/google title=google>google</a>
-<a href=/tags/gpu title=gpu>gpu</a>
-<a href=/tags/grafana title=grafana>grafana</a>
-<a href=/tags/helm title=helm>helm</a>
-<a href=/tags/homebrew title=homebrew>homebrew</a>
-<a href=/tags/http title=http>http</a>
-<a href=/tags/hugo title=hugo>hugo</a>
-<a href=/tags/influxdb title=influxdb>influxdb</a>
-<a href=/tags/intel title=intel>intel</a>
-<a href=/tags/ipad title=ipad>ipad</a>
-<a href=/tags/iphone title=iphone>iphone</a>
-<a href=/tags/ipsec title=ipsec>ipsec</a>
-<a href=/tags/json title=json>json</a>
-<a href=/tags/kubernetes title=kubernetes>kubernetes</a>
-<a href=/tags/life title=life>life</a>
-<a href=/tags/lifehack title=lifehack>lifehack</a>
-<a href=/tags/mac-mini-2009 title=mac-mini-2009>mac-mini-2009</a>
-<a href=/tags/manager title=manager>manager</a>
-<a href=/tags/monitoring title=monitoring>monitoring</a>
-<a href=/tags/mysql title=mysql>mysql</a>
-<a href=/tags/nfv title=nfv>nfv</a>
-<a href=/tags/nginx title=nginx>nginx</a>
-<a href=/tags/note title=note>note</a>
-<a href=/tags/odp title=odp>odp</a>
-<a href=/tags/onap title=onap>onap</a>
-<a href=/tags/onp title=onp>onp</a>
-<a href=/tags/openstack title=openstack>openstack</a>
-<a href=/tags/opnfv title=opnfv>opnfv</a>
-<a href=/tags/osx title=osx>osx</a>
-<a href=/tags/ovdk title=ovdk>ovdk</a>
-<a href=/tags/ovs title=ovs>ovs</a>
-<a href=/tags/photo title=photo>photo</a>
-<a href=/tags/podcast title=podcast>podcast</a>
-<a href=/tags/programming title=programming>programming</a>
-<a href=/tags/protocol-buffer title=protocol-buffer>protocol-buffer</a>
-<a href=/tags/python title=python>python</a>
-<a href=/tags/scapy title=scapy>scapy</a>
-<a href=/tags/sdn title=sdn>sdn</a>
-<a href=/tags/slack title=slack>slack</a>
-<a href=/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94 title=sw-개발-문화>sw-개발-문화</a>
-<a href=/tags/team title=team>team</a>
-<a href=/tags/telemetry title=telemetry>telemetry</a>
-<a href=/tags/til title=til>til</a>
-<a href=/tags/traefik title=traefik>traefik</a>
-<a href=/tags/troubleshooting title=troubleshooting>troubleshooting</a>
-<a href=/tags/ubuntu title=ubuntu>ubuntu</a>
-<a href=/tags/vagrant title=vagrant>vagrant</a>
-<a href=/tags/virtualization title=virtualization>virtualization</a>
-<a href=/tags/vmware title=vmware>vmware</a>
-<a href=/tags/vnf title=vnf>vnf</a>
-<a href=/tags/vran title=vran>vran</a>
-<a href=/tags/wordpress title=wordpress>wordpress</a>
-<a href=/tags/%EA%B3%B5%EB%B6%80 title=공부>공부</a>
-<a href=/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5 title=관리능력>관리능력</a>
-<a href=/tags/%EA%B8%B0%EB%A1%9D title=기록>기록</a>
-<a href=/tags/%EB%A6%AC%EB%8D%94 title=리더>리더</a>
-<a href=/tags/%EB%AC%B8%ED%99%94 title=문화>문화</a>
-<a href=/tags/%EC%83%9D%EC%82%B0%EC%84%B1 title=생산성>생산성</a>
-<a href=/tags/%EC%9E%A1%EC%83%9D%EA%B0%81 title=잡생각>잡생각</a>
-<a href=/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC title=조직관리>조직관리</a>
-<a href=/tags/%ED%9A%8C%EC%9D%98 title=회의>회의</a></div></section><section><hr><h5>BOOKMARKS</h5><ul class=list-inline><li><a target=_blank href=https://martinfowler.com>Martin Fowler</a></li></ul></section></div></div></div><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=/index.xml rel=alternate type=application/rss+xml title="Keep calm and write something"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li><li><a href=mailto:cychong@gmail.com><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Keep calm and write something 2021<br><a href=https://themes.gohugo.io/hugo-theme-cleanwhite>CleanWhite Hugo Theme</a> by <a href=https://zhaohuabing.com>Huabing</a> |
-<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=100px height=20px src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true"></iframe></p></div></div></div></footer><script>function async(u,c){var d=document,t='script',o=d.createElement(t),s=d.getElementsByTagName(t)[0];o.src=u;if(c){o.addEventListener('load',function(e){c(null,e);},false);}
-s.parentNode.insertBefore(o,s);}</script><script>if($('#tag_cloud').length!==0){async("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:'#bbbbee',end:'#0085a1'},};$('#tag_cloud a').tagcloud();})}</script><script>async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js",function(){var $nav=document.querySelector("nav");if($nav)FastClick.attach($nav);})</script></body></html>
+<!doctype html><html class=no-js lang=en><head><meta name=generator content="Hugo 0.74.2"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content="TBD"><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=alternate type=application/rss+xml href=/index.xml title="Keep calm and write something"><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another site</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class="main list" role=main><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/nhn_sw_quality_control/ rel=bookmark>(책) NHN은 이렇게 한다. 소프트웨어 품질 관리</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-12-07T13:40:56+09:00>December 07, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/book/ rel=category>Book</a></span></div></div></header><div class="content list__excerpt post__content clearfix">누군가의 말을 빌리자면 품질 관리의 바이블(?)이라고 하는.
+내용면에서는 특별한 건 없지만, 그래도 국내에서는 SW를 잘한다고 하는 사람들이 많이 가는 회사이고, 누구못지 않게 SW 문화가 좋을 거라고 생각하는 회사라 어떤 고민을 하고 어떻게 SW 품질을 위해 노력하는 지 알 수 있게 해주는 유일한 책이다.
+외국의 많은 회사처럼 사내에 노하우 등을 많이 공유하는 좋은 모습을 보이고 있고, 실제 제공되는 서비스의 독점성이나 중립적이지 못한 언론 관련 내용은 맘에 들지 않지만 그래도 개발자 입장에서는 이렇게 현실적인 내용을 공유해주는게 감사할 따름</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/what_happens_if_performance_rating_is_omitted/ rel=bookmark>역량 평가를 없앤 회사에서 일어난 일</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-12-05T13:14:53+09:00>December 05, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">출처 : Harvard Businee Review
+최소 52개 대형 회사가 기존 년 단위의 고과 평과 제도를 없앰. 이 중 33개 업체를 집중 분석하여 해당 업체에서 일어난 변화를 정리
+manager-employee간 대화가 극적으로 증가. 33개 미국 기반의 업체 중 76%는 기존에 1년 단위의 역량 대화를 나눴으나, 이젠 68%가 최소 분기별 대화를 권장하고 있다고 함.
+관리 부담이 크게 줄어듬 33개 업체의 2/3에서 역량 평가를 위한 관리자의 문서 작성 요구가 공식적으로 줄어듬.</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/openstacki-pythoneuro-mandeuleojyeossdani/ rel=bookmark>OpenStack이 Python으로 만들어졌다니</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-25T11:36:43+09:00>November 25, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">Neuron
+Python project 체계를 잡는데 도움이 될 듯 하다. 아래는 pylink를 이용해서 syntax 검사하는 script
+https://github.com/openstack/neutron/blob/master/tools/coding-checks.sh</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/cisco-cloud-services-router-1000v/ rel=bookmark>Cisco Cloud Services Router 1000V</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-23T14:50:31+09:00>November 23, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">http://www.cisco.com/c/en/us/products/collateral/routers/cloud-services-router-1000v-series/datasheet-c78-733443.html
+How many vCPUs are required for processing.</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/cisco-cloud-service-platform-2100/ rel=bookmark>CISCO Cloud Service Platform 2100</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-23T14:24:35+09:00>November 23, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">Data sheet (PDF)
+Some Cisco virtual network services that use the DPDK include Cisco Cloud Services Router (CSR) 1000V, Cisco Virtual Mobile Packet Core software, and Cisco IOS® XR 9000v virtual router. Supporte CISCO appliances Cisco Cloud Services Router (CSR) 1000V virtual router Cisco Virtual Adaptive Security Appliance (ASAv) Cisco Prime™ Data Center Network Manager (DCNM) Cisco Virtual Network Analysis Module (vNAM) Cisco Virtual Security Gateway (VSG) for Cisco Nexus® 1000V Switch deployments Cisco Virtual Supervisor Module (VSM) for Cisco Nexus 1000V Switch deployments 1U 2 CPU, each has 8 core Ivy Bridge(E5-2630 v3) REST API It uses REST API and NETCONF protocol for north-bound management and orchestration (MANO) tools.</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/what_is_the_target_product/ rel=bookmark>제대로 만들려면 제품의 성격부터 정의해야</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-22T14:35:23+09:00>November 22, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">철학의 부재. 중심의 부재. 대화의 부재
+제품을 만드는데 철학이 없다는 건 정말 큰 문제다. 누군가 대충 스케치만 그린 그림을 가지고 차를 만든다고 생각하면 끔찍하다. 각 부분 부분별로 , 기능 별로 어떻게 만들 것인지 고민없이 그냥 각 부서별로 자기가 맡은 걸 만든다면 그 차가 굴러가기만 해도 기적이지만, 제대로 굴러가는 커녕 일정 내 만들어질 리가 없다.
+처음부터 끝까지 혹은 적어도 그걸 만드는 사람들이 충분히 제품의 철학(성격 등)을 공감할 때까지 끊임없이 대화해서 그나마 비슷한 생각을 가진 후에야 각 기능별 부분별 설계가 이뤄져야 한다.</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/why_blame_personals/ rel=bookmark>개인의 잘못으로만 돌리는 이유</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-19T22:22:07+09:00>November 19, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">잘못된(?) 진단은 잘못된 처방을 낳는다.
+모든 걸 개인의 잘못으로 돌리려는 의도는 의외로 단순. 잘못을 저지른 개인은 개선시키면 된다는 단순한 해법을 제시할 수 있으므로. 개인을 구박하거나 심지어는 그 조직에서 제외시키면 문제가 해결(?)되는 것처럼 보이니까.
+하지만 그 뒤에 숨어있는 실은 개인의 잘못으로 돌려진 관리의 문제, 시스템의 문제는 아무도 건드리지 않는다. 문제의 원인이 너무 커서, 문제의 원인이 너무 근본적이라, 문제의 원인이 권력자에게 있는 터라. 그렇게 문제는 반복된다. 비난의 대상이 되는 &lsquo;개인&rsquo;만 바뀔 뿐. 병든 조직은 서서히 그렇게 스러진다&mldr;</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/what_for_the_developer/ rel=bookmark>개발자를 위해 한 일이 뭐가 있지?</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-18T14:43:51+09:00>November 18, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">관리자들이 개발자들을 위해 한 일이 뭐가 있나?
+아무리 생각해도 잘 모르겠다.
+그럼 개발자를 위한 사람이나 제도는 없다는 건데
+그러면서 개발자가 잘 하기 기대하는 건 도둑놈 심보가 아닌가?
+자꾸만 벗어나길 원하는 &lsquo;개발&rsquo;업무를 만든 게 누구인지? 왜 그렇게 된 건지?
+이런 근본적인 질문에 대한 고민과 해결 없이 SW품질을 논한다는 건 어불성설이다.</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/gyujereul-pulgi-eoryeoun-iyuneun/ rel=bookmark>규제를 풀기 어려운 이유는</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-18T14:41:55+09:00>November 18, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">규제를 풀기 어려운 이유는 그 규제를 풀어도 문제가 없는 지 자신이 없기 때문이다. 증명하기 어려운 경우가 대부분. 하지만 머리를 맞대고 함께 이야기해봐야 한다. 정말 필요한 절차인지 고민해야 한다. 가능하면 절차는 줄이고 또 줄여야 한다고 생각.
+이런 고민조차 어려운 이유는 대부분 한 쪽이 들으려 하지 않기 때문. 기존에 하던 (불필요해보이는) 절차를 없애는 경우 발생할 수 있는 위험요소를 감수할 의지가 없으므로. 혹시 이렇게 생각하고 있는 건 아닌지
+그런 번거로운 절차는 내가 하는 게 아니라 니들이 하는 거니까</div></article><article class="list__item post"><header class=list__header><h3 class="list__title post__title"><a href=/post/2015/dpdk-ip-reassembly-example/ rel=bookmark>DPDK IP reassembly example</a></h3><div class="list__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-11-17T13:49:57+09:00>November 17, 2015</time>
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="content list__excerpt post__content clearfix">TAILQ_HEAD(ip_pkt_list, ip_frag_pkt); /**&lt; @internal fragments tailq */ 자료 구조체 Fragment 관리용 table struct rte_ip_frag_tbl *frag_tbl; locking 없이 IP reassembly를 수행할 단위(통상 core)로 한 개씩 만든다. 즉 하나의 core가 여러 rx queue를 처리하더라도 하나의 frag_tbl만 가지면 된다.
+아래 rte_ip_frag_table_create()함수를 이용해서 생성한다.
+struct rte_ip_frag_death_row death_row core별로 갖는 death_row. IP reassembly를 호출한 후 해당 함수내에서 free할 mbuf를 이 리스트에 담아줌.
+main loop에서 reassembly작업 후 rte_ip_frag_free_death_row()함수를 호출해 reassembly에 실패한 mbuf를 free함
+IP_MAX_FRAG_NUM defines the maximum fragments of one reassembly.</div></article></main><div class=pagination><a class="pagination__item pagination__item--prev btn" href=/page/24/>«</a>
+<span class="pagination__item pagination__item--current">25/32</span>
+<a class="pagination__item pagination__item--next btn" href=/page/26/>»</a></div></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>homelab</a></li><li class=widget__item><a class=widget__link href=/categories/hugo/>Hugo</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/homelab/>homelab</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-handson/>kubernetes-handson</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-grafana/>setup-grafana</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>“setup-hugo-blog”</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-podcast/>setup-hugo-podcast</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster-without-docker/>setup-k8s-cluster-without-docker</a></li><li class=widget__item><a class=widget__link href=/series/til/>TIL</a></li><li class=widget__item><a class=widget__link href=/series/traefik/>Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/algorithm/ title=Algorithm>Algorithm (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/amazon/ title=amazon>amazon (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/amdocs/ title=amdocs>amdocs (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/amsterdam-release/ title="Amsterdam release">Amsterdam release (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/andromeda/ title=andromeda>andromeda (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ansible/ title=ansible>ansible (7)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ansible-playbook/ title=ansible-playbook>ansible-playbook (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anti-work-pattern/ title="anti-work pattern">anti-work pattern (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apple/ title=Apple>Apple (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apple-silicon/ title="Apple Silicon">Apple Silicon (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apple-watch/ title=apple-watch>apple-watch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/arm/ title=arm>arm (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/att/ title=ATT>ATT (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/automation/ title=automation>automation (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/b4/ title=b4>b4 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backup/ title=backup>backup (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/barometer/ title=barometer>barometer (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/blog/ title=blog>blog (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/book/ title=Book>Book (49)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/brew/ title=brew>brew (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/brocade/ title=Brocade>Brocade (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/c/ title=C>C (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/calico/ title=calico>calico (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/car/ title=car>car (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cavium/ title=Cavium>Cavium (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/chair/ title=Chair>Chair (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cisco/ title=cisco>cisco (7)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/click/ title=click>click (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cncf/ title=cncf>cncf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cni/ title=cni>cni (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cockpit/ title=cockpit>cockpit (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/coding-style/ title="Coding Style">Coding Style (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/collaboration/ title=collaboration>collaboration (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/collectd/ title=collectd>collectd (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/configmap/ title=configmap>configmap (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/connectx-5/ title=connectX-5>connectX-5 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/container/ title=container>container (10)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/containerd/ title=“containerd”>“containerd” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/continuous-deployment/ title="continuous deployment">continuous deployment (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cpu/ title=cpu>cpu (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cran/ title=cran>cran (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cron/ title=cron>cron (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/crond/ title=crond>crond (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cronjob/ title=cronjob>cronjob (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cubb/ title=cubb>cubb (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cuda/ title=CUDA>CUDA (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/culture/ title=culture>culture (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cuphy/ title=cuphy>cuphy (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cuvnf/ title=cuvnf>cuvnf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/database/ title=database>database (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dev-culture/ title="dev culture">dev culture (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/devnothink/ title=devnothink>devnothink (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/devonthink/ title=Devonthink>Devonthink (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/docker/ title=docker>docker (15)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/docker-compose/ title=docker-compose>docker-compose (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dpdk/ title=DPDK>DPDK (22)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dpi/ title=dpi>dpi (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dpkt/ title=dpkt>dpkt (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/edge/ title=edge>edge (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/elasticsearch/ title=elasticsearch>elasticsearch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/elk/ title=elk>elk (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/english/ title=english>english (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/espresso/ title=espresso>espresso (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/fapi/ title=fapi>fapi (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/feature-flag-driven-development/ title="feature flag driven development">feature flag driven development (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/feedback/ title=feedback>feedback (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ffmpeg/ title=ffmpeg>ffmpeg (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finder/ title=finder>finder (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/flask/ title=Flask>Flask (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/fragment/ title=fragment>fragment (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ftp/ title=ftp>ftp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/getting-started/ title="Getting Started">Getting Started (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ghost/ title=ghost>ghost (11)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ghost-theme/ title=ghost-theme>ghost-theme (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/git/ title=git>git (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/github/ title=github>github (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/github-action/ title="“GitHub Action”">“GitHub Action” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/go/ title=go>go (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/golang/ title=golang>golang (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/google/ title=google>google (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/google-cloud-platform/ title=google-cloud-platform>google-cloud-platform (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gpb/ title=gpb>gpb (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gpu/ title=gpu>gpu (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/grafana/ title=grafana>grafana (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/graviton/ title=graviton>graviton (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/grpc/ title=grpc>grpc (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/happy-hacking/ title=happy-hacking>happy-hacking (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hbr/ title=HBR>HBR (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/helm/ title=helm>helm (8)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/homebrew/ title=homebrew>homebrew (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/homepod/ title=HomePod>HomePod (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/http/ title=http>http (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hugo/ title=hugo>hugo (14)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/influxdb/ title=influxdb>influxdb (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/inspiration/ title=inspiration>inspiration (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/intel/ title=Intel>Intel (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ios-shortcut/ title=“iOS-shortcut”>“iOS-shortcut” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ios14/ title=iOS14>iOS14 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ipad/ title=iPad>iPad (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphone/ title=iPhone>iPhone (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphone6/ title=iPhone6>iPhone6 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphonex/ title=iPhoneX>iPhoneX (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ipsec/ title=IPsec>IPsec (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ipv4/ title=ipv4>ipv4 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/istio/ title=istio>istio (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jetpack/ title=jetpack>jetpack (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/job/ title=job>job (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/json/ title=json>json (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jtbc/ title=jtbc>jtbc (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jupiter/ title=jupiter>jupiter (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/k3s/ title=k3s>k3s (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kafka/ title=kafka>kafka (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kldp/ title=KLDP>KLDP (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kni/ title=kni>kni (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kubelet/ title=kubelet>kubelet (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kubernetes/ title=kubernetes>kubernetes (22)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/launchd/ title=launchd>launchd (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/lb/ title=lb>lb (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/life/ title=life>life (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/lifehack/ title=lifehack>lifehack (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/linux/ title=linux>linux (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/load-balancer/ title="load balancer">load balancer (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/lte/ title=lte>lte (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/m1/ title=m1>m1 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mac/ title=mac>mac (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mac-mini-2009/ title="Mac mini 2009">Mac mini 2009 (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/maglev/ title=maglev>maglev (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/manager/ title=manager>manager (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markdown/ title=markdown>markdown (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mbuf/ title=mbuf>mbuf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mec/ title=mec>mec (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mediawiki/ title=mediawiki>mediawiki (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/meetup/ title=meetup>meetup (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/message-queue/ title="message queue">message queue (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/metricbeat/ title=metricbeat>metricbeat (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/microk8s/ title=microk8s>microk8s (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/microservice/ title=microservice>microservice (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mindmap/ title=mindmap>mindmap (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/model-driven/ title=model-driven>model-driven (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/monitoring/ title=monitoring>monitoring (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multipass/ title=multipass>multipass (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mysql/ title=mysql>mysql (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naim/ title=Naim>Naim (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nas/ title=nas>nas (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nasa/ title=nasa>nasa (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nec/ title=NEC>NEC (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nested-chart/ title=nested-chart>nested-chart (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/netconf/ title=netconf>netconf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/network/ title=network>network (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neuron/ title=neuron>neuron (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nfv/ title=nfv>nfv (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nginmesh/ title=nginmesh>nginmesh (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nginx/ title=nginx>nginx (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nhn/ title=NHN>NHN (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nic/ title=NIC>NIC (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nokia/ title=Nokia>Nokia (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/note/ title=note>note (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nvidia/ title=nvidia>nvidia (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/odp/ title=odp>odp (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ofp/ title=OFP>OFP (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/onap/ title=onap>onap (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/onp/ title=ONP>ONP (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/openfastpath/ title=OpenFastPath>OpenFastPath (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/opensource/ title=opensource>opensource (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/openstack/ title=openstack>openstack (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/opnfv/ title=opnfv>opnfv (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/osx/ title=osx>osx (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ovdk/ title=OVDK>OVDK (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ovs/ title=OVS>OVS (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/p4/ title=p4>p4 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/patch/ title=patch>patch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perl/ title=perl>perl (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/photo/ title=photo>photo (20)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/photoaa/ title=photoaa>photoaa (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pinpoint/ title=pinpoint>pinpoint (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/plist/ title=plist>plist (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pluribus/ title=Pluribus>Pluribus (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/podcast/ title=podcast>podcast (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/powermate/ title=powermate>powermate (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/prediction/ title=prediction>prediction (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/programming/ title=programming>programming (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/prometheus/ title=prometheus>prometheus (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/protobufs/ title=protobufs>protobufs (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/protocol-buffer/ title="protocol buffer">protocol buffer (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pyftplib/ title=pyftplib>pyftplib (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/python/ title=Python>Python (12)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/qat/ title=QAT>QAT (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/quality/ title=Quality>Quality (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/quanta/ title=Quanta>Quanta (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/quicklook/ title=quicklook>quicklook (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/r210/ title=R210>R210 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/readiness/ title=readiness>readiness (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reassembly/ title=reassembly>reassembly (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recovery/ title=recovery>recovery (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/resources/ title=resources>resources (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/restful/ title=RESTful>RESTful (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rmda/ title=RMDA>RMDA (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/scapy/ title=scapy>scapy (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sci/ title=sci>sci (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/scrum/ title=scrum>scrum (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sctp/ title=sctp>sctp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sdn/ title=SDN>SDN (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/secret/ title=secret>secret (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/service-agility/ title="Service Agility">Service Agility (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/service-mesh/ title="service mesh">service mesh (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/setup/ title=setup>setup (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/slack/ title=slack>slack (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sleeve/ title=sleeve>sleeve (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/snmp/ title=snmp>snmp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/soft-skill/ title=soft-skill>soft-skill (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sqlite/ title=sqlite>sqlite (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sriov/ title=SRIOV>SRIOV (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/standingdesk/ title=StandingDesk>StandingDesk (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/startup/ title=startup>startup (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/storage/ title=storage>storage (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/study/ title=study>study (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/subchart/ title=subchart>subchart (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sw/ title=SW>SW (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sw-quality/ title="SW Quality">SW Quality (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/ title="SW 개발 문화">SW 개발 문화 (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/swarm/ title=swarm>swarm (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/synology/ title=synology>synology (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tag/ title=tag>tag (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcp/ title=tcp>tcp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/team/ title=team>team (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/telemetry/ title=telemetry>telemetry (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/the-pragmatic-programmer/ title="The Pragmatic Programmer">The Pragmatic Programmer (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/theme/ title=theme>theme (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/til/ title=til>til (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/time-machine/ title="Time Machine">Time Machine (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/timezone/ title=“Timezone”>“Timezone” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/track-pad/ title=track-pad>track-pad (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/traefik/ title=Traefik>Traefik (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/troubleshooting/ title=troubleshooting>troubleshooting (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tutorial/ title=tutorial>tutorial (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ubuntu/ title=ubuntu>ubuntu (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vagrant/ title=vagrant>vagrant (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vertical-pod-autoscaler/ title=vertical-pod-autoscaler>vertical-pod-autoscaler (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ves/ title=ves>ves (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/video/ title=video>video (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vim/ title=vim>vim (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/virtualbox/ title=Virtualbox>Virtualbox (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/virtualenv/ title=virtualenv>virtualenv (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/virtualization/ title=virtualization>virtualization (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vmware/ title=Vmware>Vmware (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vnf/ title=VNF>VNF (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/volvo/ title=volvo>volvo (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vran/ title=vran>vran (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vrouter/ title=vRouter>vRouter (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vswitch/ title=vSwitch>vSwitch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/web-scrapping/ title=web-scrapping>web-scrapping (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/webdav/ title=webdav>webdav (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wiki/ title=wiki>wiki (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/windows10/ title=windows10>windows10 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wordpress/ title=wordpress>wordpress (11)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/work_rules/ title=work_rules>work_rules (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/writing/ title=writing>writing (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/xcrun/ title=xcrun>xcrun (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/yang/ title=yang>yang (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/ title=개발이야기>개발이야기 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B2%BD%EC%9F%81/ title=경쟁>경쟁 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B3%B5%EB%B6%80/ title=공부>공부 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B3%B5%EC%9C%A0/ title=공유>공유 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/ title=관리능력>관리능력 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B8%B0%EB%A1%9D/ title=기록>기록 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%85%BC%EB%AC%B8/ title=논문>논문 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%A6%AC%EB%8D%94/ title=리더>리더 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/ title=매너리즘>매너리즘 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%AC%B8%ED%99%94/ title=문화>문화 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/ title="사람이 핵심">사람이 핵심 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%83%9D%EA%B0%81/ title=생각>생각 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%83%9D%EC%82%B0%EC%84%B1/ title=생산성>생산성 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/ title=윤식당>윤식당 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9D%B8%EC%9A%A9/ title=인용>인용 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/ title=임백준>임백준 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/ title=잡생각>잡생각 (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A0%84%EB%9E%8C%ED%9A%8C/ title=전람회>전람회 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/ title=조직관리>조직관리 (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/ title=조직문화>조직문화 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/ title=좋은글>좋은글 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/ title="착각하는 CEO">착각하는 CEO (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%B6%94%EC%96%B5/ title=추억>추억 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/ title=코드리뷰>코드리뷰 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%ED%9A%8C%EC%9D%98/ title=회의>회의 (2)</a></div></div></aside></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2021 Chaeyong Chong.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script></body></html>
