@@ -1,0 +1,696 @@
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Install VM with multipass on OS X - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Install VM with multipass on OS X</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-09-28T15:17:26+09:00>September 28, 2019</time>
+<time class=meta__text datetime=2019-09-28T15:19:40Z>(Last Modified: September 28, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#multipass>multipass?</a></li><li><a href=#install-multipass-with-brew>install <code>multipass</code> with brew</a></li><li><a href=#multipass-1>Multipass</a><ul><li><a href=#multipass-find>multipass find</a></li></ul></li><li><a href=#create-vm>Create VM</a><ul><li><a href=#multipass-launch>multipass launch</a></li><li><a href=#list-vms>list VMs</a></li><li><a href=#login-to-vm>login to VM</a></li><li><a href=#setup-a-single-node-kubernetes-cluster>Setup a single node kubernetes cluster</a></li><li><a href=#install-calicoctl>Install calicoctl</a></li><li><a href=#delete-kubenetes-cluster>delete kubenetes cluster</a></li></ul></li><li><a href=#reference>Reference</a><ul><li><a href=#multipass-2>multipass</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><h2 id=multipass>multipass?</h2><blockquote><p>Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.</p><p>Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.</p></blockquote><p><a href=https://github.com/CanonicalLtd/multipass>https://github.com/CanonicalLtd/multipass</a></p><p>Linux 외에 Windows 그리고 Mac OS를 지원하는 multipass를 사용하면 virtualbox를 사용하지 않고도 OS X에서 VM을 쉽게 만들어 linux 기반의 환경을 구성할 수 있다.</p><p>아래 예에서는 OS X에서 multipass를 이용해서 Linux(Ubuntu) VM을 생성하고, kubernetes를 설치해 본다.</p><h2 id=install-multipass-with-brew>install <code>multipass</code> with brew</h2><pre><code>mbpr15:~ cychong$ brew cask install multipass
+Updating Homebrew...
+...
+
+==&gt; Satisfying dependencies
+==&gt; Downloading https://github.com/CanonicalLtd/multipass/releases/download/v0.8.0/multipass-0.8.0+mac-Darwin.pkg
+==&gt; Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/114128199/8489a680-ac9c-11e9-99
+######################################################################## 100.0%
+==&gt; Verifying SHA-256 checksum for Cask 'multipass'.
+==&gt; Installing Cask multipass
+==&gt; Running installer for multipass; your password may be necessary.
+==&gt; Package installers may write to any location; options such as --appdir are ignored.
+Password:
+installer: Package name is multipass
+installer: Installing at base path /
+installer: The install was successful.
+🍺  multipass was successfully installed!
+</code></pre><h2 id=multipass-1>Multipass</h2><h3 id=multipass-find>multipass find</h3><pre><code>mbpr15:~ cychong$ multipass find
+Image                   Aliases           Version          Description
+snapcraft:core          core16            20190819         Snapcraft builder for Core 16
+snapcraft:core18                          20190820         Snapcraft builder for Core 18
+16.04                   xenial            20190814         Ubuntu 16.04 LTS
+18.04                   bionic,lts        20190813.1       Ubuntu 18.04 LTS
+</code></pre><h2 id=create-vm>Create VM</h2><h3 id=multipass-launch>multipass launch</h3><pre><code>mbpr15:~ cychong$ multipass launch --name vm --mem 4G --disk 20G --cpus 2 
+Launched: vm
+
+
+</code></pre><h3 id=list-vms>list VMs</h3><pre><code>mbpr15:~ cychong$ multipass list
+Name                    State             IPv4             Image
+vm                      Running           192.168.64.2     Ubuntu 18.04 LTS
+</code></pre><h4 id=execute-command-in-vm-from-host>execute command in VM from host</h4><pre><code>mbpr15:~ cychong$ multipass exec vm -- uname -a
+Linux vm 4.15.0-58-generic #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+</code></pre><h3 id=login-to-vm>login to VM</h3><pre><code>mbpr15:~ cychong$ multipass shell vm
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Aug 25 20:26:01 KST 2019
+
+  System load:  0.0               Processes:             101
+  Usage of /:   5.1% of 19.21GB   Users logged in:       0
+  Memory usage: 3%                IP address for enp0s2: 192.168.64.2
+  Swap usage:   0%
+
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.
+See &quot;man sudo_root&quot; for details.
+
+multipass@vm:~$
+</code></pre><h3 id=setup-a-single-node-kubernetes-cluster>Setup a single node kubernetes cluster</h3><pre><code>multipass@vm:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+</code></pre><pre><code>multipass@vm:~$ sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;
+Get:1 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:5 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages [7889 B]
+Get:6 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [485 kB]
+Get:7 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Get:8 http://archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB]
+Get:9 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [165 kB]
+Get:10 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [4976 B]
+Get:11 http://security.ubuntu.com/ubuntu bionic-security/restricted Translation-en [2476 B]
+Get:12 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [598 kB]
+Get:13 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [199 kB]
+Get:14 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [4004 B]
+Get:15 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [2060 B]
+Get:16 http://archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB]
+Get:17 http://archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB]
+Get:18 http://archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB]
+Get:19 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [712 kB]
+Get:20 http://archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [259 kB]
+Get:21 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [11.9 kB]
+Get:22 http://archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [4156 B]
+Get:23 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [999 kB]
+Get:24 http://archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [306 kB]
+Get:25 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [6636 B]
+Get:26 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [3556 B]
+Get:27 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [2512 B]
+Get:28 http://archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [1644 B]
+Get:29 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [4000 B]
+Get:30 http://archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [1856 B]
+Preparing to unpack .../1-aufs-tools_1%3a4.9+20170918-1ubuntu1_amd64.deb ...
+Unpacking aufs-tools (1:4.9+20170918-1ubuntu1) ...
+Selecting previously unselected package cgroupfs-mount.
+Preparing to unpack .../2-cgroupfs-mount_1.4_all.deb ...
+Unpacking cgroupfs-mount (1.4) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../3-containerd.io_1.2.6-3_amd64.deb ...
+Unpacking containerd.io (1.2.6-3) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../4-docker-ce-cli_5%3a19.03.1~3-0~ubuntu-bionic_amd64.deb ...
+Unpacking docker-ce-cli (5:19.03.1~3-0~ubuntu-bionic) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../5-docker-ce_5%3a19.03.1~3-0~ubuntu-bionic_amd64.deb ...
+Unpacking docker-ce (5:19.03.1~3-0~ubuntu-bionic) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../6-libltdl7_2.4.6-2_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.6-2) ...
+Setting up aufs-tools (1:4.9+20170918-1ubuntu1) ...
+Setting up containerd.io (1.2.6-3) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Processing triggers for ureadahead (0.100.0-21) ...
+Setting up cgroupfs-mount (1.4) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.25) ...
+Setting up libltdl7:amd64 (2.4.6-2) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up docker-ce-cli (5:19.03.1~3-0~ubuntu-bionic) ...
+Setting up pigz (2.4-1) ...
+Setting up docker-ce (5:19.03.1~3-0~ubuntu-bionic) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for ureadahead (0.100.0-21) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+Processing triggers for systemd (237-3ubuntu10.25) ...
+</code></pre><pre><code>multipass@vm:~$ sudo swapoff -a
+multipass@vm:~$ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+</code></pre><pre><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 1692 B of archives.
+After this operation, 153 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.11 [1692 B]
+Fetched 1692 B in 1s (2906 B/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 60304 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.11_all.deb ...
+Unpacking apt-transport-https (1.6.11) ...
+Setting up apt-transport-https (1.6.11) ...
+OK
+</code></pre><pre><code>multipass@vm:~$ echo &quot;deb http://apt.kubernetes.io/ kubernetes-xenial main&quot; | sudo tee -a /etc/apt/sources.list.d/kubernetes.list &amp;&amp; sudo apt-get update
+deb http://apt.kubernetes.io/ kubernetes-xenial main
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Get:6 https://packages.cloud.google.com/apt kubernetes-xenial InRelease [8993 B]
+Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 Packages [28.9 kB]
+Fetched 37.9 kB in 2s (15.3 kB/s)
+Reading package lists... Done
+</code></pre><pre><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
+Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu bionic-backports InRelease
+Reading package lists... Done
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following package was automatically installed and is no longer required:
+  grub-pc-bin
+Use 'sudo apt autoremove' to remove it.
+The following NEW packages will be installed:
+  apt-transport-https
+0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
+Need to get 1692 B of archives.
+After this operation, 153 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.11 [1692 B]
+Fetched 1692 B in 1s (2906 B/s)
+Selecting previously unselected package apt-transport-https.
+(Reading database ... 60304 files and directories currently installed.)
+Preparing to unpack .../apt-transport-https_1.6.11_all.deb ...
+Unpacking apt-transport-https (1.6.11) ...
+Get:3 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubelet amd64 1.15.3-00 [20.2 MB]
+Get:4 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubectl amd64 1.15.3-00 [8763 kB]
+Get:5 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubeadm amd64 1.15.3-00 [8248 kB]
+Fetched 52.9 MB in 27s (1972 kB/s)
+Selecting previously unselected package conntrack.
+(Reading database ... 60308 files and directories currently installed.)
+Preparing to unpack .../0-conntrack_1%3a1.4.4+snapshot20161117-6ubuntu2_amd64.deb ...
+Unpacking conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...
+Selecting previously unselected package cri-tools.
+Preparing to unpack .../1-cri-tools_1.13.0-00_amd64.deb ...
+Unpacking cri-tools (1.13.0-00) ...
+Selecting previously unselected package kubernetes-cni.
+Preparing to unpack .../2-kubernetes-cni_0.7.5-00_amd64.deb ...
+Unpacking kubernetes-cni (0.7.5-00) ...
+Selecting previously unselected package socat.
+Preparing to unpack .../3-socat_1.7.3.2-2ubuntu2_amd64.deb ...
+Unpacking socat (1.7.3.2-2ubuntu2) ...
+Selecting previously unselected package kubelet.
+Preparing to unpack .../4-kubelet_1.15.3-00_amd64.deb ...
+Unpacking kubelet (1.15.3-00) ...
+Selecting previously unselected package kubectl.
+Preparing to unpack .../5-kubectl_1.15.3-00_amd64.deb ...
+Unpacking kubectl (1.15.3-00) ...
+Selecting previously unselected package kubeadm.
+Preparing to unpack .../6-kubeadm_1.15.3-00_amd64.deb ...
+Unpacking kubeadm (1.15.3-00) ...
+Setting up conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...
+Setting up kubernetes-cni (0.7.5-00) ...
+Setting up cri-tools (1.13.0-00) ...
+Setting up socat (1.7.3.2-2ubuntu2) ...
+Setting up kubelet (1.15.3-00) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/kubelet.service → /lib/systemd/system/kubelet.service.
+Setting up kubectl (1.15.3-00) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up kubeadm (1.15.3-00) ...
+</code></pre><pre><code>multipass@vm:~$ sudo kubeadm init --pod-network-cidr=10.201.0.0/24 --token-ttl 0
+...
+
+multipass@vm:~$ mkdir -p $HOME/.kube
+multipass@vm:~$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+multipass@vm:~$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
+</code></pre><pre><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
+NAMESPACE     NAME                         READY   STATUS    RESTARTS   AGE   IP             NODE     NOMINATED NODE   READINESS GATES
+kube-system   coredns-5c98db65d4-ksh4p     0/1     Pending   0          21m   &lt;none&gt;         &lt;none&gt;   &lt;none&gt;           &lt;none&gt;
+kube-system   coredns-5c98db65d4-nvvzg     0/1     Pending   0          21m   &lt;none&gt;         &lt;none&gt;   &lt;none&gt;           &lt;none&gt;
+kube-system   etcd-vm                      1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-apiserver-vm            1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-controller-manager-vm   1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-proxy-b8qf2             1/1     Running   0          21m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+kube-system   kube-scheduler-vm            1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
+</code></pre><h4 id=install-calico>install calico</h4><pre><code>multipass@vm:~$ wget https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+--2019-08-25 21:26:00--  https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+Resolving docs.projectcalico.org (docs.projectcalico.org)... 206.189.73.52, 2604:a880:2:d0::21e9:c001
+Connecting to docs.projectcalico.org (docs.projectcalico.org)|206.189.73.52|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 20628 (20K) [application/x-yaml]
+Saving to: ‘calico.yaml’
+
+calico.yaml                  100%[==============================================&gt;]  20.14K  93.2KB/s    in 0.2s
+
+2019-08-25 21:26:02 (93.2 KB/s) - ‘calico.yaml’ saved [20628/20628]
+</code></pre><p>Change <code>CALICO_IPV4POOL_CIDR</code></p><pre><code>            - name: CALICO_IPV4POOL_CIDR
+              value: &quot;10.201.0.0/24&quot;
+</code></pre><pre><code>multipass@vm:~$ kubectl apply -f calico.yaml
+configmap/calico-config unchanged
+customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/blockaffinities.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ipamhandles.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ipamconfigs.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/bgppeers.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/bgpconfigurations.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/ippools.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/hostendpoints.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/clusterinformations.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/globalnetworkpolicies.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/globalnetworksets.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/networkpolicies.crd.projectcalico.org unchanged
+customresourcedefinition.apiextensions.k8s.io/networksets.crd.projectcalico.org unchanged
+clusterrole.rbac.authorization.k8s.io/calico-kube-controllers unchanged
+clusterrolebinding.rbac.authorization.k8s.io/calico-kube-controllers unchanged
+clusterrole.rbac.authorization.k8s.io/calico-node unchanged
+clusterrolebinding.rbac.authorization.k8s.io/calico-node unchanged
+daemonset.apps/calico-node configured
+serviceaccount/calico-node unchanged
+deployment.apps/calico-kube-controllers unchanged
+serviceaccount/calico-kube-controllers unchanged
+</code></pre><pre><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
+NAMESPACE     NAME                                       READY   STATUS    RESTARTS   AGE     IP               NODE   NOMINATED NODE   READINESS GATES
+kube-system   calico-kube-controllers-65b8787765-5rftm   1/1     Running   0          3m57s   192.168.141.65   vm     &lt;none&gt;           &lt;none&gt;
+kube-system   calico-node-dtbhl                          1/1     Running   0          44s     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   coredns-5c98db65d4-ksh4p                   1/1     Running   0          25m     192.168.141.66   vm     &lt;none&gt;           &lt;none&gt;
+kube-system   coredns-5c98db65d4-nvvzg                   1/1     Running   0          25m     192.168.141.67   vm     &lt;none&gt;           &lt;none&gt;
+kube-system   etcd-vm                                    1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-apiserver-vm                          1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-controller-manager-vm                 1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-proxy-b8qf2                           1/1     Running   0          25m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+kube-system   kube-scheduler-vm                          1/1     Running   0          25m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
+</code></pre><pre><code>multipass@vm:~$ kubectl taint nodes --all node-role.kubernetes.io/master-
+node/vm untainted
+</code></pre><h3 id=install-calicoctl>Install calicoctl</h3><p><a href=https://docs.projectcalico.org/v3.5/usage/calicoctl/install>https://docs.projectcalico.org/v3.5/usage/calicoctl/install</a></p><pre><code>multipass@vm:~$ curl -O -L  https://github.com/projectcalico/calicoctl/releases/download/v3.5.8/calicoctl
+multipass@vm:~$ chmod +x calicoctl
+multipass@vm:~$ ./calicoctl get profiles
+Failed to create Calico API client: no etcd endpoints specified
+multipass@vm:~$ kubectl apply -f \
+&gt;  https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calicoctl.yaml
+pod/calicoctl created
+multipass@vm:~$ kubectl exec -ti -n kube-system calicoctl -- /calicoctl get profiles -o wide
+error: unable to upgrade connection: container not found (&quot;calicoctl&quot;)
+</code></pre><pre><code>multipass@vm:~$ kubectl get pods --all-namespaces
+NAMESPACE     NAME                                       READY   STATUS                       RESTARTS   AGE
+kube-system   calico-kube-controllers-65b8787765-5rftm   1/1     Running                      0          10m
+kube-system   calico-node-dtbhl                          1/1     Running                      0          7m46s
+kube-system   calicoctl                                  0/1     CreateContainerConfigError   0          38s
+kube-system   coredns-5c98db65d4-ksh4p                   1/1     Running                      0          33m
+kube-system   coredns-5c98db65d4-nvvzg                   1/1     Running                      0          33m
+kube-system   etcd-vm                                    1/1     Running                      0          32m
+kube-system   kube-apiserver-vm                          1/1     Running                      0          31m
+kube-system   kube-controller-manager-vm                 1/1     Running                      0          31m
+kube-system   kube-proxy-b8qf2                           1/1     Running                      0          33m
+kube-system   kube-scheduler-vm                          1/1     Running                      0          32m
+</code></pre><pre><code>multipass@vm:~$ kubectl describe pod calicoctl --namespace=kube-system
+Name:         calicoctl
+Namespace:    kube-system
+Priority:     0
+Node:         vm/192.168.64.2
+Start Time:   Sun, 25 Aug 2019 21:35:02 +0900
+Labels:       &lt;none&gt;
+Annotations:  kubectl.kubernetes.io/last-applied-configuration:
+                {&quot;apiVersion&quot;:&quot;v1&quot;,&quot;kind&quot;:&quot;Pod&quot;,&quot;metadata&quot;:{&quot;annotations&quot;:{},&quot;name&quot;:&quot;calicoctl&quot;,&quot;namespace&quot;:&quot;kube-system&quot;},&quot;spec&quot;:{&quot;containers&quot;:[{&quot;command...
+Status:       Pending
+IP:           192.168.64.2
+Containers:
+  calicoctl:
+    Container ID:
+    Image:         calico/ctl:v3.5.8
+    Image ID:
+    Port:          &lt;none&gt;
+    Host Port:     &lt;none&gt;
+    Command:
+      /bin/sh
+      -c
+      while true; do sleep 3600; done
+    State:          Waiting
+      Reason:       CreateContainerConfigError
+    Ready:          False
+    Restart Count:  0
+    Environment:
+      ETCD_ENDPOINTS:  &lt;set to the key 'etcd_endpoints' of config map 'calico-config'&gt;  Optional: false
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-w2l7q (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             False
+  ContainersReady   False
+  PodScheduled      True
+Volumes:
+  default-token-w2l7q:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-w2l7q
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  beta.kubernetes.io/os=linux
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason     Age               From               Message
+  ----     ------     ----              ----               -------
+  Normal   Scheduled  72s               default-scheduler  Successfully assigned kube-system/calicoctl to vm
+  Normal   Pulling    71s               kubelet, vm        Pulling image &quot;calico/ctl:v3.5.8&quot;
+  Normal   Pulled     57s               kubelet, vm        Successfully pulled image &quot;calico/ctl:v3.5.8&quot;
+  Warning  Failed     3s (x6 over 57s)  kubelet, vm        Error: Couldn't find key etcd_endpoints in ConfigMap kube-system/calico-config
+  Normal   Pulled     3s (x5 over 57s)  kubelet, vm        Container image &quot;calico/ctl:v3.5.8&quot; already present on machine
+</code></pre><h3 id=delete-kubenetes-cluster>delete kubenetes cluster</h3><pre><code>multipass@vm:~$ kubectl drain vm --delete-local-data --force --ignore-daemonsets
+node/vm cordoned
+WARNING: ignoring DaemonSet-managed Pods: kube-system/calico-node-dtbhl, kube-system/kube-proxy-b8qf2; deleting Pods not managed by ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet: kube-system/calicoctl
+evicting pod &quot;coredns-5c98db65d4-nvvzg&quot;
+evicting pod &quot;calico-kube-controllers-65b8787765-5rftm&quot;
+evicting pod &quot;calicoctl&quot;
+evicting pod &quot;coredns-5c98db65d4-ksh4p&quot;
+pod/calicoctl evicted
+pod/coredns-5c98db65d4-nvvzg evicted
+pod/calico-kube-controllers-65b8787765-5rftm evicted
+pod/coredns-5c98db65d4-ksh4p evicted
+node/vm evicted
+multipass@vm:~$ sudo kubeadm reset
+[reset] Reading configuration from the cluster...
+[reset] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
+[reset] WARNING: Changes made to this host by 'kubeadm init' or 'kubeadm join' will be reverted.
+[reset] Are you sure you want to proceed? [y/N]: y
+[preflight] Running pre-flight checks
+[reset] Removing info for node &quot;vm&quot; from the ConfigMap &quot;kubeadm-config&quot; in the &quot;kube-system&quot; Namespace
+W0825 21:46:06.943208    4603 removeetcdmember.go:61] [reset] failed to remove etcd member: error syncing endpoints with etc: etcdclient: no available endpoints
+.Please manually remove this etcd member using etcdctl
+[reset] Stopping the kubelet service
+[reset] Unmounting mounted directories in &quot;/var/lib/kubelet&quot;
+[reset] Deleting contents of config directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]
+[reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]
+[reset] Deleting contents of stateful directories: [/var/lib/etcd /var/lib/kubelet /etc/cni/net.d /var/lib/dockershim /var/run/kubernetes]
+
+The reset process does not reset or clean up iptables rules or IPVS tables.
+If you wish to reset iptables, you must do so manually.
+For example:
+iptables -F &amp;&amp; iptables -t nat -F &amp;&amp; iptables -t mangle -F &amp;&amp; iptables -X
+
+If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
+to reset your system's IPVS tables.
+
+The reset process does not clean your kubeconfig files and you must remove them manually.
+Please, check the contents of the $HOME/.kube/config file.
+
+multipass@vm:~$ sudo rm -rf /var/etcd
+</code></pre><h2 id=reference>Reference</h2><h3 id=multipass-2>multipass</h3><ul><li><a href=https://multipass.run>https://multipass.run</a></li><li><a href=https://github.com/CanonicalLtd/multipass>https://github.com/CanonicalLtd/multipass</a></li><li><a href=https://ubuntu.com/blog/kubernetes-on-mac-how-to-set-up>OS X에서 multipass를 이용하여 microk8s 환경 구성</a></li><li><a href=https://raaaimund.github.io/tech/2018/10/23/create-single-node-k8s-cluster/>Create a single node Kubernetes cluster on Ubuntu 18.04.1 (Bionic Beaver) with kubeadm</a></li><li><a href=https://docs.projectcalico.org/v3.8/getting-started/kubernetes/>https://docs.projectcalico.org/v3.8/getting-started/kubernetes/</a></li><li><a href=https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/>k8s 설치 상세 절차</a></li><li><a href=https://bcho.tistory.com/1341>private helm repository 구성하기-조대협</a></li></ul></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/vmware/ rel=tag>Vmware</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ubuntu/ rel=tag>ubuntu</a></li><li class=tags__item><a class="tags__link btn" href=/tags/multipass/ rel=tag>multipass</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2019/setup-kubernetes-with-a-single-host/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Setup kubernetes in a single host</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2019/convention-on-impose-core-requirements/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Convention on impose core requirements</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
+<input class=widget-search__submit type=submit value=Search>
+<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/algorithm/ title=Algorithm>Algorithm (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/amazon/ title=amazon>amazon (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/amdocs/ title=amdocs>amdocs (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/amsterdam-release/ title="Amsterdam release">Amsterdam release (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/andromeda/ title=andromeda>andromeda (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ansible/ title=ansible>ansible (7)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ansible-playbook/ title=ansible-playbook>ansible-playbook (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/anti-work-pattern/ title="anti-work pattern">anti-work pattern (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apple/ title=Apple>Apple (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apple-silicon/ title="Apple Silicon">Apple Silicon (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/apple-watch/ title=apple-watch>apple-watch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/arm/ title=arm>arm (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/att/ title=ATT>ATT (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/automation/ title=automation>automation (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/b4/ title=b4>b4 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/backup/ title=backup>backup (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/barometer/ title=barometer>barometer (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/blog/ title=blog>blog (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/blogging/ title=blogging>blogging (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/book/ title=Book>Book (49)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/brew/ title=brew>brew (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/brocade/ title=Brocade>Brocade (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/c/ title=C>C (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/calico/ title=calico>calico (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/car/ title=car>car (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cavium/ title=Cavium>Cavium (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/chair/ title=Chair>Chair (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cisco/ title=cisco>cisco (7)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/click/ title=click>click (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cncf/ title=cncf>cncf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cni/ title=cni>cni (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cockpit/ title=cockpit>cockpit (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/coding-style/ title="Coding Style">Coding Style (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/collaboration/ title=collaboration>collaboration (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/collectd/ title=collectd>collectd (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/configmap/ title=configmap>configmap (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/connectx-5/ title=connectX-5>connectX-5 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/container/ title=container>container (10)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/containerd/ title=“containerd”>“containerd” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/continuous-deployment/ title="continuous deployment">continuous deployment (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cpu/ title=cpu>cpu (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cran/ title=cran>cran (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cron/ title=cron>cron (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/crond/ title=crond>crond (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cronjob/ title=cronjob>cronjob (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cubb/ title=cubb>cubb (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cuda/ title=CUDA>CUDA (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/culture/ title=culture>culture (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cuphy/ title=cuphy>cuphy (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/cuvnf/ title=cuvnf>cuvnf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/database/ title=database>database (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dev-culture/ title="dev culture">dev culture (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/devnothink/ title=devnothink>devnothink (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/devonthink/ title=Devonthink>Devonthink (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/docker/ title=docker>docker (15)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/docker-compose/ title=docker-compose>docker-compose (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dpdk/ title=DPDK>DPDK (22)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dpi/ title=dpi>dpi (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/dpkt/ title=dpkt>dpkt (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/edge/ title=edge>edge (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/elasticsearch/ title=elasticsearch>elasticsearch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/elk/ title=elk>elk (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/english/ title=english>english (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/espresso/ title=espresso>espresso (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/fapi/ title=fapi>fapi (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/feature-flag-driven-development/ title="feature flag driven development">feature flag driven development (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/feedback/ title=feedback>feedback (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ffmpeg/ title=ffmpeg>ffmpeg (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/finder/ title=finder>finder (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/flask/ title=Flask>Flask (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/fragment/ title=fragment>fragment (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ftp/ title=ftp>ftp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/getting-started/ title="Getting Started">Getting Started (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ghost/ title=ghost>ghost (11)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ghost-theme/ title=ghost-theme>ghost-theme (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/git/ title=git>git (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/github/ title=github>github (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/github-action/ title="“GitHub Action”">“GitHub Action” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/go/ title=go>go (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/golang/ title=golang>golang (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/google/ title=google>google (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/google-cloud-platform/ title=google-cloud-platform>google-cloud-platform (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gpb/ title=gpb>gpb (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/gpu/ title=gpu>gpu (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/grafana/ title=grafana>grafana (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/graviton/ title=graviton>graviton (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/grpc/ title=grpc>grpc (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/happy-hacking/ title=happy-hacking>happy-hacking (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hbr/ title=HBR>HBR (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/helm/ title=helm>helm (8)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/homebrew/ title=homebrew>homebrew (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/homelab/ title=homelab>homelab (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/homepod/ title=HomePod>HomePod (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/http/ title=http>http (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/hugo/ title=hugo>hugo (15)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/influxdb/ title=influxdb>influxdb (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/inspiration/ title=inspiration>inspiration (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/intel/ title=Intel>Intel (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ios-shortcut/ title=“iOS-shortcut”>“iOS-shortcut” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ios14/ title=iOS14>iOS14 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ipad/ title=iPad>iPad (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphone/ title=iPhone>iPhone (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphone6/ title=iPhone6>iPhone6 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/iphonex/ title=iPhoneX>iPhoneX (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ipsec/ title=IPsec>IPsec (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ipv4/ title=ipv4>ipv4 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/istio/ title=istio>istio (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jetpack/ title=jetpack>jetpack (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/job/ title=job>job (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/json/ title=json>json (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jtbc/ title=jtbc>jtbc (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/jupiter/ title=jupiter>jupiter (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/k3s/ title=k3s>k3s (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kafka/ title=kafka>kafka (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kldp/ title=KLDP>KLDP (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kni/ title=kni>kni (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kubelet/ title=kubelet>kubelet (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kubernetes/ title=kubernetes>kubernetes (22)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/kuberntes/ title=kuberntes>kuberntes (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/launchd/ title=launchd>launchd (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/lb/ title=lb>lb (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/life/ title=life>life (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/lifehack/ title=lifehack>lifehack (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/linux/ title=linux>linux (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/load-balancer/ title="load balancer">load balancer (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/lte/ title=lte>lte (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/m1/ title=m1>m1 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mac/ title=mac>mac (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mac-mini-2009/ title="Mac mini 2009">Mac mini 2009 (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/maglev/ title=maglev>maglev (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/manager/ title=manager>manager (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/markdown/ title=markdown>markdown (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mbuf/ title=mbuf>mbuf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mec/ title=mec>mec (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mediawiki/ title=mediawiki>mediawiki (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/meetup/ title=meetup>meetup (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/message-queue/ title="message queue">message queue (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/metricbeat/ title=metricbeat>metricbeat (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/microk8s/ title=microk8s>microk8s (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/microservice/ title=microservice>microservice (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mindmap/ title=mindmap>mindmap (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/model-driven/ title=model-driven>model-driven (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/monitoring/ title=monitoring>monitoring (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/multipass/ title=multipass>multipass (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/mysql/ title=mysql>mysql (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/naim/ title=Naim>Naim (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nas/ title=nas>nas (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nasa/ title=nasa>nasa (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nec/ title=NEC>NEC (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nested-chart/ title=nested-chart>nested-chart (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/netconf/ title=netconf>netconf (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/network/ title=network>network (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/neuron/ title=neuron>neuron (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nfv/ title=nfv>nfv (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nginmesh/ title=nginmesh>nginmesh (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nginx/ title=nginx>nginx (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nhn/ title=NHN>NHN (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nic/ title=NIC>NIC (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nokia/ title=Nokia>Nokia (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/note/ title=note>note (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/nvidia/ title=nvidia>nvidia (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/odp/ title=odp>odp (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ofp/ title=OFP>OFP (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/onap/ title=onap>onap (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/onp/ title=ONP>ONP (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/openfastpath/ title=OpenFastPath>OpenFastPath (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/opensource/ title=opensource>opensource (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/openstack/ title=openstack>openstack (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/opnfv/ title=opnfv>opnfv (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/osx/ title=osx>osx (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ovdk/ title=OVDK>OVDK (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ovs/ title=OVS>OVS (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/p4/ title=p4>p4 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/patch/ title=patch>patch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/perl/ title=perl>perl (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/photo/ title=photo>photo (31)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/photoaa/ title=photoaa>photoaa (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pinpoint/ title=pinpoint>pinpoint (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/plist/ title=plist>plist (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pluribus/ title=Pluribus>Pluribus (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/podcast/ title=podcast>podcast (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/powermate/ title=powermate>powermate (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/prediction/ title=prediction>prediction (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/programming/ title=programming>programming (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/prometheus/ title=prometheus>prometheus (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/protobufs/ title=protobufs>protobufs (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/protocol-buffer/ title="protocol buffer">protocol buffer (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/pyftplib/ title=pyftplib>pyftplib (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/python/ title=Python>Python (13)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/qat/ title=QAT>QAT (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/quality/ title=Quality>Quality (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/quanta/ title=Quanta>Quanta (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/quicklook/ title=quicklook>quicklook (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/r210/ title=R210>R210 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/readiness/ title=readiness>readiness (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/reassembly/ title=reassembly>reassembly (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/recovery/ title=recovery>recovery (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/resources/ title=resources>resources (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/restful/ title=RESTful>RESTful (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rmda/ title=RMDA>RMDA (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/rust/ title=“rust”>“rust” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/scapy/ title=scapy>scapy (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sci/ title=sci>sci (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/scrum/ title=scrum>scrum (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sctp/ title=sctp>sctp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sdn/ title=SDN>SDN (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/secret/ title=secret>secret (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/service-agility/ title="Service Agility">Service Agility (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/service-mesh/ title="service mesh">service mesh (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/setup/ title=setup>setup (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/slack/ title=slack>slack (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sleeve/ title=sleeve>sleeve (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/snmp/ title=snmp>snmp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/soft-skill/ title=soft-skill>soft-skill (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sqlite/ title=sqlite>sqlite (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sriov/ title=SRIOV>SRIOV (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/standingdesk/ title=StandingDesk>StandingDesk (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/startup/ title=startup>startup (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/storage/ title=storage>storage (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/study/ title=study>study (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/subchart/ title=subchart>subchart (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sw/ title=SW>SW (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sw-quality/ title="SW Quality">SW Quality (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/sw-%EA%B0%9C%EB%B0%9C-%EB%AC%B8%ED%99%94/ title="SW 개발 문화">SW 개발 문화 (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/swarm/ title=swarm>swarm (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/synology/ title=synology>synology (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tag/ title=tag>tag (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tcp/ title=tcp>tcp (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/team/ title=team>team (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/telemetry/ title=telemetry>telemetry (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/the-pragmatic-programmer/ title="The Pragmatic Programmer">The Pragmatic Programmer (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/theme/ title=theme>theme (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/til/ title=til>til (7)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/time-machine/ title="Time Machine">Time Machine (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/timezone/ title=“Timezone”>“Timezone” (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/track-pad/ title=track-pad>track-pad (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/traefik/ title=Traefik>Traefik (5)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/troubleshooting/ title=troubleshooting>troubleshooting (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/tutorial/ title=tutorial>tutorial (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ubuntu/ title=ubuntu>ubuntu (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vagrant/ title=vagrant>vagrant (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vertical-pod-autoscaler/ title=vertical-pod-autoscaler>vertical-pod-autoscaler (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/ves/ title=ves>ves (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/video/ title=video>video (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vim/ title=vim>vim (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/virtualbox/ title=Virtualbox>Virtualbox (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/virtualenv/ title=virtualenv>virtualenv (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/virtualization/ title=virtualization>virtualization (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vmware/ title=Vmware>Vmware (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vnf/ title=VNF>VNF (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/volvo/ title=volvo>volvo (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vran/ title=vran>vran (3)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vrouter/ title=vRouter>vRouter (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/vswitch/ title=vSwitch>vSwitch (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/web-scrapping/ title=web-scrapping>web-scrapping (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/webdav/ title=webdav>webdav (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wiki/ title=wiki>wiki (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/windows10/ title=windows10>windows10 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/wordpress/ title=wordpress>wordpress (11)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/work_rules/ title=work_rules>work_rules (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/writing/ title=writing>writing (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/xcrun/ title=xcrun>xcrun (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/yang/ title=yang>yang (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B0%9C%EB%B0%9C%EC%9D%B4%EC%95%BC%EA%B8%B0/ title=개발이야기>개발이야기 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B2%BD%EC%9F%81/ title=경쟁>경쟁 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B3%B5%EB%B6%80/ title=공부>공부 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B3%B5%EC%9C%A0/ title=공유>공유 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B4%80%EB%A6%AC%EB%8A%A5%EB%A0%A5/ title=관리능력>관리능력 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EA%B8%B0%EB%A1%9D/ title=기록>기록 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%85%BC%EB%AC%B8/ title=논문>논문 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%A6%AC%EB%8D%94/ title=리더>리더 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%A7%A4%EB%84%88%EB%A6%AC%EC%A6%98/ title=매너리즘>매너리즘 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EB%AC%B8%ED%99%94/ title=문화>문화 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%82%AC%EB%9E%8C%EC%9D%B4-%ED%95%B5%EC%8B%AC/ title="사람이 핵심">사람이 핵심 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%83%9D%EA%B0%81/ title=생각>생각 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%83%9D%EC%82%B0%EC%84%B1/ title=생산성>생산성 (2)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9C%A4%EC%8B%9D%EB%8B%B9/ title=윤식당>윤식당 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9D%B8%EC%9A%A9/ title=인용>인용 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9E%84%EB%B0%B1%EC%A4%80/ title=임백준>임백준 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%9E%A1%EC%83%9D%EA%B0%81/ title=잡생각>잡생각 (9)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A0%84%EB%9E%8C%ED%9A%8C/ title=전람회>전람회 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A1%B0%EC%A7%81/ title=조직>조직 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A1%B0%EC%A7%81%EA%B4%80%EB%A6%AC/ title=조직관리>조직관리 (4)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A1%B0%EC%A7%81%EB%AC%B8%ED%99%94/ title=조직문화>조직문화 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%A2%8B%EC%9D%80%EA%B8%80/ title=좋은글>좋은글 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%B0%A9%EA%B0%81%ED%95%98%EB%8A%94-ceo/ title="착각하는 CEO">착각하는 CEO (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%B6%94%EC%96%B5/ title=추억>추억 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0/ title=코드리뷰>코드리뷰 (1)</a>
+<a class="widget-taglist__link widget__link btn" href=/tags/%ED%9A%8C%EC%9D%98/ title=회의>회의 (2)</a></div></div></aside></div><footer class=footer><div class="container footer__container flex"><div class=footer__copyright>&copy; 2022 Chaeyong Chong.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span></div></div></footer></div><script async defer src=/js/menu.js></script></body></html>
