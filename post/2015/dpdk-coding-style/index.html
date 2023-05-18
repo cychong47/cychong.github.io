@@ -1,4 +1,4 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>DPDK Coding style - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>DPDK Coding style - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>DPDK Coding style</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2015-05-21T14:51:37+09:00>May 21, 2015</time>
 <time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#description>Description</a></li><li><a href=#general-guidelines>General Guidelines</a></li><li><a href=#c-comment-style>C Comment Style</a><ul><li><a href=#usual-comments>Usual Comments</a></li><li><a href=#license-header>License Header</a></li></ul></li><li><a href=#c-preprocessor-directives>C Preprocessor Directives</a><ul><li><a href=#header-includes>Header Includes</a></li><li><a href=#header-file-guards>Header File Guards</a></li><li><a href=#macros>Macros</a></li><li><a href=#conditional-compilation>Conditional Compilation</a></li></ul></li><li><a href=#c-types>C Types</a><ul><li><a href=#integers>Integers</a></li><li><a href=#enumerations>Enumerations</a></li><li><a href=#bitfields>Bitfields</a></li><li><a href=#variable-declarations>Variable Declarations</a></li><li><a href=#structure-declarations>Structure Declarations</a></li><li><a href=#queues>Queues</a></li><li><a href=#typedefs>Typedefs</a></li></ul></li><li><a href=#c-indentation>C Indentation</a><ul><li><a href=#general>General</a></li><li><a href=#control-statements-and-loops>Control Statements and Loops</a></li><li><a href=#function-calls>Function Calls</a></li><li><a href=#operators>Operators</a></li><li><a href=#exit>Exit</a></li><li><a href=#local-variables>Local Variables</a></li><li><a href=#casts-and-sizeof>Casts and sizeof</a></li></ul></li><li><a href=#c-function-definition-declaration-and-use>C Function Definition, Declaration and Use</a><ul><li><a href=#prototypes>Prototypes</a></li><li><a href=#definitions>Definitions</a></li></ul></li><li><a href=#c-statement-style-and-conventions>C Statement Style and Conventions</a><ul><li><a href=#null-pointers>NULL Pointers</a></li><li><a href=#return-value>Return Value</a></li><li><a href=#logging-and-errors>Logging and Errors</a></li><li><a href=#branch-prediction>Branch Prediction</a></li><li><a href=#static-variables-and-functions>Static Variables and Functions</a></li><li><a href=#const-attribute>Const Attribute</a></li><li><a href=#inline-asm-in-c-code>Inline ASM in C code</a></li><li><a href=#control-statements>Control Statements</a></li></ul></li><li><a href=#environment-or-architecture-specific-sources>Environment or Architecture-specific Sources</a><ul><li><a href=#per-architecture-sources>Per Architecture Sources</a></li><li><a href=#per-execution-environment-sources>Per Execution Environment Sources</a></li></ul></li><li><a href=#doxygen-documentation>Doxygen Documentation</a><ul><li><a href=#documenting-a-function>Documenting a Function</a></li><li><a href=#documenting-files>Documenting Files</a></li><li><a href=#documenting-constants-and-variables>Documenting Constants and Variables</a></li><li><a href=#documenting-structures>Documenting Structures</a></li><li><a href=#see-also-sections>See Also Sections</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><p>출처 : <a href=http://dpdk.org/ml/archives/dev/2015-May/017666.html>DPDK mailing list</a></p><h1 id=coding-style>Coding Style</h1><h2 id=description>Description</h2><p>This document specifies the preferred style for source files in the DPDK
 source tree. It is based on the Linux Kernel coding guidelines and the
@@ -12,7 +12,7 @@ option will make the code easiest to read.</li></ul><p>Line length is recommende
 comments. [Tab stop size should be assumed to be 8-characters wide].</p><blockquote><p><strong>note</strong></p><p>The above is recommendation, and not a hard limit. However, it is
 expected that the recommendations should be followed in all but the
 rarest situations.</p></blockquote><h2 id=c-comment-style>C Comment Style</h2><h3 id=usual-comments>Usual Comments</h3><p>These comments should be used in normal cases. To document a public API,
-a doxygen-like format must be used: refer to Doxygen Documentation.</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/*
+a doxygen-like format must be used: refer to Doxygen Documentation.</p><pre tabindex=0><code>/*
  * VERY important single-line comments look like this.
  */
 
@@ -28,7 +28,7 @@ except for code for Linux Kernel modules. After any copyright header, a
 blank line should be left before any other contents, e.g. include
 statements in a C file.</p><h2 id=c-preprocessor-directives>C Preprocessor Directives</h2><h3 id=header-includes>Header Includes</h3><p>In DPDK sources, the include files should be ordered as following:</p><ol><li>libc includes (system includes first)</li><li>DPDK EAL includes</li><li>DPDK misc libraries includes</li><li>application-specific includes</li></ol><p>Include files from the local application directory are included using
 quotes, while includes from other paths are included using angle
-brackets: &ldquo;&lt;>&rdquo;.</p><p>Example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>#include &lt;stdio.h&gt;
+brackets: &ldquo;&lt;>&rdquo;.</p><p>Example:</p><pre tabindex=0><code>#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
 #include &lt;rte_eal.h&gt;
@@ -36,8 +36,8 @@ brackets: &ldquo;&lt;>&rdquo;.</p><p>Example:</p><pre><code class=language-{.sou
 #include &lt;rte_ring.h&gt;
 #include &lt;rte_mempool.h&gt;
 
-#include &quot;application.h&quot;
-</code></pre><h3 id=header-file-guards>Header File Guards</h3><p>Headers should be protected against multiple inclusion with the usual:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>#ifndef _FILE_H_
+#include &#34;application.h&#34;
+</code></pre><h3 id=header-file-guards>Header File Guards</h3><p>Headers should be protected against multiple inclusion with the usual:</p><pre tabindex=0><code>#ifndef _FILE_H_
 #define _FILE_H_
 
 /* Code */
@@ -53,7 +53,7 @@ all in uppercase. If the macro encapsulates a compound statement,
 enclose it in a do-while loop, so that it can be used safely in if
 statements. Any final statement-terminating semicolon should be supplied
 by the macro invocation rather than the macro, to make parsing easier
-for pretty-printers and editors.</p><p>For example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>#define MACRO(x, y) do {                                        \
+for pretty-printers and editors.</p><p>For example:</p><pre tabindex=0><code>#define MACRO(x, y) do {                                        \
         variable = (x) + (y);                                   \
         (y) += 2;                                               \
 } while(0)
@@ -63,7 +63,7 @@ allow compilers to emit extra warnings about unsafe code.</p></blockquote><h3 id
 may be added following the matching <code>#endif</code> or <code>#else</code> to permit the
 reader to easily discern where conditionally compiled code regions end.
 This comment should be used only for (subjectively) long regions,
-regions greater than 20 lines, or where a series of nested <code>#ifdef</code>'s
+regions greater than 20 lines, or where a series of nested <code>#ifdef</code>&rsquo;s
 may be confusing to the reader. Exceptions may be made for cases where
 code is conditionally not compiled for the purposes of lint(1), or other
 tools, even though the uncompiled region may be small. The comment
@@ -74,7 +74,7 @@ corresponding <code>#if</code> or <code>#ifdef</code>. The comment for <code>#el
 should match the inverse of the expression(s) used in the preceding
 <code>#if</code> and/or <code>#elif</code> statements. In the comments, the subexpression
 <code>defined(FOO)</code> is abbreviated as &ldquo;FOO&rdquo;. For the purposes of comments,
-<code>#ifndef FOO</code> is treated as <code>#if !defined(FOO)</code>.</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>#ifdef KTRACE
+<code>#ifndef FOO</code> is treated as <code>#if !defined(FOO)</code>.</p><pre tabindex=0><code>#ifdef KTRACE
 #include &lt;sys/ktrace.h&gt;
 #endif
 
@@ -93,12 +93,12 @@ should match the inverse of the expression(s) used in the preceding
 as it increases the number of target binaries that need to be built
 and tested.</p></blockquote><h2 id=c-types>C Types</h2><h3 id=integers>Integers</h3><p>For fixed/minimum-size integer values, the project uses the form
 uintXX_t (from stdint.h) instead of older BSD-style integer identifiers
-of the form u_intXX_t.</p><h3 id=enumerations>Enumerations</h3><ul><li>Enumeration values are all uppercase.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>enum enumtype { ONE, TWO } et;
+of the form u_intXX_t.</p><h3 id=enumerations>Enumerations</h3><ul><li>Enumeration values are all uppercase.</li></ul><pre tabindex=0><code>enum enumtype { ONE, TWO } et;
 </code></pre><ul><li>Enum types should be used in preference to macros #defining a set
 of (sequential) values.</li><li>Enum types should be prefixed with <code>rte_</code> and the elements by a
 suitable prefix [generally starting <code>RTE_&lt;enum>_</code> - where &lt;enum>
 is a shortname for the enum type] to avoid namespace collisions.</li></ul><h3 id=bitfields>Bitfields</h3><p>The developer should group bitfields that are included in the same
-integer, as follows:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>struct grehdr {
+integer, as follows:</p><pre tabindex=0><code>struct grehdr {
   uint16_t rec:3,
       srr:1,
       seq:1,
@@ -114,7 +114,7 @@ integer, as follows:</p><pre><code class=language-{.sourceCode data-lang={.sourc
 adjacent tokens, except for tokens that are identifiers related to
 types. (These identifiers are the names of basic types, type qualifiers,
 and typedef-names other than the one being declared.) Separate these
-identifiers from asterisks using a single space.</p><p>For example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>int *x;         /* no space after asterisk */
+identifiers from asterisks using a single space.</p><p>For example:</p><pre tabindex=0><code>int *x;         /* no space after asterisk */
 int * const x;  /* space after asterisk when using a type qualifier */
 </code></pre><ul><li>All externally-visible variables should have an <code>rte_</code> prefix in the
 name to avoid namespace collisions.</li><li>Do not use uppercase letters - either in the form of ALL_UPPERCASE,
@@ -127,11 +127,11 @@ logical sense. Ordering by size then ensures that as little padding
 is added to the structure as possible.</li><li>For existing structures, additions to structures should be added to
 the end so for backward compatibility reasons.</li><li>Each structure element gets its own line.</li><li>Try to make the structure readable by aligning the member names
 using spaces as shown below.</li><li>Names following extremely long types, which therefore cannot be
-easily aligned with the rest, should be separated by a single space.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>struct foo {
+easily aligned with the rest, should be separated by a single space.</li></ul><pre tabindex=0><code>struct foo {
         struct foo      *next;          /* List of active foo. */
         struct mumble   amumble;        /* Comment for mumble. */
         int             bar;            /* Try to align the comments. */
-        struct verylongtypename *baz;   /* Won't fit with other members */
+        struct verylongtypename *baz;   /* Won&#39;t fit with other members */
 };
 </code></pre><ul><li>Major structures should be declared at the top of the file in which
 they are used, or in separate header files if they are used in
@@ -139,23 +139,23 @@ multiple source files.</li><li>Use of the structures should be by separate varia
 and those declarations must be extern if they are declared in a
 header file.</li><li>Externally visible structure definitions should have the structure
 name prefixed by <code>rte_</code> to avoid namespace collisions.</li></ul><h3 id=queues>Queues</h3><p>Use queue(3) macros rather than rolling your own lists, whenever
-possible. Thus, the previous example would be better written:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>#include &lt;sys/queue.h&gt;
+possible. Thus, the previous example would be better written:</p><pre tabindex=0><code>#include &lt;sys/queue.h&gt;
 
 struct foo {
         LIST_ENTRY(foo) link;      /* Use queue macros for foo lists. */
         struct mumble   amumble;   /* Comment for mumble. */
         int             bar;       /* Try to align the comments. */
-        struct verylongtypename *baz;   /* Won't fit with other members */
+        struct verylongtypename *baz;   /* Won&#39;t fit with other members */
 };
 LIST_HEAD(, foo) foohead;          /* Head of global foo list. */
 </code></pre><p>DPDK also provides an optimized way to store elements in lockless rings.
 This should be used in all data-path code, when there are several
-consumer and/or producers to avoid locking for concurrent access.</p><h3 id=typedefs>Typedefs</h3><p>Avoid using typedefs for structure types.</p><p>For example, use:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>struct my_struct_type {
+consumer and/or producers to avoid locking for concurrent access.</p><h3 id=typedefs>Typedefs</h3><p>Avoid using typedefs for structure types.</p><p>For example, use:</p><pre tabindex=0><code>struct my_struct_type {
 /* ... */
 };
 
 struct my_struct_type my_var;
-</code></pre><p>rather than:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>typedef struct my_struct_type {
+</code></pre><p>rather than:</p><pre tabindex=0><code>typedef struct my_struct_type {
 /* ... */
 } my_struct_type;
 
@@ -176,7 +176,7 @@ macros, typedefs should be preferred to macros in cases like this.</p><p>When co
 Avoid typedefs ending in <code>_t</code>, except as specified in Standard C or by
 POSIX.</p><blockquote><p><strong>note</strong></p><p>It is recommended to use typedefs to define function pointer types,
 for reasons of code readability. This is especially true when the
-function type is used as a parameter to another function.</p></blockquote><p>For example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/**
+function type is used as a parameter to another function.</p></blockquote><p>For example:</p><pre tabindex=0><code>/**
  * Definition of a remote launch function.
  */
 typedef int (lcore_function_t)(void *);
@@ -193,7 +193,7 @@ control statement forms part of the statement body or not.
 Alternatively, the line continuation may use additional spaces to
 line up to an appropriately point on the preceding line, for
 example, to align to an opening brace.</li></ul><blockquote><p><strong>note</strong></p><p>As with all style guidelines, code should match style already in use
-in an existing file.</p></blockquote><pre><code class=language-{.sourceCode data-lang={.sourceCode>while (really_long_variable_name_1 == really_long_variable_name_2 &amp;&amp;
+in an existing file.</p></blockquote><pre tabindex=0><code>while (really_long_variable_name_1 == really_long_variable_name_2 &amp;&amp;
     var3 == var4){  /* confusing to read as */
     x = y + z;      /* control stmt body lines up with second line of */
     a = b + c;      /* control statement itself if single indent used */
@@ -210,7 +210,7 @@ z = a + really + long + statement + that + needs +
         second + and + subsequent + lines;
 </code></pre><ul><li>Do not add whitespace at the end of a line.</li><li>Do not add whitespace or a blank line at the end of a file.</li></ul><h3 id=control-statements-and-loops>Control Statements and Loops</h3><ul><li>Include a space after keywords (if, while, for, return, switch).</li><li>Do not use braces (<code>{</code> and <code>}</code>) for control statements with zero or
 just a single statement, unless that statement is more than a single
-line in which case the braces are permitted.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>for (p = buf; *p != '\0'; ++p)
+line in which case the braces are permitted.</li></ul><pre tabindex=0><code>for (p = buf; *p != &#39;\0&#39;; ++p)
         ;       /* nothing */
 for (;;)
         stmt;
@@ -225,26 +225,26 @@ for (;;) {
 }
 if (val != NULL)
         val = realloc(val, newsize);
-</code></pre><ul><li>Parts of a for loop may be left empty.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>for (; cnt &lt; 15; cnt++) {
+</code></pre><ul><li>Parts of a for loop may be left empty.</li></ul><pre tabindex=0><code>for (; cnt &lt; 15; cnt++) {
         stmt1;
         stmt2;
 }
 </code></pre><ul><li>Closing and opening braces go on the same line as the else keyword.
-Braces that are not necessary should be left out.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>if (test)
+Braces that are not necessary should be left out.</li></ul><pre tabindex=0><code>if (test)
         stmt;
 else if (bar) {
         stmt;
         stmt;
 } else
         stmt;
-</code></pre><h3 id=function-calls>Function Calls</h3><ul><li>Do not use spaces after function names.</li><li>Commas should have a space after them.</li><li>No spaces after <code>(</code> or <code>[</code> or preceding the <code>]</code> or <code>)</code> characters.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>error = function(a1, a2);
+</code></pre><h3 id=function-calls>Function Calls</h3><ul><li>Do not use spaces after function names.</li><li>Commas should have a space after them.</li><li>No spaces after <code>(</code> or <code>[</code> or preceding the <code>]</code> or <code>)</code> characters.</li></ul><pre tabindex=0><code>error = function(a1, a2);
 if (error != 0)
     exit(error);
 </code></pre><h3 id=operators>Operators</h3><ul><li>Unary operators do not require spaces, binary operators do.</li><li>Do not use parentheses unless they are required for precedence or
 unless the statement is confusing without them. However, remember
-that other people may be more easily confused than you.</li></ul><h3 id=exit>Exit</h3><p>Exits should be 0 on success, or 1 on failure.</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>exit(0);        /*
+that other people may be more easily confused than you.</li></ul><h3 id=exit>Exit</h3><p>Exits should be 0 on success, or 1 on failure.</p><pre tabindex=0><code>exit(0);        /*
                  * Avoid obvious comments such as
-                 * &quot;Exit 0 on success.&quot;
+                 * &#34;Exit 0 on success.&#34;
                  */
 </code></pre><blockquote><p>}</p></blockquote><h3 id=local-variables>Local Variables</h3><ul><li>Variables should be declared at the start of a block of code rather
 than in the middle. The exception to this is when the variable is
@@ -256,7 +256,7 @@ the next line rather than using a line continuation.</li><li>Be careful to not o
 the declarations, only the last variable on a line should be
 initialized. If multiple variables are to be initialised when
 defined, put one per line.</li><li>Do not use function calls in initializers, except for <code>const</code>
-variables.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>int i = 0, j = 0, k = 0;  /* bad, too many initializer */
+variables.</li></ul><pre tabindex=0><code>int i = 0, j = 0, k = 0;  /* bad, too many initializer */
 
 char a = 0;        /* OK, one variable per line with initializer */
 char b = 0;
@@ -275,13 +275,13 @@ documentation topic for details.</li><li>Functions that are part of the external
 prefix on the function name.</li><li>Do not use uppercase letters - either in the form of ALL_UPPERCASE,
 or CamelCase - in function names. Lower-case letters and underscores
 only.</li><li>When prototyping functions, associate names with parameter types,
-for example:</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>void function1(int fd); /* good */
+for example:</li></ul><pre tabindex=0><code>void function1(int fd); /* good */
 void function2(int);    /* bad */
 </code></pre><ul><li>Short function prototypes should be contained on a single line.
 Longer prototypes, e.g. those with many parameters, can be split
 across multiple lines. The second and subsequent lines should be
 further indented as for line statement continuations as described in
-the previous section.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>static char *function1(int _arg, const char *_arg2,
+the previous section.</li></ul><pre tabindex=0><code>static char *function1(int _arg, const char *_arg2,
        struct foo *_arg3,
        struct bar *_arg4,
        struct baz *_arg5);
@@ -289,18 +289,18 @@ static void usage(void);
 </code></pre><blockquote><p><strong>note</strong></p><p>Unlike function definitions, the function prototypes do not need to
 place the function return type on a separate line.</p></blockquote><h3 id=definitions>Definitions</h3><ul><li>The function type should be on a line by itself preceding the
 function.</li><li>The opening brace of the function body should be on a line by
-itself.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>static char *
+itself.</li></ul><pre tabindex=0><code>static char *
 function(int a1, int a2, float fl, int a4)
 {
 </code></pre><ul><li>Do not declare functions inside other functions. ANSI C states that
 such declarations have file scope regardless of the nesting of the
 declaration. Hiding file declarations in what appears to be a local
 scope is undesirable and will elicit complaints from a good
-compiler.</li><li>Old-style (K&R) function declaration should not be used, use ANSI
+compiler.</li><li>Old-style (K&amp;R) function declaration should not be used, use ANSI
 function declarations instead as shown below.</li><li>Long argument lists should be wrapped as described above in the
-function prototypes section.</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>/*
+function prototypes section.</li></ul><pre tabindex=0><code>/*
  * All major routines should have a comment briefly describing what
- * they do. The comment before the &quot;main&quot; routine should describe
+ * they do. The comment before the &#34;main&#34; routine should describe
  * what the program does.
  */
 int
@@ -311,10 +311,10 @@ main(int argc, char *argv[])
         int ch;
 </code></pre><h2 id=c-statement-style-and-conventions>C Statement Style and Conventions</h2><h3 id=null-pointers>NULL Pointers</h3><ul><li>NULL is the preferred null pointer constant. Use NULL instead of
 <code>(type *)0</code> or <code>(type *)NULL</code>, except where the compiler does not
-know the destination type e.g. for variadic args to a function.</li><li>Test pointers against NULL, for example, use:</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>if (p == NULL) /* Good, compare pointer to NULL */
+know the destination type e.g. for variadic args to a function.</li><li>Test pointers against NULL, for example, use:</li></ul><pre tabindex=0><code>if (p == NULL) /* Good, compare pointer to NULL */
 
 if (!p) /* Bad, using ! on pointer */
-</code></pre><ul><li>Do not use ! for tests unless it is a boolean, for example, use:</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>if (*p == '\0') /* check character against (char)0 */
+</code></pre><ul><li>Do not use ! for tests unless it is a boolean, for example, use:</li></ul><pre tabindex=0><code>if (*p == &#39;\0&#39;) /* check character against (char)0 */
 </code></pre><h3 id=return-value>Return Value</h3><ul><li>Functions which create objects, or allocate memory, should return
 pointer types, and NULL on error. The error type should be indicated
 may setting the variable <code>rte_errno</code> appropriately.</li><li>Functions which work on bursts of packets, such as RX-like or
@@ -330,7 +330,7 @@ to any pointer type. (Typecasting can prevent the compiler from
 warning about missing prototypes as any implicit definition of a
 function returns int - which, unlike <code>void *</code> needs a typecast to
 assign to a pointer variable.)</li></ul><blockquote><p><strong>note</strong></p><p>The above rule about not typecasting <code>void *</code> applies to malloc, as
-well as to DPDK functions.</p></blockquote><ul><li>Values in return statements should not be enclosed in parentheses.</li></ul><h3 id=logging-and-errors>Logging and Errors</h3><p>In the DPDK environment, use the logging interface provided:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>#define RTE_LOGTYPE_TESTAPP1 RTE_LOGTYPE_USER1
+well as to DPDK functions.</p></blockquote><ul><li>Values in return statements should not be enclosed in parentheses.</li></ul><h3 id=logging-and-errors>Logging and Errors</h3><p>In the DPDK environment, use the logging interface provided:</p><pre tabindex=0><code>#define RTE_LOGTYPE_TESTAPP1 RTE_LOGTYPE_USER1
 #define RTE_LOGTYPE_TESTAPP2 RTE_LOGTYPE_USER2
 
 /* enable these logs type */
@@ -339,18 +339,18 @@ rte_set_log_type(RTE_LOGTYPE_TESTAPP2, 1);
 
 /* log in debug level */
 rte_set_log_level(RTE_LOG_DEBUG);
-RTE_LOG(DEBUG, TESTAPP1, &quot;this is is a debug level message\n&quot;);
-RTE_LOG(INFO, TESTAPP1, &quot;this is is a info level message\n&quot;);
-RTE_LOG(WARNING, TESTAPP1, &quot;this is is a warning level message\n&quot;);
+RTE_LOG(DEBUG, TESTAPP1, &#34;this is is a debug level message\n&#34;);
+RTE_LOG(INFO, TESTAPP1, &#34;this is is a info level message\n&#34;);
+RTE_LOG(WARNING, TESTAPP1, &#34;this is is a warning level message\n&#34;);
 
 /* log in info level */
 rte_set_log_level(RTE_LOG_INFO);
-RTE_LOG(DEBUG, TESTAPP2, &quot;debug level message (not displayed)\n&quot;);
+RTE_LOG(DEBUG, TESTAPP2, &#34;debug level message (not displayed)\n&#34;);
 </code></pre><h3 id=branch-prediction>Branch Prediction</h3><ul><li>When a test is done in a critical zone (called often or in a data
 path) the code made use the <code>likely()</code> and <code>unlikely()</code> macros to
 indicate the expected, or preferred fast path. They are expanded as
 a compiler builtin and allow the developer to indicate if the branch
-is likely to be taken or not. Example:</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>#include &lt;rte_branch_prediction.h&gt;
+is likely to be taken or not. Example:</li></ul><pre tabindex=0><code>#include &lt;rte_branch_prediction.h&gt;
 if (likely(x &gt; 1))
   do_stuff();
 </code></pre><blockquote><p><strong>note</strong></p><p>The use of <code>likely()</code> and <code>unlikely()</code> should only be done in
@@ -362,21 +362,21 @@ some optimizations (such as, inlining the code).</li><li>Functions that should b
 <code>static inline</code> and can be defined in a .c or a .h file.</li></ul><blockquote><p><strong>note</strong></p><p>Static functions defined in a header file must be declared as
 <code>static inline</code> in order to prevent compiler warnings about the
 function being unused.</p></blockquote><h3 id=const-attribute>Const Attribute</h3><p>The <code>const</code> attribute should be used as often as possible when a
-variable is read-only.</p><h3 id=inline-asm-in-c-code>Inline ASM in C code</h3><p>The <code>asm</code> and <code>volatile</code> keywords do not have underscores. The AT&T
+variable is read-only.</p><h3 id=inline-asm-in-c-code>Inline ASM in C code</h3><p>The <code>asm</code> and <code>volatile</code> keywords do not have underscores. The AT&amp;T
 syntax should be used. Input and output operands should be named to
-avoid confusion, as shown in the following example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>asm volatile(&quot;outb %[val], %[port]&quot;
+avoid confusion, as shown in the following example:</p><pre tabindex=0><code>asm volatile(&#34;outb %[val], %[port]&#34;
     : :
-    [port] &quot;dN&quot; (port),
-    [val] &quot;a&quot; (val));
+    [port] &#34;dN&#34; (port),
+    [val] &#34;a&#34; (val));
 </code></pre><h3 id=control-statements>Control Statements</h3><ul><li>Forever loops are done with for statements, not while statements.</li><li>Elements in a switch statement that cascade should have a
-FALLTHROUGH comment. For example:</li></ul><pre><code class=language-{.sourceCode data-lang={.sourceCode>switch (ch) {         /* Indent the switch. */
-case 'a':             /* Don't indent the case. */
+FALLTHROUGH comment. For example:</li></ul><pre tabindex=0><code>switch (ch) {         /* Indent the switch. */
+case &#39;a&#39;:             /* Don&#39;t indent the case. */
         aflag = 1;    /* Indent case body one tab. */
         /* FALLTHROUGH */
-case 'b':
+case &#39;b&#39;:
         bflag = 1;
         break;
-case '?':
+case &#39;?&#39;:
 default:
         usage();
         /* NOTREACHED */
@@ -409,7 +409,7 @@ code. All the Doxygen features are described in the Doxygen manual
 online.</p><h3 id=documenting-a-function>Documenting a Function</h3><p>All public functions must be documented. The documentation is placed in
 the header file, above the declaration of the function. The definition
 of the function may be documented, but using standard comments (not in
-doxygen format). The following is an example of function documentation:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/**
+doxygen format). The following is an example of function documentation:</p><pre tabindex=0><code>/**
  * Summary here; one sentence on one line (should not exceed 80 chars).
  *
  * A more detailed description goes here.
@@ -418,7 +418,7 @@ doxygen format). The following is an example of function documentation:</p><pre>
  * anywhere.
  *
  * @param first
- *   &quot;@param&quot; is a Doxygen directive to describe a function parameter. Like
+ *   &#34;@param&#34; is a Doxygen directive to describe a function parameter. Like
  *   some other directives, it takes a term/summary on the same line and a
  *   description (this text) indented by 2 spaces on the next line. All
  *   descriptive text should wrap at 80 chars, without going over.
@@ -429,12 +429,12 @@ doxygen format). The following is an example of function documentation:</p><pre>
  *   type).
  *
  * @return
- *   &quot;@return&quot; is a different Doxygen directive to describe the return value
+ *   &#34;@return&#34; is a different Doxygen directive to describe the return value
  *   of a function, if there is any.
  */
 int rte_foo(int first, int second)
 </code></pre><h3 id=documenting-files>Documenting Files</h3><p>Each public file may start with a comment describing what the file does.
-For example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/**
+For example:</p><pre tabindex=0><code>/**
  * @file
  * This file describes the coding rules of RTE.
  *
@@ -442,7 +442,7 @@ For example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/*
  * Text documentation, and of course how to use doxygen to document
  * public API.
  */
-</code></pre><h3 id=documenting-constants-and-variables>Documenting Constants and Variables</h3><p>Examples:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/**
+</code></pre><h3 id=documenting-constants-and-variables>Documenting Constants and Variables</h3><p>Examples:</p><pre tabindex=0><code>/**
  * The definition of a funny TRUE.
  */
 #define TRUE 0
@@ -457,7 +457,7 @@ For example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/*
 extern uint64_t eal_hpet_resolution_hz;
 </code></pre><h3 id=documenting-structures>Documenting Structures</h3><p>Public structures should also be documented. The <code>/**&lt;</code> sequence can be
 used to documented the fields of the structure, as shown in the
-following example:</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/**
+following example:</p><pre tabindex=0><code>/**
  * Structure describing a memzone, which is a contiguous portions of
  * physical memory identified by a name.
  */
@@ -474,15 +474,13 @@ struct rte_memzone {
 };
 </code></pre><h3 id=see-also-sections>See Also Sections</h3><p>The @see keyword can be used to highlight a link to an existing
 function, file, or URL. This directive should be placed on one line,
-without anything else, at the bottom of the documentation header.</p><pre><code class=language-{.sourceCode data-lang={.sourceCode>/**
+without anything else, at the bottom of the documentation header.</p><pre tabindex=0><code>/**
  * (documentation of function, file, ...)
  *
  * @see rte_foo()
  * @see eal_memzone.c
  */
-</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/dpdk/ rel=tag>DPDK</a></li><li class=tags__item><a class="tags__link btn" href=/tags/coding-style/ rel=tag>Coding Style</a></li><li class=tags__item><a class="tags__link btn" href=/tags/c/ rel=tag>C</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2015/docker-for-dummies-jeongri/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Docker for dummies 정리</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2015/coding-styleyi-jungyoseong/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Coding Style의 중요성</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/dpdk/ rel=tag>DPDK</a></li><li class=tags__item><a class="tags__link btn" href=/tags/coding-style/ rel=tag>Coding Style</a></li><li class=tags__item><a class="tags__link btn" href=/tags/c/ rel=tag>C</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2015/docker-for-dummies-jeongri/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Docker for dummies 정리</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2015/coding-styleyi-jungyoseong/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Coding Style의 중요성</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

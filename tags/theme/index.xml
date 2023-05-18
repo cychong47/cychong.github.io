@@ -2,4 +2,4 @@
 대신 theme마다 조금씩 적용 방법이 다른데 기본적으로 변경해야 할 내용은 동일
 casper theme casper는 index.hbs 파일에서 loop.hbs라는 별도 파일을 통해 본문을 보이게 하고 있다.
 index.hbs
-21 {{! The main content area on the homepage }} 22 &amp;lt;main id=&amp;quot;content&amp;quot; class=&amp;quot;content&amp;quot; role=&amp;quot;main&amp;quot;&amp;gt; 23 24 {{! The tag below includes the post loop - partials/loop.hbs }} 25 {{&amp;gt; &amp;quot;loop&amp;quot;}} 26 27 &amp;lt;/main&amp;gt; 위 코드에서 가리키는 partials/loop.</description></item></channel></rss>
+21 {{! The main content area on the homepage }} 22 &amp;lt;main id=&amp;#34;content&amp;#34; class=&amp;#34;content&amp;#34; role=&amp;#34;main&amp;#34;&amp;gt; 23 24 {{! The tag below includes the post loop - partials/loop.hbs }} 25 {{&amp;gt; &amp;#34;loop&amp;#34;}} 26 27 &amp;lt;/main&amp;gt; 위 코드에서 가리키는 partials/loop.</description></item></channel></rss>

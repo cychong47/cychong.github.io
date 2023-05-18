@@ -1,5 +1,5 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Setup GitHub based Helm repo - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
-<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Setup GitHub based Helm repo</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-08-19T00:00:00+09:00>August 19, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/homelab/ rel=category>HomeLab</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#github에-helm-repository-구축하기>GitHub에 Helm Repository 구축하기</a></li><li><a href=#github에-있는-helm-repository-추가하기>GitHub에 있는 Helm repository 추가하기</a></li></ul></nav></div></div><div class="content post__content clearfix"><h1 id=setup-github-based-helm-repo>Setup GitHub based Helm repo</h1><p>GitHub에 구성한 helm repository에 있는 Helm chart를 이용해서 nginx deploy하기</p><h2 id=github에-helm-repository-구축하기>GitHub에 Helm Repository 구축하기</h2><p><a href=https://medium.com/@mattiaperi/create-a-public-helm-chart-repository-with-github-pages-49b180dbb417>Create a public Helm chart repository with GitHub Pages | by Mattia Peri | Medium</a> 글을 참고해서 따라하면 특별한 문제 없이 Helm Repostiroy로 동작할 GitHub Page를 만들 수 있다.</p><p><img src=/images/2020/08/2020-08-18-IMG_0070.jpg alt></p><p><img src=/images/2020/08/2020-08-18-IMG_0072.jpg alt></p><pre><code>cychong@mini1:~/tmp$ wget https://cychong47.github.io/helm-chart/index.html
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Setup GitHub based Helm repo - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Setup GitHub based Helm repo</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-08-19T00:00:00+09:00>August 19, 2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/homelab/ rel=category>HomeLab</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#github에-helm-repository-구축하기>GitHub에 Helm Repository 구축하기</a></li><li><a href=#github에-있는-helm-repository-추가하기>GitHub에 있는 Helm repository 추가하기</a></li></ul></nav></div></div><div class="content post__content clearfix"><h1 id=setup-github-based-helm-repo>Setup GitHub based Helm repo</h1><p>GitHub에 구성한 helm repository에 있는 Helm chart를 이용해서 nginx deploy하기</p><h2 id=github에-helm-repository-구축하기>GitHub에 Helm Repository 구축하기</h2><p><a href=https://medium.com/@mattiaperi/create-a-public-helm-chart-repository-with-github-pages-49b180dbb417>Create a public Helm chart repository with GitHub Pages | by Mattia Peri | Medium</a> 글을 참고해서 따라하면 특별한 문제 없이 Helm Repostiroy로 동작할 GitHub Page를 만들 수 있다.</p><p><img src=/images/2020/08/2020-08-18-IMG_0070.jpg alt></p><p><img src=/images/2020/08/2020-08-18-IMG_0072.jpg alt></p><pre tabindex=0><code>cychong@mini1:~/tmp$ wget https://cychong47.github.io/helm-chart/index.html
 --2020-08-18 23:49:28--  https://cychong47.github.io/helm-chart/index.html
 Resolving cychong47.github.io (cychong47.github.io)... 185.199.111.153, 185.199.109.153, 185.199.110.153, ...
 Connecting to cychong47.github.io (cychong47.github.io)|185.199.111.153|:443... connected.
@@ -10,68 +10,68 @@ Saving to: ‘index.html’
 index.html                      100%[=======================================================&gt;]   1.47K  --.-KB/s    in 0s
 
 2020-08-18 23:49:29 (13.2 MB/s) - ‘index.html’ saved [1501/1501]
-</code></pre><p><code>index.html</code> 의 내용을 보면</p><pre><code>cychong@mini1:~/tmp$ cat index.html
+</code></pre><p><code>index.html</code> 의 내용을 보면</p><pre tabindex=0><code>cychong@mini1:~/tmp$ cat index.html
 &lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en-US&quot;&gt;
+&lt;html lang=&#34;en-US&#34;&gt;
   &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+    &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;IE=edge&#34;&gt;
+    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1&#34;&gt;
 
 &lt;!-- Begin Jekyll SEO tag v2.6.1 --&gt;
 &lt;title&gt;helm-chart | Helm charts&lt;/title&gt;
-&lt;meta name=&quot;generator&quot; content=&quot;Jekyll v3.9.0&quot; /&gt;
-&lt;meta property=&quot;og:title&quot; content=&quot;helm-chart&quot; /&gt;
-&lt;meta property=&quot;og:locale&quot; content=&quot;en_US&quot; /&gt;
-&lt;meta name=&quot;description&quot; content=&quot;Helm charts&quot; /&gt;
-&lt;meta property=&quot;og:description&quot; content=&quot;Helm charts&quot; /&gt;
-&lt;link rel=&quot;canonical&quot; href=&quot;https://cychong47.github.io/helm-chart/&quot; /&gt;
-&lt;meta property=&quot;og:url&quot; content=&quot;https://cychong47.github.io/helm-chart/&quot; /&gt;
-&lt;meta property=&quot;og:site_name&quot; content=&quot;helm-chart&quot; /&gt;
-&lt;script type=&quot;application/ld+json&quot;&gt;
-{&quot;@type&quot;:&quot;WebSite&quot;,&quot;headline&quot;:&quot;helm-chart&quot;,&quot;url&quot;:&quot;https://cychong47.github.io/helm-chart/&quot;,&quot;description&quot;:&quot;Helm charts&quot;,&quot;name&quot;:&quot;helm-chart&quot;,&quot;@context&quot;:&quot;https://schema.org&quot;}&lt;/script&gt;
+&lt;meta name=&#34;generator&#34; content=&#34;Jekyll v3.9.0&#34; /&gt;
+&lt;meta property=&#34;og:title&#34; content=&#34;helm-chart&#34; /&gt;
+&lt;meta property=&#34;og:locale&#34; content=&#34;en_US&#34; /&gt;
+&lt;meta name=&#34;description&#34; content=&#34;Helm charts&#34; /&gt;
+&lt;meta property=&#34;og:description&#34; content=&#34;Helm charts&#34; /&gt;
+&lt;link rel=&#34;canonical&#34; href=&#34;https://cychong47.github.io/helm-chart/&#34; /&gt;
+&lt;meta property=&#34;og:url&#34; content=&#34;https://cychong47.github.io/helm-chart/&#34; /&gt;
+&lt;meta property=&#34;og:site_name&#34; content=&#34;helm-chart&#34; /&gt;
+&lt;script type=&#34;application/ld+json&#34;&gt;
+{&#34;@type&#34;:&#34;WebSite&#34;,&#34;headline&#34;:&#34;helm-chart&#34;,&#34;url&#34;:&#34;https://cychong47.github.io/helm-chart/&#34;,&#34;description&#34;:&#34;Helm charts&#34;,&#34;name&#34;:&#34;helm-chart&#34;,&#34;@context&#34;:&#34;https://schema.org&#34;}&lt;/script&gt;
 &lt;!-- End Jekyll SEO tag --&gt;
 
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;/helm-chart/assets/css/style.css?v=43e8ca4fe22a1b4d70df5464b14d221474a8b6a3&quot;&gt;
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;/helm-chart/assets/css/style.css?v=43e8ca4fe22a1b4d70df5464b14d221474a8b6a3&#34;&gt;
   &lt;/head&gt;
   &lt;body&gt;
-    &lt;div class=&quot;container-lg px-3 my-5 markdown-body&quot;&gt;
+    &lt;div class=&#34;container-lg px-3 my-5 markdown-body&#34;&gt;
 
 
-      &lt;h1 id=&quot;helm-chart&quot;&gt;helm-chart&lt;/h1&gt;
+      &lt;h1 id=&#34;helm-chart&#34;&gt;helm-chart&lt;/h1&gt;
 &lt;p&gt;Helm charts&lt;/p&gt;
 
 
 
     &lt;/div&gt;
-    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js&quot; integrity=&quot;sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+    &lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js&#34; integrity=&#34;sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
     &lt;script&gt;anchors.add();&lt;/script&gt;
 
   &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p>별 내용이 안 보이네…</p><h2 id=github에-있는-helm-repository-추가하기>GitHub에 있는 Helm repository 추가하기</h2><p>이제 Helm 으로 nginx를 설치할 노드에서 remote helm repository를 추가한다.</p><pre><code>cychong@mini1:~$ helm repo add myhelmrepo https://cychong47.github.io/helm-chart/
-&quot;myhelmrepo&quot; has been added to your repositories
-</code></pre><p>아래 명령으로 추가된 Helm repo 목록을 확인한다.</p><pre><code>cychong@mini1:~$ helm repo list
+</code></pre><p>별 내용이 안 보이네…</p><h2 id=github에-있는-helm-repository-추가하기>GitHub에 있는 Helm repository 추가하기</h2><p>이제 Helm 으로 nginx를 설치할 노드에서 remote helm repository를 추가한다.</p><pre tabindex=0><code>cychong@mini1:~$ helm repo add myhelmrepo https://cychong47.github.io/helm-chart/
+&#34;myhelmrepo&#34; has been added to your repositories
+</code></pre><p>아래 명령으로 추가된 Helm repo 목록을 확인한다.</p><pre tabindex=0><code>cychong@mini1:~$ helm repo list
 NAME      	URL
 myhelmrepo	https://cychong47.github.io/helm-chart/
-</code></pre><p>Ubuntu의 <code>apt</code>나 Fedora(Red Hat, CentOS) 계열의 <code>yum</code>처럼 chart list를 업데이트 한다.</p><pre><code>cychong@mini1:~$ helm repo update
+</code></pre><p>Ubuntu의 <code>apt</code>나 Fedora(Red Hat, CentOS) 계열의 <code>yum</code>처럼 chart list를 업데이트 한다.</p><pre tabindex=0><code>cychong@mini1:~$ helm repo update
 Hang tight while we grab the latest from your chart repositories...
-...Successfully got an update from the &quot;myhelmrepo&quot; chart repository
+...Successfully got an update from the &#34;myhelmrepo&#34; chart repository
 Update Complete. ⎈ Happy Helming!⎈
-</code></pre><p>Chart 업데이트 전에는 검색해도 나오는 결과가 없다.</p><pre><code>cychong@mini1:~/work/helm/my-helm-chart$ helm search repo nginx
+</code></pre><p>Chart 업데이트 전에는 검색해도 나오는 결과가 없다.</p><pre tabindex=0><code>cychong@mini1:~/work/helm/my-helm-chart$ helm search repo nginx
 NAME            	CHART VERSION	APP VERSION	DESCRIPTION
 myhelmrepo/nginx	0.2.0        	1.0        	A Helm chart for nginx
-</code></pre><p>앞에서 <code>myhelmrepo</code>로 추가한 Helm Repository에 <code>nginx</code> chart가 있는 걸 알 수 있다.</p><p>(우선)( local file system에 있던 helm chart로 생성했던 helm release를 삭제하고 PV를 삭제한다.</p><pre><code>cychong@mini1:~$ helm list
+</code></pre><p>앞에서 <code>myhelmrepo</code>로 추가한 Helm Repository에 <code>nginx</code> chart가 있는 걸 알 수 있다.</p><p>(우선)( local file system에 있던 helm chart로 생성했던 helm release를 삭제하고 PV를 삭제한다.</p><pre tabindex=0><code>cychong@mini1:~$ helm list
 NAME   	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART      	APP VERSION
 podcast	default  	1       	2020-07-03 00:47:37.309008711 +0900 KST	deployed	nginx-0.1.0	1.0
 sosa0sa	default  	1       	2020-08-17 18:16:57.264926469 +0900 KST	deployed	nginx-0.2.0	1.0
-</code></pre><p>Helm release 삭제.</p><pre><code>cychong@mini1:~$ helm delete sosa0sa
-release &quot;sosa0sa&quot; uninstalled
-</code></pre><p>PV 삭제 후 재 생성</p><pre><code>cychong@mini1:~/work/helm/my-helm-chart$ kubectl delete -f sosa0sa-pv.yaml
-persistentvolume &quot;sosa0sa-pv&quot; deleted
+</code></pre><p>Helm release 삭제.</p><pre tabindex=0><code>cychong@mini1:~$ helm delete sosa0sa
+release &#34;sosa0sa&#34; uninstalled
+</code></pre><p>PV 삭제 후 재 생성</p><pre tabindex=0><code>cychong@mini1:~/work/helm/my-helm-chart$ kubectl delete -f sosa0sa-pv.yaml
+persistentvolume &#34;sosa0sa-pv&#34; deleted
 cychong@mini1:~/work/helm/my-helm-chart$ kubectl create -f sosa0sa-pv.yaml
 persistentvolume/sosa0sa-pv created
-</code></pre><p>이제 value 파일은 local file system에 있는 걸 이용하면서, Helm chart는 GitHub에 있는 걸 사용해서 Helm Install</p><pre><code>cychong@mini1:~/work/helm/my-helm-chart$ helm install -f sosa0sa-value.yaml sosa0sa myhelmrepo/nginx
+</code></pre><p>이제 value 파일은 local file system에 있는 걸 이용하면서, Helm chart는 GitHub에 있는 걸 사용해서 Helm Install</p><pre tabindex=0><code>cychong@mini1:~/work/helm/my-helm-chart$ helm install -f sosa0sa-value.yaml sosa0sa myhelmrepo/nginx
 NAME: sosa0sa
 LAST DEPLOYED: Tue Aug 18 23:43:56 2020
 NAMESPACE: default
@@ -79,10 +79,10 @@ STATUS: deployed
 REVISION: 1
 NOTES:
 1. Get the application URL by running these commands:
-  export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&quot;{.spec.ports[0].nodePort}&quot; services sosa0sa-nginx)
-  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath=&quot;{.items[0].status.addresses[0].address}&quot;)
+  export NODE_PORT=$(kubectl get --namespace default -o jsonpath=&#34;{.spec.ports[0].nodePort}&#34; services sosa0sa-nginx)
+  export NODE_IP=$(kubectl get nodes --namespace default -o jsonpath=&#34;{.items[0].status.addresses[0].address}&#34;)
   echo http://$NODE_IP:$NODE_PORT
-</code></pre><p>Helm Release가 잘 설치 되었다.</p><pre><code>cychong@mini1:~/tmp$ helm list
+</code></pre><p>Helm Release가 잘 설치 되었다.</p><pre tabindex=0><code>cychong@mini1:~/tmp$ helm list
 NAME   	NAMESPACE	REVISION	UPDATED                                	STATUS  	CHART      	APP VERSION
 podcast	default  	1       	2020-07-03 00:47:37.309008711 +0900 KST	deployed	nginx-0.1.0	1.0
 sosa0sa	default  	1       	2020-08-18 23:43:56.44632142 +0900 KST 	deployed	nginx-0.2.0	1.0
@@ -91,9 +91,7 @@ cychong@mini1:~/work/helm/my-helm-chart$ kubectl get pods
 NAME                             READY   STATUS    RESTARTS   AGE
 podcast-nginx-659bcb6485-vc6lb   1/1     Running   1          46d
 sosa0sa-nginx-87fc9949c-mj67c    1/1     Running   0          82s
-</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/github/ rel=tag>“GitHub”</a></li><li class=tags__item><a class="tags__link btn" href=/tags/helm/ rel=tag>“Helm”</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2020/2020-08-17-any-pattern/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Any pattern?</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2020/2020-08-19-being-the-first-is-not-enough/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Being the First is not enough</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/github/ rel=tag>“GitHub”</a></li><li class=tags__item><a class="tags__link btn" href=/tags/helm/ rel=tag>“Helm”</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2020/2020-08-17-any-pattern/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Any pattern?</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2020/2020-08-19-being-the-first-is-not-enough/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Being the First is not enough</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

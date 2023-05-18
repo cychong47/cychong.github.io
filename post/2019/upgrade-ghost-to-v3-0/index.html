@@ -1,9 +1,9 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Upgrade ghost to v3.0 - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Upgrade ghost to v3.0 - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Upgrade ghost to v3.0</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-11-05T14:58:16+09:00>November 05, 2019</time>
-<time class=meta__text datetime=2019-11-06T14:25:40Z>(Last Modified: November 06, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><ul><li><a href=#ghost-update-쉽게-될-리가-없지>Ghost update! 쉽게 될 리가 없지</a></li><li><a href=#ghostdb-파일을-직접-수정해서-theme-변경>ghost.db 파일을 직접 수정해서 theme 변경</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><ul><li>부제 1. pod가 동작하지 않을때 원인 찾기</li><li>부제 2. helm upgrade 명령을 이용하여 업데이트 하기</li><li>부제 3. sqlite를 이용해서 ghost.db 직접 수정하기</li></ul><p>values.yaml에 명시되어 있는 ghost docker image의 버전 정보를 2.31.0에서 3.0.2 최신 버전으로 업데이트 후 아래 명령어로 업데이트</p><pre><code>$ helm upgrade --debug my-ghost ghost-with-helm
-[debug] Created tunnel using local port: '45263'
+<time class=meta__text datetime=2019-11-06T14:25:40Z>(Last Modified: November 06, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><ul><li><a href=#ghost-update-쉽게-될-리가-없지>Ghost update! 쉽게 될 리가 없지</a></li><li><a href=#ghostdb-파일을-직접-수정해서-theme-변경>ghost.db 파일을 직접 수정해서 theme 변경</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><ul><li>부제 1. pod가 동작하지 않을때 원인 찾기</li><li>부제 2. helm upgrade 명령을 이용하여 업데이트 하기</li><li>부제 3. sqlite를 이용해서 ghost.db 직접 수정하기</li></ul><p>values.yaml에 명시되어 있는 ghost docker image의 버전 정보를 2.31.0에서 3.0.2 최신 버전으로 업데이트 후 아래 명령어로 업데이트</p><pre tabindex=0><code>$ helm upgrade --debug my-ghost ghost-with-helm
+[debug] Created tunnel using local port: &#39;45263&#39;
 
-[debug] SERVER: &quot;127.0.0.1:45263&quot;
+[debug] SERVER: &#34;127.0.0.1:45263&#34;
 
 REVISION: 6
 RELEASED: Tue Nov  5 22:25:19 2019
@@ -16,13 +16,13 @@ affinity: {}
 env:
   node_env: production
   url: http://sosa0sa.com:2368
-fullnameOverride: &quot;&quot;
+fullnameOverride: &#34;&#34;
 image:
   pullPolicy: Always
   registry: docekr.io
   repository: ghost
   tag: 3.0.2
-</code></pre><p>Helm upgrade는 완료되었지만 ghost 블로그가 접속이 되지 않는다. 상태를 확인해 보니</p><pre><code>$ kubectl get pod
+</code></pre><p>Helm upgrade는 완료되었지만 ghost 블로그가 접속이 되지 않는다. 상태를 확인해 보니</p><pre tabindex=0><code>$ kubectl get pod
 NAME                        READY   STATUS             RESTARTS   AGE
 my-ghost-795c6d674f-jb6t2   0/1     CrashLoopBackOff   4          3m6s
 sctp-7c94d9b5c9-wsjnd       1/1     Running            2          28d
@@ -39,14 +39,14 @@ Events:
   Warning  Unhealthy  5m9s (x4 over 5m48s)   kubelet, mini1     Readiness probe failed: HTTP probe failed with statuscode: 500
   Warning  Unhealthy  5m6s (x4 over 5m46s)   kubelet, mini1     Liveness probe failed: HTTP probe failed with statuscode: 500
   Normal   Killing    5m6s (x2 over 5m36s)   kubelet, mini1     Container ghost failed liveness probe, will be restarted
-  Normal   Pulling    5m6s (x3 over 6m6s)    kubelet, mini1     Pulling image &quot;ghost:3.0.2&quot;
-  Normal   Pulled     5m2s (x3 over 6m2s)    kubelet, mini1     Successfully pulled image &quot;ghost:3.0.2&quot;
+  Normal   Pulling    5m6s (x3 over 6m6s)    kubelet, mini1     Pulling image &#34;ghost:3.0.2&#34;
+  Normal   Pulled     5m2s (x3 over 6m2s)    kubelet, mini1     Successfully pulled image &#34;ghost:3.0.2&#34;
   Normal   Created    5m2s (x3 over 6m2s)    kubelet, mini1     Created container ghost
   Warning  BackOff    63s (x10 over 3m35s)   kubelet, mini1     Back-off restarting failed container
-</code></pre><p><code>my-ghost</code>로 시작하는 pod가 제대로 실행되지 않아 반복해서 재시동 되었지만 제대로 동작하지 않아 결국 실패했다.</p><h3 id=ghost-update-쉽게-될-리가-없지>Ghost update! 쉽게 될 리가 없지</h3><p>pod 에서 발생하는 로그를 분석해서 ghost가 제대로 실행되지 않는 이유를 알아보기로 했다. Container의 로그를 인하기 위해 <code>kubectl logs</code> 명령어를 사용한다.</p><p>만일 pod에 여러 개의 container가 있는 경우 pod 명 뒤에 contaienr 명을 지정한다. 자세한 내용은 <code>kubectl logs -h</code> 로 확인해 본다.</p><pre><code>$ kubectl logs my-ghost-795c6d674f-jb6t2
-[2019-11-05 13:41:48] ERROR The currently active theme &quot;simply&quot; is invalid.
+</code></pre><p><code>my-ghost</code>로 시작하는 pod가 제대로 실행되지 않아 반복해서 재시동 되었지만 제대로 동작하지 않아 결국 실패했다.</p><h3 id=ghost-update-쉽게-될-리가-없지>Ghost update! 쉽게 될 리가 없지</h3><p>pod 에서 발생하는 로그를 분석해서 ghost가 제대로 실행되지 않는 이유를 알아보기로 했다. Container의 로그를 인하기 위해 <code>kubectl logs</code> 명령어를 사용한다.</p><p>만일 pod에 여러 개의 container가 있는 경우 pod 명 뒤에 contaienr 명을 지정한다. 자세한 내용은 <code>kubectl logs -h</code> 로 확인해 본다.</p><pre tabindex=0><code>$ kubectl logs my-ghost-795c6d674f-jb6t2
+[2019-11-05 13:41:48] ERROR The currently active theme &#34;simply&#34; is invalid.
 
-The currently active theme &quot;simply&quot; is invalid.
+The currently active theme &#34;simply&#34; is invalid.
 
 Error ID:
     03c2e4b0-ffd2-11e9-9543-b7dca11c112e
@@ -61,7 +61,7 @@ Details:
         fatal:    true
         level:    error
         rule:     The v0.1 API and &lt;code&gt;ghost.url.api()&lt;/code&gt; JavaScript helper have been removed.
-        details:  The v0.1 API &amp; Public API Beta have been removed, along with the &lt;code&gt;public/ghost-sdk.min.js&lt;/code&gt; file &amp; the &lt;code&gt;ghost.url.api()&lt;/code&gt; helper.&lt;br&gt;All code relying on the v0.1 API must be upgraded to use the &lt;a href=&quot;https://ghost.org/faq/upgrades/&quot; target=_blank&gt;new API&lt;/a&gt;.
+        details:  The v0.1 API &amp; Public API Beta have been removed, along with the &lt;code&gt;public/ghost-sdk.min.js&lt;/code&gt; file &amp; the &lt;code&gt;ghost.url.api()&lt;/code&gt; helper.&lt;br&gt;All code relying on the v0.1 API must be upgraded to use the &lt;a href=&#34;https://ghost.org/faq/upgrades/&#34; target=_blank&gt;new API&lt;/a&gt;.
         regex:
         failures:
           -
@@ -70,7 +70,7 @@ Details:
 
 ----------------------------------------
 
-ThemeValidationError: The currently active theme &quot;simply&quot; is invalid.
+ThemeValidationError: The currently active theme &#34;simply&#34; is invalid.
     at ThemeValidationError.GhostError (/var/lib/ghost/versions/3.0.2/core/server/lib/common/errors.js:10:26)
     at new ThemeValidationError (/var/lib/ghost/versions/3.0.2/core/server/lib/common/errors.js:40:20)
     at validationSuccess (/var/lib/ghost/versions/3.0.2/core/frontend/services/themes/index.js:34:48)
@@ -91,13 +91,13 @@ ThemeValidationError: The currently active theme &quot;simply&quot; is invalid.
 [2019-11-05 13:41:52] INFO Your site is now available on http://sosa0sa.com:2368/
 [2019-11-05 13:41:52] INFO Ctrl+C to shut down
 [2019-11-05 13:41:52] INFO Ghost boot 9.265s
-[2019-11-05 13:41:53] ERROR &quot;GET /&quot; 500 70ms
+[2019-11-05 13:41:53] ERROR &#34;GET /&#34; 500 70ms
 
-[error.hbs] Missing helper: &quot;foreach&quot;
+[error.hbs] Missing helper: &#34;foreach&#34;
 
 ----------------------------------------
 
-Error: [error.hbs] Missing helper: &quot;foreach&quot;
+Error: [error.hbs] Missing helper: &#34;foreach&#34;
     at Object.&lt;anonymous&gt; (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js:19:13)
     at eval (eval at createFunctionContext (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), &lt;anonymous&gt;:6:95)
     at Object.prog [as fn] (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/runtime.js:229:12)
@@ -115,13 +115,13 @@ Error: [error.hbs] Missing helper: &quot;foreach&quot;
     at /var/lib/ghost/versions/3.0.2/node_modules/express-hbs/lib/hbs.js:565:14
     at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
 
-[2019-11-05 13:42:00] ERROR &quot;GET /&quot; 500 14ms
+[2019-11-05 13:42:00] ERROR &#34;GET /&#34; 500 14ms
 
-[error.hbs] Missing helper: &quot;foreach&quot;
+[error.hbs] Missing helper: &#34;foreach&#34;
 
 ----------------------------------------
 
-Error: [error.hbs] Missing helper: &quot;foreach&quot;
+Error: [error.hbs] Missing helper: &#34;foreach&#34;
     at Object.&lt;anonymous&gt; (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js:19:13)
     at eval (eval at createFunctionContext (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), &lt;anonymous&gt;:6:95)
     at Object.prog [as fn] (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/runtime.js:229:12)
@@ -175,13 +175,13 @@ Error: [error.hbs] Missing helper: &quot;foreach&quot;
     at Layer.handle_error (/var/lib/ghost/versions/3.0.2/node_modules/express/lib/router/layer.js:67:12)
     at trim_prefix (/var/lib/ghost/versions/3.0.2/node_modules/express/lib/router/index.js:315:13)
 
-[2019-11-05 13:42:03] ERROR &quot;GET /&quot; 500 26ms
+[2019-11-05 13:42:03] ERROR &#34;GET /&#34; 500 26ms
 
-[error.hbs] Missing helper: &quot;foreach&quot;
+[error.hbs] Missing helper: &#34;foreach&#34;
 
 ----------------------------------------
 
-Error: [error.hbs] Missing helper: &quot;foreach&quot;
+Error: [error.hbs] Missing helper: &#34;foreach&#34;
     at Object.&lt;anonymous&gt; (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/helpers/helper-missing.js:19:13)
     at eval (eval at createFunctionContext (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:262:23), &lt;anonymous&gt;:6:95)
     at Object.prog [as fn] (/var/lib/ghost/versions/3.0.2/node_modules/handlebars/dist/cjs/handlebars/runtime.js:229:12)
@@ -237,9 +237,9 @@ Error: [error.hbs] Missing helper: &quot;foreach&quot;
 
 [2019-11-05 13:42:03] WARN Ghost has shut down
 [2019-11-05 13:42:03] WARN Your site is now offline
-</code></pre><p>에러 로그를 보니 기존에 ghost 2.x에서 사용하던 theme simply 가 ghost 3.0과 호환이 되지 않아서 그런 듯 한다.</p><p>ghost theme 파일들은 PV(Persistent Volume)로 마운트 되는 디렉토리에 있는데 문제를 해결할 해결책을 생각해 보면</p><ul><li>theme simply를 수정해서 ghost 3.0과 호환되게 만든다.</li><li>theme simpy 대신 ghost 3.0과 호횐되는 기본 casper 3.0 theme을 사용한다.</li></ul><p>첫번째 옵션은 ghost theme에 대한 연구(?)가 필요해서 보다 쉬운 두 번째 방법으로 시도해 보기로 한다. ghost 3.0과 함께 발표된 기본 theme 인 casper 3.0을 사용하도록 변경하면 되는데 문제는 theme을 변경할 수 있는 화면도 ghost가 정상적으로 실행된 경우에 접근할 수 있는 설정 화면에 있다는 거.</p><p>그렇지만 아마도 ghost가 사용하는 theme 정보가 어딘가 파일에 저장되어 있을 듯 하니 그걸 변경하면 해결할 수 있을 듯 하다.</p><h3 id=ghostdb-파일을-직접-수정해서-theme-변경>ghost.db 파일을 직접 수정해서 theme 변경</h3><p><a href=https://blog.tylerbuchea.com/customizing-ghost/>https://blog.tylerbuchea.com/customizing-ghost/</a> 그리고 <a href=https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/>https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/</a> 를 본 ghost가 동작하는데 사용하는 설정 정보들이 <code>ghost.db</code>에 저장되어 있는 듯 하다. 그리고 sqlite로 저장된 이 파일을 직접 수정할 수 도 있는 듯.</p><p>PV로 마운트하는 ghost의 <code>content/data</code> 디렉토리에 있는 <code>ghost.db</code> 파일을 sqlite 툴로 열어본다. 설정에 관련된 내용은 <code>settings</code> 테이블에 저장된 듯 하다.</p><pre><code>$ sqlite3 ghost.db
+</code></pre><p>에러 로그를 보니 기존에 ghost 2.x에서 사용하던 theme simply 가 ghost 3.0과 호환이 되지 않아서 그런 듯 한다.</p><p>ghost theme 파일들은 PV(Persistent Volume)로 마운트 되는 디렉토리에 있는데 문제를 해결할 해결책을 생각해 보면</p><ul><li>theme simply를 수정해서 ghost 3.0과 호환되게 만든다.</li><li>theme simpy 대신 ghost 3.0과 호횐되는 기본 casper 3.0 theme을 사용한다.</li></ul><p>첫번째 옵션은 ghost theme에 대한 연구(?)가 필요해서 보다 쉬운 두 번째 방법으로 시도해 보기로 한다. ghost 3.0과 함께 발표된 기본 theme 인 casper 3.0을 사용하도록 변경하면 되는데 문제는 theme을 변경할 수 있는 화면도 ghost가 정상적으로 실행된 경우에 접근할 수 있는 설정 화면에 있다는 거.</p><p>그렇지만 아마도 ghost가 사용하는 theme 정보가 어딘가 파일에 저장되어 있을 듯 하니 그걸 변경하면 해결할 수 있을 듯 하다.</p><h3 id=ghostdb-파일을-직접-수정해서-theme-변경>ghost.db 파일을 직접 수정해서 theme 변경</h3><p><a href=https://blog.tylerbuchea.com/customizing-ghost/>https://blog.tylerbuchea.com/customizing-ghost/</a> 그리고 <a href=https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/>https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/</a> 를 본 ghost가 동작하는데 사용하는 설정 정보들이 <code>ghost.db</code>에 저장되어 있는 듯 하다. 그리고 sqlite로 저장된 이 파일을 직접 수정할 수 도 있는 듯.</p><p>PV로 마운트하는 ghost의 <code>content/data</code> 디렉토리에 있는 <code>ghost.db</code> 파일을 sqlite 툴로 열어본다. 설정에 관련된 내용은 <code>settings</code> 테이블에 저장된 듯 하다.</p><pre tabindex=0><code>$ sqlite3 ghost.db
 SQLite version 3.22.0 2018-01-22 18:45:57
-Enter &quot;.help&quot; for usage hints.
+Enter &#34;.help&#34; for usage hints.
 
 sqlite&gt; .tables
 actions                                 permissions_apps
@@ -263,19 +263,16 @@ sqlite&gt; select * FROM settings;
 59929168a13f9a00014e67da|title|Another|blog|2016-09-20 14:03:55|1|2017-11-21 14:58:13|1
 59929168a13f9a00014e67db|description|Thoughts, stories and ideas.|blog|2016-09-20 14:03:55|1|2017-11-21 14:58:13|1
 ...
-
-</code></pre><p><a href=https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/>https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/</a> 글을 참조하여 현재 사용하고 있는 theme을 가리키는 key인 <code>activeTheme</code>을 찾아보지만 2016 년 글이라 그런지 <code>activeTheme</code>이라는 key는 존재하지 않는다. DB scheme가 변경된 듯 하다. 하지만<code>activeTheme</code>이 아닌 유사한 이름인 <code>active_theme</code> 을 찾을 수 있다.</p><pre><code>sqlite&gt; SELECT * FROM settings where key = 'active_theme';
+</code></pre><p><a href=https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/>https://www.ghostforbeginners.com/change-ghost-theme-from-command-line/</a> 글을 참조하여 현재 사용하고 있는 theme을 가리키는 key인 <code>activeTheme</code>을 찾아보지만 2016 년 글이라 그런지 <code>activeTheme</code>이라는 key는 존재하지 않는다. DB scheme가 변경된 듯 하다. 하지만<code>activeTheme</code>이 아닌 유사한 이름인 <code>active_theme</code> 을 찾을 수 있다.</p><pre tabindex=0><code>sqlite&gt; SELECT * FROM settings where key = &#39;active_theme&#39;;
 59929168a13f9a00014e67eb|active_theme|simply|theme|2017-08-15 06:15:04|1|2019-03-20 14:49:09|1
-</code></pre><p><code>active_theme</code> 키 값을 확인해 보니 문제가 되는 바로 그 <code>simply</code>임을 확인할 수 있다.</p><p>값 변경은 <code>update</code> 명령을 이용해서 변경할 수 있다. 역시 위 글 참조</p><pre><code>sqlite&gt; update settings set value='casper' where key = 'active_theme';
-sqlite&gt; SELECT * FROM settings where key = 'active_theme';
+</code></pre><p><code>active_theme</code> 키 값을 확인해 보니 문제가 되는 바로 그 <code>simply</code>임을 확인할 수 있다.</p><p>값 변경은 <code>update</code> 명령을 이용해서 변경할 수 있다. 역시 위 글 참조</p><pre tabindex=0><code>sqlite&gt; update settings set value=&#39;casper&#39; where key = &#39;active_theme&#39;;
+sqlite&gt; SELECT * FROM settings where key = &#39;active_theme&#39;;
 59929168a13f9a00014e67eb|active_theme|casper|theme|2017-08-15 06:15:04|1|2019-03-20 14:49:09|1
-</code></pre><p><code>sqlite3</code> 종료는 ctrl + d로.</p><p>이제 다시 pod의 상태를 확인해 보면 정상적으로 pod가 실행되고 있음을 확인할 수 있다.</p><pre><code>$ kubectl get pods
+</code></pre><p><code>sqlite3</code> 종료는 ctrl + d로.</p><p>이제 다시 pod의 상태를 확인해 보면 정상적으로 pod가 실행되고 있음을 확인할 수 있다.</p><pre tabindex=0><code>$ kubectl get pods
 NAME                        READY   STATUS    RESTARTS   AGE
 my-ghost-795c6d674f-jb6t2   1/1     Running   22         60m
 sctp-7c94d9b5c9-wsjnd       1/1     Running   2          28d
-</code></pre><p>웹 브라우저로 URL 접속하니 정상적으로 동작한다. 문제 해결&mldr;</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/ghost/ rel=tag>ghost</a></li><li class=tags__item><a class="tags__link btn" href=/tags/kubernetes/ rel=tag>kubernetes</a></li><li class=tags__item><a class="tags__link btn" href=/tags/troubleshooting/ rel=tag>troubleshooting</a></li><li class=tags__item><a class="tags__link btn" href=/tags/sqlite/ rel=tag>sqlite</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2019/what-if-helm-command-refuses/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>What if helm command refuse to execute</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2019/samuryeog/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>사무력</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+</code></pre><p>웹 브라우저로 URL 접속하니 정상적으로 동작한다. 문제 해결&mldr;</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/ghost/ rel=tag>ghost</a></li><li class=tags__item><a class="tags__link btn" href=/tags/kubernetes/ rel=tag>kubernetes</a></li><li class=tags__item><a class="tags__link btn" href=/tags/troubleshooting/ rel=tag>troubleshooting</a></li><li class=tags__item><a class="tags__link btn" href=/tags/sqlite/ rel=tag>sqlite</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2019/what-if-helm-command-refuses/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>What if helm command refuse to execute</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2019/samuryeog/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>사무력</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

@@ -1,39 +1,39 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>DPDK NIC 초기화 - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>DPDK NIC 초기화 - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>DPDK NIC 초기화</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2016-02-09T14:54:21+09:00>February 09, 2016</time>
-<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><ul><li><a href=#constructor-attribute>constructor attribute</a></li><li><a href=#dpdk>DPDK</a></li><li><a href=#e1000>e1000</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><h3 id=constructor-attribute>constructor attribute</h3><p><a href=http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/>http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/</a></p><p>constructor attribute을 가진 함수는 main 함수를 실행하기 전에 호출한다.</p><p>예제 (<a href=http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/>출처</a>)</p><pre><code>#include &lt;stdio.h&gt;
+<time class=meta__text datetime=2018-04-01T02:38:40Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><ul><li><a href=#constructor-attribute>constructor attribute</a></li><li><a href=#dpdk>DPDK</a></li><li><a href=#e1000>e1000</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><h3 id=constructor-attribute>constructor attribute</h3><p><a href=http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/>http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/</a></p><p>constructor attribute을 가진 함수는 main 함수를 실행하기 전에 호출한다.</p><p>예제 (<a href=http://phoxis.org/2011/04/27/c-language-constructors-and-destructors-with-gcc/>출처</a>)</p><pre tabindex=0><code>#include &lt;stdio.h&gt;
  
 void begin (void) __attribute__((constructor));
 void end (void) __attribute__((destructor));
  
 int main (void)
 {
-  printf (&quot;\nInside main ()&quot;);
+  printf (&#34;\nInside main ()&#34;);
 }
  
 void begin (void)
 {
-  printf (&quot;\nIn begin ()&quot;);
+  printf (&#34;\nIn begin ()&#34;);
 }
  
 void end (void)
 {
-  printf (&quot;\nIn end ()\n&quot;);
+  printf (&#34;\nIn end ()\n&#34;);
 }
-</code></pre><p>실행하면</p><pre><code>In begin ()
+</code></pre><p>실행하면</p><pre tabindex=0><code>In begin ()
 Inside main ()
 In end ()
-</code></pre><h3 id=dpdk>DPDK</h3><p>DPDK의 경우 device driver들을 모두 constructor attirbute을 사용해서 main 함수 전에 호출되록 한다.</p><pre><code>PMD_REGISTER_DRIVER(pmd_igb_drv);  
+</code></pre><h3 id=dpdk>DPDK</h3><p>DPDK의 경우 device driver들을 모두 constructor attirbute을 사용해서 main 함수 전에 호출되록 한다.</p><pre tabindex=0><code>PMD_REGISTER_DRIVER(pmd_igb_drv);  
 PMD_REGISTER_DRIVER(pmd_igbvf_drv);  
 PMD_REGISTER_DRIVER(em_pmd_drv);  
-</code></pre><p>Physical device 외에 virtual device들도 동일하게 등록한다.</p><pre><code>PMD_REGISTER_DRIVER(cryptodev_aesni_mb_pmd_drv);  
+</code></pre><p>Physical device 외에 virtual device들도 동일하게 등록한다.</p><pre tabindex=0><code>PMD_REGISTER_DRIVER(cryptodev_aesni_mb_pmd_drv);  
 PMD_REGISTER_DRIVER(pmd_qat_drv);  
-</code></pre><p><code>PMD_REGISTER_DRIVER()</code>는 <code>lib/librte_eal/common/include/rte_dev.h</code>에 다음과 같이 정의되어 있다.</p><pre><code>#define PMD_REGISTER_DRIVER(d)\
+</code></pre><p><code>PMD_REGISTER_DRIVER()</code>는 <code>lib/librte_eal/common/include/rte_dev.h</code>에 다음과 같이 정의되어 있다.</p><pre tabindex=0><code>#define PMD_REGISTER_DRIVER(d)\
 void devinitfn_ ##d(void);\
 void __attribute__((constructor, used)) devinitfn_ ##d(void)\
 {\
     rte_eal_driver_register(&amp;d);\
 }
-</code></pre><p><code>rte_eal_deriver_register()</code>는 <code>lib/librte_eal/common/eal_common_dev.c</code>에서 static 변수로 정의된 <code>rte_driver_list[]</code>에 함수 인자로 넘겨진 driver를 등록한다.</p><p>인자는 다음 struct 형태로 정의된다.</p><pre><code>/**  
+</code></pre><p><code>rte_eal_deriver_register()</code>는 <code>lib/librte_eal/common/eal_common_dev.c</code>에서 static 변수로 정의된 <code>rte_driver_list[]</code>에 함수 인자로 넘겨진 driver를 등록한다.</p><p>인자는 다음 struct 형태로 정의된다.</p><pre tabindex=0><code>/**  
  * A structure describing a device driver.  
  */  
 struct rte_driver {   
@@ -43,7 +43,7 @@ struct rte_driver {
     rte_dev_init_t *init;              /**&lt; Device init. function. */  
     rte_dev_uninit_t *uninit;          /**&lt; Device uninit. function. */  
 };  
-</code></pre><p>등록된 디바이스들은 <code>rte_eal_init()</code> 초기화 과정에서 호출되는 함수 <code>rte_eal_dev_init()</code>에서 각 디바이스의 초기화 함수가 호출된다.</p><pre><code>int
+</code></pre><p>등록된 디바이스들은 <code>rte_eal_init()</code> 초기화 과정에서 호출되는 함수 <code>rte_eal_dev_init()</code>에서 각 디바이스의 초기화 함수가 호출된다.</p><pre tabindex=0><code>int
 rte_eal_dev_init(void)
 {
     /* call the init function for each virtual device */
@@ -61,20 +61,20 @@ rte_eal_dev_init(void)
         if (driver-&gt;type != PMD_PDEV)
             continue;
 
-        /* PDEV drivers don't get passed any parameters */
+        /* PDEV drivers don&#39;t get passed any parameters */
         driver-&gt;init(NULL, NULL);
     }
-</code></pre><h4 id=qat-device>QAT device</h4><pre><code>static struct rte_driver pmd_qat_drv = {
+</code></pre><h4 id=qat-device>QAT device</h4><pre tabindex=0><code>static struct rte_driver pmd_qat_drv = {
     .type = PMD_PDEV,
     .init = rte_qat_pmd_init,
 };
-</code></pre><h5 id=qat-pmd-초기화>QAT PMD 초기화</h5><ol><li><code>rte_qat_pmd_init()</code></li><li><code>rte_cryptodev_pmd_driver_register()</code></li><li><code>rte_cryptodev_init()</code> & <code>rte_eal_pci_register()</code></li></ol><h4 id=aesni_mb-device>AESNI_MB device</h4><pre><code>static struct rte_driver cryptodev_aesni_mb_pmd_drv = {
+</code></pre><h5 id=qat-pmd-초기화>QAT PMD 초기화</h5><ol><li><code>rte_qat_pmd_init()</code></li><li><code>rte_cryptodev_pmd_driver_register()</code></li><li><code>rte_cryptodev_init()</code> & <code>rte_eal_pci_register()</code></li></ol><h4 id=aesni_mb-device>AESNI_MB device</h4><pre tabindex=0><code>static struct rte_driver cryptodev_aesni_mb_pmd_drv = {
     .name = CRYPTODEV_NAME_AESNI_MB_PMD,
     .type = PMD_VDEV,
     .init = cryptodev_aesni_mb_init,
     .uninit = cryptodev_aesni_mb_uninit
 };
-</code></pre><h5 id=aesni_mb-초기화>AESNI_MB 초기화</h5><ol><li><code>cryptodev_aesni_mb_init()</code></li><li><code>cryptodev_aesni_mb_create()</code></li></ol><ul><li>CPU가 AES 연산을 지원하는 지 확인</li><li>CPU가 AVX2/AVX/SSE4_1 중 최소 한 가지를 지원하는 지 확인</li><li><code>rte_cryptodev_pmd_virtual_dev_init()</code>를 이용해 PMD device로 등록</li></ul><h3 id=e1000>e1000</h3><pre><code>static int
+</code></pre><h5 id=aesni_mb-초기화>AESNI_MB 초기화</h5><ol><li><code>cryptodev_aesni_mb_init()</code></li><li><code>cryptodev_aesni_mb_create()</code></li></ol><ul><li>CPU가 AES 연산을 지원하는 지 확인</li><li>CPU가 AVX2/AVX/SSE4_1 중 최소 한 가지를 지원하는 지 확인</li><li><code>rte_cryptodev_pmd_virtual_dev_init()</code>를 이용해 PMD device로 등록</li></ul><h3 id=e1000>e1000</h3><pre tabindex=0><code>static int
 rte_em_pmd_init(const char *name __rte_unused, const char *params __rte_unused)
 {
     rte_eth_driver_register(&amp;rte_em_pmd);
@@ -85,9 +85,9 @@ struct rte_driver em_pmd_drv = {
     .type = PMD_PDEV,
     .init = rte_em_pmd_init,
 };
-</code></pre><p>Physical NIC은 <code>rte_eth_driver_register()</code>함수를 이용하여 <code>rte_eth_dev</code>에 등록된다. 이때 등록되는 디바이스 구조체는 다음과 같다.</p><pre><code>static struct eth_driver rte_em_pmd = {
+</code></pre><p>Physical NIC은 <code>rte_eth_driver_register()</code>함수를 이용하여 <code>rte_eth_dev</code>에 등록된다. 이때 등록되는 디바이스 구조체는 다음과 같다.</p><pre tabindex=0><code>static struct eth_driver rte_em_pmd = {
     .pci_drv = {
-        .name = &quot;rte_em_pmd&quot;,
+        .name = &#34;rte_em_pmd&#34;,
         .id_table = pci_id_em_map,
         .drv_flags = RTE_PCI_DRV_NEED_MAPPING | RTE_PCI_DRV_INTR_LSC |
             RTE_PCI_DRV_DETACHABLE,
@@ -96,7 +96,7 @@ struct rte_driver em_pmd_drv = {
     .eth_dev_uninit = eth_em_dev_uninit,
     .dev_private_size = sizeof(struct e1000_adapter),
 };
-</code></pre><p><code>rte_eth</code> 구조체에 등록하는 함수 <code>rte_eth_driver_register()</code>는 다음과 같이 구현되어 있어, PCI device list에 NIC을 등록한다. 등록된 PCI device들은 <code>rte_eal_init()</code> 과정에서 호출되는 PCI scan 과정을 통해 실제 NIC을 찾는 과정을 거친다.</p><pre><code>/**
+</code></pre><p><code>rte_eth</code> 구조체에 등록하는 함수 <code>rte_eth_driver_register()</code>는 다음과 같이 구현되어 있어, PCI device list에 NIC을 등록한다. 등록된 PCI device들은 <code>rte_eal_init()</code> 과정에서 호출되는 PCI scan 과정을 통해 실제 NIC을 찾는 과정을 거친다.</p><pre tabindex=0><code>/**
  * Register an Ethernet [Poll Mode] driver.
  *
  * Function invoked by the initialization function of an Ethernet driver
@@ -117,9 +117,7 @@ rte_eth_driver_register(struct eth_driver *eth_drv)
     eth_drv-&gt;pci_drv.devuninit = rte_eth_dev_uninit;
     rte_eal_pci_register(&amp;eth_drv-&gt;pci_drv);
 }
-</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/dpdk/ rel=tag>DPDK</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2016/introducing-python/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Introducing Python</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2016/why_have_to_keep_studying/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>왜 공부해야 하는가에 대한 간단하지만 명확한 답</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/dpdk/ rel=tag>DPDK</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2016/introducing-python/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Introducing Python</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2016/why_have_to_keep_studying/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>왜 공부해야 하는가에 대한 간단하지만 명확한 답</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

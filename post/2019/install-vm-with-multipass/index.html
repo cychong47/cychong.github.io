@@ -1,6 +1,6 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Install VM with multipass on OS X - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Install VM with multipass on OS X - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Install VM with multipass on OS X</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2019-09-28T15:17:26+09:00>September 28, 2019</time>
-<time class=meta__text datetime=2019-09-28T15:19:40Z>(Last Modified: September 28, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#multipass>multipass?</a></li><li><a href=#install-multipass-with-brew>install <code>multipass</code> with brew</a></li><li><a href=#multipass-1>Multipass</a><ul><li><a href=#multipass-find>multipass find</a></li></ul></li><li><a href=#create-vm>Create VM</a><ul><li><a href=#multipass-launch>multipass launch</a></li><li><a href=#list-vms>list VMs</a></li><li><a href=#login-to-vm>login to VM</a></li><li><a href=#setup-a-single-node-kubernetes-cluster>Setup a single node kubernetes cluster</a></li><li><a href=#install-calicoctl>Install calicoctl</a></li><li><a href=#delete-kubenetes-cluster>delete kubenetes cluster</a></li></ul></li><li><a href=#reference>Reference</a><ul><li><a href=#multipass-2>multipass</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><h2 id=multipass>multipass?</h2><blockquote><p>Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.</p><p>Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.</p></blockquote><p><a href=https://github.com/CanonicalLtd/multipass>https://github.com/CanonicalLtd/multipass</a></p><p>Linux 외에 Windows 그리고 Mac OS를 지원하는 multipass를 사용하면 virtualbox를 사용하지 않고도 OS X에서 VM을 쉽게 만들어 linux 기반의 환경을 구성할 수 있다.</p><p>아래 예에서는 OS X에서 multipass를 이용해서 Linux(Ubuntu) VM을 생성하고, kubernetes를 설치해 본다.</p><h2 id=install-multipass-with-brew>install <code>multipass</code> with brew</h2><pre><code>mbpr15:~ cychong$ brew cask install multipass
+<time class=meta__text datetime=2019-09-28T15:19:40Z>(Last Modified: September 28, 2019)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#multipass>multipass?</a></li><li><a href=#install-multipass-with-brew>install <code>multipass</code> with brew</a></li><li><a href=#multipass-1>Multipass</a><ul><li><a href=#multipass-find>multipass find</a></li></ul></li><li><a href=#create-vm>Create VM</a><ul><li><a href=#multipass-launch>multipass launch</a></li><li><a href=#list-vms>list VMs</a></li><li><a href=#login-to-vm>login to VM</a></li><li><a href=#setup-a-single-node-kubernetes-cluster>Setup a single node kubernetes cluster</a></li><li><a href=#install-calicoctl>Install calicoctl</a></li><li><a href=#delete-kubenetes-cluster>delete kubenetes cluster</a></li></ul></li><li><a href=#reference>Reference</a><ul><li><a href=#multipass-2>multipass</a></li></ul></li></ul></nav></div></div><div class="content post__content clearfix"><h2 id=multipass>multipass?</h2><blockquote><p>Multipass is a lightweight VM manager for Linux, Windows and macOS. It&rsquo;s designed for developers who want a fresh Ubuntu environment with a single command. It uses KVM on Linux, Hyper-V on Windows and HyperKit on macOS to run the VM with minimal overhead. It can also use VirtualBox on Windows and macOS. Multipass will fetch images for you and keep them up to date.</p><p>Since it supports metadata for cloud-init, you can simulate a small cloud deployment on your laptop or workstation.</p></blockquote><p><a href=https://github.com/CanonicalLtd/multipass>https://github.com/CanonicalLtd/multipass</a></p><p>Linux 외에 Windows 그리고 Mac OS를 지원하는 multipass를 사용하면 virtualbox를 사용하지 않고도 OS X에서 VM을 쉽게 만들어 linux 기반의 환경을 구성할 수 있다.</p><p>아래 예에서는 OS X에서 multipass를 이용해서 Linux(Ubuntu) VM을 생성하고, kubernetes를 설치해 본다.</p><h2 id=install-multipass-with-brew>install <code>multipass</code> with brew</h2><pre tabindex=0><code>mbpr15:~ cychong$ brew cask install multipass
 Updating Homebrew...
 ...
 
@@ -8,7 +8,7 @@ Updating Homebrew...
 ==&gt; Downloading https://github.com/CanonicalLtd/multipass/releases/download/v0.8.0/multipass-0.8.0+mac-Darwin.pkg
 ==&gt; Downloading from https://github-production-release-asset-2e65be.s3.amazonaws.com/114128199/8489a680-ac9c-11e9-99
 ######################################################################## 100.0%
-==&gt; Verifying SHA-256 checksum for Cask 'multipass'.
+==&gt; Verifying SHA-256 checksum for Cask &#39;multipass&#39;.
 ==&gt; Installing Cask multipass
 ==&gt; Running installer for multipass; your password may be necessary.
 ==&gt; Package installers may write to any location; options such as --appdir are ignored.
@@ -17,22 +17,20 @@ installer: Package name is multipass
 installer: Installing at base path /
 installer: The install was successful.
 🍺  multipass was successfully installed!
-</code></pre><h2 id=multipass-1>Multipass</h2><h3 id=multipass-find>multipass find</h3><pre><code>mbpr15:~ cychong$ multipass find
+</code></pre><h2 id=multipass-1>Multipass</h2><h3 id=multipass-find>multipass find</h3><pre tabindex=0><code>mbpr15:~ cychong$ multipass find
 Image                   Aliases           Version          Description
 snapcraft:core          core16            20190819         Snapcraft builder for Core 16
 snapcraft:core18                          20190820         Snapcraft builder for Core 18
 16.04                   xenial            20190814         Ubuntu 16.04 LTS
 18.04                   bionic,lts        20190813.1       Ubuntu 18.04 LTS
-</code></pre><h2 id=create-vm>Create VM</h2><h3 id=multipass-launch>multipass launch</h3><pre><code>mbpr15:~ cychong$ multipass launch --name vm --mem 4G --disk 20G --cpus 2 
+</code></pre><h2 id=create-vm>Create VM</h2><h3 id=multipass-launch>multipass launch</h3><pre tabindex=0><code>mbpr15:~ cychong$ multipass launch --name vm --mem 4G --disk 20G --cpus 2 
 Launched: vm
-
-
-</code></pre><h3 id=list-vms>list VMs</h3><pre><code>mbpr15:~ cychong$ multipass list
+</code></pre><h3 id=list-vms>list VMs</h3><pre tabindex=0><code>mbpr15:~ cychong$ multipass list
 Name                    State             IPv4             Image
 vm                      Running           192.168.64.2     Ubuntu 18.04 LTS
-</code></pre><h4 id=execute-command-in-vm-from-host>execute command in VM from host</h4><pre><code>mbpr15:~ cychong$ multipass exec vm -- uname -a
+</code></pre><h4 id=execute-command-in-vm-from-host>execute command in VM from host</h4><pre tabindex=0><code>mbpr15:~ cychong$ multipass exec vm -- uname -a
 Linux vm 4.15.0-58-generic #64-Ubuntu SMP Tue Aug 6 11:12:41 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
-</code></pre><h3 id=login-to-vm>login to VM</h3><pre><code>mbpr15:~ cychong$ multipass shell vm
+</code></pre><h3 id=login-to-vm>login to VM</h3><pre tabindex=0><code>mbpr15:~ cychong$ multipass shell vm
 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
@@ -51,13 +49,13 @@ Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-58-generic x86_64)
 0 updates are security updates.
 
 
-To run a command as administrator (user &quot;root&quot;), use &quot;sudo &lt;command&gt;&quot;.
-See &quot;man sudo_root&quot; for details.
+To run a command as administrator (user &#34;root&#34;), use &#34;sudo &lt;command&gt;&#34;.
+See &#34;man sudo_root&#34; for details.
 
 multipass@vm:~$
-</code></pre><h3 id=setup-a-single-node-kubernetes-cluster>Setup a single node kubernetes cluster</h3><pre><code>multipass@vm:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+</code></pre><h3 id=setup-a-single-node-kubernetes-cluster>Setup a single node kubernetes cluster</h3><pre tabindex=0><code>multipass@vm:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 OK
-</code></pre><pre><code>multipass@vm:~$ sudo add-apt-repository &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&quot;
+</code></pre><pre tabindex=0><code>multipass@vm:~$ sudo add-apt-repository &#34;deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable&#34;
 Get:1 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]
 Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
 Get:3 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
@@ -122,9 +120,9 @@ Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/
 Processing triggers for ureadahead (0.100.0-21) ...
 Processing triggers for libc-bin (2.27-3ubuntu1) ...
 Processing triggers for systemd (237-3ubuntu10.25) ...
-</code></pre><pre><code>multipass@vm:~$ sudo swapoff -a
-multipass@vm:~$ sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
-</code></pre><pre><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+</code></pre><pre tabindex=0><code>multipass@vm:~$ sudo swapoff -a
+multipass@vm:~$ sudo sed -i &#39;/ swap / s/^\(.*\)$/#\1/g&#39; /etc/fstab
+</code></pre><pre tabindex=0><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
 Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
 Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
@@ -136,7 +134,7 @@ Building dependency tree
 Reading state information... Done
 The following package was automatically installed and is no longer required:
   grub-pc-bin
-Use 'sudo apt autoremove' to remove it.
+Use &#39;sudo apt autoremove&#39; to remove it.
 The following NEW packages will be installed:
   apt-transport-https
 0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
@@ -150,7 +148,7 @@ Preparing to unpack .../apt-transport-https_1.6.11_all.deb ...
 Unpacking apt-transport-https (1.6.11) ...
 Setting up apt-transport-https (1.6.11) ...
 OK
-</code></pre><pre><code>multipass@vm:~$ echo &quot;deb http://apt.kubernetes.io/ kubernetes-xenial main&quot; | sudo tee -a /etc/apt/sources.list.d/kubernetes.list &amp;&amp; sudo apt-get update
+</code></pre><pre tabindex=0><code>multipass@vm:~$ echo &#34;deb http://apt.kubernetes.io/ kubernetes-xenial main&#34; | sudo tee -a /etc/apt/sources.list.d/kubernetes.list &amp;&amp; sudo apt-get update
 deb http://apt.kubernetes.io/ kubernetes-xenial main
 Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
 Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
@@ -161,7 +159,7 @@ Get:6 https://packages.cloud.google.com/apt kubernetes-xenial InRelease [8993 B]
 Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 Packages [28.9 kB]
 Fetched 37.9 kB in 2s (15.3 kB/s)
 Reading package lists... Done
-</code></pre><pre><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+</code></pre><pre tabindex=0><code>multipass@vm:~$ sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https &amp;&amp; curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
 Hit:2 http://archive.ubuntu.com/ubuntu bionic InRelease
 Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease
@@ -173,7 +171,7 @@ Building dependency tree
 Reading state information... Done
 The following package was automatically installed and is no longer required:
   grub-pc-bin
-Use 'sudo apt autoremove' to remove it.
+Use &#39;sudo apt autoremove&#39; to remove it.
 The following NEW packages will be installed:
   apt-transport-https
 0 upgraded, 1 newly installed, 0 to remove and 6 not upgraded.
@@ -220,13 +218,13 @@ Created symlink /etc/systemd/system/multi-user.target.wants/kubelet.service → 
 Setting up kubectl (1.15.3-00) ...
 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
 Setting up kubeadm (1.15.3-00) ...
-</code></pre><pre><code>multipass@vm:~$ sudo kubeadm init --pod-network-cidr=10.201.0.0/24 --token-ttl 0
+</code></pre><pre tabindex=0><code>multipass@vm:~$ sudo kubeadm init --pod-network-cidr=10.201.0.0/24 --token-ttl 0
 ...
 
 multipass@vm:~$ mkdir -p $HOME/.kube
 multipass@vm:~$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 multipass@vm:~$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
-</code></pre><pre><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
+</code></pre><pre tabindex=0><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
 NAMESPACE     NAME                         READY   STATUS    RESTARTS   AGE   IP             NODE     NOMINATED NODE   READINESS GATES
 kube-system   coredns-5c98db65d4-ksh4p     0/1     Pending   0          21m   &lt;none&gt;         &lt;none&gt;   &lt;none&gt;           &lt;none&gt;
 kube-system   coredns-5c98db65d4-nvvzg     0/1     Pending   0          21m   &lt;none&gt;         &lt;none&gt;   &lt;none&gt;           &lt;none&gt;
@@ -235,7 +233,7 @@ kube-system   kube-apiserver-vm            1/1     Running   0          20m   19
 kube-system   kube-controller-manager-vm   1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
 kube-system   kube-proxy-b8qf2             1/1     Running   0          21m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
 kube-system   kube-scheduler-vm            1/1     Running   0          20m   192.168.64.2   vm       &lt;none&gt;           &lt;none&gt;
-</code></pre><h4 id=install-calico>install calico</h4><pre><code>multipass@vm:~$ wget https://docs.projectcalico.org/v3.8/manifests/calico.yaml
+</code></pre><h4 id=install-calico>install calico</h4><pre tabindex=0><code>multipass@vm:~$ wget https://docs.projectcalico.org/v3.8/manifests/calico.yaml
 --2019-08-25 21:26:00--  https://docs.projectcalico.org/v3.8/manifests/calico.yaml
 Resolving docs.projectcalico.org (docs.projectcalico.org)... 206.189.73.52, 2604:a880:2:d0::21e9:c001
 Connecting to docs.projectcalico.org (docs.projectcalico.org)|206.189.73.52|:443... connected.
@@ -246,9 +244,9 @@ Saving to: ‘calico.yaml’
 calico.yaml                  100%[==============================================&gt;]  20.14K  93.2KB/s    in 0.2s
 
 2019-08-25 21:26:02 (93.2 KB/s) - ‘calico.yaml’ saved [20628/20628]
-</code></pre><p>Change <code>CALICO_IPV4POOL_CIDR</code></p><pre><code>            - name: CALICO_IPV4POOL_CIDR
-              value: &quot;10.201.0.0/24&quot;
-</code></pre><pre><code>multipass@vm:~$ kubectl apply -f calico.yaml
+</code></pre><p>Change <code>CALICO_IPV4POOL_CIDR</code></p><pre tabindex=0><code>            - name: CALICO_IPV4POOL_CIDR
+              value: &#34;10.201.0.0/24&#34;
+</code></pre><pre tabindex=0><code>multipass@vm:~$ kubectl apply -f calico.yaml
 configmap/calico-config unchanged
 customresourcedefinition.apiextensions.k8s.io/felixconfigurations.crd.projectcalico.org unchanged
 customresourcedefinition.apiextensions.k8s.io/ipamblocks.crd.projectcalico.org unchanged
@@ -272,7 +270,7 @@ daemonset.apps/calico-node configured
 serviceaccount/calico-node unchanged
 deployment.apps/calico-kube-controllers unchanged
 serviceaccount/calico-kube-controllers unchanged
-</code></pre><pre><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
+</code></pre><pre tabindex=0><code>multipass@vm:~$ kubectl get pods --all-namespaces -o wide
 NAMESPACE     NAME                                       READY   STATUS    RESTARTS   AGE     IP               NODE   NOMINATED NODE   READINESS GATES
 kube-system   calico-kube-controllers-65b8787765-5rftm   1/1     Running   0          3m57s   192.168.141.65   vm     &lt;none&gt;           &lt;none&gt;
 kube-system   calico-node-dtbhl                          1/1     Running   0          44s     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
@@ -283,9 +281,9 @@ kube-system   kube-apiserver-vm                          1/1     Running   0    
 kube-system   kube-controller-manager-vm                 1/1     Running   0          24m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
 kube-system   kube-proxy-b8qf2                           1/1     Running   0          25m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
 kube-system   kube-scheduler-vm                          1/1     Running   0          25m     192.168.64.2     vm     &lt;none&gt;           &lt;none&gt;
-</code></pre><pre><code>multipass@vm:~$ kubectl taint nodes --all node-role.kubernetes.io/master-
+</code></pre><pre tabindex=0><code>multipass@vm:~$ kubectl taint nodes --all node-role.kubernetes.io/master-
 node/vm untainted
-</code></pre><h3 id=install-calicoctl>Install calicoctl</h3><p><a href=https://docs.projectcalico.org/v3.5/usage/calicoctl/install>https://docs.projectcalico.org/v3.5/usage/calicoctl/install</a></p><pre><code>multipass@vm:~$ curl -O -L  https://github.com/projectcalico/calicoctl/releases/download/v3.5.8/calicoctl
+</code></pre><h3 id=install-calicoctl>Install calicoctl</h3><p><a href=https://docs.projectcalico.org/v3.5/usage/calicoctl/install>https://docs.projectcalico.org/v3.5/usage/calicoctl/install</a></p><pre tabindex=0><code>multipass@vm:~$ curl -O -L  https://github.com/projectcalico/calicoctl/releases/download/v3.5.8/calicoctl
 multipass@vm:~$ chmod +x calicoctl
 multipass@vm:~$ ./calicoctl get profiles
 Failed to create Calico API client: no etcd endpoints specified
@@ -293,8 +291,8 @@ multipass@vm:~$ kubectl apply -f \
 &gt;  https://docs.projectcalico.org/v3.5/getting-started/kubernetes/installation/hosted/calicoctl.yaml
 pod/calicoctl created
 multipass@vm:~$ kubectl exec -ti -n kube-system calicoctl -- /calicoctl get profiles -o wide
-error: unable to upgrade connection: container not found (&quot;calicoctl&quot;)
-</code></pre><pre><code>multipass@vm:~$ kubectl get pods --all-namespaces
+error: unable to upgrade connection: container not found (&#34;calicoctl&#34;)
+</code></pre><pre tabindex=0><code>multipass@vm:~$ kubectl get pods --all-namespaces
 NAMESPACE     NAME                                       READY   STATUS                       RESTARTS   AGE
 kube-system   calico-kube-controllers-65b8787765-5rftm   1/1     Running                      0          10m
 kube-system   calico-node-dtbhl                          1/1     Running                      0          7m46s
@@ -306,7 +304,7 @@ kube-system   kube-apiserver-vm                          1/1     Running        
 kube-system   kube-controller-manager-vm                 1/1     Running                      0          31m
 kube-system   kube-proxy-b8qf2                           1/1     Running                      0          33m
 kube-system   kube-scheduler-vm                          1/1     Running                      0          32m
-</code></pre><pre><code>multipass@vm:~$ kubectl describe pod calicoctl --namespace=kube-system
+</code></pre><pre tabindex=0><code>multipass@vm:~$ kubectl describe pod calicoctl --namespace=kube-system
 Name:         calicoctl
 Namespace:    kube-system
 Priority:     0
@@ -314,7 +312,7 @@ Node:         vm/192.168.64.2
 Start Time:   Sun, 25 Aug 2019 21:35:02 +0900
 Labels:       &lt;none&gt;
 Annotations:  kubectl.kubernetes.io/last-applied-configuration:
-                {&quot;apiVersion&quot;:&quot;v1&quot;,&quot;kind&quot;:&quot;Pod&quot;,&quot;metadata&quot;:{&quot;annotations&quot;:{},&quot;name&quot;:&quot;calicoctl&quot;,&quot;namespace&quot;:&quot;kube-system&quot;},&quot;spec&quot;:{&quot;containers&quot;:[{&quot;command...
+                {&#34;apiVersion&#34;:&#34;v1&#34;,&#34;kind&#34;:&#34;Pod&#34;,&#34;metadata&#34;:{&#34;annotations&#34;:{},&#34;name&#34;:&#34;calicoctl&#34;,&#34;namespace&#34;:&#34;kube-system&#34;},&#34;spec&#34;:{&#34;containers&#34;:[{&#34;command...
 Status:       Pending
 IP:           192.168.64.2
 Containers:
@@ -333,7 +331,7 @@ Containers:
     Ready:          False
     Restart Count:  0
     Environment:
-      ETCD_ENDPOINTS:  &lt;set to the key 'etcd_endpoints' of config map 'calico-config'&gt;  Optional: false
+      ETCD_ENDPOINTS:  &lt;set to the key &#39;etcd_endpoints&#39; of config map &#39;calico-config&#39;&gt;  Optional: false
     Mounts:
       /var/run/secrets/kubernetes.io/serviceaccount from default-token-w2l7q (ro)
 Conditions:
@@ -355,17 +353,17 @@ Events:
   Type     Reason     Age               From               Message
   ----     ------     ----              ----               -------
   Normal   Scheduled  72s               default-scheduler  Successfully assigned kube-system/calicoctl to vm
-  Normal   Pulling    71s               kubelet, vm        Pulling image &quot;calico/ctl:v3.5.8&quot;
-  Normal   Pulled     57s               kubelet, vm        Successfully pulled image &quot;calico/ctl:v3.5.8&quot;
-  Warning  Failed     3s (x6 over 57s)  kubelet, vm        Error: Couldn't find key etcd_endpoints in ConfigMap kube-system/calico-config
-  Normal   Pulled     3s (x5 over 57s)  kubelet, vm        Container image &quot;calico/ctl:v3.5.8&quot; already present on machine
-</code></pre><h3 id=delete-kubenetes-cluster>delete kubenetes cluster</h3><pre><code>multipass@vm:~$ kubectl drain vm --delete-local-data --force --ignore-daemonsets
+  Normal   Pulling    71s               kubelet, vm        Pulling image &#34;calico/ctl:v3.5.8&#34;
+  Normal   Pulled     57s               kubelet, vm        Successfully pulled image &#34;calico/ctl:v3.5.8&#34;
+  Warning  Failed     3s (x6 over 57s)  kubelet, vm        Error: Couldn&#39;t find key etcd_endpoints in ConfigMap kube-system/calico-config
+  Normal   Pulled     3s (x5 over 57s)  kubelet, vm        Container image &#34;calico/ctl:v3.5.8&#34; already present on machine
+</code></pre><h3 id=delete-kubenetes-cluster>delete kubenetes cluster</h3><pre tabindex=0><code>multipass@vm:~$ kubectl drain vm --delete-local-data --force --ignore-daemonsets
 node/vm cordoned
 WARNING: ignoring DaemonSet-managed Pods: kube-system/calico-node-dtbhl, kube-system/kube-proxy-b8qf2; deleting Pods not managed by ReplicationController, ReplicaSet, Job, DaemonSet or StatefulSet: kube-system/calicoctl
-evicting pod &quot;coredns-5c98db65d4-nvvzg&quot;
-evicting pod &quot;calico-kube-controllers-65b8787765-5rftm&quot;
-evicting pod &quot;calicoctl&quot;
-evicting pod &quot;coredns-5c98db65d4-ksh4p&quot;
+evicting pod &#34;coredns-5c98db65d4-nvvzg&#34;
+evicting pod &#34;calico-kube-controllers-65b8787765-5rftm&#34;
+evicting pod &#34;calicoctl&#34;
+evicting pod &#34;coredns-5c98db65d4-ksh4p&#34;
 pod/calicoctl evicted
 pod/coredns-5c98db65d4-nvvzg evicted
 pod/calico-kube-controllers-65b8787765-5rftm evicted
@@ -373,15 +371,15 @@ pod/coredns-5c98db65d4-ksh4p evicted
 node/vm evicted
 multipass@vm:~$ sudo kubeadm reset
 [reset] Reading configuration from the cluster...
-[reset] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
-[reset] WARNING: Changes made to this host by 'kubeadm init' or 'kubeadm join' will be reverted.
+[reset] FYI: You can look at this config file with &#39;kubectl -n kube-system get cm kubeadm-config -oyaml&#39;
+[reset] WARNING: Changes made to this host by &#39;kubeadm init&#39; or &#39;kubeadm join&#39; will be reverted.
 [reset] Are you sure you want to proceed? [y/N]: y
 [preflight] Running pre-flight checks
-[reset] Removing info for node &quot;vm&quot; from the ConfigMap &quot;kubeadm-config&quot; in the &quot;kube-system&quot; Namespace
+[reset] Removing info for node &#34;vm&#34; from the ConfigMap &#34;kubeadm-config&#34; in the &#34;kube-system&#34; Namespace
 W0825 21:46:06.943208    4603 removeetcdmember.go:61] [reset] failed to remove etcd member: error syncing endpoints with etc: etcdclient: no available endpoints
 .Please manually remove this etcd member using etcdctl
 [reset] Stopping the kubelet service
-[reset] Unmounting mounted directories in &quot;/var/lib/kubelet&quot;
+[reset] Unmounting mounted directories in &#34;/var/lib/kubelet&#34;
 [reset] Deleting contents of config directories: [/etc/kubernetes/manifests /etc/kubernetes/pki]
 [reset] Deleting files: [/etc/kubernetes/admin.conf /etc/kubernetes/kubelet.conf /etc/kubernetes/bootstrap-kubelet.conf /etc/kubernetes/controller-manager.conf /etc/kubernetes/scheduler.conf]
 [reset] Deleting contents of stateful directories: [/var/lib/etcd /var/lib/kubelet /etc/cni/net.d /var/lib/dockershim /var/run/kubernetes]
@@ -392,15 +390,13 @@ For example:
 iptables -F &amp;&amp; iptables -t nat -F &amp;&amp; iptables -t mangle -F &amp;&amp; iptables -X
 
 If your cluster was setup to utilize IPVS, run ipvsadm --clear (or similar)
-to reset your system's IPVS tables.
+to reset your system&#39;s IPVS tables.
 
 The reset process does not clean your kubeconfig files and you must remove them manually.
 Please, check the contents of the $HOME/.kube/config file.
 
 multipass@vm:~$ sudo rm -rf /var/etcd
-</code></pre><h2 id=reference>Reference</h2><h3 id=multipass-2>multipass</h3><ul><li><a href=https://multipass.run>https://multipass.run</a></li><li><a href=https://github.com/CanonicalLtd/multipass>https://github.com/CanonicalLtd/multipass</a></li><li><a href=https://ubuntu.com/blog/kubernetes-on-mac-how-to-set-up>OS X에서 multipass를 이용하여 microk8s 환경 구성</a></li><li><a href=https://raaaimund.github.io/tech/2018/10/23/create-single-node-k8s-cluster/>Create a single node Kubernetes cluster on Ubuntu 18.04.1 (Bionic Beaver) with kubeadm</a></li><li><a href=https://docs.projectcalico.org/v3.8/getting-started/kubernetes/>https://docs.projectcalico.org/v3.8/getting-started/kubernetes/</a></li><li><a href=https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/>k8s 설치 상세 절차</a></li><li><a href=https://bcho.tistory.com/1341>private helm repository 구성하기-조대협</a></li></ul></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/vmware/ rel=tag>Vmware</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ubuntu/ rel=tag>ubuntu</a></li><li class=tags__item><a class="tags__link btn" href=/tags/multipass/ rel=tag>multipass</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2019/setup-kubernetes-with-a-single-host/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Setup kubernetes in a single host</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2019/convention-on-impose-core-requirements/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Convention on impose core requirements</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+</code></pre><h2 id=reference>Reference</h2><h3 id=multipass-2>multipass</h3><ul><li><a href=https://multipass.run>https://multipass.run</a></li><li><a href=https://github.com/CanonicalLtd/multipass>https://github.com/CanonicalLtd/multipass</a></li><li><a href=https://ubuntu.com/blog/kubernetes-on-mac-how-to-set-up>OS X에서 multipass를 이용하여 microk8s 환경 구성</a></li><li><a href=https://raaaimund.github.io/tech/2018/10/23/create-single-node-k8s-cluster/>Create a single node Kubernetes cluster on Ubuntu 18.04.1 (Bionic Beaver) with kubeadm</a></li><li><a href=https://docs.projectcalico.org/v3.8/getting-started/kubernetes/>https://docs.projectcalico.org/v3.8/getting-started/kubernetes/</a></li><li><a href=https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/>k8s 설치 상세 절차</a></li><li><a href=https://bcho.tistory.com/1341>private helm repository 구성하기-조대협</a></li></ul></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/vmware/ rel=tag>Vmware</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ubuntu/ rel=tag>ubuntu</a></li><li class=tags__item><a class="tags__link btn" href=/tags/multipass/ rel=tag>multipass</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2019/setup-kubernetes-with-a-single-host/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Setup kubernetes in a single host</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2019/convention-on-impose-core-requirements/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Convention on impose core requirements</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

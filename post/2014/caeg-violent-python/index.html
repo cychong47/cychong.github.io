@@ -1,13 +1,13 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>(책) Violent Python - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>(책) Violent Python - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>(책) Violent Python</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2014-09-27T16:43:27+09:00>September 27, 2014</time>
 <time class=meta__text datetime=2018-08-19T22:06:31Z>(Last Modified: August 19, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/book/ rel=category>Book</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><ul><li><a href=#소스-코드를-받을-수-있는-곳은>소스 코드를 받을 수 있는 곳은</a></li><li><a href=#semaphore>Semaphore</a></li><li><a href=#pxssh-library>pxssh library</a></li></ul></li><li><a href=#scapy>scapy</a></li><li><a href=#dpkt-module>DPKT module</a><ul><li><a href=#p144>p144</a></li><li><a href=#p147>p147</a></li><li><a href=#p149>p149</a></li><li><a href=#regular-expression>Regular Expression</a></li><li><a href=#mechanize-module>Mechanize module</a></li><li><a href=#twitter-api>Twitter API</a></li></ul></li><li><a href=#template>Template</a></li><li><a href=#templateclass>Template(Class)</a></li></ul></nav></div></div><div class="content post__content clearfix"><p>오래만에 재밌는 책을 봤다.</p><p>해커를 위한 책이라고 하지만, 해킹에 관한 기법보다는 network application을 작성하는데 유용한 scapy, dpkt 그리고 정규식에 대한 설명이 유용하다.
-마침 요 근래 업무용으로 Python을 이용해서 패킷 만들고, 송/수신하는 유틸리티를 만들고 있어 Impacket 모듈을 많이 사용했는데 그것보다 scapy 가 훨씬 편해 보인다.</p><p>새 책을 사긴 그렇고 중고책을 하나 구할 까 했는데 알라딘에서 중고책 매입가가 4천원 대. 작년 초에 나온 책인데 너무 싸게 매입하는 게 아닌가</p><p>일단 책 보면서 유용하다 싶은 내용을 몇 가지 주제로 나눠 정리했다.</p><h3 id=소스-코드를-받을-수-있는-곳은>소스 코드를 받을 수 있는 곳은</h3><ul><li><a href=https://github.com/shadow-box/Violent-Python-Examples>github</a></li><li><a href=http://booksite.elsevier.com/9781597499576/chapters.php>COMPANION MATERIALS</a></li></ul><p>예제를 하나하나 보면 참 배울게 많아 보인다.</p><h3 id=semaphore>Semaphore</h3><pre><code>    screenLock = Semaphore(value = 1)
-    screenLock.acquire()
-    screeLock.release(()
-</code></pre><h3 id=pxssh-library>pxssh library</h3><pre><code>    s = pxssh.pxssh()
-    s.login(host, user, password)
-    s.sendline(xxx)
-    s.prompt()  
+마침 요 근래 업무용으로 Python을 이용해서 패킷 만들고, 송/수신하는 유틸리티를 만들고 있어 Impacket 모듈을 많이 사용했는데 그것보다 scapy 가 훨씬 편해 보인다.</p><p>새 책을 사긴 그렇고 중고책을 하나 구할 까 했는데 알라딘에서 중고책 매입가가 4천원 대. 작년 초에 나온 책인데 너무 싸게 매입하는 게 아닌가</p><p>일단 책 보면서 유용하다 싶은 내용을 몇 가지 주제로 나눠 정리했다.</p><h3 id=소스-코드를-받을-수-있는-곳은>소스 코드를 받을 수 있는 곳은</h3><ul><li><a href=https://github.com/shadow-box/Violent-Python-Examples>github</a></li><li><a href=http://booksite.elsevier.com/9781597499576/chapters.php>COMPANION MATERIALS</a></li></ul><p>예제를 하나하나 보면 참 배울게 많아 보인다.</p><h3 id=semaphore>Semaphore</h3><pre><code>	screenLock = Semaphore(value = 1)
+	screenLock.acquire()
+	screeLock.release(()
+</code></pre><h3 id=pxssh-library>pxssh library</h3><pre><code>	s = pxssh.pxssh()
+	s.login(host, user, password)
+	s.sendline(xxx)
+	s.prompt()  
 </code></pre><h2 id=scapy>scapy</h2><ul><li><p>haslayer() is powerful to check if packet has known protocol<br>from scapy.all import *</p><pre><code>  if pkt.haslayer(IP)  
   if pkt.haslayer(TCP)    
   if pkt.haslayer(ICMP)
@@ -19,7 +19,7 @@
        if pkt.haslayer(DNSRR):
            rrname = pkt.getlayer(DNSRR).rrname
            rdata = pkt.getlayer(DNSRR).rdata 
- 
+
    pkts = rdpcap('fastFlux.pcap')
    for pkt in pkts:
        handlePkt(pkt)
@@ -37,8 +37,8 @@
   pkt = IPlayer / TCPlayer  
   send(pkt)  
 </code></pre></li><li><p>or
-pkt = IP(src="1.1.1.1&rdquo;, dst="2.2.2.2&rdquo;) / TCP(dport=456) / Raw(load="^\xB0\x02\x89\x06\xFE\xC8\x89F\x04\xB0\x06\x89F&rdquo;)
-send(pkt, iface="eth0&rdquo;, count=10)</p><pre><code>  pkt = IP(src=&quot;1.1.1.1&quot;, dst=&quot;2.2.2.2&quot;) / TCP(dport=456) / Raw(load=&quot;Amanda&quot;)
+pkt = IP(src=&ldquo;1.1.1.1&rdquo;, dst=&ldquo;2.2.2.2&rdquo;) / TCP(dport=456) / Raw(load="^\xB0\x02\x89\x06\xFE\xC8\x89F\x04\xB0\x06\x89F")
+send(pkt, iface=&ldquo;eth0&rdquo;, count=10)</p><pre><code>  pkt = IP(src=&quot;1.1.1.1&quot;, dst=&quot;2.2.2.2&quot;) / TCP(dport=456) / Raw(load=&quot;Amanda&quot;)
   send(pkt, iface=&quot;eth0&quot;, count=10)  
 </code></pre></li><li><p>Too see the packet has string XXX=YYY and get YYY</p><pre><code>  raw = raw.sprintf(&quot;%Raw.load%&quot;)  
   name=re.findall(&quot;(?i)XXX=(.*)&amp;&quot;, raw)
@@ -49,27 +49,27 @@ send(pkt, iface="eth0&rdquo;, count=10)</p><pre><code>  pkt = IP(src=&quot;1.1.1
 </code></pre></li></ul><h3 id=p147>p147</h3><ul><li><p>dpkt을 이용한 HTTP 분석</p></li><li><p>상위 protocol header를 가리킬 때 x.data 사용</p></li><li><p>5-findDDoS.py</p><pre><code>  tcp = ip.data  
   http = dpkt.http.Request(tcp.data)  
   if http.method == 'GET':
-      uri = http.uri.lower()  
-      if '.zip' in uri:
-          print &quot;bingo&quot;  
+  	uri = http.uri.lower()  
+  	if '.zip' in uri:
+  		print &quot;bingo&quot;  
 </code></pre></li></ul><h3 id=p149>p149</h3><pre><code>    tcp = ip.data  
     sport = tcp.sport
     dport = tcp.dport  
     if '!lazor' in tcp.data.lower():
-        print &quot;bingo&quot;  
+    	print &quot;bingo&quot;  
 </code></pre><ul><li><p>except KeyboardInterrupt:</p><pre><code>  try:
-      foobar()
+  	foobar()
   except KeyboardInterrupt:
-      sys.exit(0)  
+  	sys.exit(0)  
 </code></pre></li></ul><h3 id=regular-expression>Regular Expression</h3><pre><code>    &gt;&gt;&gt; print re.findall(&quot;(?i)XXX=(.*)&quot;, &quot;!#ASFDASFASDFAS#$%$#XXX=YYY&quot;)
     ['YYY']
     &gt;&gt;&gt; print re.findall(&quot;XXX=(.*)&quot;, &quot;!#ASFDASFASDFAS#$%$#XXX=YYY&quot;)
-    ['YYY']
+	['YYY']
 
-    왜 `(?i)`를 사용하는 걸까?
+	왜 `(?i)`를 사용하는 걸까?
 
-    &gt;&gt;&gt; re.findall(r'[0-9a-zA-Z]{3}', &quot;123 2314 13&quot;)
-    ['123', '231']
+	&gt;&gt;&gt; re.findall(r'[0-9a-zA-Z]{3}', &quot;123 2314 13&quot;)
+	['123', '231']
 </code></pre><h3 id=mechanize-module>Mechanize module</h3><pre><code>    # -*- coding: utf-8 -*-
     import mechanize
 
@@ -82,49 +82,47 @@ send(pkt, iface="eth0&rdquo;, count=10)</p><pre><code>  pkt = IP(src=&quot;1.1.1
 
 
     viewPage('http://www.syngress.com/')
-</code></pre><h3 id=twitter-api>Twitter API</h3><ul><li>CH6, 9-twitterInterests.py</li></ul><h2 id=template>Template</h2><pre><code>    #!/usr/bin/python                                                                
-    # -*- coding: utf-8 -*-
+</code></pre><h3 id=twitter-api>Twitter API</h3><ul><li>CH6, 9-twitterInterests.py</li></ul><h2 id=template>Template</h2><pre><code>	#!/usr/bin/python                                                                
+	# -*- coding: utf-8 -*-
 
-    def main(): 
-        parser = optparse.OptionParser('usage %prog -i &lt;interface&gt;') 
-        parser.add_option('-i', dest='interface', type='string', help='specify interface to listen on')
+	def main(): 
+	    parser = optparse.OptionParser('usage %prog -i &lt;interface&gt;') 
+	    parser.add_option('-i', dest='interface', type='string', help='specify interface to listen on')
 
-        (options, args) = parser.parse_args() 
+	    (options, args) = parser.parse_args() 
 	 
-        if options.interface == None: 
-            print parser.usage 
-            exit(0) 
-        else: 
-            conf.iface = options.interface 
+	    if options.interface == None: 
+	        print parser.usage 
+	        exit(0) 
+	    else: 
+	        conf.iface = options.interface 
 
-        try:
-            print '[*] Starting Credit Card Sniffer.'
-            sniff(filter='tcp', prn=findCreditCard, store=0)
-        except KeyboardInterrupt:
-            exit(0)
+	    try:
+	        print '[*] Starting Credit Card Sniffer.'
+	        sniff(filter='tcp', prn=findCreditCard, store=0)
+	    except KeyboardInterrupt:
+	        exit(0)
 
 
-    if __name__ == '__main__':
-        main()
-</code></pre><h2 id=templateclass>Template(Class)</h2><pre><code>    #!/usr/bin/python                                                                
-    # -*- coding: utf-8 -*-
+	if __name__ == '__main__':
+	    main()
+</code></pre><h2 id=templateclass>Template(Class)</h2><pre><code>	#!/usr/bin/python                                                                
+	# -*- coding: utf-8 -*-
 
-    class testThread(threading.Thread):
+	class testThread(threading.Thread):
 
-        def __init__(self):
-            threading.Thread.__init__(self)
+	    def __init__(self):
+	        threading.Thread.__init__(self)
 
-            # add intialize variables or initialization functions
+	        # add intialize variables or initialization functions
 
-        def run(self):
-            # main function of this class
+	    def run(self):
+	    	# main function of this class
 
-    def main():
-        testInstance = testThread()
-        testInstance.start()
-</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/python/ rel=tag>Python</a></li><li class=tags__item><a class="tags__link btn" href=/tags/dpkt/ rel=tag>dpkt</a></li><li class=tags__item><a class="tags__link btn" href=/tags/scapy/ rel=tag>scapy</a></li><li class=tags__item><a class="tags__link btn" href=/tags/book/ rel=tag>Book</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2014/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2014/intel-sdnnfv-forum-korea-2014/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Intel SDN/NFV Forum Korea 2014</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+	def main():
+	    testInstance = testThread()
+	    testInstance.start()
+</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/python/ rel=tag>Python</a></li><li class=tags__item><a class="tags__link btn" href=/tags/dpkt/ rel=tag>dpkt</a></li><li class=tags__item><a class="tags__link btn" href=/tags/scapy/ rel=tag>scapy</a></li><li class=tags__item><a class="tags__link btn" href=/tags/book/ rel=tag>Book</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2014/0gwa-1ro-sesangeul-bagguneun-gugeul-geu-modeun-iyagiin-the-flex/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>(책) 0과 1로 세상을 바꾸는 구글 그 모든 이야기(In the Flex)</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2014/intel-sdnnfv-forum-korea-2014/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Intel SDN/NFV Forum Korea 2014</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

@@ -1,24 +1,24 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Get the latest jetpack plugin - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>Get the latest jetpack plugin - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>Get the latest jetpack plugin</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2018-12-16T06:55:44+09:00>December 16, 2018</time>
-<time class=meta__text datetime=2018-12-17T13:24:07Z>(Last Modified: December 17, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#webscrappy>webscrap.py</a></li><li><a href=#get_jetpackpy>get_jetpack.py</a></li></ul></nav></div></div><div class="content post__content clearfix"><p><a href=http://sosa0sa.com>http://sosa0sa.com</a>:2368/use-jetpack-for-wordpress-5-0/ 의 연장선. Jetpack plugin의 최신 버전을 알아내서 자동으로 해당 바이너리 파일을 다운로드 받아 보자.</p><p>몇 가지 module 을 사용하는데 필요한 module은 <a href=https://realpython.com/python-web-scraping-practical-introduction/>https://realpython.com/python-web-scraping-practical-introduction/</a> 을 참고해서 설치</p><pre><code>$ python3 -m venv venv
+<time class=meta__text datetime=2018-12-17T13:24:07Z>(Last Modified: December 17, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents><ul><li><a href=#webscrappy>webscrap.py</a></li><li><a href=#get_jetpackpy>get_jetpack.py</a></li></ul></nav></div></div><div class="content post__content clearfix"><p><a href=http://sosa0sa.com:2368/use-jetpack-for-wordpress-5-0/>http://sosa0sa.com:2368/use-jetpack-for-wordpress-5-0/</a> 의 연장선. Jetpack plugin의 최신 버전을 알아내서 자동으로 해당 바이너리 파일을 다운로드 받아 보자.</p><p>몇 가지 module 을 사용하는데 필요한 module은 <a href=https://realpython.com/python-web-scraping-practical-introduction/>https://realpython.com/python-web-scraping-practical-introduction/</a> 을 참고해서 설치</p><pre tabindex=0><code>$ python3 -m venv venv
 $ . ./venv/bin/activate
 $ pip3 install requests BeautifulSoup4
-</code></pre><h2 id=webscrappy>webscrap.py</h2><pre><code>from requests import get
+</code></pre><h2 id=webscrappy>webscrap.py</h2><pre tabindex=0><code>from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
 from bs4 import BeautifulSoup
 from urllib.request import *
 
-'''
+&#39;&#39;&#39;
 https://realpython.com/python-web-scraping-practical-introduction/
-'''
+&#39;&#39;&#39;
 
 def simple_get(url):
-    &quot;&quot;&quot;
+    &#34;&#34;&#34;
     Attempts to get the content at `url` by making an HTTP GET request.
     If the content-type of response is some kind of HTML/XML, return the
     text content, otherwise return None.
-    &quot;&quot;&quot;
+    &#34;&#34;&#34;
     try:
         with closing(get(url, stream=True)) as resp:
             if is_good_response(resp):
@@ -27,32 +27,32 @@ def simple_get(url):
                 return None
 
     except RequestException as e:
-        log_error('Error during requests to {0} : {1}'.format(url, str(e)))
+        log_error(&#39;Error during requests to {0} : {1}&#39;.format(url, str(e)))
         return None
 
 
 def is_good_response(resp):
-    &quot;&quot;&quot;
+    &#34;&#34;&#34;
     Returns True if the response seems to be HTML, False otherwise.
-    &quot;&quot;&quot;
-    content_type = resp.headers['Content-Type'].lower()
+    &#34;&#34;&#34;
+    content_type = resp.headers[&#39;Content-Type&#39;].lower()
     return (resp.status_code == 200
             and content_type is not None
-            and content_type.find('html') &gt; -1)
+            and content_type.find(&#39;html&#39;) &gt; -1)
 
 
 def log_error(e):
-    &quot;&quot;&quot;
+    &#34;&#34;&#34;
     It is always a good idea to log errors.
     This function just prints them, but you can
     make it do anything.
-    &quot;&quot;&quot;
+    &#34;&#34;&#34;
     print(e)
 
 def download_file(base_url, filename):
-	file_url = '%s/%s' %(base_url, filename)
+	file_url = &#39;%s/%s&#39; %(base_url, filename)
 
-	print(&quot;Download %s&quot; %(file_url))
+	print(&#34;Download %s&#34; %(file_url))
         
 	try:
 		from tqdm import tqdm
@@ -62,37 +62,35 @@ def download_file(base_url, filename):
 
 	# use tqdm to display the progress but too slow
 	file_response = get(file_url, stream=True)
-	with open(filename, 'wb') as handle:
+	with open(filename, &#39;wb&#39;) as handle:
 		for data in tqdm(file_response.iter_content()):
 			handle.write(data)
 </code></pre><p>Jetpack plugin 페이지에 있는 버전 정보를 이용해서 플러그인 다운로드 하기
-tqdm은 progress를 보여주는 모듈인데 그냥 사용하면 속도가 너무 너무 느리다. 몇 초면 다운 받을 수 있는 파일을 1분에 걸쳐 받는&mldr;</p><h2 id=get_jetpackpy>get_jetpack.py</h2><pre><code>from webscrap import *
+tqdm은 progress를 보여주는 모듈인데 그냥 사용하면 속도가 너무 너무 느리다. 몇 초면 다운 받을 수 있는 파일을 1분에 걸쳐 받는&mldr;</p><h2 id=get_jetpackpy>get_jetpack.py</h2><pre tabindex=0><code>from webscrap import *
 
-'''
+&#39;&#39;&#39;
 https://realpython.com/python-web-scraping-practical-introduction/
 https://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
-'''
+&#39;&#39;&#39;
 
-if __name__ == '__main__':
-    jetpack_url='https://wordpress.org/plugins/jetpack/'
+if __name__ == &#39;__main__&#39;:
+    jetpack_url=&#39;https://wordpress.org/plugins/jetpack/&#39;
     jetpack_ver = None
 
     response = simple_get(jetpack_url)
 
     if response is not None:
-        html = BeautifulSoup(response, 'html.parser')
+        html = BeautifulSoup(response, &#39;html.parser&#39;)
 
-        for i,l1 in enumerate(html.select('li')):
-            if l1.text.strip().find(&quot;Version:&quot;) == 0:
+        for i,l1 in enumerate(html.select(&#39;li&#39;)):
+            if l1.text.strip().find(&#34;Version:&#34;) == 0:
                 jetpack_ver = l1.text.strip().split()[1]
                 break
 
         if jetpack_ver is not None:
-            filename = 'jetpack.%s.zip' %jetpack_ver
+            filename = &#39;jetpack.%s.zip&#39; %jetpack_ver
             download_file(jetpack_url, filename)
-</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/python/ rel=tag>Python</a></li><li class=tags__item><a class="tags__link btn" href=/tags/web-scrapping/ rel=tag>web-scrapping</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2018/use-jetpack-for-wordpress-5-0/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Use jetpack for wordpress 5.0</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2018/grow-together/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>함께 자라기</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+</code></pre></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/python/ rel=tag>Python</a></li><li class=tags__item><a class="tags__link btn" href=/tags/web-scrapping/ rel=tag>web-scrapping</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2018/use-jetpack-for-wordpress-5-0/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Use jetpack for wordpress 5.0</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2018/grow-together/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>함께 자라기</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>

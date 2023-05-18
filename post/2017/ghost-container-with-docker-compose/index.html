@@ -1,8 +1,8 @@
-<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>ghost container with docker-compose - Keep calm and write something</title><script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<!doctype html><html class=no-js lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=x-ua-compatible content="IE=edge"><title>ghost container with docker-compose - Keep calm and write something</title><script>(function(e,t){e[t]=e[t].replace("no-js","js")})(document.documentElement,"className")</script><meta name=description content><link rel=dns-prefetch href=//fonts.googleapis.com><link rel=dns-prefetch href=//fonts.gstatic.com><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/custom.css><link rel="shortcut icon" href=/favicon.ico></head><body class=body><div class="container container--outer"><header class=header><div class="container header__container"><div class=logo><a class=logo__link href=/ title="Keep calm and write something" rel=home><div class="logo__item logo__text"><div class=logo__title>Keep calm and write something</div><div class=logo__tagline>Just another blog</div></div></a></div><nav class=menu><button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
 <span class=menu__btn-title tabindex=-1>Menu</span></button><ul class=menu__list><li class=menu__item><a class=menu__link href=/page><span class=menu__text>Page</span></a></li><li class=menu__item><a class=menu__link href=/post><span class=menu__text>Post</span></a></li><li class=menu__item><a class=menu__link href=/series><span class=menu__text>Series</span></a></li></ul></nav></div></header><div class="wrapper flex"><div class=primary><main class=main role=main><article class=post><header class=post__header><h1 class=post__title>ghost container with docker-compose</h1><div class="post__meta meta"><div class="meta__item-datetime meta__item"><svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2017-09-03T01:26:28+09:00>September 03, 2017</time>
 <time class=meta__text datetime=2018-04-01T02:38:51Z>(Last Modified: April 01, 2018)</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/til/ rel=category>TIL</a></span></div></div></header><div class="post__toc toc"><div class=toc__title>Page content</div><div class=toc__menu><nav id=TableOfContents></nav></div></div><div class="content post__content clearfix"><p>얼마전에 구성한 ghost container는 ghost가 1.x로 업데이트가 되면서 설정 정보의 위치가 변경되었는데 그걸 미처 몰라 블로그 주소가 기본값인 localhost로 설정되는 문제가 있었다.
 기존 ghost container에 접근해서 확인해 보니 `/var/lib/ghost/config.production.json&rsquo; 파일에 주소가 설정되어 있는 걸 보고 이 파일도 따로 지정해 주도록 변경했다.
-그러면서 docker-compose를 한번 써 보기로</p><p>일단 기존 ghost를 정리하고</p><pre><code>cychong:~ cychong$ docker stop ghost
+그러면서 docker-compose를 한번 써 보기로</p><p>일단 기존 ghost를 정리하고</p><pre tabindex=0><code>cychong:~ cychong$ docker stop ghost
 ghost
 cychong:~ cychong$ docker rm ghost
 ghost
@@ -19,7 +19,7 @@ Deleted: sha256:c807796bea7a34c0b73eae853b728f2bbcd7a4fecc19d049455b322120f95ce7
 Deleted: sha256:15f9f4e44e22d3287b6caf9555110383d3ff2e88ee9cc03823b1ba5a01b75eac
 Deleted: sha256:77809f11069f2abfb571cba07ee3d696ec32823df0f5d0587042ffdb27a80add
 Deleted: sha256:5d6bba18f7b25c9b93d3cc0d93a4cff54eb88b0ba22ed867633a21fc3ded5f57
-</code></pre><p>하는 김에 최신 버전의 ghost받아오고</p><pre><code>cychong:~ cychong$ docker pull ghost
+</code></pre><p>하는 김에 최신 버전의 ghost받아오고</p><pre tabindex=0><code>cychong:~ cychong$ docker pull ghost
 Using default tag: latest
 latest: Pulling from library/ghost
 ad74af05f5a2: Already exists 
@@ -34,37 +34,37 @@ c360787a43d4: Pull complete
 e204e870e4fc: Pull complete 
 Digest: sha256:6c1adf02635cf2a31479a436192068f60c3cc86242d21093f55783ab1d1dd107
 Status: Downloaded newer image for ghost:latest
-</code></pre><p><code>docker history</code> 명령을 보니 ghost 버전이 1.8.1로 바뀐 걸 알 수 있네.(좀 쉽게 알 수는 없을까?)</p><pre><code>cychong:~ cychong$ docker history ghost
+</code></pre><p><code>docker history</code> 명령을 보니 ghost 버전이 1.8.1로 바뀐 걸 알 수 있네.(좀 쉽게 알 수는 없을까?)</p><pre tabindex=0><code>cychong:~ cychong$ docker history ghost
 IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
-2d71383c27b9        2 days ago          /bin/sh -c #(nop)  CMD [&quot;node&quot; &quot;current/in...   0B                  
+2d71383c27b9        2 days ago          /bin/sh -c #(nop)  CMD [&#34;node&#34; &#34;current/in...   0B                  
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  EXPOSE 2368/tcp              0B                  
-&lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  ENTRYPOINT [&quot;docker-ent...   0B                  
+&lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  ENTRYPOINT [&#34;docker-ent...   0B                  
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop) COPY file:ef6da72f41bc8f...   646B                
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  VOLUME [/var/lib/ghost/...   0B                  
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop) WORKDIR /var/lib/ghost        0B                  
-&lt;missing&gt;           2 days ago          /bin/sh -c set -ex;  mkdir -p &quot;$GHOST_INST...   289MB               
+&lt;missing&gt;           2 days ago          /bin/sh -c set -ex;  mkdir -p &#34;$GHOST_INST...   289MB               
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  ENV GHOST_CONTENT=/var/...   0B                  
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  ENV GHOST_INSTALL=/var/...   0B                  
-&lt;missing&gt;           2 days ago          /bin/sh -c npm install -g &quot;ghost-cli@$GHOS...   143MB               
+&lt;missing&gt;           2 days ago          /bin/sh -c npm install -g &#34;ghost-cli@$GHOS...   143MB               
 &lt;missing&gt;           2 days ago          /bin/sh -c #(nop)  ENV GHOST_VERSION=1.8.1      0B                  
 &lt;missing&gt;           8 days ago          /bin/sh -c #(nop)  ENV GHOST_CLI_VERSION=1...   0B                  
 &lt;missing&gt;           8 days ago          /bin/sh -c #(nop)  ENV NODE_ENV=production      0B                  
 &lt;missing&gt;           8 days ago          /bin/sh -c #(nop)  ENV NPM_CONFIG_LOGLEVEL...   0B                  
 &lt;missing&gt;           8 days ago          /bin/sh -c set -x  &amp;&amp; wget -O /usr/local/b...   1.29MB              
 &lt;missing&gt;           8 days ago          /bin/sh -c #(nop)  ENV GOSU_VERSION=1.10        0B                  
-&lt;missing&gt;           2 weeks ago         /bin/sh -c #(nop)  CMD [&quot;node&quot;]                 0B                  
+&lt;missing&gt;           2 weeks ago         /bin/sh -c #(nop)  CMD [&#34;node&#34;]                 0B                  
 &lt;missing&gt;           2 weeks ago         /bin/sh -c set -ex   &amp;&amp; for key in     6A0...   3.89MB              
 &lt;missing&gt;           2 weeks ago         /bin/sh -c #(nop)  ENV YARN_VERSION=0.27.5      0B                  
-&lt;missing&gt;           2 weeks ago         /bin/sh -c buildDeps='xz-utils'     &amp;&amp; ARC...   42.5MB              
+&lt;missing&gt;           2 weeks ago         /bin/sh -c buildDeps=&#39;xz-utils&#39;     &amp;&amp; ARC...   42.5MB              
 &lt;missing&gt;           4 weeks ago         /bin/sh -c #(nop)  ENV NODE_VERSION=6.11.2      0B                  
 &lt;missing&gt;           5 weeks ago         /bin/sh -c #(nop)  ENV NPM_CONFIG_LOGLEVEL...   0B                  
 &lt;missing&gt;           5 weeks ago         /bin/sh -c set -ex   &amp;&amp; for key in     955...   131kB               
 &lt;missing&gt;           5 weeks ago         /bin/sh -c groupadd --gid 1000 node   &amp;&amp; u...   335kB               
 &lt;missing&gt;           5 weeks ago         /bin/sh -c set -ex;  if ! command -v gpg &gt;...   0B                  
 &lt;missing&gt;           5 weeks ago         /bin/sh -c apt-get update &amp;&amp; apt-get insta...   44.6MB              
-&lt;missing&gt;           5 weeks ago         /bin/sh -c #(nop)  CMD [&quot;bash&quot;]                 0B                  
+&lt;missing&gt;           5 weeks ago         /bin/sh -c #(nop)  CMD [&#34;bash&#34;]                 0B                  
 &lt;missing&gt;           5 weeks ago         /bin/sh -c #(nop) ADD file:a023a99f7d01868...   123MB   
-</code></pre><p>my-ghost/docker-compose.yaml</p><pre><code>version: '3'
+</code></pre><p>my-ghost/docker-compose.yaml</p><pre tabindex=0><code>version: &#39;3&#39;
 
 services:
    ghost:
@@ -74,23 +74,21 @@ services:
        - /Users/cychong/Dropbox/Apps/ghost/content/:/var/lib/ghost/content   
        - /Users/cychong/Dropbox/Apps/ghost/config.production.json:/var/lib/ghost/config.production.json
      ports:
-       - &quot;2368:2368&quot;
+       - &#34;2368:2368&#34;
      restart: always
      environment:
        - NODE_ENV=production
 volumes:
     db_data:
-</code></pre><p>go!</p><pre><code>cychong:~/work/my_ghost cychong$ docker-compose up -d
-Creating network &quot;myghost_default&quot; with the default driver
-Creating volume &quot;myghost_db_data&quot; with default driver
+</code></pre><p>go!</p><pre tabindex=0><code>cychong:~/work/my_ghost cychong$ docker-compose up -d
+Creating network &#34;myghost_default&#34; with the default driver
+Creating volume &#34;myghost_db_data&#34; with default driver
 Creating ghost ... 
 Creating ghost ... done
-</code></pre><p>어디 볼까?</p><pre><code>cychong:~/work/my_ghost cychong$ docker ps
+</code></pre><p>어디 볼까?</p><pre tabindex=0><code>cychong:~/work/my_ghost cychong$ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
-dea965b550e6        ghost:latest        &quot;docker-entrypoint...&quot;   17 seconds ago      Up 16 seconds       0.0.0.0:2368-&gt;2368/tcp   ghost
-</code></pre><p>잠시 후 웹브라우저로 확인해 보면 제대로 접속은 되는데 의도한 대로 주소가 localhost가 아니라 sosa0sa.com으로 되었는지는 이 글을 publish하면 알 수 있겠지.</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/docker/ rel=tag>docker</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ghost/ rel=tag>ghost</a></li><li class=tags__item><a class="tags__link btn" href=/tags/container/ rel=tag>container</a></li><li class=tags__item><a class="tags__link btn" href=/tags/docker-compose/ rel=tag>docker-compose</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2017/try-to-restore-wordpress-docker/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Try to restore Wordpress container</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2017/wordpress-with-docker-compose-failing/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Wordpress with docker-compose</p></a></div></nav></div><aside class=sidebar><div class="widget-search widget"><form class=widget-search__form role=search method=get action=https://google.com/search><label><input class=widget-search__field type=search placeholder=SEARCH... name=q aria-label=SEARCH...></label>
-<input class=widget-search__submit type=submit value=Search>
-<input type=hidden name=sitesearch value=https://cychong47.github.io/></form></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
+dea965b550e6        ghost:latest        &#34;docker-entrypoint...&#34;   17 seconds ago      Up 16 seconds       0.0.0.0:2368-&gt;2368/tcp   ghost
+</code></pre><p>잠시 후 웹브라우저로 확인해 보면 제대로 접속은 되는데 의도한 대로 주소가 localhost가 아니라 sosa0sa.com으로 되었는지는 이 글을 publish하면 알 수 있겠지.</p></div><footer class=post__footer><div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg><ul class=tags__list><li class=tags__item><a class="tags__link btn" href=/tags/docker/ rel=tag>docker</a></li><li class=tags__item><a class="tags__link btn" href=/tags/ghost/ rel=tag>ghost</a></li><li class=tags__item><a class="tags__link btn" href=/tags/container/ rel=tag>container</a></li><li class=tags__item><a class="tags__link btn" href=/tags/docker-compose/ rel=tag>docker-compose</a></li></ul></div></footer></article></main><nav class="pager flex"><div class="pager__item pager__item--prev"><a class=pager__link href=/post/2017/try-to-restore-wordpress-docker/ rel=prev><span class=pager__subtitle>«&#8201;Previous</span><p class=pager__title>Try to restore Wordpress container</p></a></div><div class="pager__item pager__item--next"><a class=pager__link href=/post/2017/wordpress-with-docker-compose-failing/ rel=next><span class=pager__subtitle>Next&#8201;»</span><p class=pager__title>Wordpress with docker-compose</p></a></div></nav></div><aside class=sidebar><link href=/_pagefind/pagefind-ui.css rel=stylesheet><script src=/_pagefind/pagefind-ui.js type=text/javascript></script><div class="widget-categories widget"><h4 class=widget__title>Search</h4><div id=search></div><script>window.addEventListener("DOMContentLoaded",e=>{new PagefindUI({element:"#search"})})</script></div><div class="widget-categories widget"><h4 class=widget__title>Category</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/categories/book/>Book</a></li><li class=widget__item><a class=widget__link href=/categories/gadget/>Gadget</a></li><li class=widget__item><a class=widget__link href=/categories/homelab/>HomeLab</a></li><li class=widget__item><a class=widget__link href=/categories/life/>Life</a></li><li class=widget__item><a class=widget__link href=/categories/note/>Note</a></li><li class=widget__item><a class=widget__link href=/categories/study/>Study</a></li><li class=widget__item><a class=widget__link href=/categories/til/>TIL</a></li></ul></div></div><div class="widget-categories widget"><h4 class=widget__title>Series</h4><div class=widget__content><ul class=widget__list><li class=widget__item><a class=widget__link href=/series/how-to-run-dpdk-in-k8s/>How to run DPDK in k8s</a></li><li class=widget__item><a class=widget__link href=/series/kubernetes-hands-on/>Kubernetes hands-on</a></li><li class=widget__item><a class=widget__link href=/series/learn-cuda-programming/>Learn CUDA Programming</a></li><li class=widget__item><a class=widget__link href=/series/setup-homelab-server-2023/>Setup homelab server 2023</a></li><li class=widget__item><a class=widget__link href=/series/setup-hugo-blog/>Setup hugo blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-k8s-cluster/>Setup k8s cluster</a></li><li class=widget__item><a class=widget__link href=/series/setup-podcast-blog/>Setup podcast blog</a></li><li class=widget__item><a class=widget__link href=/series/setup-traefik/>Setup Traefik</a></li></ul></div></div><div class="widget-taglist widget"><h4 class=widget__title>Tags</h4><div class=widget__content><a class="widget-taglist__link widget__link btn" href=/tags/2015/ title=2015>2015 (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/5g/ title=5g>5g (1)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/agile/ title=agile>agile (6)</a>
 <a class="widget-taglist__link widget__link btn" href=/tags/aic/ title=aic>aic (1)</a>
