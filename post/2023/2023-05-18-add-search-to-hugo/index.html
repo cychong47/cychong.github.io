@@ -73,7 +73,7 @@ Error: Process completed with exit code 137.
 </span></span><span style=display:flex><span>	&lt;/<span style=color:#f92672>script</span>&gt;
 </span></span><span style=display:flex><span>&lt;/<span style=color:#f92672>div</span>&gt;
 </span></span></code></pre></div><p><img src=/images/2023/05/2023-05-18-search-in-sidebar.png alt></p><p>검색을 하면 이렇게 검색 창 아래에 결과가 나온다.
-<img src=/images/2023/05/2023/2023-05-18-pagefind_search_result.png alt></p><h2 id=github-action-에-추가>github action 에 추가</h2><p>자동으로 hugo로 빌드할 때마다 자동으로 indexing을 할 수 있게 github의 action flow 수정한다.
+<img src=/images/2023/05/2023-05-18-pagefind_search_result.png alt></p><h2 id=github-action-에-추가>github action 에 추가</h2><p>자동으로 hugo로 빌드할 때마다 자동으로 indexing을 할 수 있게 github의 action flow 수정한다.
 아래의 경우는 local github action runner를에서 미리 설치해 높은 <code>pagefind_extended</code>를 사용하는 경우이고,
 <code>cat .github/workflows/main.yml</code></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>      - <span style=color:#f92672>name</span>: <span style=color:#ae81ff>Build</span>
 </span></span><span style=display:flex><span>        <span style=color:#f92672>run</span>: |<span style=color:#e6db74>
